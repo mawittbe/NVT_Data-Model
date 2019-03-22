@@ -1,0 +1,1723 @@
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix korbo: <http://purl.org/net7/korbo/vocab#> .
+@prefix degrees: <http://purl.org/ontology/bibo/degrees/> .
+@prefix sqwrl: <http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix dcamns: <http://purl.org/dc/dcam/> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfsns: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix ecrm: <http://erlangen-crm.org/current/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix reg: <http://metadataregistry.org/uri/profile/regap/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdakit: <http://metadataregistry.org/uri/profile/rdakit/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix crm-wrong: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix status: <http://purl.org/ontology/bibo/status/> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix dcns: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix rdfns: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix prism: <http://prismstandard.org/namespaces/1.2/basic/> .
+@prefix location: <http://www.w3.org/2002/07/owl> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix schema: <http://schemas.talis.com/2005/address/schema#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1d6dg0atvx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "MASTER_19032019_PERSON_Personen" ;
+	km-dev:modelPublicationTime "1553083673535"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Gestorben\"}],[{\"columnName\":\"Quelle (Beschreibung)\"}],[{\"columnName\":\"Geboren\"}],[{\"columnName\":\"GND\"}],[{\"columnName\":\"Identifier / geeinigte Schreibweise\"}],[{\"columnName\":\"Wikidata\"}],[{\"columnName\":\"VIAF\"}],[{\"columnName\":\"Nachname\"}],[{\"columnName\":\"dbpedia\"}],[{\"columnName\":\"Beschreibung\"}],[{\"columnName\":\"Vollname\"}],[{\"columnName\":\"Website\"}],[{\"columnName\":\"Vorname\"}],[{\"columnName\":\"Websites\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Gestorben\"}],[{\"columnName\":\"Quelle (Beschreibung)\"}],[{\"columnName\":\"Geboren\"}],[{\"columnName\":\"GND\"}],[{\"columnName\":\"Identifier / geeinigte Schreibweise\"}],[{\"columnName\":\"Wikidata\"}],[{\"columnName\":\"VIAF\"}],[{\"columnName\":\"Nachname\"}],[{\"columnName\":\"dbpedia\"}],[{\"columnName\":\"Beschreibung\"}],[{\"columnName\":\"Vollname\"}],[{\"columnName\":\"Website\"}],[{\"columnName\":\"Vorname\"}],[{\"columnName\":\"Websites\"}]]" ;
+	km-dev:hasModelLabel "MASTER_19032019_PERSON_Personen" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Identifier / geeinigte Schreibweise\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"edm:Agent1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Identifier / geeinigte Schreibweise\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Identifier / geeinigte Schreibweise\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Vollname\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#prefLabel\",
+                    \"DomainLabel\": \"edm:Agent1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Vollname\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Vollname\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Vorname\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://xmlns.com/foaf/0.1/firstName\",
+                    \"DomainLabel\": \"edm:Agent1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Vorname\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Vorname\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Nachname\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://xmlns.com/foaf/0.1/lastName\",
+                    \"DomainLabel\": \"edm:Agent1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Nachname\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Nachname\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Beschreibung\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://rdvocab.info/ElementsGr2/biographicalInformation\",
+                    \"DomainLabel\": \"edm:Agent1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Beschreibung\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Beschreibung\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Quelle (Beschreibung)\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://rdvocab.info/ElementsGr2/biographicalInformation\",
+                    \"DomainLabel\": \"edm:Agent1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Quelle (Beschreibung)\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Quelle (Beschreibung)\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Geboren\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://rdvocab.info/ElementsGr2/dateOfBirth\",
+                    \"DomainLabel\": \"edm:Agent1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Geboren\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Geboren\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Gestorben\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://rdvocab.info/ElementsGr2/dateOfDeath\",
+                    \"DomainLabel\": \"edm:Agent1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Gestorben\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Gestorben\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"VIAF\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"edm:Agent1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"VIAF\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"VIAF\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"VIAF\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"edm:Agent2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"VIAF\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"VIAF\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"GND\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent3\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent3\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"edm:Agent3 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GND\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GND\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Wikidata\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent4\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent4\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"edm:Agent4 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Wikidata\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Wikidata\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Website\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Document\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Document1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Document\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Document1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"foaf:Document1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Website\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Website\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Websites\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Document\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Document2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Document\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Document2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"foaf:Document2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Websites\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Websites\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Websites\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Document\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Document2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Document\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Document2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"foaf:Document2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Websites\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Websites\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"dbpedia\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent5\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent5\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"edm:Agent5 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dbpedia\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dbpedia\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"edgeSourceId\": \"http://www.europeana.eu/schemas/edm/Agent2\",
+                    \"edgeSourceUri\": \"http://www.europeana.eu/schemas/edm/Agent\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"edgeSourceId\": \"http://www.europeana.eu/schemas/edm/Agent3\",
+                    \"edgeSourceUri\": \"http://www.europeana.eu/schemas/edm/Agent\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"edgeSourceId\": \"http://www.europeana.eu/schemas/edm/Agent4\",
+                    \"edgeSourceUri\": \"http://www.europeana.eu/schemas/edm/Agent\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Document1\",
+                    \"edgeId\": \"http://xmlns.com/foaf/0.1/homepage\",
+                    \"edgeTargetUri\": \"http://xmlns.com/foaf/0.1/Document\",
+                    \"edgeSourceId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"edgeSourceUri\": \"http://www.europeana.eu/schemas/edm/Agent\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Document2\",
+                    \"edgeId\": \"http://xmlns.com/foaf/0.1/homepage\",
+                    \"edgeTargetUri\": \"http://xmlns.com/foaf/0.1/Document\",
+                    \"edgeSourceId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"edgeSourceUri\": \"http://www.europeana.eu/schemas/edm/Agent\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"edgeSourceId\": \"http://www.europeana.eu/schemas/edm/Agent5\",
+                    \"edgeSourceUri\": \"http://www.europeana.eu/schemas/edm/Agent\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_5f0e19ed-5218-4aa6-9e0b-774807b1e25b a rr:TriplesMap .
+
+_:node1d6dg0atvx1 km-dev:hasTriplesMap km-dev:TriplesMap_5f0e19ed-5218-4aa6-9e0b-774807b1e25b .
+
+km-dev:TriplesMap_5f0e19ed-5218-4aa6-9e0b-774807b1e25b km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx2 rr:tableName "MASTER_19032019_PERSON_Personen" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasLogicalTable _:node1d6dg0atvx2 .
+
+km-dev:TriplesMap_5f0e19ed-5218-4aa6-9e0b-774807b1e25b rr:logicalTable _:node1d6dg0atvx2 ;
+	rr:subjectMap _:node1d6dg0atvx3 .
+
+_:node1d6dg0atvx1 km-dev:hasSubjectMap _:node1d6dg0atvx3 .
+
+_:node1d6dg0atvx3 km-dev:isPartOfMapping _:node1d6dg0atvx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.europeana.eu/schemas/edm/Agent3" ;
+	rr:class edm:Agent ;
+	rr:template "{GND}" .
+
+km-dev:PredicateObjectMap_c6d5ac32-ab3f-4f6a-9400-e43bfbf4a46c rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_a55f49ca-44dc-4793-b71e-b63dea000255 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasObjectMap km-dev:RefObjectMap_a55f49ca-44dc-4793-b71e-b63dea000255 .
+
+km-dev:PredicateObjectMap_c6d5ac32-ab3f-4f6a-9400-e43bfbf4a46c rr:objectMap km-dev:RefObjectMap_a55f49ca-44dc-4793-b71e-b63dea000255 .
+
+km-dev:TriplesMap_5f0e19ed-5218-4aa6-9e0b-774807b1e25b rr:predicateObjectMap km-dev:PredicateObjectMap_c6d5ac32-ab3f-4f6a-9400-e43bfbf4a46c .
+
+km-dev:PredicateObjectMap_c6d5ac32-ab3f-4f6a-9400-e43bfbf4a46c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c6d5ac32-ab3f-4f6a-9400-e43bfbf4a46c .
+
+km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 a rr:TriplesMap .
+
+_:node1d6dg0atvx1 km-dev:hasTriplesMap km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 .
+
+km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx4 rr:tableName "MASTER_19032019_PERSON_Personen" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasLogicalTable _:node1d6dg0atvx4 .
+
+km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 rr:logicalTable _:node1d6dg0atvx4 ;
+	rr:subjectMap _:node1d6dg0atvx5 .
+
+_:node1d6dg0atvx1 km-dev:hasSubjectMap _:node1d6dg0atvx5 .
+
+_:node1d6dg0atvx5 km-dev:isPartOfMapping _:node1d6dg0atvx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.europeana.eu/schemas/edm/Agent1" ;
+	rr:class edm:Agent ;
+	rr:template "{Identifier / geeinigte Schreibweise}" .
+
+km-dev:PredicateObjectMap_ab072df2-0c8a-4425-901a-2d00d7a0fa83 rr:predicate rdaGr2:dateOfBirth .
+
+_:node1d6dg0atvx6 rr:column "Geboren" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasObjectMap _:node1d6dg0atvx6 .
+
+km-dev:PredicateObjectMap_ab072df2-0c8a-4425-901a-2d00d7a0fa83 rr:objectMap _:node1d6dg0atvx6 .
+
+km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 rr:predicateObjectMap km-dev:PredicateObjectMap_ab072df2-0c8a-4425-901a-2d00d7a0fa83 .
+
+km-dev:PredicateObjectMap_ab072df2-0c8a-4425-901a-2d00d7a0fa83 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ab072df2-0c8a-4425-901a-2d00d7a0fa83 .
+
+km-dev:PredicateObjectMap_c9adfa93-348d-4fca-91b2-4b77fb96320b rr:predicate foaf:homepage .
+
+km-dev:RefObjectMap_c502f91b-cc4f-4993-a812-e8e69a8e472d a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_733e912b-0c5b-4a1e-adb8-94f3f7f7f748 ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasObjectMap km-dev:RefObjectMap_c502f91b-cc4f-4993-a812-e8e69a8e472d .
+
+km-dev:PredicateObjectMap_c9adfa93-348d-4fca-91b2-4b77fb96320b rr:objectMap km-dev:RefObjectMap_c502f91b-cc4f-4993-a812-e8e69a8e472d .
+
+km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 rr:predicateObjectMap km-dev:PredicateObjectMap_c9adfa93-348d-4fca-91b2-4b77fb96320b .
+
+km-dev:PredicateObjectMap_c9adfa93-348d-4fca-91b2-4b77fb96320b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c9adfa93-348d-4fca-91b2-4b77fb96320b .
+
+km-dev:PredicateObjectMap_e70dc307-b3bf-4303-8b60-7809ea5115eb rr:predicate foaf:homepage .
+
+km-dev:RefObjectMap_c4937a41-09ca-4a99-9adb-fdf57b8f3269 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_88b8c995-86a1-47e0-83a2-b0c86232734b ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasObjectMap km-dev:RefObjectMap_c4937a41-09ca-4a99-9adb-fdf57b8f3269 .
+
+km-dev:PredicateObjectMap_e70dc307-b3bf-4303-8b60-7809ea5115eb rr:objectMap km-dev:RefObjectMap_c4937a41-09ca-4a99-9adb-fdf57b8f3269 .
+
+km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 rr:predicateObjectMap km-dev:PredicateObjectMap_e70dc307-b3bf-4303-8b60-7809ea5115eb .
+
+km-dev:PredicateObjectMap_e70dc307-b3bf-4303-8b60-7809ea5115eb a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e70dc307-b3bf-4303-8b60-7809ea5115eb .
+
+km-dev:PredicateObjectMap_bb8b5f2a-6504-44f4-8d79-f87670ab0214 rr:predicate foaf:firstName .
+
+_:node1d6dg0atvx7 rr:column "Vorname" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasObjectMap _:node1d6dg0atvx7 .
+
+km-dev:PredicateObjectMap_bb8b5f2a-6504-44f4-8d79-f87670ab0214 rr:objectMap _:node1d6dg0atvx7 .
+
+km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 rr:predicateObjectMap km-dev:PredicateObjectMap_bb8b5f2a-6504-44f4-8d79-f87670ab0214 .
+
+km-dev:PredicateObjectMap_bb8b5f2a-6504-44f4-8d79-f87670ab0214 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bb8b5f2a-6504-44f4-8d79-f87670ab0214 .
+
+km-dev:PredicateObjectMap_0790a6f6-94af-4046-9b38-efb5c4b74462 rr:predicate foaf:lastName .
+
+_:node1d6dg0atvx8 rr:column "Nachname" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasObjectMap _:node1d6dg0atvx8 .
+
+km-dev:PredicateObjectMap_0790a6f6-94af-4046-9b38-efb5c4b74462 rr:objectMap _:node1d6dg0atvx8 .
+
+km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 rr:predicateObjectMap km-dev:PredicateObjectMap_0790a6f6-94af-4046-9b38-efb5c4b74462 .
+
+km-dev:PredicateObjectMap_0790a6f6-94af-4046-9b38-efb5c4b74462 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0790a6f6-94af-4046-9b38-efb5c4b74462 .
+
+km-dev:PredicateObjectMap_58836c28-22a4-4c30-aaa7-9599a23cb4a2 rr:predicate skos:prefLabel .
+
+_:node1d6dg0atvx9 rr:column "Vollname" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasObjectMap _:node1d6dg0atvx9 .
+
+km-dev:PredicateObjectMap_58836c28-22a4-4c30-aaa7-9599a23cb4a2 rr:objectMap _:node1d6dg0atvx9 .
+
+km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 rr:predicateObjectMap km-dev:PredicateObjectMap_58836c28-22a4-4c30-aaa7-9599a23cb4a2 .
+
+km-dev:PredicateObjectMap_58836c28-22a4-4c30-aaa7-9599a23cb4a2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_58836c28-22a4-4c30-aaa7-9599a23cb4a2 .
+
+km-dev:PredicateObjectMap_cb769672-5b01-4932-b57a-6bd31f452645 rr:predicate rdaGr2:biographicalInformation .
+
+_:node1d6dg0atvx10 rr:column "Beschreibung" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasObjectMap _:node1d6dg0atvx10 .
+
+km-dev:PredicateObjectMap_cb769672-5b01-4932-b57a-6bd31f452645 rr:objectMap _:node1d6dg0atvx10 .
+
+km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 rr:predicateObjectMap km-dev:PredicateObjectMap_cb769672-5b01-4932-b57a-6bd31f452645 .
+
+km-dev:PredicateObjectMap_cb769672-5b01-4932-b57a-6bd31f452645 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cb769672-5b01-4932-b57a-6bd31f452645 .
+
+km-dev:PredicateObjectMap_fb3ecfd5-505f-4a00-b2fe-ccc5f3af41c8 rr:predicate rdaGr2:biographicalInformation .
+
+_:node1d6dg0atvx11 rr:column "Quelle (Beschreibung)" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasObjectMap _:node1d6dg0atvx11 .
+
+km-dev:PredicateObjectMap_fb3ecfd5-505f-4a00-b2fe-ccc5f3af41c8 rr:objectMap _:node1d6dg0atvx11 .
+
+km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 rr:predicateObjectMap km-dev:PredicateObjectMap_fb3ecfd5-505f-4a00-b2fe-ccc5f3af41c8 .
+
+km-dev:PredicateObjectMap_fb3ecfd5-505f-4a00-b2fe-ccc5f3af41c8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_fb3ecfd5-505f-4a00-b2fe-ccc5f3af41c8 .
+
+km-dev:PredicateObjectMap_7be5c5e8-7aeb-40b8-bcb2-f54e19d90791 rr:predicate rdaGr2:dateOfDeath .
+
+_:node1d6dg0atvx12 rr:column "Gestorben" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasObjectMap _:node1d6dg0atvx12 .
+
+km-dev:PredicateObjectMap_7be5c5e8-7aeb-40b8-bcb2-f54e19d90791 rr:objectMap _:node1d6dg0atvx12 .
+
+km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 rr:predicateObjectMap km-dev:PredicateObjectMap_7be5c5e8-7aeb-40b8-bcb2-f54e19d90791 .
+
+km-dev:PredicateObjectMap_7be5c5e8-7aeb-40b8-bcb2-f54e19d90791 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7be5c5e8-7aeb-40b8-bcb2-f54e19d90791 .
+
+km-dev:TriplesMap_733e912b-0c5b-4a1e-adb8-94f3f7f7f748 a rr:TriplesMap .
+
+_:node1d6dg0atvx1 km-dev:hasTriplesMap km-dev:TriplesMap_733e912b-0c5b-4a1e-adb8-94f3f7f7f748 .
+
+km-dev:TriplesMap_733e912b-0c5b-4a1e-adb8-94f3f7f7f748 km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx13 rr:tableName "MASTER_19032019_PERSON_Personen" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasLogicalTable _:node1d6dg0atvx13 .
+
+km-dev:TriplesMap_733e912b-0c5b-4a1e-adb8-94f3f7f7f748 rr:logicalTable _:node1d6dg0atvx13 ;
+	rr:subjectMap _:node1d6dg0atvx14 .
+
+_:node1d6dg0atvx1 km-dev:hasSubjectMap _:node1d6dg0atvx14 .
+
+_:node1d6dg0atvx14 km-dev:isPartOfMapping _:node1d6dg0atvx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://xmlns.com/foaf/0.1/Document2" ;
+	rr:class foaf:Document ;
+	rr:template "{Websites}" .
+
+km-dev:TriplesMap_88b8c995-86a1-47e0-83a2-b0c86232734b a rr:TriplesMap .
+
+_:node1d6dg0atvx1 km-dev:hasTriplesMap km-dev:TriplesMap_88b8c995-86a1-47e0-83a2-b0c86232734b .
+
+km-dev:TriplesMap_88b8c995-86a1-47e0-83a2-b0c86232734b km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx15 rr:tableName "MASTER_19032019_PERSON_Personen" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasLogicalTable _:node1d6dg0atvx15 .
+
+km-dev:TriplesMap_88b8c995-86a1-47e0-83a2-b0c86232734b rr:logicalTable _:node1d6dg0atvx15 ;
+	rr:subjectMap _:node1d6dg0atvx16 .
+
+_:node1d6dg0atvx1 km-dev:hasSubjectMap _:node1d6dg0atvx16 .
+
+_:node1d6dg0atvx16 km-dev:isPartOfMapping _:node1d6dg0atvx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://xmlns.com/foaf/0.1/Document1" ;
+	rr:class foaf:Document ;
+	rr:template "{Website}" .
+
+km-dev:TriplesMap_14ecd930-2f0f-44dd-b82b-a2eda3f7c40d a rr:TriplesMap .
+
+_:node1d6dg0atvx1 km-dev:hasTriplesMap km-dev:TriplesMap_14ecd930-2f0f-44dd-b82b-a2eda3f7c40d .
+
+km-dev:TriplesMap_14ecd930-2f0f-44dd-b82b-a2eda3f7c40d km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx17 rr:tableName "MASTER_19032019_PERSON_Personen" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasLogicalTable _:node1d6dg0atvx17 .
+
+km-dev:TriplesMap_14ecd930-2f0f-44dd-b82b-a2eda3f7c40d rr:logicalTable _:node1d6dg0atvx17 ;
+	rr:subjectMap _:node1d6dg0atvx18 .
+
+_:node1d6dg0atvx1 km-dev:hasSubjectMap _:node1d6dg0atvx18 .
+
+_:node1d6dg0atvx18 km-dev:isPartOfMapping _:node1d6dg0atvx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.europeana.eu/schemas/edm/Agent4" ;
+	rr:class edm:Agent ;
+	rr:template "{Wikidata}" .
+
+km-dev:PredicateObjectMap_fec56b72-cd97-4565-9be0-9dde059a0b0b rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_3a2a26d7-9b22-4a84-93aa-ad0ba12d90bb a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasObjectMap km-dev:RefObjectMap_3a2a26d7-9b22-4a84-93aa-ad0ba12d90bb .
+
+km-dev:PredicateObjectMap_fec56b72-cd97-4565-9be0-9dde059a0b0b rr:objectMap km-dev:RefObjectMap_3a2a26d7-9b22-4a84-93aa-ad0ba12d90bb .
+
+km-dev:TriplesMap_14ecd930-2f0f-44dd-b82b-a2eda3f7c40d rr:predicateObjectMap km-dev:PredicateObjectMap_fec56b72-cd97-4565-9be0-9dde059a0b0b .
+
+km-dev:PredicateObjectMap_fec56b72-cd97-4565-9be0-9dde059a0b0b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_fec56b72-cd97-4565-9be0-9dde059a0b0b .
+
+km-dev:TriplesMap_e62eb324-12fc-4179-8203-4daf375afafa a rr:TriplesMap .
+
+_:node1d6dg0atvx1 km-dev:hasTriplesMap km-dev:TriplesMap_e62eb324-12fc-4179-8203-4daf375afafa .
+
+km-dev:TriplesMap_e62eb324-12fc-4179-8203-4daf375afafa km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx19 rr:tableName "MASTER_19032019_PERSON_Personen" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasLogicalTable _:node1d6dg0atvx19 .
+
+km-dev:TriplesMap_e62eb324-12fc-4179-8203-4daf375afafa rr:logicalTable _:node1d6dg0atvx19 ;
+	rr:subjectMap _:node1d6dg0atvx20 .
+
+_:node1d6dg0atvx1 km-dev:hasSubjectMap _:node1d6dg0atvx20 .
+
+_:node1d6dg0atvx20 km-dev:isPartOfMapping _:node1d6dg0atvx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.europeana.eu/schemas/edm/Agent2" ;
+	rr:class edm:Agent ;
+	rr:template "{VIAF}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_5e26f72c-015f-4a5b-8d19-1349bc80f9ee rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_0307d071-c6b3-4375-8d4c-c7748a94fa77 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasObjectMap km-dev:RefObjectMap_0307d071-c6b3-4375-8d4c-c7748a94fa77 .
+
+km-dev:PredicateObjectMap_5e26f72c-015f-4a5b-8d19-1349bc80f9ee rr:objectMap km-dev:RefObjectMap_0307d071-c6b3-4375-8d4c-c7748a94fa77 .
+
+km-dev:TriplesMap_e62eb324-12fc-4179-8203-4daf375afafa rr:predicateObjectMap km-dev:PredicateObjectMap_5e26f72c-015f-4a5b-8d19-1349bc80f9ee .
+
+km-dev:PredicateObjectMap_5e26f72c-015f-4a5b-8d19-1349bc80f9ee a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5e26f72c-015f-4a5b-8d19-1349bc80f9ee .
+
+km-dev:TriplesMap_610d4d9d-0292-4f43-b551-d2a10519f11a a rr:TriplesMap .
+
+_:node1d6dg0atvx1 km-dev:hasTriplesMap km-dev:TriplesMap_610d4d9d-0292-4f43-b551-d2a10519f11a .
+
+km-dev:TriplesMap_610d4d9d-0292-4f43-b551-d2a10519f11a km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx21 rr:tableName "MASTER_19032019_PERSON_Personen" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasLogicalTable _:node1d6dg0atvx21 .
+
+km-dev:TriplesMap_610d4d9d-0292-4f43-b551-d2a10519f11a rr:logicalTable _:node1d6dg0atvx21 ;
+	rr:subjectMap _:node1d6dg0atvx22 .
+
+_:node1d6dg0atvx1 km-dev:hasSubjectMap _:node1d6dg0atvx22 .
+
+_:node1d6dg0atvx22 km-dev:isPartOfMapping _:node1d6dg0atvx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.europeana.eu/schemas/edm/Agent5" ;
+	rr:class edm:Agent ;
+	rr:template "{dbpedia}" .
+
+km-dev:PredicateObjectMap_37630224-6f04-4d28-9d85-75188ac24e93 rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_4ce95643-305d-4920-aeca-f268428d929e a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_ae663867-fb87-4d47-bbfe-bd2cc6dfcab9 ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasObjectMap km-dev:RefObjectMap_4ce95643-305d-4920-aeca-f268428d929e .
+
+km-dev:PredicateObjectMap_37630224-6f04-4d28-9d85-75188ac24e93 rr:objectMap km-dev:RefObjectMap_4ce95643-305d-4920-aeca-f268428d929e .
+
+km-dev:TriplesMap_610d4d9d-0292-4f43-b551-d2a10519f11a rr:predicateObjectMap km-dev:PredicateObjectMap_37630224-6f04-4d28-9d85-75188ac24e93 .
+
+km-dev:PredicateObjectMap_37630224-6f04-4d28-9d85-75188ac24e93 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6dg0atvx1 .
+
+_:node1d6dg0atvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_37630224-6f04-4d28-9d85-75188ac24e93 .

@@ -1,0 +1,1503 @@
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/3.0/> .
+@prefix korbo: <http://purl.org/net7/korbo/vocab#> .
+@prefix degrees: <http://purl.org/ontology/bibo/degrees/> .
+@prefix sqwrl: <http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix dcamns: <http://purl.org/dc/dcam/> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfsns: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix ecrm: <http://erlangen-crm.org/current/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix reg: <http://metadataregistry.org/uri/profile/regap/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdakit: <http://metadataregistry.org/uri/profile/rdakit/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix crm-wrong: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix status: <http://purl.org/ontology/bibo/status/> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix dcns: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix karma: <http://isi.edu/integration/karma/ontologies/model/current#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix rdfns: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix location: <http://www.w3.org/2002/07/owl> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix schema: <http://schemas.talis.com/2005/address/schema#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1d6itc7g7x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "MASTER_19032019_GROUP_Gruppen_Ensembles" ;
+	km-dev:modelPublicationTime "1553265466887"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Website\"}],[{\"columnName\":\"ist ansässig Haus\"}],[{\"columnName\":\"GND URI\"}],[{\"columnName\":\"WIKIDATA URI\"}],[{\"columnName\":\"ist Nachfolger von\"}],[{\"columnName\":\"ist Vorgänger von\"}],[{\"columnName\":\"ist ansässig Land\"}],[{\"columnName\":\"ist ansässig Stadt\"}],[{\"columnName\":\"weitere Namen\"}],[{\"columnName\":\"präferierter Name\"}],[{\"columnName\":\"Quelle Beschreibung\"}],[{\"columnName\":\"Beschreibung\"}],[{\"columnName\":\"Gruppe Identifier / geeinigte Schreibweise\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Website\"}],[{\"columnName\":\"ist ansässig Haus\"}],[{\"columnName\":\"GND URI\"}],[{\"columnName\":\"WIKIDATA URI\"}],[{\"columnName\":\"ist Nachfolger von\"}],[{\"columnName\":\"ist Vorgänger von\"}],[{\"columnName\":\"ist ansässig Land\"}],[{\"columnName\":\"ist ansässig Stadt\"}],[{\"columnName\":\"weitere Namen\"}],[{\"columnName\":\"präferierter Name\"}],[{\"columnName\":\"Quelle Beschreibung\"}],[{\"columnName\":\"Beschreibung\"}],[{\"columnName\":\"Gruppe Identifier / geeinigte Schreibweise\"}]]" ;
+	km-dev:hasModelLabel "MASTER_19032019_GROUP_Gruppen_Ensembles" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Gruppe Identifier / geeinigte Schreibweise\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#PerformingArtsGroup\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#PerformingArtsGroup1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#PerformingArtsGroup\",
+                    \"DomainId\": \"http://example.org/nvt/classes#PerformingArtsGroup1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#PerformingArtsGroup/PerformingArtsGroup1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Gruppe Identifier / geeinigte Schreibweise\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Gruppe Identifier / geeinigte Schreibweise\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"ist ansässig Stadt\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#City\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#City1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#City\",
+                    \"DomainId\": \"http://example.org/nvt/classes#City1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#City/City1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ist ansässig Stadt\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ist ansässig Stadt\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"ist ansässig Land\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#Country\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#Country1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#Country\",
+                    \"DomainId\": \"http://example.org/nvt/classes#Country1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#Country/Country1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ist ansässig Land\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ist ansässig Land\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"ist ansässig Haus\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#PerformingArtsGroup\",
+                    \"DomainId\": \"http://example.org/nvt/classes#PerformingArtsGroup1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#note\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#PerformingArtsGroup1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ist ansässig Haus\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ist ansässig Haus\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"präferierter Name\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#PerformingArtsGroup\",
+                    \"DomainId\": \"http://example.org/nvt/classes#PerformingArtsGroup1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#prefLabel\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#PerformingArtsGroup/PerformingArtsGroup1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"präferierter Name\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"präferierter Name\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"weitere Namen\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#PerformingArtsGroup\",
+                    \"DomainId\": \"http://example.org/nvt/classes#PerformingArtsGroup1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#altLabel\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#PerformingArtsGroup/PerformingArtsGroup1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"weitere Namen\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"weitere Namen\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Beschreibung\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#PerformingArtsGroup\",
+                    \"DomainId\": \"http://example.org/nvt/classes#PerformingArtsGroup1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/description\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#PerformingArtsGroup/PerformingArtsGroup1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Beschreibung\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Beschreibung\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Quelle Beschreibung\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#PerformingArtsGroup\",
+                    \"DomainId\": \"http://example.org/nvt/classes#PerformingArtsGroup1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/description\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#PerformingArtsGroup/PerformingArtsGroup1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Quelle Beschreibung\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Quelle Beschreibung\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"ist Vorgänger von\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#PerformingArtsGroup\",
+                    \"DomainId\": \"http://example.org/nvt/classes#PerformingArtsGroup1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#note\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#PerformingArtsGroup/PerformingArtsGroup1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ist Vorgänger von\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ist Vorgänger von\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"ist Nachfolger von\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#PerformingArtsGroup\",
+                    \"DomainId\": \"http://example.org/nvt/classes#PerformingArtsGroup1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#note\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#PerformingArtsGroup/PerformingArtsGroup1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ist Nachfolger von\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ist Nachfolger von\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Website\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Document\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Document1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Document\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Document1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"foaf:Document1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Website\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Website\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"WIKIDATA URI\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"edm:Agent1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"WIKIDATA URI\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"WIKIDATA URI\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"GND URI\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"edm:Agent1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GND URI\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GND URI\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"GND URI\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Agent2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Agent\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Agent2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"edm:Agent2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GND URI\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GND URI\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://example.org/nvt/classes#City1\",
+                    \"edgeId\": \"http://purl.org/dc/terms/spatial\",
+                    \"edgeTargetUri\": \"http://example.org/nvt/classes#City\",
+                    \"edgeSourceId\": \"http://example.org/nvt/classes#PerformingArtsGroup1\",
+                    \"edgeSourceUri\": \"http://example.org/nvt/classes#PerformingArtsGroup\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://example.org/nvt/classes#Country1\",
+                    \"edgeId\": \"http://purl.org/dc/terms/spatial\",
+                    \"edgeTargetUri\": \"http://example.org/nvt/classes#Country\",
+                    \"edgeSourceId\": \"http://example.org/nvt/classes#PerformingArtsGroup1\",
+                    \"edgeSourceUri\": \"http://example.org/nvt/classes#PerformingArtsGroup\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Document1\",
+                    \"edgeId\": \"http://xmlns.com/foaf/0.1/homepage\",
+                    \"edgeTargetUri\": \"http://xmlns.com/foaf/0.1/Document\",
+                    \"edgeSourceId\": \"http://example.org/nvt/classes#PerformingArtsGroup1\",
+                    \"edgeSourceUri\": \"http://example.org/nvt/classes#PerformingArtsGroup\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://example.org/nvt/classes#PerformingArtsGroup1\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://example.org/nvt/classes#PerformingArtsGroup\",
+                    \"edgeSourceId\": \"http://www.europeana.eu/schemas/edm/Agent1\",
+                    \"edgeSourceUri\": \"http://www.europeana.eu/schemas/edm/Agent\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://example.org/nvt/classes#PerformingArtsGroup1\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://example.org/nvt/classes#PerformingArtsGroup\",
+                    \"edgeSourceId\": \"http://www.europeana.eu/schemas/edm/Agent2\",
+                    \"edgeSourceUri\": \"http://www.europeana.eu/schemas/edm/Agent\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_2420a947-c321-44a1-95d5-9d53a72c1d97 a rr:TriplesMap .
+
+_:node1d6itc7g7x1 km-dev:hasTriplesMap km-dev:TriplesMap_2420a947-c321-44a1-95d5-9d53a72c1d97 .
+
+km-dev:TriplesMap_2420a947-c321-44a1-95d5-9d53a72c1d97 km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x2 rr:tableName "MASTER_19032019_GROUP_Gruppen_Ensembles" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasLogicalTable _:node1d6itc7g7x2 .
+
+km-dev:TriplesMap_2420a947-c321-44a1-95d5-9d53a72c1d97 rr:logicalTable _:node1d6itc7g7x2 ;
+	rr:subjectMap _:node1d6itc7g7x3 .
+
+_:node1d6itc7g7x1 km-dev:hasSubjectMap _:node1d6itc7g7x3 .
+
+_:node1d6itc7g7x3 km-dev:isPartOfMapping _:node1d6itc7g7x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.europeana.eu/schemas/edm/Agent2" ;
+	rr:class edm:Agent ;
+	rr:template "{GND URI}" .
+
+km-dev:PredicateObjectMap_4e361783-4677-454e-abc1-16bae0328dfa rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_a7b2424f-b389-45ca-ae84-507e8ce34852 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasObjectMap km-dev:RefObjectMap_a7b2424f-b389-45ca-ae84-507e8ce34852 .
+
+km-dev:PredicateObjectMap_4e361783-4677-454e-abc1-16bae0328dfa rr:objectMap km-dev:RefObjectMap_a7b2424f-b389-45ca-ae84-507e8ce34852 .
+
+km-dev:TriplesMap_2420a947-c321-44a1-95d5-9d53a72c1d97 rr:predicateObjectMap km-dev:PredicateObjectMap_4e361783-4677-454e-abc1-16bae0328dfa .
+
+km-dev:PredicateObjectMap_4e361783-4677-454e-abc1-16bae0328dfa a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4e361783-4677-454e-abc1-16bae0328dfa .
+
+km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d a rr:TriplesMap .
+
+_:node1d6itc7g7x1 km-dev:hasTriplesMap km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d .
+
+km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x4 rr:tableName "MASTER_19032019_GROUP_Gruppen_Ensembles" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasLogicalTable _:node1d6itc7g7x4 .
+
+km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d rr:logicalTable _:node1d6itc7g7x4 ;
+	rr:subjectMap _:node1d6itc7g7x5 .
+
+_:node1d6itc7g7x1 km-dev:hasSubjectMap _:node1d6itc7g7x5 .
+
+_:node1d6itc7g7x5 km-dev:isPartOfMapping _:node1d6itc7g7x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://example.org/nvt/classes#PerformingArtsGroup1" ;
+	rr:class <http://example.org/nvt/classes#PerformingArtsGroup> ;
+	rr:template "{Gruppe Identifier / geeinigte Schreibweise}" .
+
+km-dev:PredicateObjectMap_04fa1eb8-e1fb-441b-8ca3-b015483f4150 rr:predicate skos:altLabel .
+
+_:node1d6itc7g7x6 rr:column "weitere Namen" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasObjectMap _:node1d6itc7g7x6 .
+
+km-dev:PredicateObjectMap_04fa1eb8-e1fb-441b-8ca3-b015483f4150 rr:objectMap _:node1d6itc7g7x6 .
+
+km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d rr:predicateObjectMap km-dev:PredicateObjectMap_04fa1eb8-e1fb-441b-8ca3-b015483f4150 .
+
+km-dev:PredicateObjectMap_04fa1eb8-e1fb-441b-8ca3-b015483f4150 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_04fa1eb8-e1fb-441b-8ca3-b015483f4150 .
+
+km-dev:PredicateObjectMap_71a16bd4-445a-481c-924a-6d0c1d71e4ce rr:predicate skos:note .
+
+_:node1d6itc7g7x7 rr:column "ist ansässig Haus" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasObjectMap _:node1d6itc7g7x7 .
+
+km-dev:PredicateObjectMap_71a16bd4-445a-481c-924a-6d0c1d71e4ce rr:objectMap _:node1d6itc7g7x7 .
+
+km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d rr:predicateObjectMap km-dev:PredicateObjectMap_71a16bd4-445a-481c-924a-6d0c1d71e4ce .
+
+km-dev:PredicateObjectMap_71a16bd4-445a-481c-924a-6d0c1d71e4ce a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_71a16bd4-445a-481c-924a-6d0c1d71e4ce .
+
+km-dev:PredicateObjectMap_0f6becc5-e64e-4c98-896b-66719c07d3ad rr:predicate terms:description .
+
+_:node1d6itc7g7x8 rr:column "Quelle Beschreibung" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasObjectMap _:node1d6itc7g7x8 .
+
+km-dev:PredicateObjectMap_0f6becc5-e64e-4c98-896b-66719c07d3ad rr:objectMap _:node1d6itc7g7x8 .
+
+km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d rr:predicateObjectMap km-dev:PredicateObjectMap_0f6becc5-e64e-4c98-896b-66719c07d3ad .
+
+km-dev:PredicateObjectMap_0f6becc5-e64e-4c98-896b-66719c07d3ad a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0f6becc5-e64e-4c98-896b-66719c07d3ad .
+
+km-dev:PredicateObjectMap_97fee193-7c40-43d5-9498-e1aeaa48414b rr:predicate skos:note .
+
+_:node1d6itc7g7x9 rr:column "ist Nachfolger von" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasObjectMap _:node1d6itc7g7x9 .
+
+km-dev:PredicateObjectMap_97fee193-7c40-43d5-9498-e1aeaa48414b rr:objectMap _:node1d6itc7g7x9 .
+
+km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d rr:predicateObjectMap km-dev:PredicateObjectMap_97fee193-7c40-43d5-9498-e1aeaa48414b .
+
+km-dev:PredicateObjectMap_97fee193-7c40-43d5-9498-e1aeaa48414b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_97fee193-7c40-43d5-9498-e1aeaa48414b .
+
+km-dev:PredicateObjectMap_caefecee-085f-474e-a93c-25ad293d279b rr:predicate terms:description .
+
+_:node1d6itc7g7x10 rr:column "Beschreibung" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasObjectMap _:node1d6itc7g7x10 .
+
+km-dev:PredicateObjectMap_caefecee-085f-474e-a93c-25ad293d279b rr:objectMap _:node1d6itc7g7x10 .
+
+km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d rr:predicateObjectMap km-dev:PredicateObjectMap_caefecee-085f-474e-a93c-25ad293d279b .
+
+km-dev:PredicateObjectMap_caefecee-085f-474e-a93c-25ad293d279b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_caefecee-085f-474e-a93c-25ad293d279b .
+
+km-dev:PredicateObjectMap_2d8da959-1455-4fd4-badc-dfb72e5b6b83 rr:predicate skos:note .
+
+_:node1d6itc7g7x11 rr:column "ist Vorgänger von" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasObjectMap _:node1d6itc7g7x11 .
+
+km-dev:PredicateObjectMap_2d8da959-1455-4fd4-badc-dfb72e5b6b83 rr:objectMap _:node1d6itc7g7x11 .
+
+km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d rr:predicateObjectMap km-dev:PredicateObjectMap_2d8da959-1455-4fd4-badc-dfb72e5b6b83 .
+
+km-dev:PredicateObjectMap_2d8da959-1455-4fd4-badc-dfb72e5b6b83 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2d8da959-1455-4fd4-badc-dfb72e5b6b83 .
+
+km-dev:PredicateObjectMap_79071a8d-8b7e-42f1-bd39-a9dde916a25f rr:predicate terms:spatial .
+
+km-dev:RefObjectMap_49cd9c3b-7a95-4eba-b4d8-59401e653be6 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_2a668082-7f2b-4da2-91e8-f27bc91447f7 ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasObjectMap km-dev:RefObjectMap_49cd9c3b-7a95-4eba-b4d8-59401e653be6 .
+
+km-dev:PredicateObjectMap_79071a8d-8b7e-42f1-bd39-a9dde916a25f rr:objectMap km-dev:RefObjectMap_49cd9c3b-7a95-4eba-b4d8-59401e653be6 .
+
+km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d rr:predicateObjectMap km-dev:PredicateObjectMap_79071a8d-8b7e-42f1-bd39-a9dde916a25f .
+
+km-dev:PredicateObjectMap_79071a8d-8b7e-42f1-bd39-a9dde916a25f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_79071a8d-8b7e-42f1-bd39-a9dde916a25f .
+
+km-dev:PredicateObjectMap_9ed6ce5e-7bc3-4458-8898-d03c37ae818b rr:predicate foaf:homepage .
+
+km-dev:RefObjectMap_e01d3ce5-0326-4f2e-842c-1d8a2c0792f6 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_f148e20c-d725-4118-b237-025843024d08 ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasObjectMap km-dev:RefObjectMap_e01d3ce5-0326-4f2e-842c-1d8a2c0792f6 .
+
+km-dev:PredicateObjectMap_9ed6ce5e-7bc3-4458-8898-d03c37ae818b rr:objectMap km-dev:RefObjectMap_e01d3ce5-0326-4f2e-842c-1d8a2c0792f6 .
+
+km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d rr:predicateObjectMap km-dev:PredicateObjectMap_9ed6ce5e-7bc3-4458-8898-d03c37ae818b .
+
+km-dev:PredicateObjectMap_9ed6ce5e-7bc3-4458-8898-d03c37ae818b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9ed6ce5e-7bc3-4458-8898-d03c37ae818b .
+
+km-dev:PredicateObjectMap_bc431d6e-fa65-4423-a13f-bb61c1aa4cd3 rr:predicate skos:prefLabel .
+
+_:node1d6itc7g7x12 rr:column "präferierter Name" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasObjectMap _:node1d6itc7g7x12 .
+
+km-dev:PredicateObjectMap_bc431d6e-fa65-4423-a13f-bb61c1aa4cd3 rr:objectMap _:node1d6itc7g7x12 .
+
+km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d rr:predicateObjectMap km-dev:PredicateObjectMap_bc431d6e-fa65-4423-a13f-bb61c1aa4cd3 .
+
+km-dev:PredicateObjectMap_bc431d6e-fa65-4423-a13f-bb61c1aa4cd3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bc431d6e-fa65-4423-a13f-bb61c1aa4cd3 .
+
+km-dev:PredicateObjectMap_1d5338c9-5bc9-4b72-aef7-dbb2284b5deb rr:predicate terms:spatial .
+
+km-dev:RefObjectMap_19d778ea-fa3a-4b8b-baaa-dcea4eb743b1 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_c3d55f9b-9d78-408a-a549-f4c8a4f26243 ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasObjectMap km-dev:RefObjectMap_19d778ea-fa3a-4b8b-baaa-dcea4eb743b1 .
+
+km-dev:PredicateObjectMap_1d5338c9-5bc9-4b72-aef7-dbb2284b5deb rr:objectMap km-dev:RefObjectMap_19d778ea-fa3a-4b8b-baaa-dcea4eb743b1 .
+
+km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d rr:predicateObjectMap km-dev:PredicateObjectMap_1d5338c9-5bc9-4b72-aef7-dbb2284b5deb .
+
+km-dev:PredicateObjectMap_1d5338c9-5bc9-4b72-aef7-dbb2284b5deb a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1d5338c9-5bc9-4b72-aef7-dbb2284b5deb .
+
+km-dev:TriplesMap_2a668082-7f2b-4da2-91e8-f27bc91447f7 a rr:TriplesMap .
+
+_:node1d6itc7g7x1 km-dev:hasTriplesMap km-dev:TriplesMap_2a668082-7f2b-4da2-91e8-f27bc91447f7 .
+
+km-dev:TriplesMap_2a668082-7f2b-4da2-91e8-f27bc91447f7 km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x13 rr:tableName "MASTER_19032019_GROUP_Gruppen_Ensembles" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasLogicalTable _:node1d6itc7g7x13 .
+
+km-dev:TriplesMap_2a668082-7f2b-4da2-91e8-f27bc91447f7 rr:logicalTable _:node1d6itc7g7x13 ;
+	rr:subjectMap _:node1d6itc7g7x14 .
+
+_:node1d6itc7g7x1 km-dev:hasSubjectMap _:node1d6itc7g7x14 .
+
+_:node1d6itc7g7x14 km-dev:isPartOfMapping _:node1d6itc7g7x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://example.org/nvt/classes#City1" ;
+	rr:class <http://example.org/nvt/classes#City> ;
+	rr:template "{ist ansässig Stadt}" .
+
+km-dev:TriplesMap_f148e20c-d725-4118-b237-025843024d08 a rr:TriplesMap .
+
+_:node1d6itc7g7x1 km-dev:hasTriplesMap km-dev:TriplesMap_f148e20c-d725-4118-b237-025843024d08 .
+
+km-dev:TriplesMap_f148e20c-d725-4118-b237-025843024d08 km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x15 rr:tableName "MASTER_19032019_GROUP_Gruppen_Ensembles" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasLogicalTable _:node1d6itc7g7x15 .
+
+km-dev:TriplesMap_f148e20c-d725-4118-b237-025843024d08 rr:logicalTable _:node1d6itc7g7x15 ;
+	rr:subjectMap _:node1d6itc7g7x16 .
+
+_:node1d6itc7g7x1 km-dev:hasSubjectMap _:node1d6itc7g7x16 .
+
+_:node1d6itc7g7x16 km-dev:isPartOfMapping _:node1d6itc7g7x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://xmlns.com/foaf/0.1/Document1" ;
+	rr:class foaf:Document ;
+	rr:template "{Website}" .
+
+km-dev:TriplesMap_b0ec0eac-32c6-4bba-8c9b-ec700b2872cb a rr:TriplesMap .
+
+_:node1d6itc7g7x1 km-dev:hasTriplesMap km-dev:TriplesMap_b0ec0eac-32c6-4bba-8c9b-ec700b2872cb .
+
+km-dev:TriplesMap_b0ec0eac-32c6-4bba-8c9b-ec700b2872cb km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x17 rr:tableName "MASTER_19032019_GROUP_Gruppen_Ensembles" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasLogicalTable _:node1d6itc7g7x17 .
+
+km-dev:TriplesMap_b0ec0eac-32c6-4bba-8c9b-ec700b2872cb rr:logicalTable _:node1d6itc7g7x17 ;
+	rr:subjectMap _:node1d6itc7g7x18 .
+
+_:node1d6itc7g7x1 km-dev:hasSubjectMap _:node1d6itc7g7x18 .
+
+_:node1d6itc7g7x18 km-dev:isPartOfMapping _:node1d6itc7g7x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.europeana.eu/schemas/edm/Agent1" ;
+	rr:class edm:Agent ;
+	rr:template "{WIKIDATA URI}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_ead5511a-a05d-4cf9-9047-2043bf9f41b6 rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_0cdde610-1048-4a72-910c-13d412a82eee a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_632e0c85-e5e4-413e-a17b-3ae14ece600d ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasObjectMap km-dev:RefObjectMap_0cdde610-1048-4a72-910c-13d412a82eee .
+
+km-dev:PredicateObjectMap_ead5511a-a05d-4cf9-9047-2043bf9f41b6 rr:objectMap km-dev:RefObjectMap_0cdde610-1048-4a72-910c-13d412a82eee .
+
+km-dev:TriplesMap_b0ec0eac-32c6-4bba-8c9b-ec700b2872cb rr:predicateObjectMap km-dev:PredicateObjectMap_ead5511a-a05d-4cf9-9047-2043bf9f41b6 .
+
+km-dev:PredicateObjectMap_ead5511a-a05d-4cf9-9047-2043bf9f41b6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ead5511a-a05d-4cf9-9047-2043bf9f41b6 .
+
+km-dev:TriplesMap_c3d55f9b-9d78-408a-a549-f4c8a4f26243 a rr:TriplesMap .
+
+_:node1d6itc7g7x1 km-dev:hasTriplesMap km-dev:TriplesMap_c3d55f9b-9d78-408a-a549-f4c8a4f26243 .
+
+km-dev:TriplesMap_c3d55f9b-9d78-408a-a549-f4c8a4f26243 km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x19 rr:tableName "MASTER_19032019_GROUP_Gruppen_Ensembles" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6itc7g7x1 .
+
+_:node1d6itc7g7x1 km-dev:hasLogicalTable _:node1d6itc7g7x19 .
+
+km-dev:TriplesMap_c3d55f9b-9d78-408a-a549-f4c8a4f26243 rr:logicalTable _:node1d6itc7g7x19 ;
+	rr:subjectMap _:node1d6itc7g7x20 .
+
+_:node1d6itc7g7x1 km-dev:hasSubjectMap _:node1d6itc7g7x20 .
+
+_:node1d6itc7g7x20 km-dev:isPartOfMapping _:node1d6itc7g7x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://example.org/nvt/classes#Country1" ;
+	rr:class <http://example.org/nvt/classes#Country> ;
+	rr:template "{ist ansässig Land}" .

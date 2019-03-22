@@ -1,0 +1,33 @@
+<http://localhost:8080/source/COL_Identifier> <http://purl.org/dc/terms/title> "Titel" .
+<http://localhost:8080/source/COL_Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Collection> .
+
+<http://localhost:8080/source/COL_Woche_des_Gestischen_Theaters_0000> <http://purl.org/dc/terms/title> "Woche des Gestischen Theaters" .
+<http://localhost:8080/source/COL_Woche_des_Gestischen_Theaters_0000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Collection> .
+
+<http://localhost:8080/source/COL_Woche_des_Gestischen_Theaters_1985> <http://purl.org/dc/terms/title> "Woche des Gestischen Theaters 1985" .
+<http://localhost:8080/source/COL_Woche_des_Gestischen_Theaters_1985> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Collection> .
+
+<http://localhost:8080/source/COL_Woche_des_Gestischen_Theaters_1986> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Collection> .
+<http://localhost:8080/source/COL_Woche_des_Gestischen_Theaters_1986> <http://purl.org/dc/terms/title> "Woche des Gestischen Theaters 1986" .
+
+<http://localhost:8080/source/COL_Woche_des_Gestischen_Theaters_1987> <http://purl.org/dc/terms/title> "Woche des Gestischen Theaters 1987" .
+<http://localhost:8080/source/COL_Woche_des_Gestischen_Theaters_1987> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Collection> .
+
+<http://localhost:8080/source/COL_Woche_des_Gestischen_Theaters_1988> <http://purl.org/dc/terms/title> "Woche des Gestischen Theaters 1988" .
+<http://localhost:8080/source/COL_Woche_des_Gestischen_Theaters_1988> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Collection> .
+
+<http://localhost:8080/source/COL_Woche_des_Gestischen_Theaters_1989> <http://purl.org/dc/terms/title> "Woche des Gestischen Theaters 1989" .
+<http://localhost:8080/source/COL_Woche_des_Gestischen_Theaters_1989> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Collection> .
+
+<http://localhost:8080/source/COL_Woche_des_Gestischen_Theaters_1990> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Collection> .
+<http://localhost:8080/source/COL_Woche_des_Gestischen_Theaters_1990> <http://purl.org/dc/terms/title> "Internationale Woche Gestisches Theater 1990" .
+
+<http://localhost:8080/source/COL_Eberhard_Kube> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Collection> .
+<http://localhost:8080/source/COL_Eberhard_Kube> <http://purl.org/dc/terms/title> "Pantomime Eberhard Kube" .
+
+<http://localhost:8080/source/COL_PT_PB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Collection> .
+<http://localhost:8080/source/COL_PT_PB> <http://purl.org/dc/terms/title> "Pantomimentheater vom Prenzlauer Berg" .
+
+<http://localhost:8080/source/COL_Theater_in_Bewegung__88> <http://purl.org/dc/terms/title> "Theater in Bewegung '88" .
+<http://localhost:8080/source/COL_Theater_in_Bewegung__88> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Collection> .
+

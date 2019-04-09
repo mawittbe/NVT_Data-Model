@@ -1,0 +1,1 @@
+Anpassungen von 19032019 im Karma Modell, aber gleiche Datengrundlage

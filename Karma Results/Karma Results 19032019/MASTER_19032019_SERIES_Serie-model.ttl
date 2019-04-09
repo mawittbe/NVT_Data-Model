@@ -1,0 +1,391 @@
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/3.0/> .
+@prefix korbo: <http://purl.org/net7/korbo/vocab#> .
+@prefix degrees: <http://purl.org/ontology/bibo/degrees/> .
+@prefix sqwrl: <http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix dcamns: <http://purl.org/dc/dcam/> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ecrm: <http://erlangen-crm.org/170309/> .
+@prefix rdfsns: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix reg: <http://metadataregistry.org/uri/profile/regap/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdakit: <http://metadataregistry.org/uri/profile/rdakit/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix crm-wrong: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix status: <http://purl.org/ontology/bibo/status/> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix dcns: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix karma: <http://isi.edu/integration/karma/ontologies/model/current#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix rdfns: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix location: <http://www.w3.org/2002/07/owl> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix schema: <http://schemas.talis.com/2005/address/schema#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1d6ipjmjsx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "MASTER_19032019_SERIES_Serie" ;
+	km-dev:modelPublicationTime "1553261517434"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"PROJEKT\"}],[{\"columnName\":\"Serienbeschreibung\"}],[{\"columnName\":\"Serientitel\"}],[{\"columnName\":\"Quelle der Beschreibung\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"PROJEKT\"}],[{\"columnName\":\"Serienbeschreibung\"}],[{\"columnName\":\"Serientitel\"}],[{\"columnName\":\"Quelle der Beschreibung\"}]]" ;
+	km-dev:hasModelLabel "MASTER_19032019_SERIES_Serie" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"PROJEKT\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#Series\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#Series1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#Series\",
+                    \"DomainId\": \"http://example.org/nvt/classes#Series1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#Series/Series1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PROJEKT\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PROJEKT\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Serientitel\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#Series\",
+                    \"DomainId\": \"http://example.org/nvt/classes#Series1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/title\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#Series/Series1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Serientitel\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Serientitel\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Serienbeschreibung\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#Series\",
+                    \"DomainId\": \"http://example.org/nvt/classes#Series1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/description\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#Series/Series1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Serienbeschreibung\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Serienbeschreibung\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Quelle der Beschreibung\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#Series\",
+                    \"DomainId\": \"http://example.org/nvt/classes#Series1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/description\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#Series/Series1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Quelle der Beschreibung\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Quelle der Beschreibung\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_ee7e1fb6-c006-488e-a9ac-b25f02371f00 a rr:TriplesMap .
+
+_:node1d6ipjmjsx1 km-dev:hasTriplesMap km-dev:TriplesMap_ee7e1fb6-c006-488e-a9ac-b25f02371f00 .
+
+km-dev:TriplesMap_ee7e1fb6-c006-488e-a9ac-b25f02371f00 km-dev:isPartOfMapping _:node1d6ipjmjsx1 .
+
+_:node1d6ipjmjsx2 rr:tableName "MASTER_19032019_SERIES_Serie" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6ipjmjsx1 .
+
+_:node1d6ipjmjsx1 km-dev:hasLogicalTable _:node1d6ipjmjsx2 .
+
+km-dev:TriplesMap_ee7e1fb6-c006-488e-a9ac-b25f02371f00 rr:logicalTable _:node1d6ipjmjsx2 ;
+	rr:subjectMap _:node1d6ipjmjsx3 .
+
+_:node1d6ipjmjsx1 km-dev:hasSubjectMap _:node1d6ipjmjsx3 .
+
+_:node1d6ipjmjsx3 km-dev:isPartOfMapping _:node1d6ipjmjsx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://example.org/nvt/classes#Series1" ;
+	rr:class <http://example.org/nvt/classes#Series> ;
+	rr:template "{PROJEKT}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_e0491f19-6aa1-4d55-94c2-9a69e7dd3116 rr:predicate terms:title .
+
+_:node1d6ipjmjsx4 rr:column "Serientitel" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6ipjmjsx1 .
+
+_:node1d6ipjmjsx1 km-dev:hasObjectMap _:node1d6ipjmjsx4 .
+
+km-dev:PredicateObjectMap_e0491f19-6aa1-4d55-94c2-9a69e7dd3116 rr:objectMap _:node1d6ipjmjsx4 .
+
+km-dev:TriplesMap_ee7e1fb6-c006-488e-a9ac-b25f02371f00 rr:predicateObjectMap km-dev:PredicateObjectMap_e0491f19-6aa1-4d55-94c2-9a69e7dd3116 .
+
+km-dev:PredicateObjectMap_e0491f19-6aa1-4d55-94c2-9a69e7dd3116 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6ipjmjsx1 .
+
+_:node1d6ipjmjsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e0491f19-6aa1-4d55-94c2-9a69e7dd3116 .
+
+km-dev:PredicateObjectMap_19b84d9b-dfc3-46c8-b9e3-7307e75eb788 rr:predicate terms:description .
+
+_:node1d6ipjmjsx5 rr:column "Serienbeschreibung" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6ipjmjsx1 .
+
+_:node1d6ipjmjsx1 km-dev:hasObjectMap _:node1d6ipjmjsx5 .
+
+km-dev:PredicateObjectMap_19b84d9b-dfc3-46c8-b9e3-7307e75eb788 rr:objectMap _:node1d6ipjmjsx5 .
+
+km-dev:TriplesMap_ee7e1fb6-c006-488e-a9ac-b25f02371f00 rr:predicateObjectMap km-dev:PredicateObjectMap_19b84d9b-dfc3-46c8-b9e3-7307e75eb788 .
+
+km-dev:PredicateObjectMap_19b84d9b-dfc3-46c8-b9e3-7307e75eb788 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6ipjmjsx1 .
+
+_:node1d6ipjmjsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_19b84d9b-dfc3-46c8-b9e3-7307e75eb788 .
+
+km-dev:PredicateObjectMap_0db14cb1-79e1-4390-94c6-532299380fe8 rr:predicate terms:description .
+
+_:node1d6ipjmjsx6 rr:column "Quelle der Beschreibung" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6ipjmjsx1 .
+
+_:node1d6ipjmjsx1 km-dev:hasObjectMap _:node1d6ipjmjsx6 .
+
+km-dev:PredicateObjectMap_0db14cb1-79e1-4390-94c6-532299380fe8 rr:objectMap _:node1d6ipjmjsx6 .
+
+km-dev:TriplesMap_ee7e1fb6-c006-488e-a9ac-b25f02371f00 rr:predicateObjectMap km-dev:PredicateObjectMap_0db14cb1-79e1-4390-94c6-532299380fe8 .
+
+km-dev:PredicateObjectMap_0db14cb1-79e1-4390-94c6-532299380fe8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6ipjmjsx1 .
+
+_:node1d6ipjmjsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0db14cb1-79e1-4390-94c6-532299380fe8 .

@@ -1,0 +1,839 @@
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/3.0/> .
+@prefix korbo: <http://purl.org/net7/korbo/vocab#> .
+@prefix degrees: <http://purl.org/ontology/bibo/degrees/> .
+@prefix sqwrl: <http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix dcamns: <http://purl.org/dc/dcam/> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfsns: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix ecrm: <http://erlangen-crm.org/current/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix reg: <http://metadataregistry.org/uri/profile/regap/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdakit: <http://metadataregistry.org/uri/profile/rdakit/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix crm-wrong: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix status: <http://purl.org/ontology/bibo/status/> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix dcns: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix karma: <http://isi.edu/integration/karma/ontologies/model/current#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix rdfns: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix location: <http://www.w3.org/2002/07/owl> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix schema: <http://schemas.talis.com/2005/address/schema#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1d6iqkn9ix1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "MASTER_19032019_CITY_Städte" ;
+	km-dev:modelPublicationTime "1553262599474"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"präferierter Stadtname\"}],[{\"columnName\":\"Stadt Identifier / geeinigte Schreibweise\"}],[{\"columnName\":\"Stadtname DE\"}],[{\"columnName\":\"LAND (Ref)\"}],[{\"columnName\":\"Stadtname EN\"}],[{\"columnName\":\"geo:LONG\"}],[{\"columnName\":\"geo:LAT\"}],[{\"columnName\":\"geonames URI\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"präferierter Stadtname\"}],[{\"columnName\":\"Stadt Identifier / geeinigte Schreibweise\"}],[{\"columnName\":\"Stadtname DE\"}],[{\"columnName\":\"LAND (Ref)\"}],[{\"columnName\":\"Stadtname EN\"}],[{\"columnName\":\"geo:LONG\"}],[{\"columnName\":\"geo:LAT\"}],[{\"columnName\":\"geonames URI\"}]]" ;
+	km-dev:hasModelLabel "MASTER_19032019_CITY_Städte" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Stadt Identifier / geeinigte Schreibweise\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#City\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#City1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#City\",
+                    \"DomainId\": \"http://example.org/nvt/classes#City1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#City/City1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Stadt Identifier / geeinigte Schreibweise\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Stadt Identifier / geeinigte Schreibweise\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"präferierter Stadtname\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#City\",
+                    \"DomainId\": \"http://example.org/nvt/classes#City1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#prefLabel\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#City/City1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"präferierter Stadtname\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"präferierter Stadtname\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Stadtname DE\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#City\",
+                    \"DomainId\": \"http://example.org/nvt/classes#City1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#altLabel\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#City/City1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"de\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Stadtname DE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Stadtname DE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Stadtname EN\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#City\",
+                    \"DomainId\": \"http://example.org/nvt/classes#City1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#altLabel\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#City/City1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"en\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Stadtname EN\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Stadtname EN\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"LAND (Ref)\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#Country\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#Country1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#Country\",
+                    \"DomainId\": \"http://example.org/nvt/classes#Country1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#Country/Country1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LAND (Ref)\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LAND (Ref)\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"geo:LAT\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#City\",
+                    \"DomainId\": \"http://example.org/nvt/classes#City1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2003/01/geo/wgs84_pos#lat\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#City/City1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geo:LAT\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geo:LAT\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"geo:LONG\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#City\",
+                    \"DomainId\": \"http://example.org/nvt/classes#City1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2003/01/geo/wgs84_pos#long\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#City/City1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geo:LONG\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geo:LONG\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"geonames URI\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Place\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Place1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.europeana.eu/schemas/edm/Place\",
+                    \"DomainId\": \"http://www.europeana.eu/schemas/edm/Place1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"edm:Place1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames URI\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames URI\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://example.org/nvt/classes#Country1\",
+                    \"edgeId\": \"http://erlangen-crm.org/170309/P89_falls_within\",
+                    \"edgeTargetUri\": \"http://example.org/nvt/classes#Country\",
+                    \"edgeSourceId\": \"http://example.org/nvt/classes#City1\",
+                    \"edgeSourceUri\": \"http://example.org/nvt/classes#City\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://example.org/nvt/classes#City1\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://example.org/nvt/classes#City\",
+                    \"edgeSourceId\": \"http://www.europeana.eu/schemas/edm/Place1\",
+                    \"edgeSourceUri\": \"http://www.europeana.eu/schemas/edm/Place\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_ae77d717-8185-436f-910f-5753d3585dd1 a rr:TriplesMap .
+
+_:node1d6iqkn9ix1 km-dev:hasTriplesMap km-dev:TriplesMap_ae77d717-8185-436f-910f-5753d3585dd1 .
+
+km-dev:TriplesMap_ae77d717-8185-436f-910f-5753d3585dd1 km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix2 rr:tableName "MASTER_19032019_CITY_Städte" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasLogicalTable _:node1d6iqkn9ix2 .
+
+km-dev:TriplesMap_ae77d717-8185-436f-910f-5753d3585dd1 rr:logicalTable _:node1d6iqkn9ix2 ;
+	rr:subjectMap _:node1d6iqkn9ix3 .
+
+_:node1d6iqkn9ix1 km-dev:hasSubjectMap _:node1d6iqkn9ix3 .
+
+_:node1d6iqkn9ix3 km-dev:isPartOfMapping _:node1d6iqkn9ix1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://example.org/nvt/classes#City1" ;
+	rr:class <http://example.org/nvt/classes#City> ;
+	rr:template "{Stadt Identifier / geeinigte Schreibweise}" .
+
+km-dev:PredicateObjectMap_165e5574-df0c-4a81-9b47-86cbe251f9bb rr:predicate skos:prefLabel .
+
+_:node1d6iqkn9ix4 rr:column "präferierter Stadtname" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasObjectMap _:node1d6iqkn9ix4 .
+
+km-dev:PredicateObjectMap_165e5574-df0c-4a81-9b47-86cbe251f9bb rr:objectMap _:node1d6iqkn9ix4 .
+
+km-dev:TriplesMap_ae77d717-8185-436f-910f-5753d3585dd1 rr:predicateObjectMap km-dev:PredicateObjectMap_165e5574-df0c-4a81-9b47-86cbe251f9bb .
+
+km-dev:PredicateObjectMap_165e5574-df0c-4a81-9b47-86cbe251f9bb a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_165e5574-df0c-4a81-9b47-86cbe251f9bb .
+
+km-dev:PredicateObjectMap_197c839d-b497-4cee-910b-7a98999c24fa rr:predicate skos:altLabel .
+
+_:node1d6iqkn9ix5 rr:column "Stadtname DE" ;
+	a rr:ObjectMap ;
+	rr:language "de" ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasObjectMap _:node1d6iqkn9ix5 .
+
+km-dev:PredicateObjectMap_197c839d-b497-4cee-910b-7a98999c24fa rr:objectMap _:node1d6iqkn9ix5 .
+
+km-dev:TriplesMap_ae77d717-8185-436f-910f-5753d3585dd1 rr:predicateObjectMap km-dev:PredicateObjectMap_197c839d-b497-4cee-910b-7a98999c24fa .
+
+km-dev:PredicateObjectMap_197c839d-b497-4cee-910b-7a98999c24fa a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_197c839d-b497-4cee-910b-7a98999c24fa .
+
+km-dev:PredicateObjectMap_f5c6ad94-c4e2-4ef7-bdc1-c785b3848487 rr:predicate skos:altLabel .
+
+_:node1d6iqkn9ix6 rr:column "Stadtname EN" ;
+	a rr:ObjectMap ;
+	rr:language "en" ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasObjectMap _:node1d6iqkn9ix6 .
+
+km-dev:PredicateObjectMap_f5c6ad94-c4e2-4ef7-bdc1-c785b3848487 rr:objectMap _:node1d6iqkn9ix6 .
+
+km-dev:TriplesMap_ae77d717-8185-436f-910f-5753d3585dd1 rr:predicateObjectMap km-dev:PredicateObjectMap_f5c6ad94-c4e2-4ef7-bdc1-c785b3848487 .
+
+km-dev:PredicateObjectMap_f5c6ad94-c4e2-4ef7-bdc1-c785b3848487 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f5c6ad94-c4e2-4ef7-bdc1-c785b3848487 .
+
+km-dev:PredicateObjectMap_086a56f4-5d9e-4859-966e-2679c5574fd9 rr:predicate <http://erlangen-crm.org/170309/P89_falls_within> .
+
+km-dev:RefObjectMap_ca080765-f87f-411a-b5a7-f22a0bc902d3 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_75540149-5ea6-4b1e-a752-c6b28be2fa85 ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasObjectMap km-dev:RefObjectMap_ca080765-f87f-411a-b5a7-f22a0bc902d3 .
+
+km-dev:PredicateObjectMap_086a56f4-5d9e-4859-966e-2679c5574fd9 rr:objectMap km-dev:RefObjectMap_ca080765-f87f-411a-b5a7-f22a0bc902d3 .
+
+km-dev:TriplesMap_ae77d717-8185-436f-910f-5753d3585dd1 rr:predicateObjectMap km-dev:PredicateObjectMap_086a56f4-5d9e-4859-966e-2679c5574fd9 .
+
+km-dev:PredicateObjectMap_086a56f4-5d9e-4859-966e-2679c5574fd9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_086a56f4-5d9e-4859-966e-2679c5574fd9 .
+
+km-dev:PredicateObjectMap_5a82ca95-cbdb-4fb1-8617-6889830a0e79 rr:predicate wgs84_pos:lat .
+
+_:node1d6iqkn9ix7 rr:column "geo:LAT" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasObjectMap _:node1d6iqkn9ix7 .
+
+km-dev:PredicateObjectMap_5a82ca95-cbdb-4fb1-8617-6889830a0e79 rr:objectMap _:node1d6iqkn9ix7 .
+
+km-dev:TriplesMap_ae77d717-8185-436f-910f-5753d3585dd1 rr:predicateObjectMap km-dev:PredicateObjectMap_5a82ca95-cbdb-4fb1-8617-6889830a0e79 .
+
+km-dev:PredicateObjectMap_5a82ca95-cbdb-4fb1-8617-6889830a0e79 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5a82ca95-cbdb-4fb1-8617-6889830a0e79 .
+
+km-dev:PredicateObjectMap_3b6b9640-ce9e-4b53-bb8a-ffbc95431d3e rr:predicate wgs84_pos:long .
+
+_:node1d6iqkn9ix8 rr:column "geo:LONG" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasObjectMap _:node1d6iqkn9ix8 .
+
+km-dev:PredicateObjectMap_3b6b9640-ce9e-4b53-bb8a-ffbc95431d3e rr:objectMap _:node1d6iqkn9ix8 .
+
+km-dev:TriplesMap_ae77d717-8185-436f-910f-5753d3585dd1 rr:predicateObjectMap km-dev:PredicateObjectMap_3b6b9640-ce9e-4b53-bb8a-ffbc95431d3e .
+
+km-dev:PredicateObjectMap_3b6b9640-ce9e-4b53-bb8a-ffbc95431d3e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3b6b9640-ce9e-4b53-bb8a-ffbc95431d3e .
+
+km-dev:TriplesMap_75540149-5ea6-4b1e-a752-c6b28be2fa85 a rr:TriplesMap .
+
+_:node1d6iqkn9ix1 km-dev:hasTriplesMap km-dev:TriplesMap_75540149-5ea6-4b1e-a752-c6b28be2fa85 .
+
+km-dev:TriplesMap_75540149-5ea6-4b1e-a752-c6b28be2fa85 km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix9 rr:tableName "MASTER_19032019_CITY_Städte" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasLogicalTable _:node1d6iqkn9ix9 .
+
+km-dev:TriplesMap_75540149-5ea6-4b1e-a752-c6b28be2fa85 rr:logicalTable _:node1d6iqkn9ix9 ;
+	rr:subjectMap _:node1d6iqkn9ix10 .
+
+_:node1d6iqkn9ix1 km-dev:hasSubjectMap _:node1d6iqkn9ix10 .
+
+_:node1d6iqkn9ix10 km-dev:isPartOfMapping _:node1d6iqkn9ix1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://example.org/nvt/classes#Country1" ;
+	rr:class <http://example.org/nvt/classes#Country> ;
+	rr:template "{LAND (Ref)}" .
+
+km-dev:TriplesMap_2c4972f2-bbe3-4eb7-ae9f-ccac87dddf62 a rr:TriplesMap .
+
+_:node1d6iqkn9ix1 km-dev:hasTriplesMap km-dev:TriplesMap_2c4972f2-bbe3-4eb7-ae9f-ccac87dddf62 .
+
+km-dev:TriplesMap_2c4972f2-bbe3-4eb7-ae9f-ccac87dddf62 km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix11 rr:tableName "MASTER_19032019_CITY_Städte" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasLogicalTable _:node1d6iqkn9ix11 .
+
+km-dev:TriplesMap_2c4972f2-bbe3-4eb7-ae9f-ccac87dddf62 rr:logicalTable _:node1d6iqkn9ix11 ;
+	rr:subjectMap _:node1d6iqkn9ix12 .
+
+_:node1d6iqkn9ix1 km-dev:hasSubjectMap _:node1d6iqkn9ix12 .
+
+_:node1d6iqkn9ix12 km-dev:isPartOfMapping _:node1d6iqkn9ix1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.europeana.eu/schemas/edm/Place1" ;
+	rr:class edm:Place ;
+	rr:template "{geonames URI}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_6a574a53-d9c4-4114-83c3-d18babd2e887 rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_fe247c7f-7ecc-4d31-b144-43156ea1c490 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_ae77d717-8185-436f-910f-5753d3585dd1 ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasObjectMap km-dev:RefObjectMap_fe247c7f-7ecc-4d31-b144-43156ea1c490 .
+
+km-dev:PredicateObjectMap_6a574a53-d9c4-4114-83c3-d18babd2e887 rr:objectMap km-dev:RefObjectMap_fe247c7f-7ecc-4d31-b144-43156ea1c490 .
+
+km-dev:TriplesMap_2c4972f2-bbe3-4eb7-ae9f-ccac87dddf62 rr:predicateObjectMap km-dev:PredicateObjectMap_6a574a53-d9c4-4114-83c3-d18babd2e887 .
+
+km-dev:PredicateObjectMap_6a574a53-d9c4-4114-83c3-d18babd2e887 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqkn9ix1 .
+
+_:node1d6iqkn9ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6a574a53-d9c4-4114-83c3-d18babd2e887 .

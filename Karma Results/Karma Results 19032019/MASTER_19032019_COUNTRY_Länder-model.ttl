@@ -1,0 +1,753 @@
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/3.0/> .
+@prefix korbo: <http://purl.org/net7/korbo/vocab#> .
+@prefix degrees: <http://purl.org/ontology/bibo/degrees/> .
+@prefix sqwrl: <http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix dcamns: <http://purl.org/dc/dcam/> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfsns: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix ecrm: <http://erlangen-crm.org/current/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix reg: <http://metadataregistry.org/uri/profile/regap/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdakit: <http://metadataregistry.org/uri/profile/rdakit/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix crm-wrong: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix status: <http://purl.org/ontology/bibo/status/> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix dcns: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix karma: <http://isi.edu/integration/karma/ontologies/model/current#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix rdfns: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix location: <http://www.w3.org/2002/07/owl> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix schema: <http://schemas.talis.com/2005/address/schema#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1d6iqvk44x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "xMASTER_19032019_COUNTRY_Länder" ;
+	km-dev:modelPublicationTime "1553262956677"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"geonames URI\"}],[{\"columnName\":\"geo:LONG\"}],[{\"columnName\":\"geo:LAT\"}],[{\"columnName\":\"Ländername EN\"}],[{\"columnName\":\"Ländername DE\"}],[{\"columnName\":\"präferierter Ländername\"}],[{\"columnName\":\"Länder Identifier / geeinigte Schreibweise\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"geonames URI\"}],[{\"columnName\":\"geo:LONG\"}],[{\"columnName\":\"geo:LAT\"}],[{\"columnName\":\"Ländername EN\"}],[{\"columnName\":\"Ländername DE\"}],[{\"columnName\":\"präferierter Ländername\"}],[{\"columnName\":\"Länder Identifier / geeinigte Schreibweise\"}]]" ;
+	km-dev:hasModelLabel "xMASTER_19032019_COUNTRY_Länder" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Länder Identifier / geeinigte Schreibweise\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#Country\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#Country1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#Country\",
+                    \"DomainId\": \"http://example.org/nvt/classes#Country1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#Country/Country1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Länder Identifier / geeinigte Schreibweise\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Länder Identifier / geeinigte Schreibweise\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"präferierter Ländername\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#Country\",
+                    \"DomainId\": \"http://example.org/nvt/classes#Country1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#prefLabel\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#Country/Country1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"präferierter Ländername\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"präferierter Ländername\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Ländername DE\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#Country\",
+                    \"DomainId\": \"http://example.org/nvt/classes#Country1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#altLabel\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#Country/Country1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"de\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Ländername DE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Ländername DE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Ländername EN\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#Country\",
+                    \"DomainId\": \"http://example.org/nvt/classes#Country1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#altLabel\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#Country1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"en\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Ländername EN\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Ländername EN\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"geo:LAT\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#Country\",
+                    \"DomainId\": \"http://example.org/nvt/classes#Country1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2003/01/geo/wgs84_pos#lat\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#Country/Country1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geo:LAT\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geo:LAT\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"geo:LONG\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#Country\",
+                    \"DomainId\": \"http://example.org/nvt/classes#Country1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2003/01/geo/wgs84_pos#long\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#Country/Country1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geo:LONG\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geo:LONG\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"geonames URI\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#Country\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://example.org/nvt/classes#Country2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://example.org/nvt/classes#Country\",
+                    \"DomainId\": \"http://example.org/nvt/classes#Country2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://example.org/nvt/classes#Country/Country2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames URI\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames URI\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"geonames URI\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Place\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.europeana.eu/schemas/edm/Place1\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames URI\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames URI\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://example.org/nvt/classes#Country1\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://example.org/nvt/classes#Country\",
+                    \"edgeSourceId\": \"http://www.europeana.eu/schemas/edm/Place1\",
+                    \"edgeSourceUri\": \"http://www.europeana.eu/schemas/edm/Place\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_37e4ef52-34d8-4850-8793-de07619bb454 a rr:TriplesMap .
+
+_:node1d6iqvk44x1 km-dev:hasTriplesMap km-dev:TriplesMap_37e4ef52-34d8-4850-8793-de07619bb454 .
+
+km-dev:TriplesMap_37e4ef52-34d8-4850-8793-de07619bb454 km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x2 rr:tableName "xMASTER_19032019_COUNTRY_Länder" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x1 km-dev:hasLogicalTable _:node1d6iqvk44x2 .
+
+km-dev:TriplesMap_37e4ef52-34d8-4850-8793-de07619bb454 rr:logicalTable _:node1d6iqvk44x2 ;
+	rr:subjectMap _:node1d6iqvk44x3 .
+
+_:node1d6iqvk44x1 km-dev:hasSubjectMap _:node1d6iqvk44x3 .
+
+_:node1d6iqvk44x3 km-dev:isPartOfMapping _:node1d6iqvk44x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://example.org/nvt/classes#Country1" ;
+	rr:class <http://example.org/nvt/classes#Country> ;
+	rr:template "{Länder Identifier / geeinigte Schreibweise}" .
+
+km-dev:PredicateObjectMap_bd912ed5-0570-4908-955d-2d2c4bc99a9a rr:predicate skos:prefLabel .
+
+_:node1d6iqvk44x4 rr:column "präferierter Ländername" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x1 km-dev:hasObjectMap _:node1d6iqvk44x4 .
+
+km-dev:PredicateObjectMap_bd912ed5-0570-4908-955d-2d2c4bc99a9a rr:objectMap _:node1d6iqvk44x4 .
+
+km-dev:TriplesMap_37e4ef52-34d8-4850-8793-de07619bb454 rr:predicateObjectMap km-dev:PredicateObjectMap_bd912ed5-0570-4908-955d-2d2c4bc99a9a .
+
+km-dev:PredicateObjectMap_bd912ed5-0570-4908-955d-2d2c4bc99a9a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bd912ed5-0570-4908-955d-2d2c4bc99a9a .
+
+km-dev:PredicateObjectMap_dd73f139-a5f8-4c52-9193-5b49e7bf170e rr:predicate skos:altLabel .
+
+_:node1d6iqvk44x5 rr:column "Ländername EN" ;
+	a rr:ObjectMap ;
+	rr:language "en" ;
+	km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x1 km-dev:hasObjectMap _:node1d6iqvk44x5 .
+
+km-dev:PredicateObjectMap_dd73f139-a5f8-4c52-9193-5b49e7bf170e rr:objectMap _:node1d6iqvk44x5 .
+
+km-dev:TriplesMap_37e4ef52-34d8-4850-8793-de07619bb454 rr:predicateObjectMap km-dev:PredicateObjectMap_dd73f139-a5f8-4c52-9193-5b49e7bf170e .
+
+km-dev:PredicateObjectMap_dd73f139-a5f8-4c52-9193-5b49e7bf170e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_dd73f139-a5f8-4c52-9193-5b49e7bf170e .
+
+km-dev:PredicateObjectMap_b0ebe453-d844-41a9-9bdf-442bbc347671 rr:predicate skos:altLabel .
+
+_:node1d6iqvk44x6 rr:column "Ländername DE" ;
+	a rr:ObjectMap ;
+	rr:language "de" ;
+	km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x1 km-dev:hasObjectMap _:node1d6iqvk44x6 .
+
+km-dev:PredicateObjectMap_b0ebe453-d844-41a9-9bdf-442bbc347671 rr:objectMap _:node1d6iqvk44x6 .
+
+km-dev:TriplesMap_37e4ef52-34d8-4850-8793-de07619bb454 rr:predicateObjectMap km-dev:PredicateObjectMap_b0ebe453-d844-41a9-9bdf-442bbc347671 .
+
+km-dev:PredicateObjectMap_b0ebe453-d844-41a9-9bdf-442bbc347671 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b0ebe453-d844-41a9-9bdf-442bbc347671 .
+
+km-dev:PredicateObjectMap_294d179d-ef8a-47c5-a573-c88aa9ae810f rr:predicate wgs84_pos:long .
+
+_:node1d6iqvk44x7 rr:column "geo:LONG" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x1 km-dev:hasObjectMap _:node1d6iqvk44x7 .
+
+km-dev:PredicateObjectMap_294d179d-ef8a-47c5-a573-c88aa9ae810f rr:objectMap _:node1d6iqvk44x7 .
+
+km-dev:TriplesMap_37e4ef52-34d8-4850-8793-de07619bb454 rr:predicateObjectMap km-dev:PredicateObjectMap_294d179d-ef8a-47c5-a573-c88aa9ae810f .
+
+km-dev:PredicateObjectMap_294d179d-ef8a-47c5-a573-c88aa9ae810f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_294d179d-ef8a-47c5-a573-c88aa9ae810f .
+
+km-dev:PredicateObjectMap_040339c4-32dd-434e-822f-eb31813f7a66 rr:predicate wgs84_pos:lat .
+
+_:node1d6iqvk44x8 rr:column "geo:LAT" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x1 km-dev:hasObjectMap _:node1d6iqvk44x8 .
+
+km-dev:PredicateObjectMap_040339c4-32dd-434e-822f-eb31813f7a66 rr:objectMap _:node1d6iqvk44x8 .
+
+km-dev:TriplesMap_37e4ef52-34d8-4850-8793-de07619bb454 rr:predicateObjectMap km-dev:PredicateObjectMap_040339c4-32dd-434e-822f-eb31813f7a66 .
+
+km-dev:PredicateObjectMap_040339c4-32dd-434e-822f-eb31813f7a66 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_040339c4-32dd-434e-822f-eb31813f7a66 .
+
+km-dev:TriplesMap_3bff02ab-c539-47ce-8166-cbd71d00fdb6 a rr:TriplesMap .
+
+_:node1d6iqvk44x1 km-dev:hasTriplesMap km-dev:TriplesMap_3bff02ab-c539-47ce-8166-cbd71d00fdb6 .
+
+km-dev:TriplesMap_3bff02ab-c539-47ce-8166-cbd71d00fdb6 km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x9 rr:tableName "xMASTER_19032019_COUNTRY_Länder" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x1 km-dev:hasLogicalTable _:node1d6iqvk44x9 .
+
+km-dev:TriplesMap_3bff02ab-c539-47ce-8166-cbd71d00fdb6 rr:logicalTable _:node1d6iqvk44x9 ;
+	rr:subjectMap _:node1d6iqvk44x10 .
+
+_:node1d6iqvk44x1 km-dev:hasSubjectMap _:node1d6iqvk44x10 .
+
+_:node1d6iqvk44x10 km-dev:isPartOfMapping _:node1d6iqvk44x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.europeana.eu/schemas/edm/Place1" ;
+	rr:class edm:Place ;
+	rr:template "{geonames URI}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_ab65a471-3b60-4cff-81f8-a105fcc3213a rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_1ddd882e-2107-4f31-94ea-af3d1065923f a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_37e4ef52-34d8-4850-8793-de07619bb454 ;
+	km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x1 km-dev:hasObjectMap km-dev:RefObjectMap_1ddd882e-2107-4f31-94ea-af3d1065923f .
+
+km-dev:PredicateObjectMap_ab65a471-3b60-4cff-81f8-a105fcc3213a rr:objectMap km-dev:RefObjectMap_1ddd882e-2107-4f31-94ea-af3d1065923f .
+
+km-dev:TriplesMap_3bff02ab-c539-47ce-8166-cbd71d00fdb6 rr:predicateObjectMap km-dev:PredicateObjectMap_ab65a471-3b60-4cff-81f8-a105fcc3213a .
+
+km-dev:PredicateObjectMap_ab65a471-3b60-4cff-81f8-a105fcc3213a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d6iqvk44x1 .
+
+_:node1d6iqvk44x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ab65a471-3b60-4cff-81f8-a105fcc3213a .

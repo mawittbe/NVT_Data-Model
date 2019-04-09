@@ -1,0 +1,189 @@
+<http://localhost:8080/source/LOC_DTKS> <http://www.w3.org/2004/02/skos/core#altLabel> "Deutsches Theater Berlin" .
+<http://localhost:8080/source/LOC_DTKS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_DTKS> <http://erlangen-crm.org/170309/P74i_is_current_or_former_residence_of> <http://localhost:8080/source/LOC_DT> .
+<http://localhost:8080/source/LOC_DTKS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kammerspiele" .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_DTKS> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/DDR> .
+<http://localhost:8080/source/LOC_DT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/LOC_DTKS> <http://rdaregistry.info/Elements/u/P60512> "Schumannstraße 13A, 10117 Berlin" .
+<http://localhost:8080/source/LOC_DTKS> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin_Ost> .
+
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_DTFoyer> <http://erlangen-crm.org/170309/P74i_is_current_or_former_residence_of> <http://localhost:8080/source/LOC_DT> .
+<http://localhost:8080/source/LOC_DTFoyer> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin_Ost> .
+<http://localhost:8080/source/LOC_DTFoyer> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/DDR> .
+<http://localhost:8080/source/LOC_DTFoyer> <http://rdaregistry.info/Elements/u/P60512> "Schumannstraße 13A, 10117 Berlin" .
+<http://localhost:8080/source/LOC_DTFoyer> <http://www.w3.org/2004/02/skos/core#altLabel> "Deutsches Theater Berlin" .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_DT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/LOC_DTFoyer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_DTFoyer> <http://www.w3.org/2004/02/skos/core#prefLabel> "Foyer" .
+
+<http://localhost:8080/source/LOC_Ei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_Ei> <http://www.w3.org/2004/02/skos/core#altLabel> "Kleine Bühne im Friedrichstadtpalast" .
+<http://localhost:8080/source/LOC_Ei> <http://www.w3.org/2004/02/skos/core#prefLabel> "Das Ei" .
+
+<http://localhost:8080/source/LOC_KaF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_KaF> <http://www.w3.org/2004/02/skos/core#altLabel> "Filmtheater Friedrichshain" .
+<http://localhost:8080/source/LOC_KaF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kino am Friedrichshain" .
+
+<http://localhost:8080/source/LOC_TiP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Theater im Palast" .
+<http://localhost:8080/source/LOC_TiP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+
+<http://localhost:8080/source/LOC_ProbenbuehneBE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Probenbühne des Berliner Ensemble" .
+<http://localhost:8080/source/LOC_ProbenbuehneBE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+
+<http://localhost:8080/source/LOC_ApollosaalDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_ApollosaalDS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Apollosaal der Deutschen Staatsoper" .
+
+<http://localhost:8080/source/LOC_Zirkuszelt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+
+<http://localhost:8080/source/LOC_Galerie_am_Prater> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin_Ost> .
+<http://localhost:8080/source/LOC_Galerie_am_Prater> <http://www.w3.org/2004/02/skos/core#prefLabel> "Galerie am Prater" .
+<http://localhost:8080/source/LOC_Galerie_am_Prater> <http://rdaregistry.info/Elements/u/P60512> "Kastanienalle 100, 1058 Berlin" .
+<http://localhost:8080/source/LOC_Galerie_am_Prater> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/DDR> .
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_Galerie_am_Prater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_Galerie_am_Prater> <http://purl.org/dc/terms/description> "Galerie des Kreiskulturhaus Prater (nach 1989 Prater Berlin)" .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_Galerie_am_Prater> <http://www.w3.org/2004/02/skos/core#note> "Galerie des Kreiskulturhaus Prater (nach 1989 Prater Berlin)" .
+
+<http://localhost:8080/source/LOC_Kreiskulturhaus_Prater> <http://rdaregistry.info/Elements/u/P60512> "Kastanienalle 7-9,  1058 Berlin" .
+<http://localhost:8080/source/LOC_Kreiskulturhaus_Prater> <http://www.w3.org/2004/02/skos/core#note> "Der Prater Berlin vor 1989" .
+<http://localhost:8080/source/LOC_Kreiskulturhaus_Prater> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/DDR> .
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_Kreiskulturhaus_Prater> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin_Ost> .
+<http://localhost:8080/source/LOC_Kreiskulturhaus_Prater> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kreiskulturhaus Prater" .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_Kreiskulturhaus_Prater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_Kreiskulturhaus_Prater> <http://purl.org/dc/terms/description> "Der Prater Berlin vor 1989" .
+
+<http://localhost:8080/source/LOC_Studio_Pantomimen_Theater> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin_Ost> .
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_Studio_Pantomimen_Theater> <http://rdaregistry.info/Elements/u/P60512> "Schönhauser Alle 73, 1058 Berlin" .
+<http://localhost:8080/source/LOC_Studio_Pantomimen_Theater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_Studio_Pantomimen_Theater> <http://www.w3.org/2004/02/skos/core#prefLabel> "Studio Pantomimentheater" .
+<http://localhost:8080/source/LOC_Studio_Pantomimen_Theater> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/DDR> .
+
+<http://localhost:8080/source/LOC_bat> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin_Ost> .
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_bat> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/DDR> .
+<http://localhost:8080/source/LOC_bat> <http://www.w3.org/2004/02/skos/core#prefLabel> "bat" .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_bat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_bat> <http://rdaregistry.info/Elements/u/P60512> "Belforter Straße 15, 1055 Berlin" .
+
+<http://localhost:8080/source/LOC_Filmtheater_am_Friedrichshain> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin_Ost> .
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_Filmtheater_am_Friedrichshain> <http://www.w3.org/2004/02/skos/core#prefLabel> "Filmtheater am Friedrichshain" .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_Filmtheater_am_Friedrichshain> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/DDR> .
+<http://localhost:8080/source/LOC_Filmtheater_am_Friedrichshain> <http://rdaregistry.info/Elements/u/P60512> "Bötzowstraße 1-5, 1055 Berlin" .
+<http://localhost:8080/source/LOC_Filmtheater_am_Friedrichshain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_Jugendclub_Erich_Franz> <http://www.w3.org/2004/02/skos/core#prefLabel> "Jugendclub \"Erich Franz\"" .
+<http://localhost:8080/source/LOC_Jugendclub_Erich_Franz> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin_Ost> .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_Jugendclub_Erich_Franz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_Jugendclub_Erich_Franz> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/DDR> .
+<http://localhost:8080/source/LOC_Jugendclub_Erich_Franz> <http://rdaregistry.info/Elements/u/P60512> "Schönhauser Allee 36-39, 1058 Berlin" .
+
+<http://localhost:8080/source/LOC_Theater_unterm_Dach> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/DDR> .
+<http://localhost:8080/source/LOC_Theater_unterm_Dach> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin_Ost> .
+<http://localhost:8080/source/LOC_Theater_unterm_Dach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_Theater_unterm_Dach> <http://rdaregistry.info/Elements/u/P60512> "Danziger Straße 101, 1020 Berlin" .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_Theater_unterm_Dach> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kulturhaus im Ernst-Thälmann-Park: Theater unterm Dach" .
+
+<http://localhost:8080/source/LOC_Wabe> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin_Ost> .
+<http://localhost:8080/source/LOC_Wabe> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/DDR> .
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_Wabe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_Wabe> <http://rdaregistry.info/Elements/u/P60512> "Danziger Straße 101, 1020 Berlin" .
+<http://localhost:8080/source/LOC_Wabe> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kulturhaus im Ernst-Thälmann-Park: Wabe" .
+
+<http://localhost:8080/source/LOC_Volksbuehne> <http://rdaregistry.info/Elements/u/P60512> "Rosa-Luxemburg-Platz, 1026 Berlin" .
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_Volksbuehne> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/DDR> .
+<http://localhost:8080/source/LOC_Volksbuehne> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin_Ost> .
+<http://localhost:8080/source/LOC_Volksbuehne> <http://www.w3.org/2004/02/skos/core#prefLabel> "Volksbühne am Rosa-Luxemburg-Platz" .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_Volksbuehne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+
+<http://localhost:8080/source/LOC_Theater_50> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Dresden> .
+<http://localhost:8080/source/LOC_Theater_50> <http://www.w3.org/2004/02/skos/core#note> "Spielstätte der DDR-Pantomimengruppe \"Salto Vitale\"" .
+<http://localhost:8080/source/LOC_Theater_50> <http://www.w3.org/2004/02/skos/core#prefLabel> "Theater 50" .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/Dresden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_Theater_50> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/DDR> .
+<http://localhost:8080/source/LOC_Theater_50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_Theater_50> <http://purl.org/dc/terms/description> "Spielstätte der DDR-Pantomimengruppe \"Salto Vitale\"" .
+
+<http://localhost:8080/source/LOC_Hebbel_Theater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_Hebbel_Theater> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin> .
+<http://localhost:8080/source/LOC_Hebbel_Theater> <http://rdaregistry.info/Elements/u/P60512> "Stresemannstraße 29, 1 Berlin 61" .
+<http://localhost:8080/source/Berlin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/BRD_002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_Hebbel_Theater> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hebbel-Theater Berlin" .
+<http://localhost:8080/source/LOC_Hebbel_Theater> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/BRD_002> .
+
+<http://localhost:8080/source/LOC_Kuenstlerhaus_Bethanien> <http://rdaregistry.info/Elements/u/P60512> "Mariannenplatz 2, 1 Berlin 36" .
+<http://localhost:8080/source/LOC_Kuenstlerhaus_Bethanien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_Kuenstlerhaus_Bethanien> <http://www.w3.org/2004/02/skos/core#prefLabel> "Künstlerhaus Bethanien" .
+<http://localhost:8080/source/LOC_Kuenstlerhaus_Bethanien> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin> .
+<http://localhost:8080/source/LOC_Kuenstlerhaus_Bethanien> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/BRD_002> .
+<http://localhost:8080/source/Berlin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/BRD_002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+
+<http://localhost:8080/source/LOC_Zeiss_Grossplanetarium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_Zeiss_Grossplanetarium> <http://www.w3.org/2004/02/skos/core#prefLabel> "Zeiss-Großplanetarium Berlin" .
+
+<http://localhost:8080/source/LOC_Pratergarten> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_Pratergarten> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kreiskulturhaus Prater: Pratergarten" .
+
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_DTKS_Foyer> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/DDR> .
+<http://localhost:8080/source/LOC_DTKS_Foyer> <http://rdaregistry.info/Elements/u/P60512> "Schumannstraße 13A, 10117 Berlin" .
+<http://localhost:8080/source/LOC_DTKS_Foyer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_DTKS_Foyer> <http://www.w3.org/2004/02/skos/core#prefLabel> "Foyer der Kammerspiele" .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_DT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/LOC_DTKS_Foyer> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin_Ost> .
+<http://localhost:8080/source/LOC_DTKS_Foyer> <http://erlangen-crm.org/170309/P74i_is_current_or_former_residence_of> <http://localhost:8080/source/LOC_DT> .
+
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_DT> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/DDR> .
+<http://localhost:8080/source/LOC_DT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_DT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Deutsches Theater" .
+<http://localhost:8080/source/LOC_DT> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin_Ost> .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_DT> <http://rdaregistry.info/Elements/u/P60512> "Schumannstraße 13A, 10117 Berlin" .
+<http://localhost:8080/source/LOC_DT> <http://www.w3.org/2004/02/skos/core#altLabel> "Staatstheater der DDR" .
+
+<http://localhost:8080/source/Bruenn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_Bruenner_Kuenstlerhaus> <http://www.w3.org/2004/02/skos/core#altLabel> "Brünner Künstlerhaus" .
+<http://localhost:8080/source/LOC_Bruenner_Kuenstlerhaus> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Tschechoslowakei> .
+<http://localhost:8080/source/LOC_Bruenner_Kuenstlerhaus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_Bruenner_Kuenstlerhaus> <http://www.w3.org/2004/02/skos/core#prefLabel> "D?m um?ní" .
+<http://localhost:8080/source/Tschechoslowakei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_Bruenner_Kuenstlerhaus> <http://rdaregistry.info/Elements/u/P60512> "Malinovského nám?stí 2 602 00 Brno" .
+<http://localhost:8080/source/LOC_Bruenner_Kuenstlerhaus> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Bruenn> .
+
+<http://localhost:8080/source/LOC_HdjT> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/Berlin_Ost> .
+<http://localhost:8080/source/LOC_HdjT> <http://rdaregistry.info/Elements/u/P60512> "Klosterstraße 68, 10179 Berlin" .
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/LOC_HdjT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Haus der jungen Talente" .
+<http://localhost:8080/source/LOC_HdjT> <http://www.w3.org/2004/02/skos/core#note> "Am 07.03.1954 (Gründungstag der FDJ) eröffnetes zentrales Jugendkulturzentrum für die \"Berliner Jugend\" im ehemaligen \"Podelwilschen Palais\", das mit Mitteln des Berliner Magistrats und der FDJ finanziert wurde. " .
+<http://localhost:8080/source/LOC_HdjT> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "13412511" .
+<http://localhost:8080/source/LOC_HdjT> <http://purl.org/dc/terms/description> "Am 07.03.1954 (Gründungstag der FDJ) eröffnetes zentrales Jugendkulturzentrum für die \"Berliner Jugend\" im ehemaligen \"Podelwilschen Palais\", das mit Mitteln des Berliner Magistrats und der FDJ finanziert wurde. " .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/LOC_HdjT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/LOC_HdjT> <http://purl.org/dc/terms/description> "http://www.hdjt.org/geschichte/" .
+<http://localhost:8080/source/LOC_HdjT> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "52517698" .
+<http://localhost:8080/source/LOC_HdjT> <http://purl.org/dc/terms/isPartOf> <http://localhost:8080/source/DDR> .
+

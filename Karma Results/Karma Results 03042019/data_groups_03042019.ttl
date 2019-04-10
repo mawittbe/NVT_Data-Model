@@ -1,58 +1,58 @@
-<http://localhost:8080/source/G_Alfred_Spol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Alfred_Spol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Alfred_Spol> <http://www.w3.org/2004/02/skos/core#prefLabel> "Alfred & Spol" .
 <http://localhost:8080/source/G_Alfred_Spol> <http://purl.org/dc/terms/description> "Das Mimentheater \"Alfred & Spol\" wurde von Ctibor Turba, einem der führenden Schauspieler und Pantomimen der CSFR gegründet. Turba studierte an der Philosophischen Fakultät Prag und an der Schule Jacques Lecoq in Paris. Hier fand auch die jahrelange produktive Zusammenarbeit mit dem französischen Mimen Pierre Byland ihren Ausgangspunk. Turba arbeitete bei der \"Laterna Magica\" Prag, gründete 1966 die \"Alfred Jasny Pantomimen\" und 1974 den \"Cirkus Alfred\". Er ist Autor und Regisseur zahlreicher international erfolgreicher Produktionen." .
 <http://localhost:8080/source/G_Alfred_Spol> <http://purl.org/dc/terms/description> "Programmheft Woche des Gestischen Theater 1990" .
 
-<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://localhost:8080/source/G_Amateurstudio> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/DDR> .
-<http://localhost:8080/source/G_Amateurstudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Amateurstudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Amateurstudio> <http://purl.org/dc/terms/description> "Gehört zum PE DT" .
-<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Amateurstudio> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Berlin_Ost> .
 <http://localhost:8080/source/G_Amateurstudio> <http://www.w3.org/2004/02/skos/core#prefLabel> "Amateurstudio" .
 
-<http://localhost:8080/source/G_Antagon_Theater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Antagon_Theater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Antagon_Theater> <http://www.w3.org/2004/02/skos/core#prefLabel> "Antagon-Theater" .
 
 <http://localhost:8080/source/G_Berliner_Improvisations_Trio> <http://www.w3.org/2004/02/skos/core#prefLabel> "Berliner Improvisations-Trio" .
-<http://localhost:8080/source/G_Berliner_Improvisations_Trio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Berliner_Improvisations_Trio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 
 <http://localhost:8080/source/G_Bruenner_Staatstheater> <http://www.w3.org/2004/02/skos/core#prefLabel> "Brünner Staatstheater" .
-<http://localhost:8080/source/Tschechoslowakei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
-<http://localhost:8080/source/Brünn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/Tschechoslowakei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
+<http://localhost:8080/source/Brünn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://localhost:8080/source/G_Bruenner_Staatstheater> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Brünn> .
 <http://localhost:8080/source/G_Bruenner_Staatstheater> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Tschechoslowakei> .
-<http://localhost:8080/source/G_Bruenner_Staatstheater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Bruenner_Staatstheater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 
 <http://localhost:8080/source/G_Compagnie_Marcel_Marceau> <http://www.w3.org/2004/02/skos/core#prefLabel> "Compagnie Marcel Marceau" .
-<http://localhost:8080/source/G_Compagnie_Marcel_Marceau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
-<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/G_Compagnie_Marcel_Marceau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
+<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Compagnie_Marcel_Marceau> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Frankreich> .
 
 <http://localhost:8080/source/G_Compagnie_Patrice_Bigel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Compagnie Patrice Bigel" .
-<http://localhost:8080/source/G_Compagnie_Patrice_Bigel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Compagnie_Patrice_Bigel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 
-<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
-<http://localhost:8080/source/Pantomimenbühne%20Berlin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
+<http://localhost:8080/source/Pantomimenbühne%20Berlin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_DT_PE> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/DDR> .
 <http://localhost:8080/source/G_DT_PE> <http://rdaregistry.info/Elements/u/P60686> <http://localhost:8080/source/Pantomimenbühne%20Berlin> .
 <http://localhost:8080/source/G_DT_PE> <http://www.w3.org/2004/02/skos/core#prefLabel> "DT-Pantomimen-Ensemble" .
 <http://localhost:8080/source/G_DT_PE> <http://purl.org/dc/terms/description> "- CW - txt-007-001" .
-<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
-<http://localhost:8080/source/G_DT_PE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
+<http://localhost:8080/source/G_DT_PE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_DT_PE> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Berlin_Ost> .
 <http://localhost:8080/source/G_DT_PE> <http://purl.org/dc/terms/description> "1968 als \"Pantomimenbühne Berlin\" von Volkmar Otte mit Amateurpantomimen gegründet. Erste Inszenierungen: \"Gitterhemden\" und \"Bumerang. 1974 Einzug ins DT und sodann Professionalisierung des Ensembles. Erste Inszenierung \"Zwischen Tür und Angel\". Leitung Peter Baumgart. Häufig Adaptionen bekannter Stoffe der Weltliteratur sowie \"Kammer-Pantomime\" Seit 1975 bildet das DT-Pantomimen-Ensemble mit seinen Aufführungen in den Kammerspielen des Deutschen Theaters eine Attraktion in der Berliner Theaterlandschaft. Es entwickelte eine eigenwillige, international kaum vergleichbare Form modernen körpersprachlichen Theaters, am ehesten als schauspielorientiertes Pantomimentheater zu bezeichnen, in dem zwar eine umfassende Körpersprache dominiert, aber alle Mittel und Ausdrucksmöglichkeiten zeitgemäßen Theaters integriert sind. Charakteristisch für das Ensemble ist, daß seine großen pantomimischen Inszenierungen Adaptionen bekannter Stoffe der Weltliteratur sind, die für ein theatralisches Spiel jenseits des Literarischen bearbeitet und aus heutiger Sicht gedeutet werden, so die unter der Regie von Burkhart Seidemann entstandenen Inszenierungen BLAUBART, HÖLLENFAHRT DES DOKTOR FAUST, ORFEUS und HANSWURST.  Daneben entstanden in den letzten Jahren sogenannte Kammer-Pantomimen, Inszenierungen mit kleiner Besetzung, clowneske oder groteske Ausdrucksmittel bevorzugend, die meist in intimen Spielstätten außerhalb des Deutschen Theaters gespielt werden. Dazu gehören CLOWNONADE, MIT UND OHNE NASE – Maskenspiele, zwei Spiele für Kinder zwischen Sieben und Siebzig, sowie CAFÉ FATAL, CLOWNSFAMILY und RÖTELN IM PLÄNTERWALD.  Gastspiele des DT-Pantomimen-Ensembles in vielen Theatern der DDR, aber auch in Ungarn, in der ?SSR, in der Sowjetunion, in Frankreich, Österreich und in der BRD führten zu einem wachsenden Interesse an der vielseitigen Arbeit des Ensembles." .
 
-<http://localhost:8080/source/G_Finke_Faltz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Finke_Faltz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Finke_Faltz> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/DDR> .
 <http://localhost:8080/source/G_Finke_Faltz> <http://purl.org/dc/terms/description> "TN" .
 <http://localhost:8080/source/G_Finke_Faltz> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mimenkomödianztheater Finke-Faltz" .
-<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Finke_Faltz> <http://purl.org/dc/terms/description> "Pantomime-Duo bestehend aus Jens Finke und Matthias Faltz" .
 
-<http://localhost:8080/source/Amsterdam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
-<http://localhost:8080/source/Niederlande> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
-<http://localhost:8080/source/G_Griftheater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/Amsterdam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
+<http://localhost:8080/source/Niederlande> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
+<http://localhost:8080/source/G_Griftheater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Griftheater> <http://purl.org/dc/terms/description> "1975 mit Absolvent*innen der Amsterdamer Mimeschule gegeründetes Bewegungstheater. Der Stil der Gruppe verbindet Mime corporel, Licht, Musik, Stimme und Elementen der Bildenden Kunst." .
 <http://localhost:8080/source/G_Griftheater> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Niederlande> .
 <http://localhost:8080/source/G_Griftheater> <http://www.w3.org/2004/02/skos/core#prefLabel> "Griftheater" .
@@ -61,193 +61,193 @@
 
 <http://localhost:8080/source/G_Grupo_Laboratorio_di_Verona> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grupo Laboratorio di Verona" .
 <http://localhost:8080/source/G_Grupo_Laboratorio_di_Verona> <http://purl.org/dc/terms/description> "Programmheft Woche des Gestischen Theaters 1986" .
-<http://localhost:8080/source/Verona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
-<http://localhost:8080/source/G_Grupo_Laboratorio_di_Verona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
-<http://localhost:8080/source/Italien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/Verona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
+<http://localhost:8080/source/G_Grupo_Laboratorio_di_Verona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
+<http://localhost:8080/source/Italien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Grupo_Laboratorio_di_Verona> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Verona> .
 <http://localhost:8080/source/G_Grupo_Laboratorio_di_Verona> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Italien> .
 <http://localhost:8080/source/G_Grupo_Laboratorio_di_Verona> <http://purl.org/dc/terms/description> "Ensemble für Nonverbales Theater aus Verona, Mitglieder: Jana Balkan, Ezio Maria Caserta, Giovanni Costa, Pino De Colle, Lorenzo Forlati, Nicoletta Vicentini (Stand 1986)" .
 
 <http://localhost:8080/source/G_Himbeerbeet> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/UDSSR> .
 <http://localhost:8080/source/G_Himbeerbeet> <http://purl.org/dc/terms/description> "TN; Programmheft Woche des Gestischen Theaters 1990" .
-<http://localhost:8080/source/UDSSR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
-<http://localhost:8080/source/G_Himbeerbeet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/UDSSR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
+<http://localhost:8080/source/G_Himbeerbeet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Himbeerbeet> <http://www.w3.org/2004/02/skos/core#prefLabel> "Himbeerbeet" .
 <http://localhost:8080/source/G_Himbeerbeet> <http://purl.org/dc/terms/description> "Die sowjetische Theatergruppe wurde 1984 gegründet und begann als Clown- und Pantomimengruppe. In ihrer Arbeit spielen auch Schauspielimprovisation und Sujetarbeit eine Rolle." .
 
-<http://localhost:8080/source/G_Impro_Comedy_Co> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Impro_Comedy_Co> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Impro_Comedy_Co> <http://www.w3.org/2004/02/skos/core#prefLabel> "Improvisational Comedy Compagnie" .
 <http://localhost:8080/source/G_Impro_Comedy_Co> <http://purl.org/dc/terms/description> "Pantomimeduo bestehend aus Georgo Peugeot und Jack Millet, USA." .
 <http://localhost:8080/source/G_Impro_Comedy_Co> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/USA> .
 <http://localhost:8080/source/G_Impro_Comedy_Co> <http://purl.org/dc/terms/description> "TN" .
-<http://localhost:8080/source/USA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/USA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 
 <http://localhost:8080/source/G_Karls_kühne_Gassenschau> <http://purl.org/dc/terms/description> "TN; Programmheft Woche des Gestischen Theaters 1990" .
 <http://localhost:8080/source/G_Karls_kühne_Gassenschau> <http://www.w3.org/2004/02/skos/core#prefLabel> "Karl's Kühne Gassenschau" .
 <http://localhost:8080/source/G_Karls_kühne_Gassenschau> <http://purl.org/dc/terms/description> "Karl's kühne Gassenschau ist eine professionelle Theatergruppe mit Sitz in Zürich. Seit 1984 kreiert sie acht Produktionen, die in bisher 700 Vorstellungen auf Straßen und Plätzen in der Schweiz, der Bundesrepublik Deutschland und in Frankreich zu sehen waren. Die Akteure der Truppe erhielten ihre Ausbildung unter anderem an der Dimitri-Schule Verscio, bei Willi Colombaioni in Rom, an Schweizer Schauspielakademien; Regisseur Peter Honegger ist Absolvent der Schule von Jaqcues Lecoq, Paris." .
-<http://localhost:8080/source/G_Karls_kühne_Gassenschau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Karls_kühne_Gassenschau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 
-<http://localhost:8080/source/G_La_Compagnie_les_fusains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_La_Compagnie_les_fusains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_La_Compagnie_les_fusains> <http://purl.org/dc/terms/description> "Pierre Byland ist Mitglied der Theaterschule von Jacques Lecoq, an der er angewandte Akrobatik und Improvisation unterrichtet. Byland spielte in verschiedenen Aufführungen von Lecoq sowie als Solist in der Compagnie Marcel Marceau. Gastkurse und Choreographien führten ihn u.a. an das Schillertheater Berlin und zum Zirkus Roncalli in Wien. Zahlreiche Produktionen erarbeitete Byland mit Ctibor Turba, Prag, und Mareike Schnitker, Paris." .
 <http://localhost:8080/source/G_La_Compagnie_les_fusains> <http://purl.org/dc/terms/description> "TN; Programmheft Woche des Gestischen Theaters 1990" .
-<http://localhost:8080/source/Paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/Paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://localhost:8080/source/G_La_Compagnie_les_fusains> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Paris> .
 <http://localhost:8080/source/G_La_Compagnie_les_fusains> <http://www.w3.org/2004/02/skos/core#prefLabel> "La Compagnie les fusains" .
 <http://localhost:8080/source/G_La_Compagnie_les_fusains> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Frankreich> .
-<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 
 <http://localhost:8080/source/G_La_Rumeur> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Frankreich> .
-<http://localhost:8080/source/G_La_Rumeur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_La_Rumeur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_La_Rumeur> <http://xmlns.com/foaf/0.1/homepage> <http://compagnielarumeur.com/> .
 <http://localhost:8080/source/G_La_Rumeur> <http://www.w3.org/2004/02/skos/core#prefLabel> "La Rumeur" .
-<http://localhost:8080/source/Choisy-le-Roi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/Choisy-le-Roi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://compagnielarumeur.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
 <http://localhost:8080/source/G_La_Rumeur> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Choisy-le-Roi> .
-<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 
-<http://localhost:8080/source/G_Le_Theatre_Nu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Le_Theatre_Nu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Le_Theatre_Nu> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Frankreich> .
 <http://localhost:8080/source/G_Le_Theatre_Nu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Le Théâtre Nu" .
-<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 
 <http://localhost:8080/source/G_Licedei> <http://www.w3.org/2004/02/skos/core#prefLabel> "Licedei" .
-<http://localhost:8080/source/G_Licedei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
-<http://localhost:8080/source/UDSSR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/G_Licedei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
+<http://localhost:8080/source/UDSSR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Licedei> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/UDSSR> .
 
 <http://localhost:8080/source/G_Ludens> <http://purl.org/dc/terms/description> "Die ungarische Gruppe \"Ludens\" besteht aus den beiden Pantomimen Peter Nagyivanyi und Gabor Dvorak. Sie spielen in Theatern und auf Freileichtbühnen und erarbeiten sowohl Kinderprogramme als auch Programme für Erwachsene." .
-<http://localhost:8080/source/G_Ludens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Ludens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Ludens> <http://purl.org/dc/terms/description> "TN; Programmheft Woche des Gestischen Theaters 1987" .
 <http://localhost:8080/source/G_Ludens> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ludens" .
-<http://localhost:8080/source/Ungarn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/Ungarn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Ludens> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Ungarn> .
 
 <http://localhost:8080/source/G_MAGENIA> <http://purl.org/dc/terms/description> "TN" .
 <http://localhost:8080/source/G_MAGENIA> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Frankreich> .
-<http://localhost:8080/source/G_MAGENIA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_MAGENIA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_MAGENIA> <http://www.w3.org/2004/02/skos/core#prefLabel> "MAGENIA Mime-Danse-Theatre Paris" .
 <http://localhost:8080/source/G_MAGENIA> <http://purl.org/dc/terms/description> "Französisches Pantomime Ensemble, Leitung: Ella Jaroszewicz" .
-<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 
 <http://localhost:8080/source/G_Mimobile> <http://purl.org/dc/terms/description> "TN; Programmheft Woche des Gestischen Theaters 1986" .
 <http://localhost:8080/source/G_Mimobile> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Paris> .
 <http://localhost:8080/source/G_Mimobile> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Frankreich> .
 <http://localhost:8080/source/G_Mimobile> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mimobile" .
 <http://localhost:8080/source/G_Mimobile> <http://purl.org/dc/terms/description> "Mimobile ist eine Pariser Mimegruppe. Die vier Akteure kommen aus Frankreich (Hugues Hollenstein), Schweiz (Maya Müller), Bundesrepublik Deutschland (Jörn Gehlker) und Holland (Paul Loomans). In ihrer Arbeit werden einfache und bizzare Formen durch Schauspiel zum Leben erweckt. Es werden daraus Phantasiebilder und Symbole, die ihre eigenen Welt erschaffen, eine Welt von der man den Eidnruck hat, ihr schon einmal begegnet zu sein. Die Technik der Gruppe umfasst sowohl die geometrische \"mime corporel\" von Etienne Decroux, als auch eine zum Teil von ihnen selbst entwickelte \"corps acteur\" und klassischen Tanz." .
-<http://localhost:8080/source/Paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
-<http://localhost:8080/source/G_Mimobile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
-<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/Paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
+<http://localhost:8080/source/G_Mimobile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
+<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 
-<http://localhost:8080/source/Köln> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/Köln> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://localhost:8080/source/G_Mobile> <http://purl.org/dc/terms/description> "TN; Programmheft Woche des Gestischen Theaters 1988" .
-<http://localhost:8080/source/G_Mobile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
-<http://localhost:8080/source/BRD_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/G_Mobile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
+<http://localhost:8080/source/BRD_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Mobile> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mobile" .
 <http://localhost:8080/source/G_Mobile> <http://purl.org/dc/terms/description> "1979 in Köln gegründetes Bewegungstheater, das mit einer Mischung aus Tanz, Akrobatik und Pantomime arbeitet. " .
 <http://localhost:8080/source/G_Mobile> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/BRD_001> .
 <http://localhost:8080/source/G_Mobile> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Köln> .
 
-<http://localhost:8080/source/G_Morse_Mime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Morse_Mime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Morse_Mime> <http://www.w3.org/2004/02/skos/core#prefLabel> "Richard Morse Mime Theatre" .
 <http://localhost:8080/source/G_Morse_Mime> <http://purl.org/dc/terms/description> "Das Richard Morse Pantomimentheater ist eine New Yorker Pantomimengruppe, die international tourt. Bekanntheit erlangte sie für ihr Engagement für schwerkranke Kinder und ihre Krankenhausarbeit." .
 <http://localhost:8080/source/G_Morse_Mime> <http://purl.org/dc/terms/description> "TN; Programmheft Woche des Gestischen Theaters 1987" .
 <http://localhost:8080/source/G_Morse_Mime> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/USA> .
-<http://localhost:8080/source/USA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/USA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 
 <http://localhost:8080/source/G_Musikalisches_Theater_Plastisches_Drama> <http://purl.org/dc/terms/description> "Das \"Musikalische Theater des Plastischen Dramas\" gründete sich 1983 in der Stadt Ufa. Wie viele andere Gruppe in der UDSSR bestand es zunächst als Amateurensemble, welches sich über Jahre hinweg eine professionelle Ausbildung organisierte. Die Besonderheit des Ensembles besteht in der Zusammenarbeit von Musiker*innen und Darsteller*innen." .
-<http://localhost:8080/source/G_Musikalisches_Theater_Plastisches_Drama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
-<http://localhost:8080/source/UDSSR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/G_Musikalisches_Theater_Plastisches_Drama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
+<http://localhost:8080/source/UDSSR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Musikalisches_Theater_Plastisches_Drama> <http://www.w3.org/2004/02/skos/core#prefLabel> "Musikalisches Theater des Plastischen Dramas" .
 <http://localhost:8080/source/G_Musikalisches_Theater_Plastisches_Drama> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/UDSSR> .
 
 <http://localhost:8080/source/G_Pantomime_Ensemble_Jena> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Jena> .
-<http://localhost:8080/source/G_Pantomime_Ensemble_Jena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Pantomime_Ensemble_Jena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Pantomime_Ensemble_Jena> <http://purl.org/dc/terms/description> "TN; Programmheft Woche des Gestischen Theaters 1988" .
 <http://localhost:8080/source/G_Pantomime_Ensemble_Jena> <http://purl.org/dc/terms/description> "In den 1960er Jahren gegründetes Pantomimenensemble. 1988 geleitet von Harald Seime." .
 <http://localhost:8080/source/G_Pantomime_Ensemble_Jena> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/DDR> .
-<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
-<http://localhost:8080/source/Jena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
+<http://localhost:8080/source/Jena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://localhost:8080/source/G_Pantomime_Ensemble_Jena> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pantomime Ensemble Jena" .
 
 <http://localhost:8080/source/G_Pantomimentheater_Georgien> <http://www.w3.org/2004/02/skos/core#prefLabel> "Staatliches Pantomimentheater der Georgischen SSR" .
 <http://localhost:8080/source/G_Pantomimentheater_Georgien> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/GSSR> .
-<http://localhost:8080/source/G_Pantomimentheater_Georgien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
-<http://localhost:8080/source/Tblissi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/G_Pantomimentheater_Georgien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
+<http://localhost:8080/source/Tblissi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://localhost:8080/source/G_Pantomimentheater_Georgien> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Tblissi> .
-<http://localhost:8080/source/GSSR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/GSSR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 
 <http://localhost:8080/source/G_Paradogs> <http://www.w3.org/2004/02/skos/core#prefLabel> "Paradogs" .
-<http://localhost:8080/source/G_Paradogs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Paradogs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Paradogs> <http://purl.org/dc/terms/description> "Das Bewegungstheater \"Paradogs\" wurde 1987 von dem Berner Solisten, Bewegungsdozenten und Choreographen Christian Mattis gegründet. Die Spieler/innenverfügen über eine professionelle Ausbildung im Bereich Theater, Tanz, Artistik; Mattis selbst lernte drei jahre bei Étienne Decroux in Paris, zwei weitere an der \"École Nationale du Cirque\"; er gilt als einer der interessantesten Autor_Regisseure des modernen Schweizer Bewegungstheaters." .
-<http://localhost:8080/source/Schweiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/Schweiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Paradogs> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Schweiz> .
 <http://localhost:8080/source/G_Paradogs> <http://purl.org/dc/terms/description> "Programmheft Woche des Gestischen Theaters 1990" .
 
 <http://localhost:8080/source/G_Prospekt> <http://purl.org/dc/terms/description> "Mimen-Theater aus Tscheljabinsk (UDSSR). Der Stil der Gruppe entstand aus der Auseinandersetzung mit der klassischen Pantomime, Straßentheater und Clownerie. Neben eigenen Szenarien arbeitet das der Regisseur Vladimir Filonow auch mit klassischen Texten, u.a. von Shakespeare, Daniil Charms und Maxim Gorki." .
-<http://localhost:8080/source/G_Prospekt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
-<http://localhost:8080/source/Tscheljabinsk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/G_Prospekt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
+<http://localhost:8080/source/Tscheljabinsk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://localhost:8080/source/G_Prospekt> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Tscheljabinsk> .
-<http://localhost:8080/source/UDSSR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/UDSSR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Prospekt> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/UDSSR> .
 <http://localhost:8080/source/G_Prospekt> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prospekt" .
 <http://localhost:8080/source/G_Prospekt> <http://purl.org/dc/terms/description> "TN; Programmheft Woche des Gestischen Theaters 1990" .
 
-<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
-<http://localhost:8080/source/G_PT_PB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
+<http://localhost:8080/source/G_PT_PB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_PT_PB> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pantomimen-Theater vom Prenzlauer Berg" .
-<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_PT_PB> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/DDR> .
 <http://localhost:8080/source/G_PT_PB> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Berlin_Ost> .
 
 <http://localhost:8080/source/G_Salto_Vitale> <http://www.w3.org/2004/02/skos/core#prefLabel> "Salto Vitale" .
 <http://localhost:8080/source/G_Salto_Vitale> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/DDR> .
 <http://localhost:8080/source/G_Salto_Vitale> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Dresden> .
-<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Salto_Vitale> <http://purl.org/dc/terms/description> "Programmheft Woche des Gestischen Theaters 1986 und 1988." .
 <http://localhost:8080/source/G_Salto_Vitale> <http://erlangen-crm.org/170309/P74i_is_current_or_former_residence_of> <http://localhost:8080/source/LOC_Theater_50> .
-<http://localhost:8080/source/Dresden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
-<http://localhost:8080/source/G_Salto_Vitale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
-<http://localhost:8080/source/LOC_Theater_50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/Dresden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
+<http://localhost:8080/source/G_Salto_Vitale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
+<http://localhost:8080/source/LOC_Theater_50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsLocation> .
 
 <http://localhost:8080/source/G_Speedy%20Banana> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Frankreich> .
-<http://localhost:8080/source/G_Speedy%20Banana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
-<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/G_Speedy%20Banana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
+<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Speedy%20Banana> <http://www.w3.org/2004/02/skos/core#prefLabel> "Speedy Banana" .
 
-<http://localhost:8080/source/G_studio_gold_egg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_studio_gold_egg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_studio_gold_egg> <http://www.w3.org/2004/02/skos/core#prefLabel> "studio gold egg" .
 
-<http://localhost:8080/source/Sofia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/Sofia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://localhost:8080/source/G_Studio_Pantomime_Sofia> <http://www.w3.org/2004/02/skos/core#prefLabel> "Studio Pantomime Theater" .
 <http://localhost:8080/source/G_Studio_Pantomime_Sofia> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Bulgarien> .
 <http://localhost:8080/source/G_Studio_Pantomime_Sofia> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Sofia> .
-<http://localhost:8080/source/Bulgarien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
-<http://localhost:8080/source/G_Studio_Pantomime_Sofia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/Bulgarien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
+<http://localhost:8080/source/G_Studio_Pantomime_Sofia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 
 <http://localhost:8080/source/G_The_Birmingham_Rep> <http://xmlns.com/foaf/0.1/homepage> <https://www.birmingham-rep.co.uk/> .
 <http://localhost:8080/source/G_The_Birmingham_Rep> <http://www.w3.org/2004/02/skos/core#prefLabel> "The Birmingham Rep" .
-<http://localhost:8080/source/Birmingham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/Birmingham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://localhost:8080/source/G_The_Birmingham_Rep> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Großbritannien> .
 <https://www.birmingham-rep.co.uk/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
-<http://localhost:8080/source/Großbritannien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
-<http://localhost:8080/source/G_The_Birmingham_Rep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/Großbritannien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
+<http://localhost:8080/source/G_The_Birmingham_Rep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_The_Birmingham_Rep> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Birmingham> .
 
 <http://localhost:8080/source/G_The_snarling_beasties> <http://purl.org/dc/terms/description> "TN; https://en.wikipedia.org/wiki/Snarling_Beasties [Zuletzt abgerufen am 04.03.2019]; Programmeft Woche des Gestischen Theaters 1990" .
 <http://localhost:8080/source/G_The_snarling_beasties> <http://www.w3.org/2004/02/skos/core#prefLabel> "The Snarling Beasties" .
 <http://localhost:8080/source/G_The_snarling_beasties> <http://purl.org/dc/terms/description> "The Snarling Beasties war eine australische Theatergruppe, die in Australien und Großbritannien auftrat.  Snarling Beasties wurde 1986 von Debbie Isitt und Mark Kilmurry gegründet. Isitt war die Autorin und Regisseurin. Die Gruppe gewann den \"Time Out\"-Theaterpreis, den \"Perrier Pick of the Fringe\" Preis dreimal und den \"Independent Theatre Award\".  Die Snarling Beasties wurden 1996 aufgelöst.   Der Stil von \"The Snarling Beasties\" kombiniert die Elemente der Performance in strengen, direkten Szenen, mit einer Expressivität, wie man sie aus klassischen US-amerikanischen Filmen kennt. " .
-<http://localhost:8080/source/G_The_snarling_beasties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_The_snarling_beasties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 
 <http://localhost:8080/source/G_Theater_an_der_Schnur> <http://www.w3.org/2004/02/skos/core#prefLabel> "Theater Gans an der Schnur" .
-<http://localhost:8080/source/G_Theater_an_der_Schnur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Theater_an_der_Schnur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Theater_an_der_Schnur> <http://purl.org/dc/terms/description> "Das Theater an der Schnur in Brünn wurde in den 1960er Jahren von Absolventen der Theaterakademie JAMU, Zdenèk Pospi?il, Peter Scherhaufer und Eva Tálská gegründet, mit der Intension, eine Bühne für erste Erfahrungen in der Theaterpraxis einer jungen Künstlergeneration zu schaffen. Der Name ist zurückzuführen auf das Buch der Theater- und Filmlibretti von J. Machen „Eine Gans an der Schnur“. Ab 1.12.1967 hatte es seinen Sitz im Brünner Künstlerhaus und ab 1.1.1972 erlangte es den Status eines professionellen Theaters. Das Theater ist als offene Gruppe organisiert und wendet sich in seinem künstlerischen Schaffen an das jugendliche Publikum. " .
 <http://localhost:8080/source/G_Theater_an_der_Schnur> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Brünn> .
 <http://localhost:8080/source/G_Theater_an_der_Schnur> <http://erlangen-crm.org/170309/P74i_is_current_or_former_residence_of> <http://localhost:8080/source/Brünner%20Künstlerhaus> .
-<http://localhost:8080/source/Brünner%20Künstlerhaus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsLocation> .
+<http://localhost:8080/source/Brünner%20Künstlerhaus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsLocation> .
 <http://localhost:8080/source/G_Theater_an_der_Schnur> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Tschechoslowakei> .
-<http://localhost:8080/source/Tschechoslowakei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/Tschechoslowakei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Theater_an_der_Schnur> <http://xmlns.com/foaf/0.1/homepage> <https://www.provazek.cz/en> .
-<http://localhost:8080/source/Brünn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/Brünn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://localhost:8080/source/G_Theater_an_der_Schnur> <http://www.w3.org/2004/02/skos/core#altLabel> "Divadlo Husa na provázku" .
 <http://localhost:8080/source/G_Theater_an_der_Schnur> <http://purl.org/dc/terms/description> "CW; txt-010-002" .
 <https://www.provazek.cz/en> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
@@ -256,98 +256,97 @@
 <http://localhost:8080/source/G_Theater_König_Alfons> <http://purl.org/dc/terms/description> "Bernd Lafrenz (*1955) erhielt seine Theaterausbildung bei Peter Nickel, Kiel, Hans Galli, Freiburg, sowie bei Benito Gutmacher und Philippe Gaullier, Paris. Zusammen mit Andreas Balzer gründete Lafrenz 1982 die Zwei-Mann-Gruppe \"Theater König Alfons\". Neben seiner Arbeit in Seminaren und Workshops spielte Lafrenz mit großem Erfolg auf den führenden Theater-, Clown und Pantomimefestivals." .
 <http://localhost:8080/source/G_Theater_König_Alfons> <http://www.w3.org/2004/02/skos/core#prefLabel> "Theater König Alfons" .
 <http://localhost:8080/source/G_Theater_König_Alfons> <http://purl.org/dc/terms/description> "Programmheft Woche des Gestischen Theater 1990" .
-<http://localhost:8080/source/G_Theater_König_Alfons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
-<http://localhost:8080/source/BRD_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/G_Theater_König_Alfons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
+<http://localhost:8080/source/BRD_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 
 <http://localhost:8080/source/G_Theatre_a_Louer> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Frankreich> .
 <http://localhost:8080/source/G_Theatre_a_Louer> <http://www.w3.org/2004/02/skos/core#prefLabel> "Théâtre a Louer" .
-<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
-<http://localhost:8080/source/G_Theatre_a_Louer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
+<http://localhost:8080/source/G_Theatre_a_Louer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 
 <http://www.angefou.co.uk/index.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
 <http://localhost:8080/source/G_Theatre_de_l_ange_fou> <http://www.w3.org/2004/02/skos/core#prefLabel> "Theatre de l'Ange fou" .
 <http://localhost:8080/source/G_Theatre_de_l_ange_fou> <http://purl.org/dc/terms/description> "TN; http://www.angefou.co.uk/aboutus.html" .
 <http://localhost:8080/source/G_Theatre_de_l_ange_fou> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Spring_Green> .
-<http://localhost:8080/source/Spring_Green> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
-<http://localhost:8080/source/USA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/Spring_Green> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
+<http://localhost:8080/source/USA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Theatre_de_l_ange_fou> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/USA> .
-<http://localhost:8080/source/G_Theatre_de_l_ange_fou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Theatre_de_l_ange_fou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Theatre_de_l_ange_fou> <http://purl.org/dc/terms/description> "Das Theatre de l'Ange Fou und die International School of Corporal Mime (ehemals Ecole de Mime Corporel Dramatique) wurden 1984 in Paris von Steven Wasson und Corinne Soum, den letzten Assistenten von Etienne Decroux, gegründet. Nach dem Umzug nach London im Jahr 1995 sind die Schule und das Unternehmen heute mit dem The White Church Theatre Project fest in den USA angesiedelt. Das Training widmet sich der Entwicklung der Technik, dem Ausbau des Repertoires und der Dramaturgie der körperlichen Pantomime und bietet eine breite Palette von professionellen Trainingsprogrammen. Das Ensemble tourte durch Europa, Russland, die Vereinigten Staaten, Kanada, Brasilien, Mexiko und den Nahen Osten. Das Theatre de l'Ange Fou hat über 20 Produktionen erarbeitet, die von Duetten bis hin zu großen Ensemblewerken reichen Eindrücke des Geistes, die Absurdität des Lebens und die daraus resultierenden Fragen sind eine ständige Quelle der Inspiration sowohl für die Regisseure als auch für die Schauspieler. Auf der Grundlage von mime corporel als Grundlage Arbeit nimmt die dramaturgische Konstruktion der Produktionen vom Theatre de l'Ange four die Form einer Reise an, auf der die Charaktere unterschiedliche Landschaften und Lebenszeiten durchqueren, einige real, andere imaginär. Corinne Soum und Steven Wasson arbeiten zudem an der Rekonstruktion und Aufführungen der Arbeiten Etinne Decrouxs." .
 <http://localhost:8080/source/G_Theatre_de_l_ange_fou> <http://xmlns.com/foaf/0.1/homepage> <http://www.angefou.co.uk/index.html> .
 
-<http://localhost:8080/source/G_Theatre_de_la_Mie_de_Pain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Theatre_de_la_Mie_de_Pain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Theatre_de_la_Mie_de_Pain> <http://purl.org/dc/terms/description> "Das Théâtre de la Mie de Pain, wörtlich als BROTKRUMENTHEATER zu übersetzten, zählt zu den bekanntesten und unkonventionellsten Ensembles der gegenwärtigen französischen Theaterszene. Alle Mitglieder der Truppe erhielten ihre Ausbildung an der berühmten Theaterschule Charles Dullin in Paris, aus der schon Etienne Decroux und Marcel Marceau hervorgingen. 1978 schlossen sie sich unter Leitung von Yves Kerboul zu einer Gruppe zusammen, mit dem Ziel, Theater ohne Text zu machen. Diese Kontinuität und Gemeinsamkeit in Ausbildung und künstlerischer Arbeit prägt den homogenen Stil aller Produktionen des Théâtre de la Mie de Pain, stets auf der Basis von ausgedehnten Improvisationen über einfache Situationen entwickelt werden." .
-<http://localhost:8080/source/Paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/Paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://localhost:8080/source/G_Theatre_de_la_Mie_de_Pain> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Paris> .
 <http://localhost:8080/source/G_Theatre_de_la_Mie_de_Pain> <http://purl.org/dc/terms/description> "CW; txt-007-001" .
 <http://localhost:8080/source/G_Theatre_de_la_Mie_de_Pain> <http://www.w3.org/2004/02/skos/core#prefLabel> "Théâtre de la Mie de Pain" .
-<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/Frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Theatre_de_la_Mie_de_Pain> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Frankreich> .
 
-<http://localhost:8080/source/Oran> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/Oran> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://localhost:8080/source/G_Theatre_Regional_dOran> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Oran> .
-<http://localhost:8080/source/Algerien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
-<http://localhost:8080/source/G_Theatre_Regional_dOran> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/Algerien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
+<http://localhost:8080/source/G_Theatre_Regional_dOran> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Theatre_Regional_dOran> <http://www.w3.org/2004/02/skos/core#prefLabel> "Théâtre Regional d'Oran" .
 <http://localhost:8080/source/G_Theatre_Regional_dOran> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Algerien> .
 <http://localhost:8080/source/G_Theatre_Regional_dOran> <http://purl.org/dc/terms/description> "Mit seiner ersten Schöpfung vor etwa dreißig Jahren durchbrach das Avant-Theater bereits die bestehenden Konventionen in der Formensprache des Theaters in Algerien. In der Wahl der Themen wurden die Schauspieler von der Suche nach einer tieferen Wahrheit erfüllt. Diese Versuche wurden stark von den Problemen der Kolonialzeit in den 50er Jahren überschattet. Aber es ging darum, den kulturellen Reichtum des algerischen Volkes zu bewahren und weiterzuentwickeln. Tradition und der Einfluß der großen Lehrmeister des europäischen Theaters, wie Stanislawski und Brecht, wurden in einer subtilen Synthese miteinander verbunden und ergeben die Spezifik des Avant-Theaters." .
 <http://localhost:8080/source/G_Theatre_Regional_dOran> <http://purl.org/dc/terms/description> "CW; txt-007-001" .
 
 <http://localhost:8080/source/G_Version> <http://purl.org/dc/terms/description> "Das Tscheljabinsker Mimen-Theater gründete sich 1987. Es arbeitet mit verschiedenen Kunstformen, \"der Malerei, der Filmmontage, de[m] Schattentheater\" und Elementen \"des Zirkus\"." .
-<http://localhost:8080/source/Tscheljabinsk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/Tscheljabinsk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://localhost:8080/source/G_Version> <http://purl.org/dc/terms/description> "TN; Programmheft Woche des Gestischen Theaters 1990" .
 <http://localhost:8080/source/G_Version> <http://www.w3.org/2004/02/skos/core#prefLabel> "Version" .
-<http://localhost:8080/source/UDSSR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/UDSSR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Version> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Tscheljabinsk> .
 <http://localhost:8080/source/G_Version> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/UDSSR> .
-<http://localhost:8080/source/G_Version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 
 <http://localhost:8080/source/G_Zinnober> <http://www.w3.org/2004/02/skos/core#prefLabel> "Zinnober" .
 <http://localhost:8080/source/G_Zinnober> <http://purl.org/dc/terms/description> "TN; Programmheft Woche des Gestischen Theaters 1988" .
-<http://localhost:8080/source/G_Zinnober> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Zinnober> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Zinnober> <http://purl.org/dc/terms/description> "Die Gruppe \"Zinnober\" (DDR) begann 1982 als Puppentheater, ein Großteil der Mitglieder sind ausgebildete Puppenspieler*innen. Die Gruppe tritt international auf. (Stand 1988)" .
-<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Zinnober> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/DDR> .
 
 <http://localhost:8080/source/G_Poetisches_Theater> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/DDR> .
 <http://localhost:8080/source/G_Poetisches_Theater> <http://www.w3.org/2004/02/skos/core#prefLabel> "Poetisches Theater \"Louis Fürnberg\" der KMU Leipzig" .
-<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Poetisches_Theater> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Leipzig> .
 <http://localhost:8080/source/G_Poetisches_Theater> <http://purl.org/dc/terms/description> "Amateurtheater an der Karl-Marx-Universität Leipzig, gegründet 1949 bestand es unter verschiedenen Namen und wechselnder Besetzung." .
-<http://localhost:8080/source/G_Poetisches_Theater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
-<http://localhost:8080/source/Leipzig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/G_Poetisches_Theater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
+<http://localhost:8080/source/Leipzig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 
-<http://localhost:8080/source/Köln> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/Köln> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://localhost:8080/source/G_Senga_Kamor> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Köln> .
 <http://localhost:8080/source/G_Senga_Kamor> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/BRD_001> .
-<http://localhost:8080/source/BRD_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/BRD_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Senga_Kamor> <http://www.w3.org/2004/02/skos/core#prefLabel> "Senga Kamor Maskentheater" .
-<http://localhost:8080/source/G_Senga_Kamor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Senga_Kamor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 
 <http://localhost:8080/source/G_pantomimen_studio_berlin> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/DDR> .
-<http://localhost:8080/source/G_pantomimen_studio_berlin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_pantomimen_studio_berlin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_pantomimen_studio_berlin> <http://www.w3.org/2004/02/skos/core#prefLabel> "pantomimen studio berlin" .
-<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
-<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/Berlin_Ost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
+<http://localhost:8080/source/DDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_pantomimen_studio_berlin> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Berlin_Ost> .
 
-<http://localhost:8080/source/G_Werkhaus_Moosbach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Werkhaus_Moosbach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Werkhaus_Moosbach> <http://www.w3.org/2004/02/skos/core#prefLabel> "Projekttheater Werkhaus Moosbach" .
 
 <http://localhost:8080/source/G_Studio_Pantomima> <http://www.w3.org/2004/02/skos/core#prefLabel> "Studio Pantomima des Dramatischen Theater \"Träne und Lachen\" , Szene Walentin Andrejew" .
 <http://localhost:8080/source/G_Studio_Pantomima> <http://www.w3.org/2004/02/skos/core#altLabel> "?????? ?????????" .
-<http://localhost:8080/source/G_Studio_Pantomima> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Studio_Pantomima> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 
 <http://localhost:8080/source/G_Theater_am_Gelaender> <http://www.w3.org/2004/02/skos/core#prefLabel> "Theater am Geländer" .
 <http://localhost:8080/source/G_Theater_am_Gelaender> <http://purl.org/dc/terms/description> "1958 gegründetes Pantomimentheater in der Tschechoslowakei" .
-<http://localhost:8080/source/G_Theater_am_Gelaender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
+<http://localhost:8080/source/G_Theater_am_Gelaender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
 <http://localhost:8080/source/G_Theater_am_Gelaender> <http://purl.org/dc/terms/description> "CW; txt-069-002" .
 
 <http://localhost:8080/source/G_Polnisches_Patnomimentheater> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Wroclaw> .
-<http://localhost:8080/source/Polen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#Country> .
+<http://localhost:8080/source/Polen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#Country> .
 <http://localhost:8080/source/G_Polnisches_Patnomimentheater> <http://www.w3.org/2004/02/skos/core#prefLabel> "Polnisches Pantomimentheater" .
-<http://localhost:8080/source/G_Polnisches_Patnomimentheater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#PerformingArtsGroup> .
-<http://localhost:8080/source/Wroclaw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvt/classes#City> .
+<http://localhost:8080/source/G_Polnisches_Patnomimentheater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#PerformingArtsGroup> .
+<http://localhost:8080/source/Wroclaw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/nvto#City> .
 <http://localhost:8080/source/G_Polnisches_Patnomimentheater> <http://purl.org/dc/terms/spatial> <http://localhost:8080/source/Polen> .
 <http://localhost:8080/source/G_Polnisches_Patnomimentheater> <http://purl.org/dc/terms/description> "1956 gegründetes staatliches Pantomimentheater in Wroclaw" .
-

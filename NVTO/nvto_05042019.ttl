@@ -7,9 +7,9 @@
 @prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
 @prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
 @prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix rdau: <http://www.rdaregistry.info/Elements/u/> .
 
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdau: <http://www.rdaregistry.info/Elements/u/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .

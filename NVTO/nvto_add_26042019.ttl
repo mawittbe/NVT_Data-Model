@@ -1,0 +1,254 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+@prefix ecrm: <http://erlangen-crm.org/170309/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix rdau: <http://www.rdaregistry.info/Elements/u/> .
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dm2e: <http://onto.dm2e.eu/schemas/dm2e/> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix eclap: <http://www.eclap.eu/schema/eclap/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gndo: <http://d-nb.info/standards/elementset/gnd#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+@prefix nvto: <http://example.org/nvto#> .
+
+@base <http://example.org/nvto#> .
+
+
+## CLASSES AND PROPERTIES FROM OTHER ONTOLOGIES WITH ADDED SEMANTICS (DOMAINS RANGES)
+
+
+## CLASSES
+
+edm:ProvidedCHO rdf:type owl:Class;
+                rdfs:label "Provided CHO".
+
+foaf:Person rdf:type owl:Class ;
+            rdfs:label "Person" .
+
+
+wgs84_pos:SpatialThing rdf:type owl:Class ;
+                       rdfs:label "SpatialThing" .
+
+## PROPERTIES
+
+
+## DCTERMS
+
+dcterms:contributor rdf:type owl:AnnotationProperty ;
+                    rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf dc:contributor ;
+                    rdfs:label "Contributor"@en .
+
+
+dcterms:coverage rdf:type owl:AnnotationProperty ;
+                   rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf dc:coverage ;
+                   rdfs:label "Coverage"@en .
+
+
+dcterms:created rdf:type owl:AnnotationProperty ;
+                  rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf dcterms:date ;
+                  rdfs:label "Date Created"@en .
+
+
+dcterms:creator rdf:type owl:AnnotationProperty ;
+                  rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf dc:creator ;
+                  rdfs:subPropertyOf dcterms:contributor ;
+                  rdfs:label "Creator"@en .
+
+
+dcterms:date rdf:type owl:AnnotationProperty ;
+               rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf dc:date ;
+               rdfs:label "Date"@en .
+
+
+dcterms:description rdf:type owl:AnnotationProperty ;
+                      rdfs:subPropertyOf dc:description ;
+                      rdfs:label "Description"@en .
+
+
+dcterms:extent rdf:type owl:AnnotationProperty ;
+                 rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf dc:format ;
+                 rdfs:subPropertyOf dcterms:format ;
+                 rdfs:label "Extent"@en .
+
+
+dcterms:format rdf:type owl:AnnotationProperty ;
+                 rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf dc:format ;
+                 rdfs:label "Format"@en .
+
+
+dcterms:identifier rdf:type owl:AnnotationProperty ;
+                     rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf dc:identifier ;
+                     rdfs:label "Identifier"@en .
+
+
+dcterms:isPartOf rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dc:relation ;
+                    rdfs:subPropertyOf dcterms:relation ;
+                    rdfs:label "Is Part Of"@en .
+
+
+dcterms:issued rdf:type owl:AnnotationProperty ;
+                 rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf dc:date ;
+                 rdfs:subPropertyOf dcterms:date ;
+                 rdfs:label "Date Issued"@en .
+
+
+dcterms:language rdf:type owl:AnnotationProperty ;
+                   rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf dc:language ;
+                   rdfs:label "Language"@en .
+
+
+dcterms:mediator rdf:type owl:ObjectProperty ;
+                   rdfs:label "Mediator"@en .
+
+dcterms:medium rdf:type owl:AnnotationProperty ;
+                rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf dcterms:format ;
+                rdfs:subPropertyOf dc:format ;
+                rdfs:label "Medium"@en .
+
+dcterms:provenance rdf:type owl:ObjectProperty ;
+                     rdfs:label "Provenance"@en .
+
+
+dcterms:publisher rdf:type owl:AnnotationProperty ;
+                    rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf dc:publisher ;
+                    rdfs:label "Publisher"@en .
+
+
+dcterms:references rdf:type owl:AnnotationProperty ;
+                     rdfs:subPropertyOf dc:relation ;
+                     rdfs:subPropertyOf dcterms:relation ;
+                     rdfs:label "References"@en .
+
+
+dcterms:relation rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dc:relation ;
+                   rdfs:label "Relation"@en .
+
+dcterms:rights dc:rights rdfns:type owl:AnnotationProperty ;
+                 rdf:type owl:ObjectProperty ;
+                 rdfs:label "Rights"@en .
+
+dcterms:rightsHolder rdf:type owl:ObjectProperty ;
+                       rdfs:label "Rights Holder"@en .
+
+
+dcterms:source rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dc:source ;
+                 rdfs:subPropertyOf dcterms:relation ;
+                 rdfs:label "Source"@en .
+
+
+dcterms:spatial rdf:type owl:AnnotationProperty ;
+                  rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf dc:coverage ;
+                  rdfs:subPropertyOf dcterms:coverage ;
+                  rdfs:label "Spatial Coverage"@en .
+
+
+dcterms:subject rdf:type owl:AnnotationProperty ;
+                  rdfs:subPropertyOf dc:subject ;
+                  rdfs:label "Subject"@en .
+
+
+dcterms:tableOfContents rdf:type owl:AnnotationProperty ;
+                          rdfs:subPropertyOf dc:description ;
+                          rdfs:subPropertyOf dcterms:description ;
+                          rdfs:label "Table Of Contents"@en .
+
+
+dcterms:temporal rdf:type owl:AnnotationProperty ;
+                   rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf dc:coverage ;
+                   rdfs:subPropertyOf dcterms:coverage ;
+                   rdfs:label "Temporal Coverage"@en .
+
+
+dcterms:title rdf:type owl:AnnotationProperty ;
+                rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf dc:title ;
+                rdfs:label "Title"@en .
+
+
+dcterms:type rdf:type owl:AnnotationProperty ;
+               rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf dc:type ;
+               rdfs:label "Type"@en .
+
+## EDM
+
+
+edm:type rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf dc:type ;
+       rdfs:label "Europeana Type"@en .
+
+
+## OWL
+
+
+owl:sameAs rdf:type owl:ObjectProperty ;
+          rdfs:label "sameAs" .
+
+
+## SKOS
+
+
+skos:altLabel rdf:type owl:AnnotationProperty ;
+              rdfs:subPropertyOf rdfs:label ;
+              rdfs:label "alternative label"@en .
+
+
+skos:note rdf:type owl:AnnotationProperty ;
+          rdfs:label "note"@en .
+
+
+skos:prefLabel rdf:type owl:AnnotationProperty ;
+               rdfs:subPropertyOf rdfs:label ;
+               rdfs:label "preferred label"@en .
+
+
+## WGS84
+
+
+wgs84_pos:lat rdf:type owl:AnnotationProperty ;
+              rdfs:domain wgs84_pos:SpatialThing ;
+              rdfs:label "latitude" .
+
+
+wgs84_pos:long rdf:type owl:AnnotationProperty ;
+               rdfs:domain wgs84_pos:SpatialThing ;
+               rdfs:label "longitude" .

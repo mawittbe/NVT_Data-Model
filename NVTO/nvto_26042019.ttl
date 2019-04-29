@@ -74,9 +74,9 @@ nvto:Country rdf:type owl:Class ;
          skos:definition """This class comprises countries dependent on time and/or geopolitics. """ ;
          skos:example "FRG, West Germany, GDR"  .
 
-nvto:DigitalItem rdf:type owl:Class ;
-              rdfs:label "Digitales Item"@de ;
-              rdfs:label "Digital Item"@en ;
+nvto:DigitalObject rdf:type owl:Class ;
+              rdfs:label "Digitales Objekt"@de ;
+              rdfs:label "Digital Object"@en ;
               skos:definition """digital representation of the contents a medium""" ;
               skos:example "IMG.jpg, VID.mp4" .
 
@@ -86,10 +86,10 @@ nvto:Event rdf:type owl:Class ;
           skos:definition """this class comprises all events""" ;
           skos:example "a performance of Hamlet" .
 
-nvto:MediumContents rdf:type owl:Class ;
-              rdfs:label "Medieninhalt"@de ;
-              rdfs:label "Medium Contents"@en ;
-              skos:definition """digital representation of the contents a medium""" ;
+nvto:InformationObject rdf:type owl:Class ;
+              rdfs:label "Informationsobjekt"@de ;
+              rdfs:label "Information Object"@en ;
+              skos:definition """conceptual representation of the contents a medium""" ;
               skos:example "Aufnahme von Aufführung, Inhalt von Programmheft X" .
 
 nvto:PerformingArtsGroup rdf:type owl:Class ;
@@ -112,9 +112,9 @@ nvto:PerformingArtsProduction rdf:type owl:Class ;
                           skos:definition """This class comprises productions that were or are performed. """ ;
                           skos:example "Blaubart, Hamlet"  .
 
-nvto:PhysicalItem rdf:type owl:Class ;
-                  rdfs:label "Physisches Item"@de ;
-                  rdfs:label "Physical Item"@en ;
+nvto:PhysicalObject rdf:type owl:Class ;
+                  rdfs:label "Physisches Objekt"@de ;
+                  rdfs:label "Physical Object"@en ;
                   skos:definition """physical representation of the contents a medium""" ;
                   skos:example "Videokassette mit Aufnahme von Aufführung, Programmheft X" .
 
@@ -183,13 +183,11 @@ nvto:happenedAtPlace rdf:type owl:ObjectProperty ;
                      rdfs:label "happened at place"@en .
 
 nvto:hasActor rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as actor."@en ;
                 rdfs:label "has actor"@en .
 
 nvto:hasAdaptor rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as adaptor."@en ;
                 rdfs:label "has adaptor"@en .
@@ -200,31 +198,26 @@ nvto:hasAddress rdf:type owl:DatatypeProperty ;
                 rdfs:label "has address"@en .
 
 nvto:hasAuthor  rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as author."@en ;
                 rdfs:label "has author"@en .
 
 nvto:hasChoreographer rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as choreographer."@en ;
                 rdfs:label "has choreographer"@en .
 
 nvto:hasCinematographer rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as cinematographer."@en ;
                 rdfs:label "has cinematographer"@en .
 
 nvto:hasComposer rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as author."@en ;
                 rdfs:label "has composer"@en .
 
 nvto:hasConceptOriginator rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as concept originator."@en ;
                 rdfs:label "has concept originator"@en .
@@ -240,13 +233,11 @@ nvto:hasContentMatch rdf:type owl:ObjectProperty ;
                   rdfs:label "has content match"@en .
 
 nvto:hasCostumeDesigner rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as costume designer."@en ;
                 rdfs:label "has costume designer"@en .
 
 nvto:hasDancer rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as dancer."@en ;
                 rdfs:label "has dancer"@en .
@@ -269,19 +260,16 @@ nvto:hasDimensions rdf:type owl:DatatypeProperty ;
                   rdfs:label "has dimensions"@en .
 
 nvto:hasDirector rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as director."@en ;
                 rdfs:label "has director"@en .
 
 nvto:hasDramaturge rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as dramaturge."@en ;
                 rdfs:label "has dramaturge"@en .
 
 nvto:hasEditor rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as editor."@en ;
                 rdfs:label "has editor"@en .
@@ -302,7 +290,6 @@ nvto:hasFirstPerformanceDate rdf:type owl:DatatypeProperty ;
                 rdfs:label "has first performance date"@en .
 
 nvto:hasIllustrator rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as illustrator."@en ;
                 rdfs:label "has illustrator"@en .
@@ -323,25 +310,21 @@ nvto:hasLabelingFront rdf:type owl:DatatypeProperty ;
                   rdfs:label "has labeling front"@en .
 
 nvto:hasLayouter rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as layouter."@en ;
                 rdfs:label "has layouter"@en .
 
 nvto:hasLightDesigner rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as light designer."@en ;
                 rdfs:label "has light designer"@en .
 
 nvto:hasMaskDesigner rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as mask designer."@en ;
                 rdfs:label "has mask designer"@en .
 
 nvto:hasMusician rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as musician."@en ;
                 rdfs:label "has musician"@en .
@@ -352,13 +335,11 @@ nvto:hasParticipant rdf:type owl:ObjectProperty ;
                 rdfs:label "has participant"@en .
 
 nvto:hasPerformer rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as performer."@en ;
                 rdfs:label "has performer"@en .
 
 nvto:hasPhotographer rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as photographer."@en ;
                 rdfs:label "has photographer"@en .
@@ -375,17 +356,16 @@ nvto:hasPredecessor rdf:type owl:ObjectProperty ;
 
 nvto:hasPublishingPlace rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf nvto:hasRelatedPlace ;
+                      rdfs:range nvto:Place ;
                       rdfs:comment "connects a resource to the place it was published at."@en ;
                       rdfs:label "has publishing place"@en .
 
 nvto:hasPuppetDesigner rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as puppet designer."@en ;
                 rdfs:label "has puppet designer"@en .
 
 nvto:hasRecordist rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as recordist."@en ;
                 rdfs:label "has recordist"@en .
@@ -410,13 +390,11 @@ nvto:hasSeason rdfs:type owl:DatatypeProperty ;
               rdfs:label "has season" .
 
 nvto:hasSetDesigner rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as set designer."@en ;
                 rdfs:label "has set designer"@en .
 
 nvto:hasSpeaker rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as speaker."@en ;
                 rdfs:label "has speaker"@en .
@@ -432,13 +410,11 @@ nvto:hasSuccessor rdf:type owl:ObjectProperty ;
                 rdfs:label "has successor"@en .
 
 nvto:hasTranslator rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf eclap:performingArtsProfessional ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 rdfs:comment "connects a resource to an agent who contributed to the resource as translator."@en ;
                 rdfs:label "has translator"@en .
 
 nvto:hasVideoDesigner rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf eclap:performingArtsProfessional ;
                    rdfs:subPropertyOf dcterms:contributor ;
                    rdfs:comment "connects a resource to an agent responsible for its video design."@en ;
                    rdfs:label "video designer"@en .

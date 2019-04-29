@@ -159,7 +159,8 @@ dcterms:relation rdf:type owl:AnnotationProperty ;
                    rdfs:subPropertyOf dc:relation ;
                    rdfs:label "Relation"@en .
 
-dcterms:rights dc:rights rdfns:type owl:AnnotationProperty ;
+dcterms:rights   rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf dc:rights ;
                  rdf:type owl:ObjectProperty ;
                  rdfs:label "Rights"@en .
 

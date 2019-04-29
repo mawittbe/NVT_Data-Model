@@ -1,0 +1,689 @@
+@prefix : <#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dm2e: <http://onto.dm2e.eu/schemas/dm2e/> .
+@prefix ecrm: <http://erlangen-crm.org/170309/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gndo: <http://d-nb.info/standards/elementset/gnd#> .
+@prefix nvto: <http://lod.iti-germany.de/schema/nvto/> .
+@prefix rdau: <http://www.rdaregistry.info/Elements/u/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix eclap: <http://www.eclap.eu/schema/eclap/> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://lod.iti-germany.de/schema/nvto/hasFirstEdition
+nvto:hasFirstEdition rdf:type owl:AnnotationProperty .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition
+nvto:hasFirstLocalizedEdition rdf:type owl:AnnotationProperty .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasPhotoStudio
+nvto:hasPhotoStudio rdf:type owl:AnnotationProperty .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasSeason
+nvto:hasSeason rdf:type owl:AnnotationProperty ;
+               rdfs:domain nvto:PerformingArtsProduction .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+skos:example rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://lod.iti-germany.de/schema/nvto/containsAudibleReference
+nvto:containsAudibleReference rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf nvto:containsAudioVisualReference ;
+                              rdfs:comment "describes the connection between two resources in which one resource is audible in the other"@en ;
+                              rdfs:label "contains audible reference"@en ;
+                              skos:example "Burkhardt Seidemann is audible in the video recording of a performance of Blaubart."@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/containsAudioVisualReference
+nvto:containsAudioVisualReference rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf nvto:containsReferenceTo ;
+                                  rdfs:comment "describes the connection between two resources in which one resource is either audible or visible or both in the other"@en ;
+                                  rdfs:label "contains audiovisual reference"@en ;
+                                  skos:example "Burkhardt Seidemann is audible AND/OR visible in the video recording of a performance of Blaubart."@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/containsReferenceTo
+nvto:containsReferenceTo rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf dcterms:references ;
+                         rdfs:comment """describes the connection between two resources in which one resource contains any kind of reference to the other
+Connects a resource to another resource it contains a reference to."""@en ;
+                         rdfs:label "contains reference to"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/containsTextualReference
+nvto:containsTextualReference rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf nvto:containsReferenceTo ;
+                              rdfs:comment "describes the connection between two resources in which one resource is textually referenced in the other"@en ;
+                              rdfs:label "contains textual reference"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/containsVisualReference
+nvto:containsVisualReference rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf nvto:containsAudioVisualReference ;
+                             rdfs:comment "describes the connection between two resources in which one resource is visible in the other"@en ;
+                             rdfs:label "contains visual reference"@en ;
+                             skos:example "Burkhardt Seidemann is audible in the video recording of a performance of Blaubart."@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/happenedAtPlace
+nvto:happenedAtPlace rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf nvto:hasRelatedPlace ;
+                     rdfs:domain nvto:Event ;
+                     rdfs:range nvto:Place ;
+                     rdfs:comment "connects an event to the place it happened at"@en ;
+                     rdfs:label "happened at place"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasActor
+nvto:hasActor rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf dcterms:contributor ,
+                                 eclap:performingArtsProfessional ;
+              rdfs:comment "connects a resource to an agent who contributed to the resource as actor."@en ;
+              rdfs:label "has actor"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasAdaptor
+nvto:hasAdaptor rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf dcterms:contributor ,
+                                   eclap:performingArtsProfessional ;
+                rdfs:comment "connects a resource to an agent who contributed to the resource as adaptor."@en ;
+                rdfs:label "has adaptor"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasAuthor
+nvto:hasAuthor rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf dcterms:contributor ,
+                                  eclap:performingArtsProfessional ;
+               rdfs:comment "connects a resource to an agent who contributed to the resource as author."@en ;
+               rdfs:label "has author"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasChoreographer
+nvto:hasChoreographer rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf dcterms:contributor ,
+                                         eclap:performingArtsProfessional ;
+                      rdfs:comment "connects a resource to an agent who contributed to the resource as choreographer."@en ;
+                      rdfs:label "has choreographer"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasCinematographer
+nvto:hasCinematographer rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf dcterms:contributor ,
+                                           eclap:performingArtsProfessional ;
+                        rdfs:comment "connects a resource to an agent who contributed to the resource as cinematographer."@en ;
+                        rdfs:label "has cinematographer"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasComposer
+nvto:hasComposer rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf dcterms:contributor ,
+                                    eclap:performingArtsProfessional ;
+                 rdfs:comment "connects a resource to an agent who contributed to the resource as author."@en ;
+                 rdfs:label "has composer"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasConceptOriginator
+nvto:hasConceptOriginator rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf dcterms:contributor ,
+                                             eclap:performingArtsProfessional ;
+                          rdfs:comment "connects a resource to an agent who contributed to the resource as concept originator."@en ;
+                          rdfs:label "has concept originator"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasContentMatch
+nvto:hasContentMatch rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf dcterms:relation ;
+                     rdfs:comment """Connects a resource to another resource with matching content.
+A shorthand property for connecting a resource to another resource with partly or fully matching contents."""@en ;
+                     rdfs:label "has content match"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner
+nvto:hasCostumeDesigner rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf dcterms:contributor ,
+                                           eclap:performingArtsProfessional ;
+                        rdfs:comment "connects a resource to an agent who contributed to the resource as costume designer."@en ;
+                        rdfs:label "has costume designer"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasDancer
+nvto:hasDancer rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf dcterms:contributor ,
+                                  eclap:performingArtsProfessional ;
+               rdfs:comment "connects a resource to an agent who contributed to the resource as dancer."@en ;
+               rdfs:label "has dancer"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasDirector
+nvto:hasDirector rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf dcterms:contributor ,
+                                    eclap:performingArtsProfessional ;
+                 rdfs:comment "connects a resource to an agent who contributed to the resource as director."@en ;
+                 rdfs:label "has director"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasDramaturge
+nvto:hasDramaturge rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf dcterms:contributor ,
+                                      eclap:performingArtsProfessional ;
+                   rdfs:comment "connects a resource to an agent who contributed to the resource as dramaturge."@en ;
+                   rdfs:label "has dramaturge"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasEditor
+nvto:hasEditor rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf dcterms:contributor ,
+                                  eclap:performingArtsProfessional ;
+               rdfs:comment "connects a resource to an agent who contributed to the resource as editor."@en ;
+               rdfs:label "has editor"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasIllustrator
+nvto:hasIllustrator rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf dcterms:contributor ,
+                                       eclap:performingArtsProfessional ;
+                    rdfs:comment "connects a resource to an agent who contributed to the resource as illustrator."@en ;
+                    rdfs:label "has illustrator"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasLayouter
+nvto:hasLayouter rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf dcterms:contributor ,
+                                    eclap:performingArtsProfessional ;
+                 rdfs:comment "connects a resource to an agent who contributed to the resource as layouter."@en ;
+                 rdfs:label "has layouter"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasLightDesigner
+nvto:hasLightDesigner rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf dcterms:contributor ,
+                                         eclap:performingArtsProfessional ;
+                      rdfs:comment "connects a resource to an agent who contributed to the resource as light designer."@en ;
+                      rdfs:label "has light designer"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasMaskDesigner
+nvto:hasMaskDesigner rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf dcterms:contributor ,
+                                        eclap:performingArtsProfessional ;
+                     rdfs:comment "connects a resource to an agent who contributed to the resource as mask designer."@en ;
+                     rdfs:label "has mask designer"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasMusician
+nvto:hasMusician rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf dcterms:contributor ,
+                                    eclap:performingArtsProfessional ;
+                 rdfs:comment "connects a resource to an agent who contributed to the resource as musician."@en ;
+                 rdfs:label "has musician"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasParticipant
+nvto:hasParticipant rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf dcterms:contributor ;
+                    rdfs:comment "connects a resource to an agent who contributed to the resource as participant."@en ;
+                    rdfs:label "has participant"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasPerformer
+nvto:hasPerformer rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf dcterms:contributor ,
+                                     eclap:performingArtsProfessional ;
+                  rdfs:comment "connects a resource to an agent who contributed to the resource as performer."@en ;
+                  rdfs:label "has performer"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasPhotoStudio
+nvto:hasPhotoStudio rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf dcterms:contributor .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasPhotographer
+nvto:hasPhotographer rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf dcterms:contributor ,
+                                        eclap:performingArtsProfessional ;
+                     rdfs:comment "connects a resource to an agent who contributed to the resource as photographer."@en ;
+                     rdfs:label "has photographer"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasPredecessor
+nvto:hasPredecessor rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf dcterms:relation ;
+                    rdfs:comment "Describes the connection between two resources in which one resource precedes the other."@en ;
+                    rdfs:label "has predecessor"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasPublishingPlace
+nvto:hasPublishingPlace rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf nvto:hasRelatedPlace ;
+                        rdfs:range nvto:Place ;
+                        rdfs:comment "connects a resource to the place it was published at"@en ;
+                        rdfs:label "has publishing place"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner
+nvto:hasPuppetDesigner rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf dcterms:contributor ,
+                                          eclap:performingArtsProfessional ;
+                       rdfs:comment "connects a resource to an agent who contributed to the resource as puppet designer."@en ;
+                       rdfs:label "has puppet designer"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasRecordist
+nvto:hasRecordist rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf dcterms:contributor ,
+                                     eclap:performingArtsProfessional ;
+                  rdfs:comment "connects a resource to an agent who contributed to the resource as recordist."@en ;
+                  rdfs:label "has recordist"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasRelatedPlace
+nvto:hasRelatedPlace rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf dcterms:spatial ;
+                     rdfs:range nvto:Place ;
+                     rdfs:comment "connects a resource to a place it is related to in any way"@en ;
+                     rdfs:label "has related place"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasResidence
+nvto:hasResidence rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf nvto:hasRelatedPlace ;
+                  owl:inverseOf nvto:isResidenceOf ;
+                  rdfs:domain nvto:Agent ;
+                  rdfs:range nvto:Place ;
+                  rdfs:comment "connects an agent to its place of residency"@en ;
+                  rdfs:label "has residence"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasSeason
+nvto:hasSeason rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf dcterms:temporal .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasSetDesigner
+nvto:hasSetDesigner rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf dcterms:contributor ,
+                                       eclap:performingArtsProfessional ;
+                    rdfs:comment "connects a resource to an agent who contributed to the resource as set designer."@en ;
+                    rdfs:label "has set designer"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasSpeaker
+nvto:hasSpeaker rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf dcterms:contributor ,
+                                   eclap:performingArtsProfessional ;
+                rdfs:comment "connects a resource to an agent who contributed to the resource as speaker."@en ;
+                rdfs:label "has speaker"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasSuccessor
+nvto:hasSuccessor rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf dcterms:relation ;
+                  rdfs:comment "Describes the connection between two resources in which one resource succeeds the other."@en ;
+                  rdfs:label "has successor"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasTranslator
+nvto:hasTranslator rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf dcterms:contributor ,
+                                      eclap:performingArtsProfessional ;
+                   rdfs:comment "connects a resource to an agent who contributed to the resource as translator."@en ;
+                   rdfs:label "has translator"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasVideoDesigner
+nvto:hasVideoDesigner rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf dcterms:contributor ,
+                                         eclap:performingArtsProfessional ;
+                      rdfs:comment "connects a resource to an agent responsible for its video design."@en ;
+                      rdfs:label "video designer"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/isResidenceOf
+nvto:isResidenceOf rdf:type owl:ObjectProperty ;
+                   rdfs:comment "connects a place to an agent that resides at this place"@en ;
+                   rdfs:label "is residence of"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/occuredAtTime
+nvto:occuredAtTime rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf dcterms:temporal ;
+                   rdfs:domain nvto:Event ;
+                   rdfs:range nvto:TimeSpan ;
+                   rdfs:comment "connects an event to the timespan it occured at"@en ;
+                   rdfs:label "occured at time"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/originatedAtPlace
+nvto:originatedAtPlace rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf nvto:hasRelatedPlace ;
+                       rdfs:range nvto:Place ;
+                       rdfs:comment "connects a resource to the location it originated at."@en ;
+                       rdfs:label "originated at place"@en .
+
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/references
+dcterms:references rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/relation
+dcterms:relation rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/spatial
+dcterms:spatial rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/temporal
+dcterms:temporal rdf:type owl:ObjectProperty .
+
+
+###  http://www.eclap.eu/schema/eclap/performingArtsProfessional
+eclap:performingArtsProfessional rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://lod.iti-germany.de/schema/nvto/beginsAtTime
+nvto:beginsAtTime rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf dcterms:date ;
+                  rdfs:domain nvto:TimeSpan ;
+                  rdfs:comment "describes the begin date/point in time of a time span"@en ;
+                  rdfs:label "begins at time"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/endsAtTime
+nvto:endsAtTime rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf dcterms:date ;
+                rdfs:domain nvto:TimeSpan ;
+                rdfs:comment "describes the end date/point in time of a time span"@en ;
+                rdfs:label "ends at time"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasAddress
+nvto:hasAddress rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf skos:note ;
+                rdfs:comment "describes the address of a resource"@en ;
+                rdfs:label "has address"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasCondition
+nvto:hasCondition rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf skos:note ;
+                  rdfs:comment "Describes or connects to the condition of an resource (e.g the condition of a physical object or a digital file)."@en ;
+                  rdfs:label "has condition"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasDateOfBirth
+nvto:hasDateOfBirth rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf dcterms:date ;
+                    rdfs:domain nvto:Agent ;
+                    rdfs:comment "describes the date of birth of an agent"@en ;
+                    rdfs:label "has date of birth"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasDateOfDeath
+nvto:hasDateOfDeath rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf dcterms:date ;
+                    rdfs:domain nvto:Agent ;
+                    rdfs:comment "describes the date of death of an agent"@en ;
+                    rdfs:label "has date of death"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasDimensions
+nvto:hasDimensions rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf skos:note ;
+                   rdfs:comment "Describes the dimensions of a resource (e.g the dimensions of a physical object or a digital file)."@en ;
+                   rdfs:label "has dimensions"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasFirstEdition
+nvto:hasFirstEdition rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf skos:note .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition
+nvto:hasFirstLocalizedEdition rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf skos:note .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate
+nvto:hasFirstPerformanceDate rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf dcterms:date ;
+                             rdfs:comment "A shorthand property for describing the first performance date of a resource (e.g. a performing arts production)."@en ;
+                             rdfs:label "has first performance date"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasIsbn
+nvto:hasIsbn rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf skos:note ;
+             rdfs:comment "describes the ISBN of a resource."@en ;
+             rdfs:label "has ISBN"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasLabelingBack
+nvto:hasLabelingBack rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf skos:note ;
+                     rdfs:comment "describes the labeling on the back of a resource."@en ;
+                     rdfs:label "has labeling back"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasLabelingFront
+nvto:hasLabelingFront rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf skos:note ;
+                      rdfs:comment "describes the labeling on the front of a resource."@en ;
+                      rdfs:label "has labeling front"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/hasSubtitle
+nvto:hasSubtitle rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf dcterms:title ;
+                 rdfs:comment "describes the subtitle of a resource"@en ;
+                 rdfs:label "has subtitle"@en .
+
+
+###  http://purl.org/dc/terms/date
+dcterms:date rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+skos:note rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://lod.iti-germany.de/schema/nvto/Agent
+nvto:Agent rdf:type owl:Class ;
+           rdfs:label "Agent"@de ,
+                      "Agent"@en ;
+           skos:definition "This class comprises all Agents such as Persons or Institutions. " ;
+           skos:example "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg" .
+
+
+###  http://lod.iti-germany.de/schema/nvto/City
+nvto:City rdf:type owl:Class ;
+          rdfs:subClassOf nvto:Place ;
+          rdfs:label "City"@en ,
+                     "Stadt"@de ;
+          skos:definition "This class comprises cities dependent on time and/or geopolitics." ;
+          skos:example "Berlin, Berlin West, Berlin Ost" .
+
+
+###  http://lod.iti-germany.de/schema/nvto/Collection
+nvto:Collection rdf:type owl:Class ;
+                rdfs:label "Collection"@en ,
+                           "Sammlung"@de ;
+                skos:definition """This class comprises collections.
+A generic class for (named) resource collections with arbitrary order."""@en ;
+                skos:example "COL" .
+
+
+###  http://lod.iti-germany.de/schema/nvto/Country
+nvto:Country rdf:type owl:Class ;
+             rdfs:subClassOf nvto:Place ;
+             rdfs:label "Country"@en ,
+                        "Land"@de ;
+             skos:definition "This class comprises countries dependent on time and/or geopolitics. " ;
+             skos:example "FRG, West Germany, GDR" .
+
+
+###  http://lod.iti-germany.de/schema/nvto/DigitalItem
+nvto:DigitalItem rdf:type owl:Class ;
+                 rdfs:label "Digital Item"@en ,
+                            "Digitales Item"@de ;
+                 skos:definition """digital representation of the contents a medium
+digital information carrier""" ;
+                 skos:example "IMG.tif, VID.avi" .
+
+
+###  http://lod.iti-germany.de/schema/nvto/Event
+nvto:Event rdf:type owl:Class ;
+           rdfs:label "Ereignis"@de ,
+                      "Event"@en ;
+           skos:definition "This class comprises all events in the realm of performing arts."@en ;
+           skos:example "a performance of 'Hamlet', a workshop regarding a specific acting technique, an exhibition about an actor/actress"@en .
+
+
+###  http://lod.iti-germany.de/schema/nvto/InformationObject
+nvto:InformationObject rdf:type owl:Class ;
+                       rdfs:label "Information Object"@en ,
+                                  "Informationsobjekt"@de ;
+                       skos:definition """conceptual representation of the contents a medium / captured by a physical or digital (archival) object
+The same information object can be captured in multiple pyhsical or digital objects (e.g. a magazine edition). 
+Also one physical object can carry multiple information objects (e.g. multiple movies in a single video tape)."""@en ;
+                       skos:example "Aufnahme von Aufführung, Inhalt von Programmheft X" .
+
+
+###  http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup
+nvto:PerformingArtsGroup rdf:type owl:Class ;
+                         rdfs:subClassOf nvto:Agent ;
+                         rdfs:label "Group/Ensemble/Company"@en ,
+                                    "Gruppe/Ensemble/Company"@de ;
+                         skos:definition "This class comprises ensembles and similar groups in the realm of performing arts." ;
+                         skos:example "DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg" .
+
+
+###  http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation
+nvto:PerformingArtsLocation rdf:type owl:Class ;
+                            rdfs:subClassOf nvto:Place ;
+                            rdfs:label "Aufführungsort"@de ,
+                                       "Performing Arts Location"@en ;
+                            skos:definition "This class comprises locations that were or are used for performing arts. " ;
+                            skos:example "Volksbühne, Pratergarten" .
+
+
+###  http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction
+nvto:PerformingArtsProduction rdf:type owl:Class ;
+                              rdfs:label "Production"@en ,
+                                         "Produktion"@de ;
+                              skos:definition "This class comprises specific productions in the realm of performing arts that were or are performed in performing arts events."@en ;
+                              skos:example "Blaubart, Hamlet" .
+
+
+###  http://lod.iti-germany.de/schema/nvto/PhysicalObject
+nvto:PhysicalObject rdf:type owl:Class ;
+                    rdfs:label "Physical Object"@en ,
+                               "Physisches Objekt"@de ;
+                    skos:definition """physical representation of the contents a medium
+pyhsical information carrier"""@en ;
+                    skos:example "Videokassette mit Aufnahme von Aufführung, Programmheft X" .
+
+
+###  http://lod.iti-germany.de/schema/nvto/Place
+nvto:Place rdf:type owl:Class ;
+           rdfs:label "Ort"@de ,
+                      "Place"@en ;
+           skos:definition "This class comprises all Places." .
+
+
+###  http://lod.iti-germany.de/schema/nvto/Series
+nvto:Series rdf:type owl:Class ;
+            rdfs:label "Serie"@de ,
+                       "Series"@en ;
+            skos:definition """This class comprises series.
+A generic class for (named) resource series with a non arbitrary order."""@en ;
+            skos:example "SRS" .
+
+
+###  http://lod.iti-germany.de/schema/nvto/TimeSpan
+nvto:TimeSpan rdf:type owl:Class ;
+              rdfs:label "Timespan"@en ,
+                         "Zeitspanne"@de ;
+              skos:definition "This class comprises timespans of any length. " ;
+              skos:example "1979-1989, 00:00:00:00-00:52:23:17" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+nvto:hasFirstEdition rdfs:comment "describes or points to the first edition of a resource."@en ;
+                     rdfs:label "has first edition"@en .
+
+
+nvto:hasFirstLocalizedEdition rdfs:comment "describes or points to the first localized edition of a resource."@en ;
+                              rdfs:label "has first localized edition"@en .
+
+
+nvto:hasPhotoStudio rdfs:label "has photo studio"@en ;
+                    rdfs:comment "connects a resource to a photo studio that contributed to its creation."@en .
+
+
+nvto:hasSeason rdfs:comment "describes the season of a performing arts institution in which a performing arts production was performed"@en ;
+               rdfs:label "has season" .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

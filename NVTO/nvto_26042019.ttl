@@ -31,9 +31,9 @@
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 @prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
-@prefix nvto: <lod.iti-germany.de/schema/nvto> .
+@prefix nvto: <http://lod.iti-germany.de/schema/nvto/> .
 
-@base <lod.iti-germany.de/schema/nvto> .
+@base <http://lod.iti-germany.de/schema/nvto/> .
 
 ## CLASSES
 
@@ -142,7 +142,7 @@ nvto:beginsAtTime rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf dcterms:date ;
                 rdfs:domain nvto:TimeSpan ;
                 rdfs:comment "describes the begin date of a time span"@en ;
-                rdfs:label "ends at time"@en .
+                rdfs:label "begins at time"@en .
 
 nvto:containsAudibleReference rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf nvto:containsAudioVisualReference ;
@@ -165,7 +165,7 @@ nvto:containsTextualReference rdf:type owl:ObjectProperty ;
                       rdfs:label "contains textual reference"@en .
 
 nvto:containsVisualReference rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf nvto:containsReference ;
+                      rdfs:subPropertyOf nvto:containsAudioVisualReference ;
                       rdfs:comment "describes the connection between two resources in which one resource is visible in the other"@en ;
                       rdfs:label "contains visual reference"@en .
 
@@ -176,7 +176,7 @@ nvto:endsAtTime rdf:type owl:DatatypeProperty ;
                 rdfs:label "ends at time"@en .
 
 nvto:happenedAtPlace rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf dcterms:spatial ;
+                     rdfs:subPropertyOf nvto:hasRelatedPlace ;
                      rdfs:domain nvto:Event ;
                      rdfs:range nvto:Place ;
                      rdfs:comment "connects an event to the place it happened at"@en ;
@@ -234,7 +234,7 @@ nvto:hasCondition rdf:type owl:DatatypeProperty ;
                       rdfs:comment "describes or connects to the condition of an resource."@en ;
                       rdfs:label "has condition"@en .
 
-nvto:hasContentMatch rdf:type owl:AnnotationProperty ;
+nvto:hasContentMatch rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf dcterms:relation ;
                   rdfs:comment "connects a resource to another resource with matching content."@en ;
                   rdfs:label "has content match"@en .
@@ -374,7 +374,7 @@ nvto:hasPredecessor rdf:type owl:ObjectProperty ;
                 rdfs:label "has predecessor"@en .
 
 nvto:hasPublishingPlace rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf dcterms:spatial ;
+                      rdfs:subPropertyOf nvto:hasRelatedPlace ;
                       rdfs:comment "connects a resource to the place it was published at."@en ;
                       rdfs:label "has publishing place"@en .
 
@@ -456,7 +456,7 @@ nvto:occuredAtTime rdf:type owl:ObjectProperty ;
                   rdfs:label "occured at time"@en .
 
 nvto:originatedAtPlace rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf dcterms:spatial ;
+                      rdfs:subPropertyOf nvto:hasRelatedPlace ;
                       rdfs:range nvto:Place ;
                       rdfs:comment "connects a resource to the location it originated at."@en ;
-                      rdfs:label "originated at location"@en .
+                      rdfs:label "originated at place"@en .

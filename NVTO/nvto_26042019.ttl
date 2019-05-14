@@ -316,6 +316,11 @@ nvto:hasLabelingFront rdf:type owl:DatatypeProperty ;
                   skos:definition "Describes the labeling on the front of a resource."@en ;
                   rdfs:label "has labeling front"@en .
 
+nvto:hasLastPerformanceDate rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf dcterms:date ;
+                skos:definition "A shorthand property for describing the last performance date of a resource (e.g. a performing arts production)."@en ;
+                rdfs:label "has last performance date"@en .
+
 nvto:hasLayouter rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf dcterms:contributor ;
                 skos:definition "Connects a resource to an agent who contributed to the resource as layouter."@en ;
@@ -356,9 +361,8 @@ nvto:hasPhotoStudio rdf:type owl:AnnotationProperty ;
                  skos:definition "Connects a resource to a photo studio that contributed to its creation."@en ;
                  rdfs:label "has photo studio"@en .
 
-nvto:hasPredecessor rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf dcterms:relation ;
-                skos:definition "Connects two resources in which one resource precedes the other."@en ;
+nvto:hasPredecessor rdf:type owl:AnnotationProperty ;
+                skos:definition "Connects or describes two resources in which one resource precedes the other."@en ;
                 rdfs:label "has predecessor"@en .
 
 nvto:hasPublishingPlace rdf:type owl:ObjectProperty ;
@@ -390,11 +394,12 @@ nvto:hasResidence rdf:type owl:ObjectProperty ;
                   skos:definition "Connects an agent to its place of residency."@en ;
                   rdfs:label "has residence"@en .
 
-nvto:hasSeason rdfs:type owl:DatatypeProperty ;
+nvto:hasSeason rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf dcterms:temporal ;
               rdfs:domain nvto:PerformingArtsProduction ;
+              rdfs:range nvto:TimeSpan ;
               skos:definition "Describes the season in which a performing arts production was performed."@en ;
-              rdfs:label "has season" .
+              rdfs:label "has season"@en .
 
 nvto:hasSetDesigner rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf dcterms:contributor ;
@@ -411,9 +416,8 @@ nvto:hasSubtitle  rdf:type owl:DatatypeProperty ;
                 skos:definition "Describes the subtitle of a resource."@en ;
                 rdfs:label "has subtitle"@en .
 
-nvto:hasSuccessor rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf dcterms:relation ;
-                skos:definition "Connects two resources in which one resource succeeds the other."@en ;
+nvto:hasSuccessor rdf:type owl:AnnotationProperty ;
+                skos:definition "Connects or describes two resources in which one resource succeeds the other."@en ;
                 rdfs:label "has successor"@en .
 
 nvto:hasTranslator rdf:type owl:ObjectProperty ;

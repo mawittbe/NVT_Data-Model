@@ -1,0 +1,40 @@
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_0000> <http://purl.org/dc/terms/title> "Woche des Gestischen Theaters" .
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_0000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Collection> .
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_0000> <http://www.w3.org/2004/02/skos/core#prefLabel> "Woche des Gestischen Theaters" .
+
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1985> <http://www.w3.org/2004/02/skos/core#prefLabel> "Woche des Gestischen Theaters 1985" .
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1985> <http://purl.org/dc/terms/title> "Woche des Gestischen Theaters 1985" .
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1985> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Collection> .
+
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1986> <http://purl.org/dc/terms/title> "Woche des Gestischen Theaters 1986" .
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1986> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Collection> .
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1986> <http://www.w3.org/2004/02/skos/core#prefLabel> "Woche des Gestischen Theaters 1986" .
+
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1987> <http://www.w3.org/2004/02/skos/core#prefLabel> "Woche des Gestischen Theaters 1987" .
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1987> <http://purl.org/dc/terms/title> "Woche des Gestischen Theaters 1987" .
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1987> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Collection> .
+
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1988> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Collection> .
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1988> <http://purl.org/dc/terms/title> "Woche des Gestischen Theaters 1988" .
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1988> <http://www.w3.org/2004/02/skos/core#prefLabel> "Woche des Gestischen Theaters 1988" .
+
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1989> <http://www.w3.org/2004/02/skos/core#prefLabel> "Woche des Gestischen Theaters 1989" .
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1989> <http://purl.org/dc/terms/title> "Woche des Gestischen Theaters 1989" .
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1989> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Collection> .
+
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1990> <http://www.w3.org/2004/02/skos/core#prefLabel> "Internationale Woche Gestisches Theater 1990" .
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1990> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Collection> .
+<http://localhost:8080/source/col_woche_des_gestischen_theaters_1990> <http://purl.org/dc/terms/title> "Internationale Woche Gestisches Theater 1990" .
+
+<http://localhost:8080/source/col_eberhard_kube> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Collection> .
+<http://localhost:8080/source/col_eberhard_kube> <http://purl.org/dc/terms/title> "Pantomime Eberhard Kube" .
+<http://localhost:8080/source/col_eberhard_kube> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pantomime Eberhard Kube" .
+
+<http://localhost:8080/source/col_pt_pb> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pantomimentheater vom Prenzlauer Berg" .
+<http://localhost:8080/source/col_pt_pb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Collection> .
+<http://localhost:8080/source/col_pt_pb> <http://purl.org/dc/terms/title> "Pantomimentheater vom Prenzlauer Berg" .
+
+<http://localhost:8080/source/col_theater_in_bewegung__88> <http://www.w3.org/2004/02/skos/core#prefLabel> "Theater in Bewegung '88" .
+<http://localhost:8080/source/col_theater_in_bewegung__88> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Collection> .
+<http://localhost:8080/source/col_theater_in_bewegung__88> <http://purl.org/dc/terms/title> "Theater in Bewegung '88" .
+

@@ -1,0 +1,1609 @@
+@prefix dm2e: <http://onto.dm2e.eu/schemas/dm2e/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix nvto: <http://lod.iti-germany.de/schema/nvto/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ecrm: <http://erlangen-crm.org/170309/> .
+@prefix gndo: <http://d-nb.info/standards/elementset/gnd#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix eclap: <http://www.eclap.eu/schema/eclap/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdau: <http://www.rdaregistry.info/Elements/u/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1daeg3ioox1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "MASTER_29042019_PERSON_Personen" ;
+	km-dev:modelPublicationTime "1557412301593"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"VIAF\"}],[{\"columnName\":\"GND\"}],[{\"columnName\":\"Vorname\"}],[{\"columnName\":\"Websites\"}],[{\"columnName\":\"Nachname\"}],[{\"columnName\":\"dbpedia\"}],[{\"columnName\":\"Identifier / geeinigte Schreibweise\"}],[{\"columnName\":\"Wikidata\"}],[{\"columnName\":\"Vollname\"}],[{\"columnName\":\"Website\"}],[{\"columnName\":\"Geboren\"}],[{\"columnName\":\"Gestorben\"}],[{\"columnName\":\"Beschreibung\"}],[{\"columnName\":\"Quelle (Beschreibung)\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"VIAF\"}],[{\"columnName\":\"GND\"}],[{\"columnName\":\"BeschreibungQuelle\"}],[{\"columnName\":\"Vorname\"}],[{\"columnName\":\"Websites\"}],[{\"columnName\":\"Nachname\"}],[{\"columnName\":\"dbpedia\"}],[{\"columnName\":\"Identifier / geeinigte Schreibweise\"}],[{\"columnName\":\"Wikidata\"}],[{\"columnName\":\"Vollname\"}],[{\"columnName\":\"Website\"}],[{\"columnName\":\"Geboren\"}],[{\"columnName\":\"Gestorben\"}]]" ;
+	km-dev:hasModelLabel "MASTER_29042019_PERSON_Personen" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Identifier / geeinigte Schreibweise\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"Identifier / geeinigte Schreibweise\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"Identifier / geeinigte Schreibweise\\\").lower().replace(\\\",\\\",\\\"_\\\").replace(\\\" \\\",\\\"_\\\")\\nreturn a\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Identifier / geeinigte Schreibweise\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Identifier / geeinigte Schreibweise\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Beschreibung\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"BeschreibungQuelle\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"a = getValue(\\\"Beschreibung\\\")\\nb = getValue(\\\"Quelle (Beschreibung)\\\")\\nif a == \\\"\\\" and b == \\\"\\\":\\n    return(\\\"\\\")\\nelif a == \\\"\\\" and b != \\\"\\\":\\n    return(\\\"Quelle: \\\" + b)\\nelif a != \\\"\\\" and b == \\\"\\\":\\n    return(\\\"Beschreibung: \\\" + a)\\nelif a != \\\"\\\" and b != \\\"\\\":\\n    return(\\\"Beschreibung: \\\" + a + \\\"; Quelle: \\\" + b)\\nelse:\\n    pass\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Beschreibung\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"Quelle (Beschreibung)\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BeschreibungQuelle\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Identifier / geeinigte Schreibweise\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Agent\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Agent1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"nvto:Agent1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Identifier / geeinigte Schreibweise\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Identifier / geeinigte Schreibweise\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Vollname\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [
+                    {
+                        \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                        \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Agent1\",
+                        \"isPrimary\": false,
+                        \"isProvenance\": false,
+                        \"FullType\": \"http://www.w3.org/2004/02/skos/core#prefLabel\",
+                        \"DomainLabel\": \"nvto:Agent1\"
+                    },
+                    {
+                        \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                        \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Agent1\",
+                        \"isPrimary\": true,
+                        \"isProvenance\": false,
+                        \"FullType\": \"http://xmlns.com/foaf/0.1/name\",
+                        \"DomainLabel\": \"nvto:Agent1\"
+                    }
+                ]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Vollname\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Vollname\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Vorname\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://xmlns.com/foaf/0.1/firstName\",
+                    \"DomainLabel\": \"nvto:Agent1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Vorname\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Vorname\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Nachname\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://xmlns.com/foaf/0.1/familyName\",
+                    \"DomainLabel\": \"nvto:Agent1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Nachname\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Nachname\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"BeschreibungQuelle\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#note\",
+                    \"DomainLabel\": \"nvto:Agent1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BeschreibungQuelle\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BeschreibungQuelle\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Geboren\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://lod.iti-germany.de/schema/nvto/hasDateOfBirth\",
+                    \"DomainLabel\": \"nvto:Agent1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Geboren\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Geboren\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Gestorben\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://lod.iti-germany.de/schema/nvto/hasDateOfDeath\",
+                    \"DomainLabel\": \"nvto:Agent1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Gestorben\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Gestorben\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"VIAF\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Agent\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Agent2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Agent2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"nvto:Agent2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"VIAF\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"VIAF\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"GND\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Agent\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Agent3\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Agent3\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"nvto:Agent3 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GND\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GND\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Wikidata\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Agent\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Agent4\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Agent4\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"nvto:Agent4 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Wikidata\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Wikidata\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Website\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"owl:Thing1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Website\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Website\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Websites\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"owl:Thing2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Websites\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Websites\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"dbpedia\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Agent\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Agent5\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Agent5\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"nvto:Agent5 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dbpedia\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dbpedia\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://lod.iti-germany.de/schema/nvto/Agent2\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                    \"edgeSourceId\": \"http://lod.iti-germany.de/schema/nvto/Agent1\",
+                    \"edgeSourceUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://lod.iti-germany.de/schema/nvto/Agent3\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                    \"edgeSourceId\": \"http://lod.iti-germany.de/schema/nvto/Agent1\",
+                    \"edgeSourceUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://lod.iti-germany.de/schema/nvto/Agent4\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                    \"edgeSourceId\": \"http://lod.iti-germany.de/schema/nvto/Agent1\",
+                    \"edgeSourceUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"edgeId\": \"http://xmlns.com/foaf/0.1/homepage\",
+                    \"edgeTargetUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"edgeSourceId\": \"http://lod.iti-germany.de/schema/nvto/Agent1\",
+                    \"edgeSourceUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.w3.org/2002/07/owl#Thing2\",
+                    \"edgeId\": \"http://xmlns.com/foaf/0.1/homepage\",
+                    \"edgeTargetUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"edgeSourceId\": \"http://lod.iti-germany.de/schema/nvto/Agent1\",
+                    \"edgeSourceUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://lod.iti-germany.de/schema/nvto/Agent5\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                    \"edgeSourceId\": \"http://lod.iti-germany.de/schema/nvto/Agent1\",
+                    \"edgeSourceUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c a rr:TriplesMap .
+
+_:node1daeg3ioox1 km-dev:hasTriplesMap km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox2 rr:tableName "MASTER_29042019_PERSON_Personen" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasLogicalTable _:node1daeg3ioox2 .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c rr:logicalTable _:node1daeg3ioox2 ;
+	rr:subjectMap _:node1daeg3ioox3 .
+
+_:node1daeg3ioox1 km-dev:hasSubjectMap _:node1daeg3ioox3 .
+
+_:node1daeg3ioox3 km-dev:isPartOfMapping _:node1daeg3ioox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://lod.iti-germany.de/schema/nvto/Agent1" ;
+	rr:class nvto:Agent ;
+	rr:template "{Identifier / geeinigte Schreibweise}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_bf72ab4b-851c-437d-942c-479804fff281 rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_843b2d11-ad5f-4b00-a534-f8b78eb1eb15 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_ccbd95d9-a281-4008-85cc-c0079c9a6a3d ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasObjectMap km-dev:RefObjectMap_843b2d11-ad5f-4b00-a534-f8b78eb1eb15 .
+
+km-dev:PredicateObjectMap_bf72ab4b-851c-437d-942c-479804fff281 rr:objectMap km-dev:RefObjectMap_843b2d11-ad5f-4b00-a534-f8b78eb1eb15 .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c rr:predicateObjectMap km-dev:PredicateObjectMap_bf72ab4b-851c-437d-942c-479804fff281 .
+
+km-dev:PredicateObjectMap_bf72ab4b-851c-437d-942c-479804fff281 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bf72ab4b-851c-437d-942c-479804fff281 .
+
+km-dev:PredicateObjectMap_e91b6c39-4cda-49bc-a757-a75f061533f9 rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_5987cdb2-d6c6-448a-a0db-53342669914c a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_5b86dfa4-2f07-4243-8a0c-f20fecab94af ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasObjectMap km-dev:RefObjectMap_5987cdb2-d6c6-448a-a0db-53342669914c .
+
+km-dev:PredicateObjectMap_e91b6c39-4cda-49bc-a757-a75f061533f9 rr:objectMap km-dev:RefObjectMap_5987cdb2-d6c6-448a-a0db-53342669914c .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c rr:predicateObjectMap km-dev:PredicateObjectMap_e91b6c39-4cda-49bc-a757-a75f061533f9 .
+
+km-dev:PredicateObjectMap_e91b6c39-4cda-49bc-a757-a75f061533f9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e91b6c39-4cda-49bc-a757-a75f061533f9 .
+
+km-dev:PredicateObjectMap_e019351c-db02-45fb-893f-81288a74bb2b rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_b5de409a-c565-443b-b621-b60a5a71d9ff a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_323a126d-994a-4409-b18b-e2578bfacd30 ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasObjectMap km-dev:RefObjectMap_b5de409a-c565-443b-b621-b60a5a71d9ff .
+
+km-dev:PredicateObjectMap_e019351c-db02-45fb-893f-81288a74bb2b rr:objectMap km-dev:RefObjectMap_b5de409a-c565-443b-b621-b60a5a71d9ff .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c rr:predicateObjectMap km-dev:PredicateObjectMap_e019351c-db02-45fb-893f-81288a74bb2b .
+
+km-dev:PredicateObjectMap_e019351c-db02-45fb-893f-81288a74bb2b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e019351c-db02-45fb-893f-81288a74bb2b .
+
+km-dev:PredicateObjectMap_0515cacb-212b-4faa-9417-2a89143db825 rr:predicate nvto:hasDateOfDeath .
+
+_:node1daeg3ioox4 rr:column "Gestorben" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasObjectMap _:node1daeg3ioox4 .
+
+km-dev:PredicateObjectMap_0515cacb-212b-4faa-9417-2a89143db825 rr:objectMap _:node1daeg3ioox4 .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c rr:predicateObjectMap km-dev:PredicateObjectMap_0515cacb-212b-4faa-9417-2a89143db825 .
+
+km-dev:PredicateObjectMap_0515cacb-212b-4faa-9417-2a89143db825 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0515cacb-212b-4faa-9417-2a89143db825 .
+
+km-dev:PredicateObjectMap_2c7fa200-6807-42e8-a604-d676442c929d rr:predicate foaf:homepage .
+
+km-dev:RefObjectMap_e017f2d8-9694-492c-b34f-fd011a597b54 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_5970e3f5-73f6-4185-8fdb-9fbd6cf4c97c ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasObjectMap km-dev:RefObjectMap_e017f2d8-9694-492c-b34f-fd011a597b54 .
+
+km-dev:PredicateObjectMap_2c7fa200-6807-42e8-a604-d676442c929d rr:objectMap km-dev:RefObjectMap_e017f2d8-9694-492c-b34f-fd011a597b54 .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c rr:predicateObjectMap km-dev:PredicateObjectMap_2c7fa200-6807-42e8-a604-d676442c929d .
+
+km-dev:PredicateObjectMap_2c7fa200-6807-42e8-a604-d676442c929d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2c7fa200-6807-42e8-a604-d676442c929d .
+
+km-dev:PredicateObjectMap_0f4e16f8-bd65-46f5-867f-b417ab0efa4f rr:predicate foaf:firstName .
+
+_:node1daeg3ioox5 rr:column "Vorname" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasObjectMap _:node1daeg3ioox5 .
+
+km-dev:PredicateObjectMap_0f4e16f8-bd65-46f5-867f-b417ab0efa4f rr:objectMap _:node1daeg3ioox5 .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c rr:predicateObjectMap km-dev:PredicateObjectMap_0f4e16f8-bd65-46f5-867f-b417ab0efa4f .
+
+km-dev:PredicateObjectMap_0f4e16f8-bd65-46f5-867f-b417ab0efa4f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0f4e16f8-bd65-46f5-867f-b417ab0efa4f .
+
+km-dev:PredicateObjectMap_beec9f42-85ed-4e0c-8365-263dca8bc03d rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_5589a40c-5310-454f-9742-5bdc43d68c0b a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_2a85b21e-91e0-47fb-bf1d-0575b8bb39e6 ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasObjectMap km-dev:RefObjectMap_5589a40c-5310-454f-9742-5bdc43d68c0b .
+
+km-dev:PredicateObjectMap_beec9f42-85ed-4e0c-8365-263dca8bc03d rr:objectMap km-dev:RefObjectMap_5589a40c-5310-454f-9742-5bdc43d68c0b .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c rr:predicateObjectMap km-dev:PredicateObjectMap_beec9f42-85ed-4e0c-8365-263dca8bc03d .
+
+km-dev:PredicateObjectMap_beec9f42-85ed-4e0c-8365-263dca8bc03d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_beec9f42-85ed-4e0c-8365-263dca8bc03d .
+
+km-dev:PredicateObjectMap_ebec9d84-66f4-4779-8fba-f67c91b8b985 rr:predicate foaf:homepage .
+
+km-dev:RefObjectMap_dfa71741-d0f6-4f6f-bbfa-fce6a82619ca a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_686d38ef-26d9-4e87-aa38-da804c30e780 ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasObjectMap km-dev:RefObjectMap_dfa71741-d0f6-4f6f-bbfa-fce6a82619ca .
+
+km-dev:PredicateObjectMap_ebec9d84-66f4-4779-8fba-f67c91b8b985 rr:objectMap km-dev:RefObjectMap_dfa71741-d0f6-4f6f-bbfa-fce6a82619ca .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c rr:predicateObjectMap km-dev:PredicateObjectMap_ebec9d84-66f4-4779-8fba-f67c91b8b985 .
+
+km-dev:PredicateObjectMap_ebec9d84-66f4-4779-8fba-f67c91b8b985 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ebec9d84-66f4-4779-8fba-f67c91b8b985 .
+
+km-dev:PredicateObjectMap_e2b39a68-d40c-4df1-9b06-525361d5dbc2 rr:predicate foaf:familyName .
+
+_:node1daeg3ioox6 rr:column "Nachname" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasObjectMap _:node1daeg3ioox6 .
+
+km-dev:PredicateObjectMap_e2b39a68-d40c-4df1-9b06-525361d5dbc2 rr:objectMap _:node1daeg3ioox6 .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c rr:predicateObjectMap km-dev:PredicateObjectMap_e2b39a68-d40c-4df1-9b06-525361d5dbc2 .
+
+km-dev:PredicateObjectMap_e2b39a68-d40c-4df1-9b06-525361d5dbc2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e2b39a68-d40c-4df1-9b06-525361d5dbc2 .
+
+km-dev:PredicateObjectMap_1dea3621-e56e-4c03-aafe-07681cadbc15 rr:predicate skos:note .
+
+_:node1daeg3ioox7 rr:column "BeschreibungQuelle" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasObjectMap _:node1daeg3ioox7 .
+
+km-dev:PredicateObjectMap_1dea3621-e56e-4c03-aafe-07681cadbc15 rr:objectMap _:node1daeg3ioox7 .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c rr:predicateObjectMap km-dev:PredicateObjectMap_1dea3621-e56e-4c03-aafe-07681cadbc15 .
+
+km-dev:PredicateObjectMap_1dea3621-e56e-4c03-aafe-07681cadbc15 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1dea3621-e56e-4c03-aafe-07681cadbc15 .
+
+km-dev:PredicateObjectMap_08771f6f-4a89-45ed-994f-a53076e23789 rr:predicate skos:prefLabel .
+
+_:node1daeg3ioox8 rr:column "Vollname" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasObjectMap _:node1daeg3ioox8 .
+
+km-dev:PredicateObjectMap_08771f6f-4a89-45ed-994f-a53076e23789 rr:objectMap _:node1daeg3ioox8 .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c rr:predicateObjectMap km-dev:PredicateObjectMap_08771f6f-4a89-45ed-994f-a53076e23789 .
+
+km-dev:PredicateObjectMap_08771f6f-4a89-45ed-994f-a53076e23789 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_08771f6f-4a89-45ed-994f-a53076e23789 .
+
+km-dev:PredicateObjectMap_2669d7b4-68ed-4ab8-b128-d501ab1191f2 rr:predicate nvto:hasDateOfBirth .
+
+_:node1daeg3ioox9 rr:column "Geboren" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasObjectMap _:node1daeg3ioox9 .
+
+km-dev:PredicateObjectMap_2669d7b4-68ed-4ab8-b128-d501ab1191f2 rr:objectMap _:node1daeg3ioox9 .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c rr:predicateObjectMap km-dev:PredicateObjectMap_2669d7b4-68ed-4ab8-b128-d501ab1191f2 .
+
+km-dev:PredicateObjectMap_2669d7b4-68ed-4ab8-b128-d501ab1191f2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2669d7b4-68ed-4ab8-b128-d501ab1191f2 .
+
+km-dev:PredicateObjectMap_91f62ace-3e74-4250-94cd-8d8414d939ff rr:predicate foaf:name .
+
+_:node1daeg3ioox10 rr:column "Vollname" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasObjectMap _:node1daeg3ioox10 .
+
+km-dev:PredicateObjectMap_91f62ace-3e74-4250-94cd-8d8414d939ff rr:objectMap _:node1daeg3ioox10 .
+
+km-dev:TriplesMap_170913cf-b9e4-424a-af1d-60694f9bde2c rr:predicateObjectMap km-dev:PredicateObjectMap_91f62ace-3e74-4250-94cd-8d8414d939ff .
+
+km-dev:PredicateObjectMap_91f62ace-3e74-4250-94cd-8d8414d939ff a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_91f62ace-3e74-4250-94cd-8d8414d939ff .
+
+km-dev:TriplesMap_ccbd95d9-a281-4008-85cc-c0079c9a6a3d a rr:TriplesMap .
+
+_:node1daeg3ioox1 km-dev:hasTriplesMap km-dev:TriplesMap_ccbd95d9-a281-4008-85cc-c0079c9a6a3d .
+
+km-dev:TriplesMap_ccbd95d9-a281-4008-85cc-c0079c9a6a3d km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox11 rr:tableName "MASTER_29042019_PERSON_Personen" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasLogicalTable _:node1daeg3ioox11 .
+
+km-dev:TriplesMap_ccbd95d9-a281-4008-85cc-c0079c9a6a3d rr:logicalTable _:node1daeg3ioox11 ;
+	rr:subjectMap _:node1daeg3ioox12 .
+
+_:node1daeg3ioox1 km-dev:hasSubjectMap _:node1daeg3ioox12 .
+
+_:node1daeg3ioox12 km-dev:isPartOfMapping _:node1daeg3ioox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://lod.iti-germany.de/schema/nvto/Agent3" ;
+	rr:class nvto:Agent ;
+	rr:template "{GND}" .
+
+km-dev:TriplesMap_5b86dfa4-2f07-4243-8a0c-f20fecab94af a rr:TriplesMap .
+
+_:node1daeg3ioox1 km-dev:hasTriplesMap km-dev:TriplesMap_5b86dfa4-2f07-4243-8a0c-f20fecab94af .
+
+km-dev:TriplesMap_5b86dfa4-2f07-4243-8a0c-f20fecab94af km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox13 rr:tableName "MASTER_29042019_PERSON_Personen" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasLogicalTable _:node1daeg3ioox13 .
+
+km-dev:TriplesMap_5b86dfa4-2f07-4243-8a0c-f20fecab94af rr:logicalTable _:node1daeg3ioox13 ;
+	rr:subjectMap _:node1daeg3ioox14 .
+
+_:node1daeg3ioox1 km-dev:hasSubjectMap _:node1daeg3ioox14 .
+
+_:node1daeg3ioox14 km-dev:isPartOfMapping _:node1daeg3ioox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://lod.iti-germany.de/schema/nvto/Agent4" ;
+	rr:class nvto:Agent ;
+	rr:template "{Wikidata}" .
+
+km-dev:TriplesMap_323a126d-994a-4409-b18b-e2578bfacd30 a rr:TriplesMap .
+
+_:node1daeg3ioox1 km-dev:hasTriplesMap km-dev:TriplesMap_323a126d-994a-4409-b18b-e2578bfacd30 .
+
+km-dev:TriplesMap_323a126d-994a-4409-b18b-e2578bfacd30 km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox15 rr:tableName "MASTER_29042019_PERSON_Personen" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasLogicalTable _:node1daeg3ioox15 .
+
+km-dev:TriplesMap_323a126d-994a-4409-b18b-e2578bfacd30 rr:logicalTable _:node1daeg3ioox15 ;
+	rr:subjectMap _:node1daeg3ioox16 .
+
+_:node1daeg3ioox1 km-dev:hasSubjectMap _:node1daeg3ioox16 .
+
+_:node1daeg3ioox16 km-dev:isPartOfMapping _:node1daeg3ioox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://lod.iti-germany.de/schema/nvto/Agent5" ;
+	rr:class nvto:Agent ;
+	rr:template "{dbpedia}" .
+
+km-dev:TriplesMap_5970e3f5-73f6-4185-8fdb-9fbd6cf4c97c a rr:TriplesMap .
+
+_:node1daeg3ioox1 km-dev:hasTriplesMap km-dev:TriplesMap_5970e3f5-73f6-4185-8fdb-9fbd6cf4c97c .
+
+km-dev:TriplesMap_5970e3f5-73f6-4185-8fdb-9fbd6cf4c97c km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox17 rr:tableName "MASTER_29042019_PERSON_Personen" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasLogicalTable _:node1daeg3ioox17 .
+
+km-dev:TriplesMap_5970e3f5-73f6-4185-8fdb-9fbd6cf4c97c rr:logicalTable _:node1daeg3ioox17 ;
+	rr:subjectMap _:node1daeg3ioox18 .
+
+_:node1daeg3ioox1 km-dev:hasSubjectMap _:node1daeg3ioox18 .
+
+_:node1daeg3ioox18 km-dev:isPartOfMapping _:node1daeg3ioox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2002/07/owl#Thing1" ;
+	rr:class owl:Thing ;
+	rr:template "{Website}" .
+
+km-dev:TriplesMap_2a85b21e-91e0-47fb-bf1d-0575b8bb39e6 a rr:TriplesMap .
+
+_:node1daeg3ioox1 km-dev:hasTriplesMap km-dev:TriplesMap_2a85b21e-91e0-47fb-bf1d-0575b8bb39e6 .
+
+km-dev:TriplesMap_2a85b21e-91e0-47fb-bf1d-0575b8bb39e6 km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox19 rr:tableName "MASTER_29042019_PERSON_Personen" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasLogicalTable _:node1daeg3ioox19 .
+
+km-dev:TriplesMap_2a85b21e-91e0-47fb-bf1d-0575b8bb39e6 rr:logicalTable _:node1daeg3ioox19 ;
+	rr:subjectMap _:node1daeg3ioox20 .
+
+_:node1daeg3ioox1 km-dev:hasSubjectMap _:node1daeg3ioox20 .
+
+_:node1daeg3ioox20 km-dev:isPartOfMapping _:node1daeg3ioox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://lod.iti-germany.de/schema/nvto/Agent2" ;
+	rr:class nvto:Agent ;
+	rr:template "{VIAF}" .
+
+km-dev:TriplesMap_686d38ef-26d9-4e87-aa38-da804c30e780 a rr:TriplesMap .
+
+_:node1daeg3ioox1 km-dev:hasTriplesMap km-dev:TriplesMap_686d38ef-26d9-4e87-aa38-da804c30e780 .
+
+km-dev:TriplesMap_686d38ef-26d9-4e87-aa38-da804c30e780 km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox21 rr:tableName "MASTER_29042019_PERSON_Personen" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1daeg3ioox1 .
+
+_:node1daeg3ioox1 km-dev:hasLogicalTable _:node1daeg3ioox21 .
+
+km-dev:TriplesMap_686d38ef-26d9-4e87-aa38-da804c30e780 rr:logicalTable _:node1daeg3ioox21 ;
+	rr:subjectMap _:node1daeg3ioox22 .
+
+_:node1daeg3ioox1 km-dev:hasSubjectMap _:node1daeg3ioox22 .
+
+_:node1daeg3ioox22 km-dev:isPartOfMapping _:node1daeg3ioox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2002/07/owl#Thing2" ;
+	rr:class owl:Thing ;
+	rr:template "{Websites}" .

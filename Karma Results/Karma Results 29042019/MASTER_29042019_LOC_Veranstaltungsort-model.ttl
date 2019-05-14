@@ -1,0 +1,2484 @@
+@prefix dm2e: <http://onto.dm2e.eu/schemas/dm2e/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix nvto: <http://lod.iti-germany.de/schema/nvto/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ecrm: <http://erlangen-crm.org/170309/> .
+@prefix gndo: <http://d-nb.info/standards/elementset/gnd#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix eclap: <http://www.eclap.eu/schema/eclap/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdau: <http://www.rdaregistry.info/Elements/u/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1dah747b5x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "xMASTER_29042019_LOC_Veranstaltungsort" ;
+	km-dev:modelPublicationTime "1557503548773"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"gLabel3\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"GehörtZu2\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"Adresse\"}],[{\"columnName\":\"Quelle Beschreibung\"}],[{\"columnName\":\"Beschreibung\"}],[{\"columnName\":\"geonames URI\"}],[{\"columnName\":\"weitere Ortsnamen\"}],[{\"columnName\":\"WIKIDATA URI\"}],[{\"columnName\":\"präferierter Ortsname\"}],[{\"columnName\":\"GND URI\"}],[{\"columnName\":\"ist Institution\"}],[{\"columnName\":\"Wikipedia URI\"}],[{\"columnName\":\"PROJEKT\"}],[{\"columnName\":\"geo:LONG\"}],[{\"columnName\":\"geo:LAT\"}],[{\"columnName\":\"LAND\"}],[{\"columnName\":\"STADT\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"gLabel\"}],[{\"columnName\":\"BeschreibungQuelle\"}],[{\"columnName\":\"gLabel3\"},{\"columnName\":\"gLabel4\"}],[{\"columnName\":\"InstitutionID\"}],[{\"columnName\":\"GehörtZu2\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"gLabel2\"}],[{\"columnName\":\"Adresse\"}],[{\"columnName\":\"geonames URI\"}],[{\"columnName\":\"weitere Ortsnamen\"}],[{\"columnName\":\"WIKIDATA URI\"}],[{\"columnName\":\"präferierter Ortsname\"}],[{\"columnName\":\"GND URI\"}],[{\"columnName\":\"Wikipedia URI\"}],[{\"columnName\":\"PROJEKT\"}],[{\"columnName\":\"geo:LONG\"}],[{\"columnName\":\"geo:LAT\"}],[{\"columnName\":\"LAND\"}],[{\"columnName\":\"STADT\"}]]" ;
+	km-dev:hasModelLabel "xMASTER_29042019_LOC_Veranstaltungsort" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"PROJEKT\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"PROJEKT\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"PROJEKT\\\").lower().replace(\\\",\\\",\\\"_\\\").replace(\\\" \\\",\\\"_\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PROJEKT\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PROJEKT\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"ist Institution\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"InstitutionID\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"if getValue(\\\"ist Institution\\\") == \\\"x\\\":\\n    return getValue(\\\"PROJEKT\\\").replace(\\\"loc_\\\", \\\"g_\\\")\\nelse:\\n    pass\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ist Institution\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"PROJEKT\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"InstitutionID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Beschreibung\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"BeschreibungQuelle\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"a = getValue(\\\"Beschreibung\\\")\\nb = getValue(\\\"Quelle Beschreibung\\\")\\nif a == \\\"\\\" and b == \\\"\\\":\\n    return(\\\"\\\")\\nelif a == \\\"\\\" and b != \\\"\\\":\\n    return(\\\"Quelle: \\\" + b)\\nelif a != \\\"\\\" and b == \\\"\\\":\\n    return(\\\"Beschreibung: \\\" + a)\\nelif a != \\\"\\\" and b != \\\"\\\":\\n    return(\\\"Beschreibung: \\\" + a + \\\"; Quelle: \\\" + b)\\nelse:\\n    pass\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Quelle Beschreibung\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"Beschreibung\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BeschreibungQuelle\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SplitValuesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Gehört zu\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"delimiter\",
+                \"type\": \"other\",
+                \"value\": \";\"
+            },
+            {
+                \"name\": \"newColName\",
+                \"type\": \"other\",
+                \"value\": \"GehörtZu2\"
+            },
+            {
+                \"name\": \"newHNodeId\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"GehörtZu2\"},
+                    {\"columnName\": \"Values\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"Values\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"Values\\\").lower().replace(\\\",\\\",\\\"_\\\").replace(\\\" \\\",\\\"_\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GehörtZu2\\\"},{\\\"columnName\\\":\\\"Values\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GehörtZu2\\\"},{\\\"columnName\\\":\\\"Values\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"STADT\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"STADT\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"STADT\\\").lower().replace(\\\",\\\",\\\"_\\\").replace(\\\" \\\",\\\"_\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"STADT\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"STADT\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"LAND\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"LAND\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"LAND\\\").lower().replace(\\\",\\\",\\\"_\\\").replace(\\\" \\\",\\\"_\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LAND\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LAND\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"präferierter Ortsname\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"gLabel\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"if getValue(\\\"ist Institution\\\") == \\\"x\\\":\\n    return getValue(\\\"präferierter Ortsname\\\")\\nelse:\\n    pass\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ist Institution\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"gLabel\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"präferierter Ortsname\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"gLabel2\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"if getValue(\\\"ist Institution\\\") == \\\"x\\\":\\n    return getValue(\\\"präferierter Ortsname\\\")\\nelse:\\n    pass\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ist Institution\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"gLabel2\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SplitValuesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"präferierter Ortsname\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"delimiter\",
+                \"type\": \"other\",
+                \"value\": \";\"
+            },
+            {
+                \"name\": \"newColName\",
+                \"type\": \"other\",
+                \"value\": \"gLabel3\"
+            },
+            {
+                \"name\": \"newHNodeId\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"gLabel3\"},
+                    {\"columnName\": \"Values\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"gLabel4\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"if getValue(\\\"ist Institution\\\") == \\\"x\\\":\\n    return getValue(\\\"Values\\\")\\nelse:\\n    pass\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ist Institution\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"gLabel3\\\"},{\\\"columnName\\\":\\\"Values\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"gLabel3\\\"},{\\\"columnName\\\":\\\"gLabel4\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"PROJEKT\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"nvto:PerformingArtsLocation1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PROJEKT\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PROJEKT\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"InstitutionID\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Agent\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Agent1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Agent\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Agent1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"nvto:Agent1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"InstitutionID\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"InstitutionID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"präferierter Ortsname\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#prefLabel\",
+                    \"DomainLabel\": \"nvto:PerformingArtsLocation1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"präferierter Ortsname\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"präferierter Ortsname\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"weitere Ortsnamen\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#altLabel\",
+                    \"DomainLabel\": \"nvto:PerformingArtsLocation1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"weitere Ortsnamen\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"weitere Ortsnamen\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"InstitutionID\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup1\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"InstitutionID\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"InstitutionID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"BeschreibungQuelle\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/description\",
+                    \"DomainLabel\": \"nvto:PerformingArtsLocation1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BeschreibungQuelle\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BeschreibungQuelle\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Adresse\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://lod.iti-germany.de/schema/nvto/hasAddress\",
+                    \"DomainLabel\": \"nvto:PerformingArtsLocation1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Adresse\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Adresse\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"GehörtZu2\"},
+                    {\"columnName\": \"Values\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"nvto:PerformingArtsLocation2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GehörtZu2\\\"},{\\\"columnName\\\":\\\"Values\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GehörtZu2\\\"},{\\\"columnName\\\":\\\"Values\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"STADT\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/City\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/City1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/City\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/City1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"nvto:City1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"STADT\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"STADT\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"LAND\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Country\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Country1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Country\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Country1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"nvto:Country1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LAND\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LAND\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"geo:LAT\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2003/01/geo/wgs84_pos#lat\",
+                    \"DomainLabel\": \"nvto:PerformingArtsLocation1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geo:LAT\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geo:LAT\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"geo:LONG\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2003/01/geo/wgs84_pos#long\",
+                    \"DomainLabel\": \"nvto:PerformingArtsLocation1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geo:LONG\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geo:LONG\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Wikipedia URI\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"owl:Thing1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Wikipedia URI\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Wikipedia URI\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"GND URI\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"owl:Thing2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GND URI\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GND URI\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"WIKIDATA URI\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing3\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing3\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"owl:Thing3 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"WIKIDATA URI\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"WIKIDATA URI\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"geonames URI\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing4\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing4\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"owl:Thing4 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames URI\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames URI\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"gLabel3\"},
+                    {\"columnName\": \"gLabel4\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2004/02/skos/core#prefLabel\",
+                    \"DomainLabel\": \"nvto:PerformingArtsGroup1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"gLabel3\\\"},{\\\"columnName\\\":\\\"gLabel4\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"gLabel3\\\"},{\\\"columnName\\\":\\\"gLabel4\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\",
+                    \"edgeId\": \"http://lod.iti-germany.de/schema/nvto/hasResidence\",
+                    \"edgeTargetUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\",
+                    \"edgeSourceId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup1\",
+                    \"edgeSourceUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://lod.iti-germany.de/schema/nvto/City1\",
+                    \"edgeId\": \"http://purl.org/dc/terms/isPartOf\",
+                    \"edgeTargetUri\": \"http://lod.iti-germany.de/schema/nvto/City\",
+                    \"edgeSourceId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\",
+                    \"edgeSourceUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://lod.iti-germany.de/schema/nvto/Country1\",
+                    \"edgeId\": \"http://purl.org/dc/terms/isPartOf\",
+                    \"edgeTargetUri\": \"http://lod.iti-germany.de/schema/nvto/Country\",
+                    \"edgeSourceId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\",
+                    \"edgeSourceUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"edgeSourceId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\",
+                    \"edgeSourceUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.w3.org/2002/07/owl#Thing2\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"edgeSourceId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\",
+                    \"edgeSourceUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.w3.org/2002/07/owl#Thing3\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"edgeSourceId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\",
+                    \"edgeSourceUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.w3.org/2002/07/owl#Thing4\",
+                    \"edgeId\": \"http://www.w3.org/2002/07/owl#sameAs\",
+                    \"edgeTargetUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"edgeSourceId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\",
+                    \"edgeSourceUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation2\",
+                    \"edgeId\": \"http://purl.org/dc/terms/isPartOf\",
+                    \"edgeTargetUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\",
+                    \"edgeSourceId\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1\",
+                    \"edgeSourceUri\": \"http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_a626a324-186c-4adc-ab00-2ff3b5c37901 a rr:TriplesMap .
+
+_:node1dah747b5x1 km-dev:hasTriplesMap km-dev:TriplesMap_a626a324-186c-4adc-ab00-2ff3b5c37901 .
+
+km-dev:TriplesMap_a626a324-186c-4adc-ab00-2ff3b5c37901 km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x2 rr:tableName "xMASTER_29042019_LOC_Veranstaltungsort" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasLogicalTable _:node1dah747b5x2 .
+
+km-dev:TriplesMap_a626a324-186c-4adc-ab00-2ff3b5c37901 rr:logicalTable _:node1dah747b5x2 ;
+	rr:subjectMap _:node1dah747b5x3 .
+
+_:node1dah747b5x1 km-dev:hasSubjectMap _:node1dah747b5x3 .
+
+_:node1dah747b5x3 km-dev:isPartOfMapping _:node1dah747b5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation2" ;
+	rr:class nvto:PerformingArtsLocation ;
+	rr:template "{[\"GehörtZu2\",\"Values\"]}" .
+
+km-dev:TriplesMap_25886a34-0df6-496b-adb3-5af2fc84fd8a a rr:TriplesMap .
+
+_:node1dah747b5x1 km-dev:hasTriplesMap km-dev:TriplesMap_25886a34-0df6-496b-adb3-5af2fc84fd8a .
+
+km-dev:TriplesMap_25886a34-0df6-496b-adb3-5af2fc84fd8a km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x4 rr:tableName "xMASTER_29042019_LOC_Veranstaltungsort" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasLogicalTable _:node1dah747b5x4 .
+
+km-dev:TriplesMap_25886a34-0df6-496b-adb3-5af2fc84fd8a rr:logicalTable _:node1dah747b5x4 ;
+	rr:subjectMap _:node1dah747b5x5 .
+
+_:node1dah747b5x1 km-dev:hasSubjectMap _:node1dah747b5x5 .
+
+_:node1dah747b5x5 km-dev:isPartOfMapping _:node1dah747b5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://lod.iti-germany.de/schema/nvto/Country1" ;
+	rr:class nvto:Country ;
+	rr:template "{LAND}" .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb a rr:TriplesMap .
+
+_:node1dah747b5x1 km-dev:hasTriplesMap km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x6 rr:tableName "xMASTER_29042019_LOC_Veranstaltungsort" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasLogicalTable _:node1dah747b5x6 .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb rr:logicalTable _:node1dah747b5x6 ;
+	rr:subjectMap _:node1dah747b5x7 .
+
+_:node1dah747b5x1 km-dev:hasSubjectMap _:node1dah747b5x7 .
+
+_:node1dah747b5x7 km-dev:isPartOfMapping _:node1dah747b5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation1" ;
+	rr:class nvto:PerformingArtsLocation ;
+	rr:template "{PROJEKT}" .
+
+km-dev:PredicateObjectMap_6dd359cc-5c21-49d2-8979-f2a46d59adb9 rr:predicate dcterms:isPartOf .
+
+km-dev:RefObjectMap_2c2d2dae-c9b4-4623-81a2-a62a50172ddc a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_a626a324-186c-4adc-ab00-2ff3b5c37901 ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasObjectMap km-dev:RefObjectMap_2c2d2dae-c9b4-4623-81a2-a62a50172ddc .
+
+km-dev:PredicateObjectMap_6dd359cc-5c21-49d2-8979-f2a46d59adb9 rr:objectMap km-dev:RefObjectMap_2c2d2dae-c9b4-4623-81a2-a62a50172ddc .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb rr:predicateObjectMap km-dev:PredicateObjectMap_6dd359cc-5c21-49d2-8979-f2a46d59adb9 .
+
+km-dev:PredicateObjectMap_6dd359cc-5c21-49d2-8979-f2a46d59adb9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6dd359cc-5c21-49d2-8979-f2a46d59adb9 .
+
+km-dev:PredicateObjectMap_4a8d629c-a95a-405a-8db5-4189a8aa0400 rr:predicate dcterms:isPartOf .
+
+km-dev:RefObjectMap_435b8e0b-e8ab-4fb9-9df3-3e66f9ae98c8 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_25886a34-0df6-496b-adb3-5af2fc84fd8a ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasObjectMap km-dev:RefObjectMap_435b8e0b-e8ab-4fb9-9df3-3e66f9ae98c8 .
+
+km-dev:PredicateObjectMap_4a8d629c-a95a-405a-8db5-4189a8aa0400 rr:objectMap km-dev:RefObjectMap_435b8e0b-e8ab-4fb9-9df3-3e66f9ae98c8 .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb rr:predicateObjectMap km-dev:PredicateObjectMap_4a8d629c-a95a-405a-8db5-4189a8aa0400 .
+
+km-dev:PredicateObjectMap_4a8d629c-a95a-405a-8db5-4189a8aa0400 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4a8d629c-a95a-405a-8db5-4189a8aa0400 .
+
+km-dev:PredicateObjectMap_b322b08c-1a13-447e-8fda-2a8209a4e84e rr:predicate skos:altLabel .
+
+_:node1dah747b5x8 rr:column "weitere Ortsnamen" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasObjectMap _:node1dah747b5x8 .
+
+km-dev:PredicateObjectMap_b322b08c-1a13-447e-8fda-2a8209a4e84e rr:objectMap _:node1dah747b5x8 .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb rr:predicateObjectMap km-dev:PredicateObjectMap_b322b08c-1a13-447e-8fda-2a8209a4e84e .
+
+km-dev:PredicateObjectMap_b322b08c-1a13-447e-8fda-2a8209a4e84e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b322b08c-1a13-447e-8fda-2a8209a4e84e .
+
+km-dev:PredicateObjectMap_76701247-2728-4c4a-a716-1a9bb656142e rr:predicate dcterms:description .
+
+_:node1dah747b5x9 rr:column "BeschreibungQuelle" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasObjectMap _:node1dah747b5x9 .
+
+km-dev:PredicateObjectMap_76701247-2728-4c4a-a716-1a9bb656142e rr:objectMap _:node1dah747b5x9 .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb rr:predicateObjectMap km-dev:PredicateObjectMap_76701247-2728-4c4a-a716-1a9bb656142e .
+
+km-dev:PredicateObjectMap_76701247-2728-4c4a-a716-1a9bb656142e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_76701247-2728-4c4a-a716-1a9bb656142e .
+
+km-dev:PredicateObjectMap_46ae7d48-f3a7-4ab1-b40f-3a28e47bda3f rr:predicate wgs84_pos:lat .
+
+_:node1dah747b5x10 rr:column "geo:LAT" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasObjectMap _:node1dah747b5x10 .
+
+km-dev:PredicateObjectMap_46ae7d48-f3a7-4ab1-b40f-3a28e47bda3f rr:objectMap _:node1dah747b5x10 .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb rr:predicateObjectMap km-dev:PredicateObjectMap_46ae7d48-f3a7-4ab1-b40f-3a28e47bda3f .
+
+km-dev:PredicateObjectMap_46ae7d48-f3a7-4ab1-b40f-3a28e47bda3f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_46ae7d48-f3a7-4ab1-b40f-3a28e47bda3f .
+
+km-dev:PredicateObjectMap_917f698a-3e55-4949-b4ca-f3226280bf63 rr:predicate wgs84_pos:long .
+
+_:node1dah747b5x11 rr:column "geo:LONG" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasObjectMap _:node1dah747b5x11 .
+
+km-dev:PredicateObjectMap_917f698a-3e55-4949-b4ca-f3226280bf63 rr:objectMap _:node1dah747b5x11 .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb rr:predicateObjectMap km-dev:PredicateObjectMap_917f698a-3e55-4949-b4ca-f3226280bf63 .
+
+km-dev:PredicateObjectMap_917f698a-3e55-4949-b4ca-f3226280bf63 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_917f698a-3e55-4949-b4ca-f3226280bf63 .
+
+km-dev:PredicateObjectMap_dc09ebef-eea3-41c7-9d51-c7ddf4d8826a rr:predicate nvto:hasAddress .
+
+_:node1dah747b5x12 rr:column "Adresse" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasObjectMap _:node1dah747b5x12 .
+
+km-dev:PredicateObjectMap_dc09ebef-eea3-41c7-9d51-c7ddf4d8826a rr:objectMap _:node1dah747b5x12 .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb rr:predicateObjectMap km-dev:PredicateObjectMap_dc09ebef-eea3-41c7-9d51-c7ddf4d8826a .
+
+km-dev:PredicateObjectMap_dc09ebef-eea3-41c7-9d51-c7ddf4d8826a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_dc09ebef-eea3-41c7-9d51-c7ddf4d8826a .
+
+km-dev:PredicateObjectMap_c22fc482-8406-41e3-8197-013d179b8fe3 rr:predicate dcterms:isPartOf .
+
+km-dev:RefObjectMap_56f6043d-1836-458b-8a7f-48885cef8f8b a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_450df950-fc31-4f83-a007-5c4008df5b11 ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasObjectMap km-dev:RefObjectMap_56f6043d-1836-458b-8a7f-48885cef8f8b .
+
+km-dev:PredicateObjectMap_c22fc482-8406-41e3-8197-013d179b8fe3 rr:objectMap km-dev:RefObjectMap_56f6043d-1836-458b-8a7f-48885cef8f8b .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb rr:predicateObjectMap km-dev:PredicateObjectMap_c22fc482-8406-41e3-8197-013d179b8fe3 .
+
+km-dev:PredicateObjectMap_c22fc482-8406-41e3-8197-013d179b8fe3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c22fc482-8406-41e3-8197-013d179b8fe3 .
+
+km-dev:PredicateObjectMap_f9d67cd3-b2f9-4a93-86e7-d3db145945bf rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_404d655a-e2f3-4e41-9762-b3287ff6926f a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_556fbbf4-4b69-4499-9721-5a0383f0baed ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasObjectMap km-dev:RefObjectMap_404d655a-e2f3-4e41-9762-b3287ff6926f .
+
+km-dev:PredicateObjectMap_f9d67cd3-b2f9-4a93-86e7-d3db145945bf rr:objectMap km-dev:RefObjectMap_404d655a-e2f3-4e41-9762-b3287ff6926f .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb rr:predicateObjectMap km-dev:PredicateObjectMap_f9d67cd3-b2f9-4a93-86e7-d3db145945bf .
+
+km-dev:PredicateObjectMap_f9d67cd3-b2f9-4a93-86e7-d3db145945bf a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f9d67cd3-b2f9-4a93-86e7-d3db145945bf .
+
+km-dev:PredicateObjectMap_a8418659-0d1e-4d84-a7ed-bffba4b371cc rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_f375ca9b-7f62-4bac-a217-791096ea42e2 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_c399e233-3ba0-4028-a042-746bd831437d ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasObjectMap km-dev:RefObjectMap_f375ca9b-7f62-4bac-a217-791096ea42e2 .
+
+km-dev:PredicateObjectMap_a8418659-0d1e-4d84-a7ed-bffba4b371cc rr:objectMap km-dev:RefObjectMap_f375ca9b-7f62-4bac-a217-791096ea42e2 .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb rr:predicateObjectMap km-dev:PredicateObjectMap_a8418659-0d1e-4d84-a7ed-bffba4b371cc .
+
+km-dev:PredicateObjectMap_a8418659-0d1e-4d84-a7ed-bffba4b371cc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a8418659-0d1e-4d84-a7ed-bffba4b371cc .
+
+km-dev:PredicateObjectMap_0787abc8-f1be-4b32-aa40-1bbcf87a684c rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_265a5e7d-3d4c-46bf-bd67-0a81160a757b a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_045082cb-1ef9-4107-a24f-ed17cb48447c ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasObjectMap km-dev:RefObjectMap_265a5e7d-3d4c-46bf-bd67-0a81160a757b .
+
+km-dev:PredicateObjectMap_0787abc8-f1be-4b32-aa40-1bbcf87a684c rr:objectMap km-dev:RefObjectMap_265a5e7d-3d4c-46bf-bd67-0a81160a757b .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb rr:predicateObjectMap km-dev:PredicateObjectMap_0787abc8-f1be-4b32-aa40-1bbcf87a684c .
+
+km-dev:PredicateObjectMap_0787abc8-f1be-4b32-aa40-1bbcf87a684c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0787abc8-f1be-4b32-aa40-1bbcf87a684c .
+
+km-dev:PredicateObjectMap_29d23a1e-0294-4768-b9eb-d83cf29774bf rr:predicate skos:prefLabel .
+
+_:node1dah747b5x13 rr:column "präferierter Ortsname" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasObjectMap _:node1dah747b5x13 .
+
+km-dev:PredicateObjectMap_29d23a1e-0294-4768-b9eb-d83cf29774bf rr:objectMap _:node1dah747b5x13 .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb rr:predicateObjectMap km-dev:PredicateObjectMap_29d23a1e-0294-4768-b9eb-d83cf29774bf .
+
+km-dev:PredicateObjectMap_29d23a1e-0294-4768-b9eb-d83cf29774bf a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_29d23a1e-0294-4768-b9eb-d83cf29774bf .
+
+km-dev:PredicateObjectMap_0880793a-15fb-4a1a-9e1c-13d540fd9633 rr:predicate owl:sameAs .
+
+km-dev:RefObjectMap_e3411ae1-6e37-42fb-beff-67fccdd69cd6 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_5656f589-d86c-4709-adae-3668b8516a54 ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasObjectMap km-dev:RefObjectMap_e3411ae1-6e37-42fb-beff-67fccdd69cd6 .
+
+km-dev:PredicateObjectMap_0880793a-15fb-4a1a-9e1c-13d540fd9633 rr:objectMap km-dev:RefObjectMap_e3411ae1-6e37-42fb-beff-67fccdd69cd6 .
+
+km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb rr:predicateObjectMap km-dev:PredicateObjectMap_0880793a-15fb-4a1a-9e1c-13d540fd9633 .
+
+km-dev:PredicateObjectMap_0880793a-15fb-4a1a-9e1c-13d540fd9633 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0880793a-15fb-4a1a-9e1c-13d540fd9633 .
+
+km-dev:TriplesMap_045082cb-1ef9-4107-a24f-ed17cb48447c a rr:TriplesMap .
+
+_:node1dah747b5x1 km-dev:hasTriplesMap km-dev:TriplesMap_045082cb-1ef9-4107-a24f-ed17cb48447c .
+
+km-dev:TriplesMap_045082cb-1ef9-4107-a24f-ed17cb48447c km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x14 rr:tableName "xMASTER_29042019_LOC_Veranstaltungsort" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasLogicalTable _:node1dah747b5x14 .
+
+km-dev:TriplesMap_045082cb-1ef9-4107-a24f-ed17cb48447c rr:logicalTable _:node1dah747b5x14 ;
+	rr:subjectMap _:node1dah747b5x15 .
+
+_:node1dah747b5x1 km-dev:hasSubjectMap _:node1dah747b5x15 .
+
+_:node1dah747b5x15 km-dev:isPartOfMapping _:node1dah747b5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2002/07/owl#Thing3" ;
+	rr:class owl:Thing ;
+	rr:template "{WIKIDATA URI}" .
+
+km-dev:TriplesMap_569d7982-1dbb-4eaa-8610-21e9ce96e6ba a rr:TriplesMap .
+
+_:node1dah747b5x1 km-dev:hasTriplesMap km-dev:TriplesMap_569d7982-1dbb-4eaa-8610-21e9ce96e6ba .
+
+km-dev:TriplesMap_569d7982-1dbb-4eaa-8610-21e9ce96e6ba km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x16 rr:tableName "xMASTER_29042019_LOC_Veranstaltungsort" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasLogicalTable _:node1dah747b5x16 .
+
+km-dev:TriplesMap_569d7982-1dbb-4eaa-8610-21e9ce96e6ba rr:logicalTable _:node1dah747b5x16 ;
+	rr:subjectMap _:node1dah747b5x17 .
+
+_:node1dah747b5x1 km-dev:hasSubjectMap _:node1dah747b5x17 .
+
+_:node1dah747b5x17 km-dev:isPartOfMapping _:node1dah747b5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup1" ;
+	rr:class nvto:PerformingArtsGroup ;
+	rr:template "{InstitutionID}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_8ce15c1e-2188-4d47-b1d1-256b3cc47e4e rr:predicate skos:prefLabel .
+
+_:node1dah747b5x18 rr:column "[\"gLabel3\",\"gLabel4\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasObjectMap _:node1dah747b5x18 .
+
+km-dev:PredicateObjectMap_8ce15c1e-2188-4d47-b1d1-256b3cc47e4e rr:objectMap _:node1dah747b5x18 .
+
+km-dev:TriplesMap_569d7982-1dbb-4eaa-8610-21e9ce96e6ba rr:predicateObjectMap km-dev:PredicateObjectMap_8ce15c1e-2188-4d47-b1d1-256b3cc47e4e .
+
+km-dev:PredicateObjectMap_8ce15c1e-2188-4d47-b1d1-256b3cc47e4e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8ce15c1e-2188-4d47-b1d1-256b3cc47e4e .
+
+km-dev:PredicateObjectMap_777eef78-391e-4c98-b610-86f372339c26 rr:predicate nvto:hasResidence .
+
+km-dev:RefObjectMap_ad9c01f7-7c7b-44ef-92d2-235a3db792b5 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_cfd719ef-ccf9-4b11-afd1-5adc8c7410fb ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasObjectMap km-dev:RefObjectMap_ad9c01f7-7c7b-44ef-92d2-235a3db792b5 .
+
+km-dev:PredicateObjectMap_777eef78-391e-4c98-b610-86f372339c26 rr:objectMap km-dev:RefObjectMap_ad9c01f7-7c7b-44ef-92d2-235a3db792b5 .
+
+km-dev:TriplesMap_569d7982-1dbb-4eaa-8610-21e9ce96e6ba rr:predicateObjectMap km-dev:PredicateObjectMap_777eef78-391e-4c98-b610-86f372339c26 .
+
+km-dev:PredicateObjectMap_777eef78-391e-4c98-b610-86f372339c26 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_777eef78-391e-4c98-b610-86f372339c26 .
+
+km-dev:TriplesMap_5656f589-d86c-4709-adae-3668b8516a54 a rr:TriplesMap .
+
+_:node1dah747b5x1 km-dev:hasTriplesMap km-dev:TriplesMap_5656f589-d86c-4709-adae-3668b8516a54 .
+
+km-dev:TriplesMap_5656f589-d86c-4709-adae-3668b8516a54 km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x19 rr:tableName "xMASTER_29042019_LOC_Veranstaltungsort" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasLogicalTable _:node1dah747b5x19 .
+
+km-dev:TriplesMap_5656f589-d86c-4709-adae-3668b8516a54 rr:logicalTable _:node1dah747b5x19 ;
+	rr:subjectMap _:node1dah747b5x20 .
+
+_:node1dah747b5x1 km-dev:hasSubjectMap _:node1dah747b5x20 .
+
+_:node1dah747b5x20 km-dev:isPartOfMapping _:node1dah747b5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2002/07/owl#Thing4" ;
+	rr:class owl:Thing ;
+	rr:template "{geonames URI}" .
+
+km-dev:TriplesMap_556fbbf4-4b69-4499-9721-5a0383f0baed a rr:TriplesMap .
+
+_:node1dah747b5x1 km-dev:hasTriplesMap km-dev:TriplesMap_556fbbf4-4b69-4499-9721-5a0383f0baed .
+
+km-dev:TriplesMap_556fbbf4-4b69-4499-9721-5a0383f0baed km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x21 rr:tableName "xMASTER_29042019_LOC_Veranstaltungsort" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasLogicalTable _:node1dah747b5x21 .
+
+km-dev:TriplesMap_556fbbf4-4b69-4499-9721-5a0383f0baed rr:logicalTable _:node1dah747b5x21 ;
+	rr:subjectMap _:node1dah747b5x22 .
+
+_:node1dah747b5x1 km-dev:hasSubjectMap _:node1dah747b5x22 .
+
+_:node1dah747b5x22 km-dev:isPartOfMapping _:node1dah747b5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2002/07/owl#Thing1" ;
+	rr:class owl:Thing ;
+	rr:template "{Wikipedia URI}" .
+
+km-dev:TriplesMap_450df950-fc31-4f83-a007-5c4008df5b11 a rr:TriplesMap .
+
+_:node1dah747b5x1 km-dev:hasTriplesMap km-dev:TriplesMap_450df950-fc31-4f83-a007-5c4008df5b11 .
+
+km-dev:TriplesMap_450df950-fc31-4f83-a007-5c4008df5b11 km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x23 rr:tableName "xMASTER_29042019_LOC_Veranstaltungsort" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasLogicalTable _:node1dah747b5x23 .
+
+km-dev:TriplesMap_450df950-fc31-4f83-a007-5c4008df5b11 rr:logicalTable _:node1dah747b5x23 ;
+	rr:subjectMap _:node1dah747b5x24 .
+
+_:node1dah747b5x1 km-dev:hasSubjectMap _:node1dah747b5x24 .
+
+_:node1dah747b5x24 km-dev:isPartOfMapping _:node1dah747b5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://lod.iti-germany.de/schema/nvto/City1" ;
+	rr:class nvto:City ;
+	rr:template "{STADT}" .
+
+km-dev:TriplesMap_c399e233-3ba0-4028-a042-746bd831437d a rr:TriplesMap .
+
+_:node1dah747b5x1 km-dev:hasTriplesMap km-dev:TriplesMap_c399e233-3ba0-4028-a042-746bd831437d .
+
+km-dev:TriplesMap_c399e233-3ba0-4028-a042-746bd831437d km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x25 rr:tableName "xMASTER_29042019_LOC_Veranstaltungsort" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1dah747b5x1 .
+
+_:node1dah747b5x1 km-dev:hasLogicalTable _:node1dah747b5x25 .
+
+km-dev:TriplesMap_c399e233-3ba0-4028-a042-746bd831437d rr:logicalTable _:node1dah747b5x25 ;
+	rr:subjectMap _:node1dah747b5x26 .
+
+_:node1dah747b5x1 km-dev:hasSubjectMap _:node1dah747b5x26 .
+
+_:node1dah747b5x26 km-dev:isPartOfMapping _:node1dah747b5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2002/07/owl#Thing2" ;
+	rr:class owl:Thing ;
+	rr:template "{GND URI}" .

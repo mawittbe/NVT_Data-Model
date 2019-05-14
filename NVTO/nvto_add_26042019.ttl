@@ -47,6 +47,8 @@ edm:ProvidedCHO rdf:type owl:Class;
 foaf:Person rdf:type owl:Class ;
             rdfs:label "Person" .
 
+skos:Concept rdf:type owl:Class ;
+            rdfs:label "Concept" .
 
 wgs84_pos:SpatialThing rdf:type owl:Class ;
                        rdfs:label "SpatialThing" .
@@ -217,6 +219,23 @@ edm:type rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf dc:type ;
        rdfs:label "Europeana Type"@en .
 
+## foaf
+
+
+foaf:familyName rdf:type owl:DatatypeProperty ;
+                rdfs:label "familyName" .
+
+
+foaf:firstName rdf:type owl:DatatypeProperty ;
+               rdfs:label "firstName" .
+
+
+foaf:homepage rdf:type owl:ObjectProperty ;
+             rdfs:label "homepage" .
+
+foaf:name rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf rdfs:label ;
+         rdfs:label "name" .
 
 ## OWL
 

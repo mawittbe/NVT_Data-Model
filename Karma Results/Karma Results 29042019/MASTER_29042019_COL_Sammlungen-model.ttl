@@ -1,0 +1,423 @@
+@prefix dm2e: <http://onto.dm2e.eu/schemas/dm2e/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix nvto: <http://lod.iti-germany.de/schema/nvto/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ecrm: <http://erlangen-crm.org/170309/> .
+@prefix gndo: <http://d-nb.info/standards/elementset/gnd#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix eclap: <http://www.eclap.eu/schema/eclap/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdau: <http://www.rdaregistry.info/Elements/u/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1dagvk798x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "MASTER_29042019_COL_Sammlungen" ;
+	km-dev:modelPublicationTime "1557495684392"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Quelle der Beschreibung\"}],[{\"columnName\":\"Sammlungsbeschreibung\"}],[{\"columnName\":\"Sammlungstitel\"}],[{\"columnName\":\"PROJEKT\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"BeschreibungQuelle\"}],[{\"columnName\":\"Sammlungstitel\"}],[{\"columnName\":\"PROJEKT\"}]]" ;
+	km-dev:hasModelLabel "MASTER_29042019_COL_Sammlungen" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"PROJEKT\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"PROJEKT\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"PROJEKT\\\").lower().replace(\\\",\\\",\\\"_\\\").replace(\\\" \\\",\\\"_\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PROJEKT\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PROJEKT\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Sammlungsbeschreibung\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"BeschreibungQuelle\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"a = getValue(\\\"Sammlungsbeschreibung\\\")\\nb = getValue(\\\"Quelle der Beschreibung\\\")\\nif a == \\\"\\\" and b == \\\"\\\":\\n    return(\\\"\\\")\\nelif a == \\\"\\\" and b != \\\"\\\":\\n    return(\\\"Quelle: \\\" + b)\\nelif a != \\\"\\\" and b == \\\"\\\":\\n    return(\\\"Beschreibung: \\\" + a)\\nelif a != \\\"\\\" and b != \\\"\\\":\\n    return(\\\"Beschreibung: \\\" + a + \\\"; Quelle: \\\" + b)\\nelse:\\n    pass\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Quelle der Beschreibung\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"Sammlungsbeschreibung\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BeschreibungQuelle\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"PROJEKT\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Collection\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://lod.iti-germany.de/schema/nvto/Collection1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Collection\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Collection1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"nvto:Collection1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PROJEKT\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PROJEKT\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Sammlungstitel\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [
+                    {
+                        \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Collection\",
+                        \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Collection1\",
+                        \"isPrimary\": true,
+                        \"isProvenance\": false,
+                        \"FullType\": \"http://purl.org/dc/terms/title\",
+                        \"DomainLabel\": \"nvto:Collection1\"
+                    },
+                    {
+                        \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Collection\",
+                        \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Collection1\",
+                        \"isPrimary\": false,
+                        \"isProvenance\": false,
+                        \"FullType\": \"http://www.w3.org/2004/02/skos/core#prefLabel\",
+                        \"DomainLabel\": \"nvto:Collection1\"
+                    }
+                ]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Sammlungstitel\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Sammlungstitel\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"BeschreibungQuelle\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://lod.iti-germany.de/schema/nvto/Collection\",
+                    \"DomainId\": \"http://lod.iti-germany.de/schema/nvto/Collection1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/description\",
+                    \"DomainLabel\": \"nvto:Collection1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BeschreibungQuelle\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BeschreibungQuelle\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_50f2ca74-db2d-42d0-a12b-245829b56e73 a rr:TriplesMap .
+
+_:node1dagvk798x1 km-dev:hasTriplesMap km-dev:TriplesMap_50f2ca74-db2d-42d0-a12b-245829b56e73 .
+
+km-dev:TriplesMap_50f2ca74-db2d-42d0-a12b-245829b56e73 km-dev:isPartOfMapping _:node1dagvk798x1 .
+
+_:node1dagvk798x2 rr:tableName "MASTER_29042019_COL_Sammlungen" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1dagvk798x1 .
+
+_:node1dagvk798x1 km-dev:hasLogicalTable _:node1dagvk798x2 .
+
+km-dev:TriplesMap_50f2ca74-db2d-42d0-a12b-245829b56e73 rr:logicalTable _:node1dagvk798x2 ;
+	rr:subjectMap _:node1dagvk798x3 .
+
+_:node1dagvk798x1 km-dev:hasSubjectMap _:node1dagvk798x3 .
+
+_:node1dagvk798x3 km-dev:isPartOfMapping _:node1dagvk798x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://lod.iti-germany.de/schema/nvto/Collection1" ;
+	rr:class nvto:Collection ;
+	rr:template "{PROJEKT}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_4a537c6d-4c5c-49df-8dd9-67eb0d4348dc rr:predicate dcterms:description .
+
+_:node1dagvk798x4 rr:column "BeschreibungQuelle" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1dagvk798x1 .
+
+_:node1dagvk798x1 km-dev:hasObjectMap _:node1dagvk798x4 .
+
+km-dev:PredicateObjectMap_4a537c6d-4c5c-49df-8dd9-67eb0d4348dc rr:objectMap _:node1dagvk798x4 .
+
+km-dev:TriplesMap_50f2ca74-db2d-42d0-a12b-245829b56e73 rr:predicateObjectMap km-dev:PredicateObjectMap_4a537c6d-4c5c-49df-8dd9-67eb0d4348dc .
+
+km-dev:PredicateObjectMap_4a537c6d-4c5c-49df-8dd9-67eb0d4348dc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dagvk798x1 .
+
+_:node1dagvk798x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4a537c6d-4c5c-49df-8dd9-67eb0d4348dc .
+
+km-dev:PredicateObjectMap_b445d2fd-8d7e-4eac-9c49-c8662b057058 rr:predicate skos:prefLabel .
+
+_:node1dagvk798x5 rr:column "Sammlungstitel" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1dagvk798x1 .
+
+_:node1dagvk798x1 km-dev:hasObjectMap _:node1dagvk798x5 .
+
+km-dev:PredicateObjectMap_b445d2fd-8d7e-4eac-9c49-c8662b057058 rr:objectMap _:node1dagvk798x5 .
+
+km-dev:TriplesMap_50f2ca74-db2d-42d0-a12b-245829b56e73 rr:predicateObjectMap km-dev:PredicateObjectMap_b445d2fd-8d7e-4eac-9c49-c8662b057058 .
+
+km-dev:PredicateObjectMap_b445d2fd-8d7e-4eac-9c49-c8662b057058 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dagvk798x1 .
+
+_:node1dagvk798x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b445d2fd-8d7e-4eac-9c49-c8662b057058 .
+
+km-dev:PredicateObjectMap_575e7033-a835-46f0-a4f7-b1880e883322 rr:predicate dcterms:title .
+
+_:node1dagvk798x6 rr:column "Sammlungstitel" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1dagvk798x1 .
+
+_:node1dagvk798x1 km-dev:hasObjectMap _:node1dagvk798x6 .
+
+km-dev:PredicateObjectMap_575e7033-a835-46f0-a4f7-b1880e883322 rr:objectMap _:node1dagvk798x6 .
+
+km-dev:TriplesMap_50f2ca74-db2d-42d0-a12b-245829b56e73 rr:predicateObjectMap km-dev:PredicateObjectMap_575e7033-a835-46f0-a4f7-b1880e883322 .
+
+km-dev:PredicateObjectMap_575e7033-a835-46f0-a4f7-b1880e883322 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1dagvk798x1 .
+
+_:node1dagvk798x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_575e7033-a835-46f0-a4f7-b1880e883322 .

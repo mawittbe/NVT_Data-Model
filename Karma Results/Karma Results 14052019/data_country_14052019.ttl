@@ -1,107 +1,107 @@
-<http://localhost:8080/source/algerien> <http://www.w3.org/2004/02/skos/core#prefLabel> "Demokratische Volksrepublik Algerien" .
-<http://localhost:8080/source/algerien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/algerien> <http://www.w3.org/2004/02/skos/core#prefLabel> "Demokratische Volksrepublik Algerien" .
+<http://lod.iti-germany.de/resource/algerien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/australien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/australien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/belgien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/belgien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/brd_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/brd_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/brd_002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/brd_002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/bulgarien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/bulgarien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/dänemark> <http://www.w3.org/2004/02/skos/core#prefLabel> "Königreich Dänemark" .
-<http://localhost:8080/source/dänemark> <http://www.w3.org/2004/02/skos/core#altLabel> "Dänemark"@de .
-<http://localhost:8080/source/dänemark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
-<http://localhost:8080/source/dänemark> <http://www.w3.org/2004/02/skos/core#altLabel> "Denmark"@en .
+<http://lod.iti-germany.de/resource/dänemark> <http://www.w3.org/2004/02/skos/core#prefLabel> "Königreich Dänemark" .
+<http://lod.iti-germany.de/resource/dänemark> <http://www.w3.org/2004/02/skos/core#altLabel> "Dänemark"@de .
+<http://lod.iti-germany.de/resource/dänemark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/dänemark> <http://www.w3.org/2004/02/skos/core#altLabel> "Denmark"@en .
 
-<http://localhost:8080/source/ddr> <http://www.w3.org/2004/02/skos/core#altLabel> "Deutsche Demokratische Republik"@de .
-<http://localhost:8080/source/ddr> <http://www.w3.org/2004/02/skos/core#prefLabel> "Deutsche Demokratische Republik" .
-<http://localhost:8080/source/ddr> <http://www.w3.org/2004/02/skos/core#altLabel> "German Democratic Republic"@en .
-<http://localhost:8080/source/ddr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/ddr> <http://www.w3.org/2004/02/skos/core#altLabel> "Deutsche Demokratische Republik"@de .
+<http://lod.iti-germany.de/resource/ddr> <http://www.w3.org/2004/02/skos/core#prefLabel> "Deutsche Demokratische Republik" .
+<http://lod.iti-germany.de/resource/ddr> <http://www.w3.org/2004/02/skos/core#altLabel> "German Democratic Republic"@en .
+<http://lod.iti-germany.de/resource/ddr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/frankreich> <http://www.w3.org/2004/02/skos/core#prefLabel> "Französische Republik" .
-<http://localhost:8080/source/frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/frankreich> <http://www.w3.org/2004/02/skos/core#prefLabel> "Französische Republik" .
+<http://lod.iti-germany.de/resource/frankreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/großbritannien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/großbritannien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/italien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/italien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/kanada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/kanada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/kroatien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/kroatien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/niederlande> <http://www.w3.org/2004/02/skos/core#prefLabel> "Niederlande" .
-<http://localhost:8080/source/niederlande> <http://www.w3.org/2004/02/skos/core#altLabel> "Niederlande"@de .
-<http://localhost:8080/source/niederlande> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
-<http://localhost:8080/source/niederlande> <http://www.w3.org/2004/02/skos/core#altLabel> "Netherlands"@en .
+<http://lod.iti-germany.de/resource/niederlande> <http://www.w3.org/2004/02/skos/core#prefLabel> "Niederlande" .
+<http://lod.iti-germany.de/resource/niederlande> <http://www.w3.org/2004/02/skos/core#altLabel> "Niederlande"@de .
+<http://lod.iti-germany.de/resource/niederlande> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/niederlande> <http://www.w3.org/2004/02/skos/core#altLabel> "Netherlands"@en .
 
-<http://localhost:8080/source/österreich> <http://www.w3.org/2004/02/skos/core#prefLabel> "Republik Österreich" .
-<http://localhost:8080/source/österreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/österreich> <http://www.w3.org/2004/02/skos/core#prefLabel> "Republik Österreich" .
+<http://lod.iti-germany.de/resource/österreich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/polen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/polen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/russland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/russland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/schweiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/schweiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/spanien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/spanien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/tschechoslowakei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/tschechoslowakei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/udssr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/udssr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/ukraine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/ukraine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/ungarn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/ungarn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/usa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/usa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/gssr> <http://www.w3.org/2004/02/skos/core#prefLabel> "Georgische Sozialistische Sowjetrepublik" .
-<http://localhost:8080/source/gssr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/gssr> <http://www.w3.org/2004/02/skos/core#prefLabel> "Georgische Sozialistische Sowjetrepublik" .
+<http://lod.iti-germany.de/resource/gssr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/csfr> <http://www.w3.org/2004/02/skos/core#altLabel> "Czech and Slovak Federative Republic"@en .
-<http://localhost:8080/source/csfr> <http://www.w3.org/2004/02/skos/core#altLabel> "Tschechische und Slowakische Föderative Republik"@de .
-<http://localhost:8080/source/csfr> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tschechische und Slowakische Föderative Republik" .
-<http://localhost:8080/source/csfr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/csfr> <http://www.w3.org/2004/02/skos/core#altLabel> "Czech and Slovak Federative Republic"@en .
+<http://lod.iti-germany.de/resource/csfr> <http://www.w3.org/2004/02/skos/core#altLabel> "Tschechische und Slowakische Föderative Republik"@de .
+<http://lod.iti-germany.de/resource/csfr> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tschechische und Slowakische Föderative Republik" .
+<http://lod.iti-germany.de/resource/csfr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/kanada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
-<http://localhost:8080/source/kanada> <http://www.w3.org/2004/02/skos/core#altLabel> "Kanada"@de .
-<http://localhost:8080/source/kanada> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kanada" .
-<http://localhost:8080/source/kanada> <http://www.w3.org/2004/02/skos/core#altLabel> "Canada"@en .
+<http://lod.iti-germany.de/resource/kanada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/kanada> <http://www.w3.org/2004/02/skos/core#altLabel> "Kanada"@de .
+<http://lod.iti-germany.de/resource/kanada> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kanada" .
+<http://lod.iti-germany.de/resource/kanada> <http://www.w3.org/2004/02/skos/core#altLabel> "Canada"@en .
 
-<http://localhost:8080/source/nicaragua> <http://www.w3.org/2004/02/skos/core#altLabel> "Nicaragua"@en .
-<http://localhost:8080/source/nicaragua> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
-<http://localhost:8080/source/nicaragua> <http://www.w3.org/2004/02/skos/core#prefLabel> "Republik Nicaragua" .
-<http://localhost:8080/source/nicaragua> <http://www.w3.org/2004/02/skos/core#altLabel> "Nicaragua"@de .
+<http://lod.iti-germany.de/resource/nicaragua> <http://www.w3.org/2004/02/skos/core#altLabel> "Nicaragua"@en .
+<http://lod.iti-germany.de/resource/nicaragua> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/nicaragua> <http://www.w3.org/2004/02/skos/core#prefLabel> "Republik Nicaragua" .
+<http://lod.iti-germany.de/resource/nicaragua> <http://www.w3.org/2004/02/skos/core#altLabel> "Nicaragua"@de .
 
-<http://localhost:8080/source/portugal> <http://www.w3.org/2004/02/skos/core#altLabel> "Portugal"@de .
-<http://localhost:8080/source/portugal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
-<http://localhost:8080/source/portugal> <http://www.w3.org/2004/02/skos/core#altLabel> "Portugal"@en .
-<http://localhost:8080/source/portugal> <http://www.w3.org/2004/02/skos/core#prefLabel> "Portugisische Republik" .
+<http://lod.iti-germany.de/resource/portugal> <http://www.w3.org/2004/02/skos/core#altLabel> "Portugal"@de .
+<http://lod.iti-germany.de/resource/portugal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/portugal> <http://www.w3.org/2004/02/skos/core#altLabel> "Portugal"@en .
+<http://lod.iti-germany.de/resource/portugal> <http://www.w3.org/2004/02/skos/core#prefLabel> "Portugisische Republik" .
 
-<http://localhost:8080/source/vietnam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
-<http://localhost:8080/source/vietnam> <http://www.w3.org/2004/02/skos/core#altLabel> "Vietnam"@de .
-<http://localhost:8080/source/vietnam> <http://www.w3.org/2004/02/skos/core#altLabel> "Vietnam"@en .
-<http://localhost:8080/source/vietnam> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sozialistische Republik Vietnam" .
+<http://lod.iti-germany.de/resource/vietnam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/vietnam> <http://www.w3.org/2004/02/skos/core#altLabel> "Vietnam"@de .
+<http://lod.iti-germany.de/resource/vietnam> <http://www.w3.org/2004/02/skos/core#altLabel> "Vietnam"@en .
+<http://lod.iti-germany.de/resource/vietnam> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sozialistische Republik Vietnam" .
 
-<http://localhost:8080/source/laos> <http://www.w3.org/2004/02/skos/core#altLabel> "Laos"@en .
-<http://localhost:8080/source/laos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
-<http://localhost:8080/source/laos> <http://www.w3.org/2004/02/skos/core#altLabel> "Laos"@de .
-<http://localhost:8080/source/laos> <http://www.w3.org/2004/02/skos/core#prefLabel> "Demokratische Volksrepublik Laos" .
+<http://lod.iti-germany.de/resource/laos> <http://www.w3.org/2004/02/skos/core#altLabel> "Laos"@en .
+<http://lod.iti-germany.de/resource/laos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/laos> <http://www.w3.org/2004/02/skos/core#altLabel> "Laos"@de .
+<http://lod.iti-germany.de/resource/laos> <http://www.w3.org/2004/02/skos/core#prefLabel> "Demokratische Volksrepublik Laos" .
 
-<http://localhost:8080/source/kambodscha> <http://www.w3.org/2004/02/skos/core#prefLabel> "Königreich Kambodscha" .
-<http://localhost:8080/source/kambodscha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
-<http://localhost:8080/source/kambodscha> <http://www.w3.org/2004/02/skos/core#altLabel> "Cambodia"@en .
-<http://localhost:8080/source/kambodscha> <http://www.w3.org/2004/02/skos/core#altLabel> "Kambodscha"@de .
+<http://lod.iti-germany.de/resource/kambodscha> <http://www.w3.org/2004/02/skos/core#prefLabel> "Königreich Kambodscha" .
+<http://lod.iti-germany.de/resource/kambodscha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/kambodscha> <http://www.w3.org/2004/02/skos/core#altLabel> "Cambodia"@en .
+<http://lod.iti-germany.de/resource/kambodscha> <http://www.w3.org/2004/02/skos/core#altLabel> "Kambodscha"@de .
 
-<http://localhost:8080/source/sri_lanka> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/sri_lanka> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
 
-<http://localhost:8080/source/mssr> <http://www.w3.org/2004/02/skos/core#altLabel> "Moldauische Sozialistische Sowjetrepublik"@de .
-<http://localhost:8080/source/mssr> <http://www.w3.org/2004/02/skos/core#altLabel> "Moldavian Soviet Socialist Republic"@en .
-<http://localhost:8080/source/mssr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
-<http://localhost:8080/source/mssr> <http://www.w3.org/2004/02/skos/core#prefLabel> "Moldauische Sozialistische Sowjetrepublik" .
+<http://lod.iti-germany.de/resource/mssr> <http://www.w3.org/2004/02/skos/core#altLabel> "Moldauische Sozialistische Sowjetrepublik"@de .
+<http://lod.iti-germany.de/resource/mssr> <http://www.w3.org/2004/02/skos/core#altLabel> "Moldavian Soviet Socialist Republic"@en .
+<http://lod.iti-germany.de/resource/mssr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lod.iti-germany.de/schema/nvto/Country> .
+<http://lod.iti-germany.de/resource/mssr> <http://www.w3.org/2004/02/skos/core#prefLabel> "Moldauische Sozialistische Sowjetrepublik" .
 
 
 

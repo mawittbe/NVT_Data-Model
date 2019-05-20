@@ -1,39 +1,58 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-
-@prefix ecrm: <http://erlangen-crm.org/170309/> .
-@prefix edm: <http://www.europeana.eu/schemas/edm/> .
-@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
-@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
-@prefix ore: <http://www.openarchives.org/ore/terms/> .
-@prefix rdau: <http://www.rdaregistry.info/Elements/u/> .
+@prefix nvto: <http://lod.iti-germany.de/schema/nvto/> .
 
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dm2e: <http://onto.dm2e.eu/schemas/dm2e/> .
+
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gndo: <http://d-nb.info/standards/elementset/gnd#> .
+@prefix eclap: <http://www.eclap.eu/schema/eclap/> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+
+@prefix ecrm: <http://erlangen-crm.org/170309/> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+
+@prefix rdau: <http://www.rdaregistry.info/Elements/u/> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+
 
 @prefix abc: <http://metadata.net/harmony/abc#> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
-@prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix dm2e: <http://onto.dm2e.eu/schemas/dm2e/> .
-@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
-@prefix eclap: <http://www.eclap.eu/schema/eclap/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix gndo: <http://d-nb.info/standards/elementset/gnd#> .
-@prefix pro: <http://purl.org/spar/pro/> .
 @prefix radion: <http://www.w3.org/ns/radion#> .
-@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
-@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-
-@prefix nvto: <http://lod.iti-germany.de/schema/nvto/> .
 
 @base <http://lod.iti-germany.de/schema/nvto/> .
+
+<http://ld.iti-germany.de/schema/nvto/> rdf:type owl:Ontology ;
+                                         dcterms:contributor "Jonas Pitz" , "Maxim Wittenbecher" ;
+                                         dc:title "Non-Verbal Theatre Ontology"@en" ;
+                                         dc:title "Ontologie für nonverbales Theater"@de" ;
+                                         dcterms:publisher "Media Library for Dance and Theatre / ITI Germany"@en" ;
+                                         dcterms:publisher "Mediathek für Tanz und Theater / ITI Deutschland"@de" ;
+                                         rdfs:label "Non-Verbal Theatre Ontology"@en ;
+                                         rdfs:label "Ontologie für nonverbales Theater"@de ;
+                                         dc:rights <https://creativecommons.org/licenses/by/4.0/deed.en> ;
+                                         dcterms:abstract """Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the \"NONVERBALES THEATER
+                                                            IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS)."""@en ;
+                                         dcterms:abstract """Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts \"NONVERBALES THEATER
+                                                            IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS)."""@de .
 
 ## CLASSES
 

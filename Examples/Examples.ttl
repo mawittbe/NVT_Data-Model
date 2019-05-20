@@ -46,6 +46,7 @@ ex:Produktion1 rdf:type nvto:Production ;
 ex:Auffuehrung1  rdf:type nvto:Event ;
                 dcterms:type "Premiere" ;
                 nvto:occuredAtTime ex:TimespanA1 ;
+                nvto:happenedAtPlace ex:Place1 ;
                 dcterms:date "2001-08-14" .
 
 ex:TimespanA1   rdf:type nvto:TimeSpan ;

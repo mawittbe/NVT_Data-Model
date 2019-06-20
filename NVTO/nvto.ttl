@@ -42,10 +42,10 @@
 
 <http://ld.iti-germany.de/schema/nvto/> rdf:type owl:Ontology ;
                                          dcterms:contributor "Jonas Pitz" , "Maxim Wittenbecher" ;
-                                         dc:title "Non-Verbal Theatre Ontology"@en" ;
-                                         dc:title "Ontologie für nonverbales Theater"@de" ;
-                                         dcterms:publisher "Media Library for Dance and Theatre / ITI Germany"@en" ;
-                                         dcterms:publisher "Mediathek für Tanz und Theater / ITI Deutschland"@de" ;
+                                         dc:title "Non-Verbal Theatre Ontology"@en ;
+                                         dc:title "Ontologie für nonverbales Theater"@de ;
+                                         dcterms:publisher "Media Library for Dance and Theatre / ITI Germany"@en ;
+                                         dcterms:publisher "Mediathek für Tanz und Theater / ITI Deutschland"@de ;
                                          rdfs:label "Non-Verbal Theatre Ontology"@en ;
                                          rdfs:label "Ontologie für nonverbales Theater"@de ;
                                          dc:rights <https://creativecommons.org/licenses/by/4.0/deed.en> ;

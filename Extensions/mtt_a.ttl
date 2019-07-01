@@ -1,0 +1,52 @@
+@prefix mtt_a: <http://lod.iti-germany.de/schema/mtt_a/> .
+@base <http://lod.iti-germany.de/schema/mtt_a/> .
+
+<http://lod.iti-germany.de/schema/mtt_a/> rdf:type owl:Ontology ;
+                                        nvto:hasContributor "Jonas Pitz" , "Maxim Wittenbecher" ;
+                                        dc:title "Mediathek für Tanz und Theater administrative information"@en ;
+                                        dc:title "Mediathek für Tanz und Theater administrative Informationen"@de ;
+                                        dcterms:publisher "Media Library for Dance and Theatre / ITI Germany"@en ;
+                                        dcterms:publisher "Mediathek für Tanz und Theater / ITI Deutschland"@de ;
+                                        rdfs:label "MTT - Schema for administrative data"@en ;
+                                        rdfs:label "MTT - Schema für administrative Daten"@de ;
+                                        dc:rights <https://creativecommons.org/licenses/by/4.0/deed.en> ;
+
+## CLASSES
+
+## PROPERTIES
+
+mtt_a:gema rdf:type owl:DatatypeProperty ;
+                  skos:definition "Beschreibt die Rechtesitutation bzgl. GEMA für ein Objekt."@de ;
+                  rdfs:label "GEMA"@de .
+
+mtt_a:isDigitised rdf:type owl:DatatypeProperty ;
+                  skos:definition "Beschreibt, ob ein Objekt digitalisiert vorliegt."@de ;
+                  rdfs:label "Digitalisiert JA/NEIN"@de .
+
+mtt_a:visibilityLevel rdf:type owl:DatatypeProperty ;
+                  skos:definition "Beschreibt, welche Sichtbarkeit ein Objekt haben soll."@de ;
+                  rdfs:label "Sichtbarkeitsstufe"@de .
+
+mtt_a:internalLocation rdf:type owl:DatatypeProperty ;
+                  skos:definition "Beschreibt den internen/lokalen Standort eines Objekts."@de ;
+                  rdfs:label "Interner/lokaler Standort"@de .
+
+mtt_a:contentComment rdf:type owl:DatatypeProperty ;
+                  skos:definition "Enthält (institutionsinterne) Kommentare zum Inhalt eines Objekts."@de ;
+                  rdfs:label "Kommentar zum Inhalt"@de .
+
+mtt_a:workingComment rdf:type owl:DatatypeProperty ;
+                  skos:definition "Enthält (institutionsinterne) Kommentare zu Bearbeitungsstand eines Objekts."@de ;
+                  rdfs:label "Kommentar zum Bearbeitungsstand"@de .
+
+mtt_a:rightsStatus rdf:type owl:DatatypeProperty ;
+                  skos:definition "Enthält (institutionsinterne) Kommentare zu Stand der Rechteklärung."@de ;
+                  rdfs:label "Kommentar zum Stand der Rechteklärung"@de .
+
+mtt_a:copiesHeld rdf:type owl:DatatypeProperty ;
+                  skos:definition "Beschreibt die Anzahl der in der Institution vorhandenen Exemplare oder Kopien."@de ;
+                  rdfs:label "Anzahl der Exemplare"@de .
+
+mtt_a:dateOfLastConditionStatement rdf:type owl:DatatypeProperty ;
+                  skos:definition "Datum der letzen Einschätzung des Objektzustandt."@de ;
+                  rdfs:label "Letzte Zustandeinschätzung"@de .

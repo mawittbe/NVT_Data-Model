@@ -89,7 +89,7 @@ nvto:DigitalObject rdf:type owl:Class ;
                    rdfs:label "Digitales Objekt"@de ;
                    rdfs:label "Digital Object"@en ;
                    skos:definition """The digital representation of the contents a medium. Digital information carrier."""@en ;
-                   skos:example "IMG.tif, VID.avi"@en .
+                   skos:example "A specific digital file with name IMG-001.tif, VID-001.avi"@en .
 
 nvto:Event rdf:type owl:Class ;
            rdfs:label "Ereignis"@de ;
@@ -97,6 +97,23 @@ nvto:Event rdf:type owl:Class ;
            skos:definition """This class comprises all events."""@en ;
            skos:scopeNote "Used specifically for events in the realm of performing arts."@en ;
            skos:example "A performance of 'Hamlet', a workshop regarding a specific acting technique, an exhibition about an actor/actress"@en .
+
+nvto:Festival rdf:type owl:Class ;
+          rdfs:subClassOf nvto:Place ;
+          rdfs:label "Festival"@de ;
+          rdfs:label "Festival"@en ;
+          skos:definition """This class comprises all festivals."""@en ;
+          skos:scopeNote "Used specifically for festivals in the realm of performing arts."@en ;
+          skos:example "The biannual international theatre festival 'Theater der Welt'"@en .
+
+nvto:FestivalInstance rdf:type owl:Class ;
+          rdfs:subClassOf nvto:Event ;
+          rdfs:label "Festivalausgabe"@de ;
+          rdfs:label "Festival Edition"@en ;
+          skos:definition """This class comprises all singular instances or editions of a Festival."""@en ;
+          skos:scopeNote "Used specifically for festival editions in the realm of performing arts."@en ;
+          skos:example "The 2017 edition of the biannual theatre festival 'Theater der Welt', held in Hamburg, Germany"@en .
+
 
 nvto:InformationObject rdf:type owl:Class ;
                        rdfs:label "Informationsobjekt"@de ;

@@ -18,6 +18,14 @@ This section provides details for each class and property defined by Ontologie f
          <a href="#http://lod.iti-germany.de/schema/nvto/Event" title="http://lod.iti-germany.de/schema/nvto/Event">Ereignis</a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_Festival"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_Festival">Festival</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance">Festivalausgabe</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup"
             title="http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup">Gruppe/Ensemble/Company</a>
       </li>
@@ -40,7 +48,8 @@ This section provides details for each class and property defined by Ontologie f
             title="http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction">Produktion</a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/Collection" title="http://lod.iti-germany.de/schema/nvto/Collection">Sammlung</a>
+         <a href="#http://lod.iti-germany.de/schema/nvto/Collection"
+            title="http://lod.iti-germany.de/schema/nvto/Collection">Sammlung</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/Series" title="http://lod.iti-germany.de/schema/nvto/Series">Serie</a>
@@ -124,7 +133,7 @@ This section provides details for each class and property defined by Ontologie f
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>IMG.tif, VID.avi</pre>
+            <pre>A specific digital file with name IMG-001.tif, VID-001.avi</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -153,6 +162,12 @@ This section provides details for each class and property defined by Ontologie f
          </dd>
       </dl>
       <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance"
+               title="http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance">Festivalausgabe</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#http://lod.iti-germany.de/schema/nvto/happenedAtPlace"
@@ -160,6 +175,47 @@ This section provides details for each class and property defined by Ontologie f
             <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/occuredAtTime"
                title="http://lod.iti-germany.de/schema/nvto/occuredAtTime">occured at time</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_Festival">
+      <h3>Festival<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_Festival</p>
+      <div class="comment">
+         <span class="markdown">This class comprises all festivals.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>The biannual international theatre festival 'Theater der Welt'</pre>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance">
+      <h3>Festivalausgabe<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance</p>
+      <div class="comment">
+         <span class="markdown">This class comprises all singular instances or editions of a Festival.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>The 2017 edition of the biannual theatre festival 'Theater der Welt', held in Hamburg, Germany</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://lod.iti-germany.de/schema/nvto/Event" title="http://lod.iti-germany.de/schema/nvto/Event">Ereignis</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -399,7 +455,8 @@ This section provides details for each class and property defined by Ontologie f
          <dd>
             <a href="#http://lod.iti-germany.de/schema/nvto/beginsAtTime"
                title="http://lod.iti-germany.de/schema/nvto/beginsAtTime">begins at time</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/endsAtTime" title="http://lod.iti-germany.de/schema/nvto/endsAtTime">ends at time</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/endsAtTime"
+               title="http://lod.iti-germany.de/schema/nvto/endsAtTime">ends at time</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -439,13 +496,29 @@ This section provides details for each class and property defined by Ontologie f
             title="http://lod.iti-germany.de/schema/nvto/happenedAtPlace">happened at place</a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAcrobat"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAcrobat">has acrobat</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasActor" title="http://lod.iti-germany.de/schema/nvto/hasActor">has actor</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasAdaptor" title="http://lod.iti-germany.de/schema/nvto/hasAdaptor">has adaptor</a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAssistandDirector"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAssistandDirector">has assistant director</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasAuthor" title="http://lod.iti-germany.de/schema/nvto/hasAuthor">has author</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCast"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCast">has cast</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCastingAgent"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCastingAgent">has casting agent</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasChoreographer"
@@ -454,6 +527,10 @@ This section provides details for each class and property defined by Ontologie f
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasCinematographer"
             title="http://lod.iti-germany.de/schema/nvto/hasCinematographer">has cinematographer</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasClown"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasClown">has clown</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasComposer"
@@ -468,8 +545,15 @@ This section provides details for each class and property defined by Ontologie f
             title="http://lod.iti-germany.de/schema/nvto/hasContentMatch">has content match</a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+            title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner"
             title="http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner">has costume designer</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasCreator" title="http://lod.iti-germany.de/schema/nvto/hasCreator">has creator</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasDancer" title="http://lod.iti-germany.de/schema/nvto/hasDancer">has dancer</a>
@@ -490,6 +574,10 @@ This section provides details for each class and property defined by Ontologie f
          <a href="#http://lod.iti-germany.de/schema/nvto/hasEditor" title="http://lod.iti-germany.de/schema/nvto/hasEditor">has editor</a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasHomepage"
+            title="http://lod.iti-germany.de/schema/nvto/hasHomepage">has homepage</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasIllustrator"
             title="http://lod.iti-germany.de/schema/nvto/hasIllustrator">has illustrator</a>
       </li>
@@ -506,8 +594,16 @@ This section provides details for each class and property defined by Ontologie f
             title="http://lod.iti-germany.de/schema/nvto/hasLightDesigner">has light designer</a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMakeUpArtist"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMakeUpArtist">has make up artist</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasMaskDesigner"
             title="http://lod.iti-germany.de/schema/nvto/hasMaskDesigner">has mask designer</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasMediator"
+            title="http://lod.iti-germany.de/schema/nvto/hasMediator">has mediator</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasMusician"
@@ -530,6 +626,22 @@ This section provides details for each class and property defined by Ontologie f
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotographer"
             title="http://lod.iti-germany.de/schema/nvto/hasPhotographer">has photographer</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright">
+            <span>has playwright</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer">
+            <span>has producer</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProgrammDirector"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProgrammDirector">has programm director</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasPublishingPlace"
@@ -555,15 +667,42 @@ This section provides details for each class and property defined by Ontologie f
          <a href="#http://lod.iti-germany.de/schema/nvto/hasSeason" title="http://lod.iti-germany.de/schema/nvto/hasSeason">has season</a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSetBuilder"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSetBuilder">has set builder</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasSetDesigner"
             title="http://lod.iti-germany.de/schema/nvto/hasSetDesigner">has set designer</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSinger"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSinger">has singer</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSoundDesigner"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSoundDesigner">has sound designer</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasSpeaker" title="http://lod.iti-germany.de/schema/nvto/hasSpeaker">has speaker</a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleAuthor"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleAuthor">has surtitles author</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleTranslator"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleTranslator">has surtitles translator</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasTechnician"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasTechnician">has technician</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasTranslator"
             title="http://lod.iti-germany.de/schema/nvto/hasTranslator">has translator</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/isPartOf" title="http://lod.iti-germany.de/schema/nvto/isPartOf">is part of</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/isResidenceOf"
@@ -644,11 +783,6 @@ This section provides details for each class and property defined by Ontologie f
       </div>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/references">references</span>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
             <dt>has sub-properties</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/containsAudioVisualReferenceTo"
@@ -733,6 +867,27 @@ This section provides details for each class and property defined by Ontologie f
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAcrobat">
+      <h3>has acrobat<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAcrobat</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent who contributed to the resource as acrobat.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasActor">
       <h3>has actor<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -747,7 +902,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -766,7 +923,30 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAssistandDirector">
+      <h3>has assistant director<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAssistandDirector</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent who contributed to the resource as assistant director.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -785,7 +965,51 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCast">
+      <h3>has cast<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCast</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent was part of its cast.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCastingAgent">
+      <h3>has casting agent<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCastingAgent</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent was responsible for casting.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -804,7 +1028,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -823,7 +1049,30 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasClown">
+      <h3>has clown<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasClown</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent who contributed to the resource as clown.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -842,7 +1091,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -861,7 +1112,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -876,11 +1129,98 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Connects a resource to another resource with matching content. A shorthand property for connecting a resource to another resource with partly or fully matching contents</span>
       </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasContributor">
+      <h3>has contributor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasContributor</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent who contributed to the resource in any way.</span>
+      </div>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
+            <dt>has sub-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/relation">relation</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAcrobat"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAcrobat">has acrobat</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasActor" title="http://lod.iti-germany.de/schema/nvto/hasActor">has actor</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasAdaptor" title="http://lod.iti-germany.de/schema/nvto/hasAdaptor">has adaptor</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAssistandDirector"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAssistandDirector">has assistant director</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasAuthor" title="http://lod.iti-germany.de/schema/nvto/hasAuthor">has author</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCast"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCast">has cast</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCastingAgent"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCastingAgent">has casting agent</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasChoreographer"
+                  title="http://lod.iti-germany.de/schema/nvto/hasChoreographer">has choreographer</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasCinematographer"
+                  title="http://lod.iti-germany.de/schema/nvto/hasCinematographer">has cinematographer</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasClown"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasClown">has clown</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasComposer"
+                  title="http://lod.iti-germany.de/schema/nvto/hasComposer">has composer</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasConceptOriginator"
+                  title="http://lod.iti-germany.de/schema/nvto/hasConceptOriginator">has concept originator</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner"
+                  title="http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner">has costume designer</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasCreator" title="http://lod.iti-germany.de/schema/nvto/hasCreator">has creator</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasDancer" title="http://lod.iti-germany.de/schema/nvto/hasDancer">has dancer</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasDirector"
+                  title="http://lod.iti-germany.de/schema/nvto/hasDirector">has director</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasDramaturge"
+                  title="http://lod.iti-germany.de/schema/nvto/hasDramaturge">has dramaturge</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasEditor" title="http://lod.iti-germany.de/schema/nvto/hasEditor">has editor</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasIllustrator"
+                  title="http://lod.iti-germany.de/schema/nvto/hasIllustrator">has illustrator</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasLayouter"
+                  title="http://lod.iti-germany.de/schema/nvto/hasLayouter">has layouter</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasLightDesigner"
+                  title="http://lod.iti-germany.de/schema/nvto/hasLightDesigner">has light designer</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMakeUpArtist"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMakeUpArtist">has make up artist</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasMaskDesigner"
+                  title="http://lod.iti-germany.de/schema/nvto/hasMaskDesigner">has mask designer</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasMusician"
+                  title="http://lod.iti-germany.de/schema/nvto/hasMusician">has musician</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasParticipant"
+                  title="http://lod.iti-germany.de/schema/nvto/hasParticipant">has participant</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasPerformer"
+                  title="http://lod.iti-germany.de/schema/nvto/hasPerformer">has performer</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotoStudio"
+                  title="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">has photo studio</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotographer"
+                  title="http://lod.iti-germany.de/schema/nvto/hasPhotographer">has photographer</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright">has playwright</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer">has producer</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProgrammDirector"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProgrammDirector">has programm director</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner"
+                  title="http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner">has puppet designer</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasRecordist"
+                  title="http://lod.iti-germany.de/schema/nvto/hasRecordist">has recordist</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSetBuilder"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSetBuilder">has set builder</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasSetDesigner"
+                  title="http://lod.iti-germany.de/schema/nvto/hasSetDesigner">has set designer</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSinger"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSinger">has singer</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSoundDesigner"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSoundDesigner">has sound designer</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasSpeaker" title="http://lod.iti-germany.de/schema/nvto/hasSpeaker">has speaker</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleAuthor"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleAuthor">has surtitles author</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasTechnician"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasTechnician">has technician</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasTranslator"
+                  title="http://lod.iti-germany.de/schema/nvto/hasTranslator">has translator</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasVideoDesigner"
+                  title="http://lod.iti-germany.de/schema/nvto/hasVideoDesigner">video designer</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -900,7 +1240,30 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasCreator">
+      <h3>has creator<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasCreator</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent who contributed to the resource as creator.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -919,7 +1282,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -936,11 +1301,6 @@ This section provides details for each class and property defined by Ontologie f
       </div>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/relation">relation</span>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/PhysicalObject"
@@ -970,7 +1330,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -989,7 +1351,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1008,9 +1372,22 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasHomepage">
+      <h3>has homepage<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasHomepage</p>
+      <div class="comment">
+         <span class="markdown">Describes the homepage an agent.</span>
       </div>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasIllustrator">
@@ -1027,7 +1404,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1044,11 +1423,6 @@ This section provides details for each class and property defined by Ontologie f
       </div>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/relation">relation</span>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/InformationObject"
@@ -1072,7 +1446,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1091,7 +1467,30 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMakeUpArtist">
+      <h3>has make up artist<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMakeUpArtist</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent who contributed to the resource as make up artist.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1110,9 +1509,22 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasMediator">
+      <h3>has mediator<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasMediator</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent who contributed to the resource as creator.</span>
       </div>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasMusician">
@@ -1129,7 +1541,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1148,7 +1562,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1167,7 +1583,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1183,7 +1601,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>is also defined as</dt>
             <dd>annotation property</dd>
@@ -1204,7 +1624,70 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright">
+      <h3>has playwright<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>annotation property</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer">
+      <h3>has producer<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>annotation property</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProgrammDirector">
+      <h3>has programm director<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProgrammDirector</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent who contributed to festival or event through curating or directing the programm of the event.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1249,7 +1732,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1268,7 +1753,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1285,11 +1772,6 @@ This section provides details for each class and property defined by Ontologie f
       </div>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/spatial">spatial</span>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
             <dt>has sub-properties</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/happenedAtPlace"
@@ -1359,11 +1841,6 @@ This section provides details for each class and property defined by Ontologie f
       </div>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/temporal">temporal</span>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction"
@@ -1374,6 +1851,27 @@ This section provides details for each class and property defined by Ontologie f
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/TimeSpan" title="http://lod.iti-germany.de/schema/nvto/TimeSpan">Zeitspanne</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSetBuilder">
+      <h3>has set builder<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSetBuilder</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent who contributed to the resource as set builder.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1392,7 +1890,51 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSinger">
+      <h3>has singer<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSinger</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent who contributed to the resource as singer.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSoundDesigner">
+      <h3>has sound designer<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSoundDesigner</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent who contributed to the resource as sound designer.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1411,7 +1953,72 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleAuthor">
+      <h3>has surtitles author<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleAuthor</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent who contributed to the resource as author of surtitles.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleTranslator">
+      <h3>has surtitles translator<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleTranslator</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent who contributed to the resource as translator of surtitles.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasTranslator"
+                  title="http://lod.iti-germany.de/schema/nvto/hasTranslator">has translator</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasTechnician">
+      <h3>has technician<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasTechnician</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent who contributed to the resource as sound technician.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1430,9 +2037,28 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleTranslator"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleTranslator">has surtitles translator</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/isPartOf">
+      <h3>is part of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/isPartOf</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to another resource of which it is a part of.</span>
       </div>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/isResidenceOf">
@@ -1468,11 +2094,6 @@ This section provides details for each class and property defined by Ontologie f
       </div>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/temporal">temporal</span>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/Event" title="http://lod.iti-germany.de/schema/nvto/Event">Ereignis</a>
@@ -1526,7 +2147,9 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
+                  title="http://lod.iti-germany.de/schema/nvto/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1539,14 +2162,19 @@ This section provides details for each class and property defined by Ontologie f
             title="http://lod.iti-germany.de/schema/nvto/beginsAtTime">begins at time</a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/endsAtTime" title="http://lod.iti-germany.de/schema/nvto/endsAtTime">ends at time</a>
+         <a href="#http://lod.iti-germany.de/schema/nvto/endsAtTime"
+            title="http://lod.iti-germany.de/schema/nvto/endsAtTime">ends at time</a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasAddress" title="http://lod.iti-germany.de/schema/nvto/hasAddress">has address</a>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasAddress"
+            title="http://lod.iti-germany.de/schema/nvto/hasAddress">has address</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasCondition"
             title="http://lod.iti-germany.de/schema/nvto/hasCondition">has condition</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasDate" title="http://lod.iti-germany.de/schema/nvto/hasDate">has date</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfBirth"
@@ -1557,8 +2185,16 @@ This section provides details for each class and property defined by Ontologie f
             title="http://lod.iti-germany.de/schema/nvto/hasDateOfDeath">has date of death</a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasDescription"
+            title="http://lod.iti-germany.de/schema/nvto/hasDescription">has description</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasDimensions"
             title="http://lod.iti-germany.de/schema/nvto/hasDimensions">has dimensions</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasFamilyName"
+            title="http://lod.iti-germany.de/schema/nvto/hasFamilyName">has family name</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstEdition"
@@ -1573,8 +2209,16 @@ This section provides details for each class and property defined by Ontologie f
          </a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstName"
+            title="http://lod.iti-germany.de/schema/nvto/hasFirstName">has first name</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate"
             title="http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate">has first performance date</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasIdentifier"
+            title="http://lod.iti-germany.de/schema/nvto/hasIdentifier">has identifier</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasIsbn" title="http://lod.iti-germany.de/schema/nvto/hasIsbn">has ISBN</a>
@@ -1588,12 +2232,34 @@ This section provides details for each class and property defined by Ontologie f
             title="http://lod.iti-germany.de/schema/nvto/hasLabelingFront">has labeling front</a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasLanguage"
+            title="http://lod.iti-germany.de/schema/nvto/hasLanguage">has language</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate"
             title="http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate">has last performance date</a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasRights" title="http://lod.iti-germany.de/schema/nvto/hasRights">has rights</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasSubtitle"
             title="http://lod.iti-germany.de/schema/nvto/hasSubtitle">has subtitle</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasTableOfContents"
+            title="http://lod.iti-germany.de/schema/nvto/hasTableOfContents">has table of contents</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasTitle" title="http://lod.iti-germany.de/schema/nvto/hasTitle">has title</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/wasCreatedAtTime"
+            title="http://lod.iti-germany.de/schema/nvto/wasCreatedAtTime">was created at time</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/wasIssuedAtTime"
+            title="http://lod.iti-germany.de/schema/nvto/wasIssuedAtTime">was issued at time</a>
       </li>
    </ul>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/beginsAtTime">
@@ -1610,7 +2276,7 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/date">date</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasDate" title="http://lod.iti-germany.de/schema/nvto/hasDate">has date</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -1635,7 +2301,7 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/date">date</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasDate" title="http://lod.iti-germany.de/schema/nvto/hasDate">has date</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -1686,6 +2352,39 @@ This section provides details for each class and property defined by Ontologie f
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasDate">
+      <h3>has date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasDate</p>
+      <div class="comment">
+         <span class="markdown">Describes a singular date/point in time.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/beginsAtTime"
+                  title="http://lod.iti-germany.de/schema/nvto/beginsAtTime">begins at time</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/endsAtTime"
+                  title="http://lod.iti-germany.de/schema/nvto/endsAtTime">ends at time</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfBirth"
+                  title="http://lod.iti-germany.de/schema/nvto/hasDateOfBirth">has date of birth</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfDeath"
+                  title="http://lod.iti-germany.de/schema/nvto/hasDateOfDeath">has date of death</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate"
+                  title="http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate">has first performance date</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate"
+                  title="http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate">has last performance date</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/wasIssuedAtTime"
+                  title="http://lod.iti-germany.de/schema/nvto/wasIssuedAtTime">was issued at time</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasDateOfBirth">
       <h3>has date of birth<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1700,7 +2399,7 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/date">date</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasDate" title="http://lod.iti-germany.de/schema/nvto/hasDate">has date</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -1725,13 +2424,34 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/date">date</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasDate" title="http://lod.iti-germany.de/schema/nvto/hasDate">has date</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/Agent" title="http://lod.iti-germany.de/schema/nvto/Agent">Agent</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasDescription">
+      <h3>has description<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasDescription</p>
+      <div class="comment">
+         <span class="markdown">A general description of a resource.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasTableOfContents"
+                  title="http://lod.iti-germany.de/schema/nvto/hasTableOfContents">has table of contents</a>
+               <sup class="type-dp" title="data property">dp</sup>
             </dd>
          </dl>
       </div>
@@ -1754,6 +2474,17 @@ This section provides details for each class and property defined by Ontologie f
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
          </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasFamilyName">
+      <h3>has family name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasFamilyName</p>
+      <div class="comment">
+         <span class="markdown">Describes the family name of an agent.</span>
       </div>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasFirstEdition">
@@ -1794,6 +2525,17 @@ This section provides details for each class and property defined by Ontologie f
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasFirstName">
+      <h3>has first name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasFirstName</p>
+      <div class="comment">
+         <span class="markdown">Describes the first name of an agent.</span>
+      </div>
+   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate">
       <h3>has first performance date<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1808,10 +2550,21 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/date">date</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasDate" title="http://lod.iti-germany.de/schema/nvto/hasDate">has date</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
          </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasIdentifier">
+      <h3>has identifier<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasIdentifier</p>
+      <div class="comment">
+         <span class="markdown">Describes one or more alternative identifiers of a resource.</span>
       </div>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasIsbn">
@@ -1874,6 +2627,17 @@ This section provides details for each class and property defined by Ontologie f
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasLanguage">
+      <h3>has language<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasLanguage</p>
+      <div class="comment">
+         <span class="markdown">Describes the language associated to a resource.</span>
+      </div>
+   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate">
       <h3>has last performance date<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1888,10 +2652,21 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/date">date</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasDate" title="http://lod.iti-germany.de/schema/nvto/hasDate">has date</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
          </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasRights">
+      <h3>has rights<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasRights</p>
+      <div class="comment">
+         <span class="markdown">Describes one or more rights statements of a resource.</span>
       </div>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasSubtitle">
@@ -1904,15 +2679,535 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Describes the subtitle of a resource.</span>
       </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasTableOfContents">
+      <h3>has table of contents<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasTableOfContents</p>
+      <div class="comment">
+         <span class="markdown">Describes the table of contents of a resource.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/title">title</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasDescription"
+                  title="http://lod.iti-germany.de/schema/nvto/hasDescription">has description</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
          </dl>
       </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasTitle">
+      <h3>has title<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasTitle</p>
+      <div class="comment">
+         <span class="markdown">Describes the title of a resource.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/wasCreatedAtTime">
+      <h3>was created at time<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/wasCreatedAtTime</p>
+      <div class="comment">
+         <span class="markdown">Describes a singular date/point in time at which a resource was created.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/wasIssuedAtTime">
+      <h3>was issued at time<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/wasIssuedAtTime</p>
+      <div class="comment">
+         <span class="markdown">Describes a singular date/point in time at which a resource was issued.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasDate" title="http://lod.iti-germany.de/schema/nvto/hasDate">has date</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="annotationproperties">
+   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract">
+            <span>abstract</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">
+            <span>contributor</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition">
+            <span>definition</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#example" title="http://www.w3.org/2004/02/skos/core#example">
+            <span>example</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasExtent" title="http://lod.iti-germany.de/schema/nvto/hasExtent">has extent</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstEdition"
+            title="http://lod.iti-germany.de/schema/nvto/hasFirstEdition">
+            <span>has first edition</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition"
+            title="http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition">
+            <span>has first localized edition</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasFormat" title="http://lod.iti-germany.de/schema/nvto/hasFormat">has format</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasMedium" title="http://lod.iti-germany.de/schema/nvto/hasMedium">has medium</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMember"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMember">has member</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMime"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMime">has mime</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasName" title="http://lod.iti-germany.de/schema/nvto/hasName">
+            <span>has name</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotoStudio"
+            title="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">
+            <span>has photo studio</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright">
+            <span>has playwright</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasPredecessor"
+            title="http://lod.iti-germany.de/schema/nvto/hasPredecessor">has predecessor</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer"
+            title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer">
+            <span>has producer</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasProvenance"
+            title="http://lod.iti-germany.de/schema/nvto/hasProvenance">has provenance</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasPublisher"
+            title="http://lod.iti-germany.de/schema/nvto/hasPublisher">has publisher</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasRightsHolder"
+            title="http://lod.iti-germany.de/schema/nvto/hasRightsHolder">has rights holder</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasSource" title="http://lod.iti-germany.de/schema/nvto/hasSource">has source</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasSuccessor"
+            title="http://lod.iti-germany.de/schema/nvto/hasSuccessor">has successor</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasType" title="http://lod.iti-germany.de/schema/nvto/hasType">has type</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher">
+            <span>publisher</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/rights" title="http://purl.org/dc/elements/1.1/rights">
+            <span>rights</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#scopeNote" title="http://www.w3.org/2004/02/skos/core#scopeNote">
+            <span>scope note</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title">
+            <span>title</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/terms/abstract">
+      <h3>abstract<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/abstract</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/contributor">
+      <h3>contributor<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/contributor</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#definition">
+      <h3>definition<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#definition</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#example">
+      <h3>example<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#example</p>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasExtent">
+      <h3>has extent<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasExtent</p>
+      <div class="comment">
+         <span class="markdown">Describes the extent of a resource.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasFormat" title="http://lod.iti-germany.de/schema/nvto/hasFormat">has format</a>
+               <sup class="type-ap" title="annotation property">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasFirstEdition">
+      <h3>has first edition<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasFirstEdition</p>
+      <div class="description">
+         <dl>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstEdition">data property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition">
+      <h3>has first localized edition<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition</p>
+      <div class="description">
+         <dl>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition">data property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasFormat">
+      <h3>has format<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasFormat</p>
+      <div class="comment">
+         <span class="markdown">Describes the format of a resource.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasExtent" title="http://lod.iti-germany.de/schema/nvto/hasExtent">has extent</a>
+               <sup class="type-ap" title="annotation property">ap</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasMedium" title="http://lod.iti-germany.de/schema/nvto/hasMedium">has medium</a>
+               <sup class="type-ap" title="annotation property">ap</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMember"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMember">has member</a>
+               <sup class="type-ap" title="annotation property">ap</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMime"
+                  title="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMime">has mime</a>
+               <sup class="type-ap" title="annotation property">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasMedium">
+      <h3>has medium<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasMedium</p>
+      <div class="comment">
+         <span class="markdown">Describes or connects to the medium of a resource.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasFormat" title="http://lod.iti-germany.de/schema/nvto/hasFormat">has format</a>
+               <sup class="type-ap" title="annotation property">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMember">
+      <h3>has member<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMember</p>
+      <div class="comment">
+         <span class="markdown">Describes or connects the relation between a resource and other resources that are members of it (e.g. the members of a artist group).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasFormat" title="http://lod.iti-germany.de/schema/nvto/hasFormat">has format</a>
+               <sup class="type-ap" title="annotation property">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMime">
+      <h3>has mime<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMime</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an agent who contributed to the resource as mime.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasFormat" title="http://lod.iti-germany.de/schema/nvto/hasFormat">has format</a>
+               <sup class="type-ap" title="annotation property">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasName">
+      <h3>has name<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasName</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#label">label</span>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>data property</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">
+      <h3>has photo studio<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPhotoStudio</p>
+      <div class="description">
+         <dl>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">object property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright">
+      <h3>has playwright<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright</p>
+      <div class="description">
+         <dl>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright">object property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasPredecessor">
+      <h3>has predecessor<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPredecessor</p>
+      <div class="comment">
+         <span class="markdown">Connects or describes two resources in which one resource precedes the other.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer">
+      <h3>has producer<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer</p>
+      <div class="description">
+         <dl>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer">object property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasProvenance">
+      <h3>has provenance<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasProvenance</p>
+      <div class="comment">
+         <span class="markdown">Describes or connects to the provenance of a resource.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasPublisher">
+      <h3>has publisher<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPublisher</p>
+      <div class="comment">
+         <span class="markdown">Describes the publisher of a resource or connects the resource to an agent who contributed to the resource as publisher.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasRightsHolder">
+      <h3>has rights holder<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasRightsHolder</p>
+      <div class="comment">
+         <span class="markdown">Describes the rights holder of a resource or connects the resource to an agent who holds rights to the resource.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasSource">
+      <h3>has source<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasSource</p>
+      <div class="comment">
+         <span class="markdown">Describes or connects to the source of a resource.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasSuccessor">
+      <h3>has successor<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasSuccessor</p>
+      <div class="comment">
+         <span class="markdown">Connects or describes two resources in which one resource succeeds the other.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasType">
+      <h3>has type<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasType</p>
+      <div class="comment">
+         <span class="markdown">Describes or connects to the type of a resource.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/publisher">
+      <h3>publisher<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/publisher</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/rights">
+      <h3>rights<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/rights</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#scopeNote">
+      <h3>scope note<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#scopeNote</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/title">
+      <h3>title<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/title</p>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

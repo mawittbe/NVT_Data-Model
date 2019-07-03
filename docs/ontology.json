@@ -5,18 +5,18 @@
     "@id" : "https://creativecommons.org/licenses/by/4.0/deed.en"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
-    "@language" : "en\"",
+    "@language" : "en",
     "@value" : "Non-Verbal Theatre Ontology"
   }, {
-    "@language" : "de\"",
+    "@language" : "de",
     "@value" : "Ontologie für nonverbales Theater"
   } ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@language" : "de",
-    "@value" : "Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts \"NONVERBALES THEATER\n                                                            IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS)."
+    "@value" : "Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts \"NONVERBALES THEATER\n                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS)."
   }, {
     "@language" : "en",
-    "@value" : "Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the \"NONVERBALES THEATER\n                                                            IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS)."
+    "@value" : "Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the \"NONVERBALES THEATER\n                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS)."
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@value" : "Jonas Pitz"
@@ -24,10 +24,10 @@
     "@value" : "Maxim Wittenbecher"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
-    "@language" : "en\"",
+    "@language" : "en",
     "@value" : "Media Library for Dance and Theatre / ITI Germany"
   }, {
-    "@language" : "de\"",
+    "@language" : "de",
     "@value" : "Mediathek für Tanz und Theater / ITI Deutschland"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -131,7 +131,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
-    "@value" : "IMG.tif, VID.avi"
+    "@value" : "A specific digital file with name IMG-001.tif, VID-001.avi"
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/Event",
@@ -172,6 +172,291 @@
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
     "@value" : "Aufnahme von Aufführung, Inhalt von Programmheft X"
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_Festival",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Festival"
+  }, {
+    "@language" : "en",
+    "@value" : "Festival"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "This class comprises all festivals."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "The biannual international theatre festival 'Theater der Welt'"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Used specifically for festivals in the realm of performing arts."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Festival Edition"
+  }, {
+    "@language" : "de",
+    "@value" : "Festivalausgabe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/Event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "This class comprises all singular instances or editions of a Festival."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "The 2017 edition of the biannual theatre festival 'Theater der Welt', held in Hamburg, Germany"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Used specifically for festival editions in the realm of performing arts."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAcrobat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has acrobat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource as acrobat."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAssistandDirector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has assistant director"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource as assistant director."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has cast"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent was part of its cast."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCastingAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has casting agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent was responsible for casting."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasClown",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has clown"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource as clown."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMakeUpArtist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has make up artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource as make up artist."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has member"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasFormat"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes or connects the relation between a resource and other resources that are members of it (e.g. the members of a artist group)."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has mime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasFormat"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource as mime."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has playwright"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource as playwright."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has producer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource as producer."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProgrammDirector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has programm director"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to festival or event through curating or directing the programm of the event."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSetBuilder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has set builder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource as set builder."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSinger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has singer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource as singer."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSoundDesigner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has sound designer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource as sound designer."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleAuthor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has surtitles author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource as author of surtitles."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleTranslator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has surtitles translator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasTranslator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource as translator of surtitles."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/PROPOSED_hasTechnician",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has technician"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource as sound technician."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup",
@@ -312,7 +597,7 @@
     "@value" : "begins at time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/date"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasDate"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -352,9 +637,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "contains reference to"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/references"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -403,7 +685,7 @@
     "@value" : "ends at time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/date"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasDate"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -437,7 +719,7 @@
     "@value" : "has actor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -451,7 +733,7 @@
     "@value" : "has adaptor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -479,7 +761,7 @@
     "@value" : "has author"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -493,7 +775,7 @@
     "@value" : "has choreographer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -507,7 +789,7 @@
     "@value" : "has cinematographer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -521,7 +803,7 @@
     "@value" : "has composer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -535,7 +817,7 @@
     "@value" : "has concept originator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -562,12 +844,20 @@
     "@language" : "en",
     "@value" : "has content match"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/relation"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Connects a resource to another resource with matching content. A shorthand property for connecting a resource to another resource with partly or fully matching contents"
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has contributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource in any way."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner",
@@ -577,11 +867,25 @@
     "@value" : "has costume designer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Connects a resource to an agent who contributed to the resource as costume designer."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasCreator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has creator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource as creator."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasDancer",
@@ -591,11 +895,22 @@
     "@value" : "has dancer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Connects a resource to an agent who contributed to the resource as dancer."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes a singular date/point in time."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasDateOfBirth",
@@ -608,7 +923,7 @@
     "@value" : "has date of birth"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/date"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasDate"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -625,11 +940,22 @@
     "@value" : "has date of death"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/date"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasDate"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Describes the date of death of an agent."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has description"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A general description of a resource."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasDigitalVersion",
@@ -643,9 +969,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://lod.iti-germany.de/schema/nvto/DigitalObject"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/relation"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -673,7 +996,7 @@
     "@value" : "has director"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -687,7 +1010,7 @@
     "@value" : "has dramaturge"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -701,11 +1024,36 @@
     "@value" : "has editor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Connects a resource to an agent who contributed to the resource as editor."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasExtent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has extent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasFormat"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes the extent of a resource."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasFamilyName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has family name"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes the family name of an agent."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasFirstEdition",
@@ -736,6 +1084,17 @@
     "@value" : "Describes or points to the first localized edition of a resource."
   } ]
 }, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasFirstName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has first name"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes the first name of an agent."
+  } ]
+}, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -743,11 +1102,44 @@
     "@value" : "has first performance date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/date"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasDate"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "A shorthand property for describing the first performance date of a resource (e.g. a performing arts production)."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has format"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes the format of a resource."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasHomepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has homepage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes the homepage an agent."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has identifier"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes one or more alternative identifiers of a resource."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasIllustrator",
@@ -757,7 +1149,7 @@
     "@value" : "has illustrator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -772,9 +1164,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has information carrier"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/relation"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -823,6 +1212,17 @@
     "@value" : "Describes the labeling on the front of a resource."
   } ]
 }, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has language"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes the language associated to a resource."
+  } ]
+}, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -830,7 +1230,7 @@
     "@value" : "has last performance date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/date"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasDate"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -844,7 +1244,7 @@
     "@value" : "has layouter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -858,7 +1258,7 @@
     "@value" : "has light designer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -872,11 +1272,36 @@
     "@value" : "has mask designer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Connects a resource to an agent who contributed to the resource as mask designer."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasMediator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has mediator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an agent who contributed to the resource as creator."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasMedium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has medium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasFormat"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes or connects to the medium of a resource."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasMusician",
@@ -886,11 +1311,25 @@
     "@value" : "has musician"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Connects a resource to an agent who contributed to the resource as musician."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes the name of an agent."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasParticipant",
@@ -900,7 +1339,7 @@
     "@value" : "has participant"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -914,7 +1353,7 @@
     "@value" : "has performer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -928,7 +1367,7 @@
     "@value" : "has photo studio"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -942,7 +1381,7 @@
     "@value" : "has photographer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -958,6 +1397,28 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Connects or describes two resources in which one resource precedes the other."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasProvenance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has provenance"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes or connects to the provenance of a resource."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasPublisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has publisher"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes the publisher of a resource or connects the resource to an agent who contributed to the resource as publisher."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPublishingPlace",
@@ -984,7 +1445,7 @@
     "@value" : "has puppet designer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -998,7 +1459,7 @@
     "@value" : "has recordist"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -1013,9 +1474,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://lod.iti-germany.de/schema/nvto/Place"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/spatial"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -1042,6 +1500,28 @@
     "@value" : "Connects an agent to its place of residency."
   } ]
 }, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasRights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has rights"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes one or more rights statements of a resource."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasRightsHolder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has rights holder"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes the rights holder of a resource or connects the resource to an agent who holds rights to the resource."
+  } ]
+}, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasSeason",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1053,9 +1533,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://lod.iti-germany.de/schema/nvto/TimeSpan"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/temporal"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -1069,11 +1546,22 @@
     "@value" : "has set designer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Connects a resource to an agent who contributed to the resource as set designer."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has source"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes or connects to the source of a resource."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasSpeaker",
@@ -1083,7 +1571,7 @@
     "@value" : "has speaker"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -1095,9 +1583,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has subtitle"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/title"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -1115,6 +1600,31 @@
     "@value" : "Connects or describes two resources in which one resource succeeds the other."
   } ]
 }, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasTableOfContents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has table of contents"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasDescription"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes the table of contents of a resource."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has title"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes the title of a resource."
+  } ]
+}, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasTranslator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1122,11 +1632,22 @@
     "@value" : "has translator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Connects a resource to an agent who contributed to the resource as translator."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/hasType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes or connects to the type of a resource."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasVideoDesigner",
@@ -1136,11 +1657,22 @@
     "@value" : "video designer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/contributor"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Connects a resource to an agent responsible for its video design."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is part of"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to another resource of which it is a part of."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/isResidenceOf",
@@ -1169,9 +1701,6 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://lod.iti-germany.de/schema/nvto/TimeSpan"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/temporal"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Connects an event to the timespan it occured at."
@@ -1194,6 +1723,31 @@
     "@value" : "Connects a resource to the location it originated at."
   } ]
 }, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/wasCreatedAtTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "was created at time"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes a singular date/point in time at which a resource was created."
+  } ]
+}, {
+  "@id" : "http://lod.iti-germany.de/schema/nvto/wasIssuedAtTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "was issued at time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasDate"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Describes a singular date/point in time at which a resource was issued."
+  } ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/rights",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -1204,28 +1758,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/contributor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/date",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/references",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/relation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/spatial",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/temporal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#definition",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]

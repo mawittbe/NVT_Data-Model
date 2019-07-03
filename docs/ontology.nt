@@ -1,13 +1,13 @@
 <http://ld.iti-germany.de/schema/nvto/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://ld.iti-germany.de/schema/nvto/> <http://purl.org/dc/elements/1.1/rights> <https://creativecommons.org/licenses/by/4.0/deed.en> .
-<http://ld.iti-germany.de/schema/nvto/> <http://purl.org/dc/elements/1.1/title> "Non-Verbal Theatre Ontology"@en" .
-<http://ld.iti-germany.de/schema/nvto/> <http://purl.org/dc/elements/1.1/title> "Ontologie für nonverbales Theater"@de" .
-<http://ld.iti-germany.de/schema/nvto/> <http://purl.org/dc/terms/abstract> "Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts \"NONVERBALES THEATER\n                                                            IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS)."@de .
-<http://ld.iti-germany.de/schema/nvto/> <http://purl.org/dc/terms/abstract> "Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the \"NONVERBALES THEATER\n                                                            IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS)."@en .
+<http://ld.iti-germany.de/schema/nvto/> <http://purl.org/dc/elements/1.1/title> "Non-Verbal Theatre Ontology"@en .
+<http://ld.iti-germany.de/schema/nvto/> <http://purl.org/dc/elements/1.1/title> "Ontologie für nonverbales Theater"@de .
+<http://ld.iti-germany.de/schema/nvto/> <http://purl.org/dc/terms/abstract> "Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts \"NONVERBALES THEATER\n                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS)."@de .
+<http://ld.iti-germany.de/schema/nvto/> <http://purl.org/dc/terms/abstract> "Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the \"NONVERBALES THEATER\n                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS)."@en .
 <http://ld.iti-germany.de/schema/nvto/> <http://purl.org/dc/terms/contributor> "Jonas Pitz" .
 <http://ld.iti-germany.de/schema/nvto/> <http://purl.org/dc/terms/contributor> "Maxim Wittenbecher" .
-<http://ld.iti-germany.de/schema/nvto/> <http://purl.org/dc/terms/publisher> "Media Library for Dance and Theatre / ITI Germany"@en" .
-<http://ld.iti-germany.de/schema/nvto/> <http://purl.org/dc/terms/publisher> "Mediathek für Tanz und Theater / ITI Deutschland"@de" .
+<http://ld.iti-germany.de/schema/nvto/> <http://purl.org/dc/terms/publisher> "Media Library for Dance and Theatre / ITI Germany"@en .
+<http://ld.iti-germany.de/schema/nvto/> <http://purl.org/dc/terms/publisher> "Mediathek für Tanz und Theater / ITI Deutschland"@de .
 <http://ld.iti-germany.de/schema/nvto/> <http://www.w3.org/2000/01/rdf-schema#label> "Non-Verbal Theatre Ontology"@en .
 <http://ld.iti-germany.de/schema/nvto/> <http://www.w3.org/2000/01/rdf-schema#label> "Ontologie für nonverbales Theater"@de .
 # 
@@ -19,11 +19,50 @@
 # #################################################################
 # 
 # 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMember
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMember> <http://www.w3.org/2000/01/rdf-schema#label> "has member"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMember> <http://www.w3.org/2004/02/skos/core#definition> "Describes or connects the relation between a resource and other resources that are members of it (e.g. the members of a artist group)."@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMember> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasFormat> .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMime
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMime> <http://www.w3.org/2000/01/rdf-schema#label> "has mime"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMime> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as mime."@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasFormat> .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://lod.iti-germany.de/schema/nvto/hasExtent
+<http://lod.iti-germany.de/schema/nvto/hasExtent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasExtent> <http://www.w3.org/2000/01/rdf-schema#label> "has extent"@en .
+<http://lod.iti-germany.de/schema/nvto/hasExtent> <http://www.w3.org/2004/02/skos/core#definition> "Describes the extent of a resource."@en .
+<http://lod.iti-germany.de/schema/nvto/hasExtent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasFormat> .
+# 
 # http://lod.iti-germany.de/schema/nvto/hasFirstEdition
 <http://lod.iti-germany.de/schema/nvto/hasFirstEdition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition
 <http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://lod.iti-germany.de/schema/nvto/hasFormat
+<http://lod.iti-germany.de/schema/nvto/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasFormat> <http://www.w3.org/2000/01/rdf-schema#label> "has format"@en .
+<http://lod.iti-germany.de/schema/nvto/hasFormat> <http://www.w3.org/2004/02/skos/core#definition> "Describes the format of a resource."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/hasMedium
+<http://lod.iti-germany.de/schema/nvto/hasMedium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasMedium> <http://www.w3.org/2000/01/rdf-schema#label> "has medium"@en .
+<http://lod.iti-germany.de/schema/nvto/hasMedium> <http://www.w3.org/2004/02/skos/core#definition> "Describes or connects to the medium of a resource."@en .
+<http://lod.iti-germany.de/schema/nvto/hasMedium> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasFormat> .
+# 
+# http://lod.iti-germany.de/schema/nvto/hasName
+<http://lod.iti-germany.de/schema/nvto/hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasPhotoStudio
 <http://lod.iti-germany.de/schema/nvto/hasPhotoStudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -33,10 +72,35 @@
 <http://lod.iti-germany.de/schema/nvto/hasPredecessor> <http://www.w3.org/2000/01/rdf-schema#label> "has predecessor"@en .
 <http://lod.iti-germany.de/schema/nvto/hasPredecessor> <http://www.w3.org/2004/02/skos/core#definition> "Connects or describes two resources in which one resource precedes the other."@en .
 # 
+# http://lod.iti-germany.de/schema/nvto/hasProvenance
+<http://lod.iti-germany.de/schema/nvto/hasProvenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasProvenance> <http://www.w3.org/2000/01/rdf-schema#label> "has provenance"@en .
+<http://lod.iti-germany.de/schema/nvto/hasProvenance> <http://www.w3.org/2004/02/skos/core#definition> "Describes or connects to the provenance of a resource."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/hasPublisher
+<http://lod.iti-germany.de/schema/nvto/hasPublisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasPublisher> <http://www.w3.org/2000/01/rdf-schema#label> "has publisher"@en .
+<http://lod.iti-germany.de/schema/nvto/hasPublisher> <http://www.w3.org/2004/02/skos/core#definition> "Describes the publisher of a resource or connects the resource to an agent who contributed to the resource as publisher."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/hasRightsHolder
+<http://lod.iti-germany.de/schema/nvto/hasRightsHolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasRightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "has rights holder"@en .
+<http://lod.iti-germany.de/schema/nvto/hasRightsHolder> <http://www.w3.org/2004/02/skos/core#definition> "Describes the rights holder of a resource or connects the resource to an agent who holds rights to the resource."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/hasSource
+<http://lod.iti-germany.de/schema/nvto/hasSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasSource> <http://www.w3.org/2000/01/rdf-schema#label> "has source"@en .
+<http://lod.iti-germany.de/schema/nvto/hasSource> <http://www.w3.org/2004/02/skos/core#definition> "Describes or connects to the source of a resource."@en .
+# 
 # http://lod.iti-germany.de/schema/nvto/hasSuccessor
 <http://lod.iti-germany.de/schema/nvto/hasSuccessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://lod.iti-germany.de/schema/nvto/hasSuccessor> <http://www.w3.org/2000/01/rdf-schema#label> "has successor"@en .
 <http://lod.iti-germany.de/schema/nvto/hasSuccessor> <http://www.w3.org/2004/02/skos/core#definition> "Connects or describes two resources in which one resource succeeds the other."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/hasType
+<http://lod.iti-germany.de/schema/nvto/hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasType> <http://www.w3.org/2000/01/rdf-schema#label> "has type"@en .
+<http://lod.iti-germany.de/schema/nvto/hasType> <http://www.w3.org/2004/02/skos/core#definition> "Describes or connects to the type of a resource."@en .
 # 
 # http://purl.org/dc/elements/1.1/rights
 <http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -46,6 +110,9 @@
 # 
 # http://purl.org/dc/terms/abstract
 <http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -68,6 +135,92 @@
 # #################################################################
 # 
 # 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAcrobat
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAcrobat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAcrobat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAcrobat> <http://www.w3.org/2000/01/rdf-schema#label> "has acrobat"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAcrobat> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as acrobat."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAssistandDirector
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAssistandDirector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAssistandDirector> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAssistandDirector> <http://www.w3.org/2000/01/rdf-schema#label> "has assistant director"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAssistandDirector> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as assistant director."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCast
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCast> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCast> <http://www.w3.org/2000/01/rdf-schema#label> "has cast"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCast> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent was part of its cast."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCastingAgent
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCastingAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCastingAgent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCastingAgent> <http://www.w3.org/2000/01/rdf-schema#label> "has casting agent"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCastingAgent> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent was responsible for casting."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasClown
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasClown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasClown> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasClown> <http://www.w3.org/2000/01/rdf-schema#label> "has clown"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasClown> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as clown."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMakeUpArtist
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMakeUpArtist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMakeUpArtist> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMakeUpArtist> <http://www.w3.org/2000/01/rdf-schema#label> "has make up artist"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMakeUpArtist> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as make up artist."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProgrammDirector
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProgrammDirector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProgrammDirector> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProgrammDirector> <http://www.w3.org/2000/01/rdf-schema#label> "has programm director"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProgrammDirector> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to festival or event through curating or directing the programm of the event."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSetBuilder
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSetBuilder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSetBuilder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSetBuilder> <http://www.w3.org/2000/01/rdf-schema#label> "has set builder"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSetBuilder> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as set builder."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSinger
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSinger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSinger> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSinger> <http://www.w3.org/2000/01/rdf-schema#label> "has singer"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSinger> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as singer."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSoundDesigner
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSoundDesigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSoundDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSoundDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "has sound designer"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSoundDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as sound designer."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleAuthor
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleAuthor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "has surtitles author"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleAuthor> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as author of surtitles."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleTranslator
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleTranslator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleTranslator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasTranslator> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleTranslator> <http://www.w3.org/2000/01/rdf-schema#label> "has surtitles translator"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleTranslator> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as translator of surtitles."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_hasTechnician
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasTechnician> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasTechnician> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasTechnician> <http://www.w3.org/2000/01/rdf-schema#label> "has technician"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasTechnician> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as sound technician."@en .
+# 
 # http://lod.iti-germany.de/schema/nvto/containsAudibleReferenceTo
 <http://lod.iti-germany.de/schema/nvto/containsAudibleReferenceTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://lod.iti-germany.de/schema/nvto/containsAudibleReferenceTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/containsAudioVisualReferenceTo> .
@@ -82,8 +235,6 @@
 # 
 # http://lod.iti-germany.de/schema/nvto/containsReferenceTo
 <http://lod.iti-germany.de/schema/nvto/containsReferenceTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/containsReferenceTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/references> .
-<http://purl.org/dc/terms/references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://lod.iti-germany.de/schema/nvto/containsReferenceTo> <http://www.w3.org/2000/01/rdf-schema#label> "contains reference to"@en .
 <http://lod.iti-germany.de/schema/nvto/containsReferenceTo> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to another resource it contains any kind of reference to."@en .
 <http://lod.iti-germany.de/schema/nvto/containsReferenceTo> <http://www.w3.org/2004/02/skos/core#scopeNote> "Hier: Referenz kann in der Aufnahme oder als Beschriftung vorkommen, wenn nicht klar, containsreference, wenn klarer, tiefere Ebenen nutzen"@de .
@@ -110,69 +261,76 @@
 # 
 # http://lod.iti-germany.de/schema/nvto/hasActor
 <http://lod.iti-germany.de/schema/nvto/hasActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasActor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasActor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasActor> <http://www.w3.org/2000/01/rdf-schema#label> "has actor"@en .
 <http://lod.iti-germany.de/schema/nvto/hasActor> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as actor."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasAdaptor
 <http://lod.iti-germany.de/schema/nvto/hasAdaptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasAdaptor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasAdaptor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasAdaptor> <http://www.w3.org/2000/01/rdf-schema#label> "has adaptor"@en .
 <http://lod.iti-germany.de/schema/nvto/hasAdaptor> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as adaptor."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasAuthor
 <http://lod.iti-germany.de/schema/nvto/hasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "has author"@en .
 <http://lod.iti-germany.de/schema/nvto/hasAuthor> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as author."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasChoreographer
 <http://lod.iti-germany.de/schema/nvto/hasChoreographer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasChoreographer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasChoreographer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasChoreographer> <http://www.w3.org/2000/01/rdf-schema#label> "has choreographer"@en .
 <http://lod.iti-germany.de/schema/nvto/hasChoreographer> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as choreographer."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasCinematographer
 <http://lod.iti-germany.de/schema/nvto/hasCinematographer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasCinematographer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasCinematographer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasCinematographer> <http://www.w3.org/2000/01/rdf-schema#label> "has cinematographer"@en .
 <http://lod.iti-germany.de/schema/nvto/hasCinematographer> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as cinematographer."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasComposer
 <http://lod.iti-germany.de/schema/nvto/hasComposer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasComposer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasComposer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasComposer> <http://www.w3.org/2000/01/rdf-schema#label> "has composer"@en .
 <http://lod.iti-germany.de/schema/nvto/hasComposer> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as author."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasConceptOriginator
 <http://lod.iti-germany.de/schema/nvto/hasConceptOriginator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasConceptOriginator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasConceptOriginator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasConceptOriginator> <http://www.w3.org/2000/01/rdf-schema#label> "has concept originator"@en .
 <http://lod.iti-germany.de/schema/nvto/hasConceptOriginator> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as concept originator."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasContentMatch
 <http://lod.iti-germany.de/schema/nvto/hasContentMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasContentMatch> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
-<http://purl.org/dc/terms/relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://lod.iti-germany.de/schema/nvto/hasContentMatch> <http://www.w3.org/2000/01/rdf-schema#label> "has content match"@en .
 <http://lod.iti-germany.de/schema/nvto/hasContentMatch> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to another resource with matching content. A shorthand property for connecting a resource to another resource with partly or fully matching contents"@en .
 # 
+# http://lod.iti-germany.de/schema/nvto/hasContributor
+<http://lod.iti-germany.de/schema/nvto/hasContributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasContributor> <http://www.w3.org/2000/01/rdf-schema#label> "has contributor"@en .
+<http://lod.iti-germany.de/schema/nvto/hasContributor> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource in any way."@en .
+# 
 # http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner
 <http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "has costume designer"@en .
 <http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as costume designer."@en .
 # 
+# http://lod.iti-germany.de/schema/nvto/hasCreator
+<http://lod.iti-germany.de/schema/nvto/hasCreator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasCreator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
+<http://lod.iti-germany.de/schema/nvto/hasCreator> <http://www.w3.org/2000/01/rdf-schema#label> "has creator"@en .
+<http://lod.iti-germany.de/schema/nvto/hasCreator> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as creator."@en .
+# 
 # http://lod.iti-germany.de/schema/nvto/hasDancer
 <http://lod.iti-germany.de/schema/nvto/hasDancer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasDancer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasDancer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasDancer> <http://www.w3.org/2000/01/rdf-schema#label> "has dancer"@en .
 <http://lod.iti-germany.de/schema/nvto/hasDancer> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as dancer."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasDigitalVersion
 <http://lod.iti-germany.de/schema/nvto/hasDigitalVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasDigitalVersion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
 <http://lod.iti-germany.de/schema/nvto/hasDigitalVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.iti-germany.de/schema/nvto/PhysicalObject> .
 <http://lod.iti-germany.de/schema/nvto/hasDigitalVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://lod.iti-germany.de/schema/nvto/DigitalObject> .
 <http://lod.iti-germany.de/schema/nvto/hasDigitalVersion> <http://www.w3.org/2000/01/rdf-schema#label> "has digital version"@en .
@@ -180,78 +338,87 @@
 # 
 # http://lod.iti-germany.de/schema/nvto/hasDirector
 <http://lod.iti-germany.de/schema/nvto/hasDirector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasDirector> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasDirector> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasDirector> <http://www.w3.org/2000/01/rdf-schema#label> "has director"@en .
 <http://lod.iti-germany.de/schema/nvto/hasDirector> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as director."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasDramaturge
 <http://lod.iti-germany.de/schema/nvto/hasDramaturge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasDramaturge> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasDramaturge> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasDramaturge> <http://www.w3.org/2000/01/rdf-schema#label> "has dramaturge"@en .
 <http://lod.iti-germany.de/schema/nvto/hasDramaturge> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as dramaturge."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasEditor
 <http://lod.iti-germany.de/schema/nvto/hasEditor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasEditor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasEditor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasEditor> <http://www.w3.org/2000/01/rdf-schema#label> "has editor"@en .
 <http://lod.iti-germany.de/schema/nvto/hasEditor> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as editor."@en .
 # 
+# http://lod.iti-germany.de/schema/nvto/hasHomepage
+<http://lod.iti-germany.de/schema/nvto/hasHomepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasHomepage> <http://www.w3.org/2000/01/rdf-schema#label> "has homepage"@en .
+<http://lod.iti-germany.de/schema/nvto/hasHomepage> <http://www.w3.org/2004/02/skos/core#definition> "Describes the homepage an agent."@en .
+# 
 # http://lod.iti-germany.de/schema/nvto/hasIllustrator
 <http://lod.iti-germany.de/schema/nvto/hasIllustrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasIllustrator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasIllustrator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasIllustrator> <http://www.w3.org/2000/01/rdf-schema#label> "has illustrator"@en .
 <http://lod.iti-germany.de/schema/nvto/hasIllustrator> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as illustrator."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasInformationCarrier
 <http://lod.iti-germany.de/schema/nvto/hasInformationCarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasInformationCarrier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
 <http://lod.iti-germany.de/schema/nvto/hasInformationCarrier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.iti-germany.de/schema/nvto/InformationObject> .
 <http://lod.iti-germany.de/schema/nvto/hasInformationCarrier> <http://www.w3.org/2000/01/rdf-schema#label> "has information carrier"@en .
 <http://lod.iti-germany.de/schema/nvto/hasInformationCarrier> <http://www.w3.org/2004/02/skos/core#definition> "Connects an information object with a physical or digital object it is represented on."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasLayouter
 <http://lod.iti-germany.de/schema/nvto/hasLayouter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasLayouter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasLayouter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasLayouter> <http://www.w3.org/2000/01/rdf-schema#label> "has layouter"@en .
 <http://lod.iti-germany.de/schema/nvto/hasLayouter> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as layouter."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasLightDesigner
 <http://lod.iti-germany.de/schema/nvto/hasLightDesigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasLightDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasLightDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasLightDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "has light designer"@en .
 <http://lod.iti-germany.de/schema/nvto/hasLightDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as light designer."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasMaskDesigner
 <http://lod.iti-germany.de/schema/nvto/hasMaskDesigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasMaskDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasMaskDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasMaskDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "has mask designer"@en .
 <http://lod.iti-germany.de/schema/nvto/hasMaskDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as mask designer."@en .
 # 
+# http://lod.iti-germany.de/schema/nvto/hasMediator
+<http://lod.iti-germany.de/schema/nvto/hasMediator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasMediator> <http://www.w3.org/2000/01/rdf-schema#label> "has mediator"@en .
+<http://lod.iti-germany.de/schema/nvto/hasMediator> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as creator."@en .
+# 
 # http://lod.iti-germany.de/schema/nvto/hasMusician
 <http://lod.iti-germany.de/schema/nvto/hasMusician> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasMusician> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasMusician> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasMusician> <http://www.w3.org/2000/01/rdf-schema#label> "has musician"@en .
 <http://lod.iti-germany.de/schema/nvto/hasMusician> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as musician."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasParticipant
 <http://lod.iti-germany.de/schema/nvto/hasParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasParticipant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasParticipant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasParticipant> <http://www.w3.org/2000/01/rdf-schema#label> "has participant"@en .
 <http://lod.iti-germany.de/schema/nvto/hasParticipant> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as participant."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasPerformer
 <http://lod.iti-germany.de/schema/nvto/hasPerformer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasPerformer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasPerformer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasPerformer> <http://www.w3.org/2000/01/rdf-schema#label> "has performer"@en .
 <http://lod.iti-germany.de/schema/nvto/hasPerformer> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as performer."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasPhotoStudio
 <http://lod.iti-germany.de/schema/nvto/hasPhotoStudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasPhotoStudio> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasPhotoStudio> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasPhotographer
 <http://lod.iti-germany.de/schema/nvto/hasPhotographer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasPhotographer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasPhotographer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasPhotographer> <http://www.w3.org/2000/01/rdf-schema#label> "has photographer"@en .
 <http://lod.iti-germany.de/schema/nvto/hasPhotographer> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as photographer."@en .
 # 
@@ -264,20 +431,18 @@
 # 
 # http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner
 <http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "has puppet designer"@en .
 <http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as puppet designer."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasRecordist
 <http://lod.iti-germany.de/schema/nvto/hasRecordist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasRecordist> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasRecordist> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasRecordist> <http://www.w3.org/2000/01/rdf-schema#label> "has recordist"@en .
 <http://lod.iti-germany.de/schema/nvto/hasRecordist> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as recordist."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasRelatedPlace
 <http://lod.iti-germany.de/schema/nvto/hasRelatedPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasRelatedPlace> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/spatial> .
-<http://purl.org/dc/terms/spatial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://lod.iti-germany.de/schema/nvto/hasRelatedPlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://lod.iti-germany.de/schema/nvto/Place> .
 <http://lod.iti-germany.de/schema/nvto/hasRelatedPlace> <http://www.w3.org/2000/01/rdf-schema#label> "has related place"@en .
 <http://lod.iti-germany.de/schema/nvto/hasRelatedPlace> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to a place it is related to in any way."@en .
@@ -292,8 +457,6 @@
 # 
 # http://lod.iti-germany.de/schema/nvto/hasSeason
 <http://lod.iti-germany.de/schema/nvto/hasSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasSeason> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/temporal> .
-<http://purl.org/dc/terms/temporal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://lod.iti-germany.de/schema/nvto/hasSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction> .
 <http://lod.iti-germany.de/schema/nvto/hasSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://lod.iti-germany.de/schema/nvto/TimeSpan> .
 <http://lod.iti-germany.de/schema/nvto/hasSeason> <http://www.w3.org/2000/01/rdf-schema#label> "has season"@en .
@@ -301,27 +464,32 @@
 # 
 # http://lod.iti-germany.de/schema/nvto/hasSetDesigner
 <http://lod.iti-germany.de/schema/nvto/hasSetDesigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasSetDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasSetDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasSetDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "has set designer"@en .
 <http://lod.iti-germany.de/schema/nvto/hasSetDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as set designer."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasSpeaker
 <http://lod.iti-germany.de/schema/nvto/hasSpeaker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasSpeaker> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasSpeaker> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasSpeaker> <http://www.w3.org/2000/01/rdf-schema#label> "has speaker"@en .
 <http://lod.iti-germany.de/schema/nvto/hasSpeaker> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as speaker."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasTranslator
 <http://lod.iti-germany.de/schema/nvto/hasTranslator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasTranslator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasTranslator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasTranslator> <http://www.w3.org/2000/01/rdf-schema#label> "has translator"@en .
 <http://lod.iti-germany.de/schema/nvto/hasTranslator> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as translator."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasVideoDesigner
 <http://lod.iti-germany.de/schema/nvto/hasVideoDesigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasVideoDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://lod.iti-germany.de/schema/nvto/hasVideoDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasContributor> .
 <http://lod.iti-germany.de/schema/nvto/hasVideoDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "video designer"@en .
 <http://lod.iti-germany.de/schema/nvto/hasVideoDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent responsible for its video design."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/isPartOf
+<http://lod.iti-germany.de/schema/nvto/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lod.iti-germany.de/schema/nvto/isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of"@en .
+<http://lod.iti-germany.de/schema/nvto/isPartOf> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to another resource of which it is a part of."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/isResidenceOf
 <http://lod.iti-germany.de/schema/nvto/isResidenceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -331,7 +499,6 @@
 # 
 # http://lod.iti-germany.de/schema/nvto/occuredAtTime
 <http://lod.iti-germany.de/schema/nvto/occuredAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://lod.iti-germany.de/schema/nvto/occuredAtTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/temporal> .
 <http://lod.iti-germany.de/schema/nvto/occuredAtTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.iti-germany.de/schema/nvto/Event> .
 <http://lod.iti-germany.de/schema/nvto/occuredAtTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://lod.iti-germany.de/schema/nvto/TimeSpan> .
 <http://lod.iti-germany.de/schema/nvto/occuredAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "occured at time"@en .
@@ -344,14 +511,6 @@
 <http://lod.iti-germany.de/schema/nvto/originatedAtPlace> <http://www.w3.org/2000/01/rdf-schema#label> "originated at place"@en .
 <http://lod.iti-germany.de/schema/nvto/originatedAtPlace> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to the location it originated at."@en .
 # 
-# http://purl.org/dc/terms/references
-# 
-# http://purl.org/dc/terms/relation
-# 
-# http://purl.org/dc/terms/spatial
-# 
-# http://purl.org/dc/terms/temporal
-# 
 # 
 # 
 # #################################################################
@@ -363,15 +522,14 @@
 # 
 # http://lod.iti-germany.de/schema/nvto/beginsAtTime
 <http://lod.iti-germany.de/schema/nvto/beginsAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://lod.iti-germany.de/schema/nvto/beginsAtTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
-<http://purl.org/dc/terms/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lod.iti-germany.de/schema/nvto/beginsAtTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasDate> .
 <http://lod.iti-germany.de/schema/nvto/beginsAtTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.iti-germany.de/schema/nvto/TimeSpan> .
 <http://lod.iti-germany.de/schema/nvto/beginsAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "begins at time"@en .
 <http://lod.iti-germany.de/schema/nvto/beginsAtTime> <http://www.w3.org/2004/02/skos/core#definition> "Describes the begin date/point in time of a time span."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/endsAtTime
 <http://lod.iti-germany.de/schema/nvto/endsAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://lod.iti-germany.de/schema/nvto/endsAtTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://lod.iti-germany.de/schema/nvto/endsAtTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasDate> .
 <http://lod.iti-germany.de/schema/nvto/endsAtTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.iti-germany.de/schema/nvto/TimeSpan> .
 <http://lod.iti-germany.de/schema/nvto/endsAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "ends at time"@en .
 <http://lod.iti-germany.de/schema/nvto/endsAtTime> <http://www.w3.org/2004/02/skos/core#definition> "Describes the end date/point in time of a time span."@en .
@@ -389,25 +547,40 @@
 <http://lod.iti-germany.de/schema/nvto/hasCondition> <http://www.w3.org/2000/01/rdf-schema#label> "has condition"@en .
 <http://lod.iti-germany.de/schema/nvto/hasCondition> <http://www.w3.org/2004/02/skos/core#definition> "Describes or connects to the condition of a resource (e.g. the condition of a physical object or a digital file)."@en .
 # 
+# http://lod.iti-germany.de/schema/nvto/hasDate
+<http://lod.iti-germany.de/schema/nvto/hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasDate> <http://www.w3.org/2000/01/rdf-schema#label> "has date"@en .
+<http://lod.iti-germany.de/schema/nvto/hasDate> <http://www.w3.org/2004/02/skos/core#definition> "Describes a singular date/point in time."@en .
+# 
 # http://lod.iti-germany.de/schema/nvto/hasDateOfBirth
 <http://lod.iti-germany.de/schema/nvto/hasDateOfBirth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasDateOfBirth> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://lod.iti-germany.de/schema/nvto/hasDateOfBirth> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasDate> .
 <http://lod.iti-germany.de/schema/nvto/hasDateOfBirth> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.iti-germany.de/schema/nvto/Agent> .
 <http://lod.iti-germany.de/schema/nvto/hasDateOfBirth> <http://www.w3.org/2000/01/rdf-schema#label> "has date of birth"@en .
 <http://lod.iti-germany.de/schema/nvto/hasDateOfBirth> <http://www.w3.org/2004/02/skos/core#definition> "Describes the date of birth of an agent."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasDateOfDeath
 <http://lod.iti-germany.de/schema/nvto/hasDateOfDeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasDateOfDeath> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://lod.iti-germany.de/schema/nvto/hasDateOfDeath> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasDate> .
 <http://lod.iti-germany.de/schema/nvto/hasDateOfDeath> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.iti-germany.de/schema/nvto/Agent> .
 <http://lod.iti-germany.de/schema/nvto/hasDateOfDeath> <http://www.w3.org/2000/01/rdf-schema#label> "has date of death"@en .
 <http://lod.iti-germany.de/schema/nvto/hasDateOfDeath> <http://www.w3.org/2004/02/skos/core#definition> "Describes the date of death of an agent."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/hasDescription
+<http://lod.iti-germany.de/schema/nvto/hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has description"@en .
+<http://lod.iti-germany.de/schema/nvto/hasDescription> <http://www.w3.org/2004/02/skos/core#definition> "A general description of a resource."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasDimensions
 <http://lod.iti-germany.de/schema/nvto/hasDimensions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.iti-germany.de/schema/nvto/hasDimensions> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#note> .
 <http://lod.iti-germany.de/schema/nvto/hasDimensions> <http://www.w3.org/2000/01/rdf-schema#label> "has dimensions"@en .
 <http://lod.iti-germany.de/schema/nvto/hasDimensions> <http://www.w3.org/2004/02/skos/core#definition> "Describes the dimensions of a resource (e.g. the condition of a physical object or a digital file)."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/hasFamilyName
+<http://lod.iti-germany.de/schema/nvto/hasFamilyName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasFamilyName> <http://www.w3.org/2000/01/rdf-schema#label> "has family name"@en .
+<http://lod.iti-germany.de/schema/nvto/hasFamilyName> <http://www.w3.org/2004/02/skos/core#definition> "Describes the family name of an agent."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasFirstEdition
 <http://lod.iti-germany.de/schema/nvto/hasFirstEdition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -417,11 +590,21 @@
 <http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#note> .
 # 
+# http://lod.iti-germany.de/schema/nvto/hasFirstName
+<http://lod.iti-germany.de/schema/nvto/hasFirstName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasFirstName> <http://www.w3.org/2000/01/rdf-schema#label> "has first name"@en .
+<http://lod.iti-germany.de/schema/nvto/hasFirstName> <http://www.w3.org/2004/02/skos/core#definition> "Describes the first name of an agent."@en .
+# 
 # http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate
 <http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasDate> .
 <http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#label> "has first performance date"@en .
 <http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate> <http://www.w3.org/2004/02/skos/core#definition> "A shorthand property for describing the first performance date of a resource (e.g. a performing arts production)."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/hasIdentifier
+<http://lod.iti-germany.de/schema/nvto/hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "has identifier"@en .
+<http://lod.iti-germany.de/schema/nvto/hasIdentifier> <http://www.w3.org/2004/02/skos/core#definition> "Describes one or more alternative identifiers of a resource."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasIsbn
 <http://lod.iti-germany.de/schema/nvto/hasIsbn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -441,22 +624,51 @@
 <http://lod.iti-germany.de/schema/nvto/hasLabelingFront> <http://www.w3.org/2000/01/rdf-schema#label> "has labeling front"@en .
 <http://lod.iti-germany.de/schema/nvto/hasLabelingFront> <http://www.w3.org/2004/02/skos/core#definition> "Describes the labeling on the front of a resource."@en .
 # 
+# http://lod.iti-germany.de/schema/nvto/hasLanguage
+<http://lod.iti-germany.de/schema/nvto/hasLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "has language"@en .
+<http://lod.iti-germany.de/schema/nvto/hasLanguage> <http://www.w3.org/2004/02/skos/core#definition> "Describes the language associated to a resource."@en .
+# 
 # http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate
 <http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasDate> .
 <http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#label> "has last performance date"@en .
 <http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate> <http://www.w3.org/2004/02/skos/core#definition> "A shorthand property for describing the last performance date of a resource (e.g. a performing arts production)."@en .
 # 
+# http://lod.iti-germany.de/schema/nvto/hasName
+<http://lod.iti-germany.de/schema/nvto/hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://lod.iti-germany.de/schema/nvto/hasRights
+<http://lod.iti-germany.de/schema/nvto/hasRights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasRights> <http://www.w3.org/2000/01/rdf-schema#label> "has rights"@en .
+<http://lod.iti-germany.de/schema/nvto/hasRights> <http://www.w3.org/2004/02/skos/core#definition> "Describes one or more rights statements of a resource."@en .
+# 
 # http://lod.iti-germany.de/schema/nvto/hasSubtitle
 <http://lod.iti-germany.de/schema/nvto/hasSubtitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://lod.iti-germany.de/schema/nvto/hasSubtitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/title> .
-<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.iti-germany.de/schema/nvto/hasSubtitle> <http://www.w3.org/2000/01/rdf-schema#label> "has subtitle"@en .
 <http://lod.iti-germany.de/schema/nvto/hasSubtitle> <http://www.w3.org/2004/02/skos/core#definition> "Describes the subtitle of a resource."@en .
 # 
-# http://purl.org/dc/terms/date
+# http://lod.iti-germany.de/schema/nvto/hasTableOfContents
+<http://lod.iti-germany.de/schema/nvto/hasTableOfContents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasTableOfContents> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasDescription> .
+<http://lod.iti-germany.de/schema/nvto/hasTableOfContents> <http://www.w3.org/2000/01/rdf-schema#label> "has table of contents"@en .
+<http://lod.iti-germany.de/schema/nvto/hasTableOfContents> <http://www.w3.org/2004/02/skos/core#definition> "Describes the table of contents of a resource."@en .
 # 
-# http://purl.org/dc/terms/title
+# http://lod.iti-germany.de/schema/nvto/hasTitle
+<http://lod.iti-germany.de/schema/nvto/hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lod.iti-germany.de/schema/nvto/hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "has title"@en .
+<http://lod.iti-germany.de/schema/nvto/hasTitle> <http://www.w3.org/2004/02/skos/core#definition> "Describes the title of a resource."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/wasCreatedAtTime
+<http://lod.iti-germany.de/schema/nvto/wasCreatedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lod.iti-germany.de/schema/nvto/wasCreatedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "was created at time"@en .
+<http://lod.iti-germany.de/schema/nvto/wasCreatedAtTime> <http://www.w3.org/2004/02/skos/core#definition> "Describes a singular date/point in time at which a resource was created."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/wasIssuedAtTime
+<http://lod.iti-germany.de/schema/nvto/wasIssuedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lod.iti-germany.de/schema/nvto/wasIssuedAtTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lod.iti-germany.de/schema/nvto/hasDate> .
+<http://lod.iti-germany.de/schema/nvto/wasIssuedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "was issued at time"@en .
+<http://lod.iti-germany.de/schema/nvto/wasIssuedAtTime> <http://www.w3.org/2004/02/skos/core#definition> "Describes a singular date/point in time at which a resource was issued."@en .
 # 
 # http://www.w3.org/2004/02/skos/core#note
 # 
@@ -504,7 +716,7 @@
 <http://lod.iti-germany.de/schema/nvto/DigitalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Object"@en .
 <http://lod.iti-germany.de/schema/nvto/DigitalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Digitales Objekt"@de .
 <http://lod.iti-germany.de/schema/nvto/DigitalObject> <http://www.w3.org/2004/02/skos/core#definition> "The digital representation of the contents a medium. Digital information carrier."@en .
-<http://lod.iti-germany.de/schema/nvto/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "IMG.tif, VID.avi"@en .
+<http://lod.iti-germany.de/schema/nvto/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "A specific digital file with name IMG-001.tif, VID-001.avi"@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/Event
 <http://lod.iti-germany.de/schema/nvto/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -520,6 +732,23 @@
 <http://lod.iti-germany.de/schema/nvto/InformationObject> <http://www.w3.org/2000/01/rdf-schema#label> "Informationsobjekt"@de .
 <http://lod.iti-germany.de/schema/nvto/InformationObject> <http://www.w3.org/2004/02/skos/core#definition> "Conceptual representation of the contents a medium captured by a physical or digital (archival) object. The same information object can be captured in multiple pyhsical or digital objects (e.g. a magazine edition). Also one physical object can carry multiple information objects (e.g. multiple movies in a single video tape)."@en .
 <http://lod.iti-germany.de/schema/nvto/InformationObject> <http://www.w3.org/2004/02/skos/core#example> "Aufnahme von Aufführung, Inhalt von Programmheft X"@de .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_Festival
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_Festival> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_Festival> <http://www.w3.org/2000/01/rdf-schema#label> "Festival"@de .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_Festival> <http://www.w3.org/2000/01/rdf-schema#label> "Festival"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_Festival> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises all festivals."@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_Festival> <http://www.w3.org/2004/02/skos/core#example> "The biannual international theatre festival 'Theater der Welt'"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_Festival> <http://www.w3.org/2004/02/skos/core#scopeNote> "Used specifically for festivals in the realm of performing arts."@en .
+# 
+# http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lod.iti-germany.de/schema/nvto/Event> .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance> <http://www.w3.org/2000/01/rdf-schema#label> "Festival Edition"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance> <http://www.w3.org/2000/01/rdf-schema#label> "Festivalausgabe"@de .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises all singular instances or editions of a Festival."@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance> <http://www.w3.org/2004/02/skos/core#example> "The 2017 edition of the biannual theatre festival 'Theater der Welt', held in Hamburg, Germany"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance> <http://www.w3.org/2004/02/skos/core#scopeNote> "Used specifically for festival editions in the realm of performing arts."@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup
 <http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -580,11 +809,20 @@
 # #################################################################
 # 
 # 
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright> <http://www.w3.org/2000/01/rdf-schema#label> "has playwright"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as playwright."@en .
+# 
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer> <http://www.w3.org/2000/01/rdf-schema#label> "has producer"@en .
+<http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an agent who contributed to the resource as producer."@en .
+# 
 <http://lod.iti-germany.de/schema/nvto/hasFirstEdition> <http://www.w3.org/2000/01/rdf-schema#label> "has first edition"@en .
 <http://lod.iti-germany.de/schema/nvto/hasFirstEdition> <http://www.w3.org/2004/02/skos/core#definition> "Describes or points to the first edition of a resource."@en .
 # 
 <http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition> <http://www.w3.org/2000/01/rdf-schema#label> "has first localized edition"@en .
 <http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition> <http://www.w3.org/2004/02/skos/core#definition> "Describes or points to the first localized edition of a resource."@en .
+# 
+<http://lod.iti-germany.de/schema/nvto/hasName> <http://www.w3.org/2000/01/rdf-schema#label> "has name"@en .
+<http://lod.iti-germany.de/schema/nvto/hasName> <http://www.w3.org/2004/02/skos/core#definition> "Describes the name of an agent."@en .
 # 
 <http://lod.iti-germany.de/schema/nvto/hasPhotoStudio> <http://www.w3.org/2000/01/rdf-schema#label> "has photo studio"@en .
 <http://lod.iti-germany.de/schema/nvto/hasPhotoStudio> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to a photo studio that contributed to its creation."@en .

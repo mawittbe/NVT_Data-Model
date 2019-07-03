@@ -12,16 +12,16 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://ld.iti-germany.de/schema/nvto/">
         <dc:rights rdf:resource="https://creativecommons.org/licenses/by/4.0/deed.en"/>
-        <dc:title xml:lang="en&quot;">Non-Verbal Theatre Ontology</dc:title>
-        <dc:title xml:lang="de&quot;">Ontologie für nonverbales Theater</dc:title>
+        <dc:title xml:lang="en">Non-Verbal Theatre Ontology</dc:title>
+        <dc:title xml:lang="de">Ontologie für nonverbales Theater</dc:title>
         <terms:abstract xml:lang="de">Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts &quot;NONVERBALES THEATER
-                                                            IM EHEMALIGEN OSTTEIL BERLINS 1970-1991&quot; an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS).</terms:abstract>
+                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991&quot; an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS).</terms:abstract>
         <terms:abstract xml:lang="en">Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the &quot;NONVERBALES THEATER
-                                                            IM EHEMALIGEN OSTTEIL BERLINS 1970-1991&quot; digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS).</terms:abstract>
+                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991&quot; digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS).</terms:abstract>
         <terms:contributor>Jonas Pitz</terms:contributor>
         <terms:contributor>Maxim Wittenbecher</terms:contributor>
-        <terms:publisher xml:lang="en&quot;">Media Library for Dance and Theatre / ITI Germany</terms:publisher>
-        <terms:publisher xml:lang="de&quot;">Mediathek für Tanz und Theater / ITI Deutschland</terms:publisher>
+        <terms:publisher xml:lang="en">Media Library for Dance and Theatre / ITI Germany</terms:publisher>
+        <terms:publisher xml:lang="de">Mediathek für Tanz und Theater / ITI Deutschland</terms:publisher>
         <rdfs:label xml:lang="en">Non-Verbal Theatre Ontology</rdfs:label>
         <rdfs:label xml:lang="de">Ontologie für nonverbales Theater</rdfs:label>
     </owl:Ontology>
@@ -40,6 +40,53 @@
     
 
 
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMember -->
+
+
+    <owl:AnnotationProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMember">
+        <rdfs:label xml:lang="en">has member</rdfs:label>
+        <skos:definition xml:lang="en">Describes or connects the relation between a resource and other resources that are members of it (e.g. the members of a artist group).</skos:definition>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasFormat"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMime -->
+
+
+    <owl:AnnotationProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMime">
+        <rdfs:label xml:lang="en">has mime</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as mime.</skos:definition>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasFormat"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright -->
+
+
+    <owl:AnnotationProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright"/>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer -->
+
+
+    <owl:AnnotationProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer"/>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasExtent -->
+
+
+    <owl:AnnotationProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasExtent">
+        <rdfs:label xml:lang="en">has extent</rdfs:label>
+        <skos:definition xml:lang="en">Describes the extent of a resource.</skos:definition>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasFormat"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://lod.iti-germany.de/schema/nvto/hasFirstEdition -->
 
 
@@ -51,6 +98,36 @@
 
 
     <owl:AnnotationProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition"/>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasFormat -->
+
+
+    <owl:AnnotationProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasFormat">
+        <rdfs:label xml:lang="en">has format</rdfs:label>
+        <skos:definition xml:lang="en">Describes the format of a resource.</skos:definition>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasMedium -->
+
+
+    <owl:AnnotationProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasMedium">
+        <rdfs:label xml:lang="en">has medium</rdfs:label>
+        <skos:definition xml:lang="en">Describes or connects to the medium of a resource.</skos:definition>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasFormat"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasName -->
+
+
+    <owl:AnnotationProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -71,12 +148,62 @@
     
 
 
+    <!-- http://lod.iti-germany.de/schema/nvto/hasProvenance -->
+
+
+    <owl:AnnotationProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasProvenance">
+        <rdfs:label xml:lang="en">has provenance</rdfs:label>
+        <skos:definition xml:lang="en">Describes or connects to the provenance of a resource.</skos:definition>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasPublisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasPublisher">
+        <rdfs:label xml:lang="en">has publisher</rdfs:label>
+        <skos:definition xml:lang="en">Describes the publisher of a resource or connects the resource to an agent who contributed to the resource as publisher.</skos:definition>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasRightsHolder -->
+
+
+    <owl:AnnotationProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasRightsHolder">
+        <rdfs:label xml:lang="en">has rights holder</rdfs:label>
+        <skos:definition xml:lang="en">Describes the rights holder of a resource or connects the resource to an agent who holds rights to the resource.</skos:definition>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasSource -->
+
+
+    <owl:AnnotationProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasSource">
+        <rdfs:label xml:lang="en">has source</rdfs:label>
+        <skos:definition xml:lang="en">Describes or connects to the source of a resource.</skos:definition>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://lod.iti-germany.de/schema/nvto/hasSuccessor -->
 
 
     <owl:AnnotationProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasSuccessor">
         <rdfs:label xml:lang="en">has successor</rdfs:label>
         <skos:definition xml:lang="en">Connects or describes two resources in which one resource succeeds the other.</skos:definition>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasType -->
+
+
+    <owl:AnnotationProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasType">
+        <rdfs:label xml:lang="en">has type</rdfs:label>
+        <skos:definition xml:lang="en">Describes or connects to the type of a resource.</skos:definition>
     </owl:AnnotationProperty>
     
 
@@ -99,6 +226,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
@@ -142,6 +276,167 @@
     
 
 
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAcrobat -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAcrobat">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
+        <rdfs:label xml:lang="en">has acrobat</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as acrobat.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAssistandDirector -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasAssistandDirector">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
+        <rdfs:label xml:lang="en">has assistant director</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as assistant director.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCast -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCast">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
+        <rdfs:label xml:lang="en">has cast</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent was part of its cast.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCastingAgent -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasCastingAgent">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
+        <rdfs:label xml:lang="en">has casting agent</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent was responsible for casting.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasClown -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasClown">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
+        <rdfs:label xml:lang="en">has clown</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as clown.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMakeUpArtist -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasMakeUpArtist">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
+        <rdfs:label xml:lang="en">has make up artist</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as make up artist.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProgrammDirector -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProgrammDirector">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
+        <rdfs:label xml:lang="en">has programm director</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to festival or event through curating or directing the programm of the event.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSetBuilder -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSetBuilder">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
+        <rdfs:label xml:lang="en">has set builder</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as set builder.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSinger -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSinger">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
+        <rdfs:label xml:lang="en">has singer</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as singer.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSoundDesigner -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSoundDesigner">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
+        <rdfs:label xml:lang="en">has sound designer</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as sound designer.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleAuthor -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleAuthor">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
+        <rdfs:label xml:lang="en">has surtitles author</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as author of surtitles.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleTranslator -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasSurtitleTranslator">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasTranslator"/>
+        <rdfs:label xml:lang="en">has surtitles translator</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as translator of surtitles.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_hasTechnician -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasTechnician">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
+        <rdfs:label xml:lang="en">has technician</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as sound technician.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://lod.iti-germany.de/schema/nvto/containsAudibleReferenceTo -->
 
 
@@ -168,7 +463,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/containsReferenceTo">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/references"/>
         <rdfs:label xml:lang="en">contains reference to</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to another resource it contains any kind of reference to.</skos:definition>
         <skos:scopeNote xml:lang="de">Hier: Referenz kann in der Aufnahme oder als Beschriftung vorkommen, wenn nicht klar, containsreference, wenn klarer, tiefere Ebenen nutzen</skos:scopeNote>
@@ -215,7 +509,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasActor">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has actor</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as actor.</skos:definition>
     </owl:ObjectProperty>
@@ -226,7 +520,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasAdaptor">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has adaptor</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as adaptor.</skos:definition>
     </owl:ObjectProperty>
@@ -237,7 +531,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasAuthor">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has author</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as author.</skos:definition>
     </owl:ObjectProperty>
@@ -248,7 +542,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasChoreographer">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has choreographer</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as choreographer.</skos:definition>
     </owl:ObjectProperty>
@@ -259,7 +553,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasCinematographer">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has cinematographer</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as cinematographer.</skos:definition>
     </owl:ObjectProperty>
@@ -270,7 +564,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasComposer">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has composer</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as author.</skos:definition>
     </owl:ObjectProperty>
@@ -281,7 +575,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasConceptOriginator">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has concept originator</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as concept originator.</skos:definition>
     </owl:ObjectProperty>
@@ -292,9 +586,18 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasContentMatch">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
         <rdfs:label xml:lang="en">has content match</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to another resource with matching content. A shorthand property for connecting a resource to another resource with partly or fully matching contents</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasContributor -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasContributor">
+        <rdfs:label xml:lang="en">has contributor</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource in any way.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -303,9 +606,20 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has costume designer</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as costume designer.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasCreator -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasCreator">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
+        <rdfs:label xml:lang="en">has creator</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as creator.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -314,7 +628,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasDancer">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has dancer</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as dancer.</skos:definition>
     </owl:ObjectProperty>
@@ -325,7 +639,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasDigitalVersion">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
         <rdfs:domain rdf:resource="http://lod.iti-germany.de/schema/nvto/PhysicalObject"/>
         <rdfs:range rdf:resource="http://lod.iti-germany.de/schema/nvto/DigitalObject"/>
         <rdfs:label xml:lang="en">has digital version</rdfs:label>
@@ -338,7 +651,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasDirector">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has director</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as director.</skos:definition>
     </owl:ObjectProperty>
@@ -349,7 +662,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasDramaturge">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has dramaturge</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as dramaturge.</skos:definition>
     </owl:ObjectProperty>
@@ -360,9 +673,19 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasEditor">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has editor</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as editor.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasHomepage -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasHomepage">
+        <rdfs:label xml:lang="en">has homepage</rdfs:label>
+        <skos:definition xml:lang="en">Describes the homepage an agent.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -371,7 +694,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasIllustrator">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has illustrator</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as illustrator.</skos:definition>
     </owl:ObjectProperty>
@@ -382,7 +705,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasInformationCarrier">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
         <rdfs:domain rdf:resource="http://lod.iti-germany.de/schema/nvto/InformationObject"/>
         <rdfs:label xml:lang="en">has information carrier</rdfs:label>
         <skos:definition xml:lang="en">Connects an information object with a physical or digital object it is represented on.</skos:definition>
@@ -394,7 +716,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasLayouter">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has layouter</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as layouter.</skos:definition>
     </owl:ObjectProperty>
@@ -405,7 +727,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasLightDesigner">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has light designer</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as light designer.</skos:definition>
     </owl:ObjectProperty>
@@ -416,9 +738,19 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasMaskDesigner">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has mask designer</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as mask designer.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasMediator -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasMediator">
+        <rdfs:label xml:lang="en">has mediator</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as creator.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -427,7 +759,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasMusician">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has musician</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as musician.</skos:definition>
     </owl:ObjectProperty>
@@ -438,7 +770,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasParticipant">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has participant</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as participant.</skos:definition>
     </owl:ObjectProperty>
@@ -449,7 +781,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasPerformer">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has performer</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as performer.</skos:definition>
     </owl:ObjectProperty>
@@ -460,7 +792,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
     </owl:ObjectProperty>
     
 
@@ -469,7 +801,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasPhotographer">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has photographer</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as photographer.</skos:definition>
     </owl:ObjectProperty>
@@ -492,7 +824,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has puppet designer</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as puppet designer.</skos:definition>
     </owl:ObjectProperty>
@@ -503,7 +835,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasRecordist">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has recordist</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as recordist.</skos:definition>
     </owl:ObjectProperty>
@@ -514,7 +846,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasRelatedPlace">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/spatial"/>
         <rdfs:range rdf:resource="http://lod.iti-germany.de/schema/nvto/Place"/>
         <rdfs:label xml:lang="en">has related place</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to a place it is related to in any way.</skos:definition>
@@ -539,7 +870,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasSeason">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/temporal"/>
         <rdfs:domain rdf:resource="http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction"/>
         <rdfs:range rdf:resource="http://lod.iti-germany.de/schema/nvto/TimeSpan"/>
         <rdfs:label xml:lang="en">has season</rdfs:label>
@@ -552,7 +882,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasSetDesigner">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has set designer</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as set designer.</skos:definition>
     </owl:ObjectProperty>
@@ -563,7 +893,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasSpeaker">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has speaker</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as speaker.</skos:definition>
     </owl:ObjectProperty>
@@ -574,7 +904,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasTranslator">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">has translator</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as translator.</skos:definition>
     </owl:ObjectProperty>
@@ -585,9 +915,19 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasVideoDesigner">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasContributor"/>
         <rdfs:label xml:lang="en">video designer</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an agent responsible for its video design.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/isPartOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/isPartOf">
+        <rdfs:label xml:lang="en">is part of</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to another resource of which it is a part of.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -607,7 +947,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://lod.iti-germany.de/schema/nvto/occuredAtTime">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/temporal"/>
         <rdfs:domain rdf:resource="http://lod.iti-germany.de/schema/nvto/Event"/>
         <rdfs:range rdf:resource="http://lod.iti-germany.de/schema/nvto/TimeSpan"/>
         <rdfs:label xml:lang="en">occured at time</rdfs:label>
@@ -628,34 +967,6 @@
     
 
 
-    <!-- http://purl.org/dc/terms/references -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/references"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/relation -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/relation"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/spatial -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/spatial"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/temporal -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/temporal"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -672,7 +983,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/beginsAtTime">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasDate"/>
         <rdfs:domain rdf:resource="http://lod.iti-germany.de/schema/nvto/TimeSpan"/>
         <rdfs:label xml:lang="en">begins at time</rdfs:label>
         <skos:definition xml:lang="en">Describes the begin date/point in time of a time span.</skos:definition>
@@ -684,7 +995,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/endsAtTime">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasDate"/>
         <rdfs:domain rdf:resource="http://lod.iti-germany.de/schema/nvto/TimeSpan"/>
         <rdfs:label xml:lang="en">ends at time</rdfs:label>
         <skos:definition xml:lang="en">Describes the end date/point in time of a time span.</skos:definition>
@@ -714,11 +1025,21 @@
     
 
 
+    <!-- http://lod.iti-germany.de/schema/nvto/hasDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasDate">
+        <rdfs:label xml:lang="en">has date</rdfs:label>
+        <skos:definition xml:lang="en">Describes a singular date/point in time.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://lod.iti-germany.de/schema/nvto/hasDateOfBirth -->
 
 
     <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasDateOfBirth">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasDate"/>
         <rdfs:domain rdf:resource="http://lod.iti-germany.de/schema/nvto/Agent"/>
         <rdfs:label xml:lang="en">has date of birth</rdfs:label>
         <skos:definition xml:lang="en">Describes the date of birth of an agent.</skos:definition>
@@ -730,10 +1051,20 @@
 
 
     <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasDateOfDeath">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasDate"/>
         <rdfs:domain rdf:resource="http://lod.iti-germany.de/schema/nvto/Agent"/>
         <rdfs:label xml:lang="en">has date of death</rdfs:label>
         <skos:definition xml:lang="en">Describes the date of death of an agent.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasDescription">
+        <rdfs:label xml:lang="en">has description</rdfs:label>
+        <skos:definition xml:lang="en">A general description of a resource.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -745,6 +1076,16 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
         <rdfs:label xml:lang="en">has dimensions</rdfs:label>
         <skos:definition xml:lang="en">Describes the dimensions of a resource (e.g. the condition of a physical object or a digital file).</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasFamilyName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasFamilyName">
+        <rdfs:label xml:lang="en">has family name</rdfs:label>
+        <skos:definition xml:lang="en">Describes the family name of an agent.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -767,13 +1108,33 @@
     
 
 
+    <!-- http://lod.iti-germany.de/schema/nvto/hasFirstName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasFirstName">
+        <rdfs:label xml:lang="en">has first name</rdfs:label>
+        <skos:definition xml:lang="en">Describes the first name of an agent.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate -->
 
 
     <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasDate"/>
         <rdfs:label xml:lang="en">has first performance date</rdfs:label>
         <skos:definition xml:lang="en">A shorthand property for describing the first performance date of a resource (e.g. a performing arts production).</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasIdentifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasIdentifier">
+        <rdfs:label xml:lang="en">has identifier</rdfs:label>
+        <skos:definition xml:lang="en">Describes one or more alternative identifiers of a resource.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -811,13 +1172,40 @@
     
 
 
+    <!-- http://lod.iti-germany.de/schema/nvto/hasLanguage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasLanguage">
+        <rdfs:label xml:lang="en">has language</rdfs:label>
+        <skos:definition xml:lang="en">Describes the language associated to a resource.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate -->
 
 
     <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasDate"/>
         <rdfs:label xml:lang="en">has last performance date</rdfs:label>
         <skos:definition xml:lang="en">A shorthand property for describing the last performance date of a resource (e.g. a performing arts production).</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasName"/>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/hasRights -->
+
+
+    <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasRights">
+        <rdfs:label xml:lang="en">has rights</rdfs:label>
+        <skos:definition xml:lang="en">Describes one or more rights statements of a resource.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -826,24 +1214,51 @@
 
 
     <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasSubtitle">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
         <rdfs:label xml:lang="en">has subtitle</rdfs:label>
         <skos:definition xml:lang="en">Describes the subtitle of a resource.</skos:definition>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/dc/terms/date -->
+    <!-- http://lod.iti-germany.de/schema/nvto/hasTableOfContents -->
 
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/date"/>
+    <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasTableOfContents">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasDescription"/>
+        <rdfs:label xml:lang="en">has table of contents</rdfs:label>
+        <skos:definition xml:lang="en">Describes the table of contents of a resource.</skos:definition>
+    </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/dc/terms/title -->
+    <!-- http://lod.iti-germany.de/schema/nvto/hasTitle -->
 
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title"/>
+    <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/hasTitle">
+        <rdfs:label xml:lang="en">has title</rdfs:label>
+        <skos:definition xml:lang="en">Describes the title of a resource.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/wasCreatedAtTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/wasCreatedAtTime">
+        <rdfs:label xml:lang="en">was created at time</rdfs:label>
+        <skos:definition xml:lang="en">Describes a singular date/point in time at which a resource was created.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/wasIssuedAtTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://lod.iti-germany.de/schema/nvto/wasIssuedAtTime">
+        <rdfs:subPropertyOf rdf:resource="http://lod.iti-germany.de/schema/nvto/hasDate"/>
+        <rdfs:label xml:lang="en">was issued at time</rdfs:label>
+        <skos:definition xml:lang="en">Describes a singular date/point in time at which a resource was issued.</skos:definition>
+    </owl:DatatypeProperty>
     
 
 
@@ -923,7 +1338,7 @@
         <rdfs:label xml:lang="en">Digital Object</rdfs:label>
         <rdfs:label xml:lang="de">Digitales Objekt</rdfs:label>
         <skos:definition xml:lang="en">The digital representation of the contents a medium. Digital information carrier.</skos:definition>
-        <skos:example xml:lang="en">IMG.tif, VID.avi</skos:example>
+        <skos:example xml:lang="en">A specific digital file with name IMG-001.tif, VID-001.avi</skos:example>
     </owl:Class>
     
 
@@ -949,6 +1364,33 @@
         <rdfs:label xml:lang="de">Informationsobjekt</rdfs:label>
         <skos:definition xml:lang="en">Conceptual representation of the contents a medium captured by a physical or digital (archival) object. The same information object can be captured in multiple pyhsical or digital objects (e.g. a magazine edition). Also one physical object can carry multiple information objects (e.g. multiple movies in a single video tape).</skos:definition>
         <skos:example xml:lang="de">Aufnahme von Aufführung, Inhalt von Programmheft X</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_Festival -->
+
+
+    <owl:Class rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_Festival">
+        <rdfs:label xml:lang="de">Festival</rdfs:label>
+        <rdfs:label xml:lang="en">Festival</rdfs:label>
+        <skos:definition xml:lang="en">This class comprises all festivals.</skos:definition>
+        <skos:example xml:lang="en">The biannual international theatre festival &apos;Theater der Welt&apos;</skos:example>
+        <skos:scopeNote xml:lang="en">Used specifically for festivals in the realm of performing arts.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance -->
+
+
+    <owl:Class rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_FestivalInstance">
+        <rdfs:subClassOf rdf:resource="http://lod.iti-germany.de/schema/nvto/Event"/>
+        <rdfs:label xml:lang="en">Festival Edition</rdfs:label>
+        <rdfs:label xml:lang="de">Festivalausgabe</rdfs:label>
+        <skos:definition xml:lang="en">This class comprises all singular instances or editions of a Festival.</skos:definition>
+        <skos:example xml:lang="en">The 2017 edition of the biannual theatre festival &apos;Theater der Welt&apos;, held in Hamburg, Germany</skos:example>
+        <skos:scopeNote xml:lang="en">Used specifically for festival editions in the realm of performing arts.</skos:scopeNote>
     </owl:Class>
     
 
@@ -1047,6 +1489,14 @@
      -->
 
 
+    <rdf:Description rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasPlaywright">
+        <rdfs:label xml:lang="en">has playwright</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as playwright.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://lod.iti-germany.de/schema/nvto/PROPOSED_hasProducer">
+        <rdfs:label xml:lang="en">has producer</rdfs:label>
+        <skos:definition xml:lang="en">Connects a resource to an agent who contributed to the resource as producer.</skos:definition>
+    </rdf:Description>
     <rdf:Description rdf:about="http://lod.iti-germany.de/schema/nvto/hasFirstEdition">
         <rdfs:label xml:lang="en">has first edition</rdfs:label>
         <skos:definition xml:lang="en">Describes or points to the first edition of a resource.</skos:definition>
@@ -1054,6 +1504,10 @@
     <rdf:Description rdf:about="http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition">
         <rdfs:label xml:lang="en">has first localized edition</rdfs:label>
         <skos:definition xml:lang="en">Describes or points to the first localized edition of a resource.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://lod.iti-germany.de/schema/nvto/hasName">
+        <rdfs:label xml:lang="en">has name</rdfs:label>
+        <skos:definition xml:lang="en">Describes the name of an agent.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">
         <rdfs:label xml:lang="en">has photo studio</rdfs:label>

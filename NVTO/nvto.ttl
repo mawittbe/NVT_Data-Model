@@ -215,10 +215,10 @@ nvto:hasActor rdf:type owl:ObjectProperty ;
               skos:definition "Connects a resource to an agent who contributed to the resource as actor."@en ;
               rdfs:label "has actor"@en .
 
-nvto:PROPOSED_hasAcrobat rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf nvto:hasContributor ;
-              skos:definition "Connects a resource to an agent who contributed to the resource as acrobat."@en ;
-              rdfs:label "has acrobat"@en .
+nvto:hasAcrobat rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf nvto:hasContributor ;
+                skos:definition "Connects a resource to an agent who contributed to the resource as acrobat."@en ;
+                rdfs:label "has acrobat"@en .
 
 nvto:hasAdaptor rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf nvto:hasContributor ;
@@ -230,7 +230,7 @@ nvto:hasAddress rdf:type owl:DatatypeProperty ;
                 skos:definition "Describes the address of a resource."@en ;
                 rdfs:label "has address"@en .
 
-nvto:PROPOSED_hasAssistandDirector rdf:type owl:ObjectProperty ;
+nvto:PROPOSED_hasAssistantDirector rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf nvto:hasContributor ;
               skos:definition "Connects a resource to an agent who contributed to the resource as assistant director."@en ;
               rdfs:label "has assistant director"@en .
@@ -242,12 +242,12 @@ nvto:hasAuthor  rdf:type owl:ObjectProperty ;
 
 nvto:PROPOSED_hasCast rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf nvto:hasContributor ;
-              skos:definition "Connects a resource to an agent was part of its cast."@en ;
+              skos:definition "Connects a resource to an agent who was part of its cast."@en ;
               rdfs:label "has cast"@en .
 
 nvto:PROPOSED_hasCastingAgent rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf nvto:hasContributor ;
-              skos:definition "Connects a resource to an agent was responsible for casting."@en ;
+              skos:definition "Connects a resource to an agent who was responsible for casting."@en ;
               rdfs:label "has casting agent"@en .
 
 nvto:hasChoreographer rdf:type owl:ObjectProperty ;
@@ -260,7 +260,7 @@ nvto:hasCinematographer rdf:type owl:ObjectProperty ;
                         skos:definition "Connects a resource to an agent who contributed to the resource as cinematographer."@en ;
                         rdfs:label "has cinematographer"@en .
 
-nvto:PROPOSED_hasClown rdf:type owl:ObjectProperty ;
+nvto:hasClown rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf nvto:hasContributor ;
                         skos:definition "Connects a resource to an agent who contributed to the resource as clown."@en ;
                         rdfs:label "has clown"@en .
@@ -358,10 +358,10 @@ nvto:hasFamilyName rdf:type owl:DatatypeProperty ;
                    skos:definition "Describes the family name of an agent."@en ;
                    rdfs:label "has family name"@en .
 
-nvto:PROPOSED_hasProgrammDirector rdf:type owl:ObjectProperty ;
+nvto:hasProgrammeDirector rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf nvto:hasContributor ;
-              skos:definition "Connects a resource to an agent who contributed to festival or event through curating or directing the programm of the event."@en ;
-              rdfs:label "has programm director"@en .
+              skos:definition "Connects a resource to an agent who contributed to a festival or event through curating or directing the programme of the event."@en ;
+              rdfs:label "has programme director"@en .
 
 nvto:hasFirstEdition rdf:type owl:AnnotationProperty ;
                      rdfs:subPropertyOf skos:note ;
@@ -438,7 +438,7 @@ nvto:hasLightDesigner rdf:type owl:ObjectProperty ;
                       skos:definition "Connects a resource to an agent who contributed to the resource as light designer."@en ;
                       rdfs:label "has light designer"@en .
 
-nvto:PROPOSED_hasMakeUpArtist rdf:type owl:ObjectProperty ;
+nvto:hasMakeUpArtist rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf nvto:hasContributor ;
                      skos:definition "Connects a resource to an agent who contributed to the resource as make up artist."@en ;
                      rdfs:label "has make up artist"@en .
@@ -457,15 +457,14 @@ nvto:hasMedium rdf:type owl:AnnotationProperty ;
                skos:definition "Describes or connects to the medium of a resource."@en ;
                rdfs:label "has medium"@en .
 
-nvto:PROPOSED_hasMember rdf:type owl:AnnotationProperty ;
-              rdfs:subPropertyOf nvto:hasFormat ;
+nvto:PROPOSED_hasMember rdf:type owl:ObjectProperty ;
               skos:definition "Describes or connects the relation between a resource and other resources that are members of it (e.g. the members of a artist group)."@en ;
               rdfs:label "has member"@en .
 
-nvto:PROPOSED_hasMime rdf:type owl:AnnotationProperty ;
-              rdfs:subPropertyOf nvto:hasFormat ;
-              skos:definition "Connects a resource to an agent who contributed to the resource as mime."@en ;
-              rdfs:label "has mime"@en .
+nvto:hasMime rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf nvto:hasContributor ;
+             skos:definition "Connects a resource to an agent who contributed to the resource as mime."@en ;
+             rdfs:label "has mime"@en .
 
 nvto:hasMusician rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf nvto:hasContributor ;
@@ -497,7 +496,7 @@ nvto:hasPhotoStudio rdf:type owl:AnnotationProperty ;
                     skos:definition "Connects a resource to a photo studio that contributed to its creation."@en ;
                     rdfs:label "has photo studio"@en .
 
-nvto:PROPOSED_hasPlaywright rdf:type owl:AnnotationProperty ;
+nvto:hasPlaywright rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf nvto:hasContributor ;
                     skos:definition "Connects a resource to an agent who contributed to the resource as playwright."@en ;
                     rdfs:label "has playwright"@en .
@@ -506,10 +505,10 @@ nvto:hasPredecessor rdf:type owl:AnnotationProperty ;
                     skos:definition "Connects or describes two resources in which one resource precedes the other."@en ;
                     rdfs:label "has predecessor"@en .
 
-nvto:PROPOSED_hasProducer rdf:type owl:AnnotationProperty ;
-                    rdfs:subPropertyOf nvto:hasContributor ;
-                    skos:definition "Connects a resource to an agent who contributed to the resource as producer."@en ;
-                    rdfs:label "has producer"@en .
+nvto:hasProducer rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf nvto:hasContributor ;
+                 skos:definition "Connects a resource to an agent who contributed to the resource as producer."@en ;
+                 rdfs:label "has producer"@en .
 
 nvto:hasProvenance rdf:type owl:AnnotationProperty ;
                    skos:definition "Describes or connects to the provenance of a resource."@en ;
@@ -561,7 +560,7 @@ nvto:hasSeason rdf:type owl:ObjectProperty ;
                skos:definition "Describes the season in which a performing arts production was performed."@en ;
                rdfs:label "has season"@en .
 
-nvto:PROPOSED_hasSetBuilder rdf:type owl:ObjectProperty ;
+nvto:hasSetBuilder rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf nvto:hasContributor ;
                    skos:definition "Connects a resource to an agent who contributed to the resource as set builder."@en ;
                    rdfs:label "has set builder"@en .
@@ -571,15 +570,15 @@ nvto:hasSetDesigner rdf:type owl:ObjectProperty ;
                     skos:definition "Connects a resource to an agent who contributed to the resource as set designer."@en ;
                     rdfs:label "has set designer"@en .
 
-nvto:PROPOSED_hasSinger rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf nvto:hasContributor ;
-                   skos:definition "Connects a resource to an agent who contributed to the resource as singer."@en ;
-                   rdfs:label "has singer"@en .
+nvto:hasSinger rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf nvto:hasMusician ;
+               skos:definition "Connects a resource to an agent who contributed to the resource as singer."@en ;
+               rdfs:label "has singer"@en .
 
-nvto:PROPOSED_hasSoundDesigner rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf nvto:hasContributor ;
-                  skos:definition "Connects a resource to an agent who contributed to the resource as sound designer."@en ;
-                  rdfs:label "has sound designer"@en .
+nvto:hasSoundDesigner rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf nvto:hasContributor ;
+                      skos:definition "Connects a resource to an agent who contributed to the resource as sound designer."@en ;
+                      rdfs:label "has sound designer"@en .
 
 nvto:hasSource rdf:type owl:AnnotationProperty ;
                skos:definition "Describes or connects to the source of a resource."@en ;
@@ -594,15 +593,15 @@ nvto:hasSubtitle  rdf:type owl:DatatypeProperty ;
                   skos:definition "Describes the subtitle of a resource."@en ;
                   rdfs:label "has subtitle"@en .
 
-nvto:PROPOSED_hasSurtitleAuthor rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf nvto:hasContributor ;
-                  skos:definition "Connects a resource to an agent who contributed to the resource as author of surtitles."@en ;
-                  rdfs:label "has surtitles author"@en .
+nvto:hasSurtitleAuthor rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf nvto:hasContributor ;
+                       skos:definition "Connects a resource to an agent who contributed to the resource as author of surtitles."@en ;
+                       rdfs:label "has surtitle author"@en .
 
-nvto:PROPOSED_hasSurtitleTranslator rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf nvto:hasTranslator ;
-                  skos:definition "Connects a resource to an agent who contributed to the resource as translator of surtitles."@en ;
-                  rdfs:label "has surtitles translator"@en .
+nvto:hasSurtitleTranslator rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf nvto:hasTranslator ;
+                           skos:definition "Connects a resource to an agent who contributed to the resource as translator of surtitles."@en ;
+                           rdfs:label "has surtitle translator"@en .
 
 nvto:hasSuccessor rdf:type owl:AnnotationProperty ;
                   skos:definition "Connects or describes two resources in which one resource succeeds the other."@en ;
@@ -613,10 +612,10 @@ nvto:hasTableOfContents rdf:type owl:DatatypeProperty ;
                         skos:definition "Describes the table of contents of a resource."@en ;
                         rdfs:label "has table of contents"@en .
 
-nvto:PROPOSED_hasTechnician rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf nvto:hasContributor ;
-                  skos:definition "Connects a resource to an agent who contributed to the resource as sound technician."@en ;
-                  rdfs:label "has technician"@en .
+nvto:hasTechnician rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf nvto:hasContributor ;
+                   skos:definition "Connects a resource to an agent who contributed to the resource as technician."@en ;
+                   rdfs:label "has technician"@en .
 
 nvto:hasTitle rdf:type owl:DatatypeProperty ;
               skos:definition "Describes the title of a resource."@en ;

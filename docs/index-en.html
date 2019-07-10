@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://ld.iti-germany.de/schema/nvto/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://ld.iti-germany.de/schema/nvto/","name":"Non-Verbal Theatre Ontology", "headline":"Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the "NONVERBALES THEATER IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS).", "datePublished":"Wed Jul 10 15:13:16 CEST 2019", "license":"https://creativecommons.org/licenses/by/4.0/deed.en", "contributor":[{"@type":"Person","name":"Jonas Pitz"},{"@type":"Person","name":"Maxim Wittenbecher"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://ld.iti-germany.de/schema/nvto/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://ld.iti-germany.de/schema/nvto/","name":"Non-Verbal Theatre Ontology", "headline":"Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the "NONVERBALES THEATER IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS).", "datePublished":"Wed Jul 10 15:19:48 CEST 2019", "license":"https://creativecommons.org/licenses/by/4.0/deed.en", "contributor":[{"@type":"Person","name":"Jonas Pitz"},{"@type":"Person","name":"Maxim Wittenbecher"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -46,6 +46,7 @@ function loadTOC(){
         return this.clone().find(sel||">*").remove().end();
  };    $(function(){
       $("#abstract").load("sections/abstract-en.html"); 
+      $("#overview").load("sections/overview-en.html"); 
       $("#crossref").load("sections/crossref-en.html", null, loadHash); 
     });
     </script> 
@@ -54,7 +55,7 @@ function loadTOC(){
 <body>
 <div class="container">
 <div class="head">
-<div style="float:right">language <a href="index-de.html"><b>de</b></a> <a href="index-en.html"><b>en</b></a> </div>
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
 <h1>Non-Verbal Theatre Ontology</h1>
 
 
@@ -76,7 +77,8 @@ function loadTOC(){
 <span>Ontology Specification Draft</span>
 </div>
 </div>     <div id="abstract"></div>
-<div id="toc"></div>     <div id="crossref"></div>
+<div id="toc"></div>     <div id="overview"></div>
+     <div id="crossref"></div>
 <html>
 <div id="acknowledgements">
 <h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

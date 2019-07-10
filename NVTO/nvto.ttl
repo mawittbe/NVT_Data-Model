@@ -113,19 +113,25 @@ nvto:PROPOSED_FestivalInstance rdf:type owl:Class ;
           skos:scopeNote "Used specifically for festival editions in the realm of performing arts."@en ;
           skos:example "The 2017 edition of the biannual theatre festival 'Theater der Welt', held in Hamburg, Germany"@en .
 
-
 nvto:InformationObject rdf:type owl:Class ;
                        rdfs:label "Informationsobjekt"@de ;
                        rdfs:label "Information Object"@en ;
                        skos:definition """Conceptual representation of the contents a medium captured by a physical or digital (archival) object. The same information object can be captured in multiple pyhsical or digital objects (e.g. a magazine edition). Also one physical object can carry multiple information objects (e.g. multiple movies in a single video tape)."""@en ;
                        skos:example "Aufnahme von Aufführung, Inhalt von Programmheft X"@de .
 
+nvto:Organization rdf:type owl:Class ;
+                  rdfs:subClassOf nvto:Agent ;
+                  rdfs:label "Organisation"@de ;
+                  rdfs:label "Organization"@en ;
+                  skos:definition """This class comprises all agents that are organizations"""@en ;
+                  skos:example "Theater der Welt, Sony BMG"@de .
+
 nvto:PerformingArtsGroup rdf:type owl:Class ;
-                        rdfs:subClassOf nvto:Agent ;
-                        rdfs:label "Gruppe/Ensemble/Company"@de ;
-                        rdfs:label "Group/Ensemble/Company"@en ;
-                        skos:definition """This class comprises ensembles and similar groups in the realm of performing arts."""@en ;
-                        skos:example "DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg"@de  .
+                         rdfs:subClassOf nvto:Agent ;
+                         rdfs:label "Gruppe/Ensemble/Company"@de ;
+                         rdfs:label "Group/Ensemble/Company"@en ;
+                         skos:definition """This class comprises ensembles and similar groups in the realm of performing arts."""@en ;
+                         skos:example "DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg"@de  .
 
 nvto:PerformingArtsLocation rdf:type owl:Class ;
                             rdfs:subClassOf nvto:Place ;
@@ -140,6 +146,13 @@ nvto:PerformingArtsProduction rdf:type owl:Class ;
                               skos:definition """This class comprises productions that were or are performed in performing arts events. """@en ;
                               skos:example "Blaubart, Hamlet"@de  .
 
+nvto:Person rdf:type owl:Class ;
+                     rdfs:subClassOf nvto:Agent ;
+                     rdfs:label "Person"@de ;
+                     rdfs:label "Person"@en ;
+                     skos:definition """This class comprises all agents that are persons"""@en ;
+                     skos:example "Eberhard Kube, Conny Hege"@de .
+
 nvto:PhysicalObject rdf:type owl:Class ;
                     rdfs:label "Physisches Objekt"@de ;
                     rdfs:label "Physical Object"@en ;
@@ -149,7 +162,7 @@ nvto:PhysicalObject rdf:type owl:Class ;
 nvto:Place rdf:type owl:Class ;
            rdfs:label "Ort"@de ;
            rdfs:label "Place"@en ;
-           skos:definition """This class comprises all Places. """@en .
+           skos:definition """This class comprises all places. """@en .
 
 nvto:Series rdf:type owl:Class ;
             rdfs:label "Serie"@de ;
@@ -266,7 +279,7 @@ nvto:hasClown rdf:type owl:ObjectProperty ;
                         rdfs:label "has clown"@en .
 
 nvto:hasComposer rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf nvto:hasContributor ;
+                 rdfs:subPropertyOf nvto:hasMusician ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as author."@en ;
                  rdfs:label "has composer"@en .
 
@@ -387,7 +400,7 @@ nvto:hasFormat rdf:type owl:AnnotationProperty ;
                rdfs:label "has format"@en .
 
 nvto:hasHomepage rdf:type owl:ObjectProperty ;
-                 skos:definition "Describes the homepage an agent."@en ;
+                 skos:definition "Connects to a homepage of an agent."@en ;
                  rdfs:label "has homepage"@en .
 
 nvto:hasIdentifier rdf:type owl:DatatypeProperty ;
@@ -409,13 +422,18 @@ nvto:hasIsbn rdf:type owl:DatatypeProperty ;
              skos:definition "Describes the ISBN of a resource."@en ;
              rdfs:label "has ISBN"@en .
 
+nvto:hasLabeling rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf skos:note ;
+                skos:definition "Describes the labeling of a resource."@en ;
+                rdfs:label "has labeling back"@en .
+
 nvto:hasLabelingBack rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf skos:note ;
+                     rdfs:subPropertyOf nvto:hasLabeling ;
                      skos:definition "Describes the labeling on the back of a resource."@en ;
                      rdfs:label "has labeling back"@en .
 
 nvto:hasLabelingFront rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf skos:note ;
+                      rdfs:subPropertyOf nvto:hasLabeling ;
                       skos:definition "Describes the labeling on the front of a resource."@en ;
                       rdfs:label "has labeling front"@en .
 
@@ -538,6 +556,11 @@ nvto:hasRelatedPlace rdf:type owl:ObjectProperty ;
                      rdfs:range nvto:Place ;
                      skos:definition "Connects a resource to a place it is related to in any way."@en ;
                      rdfs:label "has related place"@en .
+
+nvto:hasRelatedWebsite rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf nvto:hasHomepage ;
+                       skos:definition "Connects to a related website of an agent or a resource."@en ;
+                       rdfs:label "has related website"@en .
 
 nvto:hasResidence rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf nvto:hasRelatedPlace ;

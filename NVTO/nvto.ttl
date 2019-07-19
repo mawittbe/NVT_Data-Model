@@ -187,13 +187,13 @@ nvto:PerformingArtsProduction rdf:type owl:Class ;
                               skos:example "Blaubart, Hamlet"@de  .
 
 nvto:Person rdf:type owl:Class ;
-                     rdfs:subClassOf nvto:Agent ;
-                     rdfs:label "Person"@de ;
-                     rdfs:label "Person"@en ;
-                     skos:definition """Diese Klasse umfasst alle Personen"""@de ;
-                     skos:definition """This class comprises all persons"""@en ;
-                     skos:example "Eberhard Kube, Conny Hege"@de ;
-                     skos:example "Eberhard Kube, Conny Hege"@en .
+            rdfs:subClassOf nvto:Agent ;
+            rdfs:label "Person"@de ;
+            rdfs:label "Person"@en ;
+            skos:definition """Diese Klasse umfasst alle Personen"""@de ;
+            skos:definition """This class comprises all persons"""@en ;
+            skos:example "Eberhard Kube, Conny Hege"@de ;
+            skos:example "Eberhard Kube, Conny Hege"@en .
 
 nvto:PhysicalObject rdf:type owl:Class ;
                     rdfs:label "Physisches Objekt"@de ;
@@ -825,7 +825,6 @@ nvto:PROPOSED_hasSeamster rdf:type owl:ObjectProperty ;
                           rdfs:label "has seamster"@en .
 
 nvto:hasSeason rdf:type owl:ObjectProperty ;
-               rdfs:domain nvto:PerformingArtsProduction ;
                rdfs:range nvto:TimeSpan ;
                skos:definition "Verbindet mit der Spielzeit, in der eine Produktion der darstellenden Kunst aufgeführt wurde."@en ;
                skos:definition "connects to the season in which a performing arts production was performed."@en ;

@@ -938,6 +938,13 @@ nvto:hasVideoDesigner rdf:type owl:ObjectProperty ;
                       rdfs:label "hat Videodesigner*in"@de ;
                       rdfs:label "video designer"@en .
 
+nvto:hasVideoEditor   rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf nvto:hasContributor ;
+                      skos:definition "Verbindet eine Ressource mit einem Agens, der als Videoeditor*in mitgewirkt hat."@de ;
+                      skos:definition "Connects a resource to an agent responsible for its video editing."@en ;
+                      rdfs:label "hat Videoeditor*in"@de ;
+                      rdfs:label "video editor"@en .
+
 nvto:isPartOf rdf:type owl:ObjectProperty ;
               skos:definition "Verbindet eine Ressource mit einer anderen Ressource, von der sie ein Teil ist."@de ;
               skos:definition "Connects a resource to another resource of which it is a part of."@en ;
@@ -951,13 +958,13 @@ nvto:isResidenceOf rdf:type owl:ObjectProperty ;
                    rdfs:label "ist Residenz von"@de ;
                    rdfs:label "is residence of"@en .
 
-nvto:occuredAtTime rdf:type owl:ObjectProperty ;
+nvto:occurredAtTime rdf:type owl:ObjectProperty ;
                    rdfs:domain nvto:Event ;
                    rdfs:range nvto:TimeSpan ;
                    skos:definition "Verbindet ein Ereignis mit der Zeitspanne, an der es sich ereignete."@de ;
-                   skos:definition "Connects an event to the timespan it occured at."@en ;
+                   skos:definition "Connects an event to the timespan it occurred at."@en ;
                    rdfs:label "ereignete sich zu Zeitpunkt"@de ;
-                   rdfs:label "occured at time"@en .
+                   rdfs:label "occurred at time"@en .
 
 nvto:originatedAtPlace rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf nvto:hasRelatedPlace ;

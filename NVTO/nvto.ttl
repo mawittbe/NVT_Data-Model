@@ -338,19 +338,6 @@ nvto:hasAuthor  rdf:type owl:ObjectProperty ;
                 rdfs:label "hat Autor*in"@de ;
                 rdfs:label "has author"@en .
 
-nvto:PROPOSED_hasCast rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf nvto:hasContributor ;
-              skos:definition "Verbindet eine Ressource mit einem Agens, der Teil der Besetzung war."@de ;
-              skos:definition "Connects a resource to an agent who was part of its cast."@en ;
-              rdfs:label "hat Besetzung"@de ;
-              rdfs:label "has cast"@en .
-
-nvto:PROPOSED_hasCastingAgent rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf nvto:hasContributor ;
-              skos:definition "Verbindet eine Ressource mit einem Agens, der als Casting Agent*in mitgewirkt hat."@de ;
-              skos:definition "Connects a resource to an agent who was responsible for casting."@en ;
-              rdfs:label "hat Casting Agent*in"@de ;
-              rdfs:label "has casting agent"@en .
 
 nvto:hasChoreographer rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf nvto:hasContributor ;
@@ -742,7 +729,7 @@ nvto:hasProgrammeDirector rdf:type owl:ObjectProperty ;
               rdfs:label "hat Programmdirektor*in"@de ;
               rdfs:label "has programme director"@en .
 
-nvto:PROPOSED_hasPrompter rdf:type owl:ObjectProperty ;
+nvto:hasPrompter rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf nvto:hasContributor ;
                           skos:definition "Verbindet eine Ressource mit einem Agens, der als Souffleur/Souffleuse mitgewirkt hat."@de ;
                           skos:definition "Connects a resource to an agent who contributed to the resource as prompter."@en ;
@@ -817,7 +804,7 @@ nvto:hasRightsHolder rdf:type owl:AnnotationProperty ;
                      rdfs:label "hat Rechteinhaber"@de ;
                      rdfs:label "has rights holder"@en .
 
-nvto:PROPOSED_hasSeamster rdf:type owl:ObjectProperty ;
+nvto:hasSeamster rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf nvto:hasContributor ;
                           skos:definition "Verbindet eine Ressource mit einem Agens, der als Näher*in mitgewirkt hat."@de ;
                           skos:definition "Connects a resource to an agent who contributed to the resource as seamster."@en ;
@@ -872,7 +859,7 @@ nvto:hasSpeaker rdf:type owl:ObjectProperty ;
                 rdfs:label "hat Sprecher*in"@de ;
                 rdfs:label "has speaker"@en .
 
-nvto:PROPOSED_hasStageManager rdf:type owl:ObjectProperty ;
+nvto:hasStageManager rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf nvto:hasContributor ;
                               skos:definition "Verbindet eine Ressource mit einem Agens, der als Inspizient*in mitgewirkt hat."@de ;
                               skos:definition "Connects a resource to an agent who contributed to the resource as stage manager."@en ;

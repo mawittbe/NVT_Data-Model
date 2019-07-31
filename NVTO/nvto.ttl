@@ -67,14 +67,6 @@ nvto:Agent rdf:type owl:Class ;
            skos:example "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"@de ;
            skos:example "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"@en .
 
-nvto:Collection rdf:type owl:Class ;
-                rdfs:label "Sammlung"@de ;
-                rdfs:label "Collection"@en ;
-                skos:definition """Diese Klasse umfasst (benannte) Sammlungen von Ressourcen in willkürlicher Reihenfolge."""@de ;
-                skos:definition """This class comprises (named) resource collections in arbitrary order."""@en ;
-                skos:example "COL"@de ;
-                skos:example "COL"@en .
-
 nvto:City rdf:type owl:Class ;
           rdfs:subClassOf nvto:Place ;
           rdfs:label "Stadt"@de ;
@@ -83,6 +75,14 @@ nvto:City rdf:type owl:Class ;
           skos:definition """This class comprises cities dependent on time and/or geopolitics."""@en ;
           skos:example "Berlin, Westberlin, Ostberlin"@de ;
           skos:example "Berlin, West Berlin, East Berlin"@en .
+
+nvto:Collection rdf:type owl:Class ;
+                rdfs:label "Sammlung"@de ;
+                rdfs:label "Collection"@en ;
+                skos:definition """Diese Klasse umfasst (benannte) Sammlungen von Ressourcen in willkürlicher Reihenfolge."""@de ;
+                skos:definition """This class comprises (named) resource collections in arbitrary order."""@en ;
+                skos:example "COL"@de ;
+                skos:example "COL"@en .
 
 nvto:Country rdf:type owl:Class ;
              rdfs:subClassOf nvto:Place ;

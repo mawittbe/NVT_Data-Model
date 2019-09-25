@@ -56,7 +56,7 @@ edm:wasPresentAt owl:propertyChainAxiom (
                           nvto:containsReferenceTo
                         ) ,
                         (
-                          un:isInformationCarrierOf
+                          nvto:isInformationCarrierOf
                           un:records
                         ) ,
                         (

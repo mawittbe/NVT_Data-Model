@@ -334,6 +334,7 @@ nvto:hasClown rdf:type owl:ObjectProperty ;
                         rdfs:label "has clown"@en .
 
 nvto:hasComposer rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf nvto:hasContributor ;
                  skos:definition "Verbindet eine Ressource mit einem Agens, der als Komponist*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as composer."@en ;
                  rdfs:label "hat Komponist*in"@de ;
@@ -685,6 +686,7 @@ nvto:hasPantomime rdf:type owl:ObjectProperty ;
                            rdfs:label "has pantomime"@en .
 
 nvto:hasPart rdf:type owl:ObjectProperty ;
+             rdf:type owl:TransitiveProperty ;
              skos:definition "Verbindet eine Ressource mit einer anderen Ressource, die ein Teil von ihr ist."@de ;
              skos:definition "Connects a resource to another resource which is a part of it."@en ;
              rdfs:label "hat Teil"@de ;
@@ -725,6 +727,7 @@ nvto:hasPlaywright rdf:type owl:ObjectProperty ;
                             rdfs:label "has playwright"@en .
 
 nvto:hasPredecessor rdf:type owl:ObjectProperty ;
+                    rdf:type owl:TransitiveProperty ;
                     skos:definition "Beschreibt den Vorgänger oder verbindet mit dem Vorgänger einer Ressource."@de ;
                     skos:definition "Describes or connects to the preceding resource of a resource."@en ;
                     rdfs:label "hat Vorgänger"@de ;

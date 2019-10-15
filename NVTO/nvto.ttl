@@ -1024,7 +1024,7 @@ nvto:isVisuallyReferencedIn owl:inverseOf nvto:containsVisualReferenceTo ;
                              rdfs:label "ist visuell referenziert in"@de ;
                              rdfs:label "is visually referenced in"@en .
 
-nvto:IsPlaceOfOccurrenceOf owl:inverseOf nvto:hasPlaceOfOccurrence ;
+nvto:isPlaceOfOccurrenceOf owl:inverseOf nvto:hasPlaceOfOccurrence ;
                      rdfs:subPropertyOf nvto:isRelatedPlaceOf ;
                      rdfs:comment "Invers von 'ereignet sich an Ort'."@de ;
                      rdfs:comment "Inverse of 'has place of occurrence'."@en ;

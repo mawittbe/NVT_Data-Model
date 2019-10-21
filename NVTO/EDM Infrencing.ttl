@@ -110,7 +110,8 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 
 ###  http://lod.iti-germany.de/schema/nvto/PROPOSED_hasInfluenceOn
 nvto:PROPOSED_hasInfluenceOn rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf nvto:containsReferenceTo ;
+                             rdfs:subPropertyOf nvto:containsReferenceTo ,
+                                                edm:hasMet ;
                              owl:inverseOf nvto:PROPOSED_isInfluencedBy ;
                              rdfs:label "has influence on"@en ,
                                         "hat beeinflusst"@de ;
@@ -174,7 +175,8 @@ nvto:PROPOSED_isPlaywrightOf rdf:type owl:ObjectProperty ;
 ###  http://lod.iti-germany.de/schema/nvto/containsAudibleReferenceTo
 nvto:containsAudibleReferenceTo rdf:type owl:ObjectProperty ;
                                 rdfs:subPropertyOf nvto:containsAudioVisualReferenceTo ,
-                                                   nvto:containsReferenceTo ;
+                                                   nvto:containsReferenceTo ,
+                                                   edm:hasMet ;
                                 owl:inverseOf nvto:isAudiblyReferencedIn ;
                                 rdfs:label "beinhaltet hörbare Referenz zu"@de ,
                                            "contains audible reference to"@en ;
@@ -184,7 +186,8 @@ nvto:containsAudibleReferenceTo rdf:type owl:ObjectProperty ;
 
 ###  http://lod.iti-germany.de/schema/nvto/containsAudioVisualReferenceTo
 nvto:containsAudioVisualReferenceTo rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf nvto:containsReferenceTo ;
+                                    rdfs:subPropertyOf nvto:containsReferenceTo ,
+                                                       edm:hasMet ;
                                     owl:inverseOf nvto:isAudiovisuallyReferencedIn ;
                                     owl:propertyChainAxiom ( nvto:hasPart
                                                              nvto:containsAudioVisualReferenceTo
@@ -197,6 +200,7 @@ nvto:containsAudioVisualReferenceTo rdf:type owl:ObjectProperty ;
 
 ###  http://lod.iti-germany.de/schema/nvto/containsReferenceTo
 nvto:containsReferenceTo rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf edm:hasMet ;
                          owl:inverseOf nvto:isReferencedIn ;
                          rdfs:label "beinhaltet Referenz zu"@de ,
                                     "contains reference to"@en ;
@@ -208,7 +212,8 @@ nvto:containsReferenceTo rdf:type owl:ObjectProperty ;
 
 ###  http://lod.iti-germany.de/schema/nvto/containsTextualReferenceTo
 nvto:containsTextualReferenceTo rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf nvto:containsReferenceTo ;
+                                rdfs:subPropertyOf nvto:containsReferenceTo ,
+                                                   edm:hasMet ;
                                 owl:inverseOf nvto:isTextuallyReferencedIn ;
                                 rdfs:label "beinhaltet textuelle Referenz zu"@de ,
                                            "contains textual reference to"@en ;
@@ -219,7 +224,8 @@ nvto:containsTextualReferenceTo rdf:type owl:ObjectProperty ;
 ###  http://lod.iti-germany.de/schema/nvto/containsVisualReferenceTo
 nvto:containsVisualReferenceTo rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf nvto:containsAudioVisualReferenceTo ,
-                                                  nvto:containsReferenceTo ;
+                                                  nvto:containsReferenceTo ,
+                                                  edm:hasMet ;
                                owl:inverseOf nvto:isVisuallyReferencedIn ;
                                rdfs:label "beinhaltet visuelle Referenz zu"@de ,
                                           "contains visual reference to"@en ;
@@ -557,7 +563,8 @@ nvto:hasIllustrator rdf:type owl:ObjectProperty ;
 ###  http://lod.iti-germany.de/schema/nvto/hasInformationCarrier
 nvto:hasInformationCarrier rdf:type owl:ObjectProperty ;
                            owl:inverseOf nvto:isInformationCarrierOf ;
-                           rdfs:domain nvto:InformationObject ;
+                           rdfs:domain nvto:InformationObject ,
+                                       edm:ProvidedCHO ;
                            rdfs:label "has information carrier"@en ,
                                       "hat Informationsträger"@de ;
                            skos:definition "Connects an information object with a physical or digital object it is represented on."@en ,
@@ -1308,6 +1315,8 @@ nvto:isIllustratorOf rdf:type owl:ObjectProperty ;
 
 ###  http://lod.iti-germany.de/schema/nvto/isInformationCarrierOf
 nvto:isInformationCarrierOf rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf nvto:isPartOf ,
+                                               dcterms:isPartOf ;
                             rdfs:comment "Invers von 'hat Informationsträger'."@de ,
                                          "Inverse of 'has information carrier'."@en ;
                             rdfs:label "is information carrier of"@en ,
@@ -1735,10 +1744,14 @@ edm:happenedAt rdf:type owl:ObjectProperty ;
 edm:hasMet rdf:type owl:ObjectProperty ,
                     owl:SymmetricProperty ;
            owl:propertyChainAxiom ( edm:wasPresentAt
-                                    nvto:hasPerformer
+                                    nvto:hasContributor
                                   ) ,
                                   ( edm:wasPresentAt
                                     edm:happenedAt
+                                  ) ,
+                                  ( edm:wasPresentAt
+                                    [ owl:inverseOf edm:wasPresentAt
+                                    ]
                                   ) .
 
 
@@ -1848,6 +1861,7 @@ nvto:hasExtent rdf:type owl:DatatypeProperty .
 
 ###  http://lod.iti-germany.de/schema/nvto/hasFamilyName
 nvto:hasFamilyName rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/familyName> ;
                    rdfs:domain nvto:Agent ,
                                edm:Agent ;
                    rdfs:label "has family name"@en ,
@@ -1858,6 +1872,7 @@ nvto:hasFamilyName rdf:type owl:DatatypeProperty ;
 
 ###  http://lod.iti-germany.de/schema/nvto/hasFirstName
 nvto:hasFirstName rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/firstName> ;
                   rdfs:domain nvto:Agent ,
                               edm:Agent ;
                   rdfs:label "has first name"@en ,
@@ -1936,6 +1951,7 @@ nvto:hasLastPerformanceDate rdf:type owl:DatatypeProperty ;
 
 ###  http://lod.iti-germany.de/schema/nvto/hasName
 nvto:hasName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/name> ;
              rdfs:domain nvto:Agent ,
                          edm:Agent ;
              rdfs:label "has name"@en ,
@@ -1995,13 +2011,29 @@ nvto:wasIssuedAtTime rdf:type owl:DatatypeProperty ;
                                      "Describes a singular date/point in time at which a resource was issued."@en .
 
 
+###  http://xmlns.com/foaf/0.1/familyName
+<http://xmlns.com/foaf/0.1/familyName> rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://xmlns.com/foaf/0.1/firstName
+<http://xmlns.com/foaf/0.1/firstName> rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf owl:topDataProperty .
+
+
 #################################################################
 #    Classes
 #################################################################
 
 ###  http://lod.iti-germany.de/schema/nvto/Agent
 nvto:Agent rdf:type owl:Class ;
-           rdfs:subClassOf edm:Agent ;
+           rdfs:subClassOf edm:Agent ,
+                           <http://xmlns.com/foaf/0.1/Agent> ;
            rdfs:label "Agens"@de ,
                       "Agent"@en ;
            skos:definition "Diese Klasse umfasst alle Agenzien wie etwa Personen und Institutionen."@de ,
@@ -2056,7 +2088,6 @@ nvto:CreativeConcept rdf:type owl:Class ;
 
 ###  http://lod.iti-germany.de/schema/nvto/DigitalObject
 nvto:DigitalObject rdf:type owl:Class ;
-                   rdfs:subClassOf edm:ProvidedCHO ;
                    rdfs:label "Digital Object"@en ,
                               "Digitales Objekt"@de ;
                    skos:definition "Die digitale Repräsentation des Inhalts eines Mediums. Digitaler Informationsträger."@de ,
@@ -2116,7 +2147,8 @@ nvto:InformationObject rdf:type owl:Class ;
 ###  http://lod.iti-germany.de/schema/nvto/Organization
 nvto:Organization rdf:type owl:Class ;
                   rdfs:subClassOf nvto:Agent ,
-                                  edm:Agent ;
+                                  edm:Agent ,
+                                  <http://xmlns.com/foaf/0.1/Organization> ;
                   rdfs:label "Organisation"@de ,
                              "Organization"@en ;
                   skos:definition "Diese Klasse umfasst alle Organisationen."@de ,
@@ -2128,7 +2160,8 @@ nvto:Organization rdf:type owl:Class ;
 ###  http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup
 nvto:PerformingArtsGroup rdf:type owl:Class ;
                          rdfs:subClassOf nvto:Agent ,
-                                         edm:Agent ;
+                                         edm:Agent ,
+                                         <http://xmlns.com/foaf/0.1/Group> ;
                          rdfs:label "Performing Arts Group"@en ,
                                     "Performing Arts Gruppe"@de ;
                          skos:definition "Diese Klasse umfasst alle Ensembles, Companies und ähnliche Gruppen im Bereich der darstellenden Künste."@de ,
@@ -2162,7 +2195,8 @@ nvto:PerformingArtsProduction rdf:type owl:Class ;
 ###  http://lod.iti-germany.de/schema/nvto/Person
 nvto:Person rdf:type owl:Class ;
             rdfs:subClassOf nvto:Agent ,
-                            edm:Agent ;
+                            edm:Agent ,
+                            <http://xmlns.com/foaf/0.1/Person> ;
             rdfs:label "Person"@de ,
                        "Person"@en ;
             skos:definition "Diese Klasse umfasst alle Personen"@de ,
@@ -2184,6 +2218,7 @@ nvto:PhysicalObject rdf:type owl:Class ;
 
 ###  http://lod.iti-germany.de/schema/nvto/Place
 nvto:Place rdf:type owl:Class ;
+           rdfs:subClassOf wgs84_pos:SpatialThing ;
            rdfs:label "Ort"@de ,
                       "Place"@en ;
            skos:definition "Diese Klasse umfasst alle Orte."@de ,
@@ -2222,6 +2257,29 @@ edm:Event rdf:type owl:Class .
 edm:ProvidedCHO rdf:type owl:Class .
 
 
+###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+wgs84_pos:SpatialThing rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Group
+<http://xmlns.com/foaf/0.1/Group> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
+
+
 #################################################################
 #    Individuals
 #################################################################
@@ -2238,7 +2296,8 @@ edm:ProvidedCHO rdf:type owl:Class .
              nvto:isReferencedIn :IO1 ;
              nvto:isVisuallyReferencedIn :IO1 ;
              dcterms:contributor :P1 ;
-             edm:happendedAt :Deutsches_Theater .
+             edm:happendedAt :Deutsches_Theater ;
+             edm:hasMet :IO1 .
 
 
 ###  http://ld.iti-germany.de/schema/nvto/Berlin
@@ -2291,12 +2350,16 @@ edm:ProvidedCHO rdf:type owl:Class .
      nvto:containsAudioVisualReferenceTo :Aufführung1 ;
      nvto:containsReferenceTo :Aufführung1 ;
      nvto:containsVisualReferenceTo :Aufführung1 ;
-     nvto:hasInformationCarrier :PO1 .
+     nvto:hasInformationCarrier :PO1 ;
+     nvto:hasPart :PO1 ;
+     edm:hasMet :Aufführung1 ;
+     edm:wasPresentAt :Aufführung1 .
 
 
 ###  http://ld.iti-germany.de/schema/nvto/IO2
 :IO2 rdf:type owl:NamedIndividual ,
-              nvto:InformationObject .
+              nvto:InformationObject ,
+              edm:ProvidedCHO .
 
 
 ###  http://ld.iti-germany.de/schema/nvto/P1
@@ -2305,7 +2368,8 @@ edm:ProvidedCHO rdf:type owl:Class .
              nvto:Person ,
              edm:Agent ;
     nvto:isContributorOf :Aufführung1 ;
-    nvto:isPerformerOf :Aufführung1 .
+    nvto:isPerformerOf :Aufführung1 ;
+    edm:wasPresentAt :Aufführung1 .
 
 
 ###  http://ld.iti-germany.de/schema/nvto/P2
@@ -2327,6 +2391,8 @@ edm:ProvidedCHO rdf:type owl:Class .
               nvto:PhysicalObject ,
               edm:ProvidedCHO ;
      nvto:isInformationCarrierOf :IO1 ;
+     nvto:isPartOf :IO1 ;
+     dcterms:isPartOf :IO1 ;
      edm:wasPresentAt :Aufführung1 .
 
 
@@ -2446,54 +2512,75 @@ nvto:isRestagedVersionOf skos:definition "Inverse of 'has restaged version'."@en
 #    Rules
 #################################################################
 
-:io2 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+:EV rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
-:ev2 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+:A rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
-:po2 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+:CHO rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 [ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
    rdfs:comment ""^^xsd:string ;
-   rdfs:label "wasPresentAt"^^xsd:string ;
+   rdfs:label "wasPresentAt_AGENT"^^xsd:string ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> nvto:InformationObject ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :io2
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> edm:Event ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :EV
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> nvto:Event ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> :ev2
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> edm:Agent ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :A
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> nvto:PhysicalObject ;
-                                                                             <http://www.w3.org/2003/11/swrl#argument1> :po2
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> dcterms:contributor ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :EV ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :A
                                                                            ] ;
-                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> nvto:containsAudioVisualReferenceTo ;
-                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :io2 ;
-                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :ev2
-                                                                                      ] ;
-                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> nvto:isInformationCarrierOf ;
-                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :po2 ;
-                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :io2
-                                                                                                 ] ;
-                                                                                       rdf:rest rdf:nil
-                                                                                     ]
-                                                                          ]
+                                                                 rdf:rest rdf:nil
                                                                ]
                                                     ]
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> edm:wasPresentAt ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :po2 ;
-                                                       <http://www.w3.org/2003/11/swrl#argument2> :ev2
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :A ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :EV
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "wasPresentAt_CHO"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> edm:ProvidedCHO ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :CHO
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> edm:Event ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :EV
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> nvto:containsAudioVisualReferenceTo ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :CHO ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :EV
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> edm:wasPresentAt ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :CHO ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :EV
                                                      ] ;
                                            rdf:rest rdf:nil
                                          ]

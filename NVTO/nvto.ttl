@@ -255,14 +255,14 @@ nvto:endsAtTime rdf:type owl:DatatypeProperty ;
                 rdfs:label "endet zu Zeitpunkt"@de ;
                 rdfs:label "ends at time"@en .
 
-nvto:happenedAtPlace rdf:type owl:ObjectProperty ;
+nvto:hasPlaceOfOccurrence rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf nvto:hasRelatedPlace ;
                      rdfs:domain nvto:Event ;
                      rdfs:range nvto:Place ;
-                     skos:definition "Verbindet ein Ereignis mit einem Ort, an dem es sich ereignete."@de ;
+                     skos:definition "Verbindet ein Ereignis mit einem Ort, an dem es sich ereignet."@de ;
                      skos:definition "Connects an event to the place it happened at."@en ;
-                     rdfs:label "ereignete sich an Ort"@de ;
-                     rdfs:label "happened at place"@en .
+                     rdfs:label "ereignet sich an Ort"@de ;
+                     rdfs:label "has place of Occurrence"@en .
 
 nvto:hasAcrobat rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf nvto:hasContributor ;
@@ -280,9 +280,9 @@ nvto:hasActor rdf:type owl:ObjectProperty ;
 
 nvto:hasAdaptor rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf nvto:hasContributor ;
-                skos:definition "Verbindet eine Ressource mit einem Agens, der als Bearbeiter*in mitgewirkt hat."@de ;
+                skos:definition "Verbindet eine Ressource mit einem Agens, der als (Text-)Bearbeiter*in mitgewirkt hat."@de ;
                 skos:definition "Connects a resource to an agent who contributed to the resource as adaptor."@en ;
-                rdfs:label "PRPLABEL hat Bearbeiter*in"@de ;
+                rdfs:label "hat (Text-)Bearbeiter*in"@de ;
                 rdfs:label "has adaptor"@en .
 
 nvto:hasAddress rdf:type owl:DatatypeProperty ;
@@ -334,6 +334,7 @@ nvto:hasClown rdf:type owl:ObjectProperty ;
                         rdfs:label "has clown"@en .
 
 nvto:hasComposer rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf nvto:hasContributor ;
                  skos:definition "Verbindet eine Ressource mit einem Agens, der als Komponist*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as composer."@en ;
                  rdfs:label "hat Komponist*in"@de ;
@@ -370,11 +371,18 @@ nvto:hasContributor  rdf:type owl:ObjectProperty ;
                      rdfs:label "hat Mitwirkende*n"@de ;
                      rdfs:label "has contributor"@en .
 
+nvto:hasCostumeBuilder rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf nvto:hasContributor ;
+                       skos:definition "Verbindet eine Ressource mit einem Agens, der als Kostümbauer*in mitgewirkt hat."@de ;
+                       skos:definition "Connects a resource to an agent who contributed to the resource as costume builder."@en ;
+                       rdfs:label "hat Kostümbauer*in"@de ;
+                       rdfs:label "has costume builder"@en .
+
 nvto:hasCostumeDesigner rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf nvto:hasContributor ;
                         skos:definition "Verbindet eine Ressource mit einem Agens, der als Kostümdesigner*in mitgewirkt hat."@de ;
                         skos:definition "Connects a resource to an agent who contributed to the resource as costume designer."@en ;
-                        rdfs:label "hat Kostümbildner*in"@de ;
+                        rdfs:label "hat Kostümgestalter*in"@de ;
                         rdfs:label "has costume designer"@en .
 
 nvto:hasCreator rdf:type owl:ObjectProperty ;
@@ -537,7 +545,7 @@ nvto:hasIllustrator rdf:type owl:ObjectProperty ;
                     rdfs:label "hat Illustrator*in"@de ;
                     rdfs:label "has illustrator"@en .
 
-nvto:PROPOSED_hasInfluenceOn rdf:type owl:ObjectProperty ;
+nvto:hasInfluenceOn rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf nvto:containsReferenceTo ;
                             skos:definition "Verbindet eine Ressource mit einer anderen Ressource, die sie beeinflusst hat."@de ;
                             skos:definition "Connects a resource with another resource that it influenced."@en ;
@@ -619,14 +627,21 @@ nvto:hasMakeUpArtist rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf nvto:hasContributor ;
                      skos:definition "Verbindet eine Ressource mit einem Agens, der als Visagist*in mitgewirkt hat."@de ;
                      skos:definition "Connects a resource to an agent who contributed to the resource as make up artist."@en ;
-                     rdfs:label "PRPLABEL hat Visagist*in"@de ;
+                     rdfs:label "hat Visagist*in"@de ;
                      rdfs:label "has make up artist"@en .
+
+nvto:hasMaskBuilder rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf nvto:hasContributor ;
+                    skos:definition "Verbindet eine Ressource mit einem Agens, der als Maskenbauer*in mitgewirkt hat."@de ;
+                    skos:definition "Connects a resource to an agent who contributed to the resource as mask builder."@en ;
+                    rdfs:label "hat Maskenbauer*in"@de ;
+                    rdfs:label "has mask builder"@en .
 
 nvto:hasMaskDesigner rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf nvto:hasContributor ;
-                     skos:definition "Verbindet eine Ressource mit einem Agens, der als Maskenbildner*in mitgewirkt hat."@de ;
+                     skos:definition "Verbindet eine Ressource mit einem Agens, der als Maskengestalter*in mitgewirkt hat."@de ;
                      skos:definition "Connects a resource to an agent who contributed to the resource as mask designer."@en ;
-                     rdfs:label "hat Maskenbildner*in"@de ;
+                     rdfs:label "hat Maskengestalter*in"@de ;
                      rdfs:label "has mask designer"@en .
 
 nvto:hasMediator rdf:type owl:ObjectProperty ;
@@ -663,7 +678,7 @@ nvto:hasName rdf:type owl:DatatypeProperty ;
              rdfs:label "hat Name"@de ;
              rdfs:label "has name"@en .
 
-nvto:PROPOSED_hasPantomime rdf:type owl:ObjectProperty ;
+nvto:hasPantomime rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf nvto:hasContributor ;
                            skos:definition "Verbindet eine Ressource mit einem Agens, der als Pantomime/Pantomimin mitgewirkt hat."@de ;
                            skos:definition "Connects a resource to an agent who contributed to the resource as pantomime."@en ;
@@ -671,6 +686,7 @@ nvto:PROPOSED_hasPantomime rdf:type owl:ObjectProperty ;
                            rdfs:label "has pantomime"@en .
 
 nvto:hasPart rdf:type owl:ObjectProperty ;
+             rdf:type owl:TransitiveProperty ;
              skos:definition "Verbindet eine Ressource mit einer anderen Ressource, die ein Teil von ihr ist."@de ;
              skos:definition "Connects a resource to another resource which is a part of it."@en ;
              rdfs:label "hat Teil"@de ;
@@ -703,14 +719,15 @@ nvto:hasPhotoStudio rdf:type owl:AnnotationProperty ;
                     rdfs:label "hat Fotostudio"@de ;
                     rdfs:label "has photo studio"@en .
 
-nvto:PROPOSED_hasPlaywright rdf:type owl:ObjectProperty ;
+nvto:hasPlaywright rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf nvto:hasContributor ;
                             skos:definition "Verbindet eine Ressource mit einem Agens, der als Dramatiker*in mitgewirkt hat."@de ;
                             skos:definition "Connects a resource to an agent who contributed to the resource as playwright."@en ;
                             rdfs:label "hat Dramatiker*in"@de ;
                             rdfs:label "has playwright"@en .
 
-nvto:hasPredecessor rdf:type owl:AnnotationProperty ;
+nvto:hasPredecessor rdf:type owl:ObjectProperty ;
+                    rdf:type owl:TransitiveProperty ;
                     skos:definition "Beschreibt den Vorgänger oder verbindet mit dem Vorgänger einer Ressource."@de ;
                     skos:definition "Describes or connects to the preceding resource of a resource."@en ;
                     rdfs:label "hat Vorgänger"@de ;
@@ -743,25 +760,39 @@ nvto:hasProvenance rdf:type owl:AnnotationProperty ;
                    rdfs:label "hat Herkunft"@de ;
                    rdfs:label "has provenance"@en .
 
-nvto:hasPublisher rdf:type owl:AnnotationProperty ;
-                  skos:definition "Beschreibt den/die Verleger*in einer Ressource oder verbindet die Ressource mit einem Agens, der/die als Verleger*in an der Ressource mitgewirkt hat."@en ;
+nvto:hasPublisher rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf nvto:hasContributor ;
+                  skos:definition "Beschreibt den/die Herausgeber*in einer Ressource oder verbindet die Ressource mit einem Agens, der/die als Verleger*in an der Ressource mitgewirkt hat."@en ;
                   skos:definition "Describes the publisher of a resource or connects the resource to an agent who contributed to the resource as publisher."@en ;
-                  rdfs:label "hat Verleger*in"@de ;
+                  rdfs:label "hat Herausgeber*in"@de ;
                   rdfs:label "has publisher"@en .
+
+nvto:hasPublishingCompany rdf:type owl:ObjectProperty ;
+                        skos:definition "Verbindet die Ressource mit einem Agens, derals Verlag an der Ressource mitgewirkt hat."@en ;
+                        skos:definition "Connects the resource to an agent who contributed to the resource as publishing company."@en ;
+                        rdfs:label "hat Verlag"@de ;
+                        rdfs:label "has publishing company"@en .
 
 nvto:hasPublishingPlace rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf nvto:hasRelatedPlace ;
                         rdfs:range nvto:Place ;
-                        skos:definition "Verbindet eine Ressource mit dem Ort, an dem sie verlegt wurde."@de ;
-                        skos:definition "Connects a resource to the place it was published at."@en ;
+                        skos:definition "Verbindet eine Ressource mit dem Ort, an dem sie verlegt wird oder wurde."@de ;
+                        skos:definition "Connects a resource to the place it was or is published at."@en ;
                         rdfs:label "hat Verlagsort"@de ;
                         rdfs:label "has publishing place"@en .
 
+nvto:hasPuppetBuilder rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf nvto:hasContributor ;
+                       skos:definition "Verbindet eine Ressource mit einem Agens, der als Puppenbauer*in mitgewirkt hat."@de ;
+                       skos:definition "Connects a resource to an agent who contributed to the resource as puppet builder."@en ;
+                       rdfs:label "hat Puppenbauer*in"@de ;
+                       rdfs:label "has puppet builder"@en .
+
 nvto:hasPuppetDesigner rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf nvto:hasContributor ;
-                       skos:definition "Verbindet eine Ressource mit einem Agens, der als Puppenmacher*in mitgewirkt hat."@de ;
+                       skos:definition "Verbindet eine Ressource mit einem Agens, der als Puppengestalter*in mitgewirkt hat."@de ;
                        skos:definition "Connects a resource to an agent who contributed to the resource as puppet designer."@en ;
-                       rdfs:label "PRP hat Puppenmacher*in"@de ;
+                       rdfs:label "hat Puppengestalter*in"@de ;
                        rdfs:label "has puppet designer"@en .
 
 nvto:hasRecordist rdf:type owl:ObjectProperty ;
@@ -822,8 +853,8 @@ nvto:hasSeamster rdf:type owl:ObjectProperty ;
 
 nvto:hasSeason rdf:type owl:ObjectProperty ;
                rdfs:range nvto:TimeSpan ;
-               skos:definition "Verbindet eine Produktion der darstellenden Künste mit der Spielzeit, in der die Produktion aufgeführt wurde."@en ;
-               skos:definition "connects to the season in which a performing arts production was performed."@en ;
+               skos:definition "Verbindet eine Produktion der darstellenden Künste mit der Spielzeit, in der die Produktion aufgeführt wird oder wurde."@en ;
+               skos:definition "connects to the season in which a performing arts production was or is performed."@en ;
                rdfs:label "hat Spielzeit"@de ;
                rdfs:label "has season"@en .
 
@@ -880,7 +911,7 @@ nvto:hasSubtitle  rdf:type owl:DatatypeProperty ;
                   rdfs:label "hat Untertitel"@de ;
                   rdfs:label "has subtitle"@en .
 
-nvto:hasSurtitleAuthor rdf:type owl:ObjectProperty ;
+nvto:hasSurtitleCreator rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf nvto:hasContributor ;
                        skos:definition "Verbindet eine Ressource mit einem Agens, der als Übertitel Schöpfer*in mitgewirkt hat."@de ;
                        skos:definition "Connects a resource to an agent who contributed to the resource as author of surtitles."@en ;
@@ -934,13 +965,13 @@ nvto:hasVideoEditor   rdf:type owl:ObjectProperty ;
                       rdfs:label "hat Videoeditor*in"@de ;
                       rdfs:label "video editor"@en .
 
-nvto:hasTimeOfOccurence rdf:type owl:ObjectProperty ;
+nvto:hasTimeOfOccurrence rdf:type owl:ObjectProperty ;
                        rdfs:domain nvto:Event ;
                        rdfs:range nvto:TimeSpan ;
-                       skos:definition "Verbindet ein Ereignis mit der Zeitspanne, an der es sich ereignete."@de ;
+                       skos:definition "Verbindet ein Ereignis mit der Zeitspanne, in der es sich ereignet."@de ;
                        skos:definition "Connects an event to the timespan it occurred at."@en ;
-                       rdfs:label "ereignete sich zu Zeitpunkt"@de ;
-                       rdfs:label "has time of occurence"@en .
+                       rdfs:label "ereignet sich zu Zeitpunkt"@de ;
+                       rdfs:label "has time of occurrence"@en .
 
 nvto:hasPlaceOfOrigin rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf nvto:hasRelatedPlace ;
@@ -950,7 +981,7 @@ nvto:hasPlaceOfOrigin rdf:type owl:ObjectProperty ;
                        rdfs:label "hat Ursprung in Ort"@de ;
                        rdfs:label "originated at place"@en .
 
-nvto:hasSuccessor rdf:type owl:AnnotationProperty ;
+nvto:hasSuccessor rdf:type owl:ObjectProperty ;
                   owl:inverseOf nvto:hasPredecessor ;
                   skos:definition "Beschreibt den Nachfolger oder verbindet mit dem Nachfolger einer Ressource."@de ;
                   skos:definition "Describes or connects to the succeeding resource of a resource."@en ;
@@ -993,12 +1024,12 @@ nvto:isVisuallyReferencedIn owl:inverseOf nvto:containsVisualReferenceTo ;
                              rdfs:label "ist visuell referenziert in"@de ;
                              rdfs:label "is visually referenced in"@en .
 
-nvto:wasPlaceOfEvent owl:inverseOf nvto:happenedAtPlace ;
+nvto:isPlaceOfOccurrenceOf owl:inverseOf nvto:hasPlaceOfOccurrence ;
                      rdfs:subPropertyOf nvto:isRelatedPlaceOf ;
-                     rdfs:comment "Invers von 'ereignete sich an Ort'."@de ;
-                     rdfs:comment "Inverse of 'happened at place'."@en ;
-                     rdfs:label "war Ort von Ereignis"@de ;
-                     rdfs:label "was place of event"@en .
+                     rdfs:comment "Invers von 'ereignet sich an Ort'."@de ;
+                     rdfs:comment "Inverse of 'has place of occurrence'."@en ;
+                     rdfs:label "ist Ort von Ereignis"@de ;
+                     rdfs:label "is place of occurrence of"@en .
 
 nvto:isActorOf owl:inverseOf nvto:hasActor ;
                rdfs:subPropertyOf nvto:isContributorOf ;
@@ -1016,9 +1047,9 @@ nvto:isAcrobatOf owl:inverseOf nvto:hasAcrobat ;
 
 nvto:isAdaptorOf owl:inverseOf nvto:hasAdaptor ;
                rdfs:subPropertyOf nvto:isContributorOf ;
-               rdfs:comment "Invers von 'PRPLABEL hat Bearbeiter*in'."@de ;
+               rdfs:comment "Invers von 'hat (Text-)Bearbeiter*in'."@de ;
                rdfs:comment "Inverse of 'has adaptor'."@en ;
-               rdfs:label "PRPLABEL ist Bearbeiter*in von"@de ;
+               rdfs:label "ist (Text-)Bearbeiter*in von"@de ;
                rdfs:label "is adaptor of"@en .
 
 nvto:isArtisticDirectorOf owl:inverseOf nvto:hasArtisticDirector ;
@@ -1082,11 +1113,18 @@ nvto:isContributorOf owl:inverseOf nvto:hasContributor ;
                    rdfs:label "ist Mitwirkende*r von"@de ;
                    rdfs:label "is contributor of"@en .
 
+nvto:isCostumeBuilder owl:inverseOf nvto:hasCostumeBuilder ;
+                       rdfs:subPropertyOf nvto:isContributorOf ;
+                       rdfs:comment "Invers von 'hat Kostümbauer*in'."@de ;
+                       rdfs:comment "Inverse of 'has costume builder'."@en ;
+                       rdfs:label "ist Kostümbauer*in von"@de ;
+                       rdfs:label "is costume builder of"@en .
+
 nvto:isCostumeDesigner owl:inverseOf nvto:hasCostumeDesigner ;
                        rdfs:subPropertyOf nvto:isContributorOf ;
-                       rdfs:comment "Invers von 'PRPLABEL hat Kostümbildner*in'."@de ;
+                       rdfs:comment "Invers von 'hat Kostümgestalter*in'."@de ;
                        rdfs:comment "Inverse of 'has costume designer'."@en ;
-                       rdfs:label "PRPLABEL ist Kostümbildner*in von"@de ;
+                       rdfs:label "ist Kostümdesigner*in von"@de ;
                        rdfs:label "is costume designer of"@en .
 
 nvto:isCreatorOf owl:inverseOf nvto:hasCreator ;
@@ -1174,7 +1212,7 @@ nvto:isIllustratorOf owl:inverseOf nvto:hasIllustrator ;
                rdfs:label "ist Illustrator*in von"@de ;
                rdfs:label "is illustrator of"@en .
 
-nvto:PROPOSED_isInfluencedBy owl:inverseOf nvto:PROPOSED_hasInfluenceOn ;
+nvto:isInfluencedBy owl:inverseOf nvto:hasInfluenceOn ;
                              rdfs:subPropertyOf nvto:isReferencedIn ;
                              skos:definiiton "Invers von 'hat beeinflusst'."@de ;
                              skos:definition "Inverse of 'has influence on'."@en ;
@@ -1196,23 +1234,30 @@ nvto:isLayouterOf owl:inverseOf nvto:hasLayouter ;
 
 nvto:isLightingDesignerOf owl:inverseOf nvto:hasLightingDesigner ;
                rdfs:subPropertyOf nvto:isContributorOf ;
-               rdfs:comment "Invers von 'PRPLABEL hat Lichtgestalter*in'."@de ;
+               rdfs:comment "Invers von 'hat Lichtgestalter*in'."@de ;
                rdfs:comment "Inverse of 'has lighting designer'."@en ;
-               rdfs:label "PRPLABEL ist Lichtgestalter*in von"@de ;
+               rdfs:label "ist Lichtgestalter*in von"@de ;
                rdfs:label "is lighting designer of"@en .
 
 nvto:isMakeUpArtistOf owl:inverseOf nvto:hasMakeUpArtist ;
                      rdfs:subPropertyOf nvto:isContributorOf ;
-                     rdfs:comment "Invers von 'PRPLABEL hat Visagist*in'."@de ;
+                     rdfs:comment "Invers von 'hat Visagist*in'."@de ;
                      rdfs:comment "Inverse of 'has make up artist'."@en ;
-                     rdfs:label "PRPLABEL ist Visagist*in von"@de ;
+                     rdfs:label "ist Visagist*in von"@de ;
                      rdfs:label "is make up artist of"@en .
+
+nvto:isMaskBuilderOf owl:inverseOf nvto:hasMaskBuilder ;
+                     rdfs:subPropertyOf nvto:isContributorOf ;
+                     rdfs:comment "Invers von 'hat Maskenbauer*in'."@de ;
+                     rdfs:comment "Inverse of 'has mask builder'."@en ;
+                     rdfs:label "ist Maskenbauer*in von"@de ;
+                     rdfs:label "is mask builder of"@en .
 
 nvto:isMaskDesignerOf owl:inverseOf nvto:hasMaskDesigner ;
                      rdfs:subPropertyOf nvto:isContributorOf ;
-                     rdfs:comment "Invers von 'PRPLABEL hat Maskenbildner*in'."@de ;
+                     rdfs:comment "Invers von 'hat Maskengestalter*in'."@de ;
                      rdfs:comment "Inverse of 'has mask designer'."@en ;
-                     rdfs:label "PRPLABEL ist Maskenbildner*in von"@de ;
+                     rdfs:label "ist Maskengestalter*in von"@de ;
                      rdfs:label "is mask designer of"@en .
 
 nvto:isMediatorOf owl:inverseOf nvto:hasMediator ;
@@ -1242,7 +1287,7 @@ nvto:isMusicianOf owl:inverseOf nvto:hasMusician ;
                rdfs:label "ist Musiker*in von"@de ;
                rdfs:label "is musician of"@en .
 
-nvto:PROPOSED_isPantomimeOf owl:inverseOf nvto:PROPOSED_hasPantomime ;
+nvto:isPantomimeOf owl:inverseOf nvto:hasPantomime ;
                rdfs:subPropertyOf nvto:isContributorOf ;
                rdfs:comment "Invers von 'hat Pantomime/Pantomimin'."@de ;
                rdfs:comment "Inverse of 'has pantomime'."@en ;
@@ -1290,7 +1335,7 @@ nvto:isPlaceOfOriginOf owl:inverseOf nvto:hasPlaceOfOrigin ;
                       rdfs:label "ist Ursprungsort von"@de ;
                       rdfs:label "is place of origin of"@en .
 
-nvto:PROPOSED_isPlaywrightOf owl:inverseOf nvto:PROPOSED_hasPlaywright ;
+nvto:isPlaywrightOf owl:inverseOf nvto:hasPlaywright ;
                            rdfs:subPropertyOf nvto:isContributorOf ;
                            rdfs:comment "Invers von 'hat Dramatiker*in'."@de ;
                            rdfs:comment "Inverse of 'has playwright'."@en ;
@@ -1325,10 +1370,17 @@ nvto:isProvenanceOf owl:inverseOf nvto:hasProvenance ;
                    rdfs:label "is provenance of"@en .
 
 nvto:isPublisherOf owl:inverseOf nvto:hasPublisher ;
-                   rdfs:comment "Invers von 'hat Verleger*in'."@de ;
+                   rdfs:subPropertyOf nvto:isContributorOf ;
+                   rdfs:comment "Invers von 'hat Herausgeber*in'."@de ;
                    rdfs:comment "Inverse of 'has publisher'."@en ;
-                   rdfs:label "ist Verleger*in von"@de ;
+                   rdfs:label "ist Herausgeber*in von"@de ;
                    rdfs:label "is publisher of"@en .
+
+nvto:isPublishingCompanyOf owl:inverseOf nvto:hasPublishingCompany ;
+                           rdfs:comment "Invers von 'hat Verlag'."@de ;
+                           rdfs:comment "Inverse of 'has publisher'."@en ;
+                           rdfs:label "ist Verlag von"@de ;
+                           rdfs:label "is publisher of"@en .
 
 nvto:isPublishingPlaceOf owl:inverseOf nvto:hasPublishingPlace ;
                          rdfs:subPropertyOf nvto:isRelatedPlaceOf ;
@@ -1337,11 +1389,18 @@ nvto:isPublishingPlaceOf owl:inverseOf nvto:hasPublishingPlace ;
                          rdfs:label "ist Verlagsort von"@de ;
                          rdfs:label "is publishing place of"@en .
 
+nvto:isPuppetBuilderOf owl:inverseOf nvto:hasPuppetBuilder ;
+                      rdfs:subPropertyOf nvto:isContributorOf ;
+                      rdfs:comment "Invers von 'hat Puppenbauer*in'."@de ;
+                      rdfs:comment "Inverse of 'has puppet builder'."@en ;
+                      rdfs:label "ist Puppenbauer*in von"@de ;
+                      rdfs:label "is puppet builder of"@en .
+
 nvto:isPuppetDesignerOf owl:inverseOf nvto:hasPuppetDesigner ;
                        rdfs:subPropertyOf nvto:isContributorOf ;
-                       rdfs:comment "Invers von 'PRPLABEL hat Puppenmacher*in'."@de ;
+                       rdfs:comment "Invers von 'hat Puppengestalter*in'."@de ;
                        rdfs:comment "Inverse of 'has puppet designer'."@en ;
-                       rdfs:label "PRPLABEL ist Puppenmacher*in von"@de ;
+                       rdfs:label "ist Puppengestalter*in von"@de ;
                        rdfs:label "is puppet designer of"@en .
 
 nvto:isRecordistOf owl:inverseOf nvto:hasRecordist ;
@@ -1354,13 +1413,13 @@ nvto:isRecordistOf owl:inverseOf nvto:hasRecordist ;
 nvto:isRelatedPlaceOf owl:inverseOf nvto:hasRelatedPlace ;
                        rdfs:comment "Invers von 'hat Bezug zu Ort'."@de ;
                        rdfs:comment "Inverse of 'has related place'."@en ;
-                       rdfs:label "PRPLABEL ist Bezug zu Ort von"@de ;
+                       rdfs:label "ist Ort, der in Verbindung steht mit"@de ;
                        rdfs:label "is related place of"@en .
 
 nvto:isRelatedWebsiteOf owl:inverseOf nvto:hasRelatedWebsite ;
                        rdfs:comment "Invers von 'hat Bezug zu Webseite'."@de ;
                        rdfs:comment "Inverse of 'has related website'."@en ;
-                       rdfs:label "PRPLABEL ist Bezug zu Webseite von"@de ;
+                       rdfs:label "ist Website, die in Verbindung steht mit"@de ;
                        rdfs:label "is related website of"@en .
 
 nvto:isResidenceOf owl:inverseOf nvto:hasResidence ;
@@ -1442,11 +1501,11 @@ nvto:isStageManagerOf owl:inverseOf nvto:hasStageManager ;
                       rdfs:label "ist Inspizient*in von"@de ;
                       rdfs:label "is stage manager of"@en .
 
-nvto:isSurtitleAuthorOf owl:inverseOf nvto:hasSurtitleAuthor ;
+nvto:isSurtitleCreatorOf owl:inverseOf nvto:hasSurtitleCreator ;
                        rdfs:subPropertyOf nvto:isContributorOf ;
-                       rdfs:comment "Invers von 'PRPLABEL hat Übertitel Schöpfer*in'."@de ;
+                       rdfs:comment "Invers von 'hat Übertitel Schöpfer*in'."@de ;
                        rdfs:comment "Inverse of 'has surtitle creator'."@en ;
-                       rdfs:label "PRPLABEL ist Übertitel Schöpfer*in von"@de ;
+                       rdfs:label "ist Übertitel Schöpfer*in von"@de ;
                        rdfs:label "is surtitle creator of"@en .
 
 nvto:isTechnicianOf owl:inverseOf nvto:hasTechnician ;
@@ -1456,11 +1515,11 @@ nvto:isTechnicianOf owl:inverseOf nvto:hasTechnician ;
                    rdfs:label "ist Techniker*in von"@de ;
                    rdfs:label "is technician of"@en .
 
-nvto:isTimeOfOccurenceOf owl:inverseOf nvto:hasTimeOfOccurence ;
-                        rdfs:comment "Invers von 'ereignete sich zu Zeitpunkt'."@de ;
+nvto:isTimeOfOccurrenceOf owl:inverseOf nvto:hasTimeOfOccurrence ;
+                        rdfs:comment "Invers von 'ereignet sich zu Zeitpunkt'."@de ;
                         rdfs:comment "Inverse of 'occurred at time'."@en ;
                         rdfs:label "ist Zeitpunkt des Ereignisses von"@de ;
-                        rdfs:label "is time of occurence of"@en .
+                        rdfs:label "is time of occurrence of"@en .
 
 nvto:isTranslatorOf owl:inverseOf nvto:hasTranslator ;
                    rdfs:subPropertyOf nvto:isContributorOf ;
@@ -1489,14 +1548,14 @@ nvto:isVideoEditorOf owl:inverseOf nvto:hasVideoEditor ;
                    rdfs:label "ist Videoeditor*in von"@de ;
                    rdfs:label "is video editor of"@en .
 
-nvto:wasCreatedAtTime rdf:type owl:DatatypeProperty ;
+nvto:isCreatedAtTime rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf nvto:hasDate ;
                      skos:definition "Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource kreiert wurde."@de ;
                      skos:definition "Describes a singular date/point in time at which a resource was created."@en ;
                      rdfs:label "wurde zu Zeitpunkt kreiert"@de ;
                      rdfs:label "was created at time"@en .
 
-nvto:wasIssuedAtTime rdf:type owl:DatatypeProperty ;
+nvto:isIssuedAtTime rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf nvto:hasDate ;
                      skos:definition "Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource ausgegeben wurde ."@de ;
                      skos:definition "Describes a singular date/point in time at which a resource was issued."@en ;

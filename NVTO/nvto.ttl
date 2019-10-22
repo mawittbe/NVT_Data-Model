@@ -203,49 +203,68 @@ nvto:TimeSpan rdf:type owl:Class ;
 
 ## PROPERTIES
 
-nvto:beginsAtTime rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf nvto:hasDate ;
-                  rdfs:domain nvto:TimeSpan ;
-                  skos:definition "Beschreibt den Startzeitpunkt einer Zeitspanne."@de ;
-                  skos:definition "Describes the begin date/point in time of a time span."@en ;
-                  rdfs:label "beginnt zu Zeitpunkt"@de ;
-                  rdfs:label "begins at time"@en .
+## REFERENCES
 
-nvto:containsAudibleReferenceTo rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf nvto:containsAudioVisualReferenceTo ;
+nvto:hasAudibleReferenceTo rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf nvto:hasAudioVisualReferenceTo ;
                                 skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält."@de ;
-                                skos:definition "Connects a resource to another resource it contains an audible reference to."@en ;
+                                skos:definition "Connects a resource to another resource it has an audible reference to."@en ;
                                 rdfs:label "beinhaltet hörbare Referenz zu"@de ;
-                                rdfs:label "contains audible reference to"@en .
+                                rdfs:label "has audible reference to"@en .
 
-nvto:containsAudioVisualReferenceTo rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf nvto:containsReferenceTo ;
+nvto:hasAudioVisualReferenceTo rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf nvto:hasReferenceTo ;
                                     skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine audiovisuelle Referenz enthält."@de ;
-                                    skos:definition "Connects a resource to another resource it contains an audiovisual reference to."@en ;
+                                    skos:definition "Connects a resource to another resource it has an audiovisual reference to."@en ;
                                     rdfs:label "beinhaltet audiovisuelle Referenz zu"@de ;
-                                    rdfs:label "contains audiovisual reference to"@en .
+                                    rdfs:label "has audiovisual reference to"@en .
 
-nvto:containsReferenceTo rdf:type owl:ObjectProperty ;
+nvto:hasInfluenceOn rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf nvto:hasReferenceTo ;
+                            skos:definition "Verbindet eine Ressource mit einer anderen Ressource, die sie beeinflusst hat."@de ;
+                            skos:definition "Connects a resource to another resource that it influenced."@en ;
+                            rdfs:label "hat beeinflusst"@de ;
+                            rdfs:label "has influence on"@en .
+
+nvto:hasRecordingOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf nvto:hasReferenceTo ;
+                    rdfs:domain nvto:InformationObject ;
+                    rdfs:range nvto:Event ;
+                    skos:definition "Verbindet eine Ressource mit einer anderen Ressource, von der sie eine Aufnahme enthält."@de ;
+                    skos:definition "Connects an information object to an event that it recorded."@en ;
+                    rdfs:label "hat aufgenommen"@de ;
+                    rdfs:label "has recording of"@en .
+
+nvto:hasReferenceTo rdf:type owl:ObjectProperty ;
                          skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine Referenz enthält."@de ;
-                         skos:definition "Connects a resource to another resource it contains any kind of reference to."@en ;
+                         skos:definition "Connects a resource to another resource it has any kind of reference to."@en ;
                          skos:scopeNote "Eine Referenz kann in der Aufnahme oder als Beschriftung vorkommen. Wenn die Art der Referenz gegeben ist, sollte eine der Untereigenschaften dieser Eigenschaft verwendet werden."@de ;
                          skos:scopeNote "A reference can occur in the recording or as labeling. In case the type of reference is detailed, one of the subproperties of this property should be used."@en ;
                          rdfs:label "beinhaltet Referenz zu"@de ;
-                         rdfs:label "contains reference to"@en .
+                         rdfs:label "has reference to"@en .
 
-nvto:containsTextualReferenceTo rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf nvto:containsReferenceTo ;
+nvto:hasTextualReferenceTo rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf nvto:hasReferenceTo ;
                                 skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine textuelle Referenz enthält."@de ;
-                                skos:definition "Connects a resource to another resource it contains a textual reference to."@en ;
+                                skos:definition "Connects a resource to another resource it has a textual reference to."@en ;
                                 rdfs:label "beinhaltet textuelle Referenz zu"@de ;
-                                rdfs:label "contains textual reference to"@en .
+                                rdfs:label "has textual reference to"@en .
 
-nvto:containsVisualReferenceTo rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf nvto:containsAudioVisualReferenceTo ;
+nvto:hasVisualReferenceTo rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf nvto:hasAudioVisualReferenceTo ;
                                skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine visuelle Referenz enthält."@de ;
-                               skos:definition "Connects a resource to another resource it contains a visual reference to."@en ;
+                               skos:definition "Connects a resource to another resource it has a visual reference to."@en ;
                                rdfs:label "beinhaltet visuelle Referenz zu"@de ;
-                               rdfs:label "contains visual reference to"@en .
+                               rdfs:label "has visual reference to"@en .
+
+
+nvto:beginsAtTime rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf nvto:hasDate ;
+                 rdfs:domain nvto:TimeSpan ;
+                 skos:definition "Beschreibt den Startzeitpunkt einer Zeitspanne."@de ;
+                 skos:definition "Describes the begin date/point in time of a time span."@en ;
+                 rdfs:label "beginnt zu Zeitpunkt"@de ;
+                 rdfs:label "begins at time"@en .
 
 nvto:endsAtTime rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf nvto:hasDate ;
@@ -544,13 +563,6 @@ nvto:hasIllustrator rdf:type owl:ObjectProperty ;
                     skos:definition "Connects a resource to an agent who contributed to the resource as illustrator."@en ;
                     rdfs:label "hat Illustrator*in"@de ;
                     rdfs:label "has illustrator"@en .
-
-nvto:hasInfluenceOn rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf nvto:containsReferenceTo ;
-                            skos:definition "Verbindet eine Ressource mit einer anderen Ressource, die sie beeinflusst hat."@de ;
-                            skos:definition "Connects a resource with another resource that it influenced."@en ;
-                            rdfs:label "hat beeinflusst"@de ;
-                            rdfs:label "has influence on"@en .
 
 nvto:hasInformationCarrier rdf:type owl:ObjectProperty ;
                            rdfs:domain nvto:InformationObject ;
@@ -990,37 +1002,44 @@ nvto:hasSuccessor rdf:type owl:ObjectProperty ;
                   rdfs:label "hat Nachfolger"@de ;
                   rdfs:label "has successor"@en .
 
-nvto:isAudiblyReferencedIn owl:inverseOf nvto:containsAudibleReferenceTo ;
+nvto:isAudiblyReferencedIn owl:inverseOf nvto:hasAudibleReferenceTo ;
                             rdfs:subPropertyOf nvto:isAudiovisuallyReferencedIn ;
                             rdfs:comment "Invers von 'beinhaltet hörbare Referenz zu'."@de ;
-                            rdfs:comment "Inverse of 'contains audible reference to'."@en ;
+                            rdfs:comment "Inverse of 'has audible reference to'."@en ;
                             rdfs:label "ist hörbar referenziert in"@de ;
                             rdfs:label "is audibly referenced in"@en .
 
-nvto:isAudiovisuallyReferencedIn owl:inverseOf nvto:containsAudioVisualReferenceTo ;
+nvto:isAudiovisuallyReferencedIn owl:inverseOf nvto:hasAudioVisualReferenceTo ;
                                 rdfs:subPropertyOf nvto:isReferencedIn ;
                                 rdfs:comment "Invers von 'beinhaltet audiovisuelle Referenz zu'."@de ;
-                                rdfs:comment "Inverse of 'contains audiovisual reference to'."@en ;
+                                rdfs:comment "Inverse of 'has audiovisual reference to'."@en ;
                                 rdfs:label "ist audiovisuell referenziert in"@de ;
                                 rdfs:label "is audiovisually referenced in"@en .
 
-nvto:isReferencedIn owl:inverseOf nvto:containsReferenceTo ;
+nvto:isRecordedIn owl:inverseOf nvto:hasRecordingOf ;
+                             rdfs:subPropertyOf nvto:isReferencedIn ;
+                             skos:definiiton "Invers von 'hat Aufnahme von'."@de ;
+                             skos:definition "Inverse of 'has recording of'."@en ;
+                             rdfs:label "ist aufgenommen von"@de ;
+                             rdfs:label "is recorded in"@en .
+
+nvto:isReferencedIn owl:inverseOf nvto:hasReferenceTo ;
                     rdfs:comment "Invers von 'beinhaltet Referenz zu'."@de ;
-                    rdfs:comment "Inverse of 'contains reference to'."@en ;
+                    rdfs:comment "Inverse of 'has reference to'."@en ;
                     rdfs:label "ist referenziert in"@de ;
                     rdfs:label "is referenced in"@en .
 
-nvto:isTextuallyReferencedIn owl:inverseOf nvto:containsTextualReferenceTo ;
+nvto:isTextuallyReferencedIn owl:inverseOf nvto:hasTextualReferenceTo ;
                             rdfs:subPropertyOf nvto:isReferencedIn ;
                             rdfs:comment "Invers von 'beinhaltet textuelle Referenz zu'."@de ;
-                            rdfs:comment "Inverse of 'contains textual reference to'."@en ;
+                            rdfs:comment "Inverse of 'has textual reference to'."@en ;
                             rdfs:label "ist textuell referenziert in"@de ;
                             rdfs:label "is textually referenced in"@en .
 
-nvto:isVisuallyReferencedIn owl:inverseOf nvto:containsVisualReferenceTo ;
+nvto:isVisuallyReferencedIn owl:inverseOf nvto:hasVisualReferenceTo ;
                              rdfs:subPropertyOf nvto:isAudiovisuallyReferencedIn ;
                              rdfs:comment "Invers von 'beinhaltet visuelle Referenz zu'."@de ;
-                             rdfs:comment "Inverse of 'contains visual reference to'."@en ;
+                             rdfs:comment "Inverse of 'has visual reference to'."@en ;
                              rdfs:label "ist visuell referenziert in"@de ;
                              rdfs:label "is visually referenced in"@en .
 
@@ -1216,8 +1235,8 @@ nvto:isInfluencedBy owl:inverseOf nvto:hasInfluenceOn ;
                              rdfs:subPropertyOf nvto:isReferencedIn ;
                              skos:definiiton "Invers von 'hat beeinflusst'."@de ;
                              skos:definition "Inverse of 'has influence on'."@en ;
-                             rdfs:label "beeinflusst von"@de ;
-                             rdfs:label "influenced by"@en .
+                             rdfs:label "ist beeinflusst von"@de ;
+                             rdfs:label "is influenced by"@en .
 
 nvto:isInformationCarrierOf owl:inverseOf nvto:hasInformationCarrier ;
                             rdfs:comment "Invers von 'hat Informationsträger'."@de ;

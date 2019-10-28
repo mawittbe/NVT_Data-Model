@@ -1,0 +1,6292 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "de", "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://lod.iti-germany.de/schema/nvto" ],
+    "title" : {
+      "de" : "Ontologie für nonverbales Theater",
+      "en" : "Non-Verbal Theatre Ontology"
+    },
+    "iri" : "http://ld.iti-germany.de/schema/nvto/",
+    "labels" : {
+      "de" : "Ontologie für nonverbales Theater",
+      "en" : "Non-Verbal Theatre Ontology"
+    },
+    "other" : {
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Maxim Wittenbecher",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Jonas Pitz",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/deed.en",
+        "type" : "iri"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "de",
+        "value" : "Mediathek für Tanz und Theater / ITI Deutschland",
+        "type" : "label"
+      }, {
+        "identifier" : "publisher",
+        "language" : "en",
+        "value" : "Media Library for Dance and Theatre / ITI Germany",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "de",
+        "value" : "Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts \"NONVERBALES THEATER\n                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS).",
+        "type" : "label"
+      }, {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the \"NONVERBALES THEATER\n                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS).",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Non-Verbal Theatre Ontology",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "de",
+        "value" : "Ontologie für nonverbales Theater",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "168",
+    "type" : "owl:Class"
+  }, {
+    "id" : "202",
+    "type" : "owl:Class"
+  }, {
+    "id" : "215",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "221",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "201",
+    "type" : "owl:Class"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "225",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "226",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "244",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "246",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "249",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/FilmProduction",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Klasse umfasst Filmnproduktionen, die aufgenommen wurden.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises film productions that were or are performed in performing arts events.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "Example",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Example",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Performing Arts Produktion",
+      "IRI-based" : "FilmProduction",
+      "en" : "Performing Arts Production"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/City",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Klasse umfasst Städte abhängig von Zeit und/oder Geopolitik.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises cities dependent on time and/or geopolitics.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "Berlin, Westberlin, Ostberlin",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Berlin, West Berlin, East Berlin",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Stadt",
+      "IRI-based" : "City",
+      "en" : "City"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises locations that were or are used for performing arts.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Klasse umfasst Orte, die für darstellende Künste genutzt werden oder wurden.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "Volksbühne, Pratergarten",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Volksbühne, Pratergarten",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Performing Arts Aufführungsort",
+      "IRI-based" : "PerformingArtsLocation",
+      "en" : "Performing Arts Location"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/Organization",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Klasse umfasst alle Organisationen.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises all organizations",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "Theater der Welt, Sony BMG",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Theater der Welt, Sony BMG",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Organisation",
+      "IRI-based" : "Organization",
+      "en" : "Organization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "55",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/Agent",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises all agents such as persons or institutions.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Klasse umfasst alle Agenzien wie etwa Personen und Institutionen.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Agens",
+      "IRI-based" : "Agent",
+      "en" : "Agent"
+    },
+    "subClasses" : [ "126", "55", "127" ],
+    "attributes" : [ "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/Festival",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises all festivals.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Klasse umfasst alle Festivals.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Used specifically for festivals in the realm of performing arts.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "de",
+        "value" : "Speziell für Festivals im Bereich der darstellenden Künste genutzt.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "The biannual international theatre festival 'Theater der Welt'",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "Das zweijährliche internationale Theaterfestival 'Theater der Welt'",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Festival",
+      "IRI-based" : "Festival",
+      "en" : "Festival"
+    },
+    "attributes" : [ "external" ],
+    "id" : "168",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/DigitalObject",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Die digitale Repräsentation des Inhalts eines Mediums. Digitaler Informationsträger.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The digital representation of the contents of a medium. Digital information carrier.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "Eine spezifische digitale Datei mit Namen IMG-001.tif, VID-001.avi",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "A specific digital file with name IMG-001.tif, VID-001.avi",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Digitales Objekt",
+      "IRI-based" : "DigitalObject",
+      "en" : "Digital Object"
+    },
+    "attributes" : [ "external" ],
+    "id" : "202"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "215",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "216",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "217",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "218",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "219",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "220",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "221",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "222",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises ensembles and similar groups in the realm of performing arts.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Klasse umfasst alle Ensembles, Companies und ähnliche Gruppen im Bereich der darstellenden Künste.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Performing Arts Gruppe",
+      "IRI-based" : "PerformingArtsGroup",
+      "en" : "Performing Arts Group"
+    },
+    "attributes" : [ "external" ],
+    "id" : "126",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/PhysicalObject",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Die physische Repräsentation des Inhalts eines Mediums. Physischer Informationsträger.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The physical representation of the contents of a medium. Physical information carrier. ",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Tape with recording of performance X, programme booklet Y",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "Videokassette mit Aufnahme von Aufführung X, Programmheft Y",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Physisches Objekt",
+      "IRI-based" : "PhysicalObject",
+      "en" : "Physical Object"
+    },
+    "attributes" : [ "external" ],
+    "id" : "201"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "224",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "209",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "225",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "166",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "207",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "205",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "114",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/Place",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises all places.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Klasse umfasst alle Orte.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Ort",
+      "IRI-based" : "Place",
+      "en" : "Place"
+    },
+    "subClasses" : [ "14", "20", "226" ],
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/Event",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises all events.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Klasse umfasst alle Ereignisse.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Used specifically for events in the realm of performing arts.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "de",
+        "value" : "Speziell für Ereignisse im Bereich der darstellenden Künste genutzt.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "Eine Aufführung von 'Hamlet', ein Workshop zu einer speziellen Schauspieltechnik, eine Ausstellung über eine/n Darsteller/in",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "A performance of 'Hamlet', a workshop regarding a specific acting technique, an exhibition about an actor/actress",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Ereignis",
+      "IRI-based" : "Event",
+      "en" : "Event"
+    },
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/Country",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises countries dependent on time and/or geopolitics.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Klasse umfasst Länder abhängig von Zeit und/oder Geopolitik.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "FRG, West Germany, GDR",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "Französische Republik, Westdeutschland, DDR",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Land",
+      "IRI-based" : "Country",
+      "en" : "Country"
+    },
+    "attributes" : [ "external" ],
+    "id" : "226",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/Person",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Klasse umfasst alle Personen",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises all persons",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Eberhard Kube, Conny Hege",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "Eberhard Kube, Conny Hege",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Person",
+      "IRI-based" : "Person",
+      "en" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "127",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises productions that were or are performed in performing arts events.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Klasse umfasst Produktionen der darstellenden Kunst, die aufgeführt werden oder wurden.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Blaubart, Hamlet",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "Blaubart, Hamlet",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Performing Arts Produktion",
+      "IRI-based" : "PerformingArtsProduction",
+      "en" : "Performing Arts Production"
+    },
+    "attributes" : [ "external" ],
+    "id" : "125",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "244",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/TimeSpan",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises timespans of any length.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Klasse umfasst Zeitspannen jeglicher Länge.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "1979-1989, 00:00:00:00-00:52:23:17",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "1979-1989, 00:00:00:00-00:52:23:17",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Zeitspanne",
+      "IRI-based" : "TimeSpan",
+      "en" : "Timespan"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "97",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/Collection",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Klasse umfasst (benannte) Sammlungen von Ressourcen in willkürlicher Reihenfolge.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises (named) resource collections in arbitrary order.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "COL",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "COL",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Sammlung",
+      "IRI-based" : "Collection",
+      "en" : "Collection"
+    },
+    "attributes" : [ "external" ],
+    "id" : "246"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/CreativeConcept",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises all creative concepts.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Klasse umfasst alle kreativen Konzepte.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "Produktion der darstellenden Künste; Filmproduktion; Festival",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "performing arts production; film production, festival",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "de",
+        "value" : "Vergleichbar mit Expressionen aus FRBR. Diese Klasse dient vor allem als Oberklasse für genauer definierte Konzepte.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Comparable to FRBR Expressions. This class primarily serves as top class for more specifically defined concepts.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Kreatives Konzept",
+      "IRI-based" : "CreativeConcept",
+      "en" : "Creative Concept"
+    },
+    "subClasses" : [ "10", "125", "168" ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/InformationObject",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Conceptual representation of the contents of a medium captured by a physical or digital (archival) object. The same information object can be captured in multiple pyhsical or digital objects (e.g. a magazine edition). Also one physical or digital object can carry multiple information objects (e.g. multiple movies in a single video tape).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Konzeptuelle Repräsentation des Inhalts eines Mediums, erfasst von einem physischen oder digitalen (Archiv-)Objekt. Dasselbe Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel einer Ausgabe in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann außerdem mehere Informationsobjekte tragen (z.B. mehrere Videos auf einer einzelnen Videokassette)",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Recording of Performance X, Contents of programme booklet Y",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "Aufnahme von Aufführung X, Inhalt von Programmheft Y",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Informationsobjekt",
+      "IRI-based" : "InformationObject",
+      "en" : "Information Object"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/Series",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises all series.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Diese Klasse umfasst alle Serien.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "SRS",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "SRS",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Serie",
+      "IRI-based" : "Series",
+      "en" : "Series"
+    },
+    "attributes" : [ "external" ],
+    "id" : "249"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "163",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "165",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "169",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "170",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "200",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "203",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "204",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "206",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "208",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "212",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "175",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "213",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "179",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "180",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "223",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "154",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "188",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "227",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "191",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "229",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "230",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "146",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "194",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "196",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "197",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "198",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "232",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "233",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "234",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "235",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "237",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "238",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "137",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "171",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "172",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "173",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "174",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "240",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "176",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "178",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "177",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "231",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "228",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "181",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "241",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "186",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "242",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "187",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "243",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "189",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "190",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "239",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "245",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "210",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "247",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "192",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "193",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "248",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "250",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "251",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "252",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "199",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasRelatedWebsite",
+    "inverse" : "2",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet mit einer Webseite, die auf nicht näher bestimmte Weise mit einem Agens oder einer Ressource in Verbindung steht.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects to a related website of an agent or a resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Bezug zu Webseite",
+      "IRI-based" : "hasRelatedWebsite",
+      "en" : "has related website"
+    },
+    "domain" : "1",
+    "subproperty" : [ "3" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isClownOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Clown*in von",
+      "IRI-based" : "isClownOf",
+      "en" : "is clown of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Clown*in'.",
+      "en" : "Inverse of 'has clown'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isRecordedIn",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Inverse of 'has recording of'.",
+        "type" : "label"
+      } ],
+      "definiiton" : [ {
+        "identifier" : "definiiton",
+        "language" : "de",
+        "value" : "Invers von 'hat Aufnahme von'.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "ist aufgenommen von",
+      "IRI-based" : "isRecordedIn",
+      "en" : "is recorded in"
+    },
+    "superproperty" : [ "7" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasSinger",
+    "inverse" : "9",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as singer.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Sänger*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Sänger*in",
+      "IRI-based" : "hasSinger",
+      "en" : "has singer"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isArtisticDirectorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist künstlerische*r Leiter*in von",
+      "IRI-based" : "isArtisticDirectorOf",
+      "en" : "is artistic director of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat künstlerische*n Leiter*in'.",
+      "en" : "Inverse of 'has artistic director'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isProgrammeDirectorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Programmdirektor*in von",
+      "IRI-based" : "isProgrammeDirectorOf",
+      "en" : "is programme director of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Programmdirektor*in'.",
+      "en" : "Inverse of 'has programme director'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isRightsHolderOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Rechteinhaber von",
+      "IRI-based" : "isRightsHolderOf",
+      "en" : "is rights holder of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Rechteinhaber'.",
+      "en" : "Inverse of 'has rights holder'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasEditor",
+    "inverse" : "18",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as editor.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Redakteur*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Redakteur*in",
+      "IRI-based" : "hasEditor",
+      "en" : "has editor"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasRecordingOf",
+    "inverse" : "6",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "23",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einer anderen Ressource, von der sie eine Aufnahme enthält.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects an information object to an event that it recorded.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat aufgenommen",
+      "IRI-based" : "hasRecordingOf",
+      "en" : "has recording of"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "22",
+    "attributes" : [ "object", "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasPlaywright",
+    "inverse" : "26",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Dramatiker*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as playwright.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Dramatiker*in",
+      "IRI-based" : "hasPlaywright",
+      "en" : "has playwright"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/beginsAtTime",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "29",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt den Startzeitpunkt einer Zeitspanne.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the begin date/point in time of a time span.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "beginnt zu Zeitpunkt",
+      "IRI-based" : "beginsAtTime",
+      "en" : "begins at time"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isRelatedPlaceOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Ort, der in Verbindung steht mit",
+      "IRI-based" : "isRelatedPlaceOf",
+      "en" : "is related place of"
+    },
+    "domain" : "1",
+    "subproperty" : [ "31", "32", "33", "34" ],
+    "comment" : {
+      "de" : "Invers von 'hat Bezug zu Ort'.",
+      "en" : "Inverse of 'has related place'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isMakeUpArtistOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Visagist*in von",
+      "IRI-based" : "isMakeUpArtistOf",
+      "en" : "is make up artist of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Visagist*in'.",
+      "en" : "Inverse of 'has make up artist'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasLabelingBack",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "37",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt die Beschriftung der Rückseite einer Ressource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the labeling on the back of a resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Beschriftung hinten",
+      "IRI-based" : "hasLabelingBack",
+      "en" : "has labeling back"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasVideoEditor",
+    "inverse" : "39",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent responsible for its video editing.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Videoeditor*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Videoeditor*in",
+      "IRI-based" : "hasVideoEditor",
+      "en" : "video editor"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasCreator",
+    "inverse" : "41",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as creator.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Schöpfer*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Schöpfer*in",
+      "IRI-based" : "hasCreator",
+      "en" : "has creator"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isSeasonOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Spielzeit von",
+      "IRI-based" : "isSeasonOf",
+      "en" : "is season of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Spielzeit'.",
+      "en" : "Inverse of 'has season'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasPublishingCompany",
+    "inverse" : "44",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Verbindet die Ressource mit einem Agens, derals Verlag an der Ressource mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects the resource to an agent who contributed to the resource as publishing company.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Verlag",
+      "IRI-based" : "hasPublishingCompany",
+      "en" : "has publishing company"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isCostumeDesigner",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Kostümdesigner*in von",
+      "IRI-based" : "isCostumeDesigner",
+      "en" : "is costume designer of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Kostümgestalter*in'.",
+      "en" : "Inverse of 'has costume designer'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isIssuedAtTime",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "47",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource ausgegeben wurde .",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes a singular date/point in time at which a resource was issued.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "wurde zu Zeitpunkt ausgegeben",
+      "IRI-based" : "isIssuedAtTime",
+      "en" : "was issued at time"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence",
+    "inverse" : "33",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "15",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet ein Ereignis mit einem Ort, an dem es sich ereignet.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects an event to the place it happened at.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "ereignet sich an Ort",
+      "IRI-based" : "hasPlaceOfOccurrence",
+      "en" : "has place of Occurrence"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "23",
+    "attributes" : [ "object", "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isSourceOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Quelle von",
+      "IRI-based" : "isSourceOf",
+      "en" : "is source of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Quelle'.",
+      "en" : "Inverse of 'has source'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isFirstPerformanceVersionOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Inverse of 'has first performance version'.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Invers von 'hat Erstaufführungsversion'.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "ist Erstaufführungsversion von",
+      "IRI-based" : "isFirstPerformanceVersionOf",
+      "en" : "is first performance version of"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isDigitalVersionOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist digitale Version von",
+      "IRI-based" : "isDigitalVersionOf",
+      "en" : "is digital version of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat digitale Version'.",
+      "en" : "has digital version'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasProvenance",
+    "inverse" : "54",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt die Herkunft oder verbindet mit der Herkunft einer Ressource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes or connects to the provenance of a resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Herkunft",
+      "IRI-based" : "hasProvenance",
+      "en" : "has provenance"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasMakeUpArtist",
+    "inverse" : "35",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Visagist*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as make up artist.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Visagist*in",
+      "IRI-based" : "hasMakeUpArtist",
+      "en" : "has make up artist"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isDramaturgeOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Dramaturg*in von",
+      "IRI-based" : "isDramaturgeOf",
+      "en" : "is dramaturge of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Dramaturg*in'.",
+      "en" : "Inverse of 'has dramaturge'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasDateOfBirth",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "60",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the date of birth of an agent.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt das Geburtsdatum eines Agens.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Geburtsdatum",
+      "IRI-based" : "hasDateOfBirth",
+      "en" : "has date of birth"
+    },
+    "domain" : "56",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasIssn",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the ISSN of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt die ISSN einer Ressource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat ISSN",
+      "IRI-based" : "hasIssn",
+      "en" : "has ISSN"
+    },
+    "superproperty" : [ "62" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isVideoEditorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Videoeditor*in von",
+      "IRI-based" : "isVideoEditorOf",
+      "en" : "is video editor of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Videoeditor*in'.",
+      "en" : "Inverse of 'has video editor'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasDateOfDeath",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "64",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt das Todesdatum eines Agens.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the date of death of an agent.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Todesdatum",
+      "IRI-based" : "hasDateOfDeath",
+      "en" : "has date of death"
+    },
+    "domain" : "56",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasPantomime",
+    "inverse" : "66",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Pantomime/Pantomimin mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as pantomime.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Pantomime/Pantomimin",
+      "IRI-based" : "hasPantomime",
+      "en" : "has pantomime"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasCondition",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "68",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes or connects to the condition of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt oder verbindet mit dem Zustand einer Ressource.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "de",
+        "value" : "Z.B. der Zustand eines physischen Objekts oder einer digitalen Datei.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "E.g. the condition of a physical object or a digital file.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Zustand",
+      "IRI-based" : "hasCondition",
+      "en" : "has condition"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasMusician",
+    "inverse" : "70",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as musician.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Musiker*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Musiker*in",
+      "IRI-based" : "hasMusician",
+      "en" : "has musician"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasResidence",
+    "inverse" : "31",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "15",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet einen Agens mit seiner Residenz.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects an agent to its place of residency.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Residenz",
+      "IRI-based" : "hasResidence",
+      "en" : "has residence"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "56",
+    "attributes" : [ "object", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isHomepageOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Homepage von",
+      "IRI-based" : "isHomepageOf",
+      "en" : "is homepage of"
+    },
+    "superproperty" : [ "2" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Homepage'.",
+      "en" : "Inverse of 'has homepage'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isFirstLocalizedEditionOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist übersetzte Erstausgabe von",
+      "IRI-based" : "isFirstLocalizedEditionOf",
+      "en" : "is first localized edition of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat übersetzte Erstausgabe'.",
+      "en" : "Inverse of 'has first localized edition'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isActorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Schauspieler*in von",
+      "IRI-based" : "isActorOf",
+      "en" : "is actor of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Schauspieler*in'.",
+      "en" : "Inverse of 'has actor'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasArtisticDirector",
+    "inverse" : "12",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als künstlerische*r Leiter*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as artistic director.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat künstlerische*n Leiter*in",
+      "IRI-based" : "hasArtisticDirector",
+      "en" : "has artistic director"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasRights",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "77",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes one or more rights statements of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Beschreibt einen oder mehrere rechtliche Aussagen einer Ressource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Rechte",
+      "IRI-based" : "hasRights",
+      "en" : "has rights"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasFormat",
+    "inverse" : "79",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes or connects to the format of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt oder verbindet mit dem Format einer Ressource.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "de",
+        "value" : "Z.B. das Format eines physischen Objekts oder einer digitalen Datei.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "E.g. the format of a physical object or a digital file.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Format",
+      "IRI-based" : "hasFormat",
+      "en" : "has format"
+    },
+    "domain" : "1",
+    "subproperty" : [ "80", "81" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo",
+    "inverse" : "83",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine audiovisuelle Referenz enthält.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to another resource it has an audiovisual reference to.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "beinhaltet audiovisuelle Referenz zu",
+      "IRI-based" : "hasAudioVisualReferenceTo",
+      "en" : "has audiovisual reference to"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "1",
+    "subproperty" : [ "84", "85" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasType",
+    "inverse" : "87",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes or connects to the type of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt oder verbindet mit dem Typ einer Ressource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Typ",
+      "IRI-based" : "hasType",
+      "en" : "has type"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasProgrammeDirector",
+    "inverse" : "13",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to a festival or event by curating or directing the programme of the event.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der durch Kuration oder Leitung des Programmes bei einem Festival mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Programmdirektor*in",
+      "IRI-based" : "hasProgrammeDirector",
+      "en" : "has programme director"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isReferencedIn",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist referenziert in",
+      "IRI-based" : "isReferencedIn",
+      "en" : "is referenced in"
+    },
+    "domain" : "1",
+    "subproperty" : [ "89", "83", "6", "90" ],
+    "comment" : {
+      "de" : "Invers von 'beinhaltet Referenz zu'.",
+      "en" : "Inverse of 'has reference to'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasDancer",
+    "inverse" : "92",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Tänzer*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as dancer.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Tänzer*in",
+      "IRI-based" : "hasDancer",
+      "en" : "has dancer"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isPlaywrightOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Dramatiker*in von",
+      "IRI-based" : "isPlaywrightOf",
+      "en" : "is playwright of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Dramatiker*in'.",
+      "en" : "Inverse of 'has playwright'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isTypeOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Typ von",
+      "IRI-based" : "isTypeOf",
+      "en" : "is type of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Typ'.",
+      "en" : "Inverse of 'has type'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasLayouter",
+    "inverse" : "94",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Layouter*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as layouter.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Layouter*in",
+      "IRI-based" : "hasLayouter",
+      "en" : "has layouter"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition",
+    "inverse" : "73",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes or connects to the first localized edition of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt oder verbindet mit der übersetzten Erstausgabe einer Ressource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat übersetzte Erstausgabe",
+      "IRI-based" : "hasFirstLocalizedEdition",
+      "en" : "has first localized edition"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasTableOfContents",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "97",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the table of contents of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt das Inhaltsverzeichnis einer Ressource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Inhaltsverzeichnis",
+      "IRI-based" : "hasTableOfContents",
+      "en" : "has table of contents"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasMediator",
+    "inverse" : "99",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Vermittler*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as mediator.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Vermittler*in",
+      "IRI-based" : "hasMediator",
+      "en" : "has mediator"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isVideoDesignerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Videodesigner*in von",
+      "IRI-based" : "isVideoDesignerOf",
+      "en" : "is video designer of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Videodesigner*in'.",
+      "en" : "Inverse of 'has video designer'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isPublisherOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Herausgeber*in von",
+      "IRI-based" : "isPublisherOf",
+      "en" : "is publisher of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Herausgeber*in'.",
+      "en" : "Inverse of 'has publisher'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasPlaceOfOrigin",
+    "inverse" : "32",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "15",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to the location it originated at.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit dem Ort, an dem sie ihren Ursprung hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Ursprung in Ort",
+      "IRI-based" : "hasPlaceOfOrigin",
+      "en" : "originated at place"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isVisuallyReferencedIn",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist visuell referenziert in",
+      "IRI-based" : "isVisuallyReferencedIn",
+      "en" : "is visually referenced in"
+    },
+    "superproperty" : [ "83" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'beinhaltet visuelle Referenz zu'.",
+      "en" : "Inverse of 'has visual reference to'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasMedium",
+    "inverse" : "104",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Beschreibt oder verbindet mit dem Medium einer Ressource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes or connects to the medium of a resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Medium",
+      "IRI-based" : "hasMedium",
+      "en" : "has medium"
+    },
+    "superproperty" : [ "78" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasAdaptor",
+    "inverse" : "106",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als (Text-)Bearbeiter*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as adaptor.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat (Text-)Bearbeiter*in",
+      "IRI-based" : "hasAdaptor",
+      "en" : "has adaptor"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isIdentifierOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Bezeichner von",
+      "IRI-based" : "isIdentifierOf",
+      "en" : "is identifier of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Bezeichner'.",
+      "en" : "Inverse of 'has identifier'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isInformationCarrierOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Informationsträger von",
+      "IRI-based" : "isInformationCarrierOf",
+      "en" : "is information carrier of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Informationsträger'.",
+      "en" : "Inverse of 'has information carrier'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isConceptOriginatorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Konzept Urheber*in von",
+      "IRI-based" : "isConceptOriginatorOf",
+      "en" : "is concept originator of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Konzept Urheber*in'.",
+      "en" : "Inverse of 'has concept originator'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasSuccessor",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt den Nachfolger oder verbindet mit dem Nachfolger einer Ressource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes or connects to the succeeding resource of a resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Nachfolger",
+      "IRI-based" : "hasSuccessor",
+      "en" : "has successor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Vorgänger'.",
+      "en" : "Inverse of 'has Predecessor'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasPhotoStudio",
+    "inverse" : "112",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes or connects a resource to a photo studio that contributed to its creation.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt ein Fotostudio oder verbindet eine Ressource mit einem Fotostudio, dass bei ihrer Kreierung beigetragen hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Fotostudio",
+      "IRI-based" : "hasPhotoStudio",
+      "en" : "has photo studio"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasLanguage",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "114",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the language associated to a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt die Sprache, die einer Ressource zugeordnet ist.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Sprache",
+      "IRI-based" : "hasLanguage",
+      "en" : "has language"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasReferenceTo",
+    "inverse" : "7",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to another resource it has any kind of reference to.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine Referenz enthält.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "de",
+        "value" : "Eine Referenz kann in der Aufnahme oder als Beschriftung vorkommen. Wenn die Art der Referenz gegeben ist, sollte eine der Untereigenschaften dieser Eigenschaft verwendet werden.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "A reference can occur in the recording or as labeling. In case the type of reference is detailed, one of the subproperties of this property should be used.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "beinhaltet Referenz zu",
+      "IRI-based" : "hasReferenceTo",
+      "en" : "has reference to"
+    },
+    "domain" : "1",
+    "subproperty" : [ "115", "21", "82", "116" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasPart",
+    "inverse" : "118",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to another resource which is a part of it.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einer anderen Ressource, die ein Teil von ihr ist.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Teil",
+      "IRI-based" : "hasPart",
+      "en" : "has part"
+    },
+    "domain" : "1",
+    "attributes" : [ "transitive", "object", "external" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isSingerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Sänger*in von",
+      "IRI-based" : "isSingerOf",
+      "en" : "is singer of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Sänger*in'.",
+      "en" : "Inverse of 'has singer'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isParticipantOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Teilnehmer*in von",
+      "IRI-based" : "isParticipantOf",
+      "en" : "is participant of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Teilnehmer*in'.",
+      "en" : "Inverse of 'has participant'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasLabelingFront",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "121",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt die Beschriftung der Vorderseite einer Ressource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the labeling on the front of a resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Beschriftung vorn",
+      "IRI-based" : "hasLabelingFront",
+      "en" : "has labeling front"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasAddress",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "123",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the address of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt die Adresse einer Ressource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Adresse",
+      "IRI-based" : "hasAddress",
+      "en" : "has address"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasRestagedVersion",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "125",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Produktion der darstellenden Künste mit ihrer Wiederaufnahme.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a performing arts production with its restaged version.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Wiederaufnahme",
+      "IRI-based" : "hasRestagedVersion",
+      "en" : "has restaged version"
+    },
+    "domain" : "125",
+    "attributes" : [ "object", "external" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasSetBuilder",
+    "inverse" : "129",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Bühnenbauer*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as set builder.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Bühnenbauer*in",
+      "IRI-based" : "hasSetBuilder",
+      "en" : "has set builder"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isCreatedAtTime",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "131",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource kreiert wurde.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes a singular date/point in time at which a resource was created.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "wurde zu Zeitpunkt kreiert",
+      "IRI-based" : "isCreatedAtTime",
+      "en" : "was created at time"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasVideoDesigner",
+    "inverse" : "100",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent responsible for its video design.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Videodesigner*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Videodesigner*in",
+      "IRI-based" : "hasVideoDesigner",
+      "en" : "video designer"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isPublishingCompanyOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Verlag von",
+      "IRI-based" : "isPublishingCompanyOf",
+      "en" : "is publisher of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Verlag'.",
+      "en" : "Inverse of 'has publisher'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isMediatorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Vermittler*in von",
+      "IRI-based" : "isMediatorOf",
+      "en" : "is mediator of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Vermittler*in'.",
+      "en" : "Inverse of 'has mediator'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner",
+    "inverse" : "134",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Puppengestalter*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as puppet designer.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Puppengestalter*in",
+      "IRI-based" : "hasPuppetDesigner",
+      "en" : "has puppet designer"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isContributorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Mitwirkende*r von",
+      "IRI-based" : "isContributorOf",
+      "en" : "is contributor of"
+    },
+    "domain" : "1",
+    "subproperty" : [ "135", "136", "100", "101", "94", "137", "4", "138", "139", "140", "58", "141", "142", "12", "143", "106", "144", "39", "109", "66", "13", "145", "146", "147", "41", "74", "129", "35", "70", "148", "92", "149", "150", "119", "151", "152", "26", "153", "154", "155", "156", "134", "157", "158", "45", "159", "18", "160" ],
+    "comment" : {
+      "de" : "Invers von 'hat Mitwirkende*in'.",
+      "en" : "Inverse of 'has contributor'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isMimeOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Mime/Mimin von",
+      "IRI-based" : "isMimeOf",
+      "en" : "is mime of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Mime/Mimin'.",
+      "en" : "Inverse of 'has mime'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasSurtitleCreator",
+    "inverse" : "138",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as author of surtitles.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Übertitel Schöpfer*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Übertitel Schöpfer*in",
+      "IRI-based" : "hasSurtitleCreator",
+      "en" : "has surtitle creator"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasChoreographer",
+    "inverse" : "146",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Choreograf*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as choreographer.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Choreograf*in",
+      "IRI-based" : "hasChoreographer",
+      "en" : "has choreographer"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasTranslator",
+    "inverse" : "158",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as translator.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Übersetzer*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Übersetzer*in",
+      "IRI-based" : "hasTranslator",
+      "en" : "has translator"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "163"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasSource",
+    "inverse" : "50",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt oder verbindet mit der Quelle einer Ressource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes or connects to the source of a resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Quelle",
+      "IRI-based" : "hasSource",
+      "en" : "has source"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "164"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasFirstName",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "166",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt den Vornamen eines Agens.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the first name of an agent.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Vorname",
+      "IRI-based" : "hasFirstName",
+      "en" : "has first name"
+    },
+    "domain" : "56",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "165"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasSeason",
+    "inverse" : "42",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "28",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Verbindet eine Produktion der darstellenden Künste mit der Spielzeit, in der die Produktion aufgeführt wird oder wurde.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "connects to the season in which a performing arts production was or is performed.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Spielzeit",
+      "IRI-based" : "hasSeason",
+      "en" : "has season"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "167"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasHomepage",
+    "inverse" : "72",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects to a homepage of an agent.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet mit der Homepage eines Agens.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Homepage",
+      "IRI-based" : "hasHomepage",
+      "en" : "has homepage"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasSoundDesigner",
+    "inverse" : "160",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as sound designer.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Tongestalter*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Tongestalter*in",
+      "IRI-based" : "hasSoundDesigner",
+      "en" : "has sound designer"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasClown",
+    "inverse" : "4",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Clown*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as clown.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Clown*in",
+      "IRI-based" : "hasClown",
+      "en" : "has clown"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "170"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isSetDesignerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Bühnenbildner*in von",
+      "IRI-based" : "isSetDesignerOf",
+      "en" : "is set designer of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Bühnenbildner*in'.",
+      "en" : "Inverse of 'has set designer'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isCreatorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Schöpfer*in von",
+      "IRI-based" : "isCreatorOf",
+      "en" : "is creator of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Schöpfer*in'.",
+      "en" : "Inverse of 'has creator'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasContributor",
+    "inverse" : "5",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "56",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der an der Ressource mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Mitwirkende*n",
+      "IRI-based" : "hasContributor",
+      "en" : "has contributor"
+    },
+    "domain" : "1",
+    "subproperty" : [ "171", "172", "173", "174", "105", "175", "176", "177", "178", "17", "25", "179", "180", "181", "38", "40", "182", "183", "184", "185", "186", "128", "187", "132", "188", "189", "57", "133", "190", "161", "162", "163", "191", "65", "69", "192", "169", "170", "193", "194", "75", "195", "88", "91", "196", "197", "198", "93", "199" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasDigitalVersion",
+    "inverse" : "52",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "202",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Verbindet ein physisches Objekt mit seiner digitalen Version.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a physical object with a digital version of itself.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat digitale Version",
+      "IRI-based" : "hasDigitalVersion",
+      "en" : "has digital version"
+    },
+    "domain" : "201",
+    "attributes" : [ "object", "external" ],
+    "id" : "200"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isComposerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Komponist*in von",
+      "IRI-based" : "isComposerOf",
+      "en" : "is composer of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Komponist*in'.",
+      "en" : "Inverse of 'has composer'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "203"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "205",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt das letzte Aufführungsdatum einer Produktion der darstellenden Kunst.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the last performance date of a performing arts production.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "de",
+        "value" : "Eine behelfsmäßige Eigenschaft zur Beschreibung des letzten Aufführungsdatums einer Produktion der darstellenden Künste bei nicht ausreichender Beschreibung der zugehörigen Aufführungen.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "A workaround property for describing the last performance date of a performing arts production in case of insufficient description of related performances.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Dernierendatum",
+      "IRI-based" : "hasLastPerformanceDate",
+      "en" : "has last performance date"
+    },
+    "domain" : "125",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "204"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isMaskBuilderOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Maskenbauer*in von",
+      "IRI-based" : "isMaskBuilderOf",
+      "en" : "is mask builder of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Maskenbauer*in'.",
+      "en" : "Inverse of 'has mask builder'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasFamilyName",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "207",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt den Familiennamen eines Agens.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the family name of an agent.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Familienname",
+      "IRI-based" : "hasFamilyName",
+      "en" : "has family name"
+    },
+    "domain" : "56",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "206"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasDate",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "209",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt einen einzelnen Zeitpunkt.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes a singular date/point in time.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Datum",
+      "IRI-based" : "hasDate",
+      "en" : "has date"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "208"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist audiovisuell referenziert in",
+      "IRI-based" : "isAudiovisuallyReferencedIn",
+      "en" : "is audiovisually referenced in"
+    },
+    "superproperty" : [ "7" ],
+    "domain" : "1",
+    "subproperty" : [ "210", "103" ],
+    "comment" : {
+      "de" : "Invers von 'beinhaltet audiovisuelle Referenz zu'.",
+      "en" : "Inverse of 'has audiovisual reference to'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "83"
+  }, {
+    "range" : "56",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isResidenceOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Residenz von",
+      "IRI-based" : "isResidenceOf",
+      "en" : "is residence of"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Residenz'.",
+      "en" : "Inverse of 'has residence'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isLayouterOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Layouter*in von",
+      "IRI-based" : "isLayouterOf",
+      "en" : "is layouter of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Layouter*in'.",
+      "en" : "Inverse of 'has layouter'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isPlaceOfOriginOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Ursprungsort von",
+      "IRI-based" : "isPlaceOfOriginOf",
+      "en" : "is place of origin of"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Ursprung in Ort'.",
+      "en" : "Inverse of 'originated at place'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isFirstEditionOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Erstausgabe von",
+      "IRI-based" : "isFirstEditionOf",
+      "en" : "is first edition of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Erstausgabe'.",
+      "en" : "Inverse of 'has first edition'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "212"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isDirectorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Regisseur*in von",
+      "IRI-based" : "isDirectorOf",
+      "en" : "is director of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Regisseur*in'.",
+      "en" : "Inverse of 'has director'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo",
+    "inverse" : "103",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine visuelle Referenz enthält.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to another resource it has a visual reference to.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "beinhaltet visuelle Referenz zu",
+      "IRI-based" : "hasVisualReferenceTo",
+      "en" : "has visual reference to"
+    },
+    "superproperty" : [ "82" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasSeamster",
+    "inverse" : "141",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as seamster.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Näher*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Näher*in",
+      "IRI-based" : "hasSeamster",
+      "en" : "has seamster"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "175"
+  }, {
+    "range" : "56",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "213"
+  }, {
+    "range" : "56",
+    "domain" : "126",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isAcrobatOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Akrobat*in von",
+      "IRI-based" : "isAcrobatOf",
+      "en" : "is acrobat of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Akrobat*in'.",
+      "en" : "Inverse of 'has acrobat'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isRelatedWebsiteOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Website, die in Verbindung steht mit",
+      "IRI-based" : "isRelatedWebsiteOf",
+      "en" : "is related website of"
+    },
+    "domain" : "1",
+    "subproperty" : [ "72" ],
+    "comment" : {
+      "de" : "Invers von 'hat Bezug zu Webseite'.",
+      "en" : "Inverse of 'has related website'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasPerformer",
+    "inverse" : "155",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as performer.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Darsteller*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Darsteller*in",
+      "IRI-based" : "hasPerformer",
+      "en" : "has performer"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasRecordist",
+    "inverse" : "145",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as recordist.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Tonmeister*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Tonmeister*in",
+      "IRI-based" : "hasRecordist",
+      "en" : "has recordist"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "180"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasLabeling",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "224",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt die Beschriftung einer Ressource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the labeling of a resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Beschriftung",
+      "IRI-based" : "hasLabeling",
+      "en" : "has labeling"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "223"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isMaskDesignerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Maskengestalter*in von",
+      "IRI-based" : "isMaskDesignerOf",
+      "en" : "is mask designer of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Maskengestalter*in'.",
+      "en" : "Inverse of 'has mask designer'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasConceptOriginator",
+    "inverse" : "109",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as concept originator.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Konzept Urheber*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Konzept Urheber*in",
+      "IRI-based" : "hasConceptOriginator",
+      "en" : "has concept originator"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "182"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isIllustratorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Illustrator*in von",
+      "IRI-based" : "isIllustratorOf",
+      "en" : "is illustrator of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Illustrator*in'.",
+      "en" : "Inverse of 'has illustrator'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasActor",
+    "inverse" : "74",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Schauspieler*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as actor.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Schauspieler*in",
+      "IRI-based" : "hasActor",
+      "en" : "has actor"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "184"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasDirector",
+    "inverse" : "139",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Regisseur*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as director.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Regisseur*in",
+      "IRI-based" : "hasDirector",
+      "en" : "has director"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasSubtitle",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "225",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the subtitle of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Beschreibt den Untertitel einer Ressource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Untertitel",
+      "IRI-based" : "hasSubtitle",
+      "en" : "has subtitle"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "227"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasIdentifier",
+    "inverse" : "107",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes one or more alternative identifiers of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt einen oder mehr alternative Bezeichner einer Ressource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Bezeichner",
+      "IRI-based" : "hasIdentifier",
+      "en" : "has identifier"
+    },
+    "domain" : "1",
+    "subproperty" : [ "61", "228" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasExtent",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the extent of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt den Umfang einer Ressource.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "E.g. the extent of a physical object or a digital file.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "de",
+        "value" : "Z.B. der Umfang eines physischen Objekts oder einer digitalen Datei.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Umfang",
+      "IRI-based" : "hasExtent",
+      "en" : "has extent"
+    },
+    "superproperty" : [ "78" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasCinematographer",
+    "inverse" : "142",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Kameramann/Kamerafrau mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as cinematographer.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Kameramann/Kamerafrau",
+      "IRI-based" : "hasCinematographer",
+      "en" : "has cinematographer"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "191"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasPredecessor",
+    "inverse" : "110",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes or connects to the preceding resource of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt den Vorgänger oder verbindet mit dem Vorgänger einer Ressource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Vorgänger",
+      "IRI-based" : "hasPredecessor",
+      "en" : "has predecessor"
+    },
+    "domain" : "1",
+    "attributes" : [ "transitive", "object", "external" ],
+    "id" : "229"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isPublishingPlaceOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Verlagsort von",
+      "IRI-based" : "isPublishingPlaceOf",
+      "en" : "is publishing place of"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Verlagsort'.",
+      "en" : "Inverse of 'has publishing place'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasInformationCarrier",
+    "inverse" : "108",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Verbindet ein Informationsobjekt mit einem physischen oder digitalen Objekt, auf dem es repräsentiert ist.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects an information object with a physical or digital object it is represented on.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Informationsträger",
+      "IRI-based" : "hasInformationCarrier",
+      "en" : "has information carrier"
+    },
+    "domain" : "22",
+    "attributes" : [ "object", "external" ],
+    "id" : "230"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isPantomimeOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Pantomime/Pantomimin von",
+      "IRI-based" : "isPantomimeOf",
+      "en" : "is pantomime of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Pantomime/Pantomimin'.",
+      "en" : "Inverse of 'has pantomime'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isChoreographerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Choreograf*in von",
+      "IRI-based" : "isChoreographerOf",
+      "en" : "is choreographer of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Choreograf*in'.",
+      "en" : "Inverse of 'has choreographer'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasMime",
+    "inverse" : "140",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Mime/Mimin mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as mime.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Mime/Mimin",
+      "IRI-based" : "hasMime",
+      "en" : "has mime"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "194"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasRelatedPlace",
+    "inverse" : "30",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "15",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Ort, mit dem sie auf nicht näher bestimmte Weise in Verbindung steht.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to a place it is related to in any way.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Bezug zu Ort",
+      "IRI-based" : "hasRelatedPlace",
+      "en" : "has related place"
+    },
+    "domain" : "1",
+    "subproperty" : [ "231", "48", "71", "102" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isMediumOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Medium von",
+      "IRI-based" : "isMediumOf",
+      "en" : "is medium of"
+    },
+    "superproperty" : [ "79" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Medium'.",
+      "en" : "Inverse of 'has medium'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo",
+    "inverse" : "210",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to another resource it has an audible reference to.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "beinhaltet hörbare Referenz zu",
+      "IRI-based" : "hasAudibleReferenceTo",
+      "en" : "has audible reference to"
+    },
+    "superproperty" : [ "82" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isLightingDesignerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Lichtgestalter*in von",
+      "IRI-based" : "isLightingDesignerOf",
+      "en" : "is lighting designer of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Lichtgestalter*in'.",
+      "en" : "Inverse of 'has lighting designer'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasCostumeBuilder",
+    "inverse" : "148",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as costume builder.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Kostümbauer*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Kostümbauer*in",
+      "IRI-based" : "hasCostumeBuilder",
+      "en" : "has costume builder"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasSpeaker",
+    "inverse" : "143",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Sprecher*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as speaker.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Sprecher*in",
+      "IRI-based" : "hasSpeaker",
+      "en" : "has speaker"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "196"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo",
+    "inverse" : "90",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to another resource it has a textual reference to.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine textuelle Referenz enthält.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "beinhaltet textuelle Referenz zu",
+      "IRI-based" : "hasTextualReferenceTo",
+      "en" : "has textual reference to"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasPhotographer",
+    "inverse" : "135",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as photographer.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Fotograf*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Fotograf*in",
+      "IRI-based" : "hasPhotographer",
+      "en" : "has photographer"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "197"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasComposer",
+    "inverse" : "203",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as composer.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Komponist*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Komponist*in",
+      "IRI-based" : "hasComposer",
+      "en" : "has composer"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "198"
+  }, {
+    "range" : "11",
+    "domain" : "168",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "232"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isPerformerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Darsteller*in von",
+      "IRI-based" : "isPerformerOf",
+      "en" : "is performer of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Darsteller*in'.",
+      "en" : "Inverse of 'has performer'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "155"
+  }, {
+    "range" : "11",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "233"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isTranslatorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Übersetzer*in von",
+      "IRI-based" : "isTranslatorOf",
+      "en" : "is translator of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Übersetzer*in'.",
+      "en" : "Inverse of 'has translator'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isFormatOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Format von",
+      "IRI-based" : "isFormatOf",
+      "en" : "is format of"
+    },
+    "domain" : "1",
+    "subproperty" : [ "104" ],
+    "comment" : {
+      "de" : "Invers von 'hat Format'.",
+      "en" : "Inverse of 'has format'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "79"
+  }, {
+    "range" : "15",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "234"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "235"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "236"
+  }, {
+    "range" : "15",
+    "domain" : "226",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "237"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isProvenanceOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Herkunft von",
+      "IRI-based" : "isProvenanceOf",
+      "en" : "is provenance of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Herkunft'.",
+      "en" : "Inverse of 'has provenance'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isPhotographerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Fotograf*in von",
+      "IRI-based" : "isPhotographerOf",
+      "en" : "is photographer of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Fotograf*in'.",
+      "en" : "Inverse of 'has photographer'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasTimeOfOccurrence",
+    "inverse" : "239",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "28",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet ein Ereignis mit der Zeitspanne, in der es sich ereignet.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects an event to the timespan it occurred at.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "ereignet sich zu Zeitpunkt",
+      "IRI-based" : "hasTimeOfOccurrence",
+      "en" : "has time of occurrence"
+    },
+    "domain" : "23",
+    "attributes" : [ "object", "external" ],
+    "id" : "238"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isTechnicianOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Techniker*in von",
+      "IRI-based" : "isTechnicianOf",
+      "en" : "is technician of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Techniker*in'.",
+      "en" : "Inverse of 'has technician'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasAcrobat",
+    "inverse" : "144",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Akrobat*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as acrobat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Akrobat*in",
+      "IRI-based" : "hasAcrobat",
+      "en" : "has acrobat"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "171"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasLightingDesigner",
+    "inverse" : "149",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Lichtgestalter*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as light designer.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Lichtgestalter*in",
+      "IRI-based" : "hasLightingDesigner",
+      "en" : "has lighting designer"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "172"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasMaskBuilder",
+    "inverse" : "151",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Maskenbauer*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as mask builder.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Maskenbauer*in",
+      "IRI-based" : "hasMaskBuilder",
+      "en" : "has mask builder"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "173"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasStageManager",
+    "inverse" : "150",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as stage manager.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Inspizient*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Inspizient*in",
+      "IRI-based" : "hasStageManager",
+      "en" : "has stage manager"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "174"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasFirstEdition",
+    "inverse" : "212",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes or connects to the first edition of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt oder verbindet mit der Erstausgabe einer Ressource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Erstausgabe",
+      "IRI-based" : "hasFirstEdition",
+      "en" : "has first edition"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "240"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isPhotoStudioOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Fotostudio von",
+      "IRI-based" : "isPhotoStudioOf",
+      "en" : "is photo studio of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Fotostudio'.",
+      "en" : "Inverse of 'has photo studio'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isSeamsterOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Näher*in von",
+      "IRI-based" : "isSeamsterOf",
+      "en" : "is seamster of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Näher*in'.",
+      "en" : "Inverse of 'has seamster'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isPartOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Teil von",
+      "IRI-based" : "isPartOf",
+      "en" : "is part of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Teil'.",
+      "en" : "Inverse of 'has part'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasPublisher",
+    "inverse" : "101",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Beschreibt den/die Herausgeber*in einer Ressource oder verbindet die Ressource mit einem Agens, der/die als Verleger*in an der Ressource mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the publisher of a resource or connects the resource to an agent who contributed to the resource as publisher.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Herausgeber*in",
+      "IRI-based" : "hasPublisher",
+      "en" : "has publisher"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "176"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasTechnician",
+    "inverse" : "137",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Techniker*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as technician.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Techniker*in",
+      "IRI-based" : "hasTechnician",
+      "en" : "has technician"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "178"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isAdaptorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist (Text-)Bearbeiter*in von",
+      "IRI-based" : "isAdaptorOf",
+      "en" : "is adaptor of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat (Text-)Bearbeiter*in'.",
+      "en" : "Inverse of 'has adaptor'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isInfluencedBy",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Inverse of 'has influence on'.",
+        "type" : "label"
+      } ],
+      "definiiton" : [ {
+        "identifier" : "definiiton",
+        "language" : "de",
+        "value" : "Invers von 'hat beeinflusst'.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "ist beeinflusst von",
+      "IRI-based" : "isInfluencedBy",
+      "en" : "is influenced by"
+    },
+    "superproperty" : [ "7" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasMaskDesigner",
+    "inverse" : "152",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as mask designer.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Maskengestalter*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Maskengestalter*in",
+      "IRI-based" : "hasMaskDesigner",
+      "en" : "has mask designer"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "177"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasPublishingPlace",
+    "inverse" : "34",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "15",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to the place it was or is published at.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit dem Ort, an dem sie verlegt wird oder wurde.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Verlagsort",
+      "IRI-based" : "hasPublishingPlace",
+      "en" : "has publishing place"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "231"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasIsbn",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the ISBN of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt die ISBN einer Ressource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat ISBN",
+      "IRI-based" : "hasIsbn",
+      "en" : "has ISBN"
+    },
+    "superproperty" : [ "62" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "228"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isSetBuilderOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Bühnenbauer*in von",
+      "IRI-based" : "isSetBuilderOf",
+      "en" : "is set builder of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Bühnenbauer*in'.",
+      "en" : "Inverse of 'has set builder'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasDramaturge",
+    "inverse" : "58",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as dramaturge.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Dramaturg*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Dramaturg*in",
+      "IRI-based" : "hasDramaturge",
+      "en" : "has dramaturge"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "181"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isCostumeBuilder",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Kostümbauer*in von",
+      "IRI-based" : "isCostumeBuilder",
+      "en" : "is costume builder of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Kostümbauer*in'.",
+      "en" : "Inverse of 'has costume builder'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasTitle",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "222",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the title of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Beschreibt den Titel einer Ressource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Titel",
+      "IRI-based" : "hasTitle",
+      "en" : "has title"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "241"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isAssistantDirectorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Regieassistent*in von",
+      "IRI-based" : "isAssistantDirectorOf",
+      "en" : "is assistant director of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Regieassistent*in'.",
+      "en" : "Inverse of 'has assistant director'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isProducerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Produzent*in von",
+      "IRI-based" : "isProducerOf",
+      "en" : "is producer of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Produzent*in'.",
+      "en" : "Inverse of 'has producer'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "156"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner",
+    "inverse" : "45",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Kostümdesigner*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as costume designer.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Kostümgestalter*in",
+      "IRI-based" : "hasCostumeDesigner",
+      "en" : "has costume designer"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasPuppetBuilder",
+    "inverse" : "136",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Puppenbauer*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as puppet builder.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Puppenbauer*in",
+      "IRI-based" : "hasPuppetBuilder",
+      "en" : "has puppet builder"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "185"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isTextuallyReferencedIn",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist textuell referenziert in",
+      "IRI-based" : "isTextuallyReferencedIn",
+      "en" : "is textually referenced in"
+    },
+    "superproperty" : [ "7" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'beinhaltet textuelle Referenz zu'.",
+      "en" : "Inverse of 'has textual reference to'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasAssistantDirector",
+    "inverse" : "153",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Regieassistent*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as assistant director.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Regieassistent*in",
+      "IRI-based" : "hasAssistantDirector",
+      "en" : "has assistant director"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "186"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isAuthorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Autor*in von",
+      "IRI-based" : "isAuthorOf",
+      "en" : "is author of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Autor*in'.",
+      "en" : "Inverse of 'has author'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isSoundDesignerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Tongestalter*in von",
+      "IRI-based" : "isSoundDesignerOf",
+      "en" : "is sound designer of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Tongestalter*in'.",
+      "en" : "Inverse of 'has sound designer'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isEditorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Redakteur*in von",
+      "IRI-based" : "isEditorOf",
+      "en" : "is editor of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Redakteur*in'.",
+      "en" : "Inverse of 'has editor'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasDescription",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "221",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Eine generelle Beschreibung einer Ressource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A general description of a resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Beschreibung",
+      "IRI-based" : "hasDescription",
+      "en" : "has description"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "242"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasProducer",
+    "inverse" : "156",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Produzent*in mitgewirkt hat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as producer.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Produzent*in",
+      "IRI-based" : "hasProducer",
+      "en" : "has producer"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "187"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "216",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt das erste Aufführungsdatum einer Produktion der darstellenden Kunst.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the first performance date of a performing arts production.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "A workaround property for describing the first performance date of a performing arts production in case of insufficient description of related performances.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "de",
+        "value" : "Eine behelfsmäßige Eigenschaft zur Beschreibung des ersten Aufführungsdatums einer Produktion der darstellenden Künste bei nicht ausreichender Beschreibung der zugehörigen Aufführungen.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat erstes Aufführungsdatum",
+      "IRI-based" : "hasFirstPerformanceDate",
+      "en" : "has first performance date"
+    },
+    "domain" : "125",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "243"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isPuppetBuilderOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Puppenbauer*in von",
+      "IRI-based" : "isPuppetBuilderOf",
+      "en" : "is puppet builder of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Puppenbauer*in'.",
+      "en" : "Inverse of 'has puppet builder'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasPrompter",
+    "inverse" : "157",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as prompter.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Souffleur/Souffleuse mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Souffleur/Souffleuse",
+      "IRI-based" : "hasPrompter",
+      "en" : "has prompter"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "189"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isPlaceOfOccurrenceOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Ort von Ereignis",
+      "IRI-based" : "isPlaceOfOccurrenceOf",
+      "en" : "is place of occurrence of"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'ereignet sich an Ort'.",
+      "en" : "Inverse of 'has place of occurrence'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isSurtitleCreatorOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Übertitel Schöpfer*in von",
+      "IRI-based" : "isSurtitleCreatorOf",
+      "en" : "is surtitle creator of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Übertitel Schöpfer*in'.",
+      "en" : "Inverse of 'has surtitle creator'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasIllustrator",
+    "inverse" : "154",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as illustrator.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Illustrator*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Illustrator*in",
+      "IRI-based" : "hasIllustrator",
+      "en" : "has illustrator"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "190"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasInfluenceOn",
+    "inverse" : "89",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to another resource that it influenced.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einer anderen Ressource, die sie beeinflusst hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat beeinflusst",
+      "IRI-based" : "hasInfluenceOn",
+      "en" : "has influence on"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isCinematographerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Kameramann/Kamerafrau von",
+      "IRI-based" : "isCinematographerOf",
+      "en" : "is cinematographer of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Kameramann/Kamerafrau'.",
+      "en" : "Inverse of 'has cinematographer'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isTimeOfOccurrenceOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Zeitpunkt des Ereignisses von",
+      "IRI-based" : "isTimeOfOccurrenceOf",
+      "en" : "is time of occurrence of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'ereignet sich zu Zeitpunkt'.",
+      "en" : "Inverse of 'occurred at time'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "239"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isSpeakerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Sprecher*in von",
+      "IRI-based" : "isSpeakerOf",
+      "en" : "is speaker of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Sprecher*in'.",
+      "en" : "Inverse of 'has speaker'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasDimensions",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "215",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the dimensions of a resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt die Dimensionen einer Ressource.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "E.g. the dimensions of a physical object or a digital file.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "de",
+        "value" : "Z.B. die Dimensionen eines physischen Objekts oder einer digitalen Datei.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Dimensionen",
+      "IRI-based" : "hasDimensions",
+      "en" : "has dimensions"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "245"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isAudiblyReferencedIn",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist hörbar referenziert in",
+      "IRI-based" : "isAudiblyReferencedIn",
+      "en" : "is audibly referenced in"
+    },
+    "superproperty" : [ "83" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'beinhaltet hörbare Referenz zu'.",
+      "en" : "Inverse of 'has audible reference to'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "210"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasName",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "218",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the name of an agent.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Beschreibt den Namen eines Agens.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Name",
+      "IRI-based" : "hasName",
+      "en" : "has name"
+    },
+    "domain" : "56",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "247"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isRecordistOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Tonmeister*in von",
+      "IRI-based" : "isRecordistOf",
+      "en" : "is recordist of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Tonmeister*in'.",
+      "en" : "Inverse of 'has recordist'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasSetDesigner",
+    "inverse" : "147",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as set designer.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Bühnenbildner*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Bühnenbildner*in",
+      "IRI-based" : "hasSetDesigner",
+      "en" : "has set designer"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasAuthor",
+    "inverse" : "159",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as author.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Autor*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Autor*in",
+      "IRI-based" : "hasAuthor",
+      "en" : "has author"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasRightsHolder",
+    "inverse" : "16",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the rights holder of a resource or connects the resource to an agent who holds rights to the resource.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Beschreibt den/die Rechteinhaber*in einer Ressource oder verbindet die Ressource mit einem Agens, der/die Rechteinhaber*in dieser Ressource ist.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Rechteinhaber",
+      "IRI-based" : "hasRightsHolder",
+      "en" : "has rights holder"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "248"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isMusicianOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Musiker*in von",
+      "IRI-based" : "isMusicianOf",
+      "en" : "is musician of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Musiker*in'.",
+      "en" : "Inverse of 'has musician'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isDancerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Tänzer*in von",
+      "IRI-based" : "isDancerOf",
+      "en" : "is dancer of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Tänzer*in'.",
+      "en" : "Inverse of 'has dancer'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isStageManagerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Inspizient*in von",
+      "IRI-based" : "isStageManagerOf",
+      "en" : "is stage manager of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Inspizient*in'.",
+      "en" : "Inverse of 'has stage manager'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasContentMatch",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to another resource with matching content.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einer anderen Ressource mit gleichem Inhalt.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "de",
+        "value" : "Eine behelfsmäßige Eigenschaft zur Verbindung einer Ressource mit einer anderen Ressource mit teilweise oder vollständig gleichem Inhalt.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "A workaround property for connecting a resource to another resource with partly or entirely matching contents.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat gleichen Inhalt",
+      "IRI-based" : "hasContentMatch",
+      "en" : "has content match"
+    },
+    "domain" : "1",
+    "attributes" : [ "symmetric", "object", "external" ],
+    "id" : "250"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isPuppetDesignerOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Puppengestalter*in von",
+      "IRI-based" : "isPuppetDesignerOf",
+      "en" : "is puppet designer of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Puppengestalter*in'.",
+      "en" : "Inverse of 'has puppet designer'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceVersion",
+    "inverse" : "51",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "125",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a performing arts production with its first performance version.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Produktion der darstellenden Künste mit ihrer Erstaufführungsversion.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Erstaufführungsversion",
+      "IRI-based" : "hasFirstPerformanceVersion",
+      "en" : "has first performance version"
+    },
+    "domain" : "125",
+    "attributes" : [ "object", "external" ],
+    "id" : "251"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/isPrompterOf",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Souffleur/Souffleuse von",
+      "IRI-based" : "isPrompterOf",
+      "en" : "is prompter of"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "comment" : {
+      "de" : "Invers von 'hat Souffleur/Souffleuse'.",
+      "en" : "Inverse of 'has prompter'."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/endsAtTime",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "217",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Describes the end date/point in time of a time span.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Beschreibt den Endzeitpunkt einer Zeitspanne.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "endet zu Zeitpunkt",
+      "IRI-based" : "endsAtTime",
+      "en" : "ends at time"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "252"
+  }, {
+    "iri" : "http://lod.iti-germany.de/schema/nvto/hasParticipant",
+    "inverse" : "119",
+    "baseIri" : "http://lod.iti-germany.de/schema/nvto",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Connects a resource to an agent who contributed to the resource as participant.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Verbindet eine Ressource mit einem Agens, der als Teilnehmer*in mitgewirkt hat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Teilnehmer*in",
+      "IRI-based" : "hasParticipant",
+      "en" : "has participant"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "199"
+  } ]
+}

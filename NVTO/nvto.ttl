@@ -37,8 +37,10 @@
 nvto:Agent rdf:type owl:Class ;
            rdfs:label "Agens"@de ;
            rdfs:label "Agent"@en ;
-           skos:definition """Diese Klasse umfasst alle Agenzien wie etwa Personen und Institutionen."""@de ;
+           skos:definition """Diese Klasse umfasst alle Agens wie etwa Personen und Institutionen."""@de ;
            skos:definition """This class comprises all agents such as persons or institutions."""@en ;
+           skos:scopeNote """Agens sind handlungsfähige Entitäten, in der Regel einzelne Personen oder Personengruppierungen. Diese Klasse dient vor allem als Oberklasse für genauer definierte Agens."""@de ;
+           skos:scopeNote """Agents are entities that are capable of acting, usually persons or groups of persons. This class primarily serves as top class for more specifically defined concepts."""@en ;
            skos:example "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"@de ;
            skos:example "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"@en .
 
@@ -48,6 +50,8 @@ nvto:City rdf:type owl:Class ;
           rdfs:label "City"@en ;
           skos:definition """Diese Klasse umfasst Städte abhängig von Zeit und/oder Geopolitik."""@de ;
           skos:definition """This class comprises cities dependent on time and/or geopolitics."""@en ;
+          skos:scopeNote """Städte können reale Orte sein, die existiert haben oder existieren. Auch fiktive Städte sind möglich."""@de ;
+          skos:scopeNote """Cities can be real places that existed or exist. Fictional places are possible as well."""@en ;
           skos:example "Berlin, Westberlin, Ostberlin"@de ;
           skos:example "Berlin, West Berlin, East Berlin"@en .
 
@@ -56,6 +60,8 @@ nvto:Collection rdf:type owl:Class ;
                 rdfs:label "Collection"@en ;
                 skos:definition """Diese Klasse umfasst (benannte) Sammlungen von Ressourcen in willkürlicher Reihenfolge."""@de ;
                 skos:definition """This class comprises (named) resource collections in arbitrary order."""@en ;
+                skos:scopeNote """Eine Sammlung ist eine von einer Institution oder Person stammende oder zusammengestellte Menge an physischen und/oder digitalen Objekten, sowie deren beschreibende Datensätze."""@de ;
+                skos:scopeNote """A Collection is a set of physical and/or digital objects, originating from or created by an institution or a person"""@en ;
                 skos:example "COL"@de ;
                 skos:example "COL"@en .
 
@@ -65,16 +71,18 @@ nvto:Country rdf:type owl:Class ;
              rdfs:label "Country"@en ;
              skos:definition """Diese Klasse umfasst Länder abhängig von Zeit und/oder Geopolitik."""@de ;
              skos:definition """This class comprises countries dependent on time and/or geopolitics."""@en ;
+             skos:scopeNote """Länder können reale Orte sein, die existiert haben oder existieren. Auch fiktive Länder sind möglich."""@de ;
+             skos:scopeNote """Countries can be real places that existed or exist. Fictional countries are possible as well."""@en ;
              skos:example "Französische Republik, Westdeutschland, DDR"@de  ;
              skos:example "FRG, West Germany, GDR"@en  .
 
 nvto:CreativeConcept rdf:type owl:Class ;
                     rdfs:label "Kreatives Konzept"@de ;
                     rdfs:label "Creative Concept"@en ;
-                    skos:definition """Diese Klasse umfasst alle kreativen Konzepte."""@de ;
-                    skos:definition """This class comprises all creative concepts."""@en ;
-                    skos:scopeNote """Vergleichbar mit Expressionen aus FRBR. Diese Klasse dient vor allem als Oberklasse für genauer definierte Konzepte."""@de ;
-                    skos:scopeNote """Comparable to FRBR Expressions. This class primarily serves as top class for more specifically defined concepts."""@en ;
+                    skos:definition """Diese Klasse umfasst alle Kreativen Konzepte."""@de ;
+                    skos:definition """This class comprises all Creative Concepts."""@en ;
+                    skos:scopeNote """Diese Klasse dient als Oberklasse für genauer definierte Kreative Konzepte, wie Filmproduktionen oder Produktionen der darstellenden Künste. Vergleichbar mit Expressionen aus FRBR."""@de ;
+                    skos:scopeNote """This class primarily serves as top class for more specifically defined Creative Concepts such as film productions or performing arts productions. Comparable to FRBR Expressions."""@en ;
                     skos:example "Produktion der darstellenden Künste; Filmproduktion; Festival"@de ;
                     skos:example "performing arts production; film production, festival"@en .
 
@@ -84,6 +92,8 @@ nvto:DigitalObject rdf:type owl:Class ;
                    rdfs:label "Digital Object"@en ;
                    skos:definition """Die digitale Repräsentation des Inhalts eines Mediums. Digitaler Informationsträger."""@de ;
                    skos:definition """The digital representation of the contents of a medium. Digital information carrier."""@en ;
+                   skos:scopeNote """Diese Klasse umfasst sowohl digitale Repräsentationen der Inhalte von Physischen Objekten, als auch nativ digitale Objekte. Digitale Objekte sind wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte."""@de ;
+                   skos:scopeNote """This class comprises digital representations of the contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, are information carriers of one or more Information Objects."""@en ;
                    skos:example "Eine spezifische digitale Datei mit Namen IMG-001.tif, VID-001.avi"@de ;
                    skos:example "A specific digital file with name IMG-001.tif, VID-001.avi"@en .
 
@@ -91,55 +101,61 @@ nvto:Event rdf:type owl:Class ;
            rdfs:label "Ereignis"@de ;
            rdfs:label "Event"@en ;
            skos:definition """Diese Klasse umfasst alle Ereignisse."""@de ;
-           skos:definition """This class comprises all events."""@en ;
-           skos:scopeNote "Speziell für Ereignisse im Bereich der darstellenden Künste genutzt."@de ;
-           skos:scopeNote "Used specifically for events in the realm of performing arts."@en ;
+           skos:definition """This class comprises all Events."""@en ;
+           skos:scopeNote """Ein Ereignis kann real oder fiktional sein, hat einen Start- und Endzeitpunkt und findet an einem Ort statt. Nicht alle Eigenschaften eines Ereignisses müssen bekannt sein. In der Regel wird diese Klasse für Ereignisse im Bereich der darstellenden Künste wie Aufführungen oder Workshops genutzt."""@de ;
+           skos:scopeNote "An Event can be fictional or real, has a starting and ending point and occurrs at a place. Not all attributes of an event have to be known. This class is generally used for Events in the realm of performing arts."@en ;
            skos:example "Eine Aufführung von 'Hamlet', ein Workshop zu einer speziellen Schauspieltechnik, eine Ausstellung über eine/n Darsteller/in"@de ;
            skos:example "A performance of 'Hamlet', a workshop regarding a specific acting technique, an exhibition about an actor/actress"@en .
 
-nvto:Festival rdf:type owl:Class ;
+nvto:FestivalPlan rdf:type owl:Class ;
               rdfs:subClassOf nvto:CreativeConcept ;
-              rdfs:label "Festival"@de ;
-              rdfs:label "Festival"@en ;
-              skos:definition """Diese Klasse umfasst alle Festivals."""@de ;
-              skos:definition """This class comprises all festivals."""@en ;
-              skos:scopeNote "Speziell für Festivals im Bereich der darstellenden Künste genutzt."@de ;
-              skos:scopeNote "Used specifically for festivals in the realm of performing arts."@en ;
+              rdfs:label "Festivalplan"@de ;
+              rdfs:label "Festival Plan"@en ;
+              skos:definition """Diese Klasse umfasst alle Festivalpläne."""@de ;
+              skos:definition """This class comprises all festival plans."""@en ;
+              skos:scopeNote "Ein Festivalplan ist das Kreative Konzept, das einem Festivalereignis oder einer Reihe von Festivalereignissen zugrunde liegt. Diese Klasse wird unter anderem dazu verwendet, die einzelnen Iterationen regelmäßig stattfindender Festivals im Bereich der darstellenden Künste unter einem Konzept zu sammeln."@de ;
+              skos:scopeNote "A festival plan is the Creative Concept behind a festival event or a series of festival events. This class can be used for aggregating single iterations of periodic Festivals under one concept."@en ;
               skos:example "Das zweijährliche internationale Theaterfestival 'Theater der Welt'"@de ;
               skos:example "The biannual international theatre festival 'Theater der Welt'"@en .
 
 nvto:FilmProduction rdf:type owl:Class ;
                     rdfs:subClassOf nvto:CreativeConcept ;
-                    rdfs:label "Performing Arts Produktion"@de ;
-                    rdfs:label "Performing Arts Production"@en ;
-                    skos:definition """Diese Klasse umfasst Filmnproduktionen, die aufgenommen wurden."""@de ;
-                    skos:definition """This class comprises film productions that were or are performed in performing arts events."""@en ;
+                    rdfs:label "Filmproduktion"@de ;
+                    rdfs:label "Film Production"@en ;
+                    skos:definition """Diese Klasse umfasst alle Filmproduktionen."""@de ;
+                    skos:definition """This class comprises all film productions."""@en ;
+                    skos:scopeNote """Eine Filmproduktion ist das Kreative Konzept, das einem Film zugrunde liegt. Eine Filmproduktion kann zum Beispiel durch ein Drehbuch, Kamera- oder Lichtanweisungen genauer beschrieben werden."""@de ;
+                    skos:scopeNote """A Film Production is the Creative Concept behind a film. A film production may be described further by objects such as scripts, camera instructions or lighting instructions."""@en ;
                     skos:example "Example"@de  ;
                     skos:example "Example"@en  .
 
 nvto:InformationObject rdf:type owl:Class ;
                        rdfs:label "Informationsobjekt"@de ;
                        rdfs:label "Information Object"@en ;
-                       skos:definition """Konzeptuelle Repräsentation des Inhalts eines Mediums, erfasst von einem physischen oder digitalen (Archiv-)Objekt. Dasselbe Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel einer Ausgabe in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann außerdem mehere Informationsobjekte tragen (z.B. mehrere Videos auf einer einzelnen Videokassette)"""@de ;
-                       skos:definition """Conceptual representation of the contents of a medium captured by a physical or digital (archival) object. The same information object can be captured in multiple pyhsical or digital objects (e.g. a magazine edition). Also one physical or digital object can carry multiple information objects (e.g. multiple movies in a single video tape)."""@en ;
+                       skos:definition """"Diese Klasse umfasst alle Informationsobjekte."""@de ;
+                       skos:definition """"This class comprises all Information Objects."""@en ;
+                       skos:scopeNote """Ein Informationsobjekt ist die konzeptuelle Repräsentation des Inhalts eines Physischen oder Digitalen Objekts. Dasselbe Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel ein Foto und eine Kopie des Fotos in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann außerdem mehere Informationsobjekte tragen (z.B. mehrere Videos auf einer einzelnen Videokassette)"""@de ;
+                       skos:scopeNote """ An Information Object is  the conceptual representation of a Physical or Digital Object. The same Information Object can be captured in multiple Physical or Digital Objects (e.g. a magazine edition). In addition, one Physical or Digital Object can carry multiple Information Objects (e.g. multiple movies on a single video tape)."""@en ;
                        skos:example "Aufnahme von Aufführung X, Inhalt von Programmheft Y"@de ;
                        skos:example "Recording of Performance X, Contents of programme booklet Y"@en .
 
-nvto:Organization rdf:type owl:Class ;
-                  rdfs:subClassOf nvto:Agent ;
-                  rdfs:label "Organisation"@de ;
-                  rdfs:label "Organization"@en ;
-                  skos:definition """Diese Klasse umfasst alle Organisationen."""@de ;
-                  skos:definition """This class comprises all organizations"""@en ;
-                  skos:example "Theater der Welt, Sony BMG"@de ;
-                  skos:example "Theater der Welt, Sony BMG"@en .
+# nvto:Organization rdf:type owl:Class ;
+#                   rdfs:subClassOf nvto:Agent ;
+#                   rdfs:label "Organisation"@de ;
+#                   rdfs:label "Organization"@en ;
+#                   skos:definition """Diese Klasse umfasst alle Organisationen."""@de ;
+#                   skos:definition """This class comprises all organizations"""@en ;
+#                   skos:example "Theater der Welt, Sony BMG"@de ;
+#                   skos:example "Theater der Welt, Sony BMG"@en .
 
 nvto:PerformingArtsGroup rdf:type owl:Class ;
                          rdfs:subClassOf nvto:Agent ;
                          rdfs:label "Performing Arts Gruppe"@de ;
                          rdfs:label "Performing Arts Group"@en ;
-                         skos:definition """Diese Klasse umfasst alle Ensembles, Companies und ähnliche Gruppen im Bereich der darstellenden Künste."""@de ;
-                         skos:definition """This class comprises ensembles and similar groups in the realm of performing arts."""@en ;
+                         skos:definition """Diese Klasse umfasst alle Ensembles, Kompanien und ähnliche Gruppen im Bereich der darstellenden Künste."""@de ;
+                         skos:definition """This class comprises ensembles, companies and similar groups in the realm of performing arts."""@en ;
+                         skos:scopeNote """Die Performing Arts Gruppe besteht üblicherweise aus zwei oder mehr Personen. Diese Klasse bezieht sich speziell auf den Bereich der darstellenden Künste."""@de ;
+                         skos:scopeNote """The Performing Arts Group is usually comprised of two or more Persons. This class is used specifically for the realm of performing arts."""@en ;
                          skos:example "DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg"@de  ;
                          skos:example "DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg"@en  .
 
@@ -149,6 +165,8 @@ nvto:PerformingArtsLocation rdf:type owl:Class ;
                             rdfs:label "Performing Arts Location"@en ;
                             skos:definition """Diese Klasse umfasst Orte, die für darstellende Künste genutzt werden oder wurden."""@de ;
                             skos:definition """This class comprises locations that were or are used for performing arts."""@en ;
+                            skos:scopeNote """Ein Performing Arts Aufführungsort ist in der Regel eine Spielstätte oder ein öffentlicher Platz. Generell kann jeder Ort, an dem aufgeführt wird, ein Performing Arts Aufführungsort sein. Fiktive Orte von fiktiven Aufführungen sind nicht ausgeschlossen."""@de ;
+                            skos:scopeNote """A Performing Arts Location usually is a venue or a public place. Generally any location used for a performance can be a Performing Arts Location. Fictional Locations for fictional performances are not excluded."""@en ;
                             skos:example "Volksbühne, Pratergarten"@de  ;
                             skos:example "Volksbühne, Pratergarten"@en  .
 
@@ -156,8 +174,10 @@ nvto:PerformingArtsProduction rdf:type owl:Class ;
                               rdfs:subClassOf nvto:CreativeConcept ;
                               rdfs:label "Performing Arts Produktion"@de ;
                               rdfs:label "Performing Arts Production"@en ;
-                              skos:definition """Diese Klasse umfasst Produktionen der darstellenden Kunst, die aufgeführt werden oder wurden."""@de ;
-                              skos:definition """This class comprises productions that were or are performed in performing arts events."""@en ;
+                              skos:definition """Diese Klasse umfasst Produktionen der darstellenden Kunst."""@de ;
+                              skos:definition """This class comprises Performing Arts Productions."""@en ;
+                              skos:scopeNote """Eine Performing Arts Produktion ist das Kreative Konzept, das einer Aufführung oder einer Reihe von Aufführungen im Bereich der darstellenden Künste zugrunde liegt. Eine Performing Arts Produktion kann zum Beispiel von Manuskripten oder Regieanweisungen genauer beschrieben werden."""@de ;
+                              skos:scopeNote """A Performing Arts Production is the Creative Concept behind a Performance or a Series of Performances in the realm of performing arts. A Performing Arts Production may be described further by manuscripts or stage directions."""@en ;
                               skos:example "Blaubart, Hamlet"@de  ;
                               skos:example "Blaubart, Hamlet"@en  .
 
@@ -165,16 +185,20 @@ nvto:Person rdf:type owl:Class ;
             rdfs:subClassOf nvto:Agent ;
             rdfs:label "Person"@de ;
             rdfs:label "Person"@en ;
-            skos:definition """Diese Klasse umfasst alle Personen"""@de ;
-            skos:definition """This class comprises all persons"""@en ;
+            skos:definition """Diese Klasse umfasst alle Personen."""@de ;
+            skos:definition """This class comprises all persons."""@en ;
+            skos:scopeNote """Eine Person ist in der Regel ein Mensch, der lebt oder gelebt hat. Fiktive Personen sind nicht ausgeschlossen."""@de ;
+            skos:scopeNote """A Person usually is a human who either lives or has lived. Fictional Persons are not excluded."""@en ;
             skos:example "Eberhard Kube, Conny Hege"@de ;
             skos:example "Eberhard Kube, Conny Hege"@en .
 
 nvto:PhysicalObject rdf:type owl:Class ;
                     rdfs:label "Physisches Objekt"@de ;
                     rdfs:label "Physical Object"@en ;
-                    skos:definition """Die physische Repräsentation des Inhalts eines Mediums. Physischer Informationsträger."""@de ;
-                    skos:definition """The physical representation of the contents of a medium. Physical information carrier. """@en ;
+                    skos:definition """Diese Klasse umfasst alle Physischen Objekte."""@de ;
+                    skos:definition """This class comprises all Physical Objects."""@en ;
+                    skos:scopeNote """Alle materiellen Objekte mit physischen Ausmaßen sind Physische Objekte. Wie Digitale Objekte können auch Physische Objekte Informationsträger von Informationsobjekten sein. Typische physische Informationsträger sind Videokassetten, analoge Fotografien oder Programmhefte."""@de ;
+                    skos:scopeNote """All material objects with physical extent are Physical Objects. Physical Objects, like Digital Objects, can be information carriers of Information Objects. Typical physical information carriers are video cassettes, analogue photographs or program booklets."""@en ;
                     skos:example "Videokassette mit Aufnahme von Aufführung X, Programmheft Y"@de ;
                     skos:example "Tape with recording of performance X, programme booklet Y"@en .
 
@@ -183,20 +207,28 @@ nvto:Place rdf:type owl:Class ;
            rdfs:label "Place"@en ;
            skos:definition """Diese Klasse umfasst alle Orte."""@de ;
            skos:definition """This class comprises all places."""@en .
+           skos:scopeNote """Orte können existieren oder existiert haben. Fiktive Orte sind nicht ausgeschlossen."""@de ;
+           skos:scopeNote """Places can exist or have existed. Fictional Places are not excluded."""@en ;
+           skos:example "Place"@de  ;
+           skos:example "Place"@en  .
 
 nvto:Series rdf:type owl:Class ;
             rdfs:label "Serie"@de ;
             rdfs:label "Series"@en ;
             skos:definition """Diese Klasse umfasst alle Serien."""@en ;
-            skos:definition """This class comprises all series."""@en ;
+            skos:definition """This class comprises all Series."""@en ;
+            skos:scopeNote """"""@de ;
+            skos:scopeNote """"""@en ;
             skos:example "SRS"@de  ;
             skos:example "SRS"@en  .
 
 nvto:TimeSpan rdf:type owl:Class ;
               rdfs:label "Zeitspanne"@de ;
               rdfs:label "Timespan"@en ;
-              skos:definition """Diese Klasse umfasst Zeitspannen jeglicher Länge."""@de ;
-              skos:definition """This class comprises timespans of any length."""@en ;
+              skos:definition """Diese Klasse umfasst alle Zeitspannen."""@de ;
+              skos:definition """This class comprises all timespans."""@en ;
+              skos:scopeNote """Eine Zeitspanne ist ein zeitliches Ausmaß mit Startzeitpunkt, Endzeitpunkt und Dauer. Eine Zeitspanne kann sich auf Entitäten wie Informationsobjekte und Ereignisse beziehen. Eine Zeitspanne ist in ihrer Dauer unbeschränkt. Nicht alle Eigenschaften einer Zeitspanne müssen bekannt sein, um sie zu beschreiben."""@de ;
+              skos:scopeNote """A Time-Span is a temporal extent with starting point, end point and duration. A Time-Span can be defined for entities such as Information Objects and Events. A Time-Span is unlimited in its duration. Not all attributes of a Time-Span have to be known for it to be described."""@en ;
               skos:example "1979-1989, 00:00:00:00-00:52:23:17"@de  ;
               skos:example "1979-1989, 00:00:00:00-00:52:23:17"@en  .
 
@@ -1003,13 +1035,13 @@ nvto:hasSuccessor rdf:type owl:ObjectProperty ;
                   rdfs:label "has successor"@en .
 
 nvto:isAudiblyReferencedIn owl:inverseOf nvto:hasAudibleReferenceTo ;
-                            rdfs:subPropertyOf nvto:isAudiovisuallyReferencedIn ;
+                            rdfs:subPropertyOf nvto:isAudioVisuallyReferencedIn ;
                             rdfs:comment "Invers von 'beinhaltet hörbare Referenz zu'."@de ;
                             rdfs:comment "Inverse of 'has audible reference to'."@en ;
                             rdfs:label "ist hörbar referenziert in"@de ;
                             rdfs:label "is audibly referenced in"@en .
 
-nvto:isAudiovisuallyReferencedIn owl:inverseOf nvto:hasAudioVisualReferenceTo ;
+nvto:isAudioVisuallyReferencedIn owl:inverseOf nvto:hasAudioVisualReferenceTo ;
                                 rdfs:subPropertyOf nvto:isReferencedIn ;
                                 rdfs:comment "Invers von 'beinhaltet audiovisuelle Referenz zu'."@de ;
                                 rdfs:comment "Inverse of 'has audiovisual reference to'."@en ;
@@ -1037,7 +1069,7 @@ nvto:isTextuallyReferencedIn owl:inverseOf nvto:hasTextualReferenceTo ;
                             rdfs:label "is textually referenced in"@en .
 
 nvto:isVisuallyReferencedIn owl:inverseOf nvto:hasVisualReferenceTo ;
-                             rdfs:subPropertyOf nvto:isAudiovisuallyReferencedIn ;
+                             rdfs:subPropertyOf nvto:isAudioVisuallyReferencedIn ;
                              rdfs:comment "Invers von 'beinhaltet visuelle Referenz zu'."@de ;
                              rdfs:comment "Inverse of 'has visual reference to'."@en ;
                              rdfs:label "ist visuell referenziert in"@de ;

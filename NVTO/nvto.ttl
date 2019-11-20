@@ -206,7 +206,7 @@ nvto:Place rdf:type owl:Class ;
            rdfs:label "Ort"@de ;
            rdfs:label "Place"@en ;
            skos:definition """Diese Klasse umfasst alle Orte."""@de ;
-           skos:definition """This class comprises all places."""@en .
+           skos:definition """This class comprises all places."""@en ;
            skos:scopeNote """Orte können existieren oder existiert haben. Fiktive Orte sind nicht ausgeschlossen."""@de ;
            skos:scopeNote """Places can exist or have existed. Fictional Places are not excluded."""@en ;
            skos:example "Place"@de  ;
@@ -278,14 +278,18 @@ nvto:hasRecordingOf rdf:type owl:ObjectProperty ;
                     skos:definition "Connects an information object to an event that it recorded."@en ;
                     skos:scopeNote """Diese Eigenschaft ist eine Form von Referenz, die speziell die Aufnahme eines Ereignisses von einem Informationsobjekt beschreibt."""@de ;
                     skos:scopeNote """This property is a form of reference that specifically describes the recording of an event by an Information Object."""@en ;
+                    skos:example "Video X hat Aufnahme von Event Y"@de ;
+                    skos:example ""@en ;
                     rdfs:label "hat Aufnahme von"@de ;
                     rdfs:label "has recording of"@en .
 
 nvto:hasReferenceTo rdf:type owl:ObjectProperty ;
                          skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine Referenz enthält."@de ;
                          skos:definition "Connects a resource to another resource it has any kind of reference to."@en ;
-                         skos:scopeNote "Eine Referenz beschreibt in der Regel die Erfassung oder Erwähnung einer Ressource von einem Informationsobjekt, einem Kreativen Konzept oder anderer Ressourcen. Eine Referenz kann zum Beispiel eine Aufnahme des Informationsobjekts oder eine Beschriftung des Informationsträgers sein. Wenn die Art der Referenz gegeben ist, sollte eine der Untereigenschaften dieser Eigenschaft verwendet werden."@de ;
-                         skos:scopeNote "A reference usually describes the capture or mention of a resource by an Information Object, a Creative Concept or other resources. A reference can be a recording of the Information Object or a labeling of the information carrier among others. In case the type of reference is given, one of the subproperties of this property should be used."@en ;
+                         skos:scopeNote "Eine Referenz beschreibt in der Regel die Erfassung oder Erwähnung einer Ressource von einem Informationsobjekt, einem Kreativen Konzept oder anderer Ressourcen. Eine Referenz zu einer Ressource kann zum Beispiel Teil einer Aufnahme der Ressource oder der Beschriftung eines Informationsträgers sein. Wenn die Art der Referenz gegeben ist, sollte eine der Untereigenschaften dieser Eigenschaft verwendet werden."@de ;
+                         skos:scopeNote "A reference usually describes the capture or mention of a resource by an Information Object, a Creative Concept or other resources. A reference to a resource can be contained in a recording of the resource or in the labeling of an information carrier among others. In case the type of reference is given, one of the subproperties of this property should be used."@en ;
+                         skos:example ""@de ;
+                         skos:example ""@en ;
                          rdfs:label "hat Referenz zu"@de ;
                          rdfs:label "has reference to"@en .
 
@@ -293,8 +297,10 @@ nvto:hasTextualReferenceTo rdf:type owl:ObjectProperty ;
                                 rdfs:subPropertyOf nvto:hasReferenceTo ;
                                 skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine textuelle Referenz enthält."@de ;
                                 skos:definition "Connects a resource to another resource it has a textual reference to."@en ;
-                                skos:scopeNote """"""@de ;
-                                skos:scopeNote """"""@en ;
+
+                                skos:scopeNote """Eine textuelle Referenz beschreibt in der Regel die schriftliche Erwähnung einer Ressource von einem Informationsobjekt, einem Kreativen Konzept oder anderer Ressourcen. Textuelle Referenzen zu Ressourcen kommen zum Beispiel in Programmheften, Literatur oder in der Beschriftung eines Informationsträgers vor. Eine textuelle Referenz ist eine spezielle Form der Referenz."""@de ;
+
+                                skos:scopeNote """A textual reference usually describes  mention of a resource by an Information Object, a Creative Concept or another resource in written form. A Textual References can be contained in programme booklets, literature or the labeling of an information carrier among others. A textual reference is a specific form of reference."""@en ;
                                 skos:example ""@de ;
                                 skos:example ""@en ;
                                 rdfs:label "hat textuelle Referenz zu"@de ;
@@ -304,19 +310,24 @@ nvto:hasVisualReferenceTo rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf nvto:hasAudioVisualReferenceTo ;
                                skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine visuelle Referenz enthält."@de ;
                                skos:definition "Connects a resource to another resource it has a visual reference to."@en ;
-                               skos:scopeNote """"""@de ;
-                               skos:scopeNote """"""@en ;
+                               skos:scopeNote """Eine visuelle Referenz beschreibt in der Regel die sichtbare Erfassung einer Ressource von einem Informationsobjekt, zum Beispiel auf einer Fotografie. Eine visuelle Referenz ist eine spezielle Form der Referenz."""@de ;
+                               skos:scopeNote """A visual reference usually describes the visual capture of a resource by an Information Object, for example on a photograph. A visual reference is a specific form of reference."""@en ;
+                               skos:example ""@de ;
+                               skos:example ""@en ;
                                rdfs:label "hat visuelle Referenz zu"@de ;
                                rdfs:label "has visual reference to"@en .
 
+## Other Properties
 
 nvto:beginsAtTime rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf nvto:hasDate ;
                  rdfs:domain nvto:TimeSpan ;
                  skos:definition "Beschreibt den Startzeitpunkt einer Zeitspanne."@de ;
                  skos:definition "Describes the begin date/point in time of a time span."@en ;
-                 skos:scopeNote """"""@de ;
+                 skos:scopeNote """Das Datum sollte nach ISO XY angegeben werden."""@de ;
                  skos:scopeNote """"""@en ;
+                 skos:example ""@de ;
+                 skos:example ""@en ;
                  rdfs:label "beginnt zu Zeitpunkt"@de ;
                  rdfs:label "begins at time"@en .
 
@@ -325,8 +336,10 @@ nvto:endsAtTime rdf:type owl:DatatypeProperty ;
                 rdfs:domain nvto:TimeSpan ;
                 skos:definition "Beschreibt den Endzeitpunkt einer Zeitspanne."@de ;
                 skos:definition "Describes the end date/point in time of a time span."@en ;
-                skos:scopeNote """"""@de ;
+                skos:scopeNote """Das Datum sollte nach ISO XY angegeben werden."""@de ;
                 skos:scopeNote """"""@en ;
+                skos:example ""@de ;
+                skos:example ""@en ;
                 rdfs:label "endet zu Zeitpunkt"@de ;
                 rdfs:label "ends at time"@en .
 
@@ -338,15 +351,19 @@ nvto:hasPlaceOfOccurrence rdf:type owl:ObjectProperty ;
                      skos:definition "Connects an event to the place it happened at."@en ;
                      skos:scopeNote """"""@de ;
                      skos:scopeNote """"""@en ;
+                     skos:example ""@de ;
+                     skos:example ""@en ;
                      rdfs:label "ereignet sich an Ort"@de ;
-                     rdfs:label "has place of Occurrence"@en .
+                     rdfs:label "has place of occurrence"@en .
 
 nvto:hasAcrobat rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf nvto:hasContributor ;
                 skos:definition "Verbindet eine Ressource mit einem Agens, der als Akrobat*in mitgewirkt hat."@de ;
                 skos:definition "Connects a resource to an agent who contributed to the resource as acrobat."@en ;
-                skos:scopeNote """"""@de ;
+                skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Akrobat*in beschrieben. """@de ;
                 skos:scopeNote """"""@en ;
+                skos:example ""@de ;
+                skos:example ""@en ;
                 rdfs:label "hat Akrobat*in"@de ;
                 rdfs:label "has acrobat"@en .
 
@@ -354,8 +371,10 @@ nvto:hasActor rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf nvto:hasContributor ;
          skos:definition "Verbindet eine Ressource mit einem Agens, der als Schauspieler*in mitgewirkt hat."@de ;
          skos:definition "Connects a resource to an agent who contributed to the resource as actor."@en ;
-         skos:scopeNote """"""@de ;
+         skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Schauspieler*in beschrieben."""@de ;
          skos:scopeNote """"""@en ;
+         skos:example ""@de ;
+         skos:example ""@en ;
          rdfs:label "hat Schauspieler*in"@de ;
          rdfs:label "has actor"@en .
 
@@ -363,16 +382,20 @@ nvto:hasAdaptor rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf nvto:hasContributor ;
                 skos:definition "Verbindet eine Ressource mit einem Agens, der als (Text-)Bearbeiter*in mitgewirkt hat."@de ;
                 skos:definition "Connects a resource to an agent who contributed to the resource as adaptor."@en ;
-                skos:scopeNote """"""@de ;
+                skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einem Text, einer Produktion, einer Aufführung oder einer anderen Ressource als (Text-)Bearbeiter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel in Form einer Adaptation eines literarischen Werkes in ein Drama oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
                 skos:scopeNote """"""@en ;
+                skos:example ""@de ;
+                skos:example ""@en ;
                 rdfs:label "hat (Text-)Bearbeiter*in"@de ;
                 rdfs:label "has adaptor"@en .
 
 nvto:hasAddress rdf:type owl:DatatypeProperty ;
                 skos:definition "Beschreibt die Adresse einer Ressource."@de ;
                 skos:definition "Describes the address of a resource."@en ;
-                skos:scopeNote """"""@de ;
+                skos:scopeNote """Addressen sollten in Form X geschrieben sein."""@de ;
                 skos:scopeNote """"""@en ;
+                skos:example ""@de ;
+                skos:example ""@en ;
                 rdfs:label "hat Adresse"@de ;
                 rdfs:label "has address"@en .
 
@@ -380,8 +403,10 @@ nvto:hasArtisticDirector rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf nvto:hasContributor ;
                         skos:definition "Verbindet eine Ressource mit einem Agens, der als künstlerische*r Leiter*in mitgewirkt hat."@de ;
                         skos:definition "Connects a resource to an agent who contributed to the resource as artistic director."@en ;
-                        skos:scopeNote """"""@de ;
+                        skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einem Festivalplan, einer Aufführung oder einer anderen Ressource als künstlerische*r Leiter*in beschrieben. Eine Mitwirkung kann zum Beispiel in Form der Leitung des künstlerischen Gesamtkonzepts eines Festivalplans oder einer einzelnen Performing Arts Aufführung erfolgen."""@de ;
                         skos:scopeNote """"""@en ;
+                        skos:example ""@de ;
+                        skos:example ""@en ;
                         rdfs:label "hat künstlerische*n Leiter*in"@de ;
                         rdfs:label "has artistic director"@en .
 
@@ -389,8 +414,10 @@ nvto:hasAssistantDirector rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf nvto:hasContributor ;
                           skos:definition "Verbindet eine Ressource mit einem Agens, der als Regieassistent*in mitgewirkt hat."@de ;
                           skos:definition "Connects a resource to an agent who contributed to the resource as assistant director."@en ;
-                          skos:scopeNote """"""@de ;
+                          skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben."""@de ;
                           skos:scopeNote """"""@en ;
+                          skos:example ""@de ;
+                          skos:example ""@en ;
                           rdfs:label "hat Regieassistent*in"@de ;
                           rdfs:label "has assistant director"@en .
 
@@ -398,8 +425,10 @@ nvto:hasAuthor  rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf nvto:hasContributor ;
                 skos:definition "Verbindet eine Ressource mit einem Agens, der als Autor*in mitgewirkt hat."@de ;
                 skos:definition "Connects a resource to an agent who contributed to the resource as author."@en ;
-                skos:scopeNote """"""@de ;
+                skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einem Text, einer Produktion, einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Autor*in eines literarischen Werkes oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
                 skos:scopeNote """"""@en ;
+                skos:example ""@de ;
+                skos:example ""@en ;
                 rdfs:label "hat Autor*in"@de ;
                 rdfs:label "has author"@en .
 
@@ -407,8 +436,10 @@ nvto:hasChoreographer rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf nvto:hasContributor ;
                       skos:definition "Verbindet eine Ressource mit einem Agens, der als Choreograf*in mitgewirkt hat."@de ;
                       skos:definition "Connects a resource to an agent who contributed to the resource as choreographer."@en ;
-                      skos:scopeNote """"""@de ;
+                      skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Choreograf*in beschrieben."""@de ;
                       skos:scopeNote """"""@en ;
+                      skos:example ""@de ;
+                      skos:example ""@en ;
                       rdfs:label "hat Choreograf*in"@de ;
                       rdfs:label "has choreographer"@en .
 
@@ -416,8 +447,10 @@ nvto:hasCinematographer rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf nvto:hasContributor ;
                         skos:definition "Verbindet eine Ressource mit einem Agens, der als Kameramann/Kamerafrau mitgewirkt hat."@de ;
                         skos:definition "Connects a resource to an agent who contributed to the resource as cinematographer."@en ;
-                        skos:scopeNote """"""@de ;
+                        skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Kameramann/Kamerafrau beschrieben."""@de ;
                         skos:scopeNote """"""@en ;
+                        skos:example ""@de ;
+                        skos:example ""@en ;
                         rdfs:label "hat Kameramann/Kamerafrau"@de ;
                         rdfs:label "has cinematographer"@en .
 
@@ -425,8 +458,10 @@ nvto:hasClown rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf nvto:hasContributor ;
                         skos:definition "Verbindet eine Ressource mit einem Agens, der als Clown*in mitgewirkt hat."@de ;
                         skos:definition "Connects a resource to an agent who contributed to the resource as clown."@en ;
-                        skos:scopeNote """"""@de ;
+                        skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                         skos:scopeNote """"""@en ;
+                        skos:example ""@de ;
+                        skos:example ""@en ;
                         rdfs:label "hat Clown*in"@de ;
                         rdfs:label "has clown"@en .
 
@@ -434,8 +469,10 @@ nvto:hasComposer rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf nvto:hasContributor ;
                  skos:definition "Verbindet eine Ressource mit einem Agens, der als Komponist*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as composer."@en ;
-                 skos:scopeNote """"""@de ;
+                 skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Komponist*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Komponist*in eines musikalischen Werks oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
                  skos:scopeNote """"""@en ;
+                 skos:example ""@de ;
+                 skos:example ""@en ;
                  rdfs:label "hat Komponist*in"@de ;
                  rdfs:label "has composer"@en .
 
@@ -443,8 +480,10 @@ nvto:hasConceptOriginator rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf nvto:hasContributor ;
                           skos:definition "Verbindet eine Ressource mit einem Agens, der als Konzept Urheber*in mitgewirkt hat."@de ;
                           skos:definition "Connects a resource to an agent who contributed to the resource as concept originator."@en ;
-                          skos:scopeNote """"""@de ;
+                          skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Konzept Urheber*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Konzept Urheber*in einer textuellen Grundlage einer Produktion oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
                           skos:scopeNote """"""@en ;
+                          skos:example ""@de ;
+                          skos:example ""@en ;
                           rdfs:label "hat Konzept Urheber*in"@de ;
                           rdfs:label "has concept originator"@en .
 
@@ -453,6 +492,8 @@ nvto:hasCondition rdf:type owl:DatatypeProperty ;
                   skos:definition "Describes or connects to the condition of a resource."@en ;
                   skos:scopeNote "Z.B. der Zustand eines physischen Objekts oder einer digitalen Datei."@de ;
                   skos:scopeNote "E.g. the condition of a physical object or a digital file."@en ;
+                  skos:example ""@de ;
+                  skos:example ""@en ;
                   rdfs:label "hat Zustand"@de ;
                   rdfs:label "has condition"@en .
 
@@ -462,6 +503,8 @@ nvto:hasContentMatch rdf:type owl:ObjectProperty ;
                      skos:definition "Connects a resource to another resource with matching content."@en ;
                      skos:scopeNote "Eine behelfsmäßige Eigenschaft zur Verbindung einer Ressource mit einer anderen Ressource mit teilweise oder vollständig gleichem Inhalt."@de ;
                      skos:scopeNote "A workaround property for connecting a resource to another resource with partly or entirely matching contents."@en ;
+                     skos:example ""@de ;
+                     skos:example ""@en ;
                      rdfs:label "hat gleichen Inhalt"@de ;
                      rdfs:label "has content match"@en .
 
@@ -469,8 +512,10 @@ nvto:hasContributor  rdf:type owl:ObjectProperty ;
                      rdfs:range nvto:Agent ;
                      skos:definition "Verbindet eine Ressource mit einem Agens, der an der Ressource mitgewirkt hat."@de ;
                      skos:definition "Connects a resource to an agent who contributed to the resource."@en ;
-                     skos:scopeNote """"""@de ;
+                     skos:scopeNote """Ausmaß Mitwirkung unbeschränkt, schöpferische Tätigkeit, lose Beteiligung, auch genaue Form der Mitwirkung nicht festgelegt."""@de ;
                      skos:scopeNote """"""@en ;
+                     skos:example ""@de ;
+                     skos:example ""@en ;
                      rdfs:label "hat Mitwirkende*n"@de ;
                      rdfs:label "has contributor"@en .
 
@@ -478,8 +523,10 @@ nvto:hasCostumeBuilder rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf nvto:hasContributor ;
                        skos:definition "Verbindet eine Ressource mit einem Agens, der als Kostümbauer*in mitgewirkt hat."@de ;
                        skos:definition "Connects a resource to an agent who contributed to the resource as costume builder."@en ;
-                       skos:scopeNote """"""@de ;
+                       skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Kostümbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Kostümbauer*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Kostümdesigner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung eines Kostüms als auf dessen Gestaltung."""@de ;
                        skos:scopeNote """"""@en ;
+                       skos:example ""@de ;
+                       skos:example ""@en ;
                        rdfs:label "hat Kostümbauer*in"@de ;
                        rdfs:label "has costume builder"@en .
 
@@ -487,8 +534,10 @@ nvto:hasCostumeDesigner rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf nvto:hasContributor ;
                         skos:definition "Verbindet eine Ressource mit einem Agens, der als Kostümdesigner*in mitgewirkt hat."@de ;
                         skos:definition "Connects a resource to an agent who contributed to the resource as costume designer."@en ;
-                        skos:scopeNote """"""@de ;
+                        skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Kostümgestalter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Kostümgestalter*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Kostümbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung."""@de ;
                         skos:scopeNote """"""@en ;
+                        skos:example ""@de ;
+                        skos:example ""@en ;
                         rdfs:label "hat Kostümgestalter*in"@de ;
                         rdfs:label "has costume designer"@en .
 
@@ -496,8 +545,10 @@ nvto:hasCreator rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf nvto:hasContributor ;
                 skos:definition "Verbindet eine Ressource mit einem Agens, der als Schöpfer*in mitgewirkt hat."@de ;
                 skos:definition "Connects a resource to an agent who contributed to the resource as creator."@en ;
-                skos:scopeNote """"""@de ;
+                skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, eines Informationsobjekts oder einer anderen Ressource als Schöpfer*in beschrieben. Es können pro Ressource mehrere Agens als Schöpfer*in beteiligt sein. Aussagen über die Form der schöpferischen Tätigkeit des Agens können mit entsprechenden Eigenschaften parallel zu dieser getroffen werden."""@de ;
                 skos:scopeNote """"""@en ;
+                skos:example ""@de ;
+                skos:example ""@en ;
                 rdfs:label "hat Schöpfer*in"@de ;
                 rdfs:label "has creator"@en .
 
@@ -505,62 +556,72 @@ nvto:hasDancer rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf nvto:hasContributor ;
                skos:definition "Verbindet eine Ressource mit einem Agens, der als Tänzer*in mitgewirkt hat."@de ;
                skos:definition "Connects a resource to an agent who contributed to the resource as dancer."@en ;
-               skos:scopeNote """"""@de ;
+               skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Tänzer*in beschrieben."""@de ;
                skos:scopeNote """"""@en ;
+               skos:example ""@de ;
+               skos:example ""@en ;
                rdfs:label "hat Tänzer*in"@de ;
                rdfs:label "has dancer"@en .
 
 nvto:hasDate rdf:type owl:DatatypeProperty ;
              skos:definition "Beschreibt einen einzelnen Zeitpunkt."@de ;
              skos:definition "Describes a singular date/point in time."@en ;
-             skos:scopeNote """"""@de ;
+             skos:scopeNote """Das Datum sollte nach ISO XY angegeben werden. Wenn genauere Zeiträume bekannt sind, sollten Zeitspannen genutzt werden."""@de ;
              skos:scopeNote """"""@en ;
+             skos:example ""@de ;
+             skos:example ""@en ;
              rdfs:label "hat Datum"@de ;
              rdfs:label "has date"@en .
 
 nvto:hasDateOfBirth rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf nvto:hasDate ;
-                    rdfs:domain nvto:Agent ;
+                    rdfs:domain nvto:Person ;
                     skos:definition "Beschreibt das Geburtsdatum eines Agens."@de ;
                     skos:definition "Describes the date of birth of an agent."@en ;
-                    skos:scopeNote """"""@de ;
+                    skos:scopeNote """Das Datum sollte nach ISO XY angegeben werden."""@de ;
                     skos:scopeNote """"""@en ;
+                    skos:example ""@de ;
+                    skos:example ""@en ;
                     rdfs:label "hat Geburtsdatum"@de ;
                     rdfs:label "has date of birth"@en .
 
 nvto:hasDateOfDeath rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf nvto:hasDate ;
+                    rdfs:subPropertyOf nvto:Person ;
                     rdfs:domain nvto:Agent ;
                     skos:definition "Beschreibt das Todesdatum eines Agens."@de ;
                     skos:definition "Describes the date of death of an agent."@en ;
-                    skos:scopeNote """"""@de ;
+                    skos:scopeNote """Das Datum sollte nach ISO XY angegeben werden."""@de ;
                     skos:scopeNote """"""@en ;
+                    skos:example ""@de ;
+                    skos:example ""@en ;
                     rdfs:label "hat Todesdatum"@de ;
                     rdfs:label "has date of death"@en .
 
 nvto:hasDescription rdf:type owl:DatatypeProperty ;
                     skos:definition "Eine generelle Beschreibung einer Ressource."@de ;
                     skos:definition "A general description of a resource."@en ;
-                    skos:scopeNote """"""@de ;
-                    skos:scopeNote """"""@en ;
+                    skos:example ""@de ;
+                    skos:example ""@en ;
                     rdfs:label "hat Beschreibung"@de ;
                     rdfs:label "has description"@en .
 
 nvto:hasDigitalVersion rdf:type owl:ObjectProperty ;
                        rdfs:domain nvto:PhysicalObject ;
                        rdfs:range nvto:DigitalObject ;
-                       skos:definition "Verbindet ein physisches Objekt mit seiner digitalen Version."@en ;
-                       skos:definition "Connects a physical object with a digital version of itself."@en ;
-                       skos:scopeNote """"""@de ;
-                       skos:scopeNote """"""@en ;
+                       skos:definition "Verbindet ein physisches Objekt mit seiner digitalen Version oder einer digitalen Version eines Teils des Objekts."@en ;
+                       skos:definition "Connects a physical object with a digital version of itself or a digital version of a part of the object."@en ;
+                       skos:example ""@de ;
+                       skos:example ""@en ;
                        rdfs:label "hat digitale Version"@de ;
                        rdfs:label "has digital version"@en .
 
 nvto:hasDimensions rdf:type owl:DatatypeProperty ;
                    skos:definition "Beschreibt die Dimensionen einer Ressource."@de ;
                    skos:definition "Describes the dimensions of a resource."@en ;
-                   skos:scopeNote "Z.B. die Dimensionen eines physischen Objekts oder einer digitalen Datei."@de ;
-                   skos:scopeNote "E.g. the dimensions of a physical object or a digital file."@en ;
+#                   skos:scopeNote "Z.B. die Dimensionen eines physischen Objekts oder einer digitalen Datei."@de ;
+#                   skos:scopeNote "E.g. the dimensions of a physical object or a digital file."@en ;
+                   skos:example ""@de ;
+                   skos:example ""@en ;
                    rdfs:label "hat Dimensionen"@de ;
                    rdfs:label "has dimensions"@en .
 
@@ -568,8 +629,10 @@ nvto:hasDirector rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf nvto:hasContributor ;
                  skos:definition "Verbindet eine Ressource mit einem Agens, der als Regisseur*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as director."@en ;
-                 skos:scopeNote """"""@de ;
+                 skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, eines, Films, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Regisseur*in eines Spielfilms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
                  skos:scopeNote """"""@en ;
+                 skos:example ""@de ;
+                 skos:example ""@en ;
                  rdfs:label "hat Regisseur*in"@de ;
                  rdfs:label "has director"@en .
 
@@ -577,8 +640,10 @@ nvto:hasDramaturge rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf nvto:hasContributor ;
                    skos:definition "Verbindet eine Ressource mit einem Agens, der als Dramaturg*in mitgewirkt hat."@de ;
                    skos:definition "Connects a resource to an agent who contributed to the resource as dramaturge."@en ;
-                   skos:scopeNote """"""@de ;
+                   skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung, einem Text oder einer anderen Ressource als Dramaturg*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Bearbeiter eines dramatischen Texts oder implizit, zum Beispiel in Form einer konzeptionellen Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
                    skos:scopeNote """"""@en ;
+                   skos:example ""@de ;
+                   skos:example ""@en ;
                    rdfs:label "hat Dramaturg*in"@de ;
                    rdfs:label "has dramaturge"@en .
 
@@ -586,8 +651,10 @@ nvto:hasEditor rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf nvto:hasContributor ;
                skos:definition "Verbindet eine Ressource mit einem Agens, der als Redakteur*in mitgewirkt hat."@de ;
                skos:definition "Connects a resource to an agent who contributed to the resource as editor."@en ;
-               skos:scopeNote """"""@de ;
+               skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einem Text oder einer anderen Ressource als Redakteur*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Herausgeber*in einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
                skos:scopeNote """"""@en ;
+               skos:example ""@de ;
+               skos:example ""@en ;
                rdfs:label "hat Redakteur*in"@de ;
                rdfs:label "has editor"@en .
 
@@ -595,42 +662,42 @@ nvto:hasExtent rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf nvto:hasFormat ;
                skos:definition "Beschreibt den Umfang einer Ressource."@de ;
                skos:definition "Describes the extent of a resource."@en ;
-               skos:scopeNote "Z.B. der Umfang eines physischen Objekts oder einer digitalen Datei."@de ;
-               skos:scopeNote "E.g. the extent of a physical object or a digital file."@en ;
+#               skos:scopeNote "Z.B. der Umfang eines physischen Objekts oder einer digitalen Datei."@de ;
+#               skos:scopeNote "E.g. the extent of a physical object or a digital file."@en ;
+               skos:example ""@de ;
+               skos:example ""@en ;
                rdfs:label "hat Umfang"@de ;
                rdfs:label "has extent"@en .
 
 nvto:hasFamilyName rdf:type owl:DatatypeProperty ;
-                   rdfs:domain nvto:Agent ;
+                   rdfs:domain nvto:Person ;
                    skos:definition "Beschreibt den Familiennamen eines Agens."@de ;
                    skos:definition "Describes the family name of an agent."@en ;
-                   skos:scopeNote """"""@de ;
-                   skos:scopeNote """"""@en ;
                    rdfs:label "hat Familienname"@de ;
                    rdfs:label "has family name"@en .
 
 nvto:hasFirstEdition rdf:type owl:AnnotationProperty ;
                      skos:definition "Beschreibt oder verbindet mit der Erstausgabe einer Ressource."@de ;
                      skos:definition "Describes or connects to the first edition of a resource."@en ;
-                     skos:scopeNote """"""@de ;
-                     skos:scopeNote """"""@en ;
+                     skos:example ""@de ;
+                     skos:example ""@en ;
                      rdfs:label "hat Erstausgabe"@de ;
                      rdfs:label "has first edition"@en .
 
 nvto:hasFirstLocalizedEdition rdf:type owl:AnnotationProperty ;
                               skos:definition "Beschreibt oder verbindet mit der übersetzten Erstausgabe einer Ressource."@de ;
                               skos:definition "Describes or connects to the first localized edition of a resource."@en ;
-                              skos:scopeNote """"""@de ;
-                              skos:scopeNote """"""@en ;
+                              skos:example ""@de ;
+                              skos:example ""@en ;
                               rdfs:label "hat übersetzte Erstausgabe"@de ;
                               rdfs:label "has first localized edition"@en .
 
 nvto:hasFirstName rdf:type owl:DatatypeProperty ;
-                  rdfs:domain nvto:Agent ;
+                  rdfs:domain nvto:Person ;
                   skos:definition "Beschreibt den Vornamen eines Agens."@de ;
                   skos:definition "Describes the first name of an agent."@en ;
-                  skos:scopeNote """"""@de ;
-                  skos:scopeNote """"""@en ;
+                  skos:example ""@de ;
+                  skos:example ""@en ;
                   rdfs:label "hat Vorname"@de ;
                   rdfs:label "has first name"@en .
 
@@ -641,24 +708,30 @@ nvto:hasFirstPerformanceDate rdf:type owl:DatatypeProperty ;
                              skos:definition "Describes the first performance date of a performing arts production."@en ;
                              skos:scopeNote "Eine behelfsmäßige Eigenschaft zur Beschreibung des ersten Aufführungsdatums einer Produktion der darstellenden Künste bei nicht ausreichender Beschreibung der zugehörigen Aufführungen."@de ;
                              skos:scopeNote "A workaround property for describing the first performance date of a performing arts production in case of insufficient description of related performances."@en ;
+                             skos:example ""@de ;
+                             skos:example ""@en ;
                              rdfs:label "hat erstes Aufführungsdatum"@de ;
                              rdfs:label "has first performance date"@en .
 
 nvto:hasFirstPerformanceVersion rdf:type owl:ObjectProperty ;
                                 rdfs:domain nvto:PerformingArtsProduction ;
                                 rdfs:range nvto:PerformingArtsProduction ;
-                                skos:definition "Verbindet eine Produktion der darstellenden Künste mit ihrer Erstaufführungsversion."@de ;
+                                skos:definition "Verbindet eine Performing Arts Produktion mit ihrer Erstaufführungsversion."@de ;
                                 skos:definition "Connects a performing arts production with its first performance version."@en ;
-                                skos:scopeNote """"""@de ;
+                                skos:scopeNote """Eine Erstaufführungsversion ist eine originale, zum ersten Mal aufgeführte Performing Arts Produktion."""@de ;
                                 skos:scopeNote """"""@en ;
+                                skos:example ""@de ;
+                                skos:example ""@en ;
                                 rdfs:label "hat Erstaufführungsversion"@de ;
                                 rdfs:label "has first performance version"@en .
 
 nvto:hasFormat rdf:type owl:AnnotationProperty ;
                skos:definition "Beschreibt oder verbindet mit dem Format einer Ressource."@de ;
                skos:definition "Describes or connects to the format of a resource."@en ;
-               skos:scopeNote "Z.B. das Format eines physischen Objekts oder einer digitalen Datei."@de ;
-               skos:scopeNote "E.g. the format of a physical object or a digital file."@en ;
+#               skos:scopeNote "Z.B. das Format eines physischen Objekts oder einer digitalen Datei."@de ;
+#               skos:scopeNote "E.g. the format of a physical object or a digital file."@en ;
+               skos:example ""@de ;
+               skos:example ""@en ;
                rdfs:label "hat Format"@de ;
                rdfs:label "has format"@en .
 
@@ -666,16 +739,18 @@ nvto:hasHomepage rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf nvto:hasRelatedWebsite ;
                  skos:definition "Verbindet mit der Homepage eines Agens."@de ;
                  skos:definition "Connects to a homepage of an agent."@en ;
-                 skos:scopeNote """"""@de ;
-                 skos:scopeNote """"""@en ;
+                 skos:example ""@de ;
+                 skos:example ""@en ;
                  rdfs:label "hat Homepage"@de ;
                  rdfs:label "has homepage"@en .
 
-nvto:hasIdentifier rdf:type owl:AnnotationProperty ;
-                   skos:definition "Beschreibt einen oder mehr alternative Bezeichner einer Ressource."@de ;
-                   skos:definition "Describes one or more alternative identifiers of a resource."@en ;
-                   skos:scopeNote """"""@de ;
+nvto:hasIdentifier rdf:type owl:ObjectProperty ;
+                   skos:definition "Beschreibt einen lokalen oder globalen Bezeichner einer Ressource."@de ;
+                   skos:definition "Describes a local or global identifier of a resource."@en ;
+                   skos:scopeNote """Ein Bezeichner kann von lokaler oder globaler Eindeutigkeit sein. Sowohl Literale als auch Links sind möglich."""@de ;
                    skos:scopeNote """"""@en ;
+                   skos:example ""@de ;
+                   skos:example ""@en ;
                    rdfs:label "hat Bezeichner"@de ;
                    rdfs:label "has identifier"@en .
 
@@ -683,8 +758,10 @@ nvto:hasIllustrator rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf nvto:hasContributor ;
                     skos:definition "Verbindet eine Ressource mit einem Agens, der als Illustrator*in mitgewirkt hat."@de ;
                     skos:definition "Connects a resource to an agent who contributed to the resource as illustrator."@en ;
-                    skos:scopeNote """"""@de ;
+                    skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Illustrator*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Herausgeber*in einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
                     skos:scopeNote """"""@en ;
+                    skos:example ""@de ;
+                    skos:example ""@en ;
                     rdfs:label "hat Illustrator*in"@de ;
                     rdfs:label "has illustrator"@en .
 
@@ -692,8 +769,10 @@ nvto:hasInformationCarrier rdf:type owl:ObjectProperty ;
                            rdfs:domain nvto:InformationObject ;
                            skos:definition "Verbindet ein Informationsobjekt mit einem physischen oder digitalen Objekt, auf dem es repräsentiert ist."@en ;
                            skos:definition "Connects an information object with a physical or digital object it is represented on."@en ;
-                           skos:scopeNote """"""@de ;
+                           skos:scopeNote """Ein Informationsträger ist eine Entität, die einen Inhalt, also ein Informationsobjekt repräsentiert. Ein Informationsobjekt kann von mehreren Informationsträgern repräsentiert werden, zum Beispiel die gleiche Aufnahme einer Aufführung auf einer Videokassette und auf einem USB-Stick. Auf einem Informationsträger können mehrere Informationsobjekte repräsentiert werden, zum Beispiel mehrere Aufnahmen von verschiedenen Aufführungen auf einer Videokassette."""@de ;
                            skos:scopeNote """"""@en ;
+                           skos:example ""@de ;
+                           skos:example ""@en ;
                            rdfs:label "hat Informationsträger"@de ;
                            rdfs:label "has information carrier"@en .
 
@@ -701,8 +780,8 @@ nvto:hasIsbn rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf nvto:hasIdentifier ;
              skos:definition "Beschreibt die ISBN einer Ressource."@de ;
              skos:definition "Describes the ISBN of a resource."@en ;
-             skos:scopeNote """"""@de ;
-             skos:scopeNote """"""@en ;
+             skos:example ""@de ;
+             skos:example ""@en ;
              rdfs:label "hat ISBN"@de ;
              rdfs:label "has ISBN"@en .
 
@@ -710,25 +789,25 @@ nvto:hasIssn rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf nvto:hasIdentifier ;
              skos:definition "Beschreibt die ISSN einer Ressource."@de ;
              skos:definition "Describes the ISSN of a resource."@en ;
-             skos:scopeNote """"""@de ;
-             skos:scopeNote """"""@en ;
+             skos:example ""@de ;
+             skos:example ""@en ;
              rdfs:label "hat ISSN"@de ;
              rdfs:label "has ISSN"@en .
 
 nvto:hasLabeling rdf:type owl:DatatypeProperty ;
-                skos:definition "Beschreibt die Beschriftung einer Ressource."@de ;
-                skos:definition "Describes the labeling of a resource."@en ;
-                skos:scopeNote """"""@de ;
-                skos:scopeNote """"""@en ;
-                rdfs:label "hat Beschriftung"@de ;
-                rdfs:label "has labeling"@en .
+                 skos:definition "Beschreibt die Beschriftung einer Ressource."@de ;
+                 skos:definition "Describes the labeling of a resource."@en ;
+                 skos:example ""@de ;
+                 skos:example ""@en ;
+                 rdfs:label "hat Beschriftung"@de ;
+                 rdfs:label "has labeling"@en .
 
 nvto:hasLabelingBack rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf nvto:hasLabeling ;
                      skos:definition "Beschreibt die Beschriftung der Rückseite einer Ressource."@de ;
                      skos:definition "Describes the labeling on the back of a resource."@en ;
-                     skos:scopeNote """"""@de ;
-                     skos:scopeNote """"""@en ;
+                     skos:example ""@de ;
+                     skos:example ""@en ;
                      rdfs:label "hat Beschriftung hinten"@de ;
                      rdfs:label "has labeling back"@en .
 
@@ -736,16 +815,18 @@ nvto:hasLabelingFront rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf nvto:hasLabeling ;
                       skos:definition "Beschreibt die Beschriftung der Vorderseite einer Ressource."@de ;
                       skos:definition "Describes the labeling on the front of a resource."@en ;
-                      skos:scopeNote """"""@de ;
-                      skos:scopeNote """"""@en ;
+                      skos:example ""@de ;
+                      skos:example ""@en ;
                       rdfs:label "hat Beschriftung vorn"@de ;
                       rdfs:label "has labeling front"@en .
 
 nvto:hasLanguage rdf:type owl:DatatypeProperty ;
                  skos:definition "Beschreibt die Sprache, die einer Ressource zugeordnet ist."@de ;
                  skos:definition "Describes the language associated to a resource."@en ;
-                 skos:scopeNote """"""@de ;
+                 skos:scopeNote """Sprachen sollten nach BCP 47 angegeben werden."""@de ;
                  skos:scopeNote """"""@en ;
+                 skos:example ""@de ;
+                 skos:example ""@en ;
                  rdfs:label "hat Sprache"@de ;
                  rdfs:label "has language"@en .
 
@@ -756,6 +837,8 @@ nvto:hasLastPerformanceDate rdf:type owl:DatatypeProperty ;
                             skos:definition "Describes the last performance date of a performing arts production."@en ;
                             skos:scopeNote "Eine behelfsmäßige Eigenschaft zur Beschreibung des letzten Aufführungsdatums einer Produktion der darstellenden Künste bei nicht ausreichender Beschreibung der zugehörigen Aufführungen."@de ;
                             skos:scopeNote "A workaround property for describing the last performance date of a performing arts production in case of insufficient description of related performances."@en ;
+                            skos:example ""@de ;
+                            skos:example ""@en ;
                             rdfs:label "hat Dernierendatum"@de ;
                             rdfs:label "has last performance date"@en .
 
@@ -763,8 +846,10 @@ nvto:hasLayouter rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf nvto:hasContributor ;
                  skos:definition "Verbindet eine Ressource mit einem Agens, der als Layouter*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as layouter."@en ;
-                 skos:scopeNote """"""@de ;
+                 skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Publikation oder einer anderen Ressource als Layouter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Gestalter*in des Layouts einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
                  skos:scopeNote """"""@en ;
+                 skos:example ""@de ;
+                 skos:example ""@en ;
                  rdfs:label "hat Layouter*in"@de ;
                  rdfs:label "has layouter"@en .
 
@@ -772,8 +857,10 @@ nvto:hasLightingDesigner rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf nvto:hasContributor ;
                       skos:definition "Verbindet eine Ressource mit einem Agens, der als Lichtgestalter*in mitgewirkt hat."@de ;
                       skos:definition "Connects a resource to an agent who contributed to the resource as light designer."@en ;
-                      skos:scopeNote """"""@de ;
+                      skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Lichtgestalter*in beschrieben."""@de ;
                       skos:scopeNote """"""@en ;
+                      skos:example ""@de ;
+                      skos:example ""@en ;
                       rdfs:label "hat Lichtgestalter*in"@de ;
                       rdfs:label "has lighting designer"@en .
 
@@ -781,8 +868,10 @@ nvto:hasMakeUpArtist rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf nvto:hasContributor ;
                      skos:definition "Verbindet eine Ressource mit einem Agens, der als Visagist*in mitgewirkt hat."@de ;
                      skos:definition "Connects a resource to an agent who contributed to the resource as make up artist."@en ;
-                     skos:scopeNote """"""@de ;
+                     skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Visagist*in beschrieben."""@de ;
                      skos:scopeNote """"""@en ;
+                     skos:example ""@de ;
+                     skos:example ""@en ;
                      rdfs:label "hat Visagist*in"@de ;
                      rdfs:label "has make up artist"@en .
 
@@ -790,8 +879,10 @@ nvto:hasMaskBuilder rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf nvto:hasContributor ;
                     skos:definition "Verbindet eine Ressource mit einem Agens, der als Maskenbauer*in mitgewirkt hat."@de ;
                     skos:definition "Connects a resource to an agent who contributed to the resource as mask builder."@en ;
-                    skos:scopeNote """"""@de ;
+                    skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Maskenbauer*in einer Maske oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Maskengestalter*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf dessen Gestaltung."""@de ;
                     skos:scopeNote """"""@en ;
+                    skos:example ""@de ;
+                    skos:example ""@en ;
                     rdfs:label "hat Maskenbauer*in"@de ;
                     rdfs:label "has mask builder"@en .
 
@@ -799,16 +890,20 @@ nvto:hasMaskDesigner rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf nvto:hasContributor ;
                      skos:definition "Verbindet eine Ressource mit einem Agens, der als Maskengestalter*in mitgewirkt hat."@de ;
                      skos:definition "Connects a resource to an agent who contributed to the resource as mask designer."@en ;
-                     skos:scopeNote """"""@de ;
+                     skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Maskengestalter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Maskengestalter*in einer Maske oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung."""@de ;
                      skos:scopeNote """"""@en ;
+                     skos:example ""@de ;
+                     skos:example ""@en ;
                      rdfs:label "hat Maskengestalter*in"@de ;
                      rdfs:label "has mask designer"@en .
 
 nvto:hasMediator rdf:type owl:ObjectProperty ;
                  skos:definition "Verbindet eine Ressource mit einem Agens, der als Vermittler*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as mediator."@en ;
-                 skos:scopeNote """"""@de ;
+                 skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einem Festival, einem Workshop oder einer anderen Ressource als Vermittler*in beschrieben. Vermittler*innen können zum Beispiel Lehrer in einem Workshop oder Dozenten eines Vortrags sein."""@de ;
                  skos:scopeNote """"""@en ;
+                 skos:example ""@de ;
+                 skos:example ""@en ;
                  rdfs:label "hat Vermittler*in"@de ;
                  rdfs:label "has mediator"@en .
 
@@ -816,8 +911,8 @@ nvto:hasMedium rdf:type owl:AnnotationProperty ;
                rdfs:subPropertyOf nvto:hasFormat ;
                skos:definition "Beschreibt oder verbindet mit dem Medium einer Ressource."@en ;
                skos:definition "Describes or connects to the medium of a resource."@en ;
-               skos:scopeNote """"""@de ;
-               skos:scopeNote """"""@en ;
+               skos:example ""@de ;
+               skos:example ""@en ;
                rdfs:label "hat Medium"@de ;
                rdfs:label "has medium"@en .
 
@@ -825,8 +920,10 @@ nvto:hasMime rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf nvto:hasContributor ;
              skos:definition "Verbindet eine Ressource mit einem Agens, der als Mime/Mimin mitgewirkt hat."@de ;
              skos:definition "Connects a resource to an agent who contributed to the resource as mime."@en ;
-             skos:scopeNote """"""@de ;
+             skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Mime/Mimin beschrieben."""@de ;
              skos:scopeNote """"""@en ;
+             skos:example ""@de ;
+             skos:example ""@en ;
              rdfs:label "hat Mime/Mimin"@de ;
              rdfs:label "has mime"@en .
 
@@ -834,8 +931,10 @@ nvto:hasMusician rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf nvto:hasContributor ;
                  skos:definition "Verbindet eine Ressource mit einem Agens, der als Musiker*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as musician."@en ;
-                 skos:scopeNote """"""@de ;
+                 skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Musiker*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Musiker*in für ein musikalisches Werk oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
                  skos:scopeNote """"""@en ;
+                 skos:example ""@de ;
+                 skos:example ""@en ;
                  rdfs:label "hat Musiker*in"@de ;
                  rdfs:label "has musician"@en .
 
@@ -843,8 +942,8 @@ nvto:hasName rdf:type owl:DatatypeProperty ;
              rdfs:domain nvto:Agent ;
              skos:definition "Beschreibt den Namen eines Agens."@en ;
              skos:definition "Describes the name of an agent."@en ;
-             skos:scopeNote """"""@de ;
-             skos:scopeNote """"""@en ;
+             skos:example ""@de ;
+             skos:example ""@en ;
              rdfs:label "hat Name"@de ;
              rdfs:label "has name"@en .
 
@@ -852,8 +951,10 @@ nvto:hasPantomime rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf nvto:hasContributor ;
                            skos:definition "Verbindet eine Ressource mit einem Agens, der als Pantomime/Pantomimin mitgewirkt hat."@de ;
                            skos:definition "Connects a resource to an agent who contributed to the resource as pantomime."@en ;
-                           skos:scopeNote """"""@de ;
+                           skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Pantomime/Pantomimin beschrieben."""@de ;
                            skos:scopeNote """"""@en ;
+                           skos:example ""@de ;
+                           skos:example ""@en ;
                            rdfs:label "hat Pantomime/Pantomimin"@de ;
                            rdfs:label "has pantomime"@en .
 
@@ -861,8 +962,10 @@ nvto:hasPart rdf:type owl:ObjectProperty ;
              rdf:type owl:TransitiveProperty ;
              skos:definition "Verbindet eine Ressource mit einer anderen Ressource, die ein Teil von ihr ist."@de ;
              skos:definition "Connects a resource to another resource which is a part of it."@en ;
-             skos:scopeNote """"""@de ;
+             skos:scopeNote """Eine Teilbeziehung kann zwischen verschiedenen Arten von Ressourcen bestehen und muss nicht von physischer Natur sein. Ein Informationsobjekt kann zum Beispiel Teil eines physischen Objekts oder eines anderen Informationsobjekts sein, eine Aufführung kann Teil eines Festivals sein."""@de ;
              skos:scopeNote """"""@en ;
+             skos:example ""@de ;
+             skos:example ""@en ;
              rdfs:label "hat Teil"@de ;
              rdfs:label "has part"@en .
 
@@ -870,8 +973,10 @@ nvto:hasParticipant rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf nvto:hasContributor ;
                     skos:definition "Verbindet eine Ressource mit einem Agens, der als Teilnehmer*in mitgewirkt hat."@de ;
                     skos:definition "Connects a resource to an agent who contributed to the resource as participant."@en ;
-                    skos:scopeNote """"""@de ;
+                    skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einem Festival, einem Workshop oder einer anderen Ressource als Teilnehmer*in beschrieben. Teilnehmer*innen können zum Beispiel Teilnehmer*innen in einem Workshop oder an einem Vortrag sein."""@de ;
                     skos:scopeNote """"""@en ;
+                    skos:example ""@de ;
+                    skos:example ""@en ;
                     rdfs:label "hat Teilnehmer*in"@de ;
                     rdfs:label "has participant"@en .
 
@@ -879,8 +984,10 @@ nvto:hasPerformer rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf nvto:hasContributor ;
                   skos:definition "Verbindet eine Ressource mit einem Agens, der als Darsteller*in mitgewirkt hat."@de ;
                   skos:definition "Connects a resource to an agent who contributed to the resource as performer."@en ;
-                  skos:scopeNote """"""@de ;
+                  skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Darsteller*in beschrieben. Diese Eigenschaft kann entweder als allgemeine Eigenschaft für die Mitwirkung einer Person in jeglicher darstellerischen Form genutzt werden, wenn keine genaueren Angaben vorhanden sind oder als konkrete Bezeichnung, wenn die Rolle explizit als Darsteller*in beschrieben wurde."""@de ;
                   skos:scopeNote """"""@en ;
+                  skos:example ""@de ;
+                  skos:example ""@en ;
                   rdfs:label "hat Darsteller*in"@de ;
                   rdfs:label "has performer"@en .
 
@@ -888,27 +995,33 @@ nvto:hasPhotographer rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf nvto:hasContributor ;
                      skos:definition "Verbindet eine Ressource mit einem Agens, der als Fotograf*in mitgewirkt hat."@de ;
                      skos:definition "Connects a resource to an agent who contributed to the resource as photographer."@en ;
-                     skos:scopeNote """"""@de ;
+                     skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                      skos:scopeNote """"""@en ;
+                     skos:example ""@de ;
+                     skos:example ""@en ;
                      rdfs:label "hat Fotograf*in"@de ;
                      rdfs:label "has photographer"@en .
 
-nvto:hasPhotoStudio rdf:type owl:AnnotationProperty ;
+nvto:hasPhotoStudio rdf:type owl:ObjectProperty ;
                     skos:definition "Beschreibt ein Fotostudio oder verbindet eine Ressource mit einem Fotostudio, dass bei ihrer Kreierung beigetragen hat."@de ;
                     skos:definition "Describes or connects a resource to a photo studio that contributed to its creation."@en ;
                     skos:scopeNote """"""@de ;
                     skos:scopeNote """"""@en ;
+                    skos:example ""@de ;
+                    skos:example ""@en ;
                     rdfs:label "hat Fotostudio"@de ;
                     rdfs:label "has photo studio"@en .
 
 nvto:hasPlaywright rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf nvto:hasContributor ;
-                            skos:definition "Verbindet eine Ressource mit einem Agens, der als Dramatiker*in mitgewirkt hat."@de ;
-                            skos:definition "Connects a resource to an agent who contributed to the resource as playwright."@en ;
-                            skos:scopeNote """"""@de ;
-                            skos:scopeNote """"""@en ;
-                            rdfs:label "hat Dramatiker*in"@de ;
-                            rdfs:label "has playwright"@en .
+                   rdfs:subPropertyOf nvto:hasContributor ;
+                   skos:definition "Verbindet eine Ressource mit einem Agens, der als Dramatiker*in mitgewirkt hat."@de ;
+                   skos:definition "Connects a resource to an agent who contributed to the resource as playwright."@en ;
+                   skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in  beschrieben."""@de ;
+                   skos:scopeNote """"""@en ;
+                   skos:example ""@de ;
+                   skos:example ""@en ;
+                   rdfs:label "hat Dramatiker*in"@de ;
+                   rdfs:label "has playwright"@en .
 
 nvto:hasPredecessor rdf:type owl:ObjectProperty ;
                     rdf:type owl:TransitiveProperty ;
@@ -916,6 +1029,8 @@ nvto:hasPredecessor rdf:type owl:ObjectProperty ;
                     skos:definition "Describes or connects to the preceding resource of a resource."@en ;
                     skos:scopeNote """"""@de ;
                     skos:scopeNote """"""@en ;
+                    skos:example ""@de ;
+                    skos:example ""@en ;
                     rdfs:label "hat Vorgänger"@de ;
                     rdfs:label "has predecessor"@en .
 
@@ -923,51 +1038,63 @@ nvto:hasProducer rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf nvto:hasContributor ;
                  skos:definition "Verbindet eine Ressource mit einem Agens, der als Produzent*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as producer."@en ;
-                 skos:scopeNote """"""@de ;
+                 skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                  skos:scopeNote """"""@en ;
+                 skos:example ""@de ;
+                 skos:example ""@en ;
                  rdfs:label "hat Produzent*in"@de ;
                  rdfs:label "has producer"@en .
 
 nvto:hasProgrammeDirector rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf nvto:hasContributor ;
-              skos:definition "Verbindet eine Ressource mit einem Agens, der durch Kuration oder Leitung des Programmes bei einem Festival mitgewirkt hat."@de ;
-              skos:definition "Connects a resource to an agent who contributed to a festival or event by curating or directing the programme of the event."@en ;
-              skos:scopeNote """"""@de ;
-              skos:scopeNote """"""@en ;
-              rdfs:label "hat Programmdirektor*in"@de ;
-              rdfs:label "has programme director"@en .
+                          rdfs:subPropertyOf nvto:hasContributor ;
+                          skos:definition "Verbindet eine Ressource mit einem Agens, der durch Kuration oder Leitung des Programmes bei einem Festival mitgewirkt hat."@de ;
+                          skos:definition "Connects a resource to an agent who contributed to a festival or event by curating or directing the programme of the event."@en ;
+                          skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
+                          skos:scopeNote """"""@en ;
+                          skos:example ""@de ;
+                          skos:example ""@en ;
+                          rdfs:label "hat Programmdirektor*in"@de ;
+                          rdfs:label "has programme director"@en .
 
 nvto:hasPrompter rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf nvto:hasContributor ;
-                skos:definition "Verbindet eine Ressource mit einem Agens, der als Souffleur/Souffleuse mitgewirkt hat."@de ;
-                skos:definition "Connects a resource to an agent who contributed to the resource as prompter."@en ;
-                skos:scopeNote """"""@de ;
-                skos:scopeNote """"""@en ;
-                rdfs:label "hat Souffleur/Souffleuse"@de ;
-                rdfs:label "has prompter"@en .
+                 rdfs:subPropertyOf nvto:hasContributor ;
+                 skos:definition "Verbindet eine Ressource mit einem Agens, der als Souffleur/Souffleuse mitgewirkt hat."@de ;
+                 skos:definition "Connects a resource to an agent who contributed to the resource as prompter."@en ;
+                 skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
+                 skos:scopeNote """"""@en ;
+                 skos:example ""@de ;
+                 skos:example ""@en ;
+                 rdfs:label "hat Souffleur/Souffleuse"@de ;
+                 rdfs:label "has prompter"@en .
 
 nvto:hasProvenance rdf:type owl:AnnotationProperty ;
                    skos:definition "Beschreibt die Herkunft oder verbindet mit der Herkunft einer Ressource."@de ;
                    skos:definition "Describes or connects to the provenance of a resource."@en ;
                    skos:scopeNote """"""@de ;
                    skos:scopeNote """"""@en ;
+                   skos:example ""@de ;
+                   skos:example ""@en ;
                    rdfs:label "hat Herkunft"@de ;
                    rdfs:label "has provenance"@en .
 
 nvto:hasPublisher rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf nvto:hasContributor ;
-                  skos:definition "Beschreibt den/die Herausgeber*in einer Ressource oder verbindet die Ressource mit einem Agens, der/die als Verleger*in an der Ressource mitgewirkt hat."@en ;
-                  skos:definition "Describes the publisher of a resource or connects the resource to an agent who contributed to the resource as publisher."@en ;
-                  skos:scopeNote """"""@de ;
+                  skos:definition "Verbindet die Ressource mit einem Agens, der/die als Verleger*in an der Ressource mitgewirkt hat."@en ;
+                  skos:definition "Connects the resource to an agent who contributed to the resource as publisher."@en ;
+                  skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                   skos:scopeNote """"""@en ;
+                  skos:example ""@de ;
+                  skos:example ""@en ;
                   rdfs:label "hat Herausgeber*in"@de ;
                   rdfs:label "has publisher"@en .
 
 nvto:hasPublishingCompany rdf:type owl:ObjectProperty ;
                         skos:definition "Verbindet die Ressource mit einem Agens, derals Verlag an der Ressource mitgewirkt hat."@en ;
                         skos:definition "Connects the resource to an agent who contributed to the resource as publishing company."@en ;
-                        skos:scopeNote """"""@de ;
+                        skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                         skos:scopeNote """"""@en ;
+                        skos:example ""@de ;
+                        skos:example ""@en ;
                         rdfs:label "hat Verlag"@de ;
                         rdfs:label "has publishing company"@en .
 
@@ -978,6 +1105,8 @@ nvto:hasPublishingPlace rdf:type owl:ObjectProperty ;
                         skos:definition "Connects a resource to the place it was or is published at."@en ;
                         skos:scopeNote """"""@de ;
                         skos:scopeNote """"""@en ;
+                        skos:example ""@de ;
+                        skos:example ""@en ;
                         rdfs:label "hat Verlagsort"@de ;
                         rdfs:label "has publishing place"@en .
 
@@ -985,8 +1114,10 @@ nvto:hasPuppetBuilder rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf nvto:hasContributor ;
                        skos:definition "Verbindet eine Ressource mit einem Agens, der als Puppenbauer*in mitgewirkt hat."@de ;
                        skos:definition "Connects a resource to an agent who contributed to the resource as puppet builder."@en ;
-                       skos:scopeNote """"""@de ;
+                       skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                        skos:scopeNote """"""@en ;
+                       skos:example ""@de ;
+                       skos:example ""@en ;
                        rdfs:label "hat Puppenbauer*in"@de ;
                        rdfs:label "has puppet builder"@en .
 
@@ -994,8 +1125,10 @@ nvto:hasPuppetDesigner rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf nvto:hasContributor ;
                        skos:definition "Verbindet eine Ressource mit einem Agens, der als Puppengestalter*in mitgewirkt hat."@de ;
                        skos:definition "Connects a resource to an agent who contributed to the resource as puppet designer."@en ;
-                       skos:scopeNote """"""@de ;
+                       skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                        skos:scopeNote """"""@en ;
+                       skos:example ""@de ;
+                       skos:example ""@en ;
                        rdfs:label "hat Puppengestalter*in"@de ;
                        rdfs:label "has puppet designer"@en .
 
@@ -1003,8 +1136,10 @@ nvto:hasRecordist rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf nvto:hasContributor ;
                   skos:definition "Verbindet eine Ressource mit einem Agens, der als Tonmeister*in mitgewirkt hat."@de ;
                   skos:definition "Connects a resource to an agent who contributed to the resource as recordist."@en ;
-                  skos:scopeNote """"""@de ;
+                  skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                   skos:scopeNote """"""@en ;
+                  skos:example ""@de ;
+                  skos:example ""@en ;
                   rdfs:label "hat Tonmeister*in"@de ;
                   rdfs:label "has recordist"@en .
 
@@ -1014,6 +1149,8 @@ nvto:hasRelatedPlace rdf:type owl:ObjectProperty ;
                      skos:definition "Connects a resource to a place it is related to in any way."@en ;
                      skos:scopeNote """"""@de ;
                      skos:scopeNote """"""@en ;
+                     skos:example ""@de ;
+                     skos:example ""@en ;
                      rdfs:label "hat Bezug zu Ort"@de ;
                      rdfs:label "has related place"@en .
 
@@ -1022,6 +1159,8 @@ nvto:hasRelatedWebsite rdf:type owl:ObjectProperty ;
                        skos:definition "Connects to a related website of an agent or a resource."@en ;
                        skos:scopeNote """"""@de ;
                        skos:scopeNote """"""@en ;
+                       skos:example ""@de ;
+                       skos:example ""@en ;
                        rdfs:label "hat Bezug zu Webseite"@de ;
                        rdfs:label "has related website"@en .
 
@@ -1033,6 +1172,8 @@ nvto:hasResidence rdf:type owl:ObjectProperty ;
                   skos:definition "Connects an agent to its place of residency."@en ;
                   skos:scopeNote """"""@de ;
                   skos:scopeNote """"""@en ;
+                  skos:example ""@de ;
+                  skos:example ""@en ;
                   rdfs:label "hat Residenz"@de ;
                   rdfs:label "has residence"@en .
 
@@ -1043,6 +1184,8 @@ nvto:hasRestagedVersion rdf:type owl:ObjectProperty ;
                         skos:definition "Connects a performing arts production with its restaged version."@en ;
                         skos:scopeNote """"""@de ;
                         skos:scopeNote """"""@en ;
+                        skos:example ""@de ;
+                        skos:example ""@en ;
                         rdfs:label "hat Wiederaufnahme"@de ;
                         rdfs:label "has restaged version"@en .
 
@@ -1051,6 +1194,8 @@ nvto:hasRights rdf:type owl:DatatypeProperty ;
                skos:definition "Describes one or more rights statements of a resource."@en ;
                skos:scopeNote """"""@de ;
                skos:scopeNote """"""@en ;
+               skos:example ""@de ;
+               skos:example ""@en ;
                rdfs:label "hat Rechte"@de ;
                rdfs:label "has rights"@en .
 
@@ -1059,6 +1204,8 @@ nvto:hasRightsHolder rdf:type owl:AnnotationProperty ;
                      skos:definition "Describes the rights holder of a resource or connects the resource to an agent who holds rights to the resource."@en ;
                      skos:scopeNote """"""@de ;
                      skos:scopeNote """"""@en ;
+                     skos:example ""@de ;
+                     skos:example ""@en ;
                      rdfs:label "hat Rechteinhaber"@de ;
                      rdfs:label "has rights holder"@en .
 
@@ -1066,8 +1213,10 @@ nvto:hasSeamster rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf nvto:hasContributor ;
                  skos:definition "Verbindet eine Ressource mit einem Agens, der als Näher*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as seamster."@en ;
-                 skos:scopeNote """"""@de ;
+                 skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                  skos:scopeNote """"""@en ;
+                 skos:example ""@de ;
+                 skos:example ""@en ;
                  rdfs:label "hat Näher*in"@de ;
                  rdfs:label "has seamster"@en .
 
@@ -1077,6 +1226,8 @@ nvto:hasSeason rdf:type owl:ObjectProperty ;
                skos:definition "connects to the season in which a performing arts production was or is performed."@en ;
                skos:scopeNote """"""@de ;
                skos:scopeNote """"""@en ;
+               skos:example ""@de ;
+               skos:example ""@en ;
                rdfs:label "hat Spielzeit"@de ;
                rdfs:label "has season"@en .
 
@@ -1084,8 +1235,10 @@ nvto:hasSetBuilder rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf nvto:hasContributor ;
                    skos:definition "Verbindet eine Ressource mit einem Agens, der als Bühnenbauer*in mitgewirkt hat."@de ;
                    skos:definition "Connects a resource to an agent who contributed to the resource as set builder."@en ;
-                   skos:scopeNote """"""@de ;
+                   skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                    skos:scopeNote """"""@en ;
+                   skos:example ""@de ;
+                   skos:example ""@en ;
                    rdfs:label "hat Bühnenbauer*in"@de ;
                    rdfs:label "has set builder"@en .
 
@@ -1093,16 +1246,20 @@ nvto:hasSetDesigner rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf nvto:hasContributor ;
                     skos:definition "Verbindet eine Ressource mit einem Agens, der als Bühnenbildner*in mitgewirkt hat."@de ;
                     skos:definition "Connects a resource to an agent who contributed to the resource as set designer."@en ;
-                    skos:scopeNote """"""@de ;
+                    skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                     skos:scopeNote """"""@en ;
+                    skos:example ""@de ;
+                    skos:example ""@en ;
                     rdfs:label "hat Bühnenbildner*in"@de ;
                     rdfs:label "has set designer"@en .
 
 nvto:hasSinger rdf:type owl:ObjectProperty ;
                skos:definition "Verbindet eine Ressource mit einem Agens, der als Sänger*in mitgewirkt hat."@de ;
                skos:definition "Connects a resource to an agent who contributed to the resource as singer."@en ;
-               skos:scopeNote """"""@de ;
+               skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                skos:scopeNote """"""@en ;
+               skos:example ""@de ;
+               skos:example ""@en ;
                rdfs:label "hat Sänger*in"@de ;
                rdfs:label "has singer"@en .
 
@@ -1110,8 +1267,10 @@ nvto:hasSoundDesigner rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf nvto:hasContributor ;
                       skos:definition "Verbindet eine Ressource mit einem Agens, der als Tongestalter*in mitgewirkt hat."@de ;
                       skos:definition "Connects a resource to an agent who contributed to the resource as sound designer."@en ;
-                      skos:scopeNote """"""@de ;
+                      skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                       skos:scopeNote """"""@en ;
+                      skos:example ""@de ;
+                      skos:example ""@en ;
                       rdfs:label "hat Tongestalter*in"@de ;
                       rdfs:label "has sound designer"@en .
 
@@ -1120,6 +1279,8 @@ nvto:hasSource rdf:type owl:AnnotationProperty ;
                skos:definition "Describes or connects to the source of a resource."@en ;
                skos:scopeNote """"""@de ;
                skos:scopeNote """"""@en ;
+               skos:example ""@de ;
+               skos:example ""@en ;
                rdfs:label "hat Quelle"@de ;
                rdfs:label "has source"@en .
 
@@ -1127,8 +1288,10 @@ nvto:hasSpeaker rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf nvto:hasContributor ;
                 skos:definition "Verbindet eine Ressource mit einem Agens, der als Sprecher*in mitgewirkt hat."@de ;
                 skos:definition "Connects a resource to an agent who contributed to the resource as speaker."@en ;
-                skos:scopeNote """"""@de ;
+                skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                 skos:scopeNote """"""@en ;
+                skos:example ""@de ;
+                skos:example ""@en ;
                 rdfs:label "hat Sprecher*in"@de ;
                 rdfs:label "has speaker"@en .
 
@@ -1136,8 +1299,10 @@ nvto:hasStageManager rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf nvto:hasContributor ;
                               skos:definition "Verbindet eine Ressource mit einem Agens, der als Inspizient*in mitgewirkt hat."@de ;
                               skos:definition "Connects a resource to an agent who contributed to the resource as stage manager."@en ;
-                              skos:scopeNote """"""@de ;
+                              skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                               skos:scopeNote """"""@en ;
+                              skos:example ""@de ;
+                              skos:example ""@en ;
                               rdfs:label "hat Inspizient*in"@de ;
                               rdfs:label "has stage manager"@en .
 
@@ -1146,6 +1311,8 @@ nvto:hasSubtitle  rdf:type owl:DatatypeProperty ;
                   skos:definition "Describes the subtitle of a resource."@en ;
                   skos:scopeNote """"""@de ;
                   skos:scopeNote """"""@en ;
+                  skos:example ""@de ;
+                  skos:example ""@en ;
                   rdfs:label "hat Untertitel"@de ;
                   rdfs:label "has subtitle"@en .
 
@@ -1153,8 +1320,10 @@ nvto:hasSurtitleCreator rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf nvto:hasContributor ;
                        skos:definition "Verbindet eine Ressource mit einem Agens, der als Übertitel Schöpfer*in mitgewirkt hat."@de ;
                        skos:definition "Connects a resource to an agent who contributed to the resource as author of surtitles."@en ;
-                       skos:scopeNote """"""@de ;
+                       skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                        skos:scopeNote """"""@en ;
+                       skos:example ""@de ;
+                       skos:example ""@en ;
                        rdfs:label "hat Übertitel Schöpfer*in"@de ;
                        rdfs:label "has surtitle creator"@en .
 
@@ -1164,6 +1333,8 @@ nvto:hasTableOfContents rdf:type owl:DatatypeProperty ;
                         skos:definition "Describes the table of contents of a resource."@en ;
                         skos:scopeNote """"""@de ;
                         skos:scopeNote """"""@en ;
+                        skos:example ""@de ;
+                        skos:example ""@en ;
                         rdfs:label "hat Inhaltsverzeichnis"@de ;
                         rdfs:label "has table of contents"@en .
 
@@ -1171,8 +1342,10 @@ nvto:hasTechnician rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf nvto:hasContributor ;
                    skos:definition "Verbindet eine Ressource mit einem Agens, der als Techniker*in mitgewirkt hat."@de ;
                    skos:definition "Connects a resource to an agent who contributed to the resource as technician."@en ;
-                   skos:scopeNote """"""@de ;
+                   skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                    skos:scopeNote """"""@en ;
+                   skos:example ""@de ;
+                   skos:example ""@en ;
                    rdfs:label "hat Techniker*in"@de ;
                    rdfs:label "has technician"@en .
 
@@ -1181,6 +1354,8 @@ nvto:hasTitle rdf:type owl:DatatypeProperty ;
               skos:definition "Describes the title of a resource."@en ;
               skos:scopeNote """"""@de ;
               skos:scopeNote """"""@en ;
+              skos:example ""@de ;
+              skos:example ""@en ;
               rdfs:label "hat Titel"@de ;
               rdfs:label "has title"@en .
 
@@ -1188,8 +1363,10 @@ nvto:hasTranslator rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf nvto:hasContributor ;
                    skos:definition "Verbindet eine Ressource mit einem Agens, der als Übersetzer*in mitgewirkt hat."@de ;
                    skos:definition "Connects a resource to an agent who contributed to the resource as translator."@en ;
-                   skos:scopeNote """"""@de ;
+                   skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                    skos:scopeNote """"""@en ;
+                   skos:example ""@de ;
+                   skos:example ""@en ;
                    rdfs:label "hat Übersetzer*in"@de ;
                    rdfs:label "has translator"@en .
 
@@ -1198,6 +1375,8 @@ nvto:hasType rdf:type owl:AnnotationProperty ;
              skos:definition "Describes or connects to the type of a resource."@en ;
              skos:scopeNote """"""@de ;
              skos:scopeNote """"""@en ;
+             skos:example ""@de ;
+             skos:example ""@en ;
              rdfs:label "hat Typ"@de ;
              rdfs:label "has type"@en .
 
@@ -1205,8 +1384,10 @@ nvto:hasVideoDesigner rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf nvto:hasContributor ;
                       skos:definition "Verbindet eine Ressource mit einem Agens, der als Videodesigner*in mitgewirkt hat."@de ;
                       skos:definition "Connects a resource to an agent responsible for its video design."@en ;
-                      skos:scopeNote """"""@de ;
+                      skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                       skos:scopeNote """"""@en ;
+                      skos:example ""@de ;
+                      skos:example ""@en ;
                       rdfs:label "hat Videodesigner*in"@de ;
                       rdfs:label "video designer"@en .
 
@@ -1214,8 +1395,10 @@ nvto:hasVideoEditor   rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf nvto:hasContributor ;
                       skos:definition "Verbindet eine Ressource mit einem Agens, der als Videoeditor*in mitgewirkt hat."@de ;
                       skos:definition "Connects a resource to an agent responsible for its video editing."@en ;
-                      skos:scopeNote """"""@de ;
+                      skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
                       skos:scopeNote """"""@en ;
+                      skos:example ""@de ;
+                      skos:example ""@en ;
                       rdfs:label "hat Videoeditor*in"@de ;
                       rdfs:label "video editor"@en .
 
@@ -1226,6 +1409,8 @@ nvto:hasTimeOfOccurrence rdf:type owl:ObjectProperty ;
                        skos:definition "Connects an event to the timespan it occurred at."@en ;
                        skos:scopeNote """"""@de ;
                        skos:scopeNote """"""@en ;
+                       skos:example ""@de ;
+                       skos:example ""@en ;
                        rdfs:label "ereignet sich zu Zeitpunkt"@de ;
                        rdfs:label "has time of occurrence"@en .
 
@@ -1236,6 +1421,8 @@ nvto:hasPlaceOfOrigin rdf:type owl:ObjectProperty ;
                        skos:definition "Connects a resource to the location it originated at."@en ;
                        skos:scopeNote """"""@de ;
                        skos:scopeNote """"""@en ;
+                       skos:example ""@de ;
+                       skos:example ""@en ;
                        rdfs:label "hat Ursprung in Ort"@de ;
                        rdfs:label "originated at place"@en .
 
@@ -1247,6 +1434,8 @@ nvto:hasSuccessor rdf:type owl:ObjectProperty ;
                   rdfs:comment "Inverse of 'has Predecessor'."@en ;
                   skos:scopeNote """"""@de ;
                   skos:scopeNote """"""@en ;
+                  skos:example ""@de ;
+                  skos:example ""@en ;
                   rdfs:label "hat Nachfolger"@de ;
                   rdfs:label "has successor"@en .
 

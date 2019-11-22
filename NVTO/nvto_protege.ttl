@@ -43,16 +43,8 @@ nvto:hasFirstLocalizedEdition rdf:type owl:AnnotationProperty .
 nvto:hasFormat rdf:type owl:AnnotationProperty .
 
 
-###  http://lod.iti-germany.de/schema/nvto/hasIdentifier
-nvto:hasIdentifier rdf:type owl:AnnotationProperty .
-
-
 ###  http://lod.iti-germany.de/schema/nvto/hasMedium
 nvto:hasMedium rdf:type owl:AnnotationProperty .
-
-
-###  http://lod.iti-germany.de/schema/nvto/hasPhotoStudio
-nvto:hasPhotoStudio rdf:type owl:AnnotationProperty .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasProvenance
@@ -98,7 +90,11 @@ nvto:hasAcrobat rdf:type owl:ObjectProperty ;
                 rdfs:label "has acrobat"@en ,
                            "hat Akrobat*in"@de ;
                 skos:definition "Connects a resource to an agent who contributed to the resource as acrobat."@en ,
-                                "Verbindet eine Ressource mit einem Agens, der als Akrobat*in mitgewirkt hat."@de .
+                                "Verbindet eine Ressource mit einem Agens, der als Akrobat*in mitgewirkt hat."@de ;
+                skos:example ""@de ,
+                             ""@en ;
+                skos:scopeNote ""@en ,
+                               "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Akrobat*in beschrieben. "@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasActor
@@ -108,7 +104,11 @@ nvto:hasActor rdf:type owl:ObjectProperty ;
               rdfs:label "has actor"@en ,
                          "hat Schauspieler*in"@de ;
               skos:definition "Connects a resource to an agent who contributed to the resource as actor."@en ,
-                              "Verbindet eine Ressource mit einem Agens, der als Schauspieler*in mitgewirkt hat."@de .
+                              "Verbindet eine Ressource mit einem Agens, der als Schauspieler*in mitgewirkt hat."@de ;
+              skos:example ""@de ,
+                           ""@en ;
+              skos:scopeNote ""@en ,
+                             "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Schauspieler*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasAdaptor
@@ -118,7 +118,11 @@ nvto:hasAdaptor rdf:type owl:ObjectProperty ;
                 rdfs:label "has adaptor"@en ,
                            "hat (Text-)Bearbeiter*in"@de ;
                 skos:definition "Connects a resource to an agent who contributed to the resource as adaptor."@en ,
-                                "Verbindet eine Ressource mit einem Agens, der als (Text-)Bearbeiter*in mitgewirkt hat."@de .
+                                "Verbindet eine Ressource mit einem Agens, der als (Text-)Bearbeiter*in mitgewirkt hat."@de ;
+                skos:example ""@de ,
+                             ""@en ;
+                skos:scopeNote ""@en ,
+                               "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einem Text, einer Produktion, einer Aufführung oder einer anderen Ressource als (Text-)Bearbeiter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel in Form einer Adaptation eines literarischen Werkes in ein Drama oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasArtisticDirector
@@ -128,7 +132,11 @@ nvto:hasArtisticDirector rdf:type owl:ObjectProperty ;
                          rdfs:label "has artistic director"@en ,
                                     "hat künstlerische*n Leiter*in"@de ;
                          skos:definition "Connects a resource to an agent who contributed to the resource as artistic director."@en ,
-                                         "Verbindet eine Ressource mit einem Agens, der als künstlerische*r Leiter*in mitgewirkt hat."@de .
+                                         "Verbindet eine Ressource mit einem Agens, der als künstlerische*r Leiter*in mitgewirkt hat."@de ;
+                         skos:example ""@de ,
+                                      ""@en ;
+                         skos:scopeNote ""@en ,
+                                        "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einem Festivalplan, einer Aufführung oder einer anderen Ressource als künstlerische*r Leiter*in beschrieben. Eine Mitwirkung kann zum Beispiel in Form der Leitung des künstlerischen Gesamtkonzepts eines Festivalplans oder einer einzelnen Performing Arts Aufführung erfolgen."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasAssistantDirector
@@ -138,27 +146,39 @@ nvto:hasAssistantDirector rdf:type owl:ObjectProperty ;
                           rdfs:label "has assistant director"@en ,
                                      "hat Regieassistent*in"@de ;
                           skos:definition "Connects a resource to an agent who contributed to the resource as assistant director."@en ,
-                                          "Verbindet eine Ressource mit einem Agens, der als Regieassistent*in mitgewirkt hat."@de .
+                                          "Verbindet eine Ressource mit einem Agens, der als Regieassistent*in mitgewirkt hat."@de ;
+                          skos:example ""@de ,
+                                       ""@en ;
+                          skos:scopeNote ""@en ,
+                                         "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo
 nvto:hasAudibleReferenceTo rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf nvto:hasAudioVisualReferenceTo ;
                            owl:inverseOf nvto:isAudiblyReferencedIn ;
-                           rdfs:label "beinhaltet hörbare Referenz zu"@de ,
-                                      "has audible reference to"@en ;
+                           rdfs:label "has audible reference to"@en ,
+                                      "hat hörbare Referenz zu"@de ;
                            skos:definition "Connects a resource to another resource it has an audible reference to."@en ,
-                                           "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält."@de .
+                                           "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält."@de ;
+                           skos:example "In Video Z wird über Aufführung X geredet, In Audioaufnahme R ist Person K im Gespräch zu hören, In Video E ist Person L zu hören, aber nicht zu sehen."@de ,
+                                        "In video Z it is talked about performance X, In audio recording R Person K is heard talking, In video E Person L is heard, but not seen."@en ;
+                           skos:scopeNote "An audible reference usually describes the audible mention or capture of a resource by an Information Object. An audible reference is a specific form of reference."@en ,
+                                          "Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource von einem Informationsobjekt. Eine hörbare Referenz ist eine spezielle Form der Referenz."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo
 nvto:hasAudioVisualReferenceTo rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf nvto:hasReferenceTo ;
-                               owl:inverseOf nvto:isAudiovisuallyReferencedIn ;
-                               rdfs:label "beinhaltet audiovisuelle Referenz zu"@de ,
-                                          "has audiovisual reference to"@en ;
+                               owl:inverseOf nvto:isAudioVisuallyReferencedIn ;
+                               rdfs:label "has audiovisual reference to"@en ,
+                                          "hat audiovisuelle Referenz zu"@de ;
                                skos:definition "Connects a resource to another resource it has an audiovisual reference to."@en ,
-                                               "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine audiovisuelle Referenz enthält."@de .
+                                               "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine audiovisuelle Referenz enthält."@de ;
+                               skos:example "In Video R ist Person K im Gespräch zu hören, In Video R ist Person K zu sehen, Video R zeigt Video T"@de ,
+                                            "In video R Person K is heard talking, In video R Person K is seen, Video R shows video T"@en ;
+                               skos:scopeNote "An audiovisual reference usually describes the audible and/or visual mention or capture of a resource by an Information Object. This property can be used if the differentiation between audible and visual reference is not given or deemed necessary. An audiovisual reference is a specific form of reference."@en ,
+                                              "Eine audiovisuelle Referenz beschreibt in der Regel die hör- und/oder sichtbare Erwähnung oder Erfassung einer Ressource von einem Informationsobjekt. Diese Eigenschaft kann genutzt werden, wenn die Differenzierung zwischen hörbarer und sichtbarer Referenz nicht gegeben oder als notwendig erachtet ist. Eine audiovisuelle Referenz ist eine spezielle Form der Referenz."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasAuthor
@@ -168,7 +188,11 @@ nvto:hasAuthor rdf:type owl:ObjectProperty ;
                rdfs:label "has author"@en ,
                           "hat Autor*in"@de ;
                skos:definition "Connects a resource to an agent who contributed to the resource as author."@en ,
-                               "Verbindet eine Ressource mit einem Agens, der als Autor*in mitgewirkt hat."@de .
+                               "Verbindet eine Ressource mit einem Agens, der als Autor*in mitgewirkt hat."@de ;
+               skos:example ""@de ,
+                            ""@en ;
+               skos:scopeNote ""@en ,
+                              "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einem Text, einer Produktion, einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Autor*in eines literarischen Werkes oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasChoreographer
@@ -178,7 +202,11 @@ nvto:hasChoreographer rdf:type owl:ObjectProperty ;
                       rdfs:label "has choreographer"@en ,
                                  "hat Choreograf*in"@de ;
                       skos:definition "Connects a resource to an agent who contributed to the resource as choreographer."@en ,
-                                      "Verbindet eine Ressource mit einem Agens, der als Choreograf*in mitgewirkt hat."@de .
+                                      "Verbindet eine Ressource mit einem Agens, der als Choreograf*in mitgewirkt hat."@de ;
+                      skos:example ""@de ,
+                                   ""@en ;
+                      skos:scopeNote ""@en ,
+                                     "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Choreograf*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasCinematographer
@@ -188,7 +216,11 @@ nvto:hasCinematographer rdf:type owl:ObjectProperty ;
                         rdfs:label "has cinematographer"@en ,
                                    "hat Kameramann/Kamerafrau"@de ;
                         skos:definition "Connects a resource to an agent who contributed to the resource as cinematographer."@en ,
-                                        "Verbindet eine Ressource mit einem Agens, der als Kameramann/Kamerafrau mitgewirkt hat."@de .
+                                        "Verbindet eine Ressource mit einem Agens, der als Kameramann/Kamerafrau mitgewirkt hat."@de ;
+                        skos:example ""@de ,
+                                     ""@en ;
+                        skos:scopeNote ""@en ,
+                                       "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Kameramann/Kamerafrau beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasClown
@@ -198,7 +230,11 @@ nvto:hasClown rdf:type owl:ObjectProperty ;
               rdfs:label "has clown"@en ,
                          "hat Clown*in"@de ;
               skos:definition "Connects a resource to an agent who contributed to the resource as clown."@en ,
-                              "Verbindet eine Ressource mit einem Agens, der als Clown*in mitgewirkt hat."@de .
+                              "Verbindet eine Ressource mit einem Agens, der als Clown*in mitgewirkt hat."@de ;
+              skos:example ""@de ,
+                           ""@en ;
+              skos:scopeNote ""@en ,
+                             "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasComposer
@@ -208,7 +244,11 @@ nvto:hasComposer rdf:type owl:ObjectProperty ;
                  rdfs:label "has composer"@en ,
                             "hat Komponist*in"@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as composer."@en ,
-                                 "Verbindet eine Ressource mit einem Agens, der als Komponist*in mitgewirkt hat."@de .
+                                 "Verbindet eine Ressource mit einem Agens, der als Komponist*in mitgewirkt hat."@de ;
+                 skos:example ""@de ,
+                              ""@en ;
+                 skos:scopeNote ""@en ,
+                                "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Komponist*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Komponist*in eines musikalischen Werks oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasConceptOriginator
@@ -218,7 +258,11 @@ nvto:hasConceptOriginator rdf:type owl:ObjectProperty ;
                           rdfs:label "has concept originator"@en ,
                                      "hat Konzept Urheber*in"@de ;
                           skos:definition "Connects a resource to an agent who contributed to the resource as concept originator."@en ,
-                                          "Verbindet eine Ressource mit einem Agens, der als Konzept Urheber*in mitgewirkt hat."@de .
+                                          "Verbindet eine Ressource mit einem Agens, der als Konzept Urheber*in mitgewirkt hat."@de ;
+                          skos:example ""@de ,
+                                       ""@en ;
+                          skos:scopeNote ""@en ,
+                                         "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Konzept Urheber*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Konzept Urheber*in einer textuellen Grundlage einer Produktion oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasContentMatch
@@ -228,6 +272,8 @@ nvto:hasContentMatch rdf:type owl:ObjectProperty ,
                                 "hat gleichen Inhalt"@de ;
                      skos:definition "Connects a resource to another resource with matching content."@en ,
                                      "Verbindet eine Ressource mit einer anderen Ressource mit gleichem Inhalt."@de ;
+                     skos:example ""@de ,
+                                  ""@en ;
                      skos:scopeNote "A workaround property for connecting a resource to another resource with partly or entirely matching contents."@en ,
                                     "Eine behelfsmäßige Eigenschaft zur Verbindung einer Ressource mit einer anderen Ressource mit teilweise oder vollständig gleichem Inhalt."@de .
 
@@ -239,7 +285,11 @@ nvto:hasContributor rdf:type owl:ObjectProperty ;
                     rdfs:label "has contributor"@en ,
                                "hat Mitwirkende*n"@de ;
                     skos:definition "Connects a resource to an agent who contributed to the resource."@en ,
-                                    "Verbindet eine Ressource mit einem Agens, der an der Ressource mitgewirkt hat."@de .
+                                    "Verbindet eine Ressource mit einem Agens, der an der Ressource mitgewirkt hat."@de ;
+                    skos:example ""@de ,
+                                 ""@en ;
+                    skos:scopeNote ""@en ,
+                                   "Ausmaß Mitwirkung unbeschränkt, schöpferische Tätigkeit, lose Beteiligung, auch genaue Form der Mitwirkung nicht festgelegt."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasCostumeBuilder
@@ -249,7 +299,11 @@ nvto:hasCostumeBuilder rdf:type owl:ObjectProperty ;
                        rdfs:label "has costume builder"@en ,
                                   "hat Kostümbauer*in"@de ;
                        skos:definition "Connects a resource to an agent who contributed to the resource as costume builder."@en ,
-                                       "Verbindet eine Ressource mit einem Agens, der als Kostümbauer*in mitgewirkt hat."@de .
+                                       "Verbindet eine Ressource mit einem Agens, der als Kostümbauer*in mitgewirkt hat."@de ;
+                       skos:example ""@de ,
+                                    ""@en ;
+                       skos:scopeNote ""@en ,
+                                      "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Kostümbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Kostümbauer*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Kostümdesigner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung eines Kostüms als auf dessen Gestaltung."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner
@@ -259,7 +313,11 @@ nvto:hasCostumeDesigner rdf:type owl:ObjectProperty ;
                         rdfs:label "has costume designer"@en ,
                                    "hat Kostümgestalter*in"@de ;
                         skos:definition "Connects a resource to an agent who contributed to the resource as costume designer."@en ,
-                                        "Verbindet eine Ressource mit einem Agens, der als Kostümdesigner*in mitgewirkt hat."@de .
+                                        "Verbindet eine Ressource mit einem Agens, der als Kostümdesigner*in mitgewirkt hat."@de ;
+                        skos:example ""@de ,
+                                     ""@en ;
+                        skos:scopeNote ""@en ,
+                                       "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Kostümgestalter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Kostümgestalter*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Kostümbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasCreator
@@ -269,7 +327,11 @@ nvto:hasCreator rdf:type owl:ObjectProperty ;
                 rdfs:label "has creator"@en ,
                            "hat Schöpfer*in"@de ;
                 skos:definition "Connects a resource to an agent who contributed to the resource as creator."@en ,
-                                "Verbindet eine Ressource mit einem Agens, der als Schöpfer*in mitgewirkt hat."@de .
+                                "Verbindet eine Ressource mit einem Agens, der als Schöpfer*in mitgewirkt hat."@de ;
+                skos:example ""@de ,
+                             ""@en ;
+                skos:scopeNote ""@en ,
+                               "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, eines Informationsobjekts oder einer anderen Ressource als Schöpfer*in beschrieben. Es können pro Ressource mehrere Agens als Schöpfer*in beteiligt sein. Aussagen über die Form der schöpferischen Tätigkeit des Agens können mit entsprechenden Eigenschaften parallel zu dieser getroffen werden."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasDancer
@@ -279,7 +341,11 @@ nvto:hasDancer rdf:type owl:ObjectProperty ;
                rdfs:label "has dancer"@en ,
                           "hat Tänzer*in"@de ;
                skos:definition "Connects a resource to an agent who contributed to the resource as dancer."@en ,
-                               "Verbindet eine Ressource mit einem Agens, der als Tänzer*in mitgewirkt hat."@de .
+                               "Verbindet eine Ressource mit einem Agens, der als Tänzer*in mitgewirkt hat."@de ;
+               skos:example ""@de ,
+                            ""@en ;
+               skos:scopeNote ""@en ,
+                              "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Tänzer*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasDigitalVersion
@@ -289,8 +355,10 @@ nvto:hasDigitalVersion rdf:type owl:ObjectProperty ;
                        rdfs:range nvto:DigitalObject ;
                        rdfs:label "has digital version"@en ,
                                   "hat digitale Version"@de ;
-                       skos:definition "Connects a physical object with a digital version of itself."@en ,
-                                       "Verbindet ein physisches Objekt mit seiner digitalen Version."@en .
+                       skos:definition "Connects a physical object with a digital version of itself or a digital version of a part of the object."@en ,
+                                       "Verbindet ein physisches Objekt mit seiner digitalen Version oder einer digitalen Version eines Teils des Objekts."@en ;
+                       skos:example ""@de ,
+                                    ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasDirector
@@ -300,7 +368,11 @@ nvto:hasDirector rdf:type owl:ObjectProperty ;
                  rdfs:label "has director"@en ,
                             "hat Regisseur*in"@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as director."@en ,
-                                 "Verbindet eine Ressource mit einem Agens, der als Regisseur*in mitgewirkt hat."@de .
+                                 "Verbindet eine Ressource mit einem Agens, der als Regisseur*in mitgewirkt hat."@de ;
+                 skos:example ""@de ,
+                              ""@en ;
+                 skos:scopeNote ""@en ,
+                                "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, eines, Films, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Regisseur*in eines Spielfilms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasDramaturge
@@ -310,7 +382,11 @@ nvto:hasDramaturge rdf:type owl:ObjectProperty ;
                    rdfs:label "has dramaturge"@en ,
                               "hat Dramaturg*in"@de ;
                    skos:definition "Connects a resource to an agent who contributed to the resource as dramaturge."@en ,
-                                   "Verbindet eine Ressource mit einem Agens, der als Dramaturg*in mitgewirkt hat."@de .
+                                   "Verbindet eine Ressource mit einem Agens, der als Dramaturg*in mitgewirkt hat."@de ;
+                   skos:example ""@de ,
+                                ""@en ;
+                   skos:scopeNote ""@en ,
+                                  "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung, einem Text oder einer anderen Ressource als Dramaturg*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Bearbeiter eines dramatischen Texts oder implizit, zum Beispiel in Form einer konzeptionellen Beteiligung im Rahmen einer Produktion erfolgen."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasEditor
@@ -320,7 +396,11 @@ nvto:hasEditor rdf:type owl:ObjectProperty ;
                rdfs:label "has editor"@en ,
                           "hat Redakteur*in"@de ;
                skos:definition "Connects a resource to an agent who contributed to the resource as editor."@en ,
-                               "Verbindet eine Ressource mit einem Agens, der als Redakteur*in mitgewirkt hat."@de .
+                               "Verbindet eine Ressource mit einem Agens, der als Redakteur*in mitgewirkt hat."@de ;
+               skos:example ""@de ,
+                            ""@en ;
+               skos:scopeNote ""@en ,
+                              "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einem Text oder einer anderen Ressource als Redakteur*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Herausgeber*in einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasFirstEdition
@@ -341,7 +421,11 @@ nvto:hasFirstPerformanceVersion rdf:type owl:ObjectProperty ;
                                 rdfs:label "has first performance version"@en ,
                                            "hat Erstaufführungsversion"@de ;
                                 skos:definition "Connects a performing arts production with its first performance version."@en ,
-                                                "Verbindet eine Produktion der darstellenden Künste mit ihrer Erstaufführungsversion."@de .
+                                                "Verbindet eine Performing Arts Produktion mit ihrer Erstaufführungsversion."@de ;
+                                skos:example ""@de ,
+                                             ""@en ;
+                                skos:scopeNote ""@en ,
+                                               "Eine Erstaufführungsversion ist eine originale, zum ersten Mal aufgeführte Performing Arts Produktion."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasFormat
@@ -356,12 +440,22 @@ nvto:hasHomepage rdf:type owl:ObjectProperty ;
                  rdfs:label "has homepage"@en ,
                             "hat Homepage"@de ;
                  skos:definition "Connects to a homepage of an agent."@en ,
-                                 "Verbindet mit der Homepage eines Agens."@de .
+                                 "Verbindet mit der Homepage eines Agens."@de ;
+                 skos:example ""@de ,
+                              ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasIdentifier
 nvto:hasIdentifier rdf:type owl:ObjectProperty ;
-                   owl:inverseOf nvto:isIdentifierOf .
+                   owl:inverseOf nvto:isIdentifierOf ;
+                   rdfs:label "has identifier"@en ,
+                              "hat Bezeichner"@de ;
+                   skos:definition "Beschreibt einen lokalen oder globalen Bezeichner einer Ressource."@de ,
+                                   "Describes a local or global identifier of a resource."@en ;
+                   skos:example ""@de ,
+                                ""@en ;
+                   skos:scopeNote ""@en ,
+                                  "Ein Bezeichner kann von lokaler oder globaler Eindeutigkeit sein. Sowohl Literale als auch Links sind möglich."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasIllustrator
@@ -371,17 +465,25 @@ nvto:hasIllustrator rdf:type owl:ObjectProperty ;
                     rdfs:label "has illustrator"@en ,
                                "hat Illustrator*in"@de ;
                     skos:definition "Connects a resource to an agent who contributed to the resource as illustrator."@en ,
-                                    "Verbindet eine Ressource mit einem Agens, der als Illustrator*in mitgewirkt hat."@de .
+                                    "Verbindet eine Ressource mit einem Agens, der als Illustrator*in mitgewirkt hat."@de ;
+                    skos:example ""@de ,
+                                 ""@en ;
+                    skos:scopeNote ""@en ,
+                                   "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Illustrator*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Herausgeber*in einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasInfluenceOn
 nvto:hasInfluenceOn rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf nvto:hasReferenceTo ;
+                    rdfs:subPropertyOf nvto:isReferencedIn ;
                     owl:inverseOf nvto:isInfluencedBy ;
                     rdfs:label "has influence on"@en ,
-                               "hat beeinflusst"@de ;
+                               "hat Einfluss auf"@de ;
                     skos:definition "Connects a resource to another resource that it influenced."@en ,
-                                    "Verbindet eine Ressource mit einer anderen Ressource, die sie beeinflusst hat."@de .
+                                    "Verbindet eine Ressource mit einer anderen Ressource, die sie beeinflusst hat."@de ;
+                    skos:example "Performing Arts Production Y forms basis of Performing Arts Production X, Text Y has influence on Film X"@en ,
+                                 "Performing Arts Produktion Y ist Basis von Performing Arts Produktion X, Text Y hatte Einfluss auf Film X"@de ;
+                    skos:scopeNote "Diese Eigenschaft beschreibt die Beeinflussung im weiteren Sinne einer Ressource auf eine andere Ressource. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form des referenziert werdens."@de ,
+                                   "This property describes the influence in a broader sense of a resource on another resource. An influence can be more or less recognizable and should be verifiable. An influence is a specific form of being referenced."@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasInformationCarrier
@@ -391,7 +493,11 @@ nvto:hasInformationCarrier rdf:type owl:ObjectProperty ;
                            rdfs:label "has information carrier"@en ,
                                       "hat Informationsträger"@de ;
                            skos:definition "Connects an information object with a physical or digital object it is represented on."@en ,
-                                           "Verbindet ein Informationsobjekt mit einem physischen oder digitalen Objekt, auf dem es repräsentiert ist."@en .
+                                           "Verbindet ein Informationsobjekt mit einem physischen oder digitalen Objekt, auf dem es repräsentiert ist."@en ;
+                           skos:example ""@de ,
+                                        ""@en ;
+                           skos:scopeNote ""@en ,
+                                          "Ein Informationsträger ist eine Entität, die einen Inhalt, also ein Informationsobjekt repräsentiert. Ein Informationsobjekt kann von mehreren Informationsträgern repräsentiert werden, zum Beispiel die gleiche Aufnahme einer Aufführung auf einer Videokassette und auf einem USB-Stick. Auf einem Informationsträger können mehrere Informationsobjekte repräsentiert werden, zum Beispiel mehrere Aufnahmen von verschiedenen Aufführungen auf einer Videokassette."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasIsbn
@@ -411,7 +517,11 @@ nvto:hasLayouter rdf:type owl:ObjectProperty ;
                  rdfs:label "has layouter"@en ,
                             "hat Layouter*in"@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as layouter."@en ,
-                                 "Verbindet eine Ressource mit einem Agens, der als Layouter*in mitgewirkt hat."@de .
+                                 "Verbindet eine Ressource mit einem Agens, der als Layouter*in mitgewirkt hat."@de ;
+                 skos:example ""@de ,
+                              ""@en ;
+                 skos:scopeNote ""@en ,
+                                "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Publikation oder einer anderen Ressource als Layouter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Gestalter*in des Layouts einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasLightingDesigner
@@ -421,7 +531,11 @@ nvto:hasLightingDesigner rdf:type owl:ObjectProperty ;
                          rdfs:label "has lighting designer"@en ,
                                     "hat Lichtgestalter*in"@de ;
                          skos:definition "Connects a resource to an agent who contributed to the resource as light designer."@en ,
-                                         "Verbindet eine Ressource mit einem Agens, der als Lichtgestalter*in mitgewirkt hat."@de .
+                                         "Verbindet eine Ressource mit einem Agens, der als Lichtgestalter*in mitgewirkt hat."@de ;
+                         skos:example ""@de ,
+                                      ""@en ;
+                         skos:scopeNote ""@en ,
+                                        "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Lichtgestalter*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasMakeUpArtist
@@ -431,7 +545,11 @@ nvto:hasMakeUpArtist rdf:type owl:ObjectProperty ;
                      rdfs:label "has make up artist"@en ,
                                 "hat Visagist*in"@de ;
                      skos:definition "Connects a resource to an agent who contributed to the resource as make up artist."@en ,
-                                     "Verbindet eine Ressource mit einem Agens, der als Visagist*in mitgewirkt hat."@de .
+                                     "Verbindet eine Ressource mit einem Agens, der als Visagist*in mitgewirkt hat."@de ;
+                     skos:example ""@de ,
+                                  ""@en ;
+                     skos:scopeNote ""@en ,
+                                    "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Visagist*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasMaskBuilder
@@ -441,7 +559,11 @@ nvto:hasMaskBuilder rdf:type owl:ObjectProperty ;
                     rdfs:label "has mask builder"@en ,
                                "hat Maskenbauer*in"@de ;
                     skos:definition "Connects a resource to an agent who contributed to the resource as mask builder."@en ,
-                                    "Verbindet eine Ressource mit einem Agens, der als Maskenbauer*in mitgewirkt hat."@de .
+                                    "Verbindet eine Ressource mit einem Agens, der als Maskenbauer*in mitgewirkt hat."@de ;
+                    skos:example ""@de ,
+                                 ""@en ;
+                    skos:scopeNote ""@en ,
+                                   "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Maskenbauer*in einer Maske oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Maskengestalter*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf dessen Gestaltung."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasMaskDesigner
@@ -451,7 +573,11 @@ nvto:hasMaskDesigner rdf:type owl:ObjectProperty ;
                      rdfs:label "has mask designer"@en ,
                                 "hat Maskengestalter*in"@de ;
                      skos:definition "Connects a resource to an agent who contributed to the resource as mask designer."@en ,
-                                     "Verbindet eine Ressource mit einem Agens, der als Maskengestalter*in mitgewirkt hat."@de .
+                                     "Verbindet eine Ressource mit einem Agens, der als Maskengestalter*in mitgewirkt hat."@de ;
+                     skos:example ""@de ,
+                                  ""@en ;
+                     skos:scopeNote ""@en ,
+                                    "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Maskengestalter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Maskengestalter*in einer Maske oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasMediator
@@ -460,7 +586,11 @@ nvto:hasMediator rdf:type owl:ObjectProperty ;
                  rdfs:label "has mediator"@en ,
                             "hat Vermittler*in"@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as mediator."@en ,
-                                 "Verbindet eine Ressource mit einem Agens, der als Vermittler*in mitgewirkt hat."@de .
+                                 "Verbindet eine Ressource mit einem Agens, der als Vermittler*in mitgewirkt hat."@de ;
+                 skos:example ""@de ,
+                              ""@en ;
+                 skos:scopeNote ""@en ,
+                                "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einem Festival, einem Workshop oder einer anderen Ressource als Vermittler*in beschrieben. Vermittler*innen können zum Beispiel Lehrer in einem Workshop oder Dozenten eines Vortrags sein."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasMedium
@@ -476,7 +606,11 @@ nvto:hasMime rdf:type owl:ObjectProperty ;
              rdfs:label "has mime"@en ,
                         "hat Mime/Mimin"@de ;
              skos:definition "Connects a resource to an agent who contributed to the resource as mime."@en ,
-                             "Verbindet eine Ressource mit einem Agens, der als Mime/Mimin mitgewirkt hat."@de .
+                             "Verbindet eine Ressource mit einem Agens, der als Mime/Mimin mitgewirkt hat."@de ;
+             skos:example ""@de ,
+                          ""@en ;
+             skos:scopeNote ""@en ,
+                            "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Mime/Mimin beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasMusician
@@ -486,7 +620,11 @@ nvto:hasMusician rdf:type owl:ObjectProperty ;
                  rdfs:label "has musician"@en ,
                             "hat Musiker*in"@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as musician."@en ,
-                                 "Verbindet eine Ressource mit einem Agens, der als Musiker*in mitgewirkt hat."@de .
+                                 "Verbindet eine Ressource mit einem Agens, der als Musiker*in mitgewirkt hat."@de ;
+                 skos:example ""@de ,
+                              ""@en ;
+                 skos:scopeNote ""@en ,
+                                "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Musiker*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Musiker*in für ein musikalisches Werk oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasPantomime
@@ -496,7 +634,11 @@ nvto:hasPantomime rdf:type owl:ObjectProperty ;
                   rdfs:label "has pantomime"@en ,
                              "hat Pantomime/Pantomimin"@de ;
                   skos:definition "Connects a resource to an agent who contributed to the resource as pantomime."@en ,
-                                  "Verbindet eine Ressource mit einem Agens, der als Pantomime/Pantomimin mitgewirkt hat."@de .
+                                  "Verbindet eine Ressource mit einem Agens, der als Pantomime/Pantomimin mitgewirkt hat."@de ;
+                  skos:example ""@de ,
+                               ""@en ;
+                  skos:scopeNote ""@en ,
+                                 "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Pantomime/Pantomimin beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasPart
@@ -506,7 +648,11 @@ nvto:hasPart rdf:type owl:ObjectProperty ;
              rdfs:label "has part"@en ,
                         "hat Teil"@de ;
              skos:definition "Connects a resource to another resource which is a part of it."@en ,
-                             "Verbindet eine Ressource mit einer anderen Ressource, die ein Teil von ihr ist."@de .
+                             "Verbindet eine Ressource mit einer anderen Ressource, die ein Teil von ihr ist."@de ;
+             skos:example ""@de ,
+                          ""@en ;
+             skos:scopeNote ""@en ,
+                            "Eine Teilbeziehung kann zwischen verschiedenen Arten von Ressourcen bestehen und muss nicht von physischer Natur sein. Ein Informationsobjekt kann zum Beispiel Teil eines physischen Objekts oder eines anderen Informationsobjekts sein, eine Aufführung kann Teil eines Festivals sein."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasParticipant
@@ -516,7 +662,11 @@ nvto:hasParticipant rdf:type owl:ObjectProperty ;
                     rdfs:label "has participant"@en ,
                                "hat Teilnehmer*in"@de ;
                     skos:definition "Connects a resource to an agent who contributed to the resource as participant."@en ,
-                                    "Verbindet eine Ressource mit einem Agens, der als Teilnehmer*in mitgewirkt hat."@de .
+                                    "Verbindet eine Ressource mit einem Agens, der als Teilnehmer*in mitgewirkt hat."@de ;
+                    skos:example ""@de ,
+                                 ""@en ;
+                    skos:scopeNote ""@en ,
+                                   "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einem Festival, einem Workshop oder einer anderen Ressource als Teilnehmer*in beschrieben. Teilnehmer*innen können zum Beispiel Teilnehmer*innen in einem Workshop oder an einem Vortrag sein."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasPerformer
@@ -526,12 +676,24 @@ nvto:hasPerformer rdf:type owl:ObjectProperty ;
                   rdfs:label "has performer"@en ,
                              "hat Darsteller*in"@de ;
                   skos:definition "Connects a resource to an agent who contributed to the resource as performer."@en ,
-                                  "Verbindet eine Ressource mit einem Agens, der als Darsteller*in mitgewirkt hat."@de .
+                                  "Verbindet eine Ressource mit einem Agens, der als Darsteller*in mitgewirkt hat."@de ;
+                  skos:example ""@de ,
+                               ""@en ;
+                  skos:scopeNote ""@en ,
+                                 "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Darsteller*in beschrieben. Diese Eigenschaft kann entweder als allgemeine Eigenschaft für die Mitwirkung einer Person in jeglicher darstellerischen Form genutzt werden, wenn keine genaueren Angaben vorhanden sind oder als konkrete Bezeichnung, wenn die Rolle explizit als Darsteller*in beschrieben wurde."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasPhotoStudio
 nvto:hasPhotoStudio rdf:type owl:ObjectProperty ;
-                    owl:inverseOf nvto:isPhotoStudioOf .
+                    owl:inverseOf nvto:isPhotoStudioOf ;
+                    rdfs:label "has photo studio"@en ,
+                               "hat Fotostudio"@de ;
+                    skos:definition "Beschreibt ein Fotostudio oder verbindet eine Ressource mit einem Fotostudio, dass bei ihrer Kreierung beigetragen hat."@de ,
+                                    "Describes or connects a resource to a photo studio that contributed to its creation."@en ;
+                    skos:example ""@de ,
+                                 ""@en ;
+                    skos:scopeNote ""@de ,
+                                   ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasPhotographer
@@ -541,7 +703,11 @@ nvto:hasPhotographer rdf:type owl:ObjectProperty ;
                      rdfs:label "has photographer"@en ,
                                 "hat Fotograf*in"@de ;
                      skos:definition "Connects a resource to an agent who contributed to the resource as photographer."@en ,
-                                     "Verbindet eine Ressource mit einem Agens, der als Fotograf*in mitgewirkt hat."@de .
+                                     "Verbindet eine Ressource mit einem Agens, der als Fotograf*in mitgewirkt hat."@de ;
+                     skos:example ""@de ,
+                                  ""@en ;
+                     skos:scopeNote ""@en ,
+                                    "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence
@@ -551,9 +717,13 @@ nvto:hasPlaceOfOccurrence rdf:type owl:ObjectProperty ;
                           rdfs:domain nvto:Event ;
                           rdfs:range nvto:Place ;
                           rdfs:label "ereignet sich an Ort"@de ,
-                                     "has place of Occurrence"@en ;
+                                     "has place of occurrence"@en ;
                           skos:definition "Connects an event to the place it happened at."@en ,
-                                          "Verbindet ein Ereignis mit einem Ort, an dem es sich ereignet."@de .
+                                          "Verbindet ein Ereignis mit einem Ort, an dem es sich ereignet."@de ;
+                          skos:example ""@de ,
+                                       ""@en ;
+                          skos:scopeNote ""@de ,
+                                         ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasPlaceOfOrigin
@@ -564,7 +734,11 @@ nvto:hasPlaceOfOrigin rdf:type owl:ObjectProperty ;
                       rdfs:label "hat Ursprung in Ort"@de ,
                                  "originated at place"@en ;
                       skos:definition "Connects a resource to the location it originated at."@en ,
-                                      "Verbindet eine Ressource mit dem Ort, an dem sie ihren Ursprung hat."@de .
+                                      "Verbindet eine Ressource mit dem Ort, an dem sie ihren Ursprung hat."@de ;
+                      skos:example ""@de ,
+                                   ""@en ;
+                      skos:scopeNote ""@de ,
+                                     ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasPlaywright
@@ -574,7 +748,11 @@ nvto:hasPlaywright rdf:type owl:ObjectProperty ;
                    rdfs:label "has playwright"@en ,
                               "hat Dramatiker*in"@de ;
                    skos:definition "Connects a resource to an agent who contributed to the resource as playwright."@en ,
-                                   "Verbindet eine Ressource mit einem Agens, der als Dramatiker*in mitgewirkt hat."@de .
+                                   "Verbindet eine Ressource mit einem Agens, der als Dramatiker*in mitgewirkt hat."@de ;
+                   skos:example ""@de ,
+                                ""@en ;
+                   skos:scopeNote ""@en ,
+                                  "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in  beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasPredecessor
@@ -584,7 +762,11 @@ nvto:hasPredecessor rdf:type owl:ObjectProperty ;
                     rdfs:label "has predecessor"@en ,
                                "hat Vorgänger"@de ;
                     skos:definition "Beschreibt den Vorgänger oder verbindet mit dem Vorgänger einer Ressource."@de ,
-                                    "Describes or connects to the preceding resource of a resource."@en .
+                                    "Describes or connects to the preceding resource of a resource."@en ;
+                    skos:example ""@de ,
+                                 ""@en ;
+                    skos:scopeNote ""@de ,
+                                   ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasProducer
@@ -594,7 +776,11 @@ nvto:hasProducer rdf:type owl:ObjectProperty ;
                  rdfs:label "has producer"@en ,
                             "hat Produzent*in"@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as producer."@en ,
-                                 "Verbindet eine Ressource mit einem Agens, der als Produzent*in mitgewirkt hat."@de .
+                                 "Verbindet eine Ressource mit einem Agens, der als Produzent*in mitgewirkt hat."@de ;
+                 skos:example ""@de ,
+                              ""@en ;
+                 skos:scopeNote ""@en ,
+                                "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasProgrammeDirector
@@ -604,7 +790,11 @@ nvto:hasProgrammeDirector rdf:type owl:ObjectProperty ;
                           rdfs:label "has programme director"@en ,
                                      "hat Programmdirektor*in"@de ;
                           skos:definition "Connects a resource to an agent who contributed to a festival or event by curating or directing the programme of the event."@en ,
-                                          "Verbindet eine Ressource mit einem Agens, der durch Kuration oder Leitung des Programmes bei einem Festival mitgewirkt hat."@de .
+                                          "Verbindet eine Ressource mit einem Agens, der durch Kuration oder Leitung des Programmes bei einem Festival mitgewirkt hat."@de ;
+                          skos:example ""@de ,
+                                       ""@en ;
+                          skos:scopeNote ""@en ,
+                                         "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasPrompter
@@ -614,7 +804,11 @@ nvto:hasPrompter rdf:type owl:ObjectProperty ;
                  rdfs:label "has prompter"@en ,
                             "hat Souffleur/Souffleuse"@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as prompter."@en ,
-                                 "Verbindet eine Ressource mit einem Agens, der als Souffleur/Souffleuse mitgewirkt hat."@de .
+                                 "Verbindet eine Ressource mit einem Agens, der als Souffleur/Souffleuse mitgewirkt hat."@de ;
+                 skos:example ""@de ,
+                              ""@en ;
+                 skos:scopeNote ""@en ,
+                                "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasProvenance
@@ -628,8 +822,12 @@ nvto:hasPublisher rdf:type owl:ObjectProperty ;
                   owl:inverseOf nvto:isPublisherOf ;
                   rdfs:label "has publisher"@en ,
                              "hat Herausgeber*in"@de ;
-                  skos:definition "Beschreibt den/die Herausgeber*in einer Ressource oder verbindet die Ressource mit einem Agens, der/die als Verleger*in an der Ressource mitgewirkt hat."@en ,
-                                  "Describes the publisher of a resource or connects the resource to an agent who contributed to the resource as publisher."@en .
+                  skos:definition "Connects the resource to an agent who contributed to the resource as publisher."@en ,
+                                  "Verbindet die Ressource mit einem Agens, der/die als Verleger*in an der Ressource mitgewirkt hat."@en ;
+                  skos:example ""@de ,
+                               ""@en ;
+                  skos:scopeNote ""@en ,
+                                 "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasPublishingCompany
@@ -638,7 +836,11 @@ nvto:hasPublishingCompany rdf:type owl:ObjectProperty ;
                           rdfs:label "has publishing company"@en ,
                                      "hat Verlag"@de ;
                           skos:definition "Connects the resource to an agent who contributed to the resource as publishing company."@en ,
-                                          "Verbindet die Ressource mit einem Agens, derals Verlag an der Ressource mitgewirkt hat."@en .
+                                          "Verbindet die Ressource mit einem Agens, derals Verlag an der Ressource mitgewirkt hat."@en ;
+                          skos:example ""@de ,
+                                       ""@en ;
+                          skos:scopeNote ""@en ,
+                                         "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasPublishingPlace
@@ -649,7 +851,11 @@ nvto:hasPublishingPlace rdf:type owl:ObjectProperty ;
                         rdfs:label "has publishing place"@en ,
                                    "hat Verlagsort"@de ;
                         skos:definition "Connects a resource to the place it was or is published at."@en ,
-                                        "Verbindet eine Ressource mit dem Ort, an dem sie verlegt wird oder wurde."@de .
+                                        "Verbindet eine Ressource mit dem Ort, an dem sie verlegt wird oder wurde."@de ;
+                        skos:example ""@de ,
+                                     ""@en ;
+                        skos:scopeNote ""@de ,
+                                       ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasPuppetBuilder
@@ -659,7 +865,11 @@ nvto:hasPuppetBuilder rdf:type owl:ObjectProperty ;
                       rdfs:label "has puppet builder"@en ,
                                  "hat Puppenbauer*in"@de ;
                       skos:definition "Connects a resource to an agent who contributed to the resource as puppet builder."@en ,
-                                      "Verbindet eine Ressource mit einem Agens, der als Puppenbauer*in mitgewirkt hat."@de .
+                                      "Verbindet eine Ressource mit einem Agens, der als Puppenbauer*in mitgewirkt hat."@de ;
+                      skos:example ""@de ,
+                                   ""@en ;
+                      skos:scopeNote ""@en ,
+                                     "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner
@@ -669,7 +879,11 @@ nvto:hasPuppetDesigner rdf:type owl:ObjectProperty ;
                        rdfs:label "has puppet designer"@en ,
                                   "hat Puppengestalter*in"@de ;
                        skos:definition "Connects a resource to an agent who contributed to the resource as puppet designer."@en ,
-                                       "Verbindet eine Ressource mit einem Agens, der als Puppengestalter*in mitgewirkt hat."@de .
+                                       "Verbindet eine Ressource mit einem Agens, der als Puppengestalter*in mitgewirkt hat."@de ;
+                       skos:example ""@de ,
+                                    ""@en ;
+                       skos:scopeNote ""@en ,
+                                      "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasRecordingOf
@@ -679,9 +893,13 @@ nvto:hasRecordingOf rdf:type owl:ObjectProperty ;
                     rdfs:domain nvto:InformationObject ;
                     rdfs:range nvto:Event ;
                     rdfs:label "has recording of"@en ,
-                               "hat aufgenommen"@de ;
+                               "hat Aufnahme von"@de ;
                     skos:definition "Connects an information object to an event that it recorded."@en ,
-                                    "Verbindet eine Ressource mit einer anderen Ressource, von der sie eine Aufnahme enthält."@de .
+                                    "Verbindet ein Informationsobjekt mit einem Ereignis, von dem es eine Aufnahme enthält."@de ;
+                    skos:example ""@en ,
+                                 "Video X hat Aufnahme von Event Y"@de ;
+                    skos:scopeNote "Diese Eigenschaft ist eine Form von Referenz, die speziell die Aufnahme eines Ereignisses von einem Informationsobjekt beschreibt."@de ,
+                                   "This property is a form of reference that specifically describes the recording of an event by an Information Object."@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasRecordist
@@ -691,18 +909,24 @@ nvto:hasRecordist rdf:type owl:ObjectProperty ;
                   rdfs:label "has recordist"@en ,
                              "hat Tonmeister*in"@de ;
                   skos:definition "Connects a resource to an agent who contributed to the resource as recordist."@en ,
-                                  "Verbindet eine Ressource mit einem Agens, der als Tonmeister*in mitgewirkt hat."@de .
+                                  "Verbindet eine Ressource mit einem Agens, der als Tonmeister*in mitgewirkt hat."@de ;
+                  skos:example ""@de ,
+                               ""@en ;
+                  skos:scopeNote ""@en ,
+                                 "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasReferenceTo
 nvto:hasReferenceTo rdf:type owl:ObjectProperty ;
                     owl:inverseOf nvto:isReferencedIn ;
-                    rdfs:label "beinhaltet Referenz zu"@de ,
-                               "has reference to"@en ;
+                    rdfs:label "has reference to"@en ,
+                               "hat Referenz zu"@de ;
                     skos:definition "Connects a resource to another resource it has any kind of reference to."@en ,
                                     "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine Referenz enthält."@de ;
-                    skos:scopeNote "A reference can occur in the recording or as labeling. In case the type of reference is detailed, one of the subproperties of this property should be used."@en ,
-                                   "Eine Referenz kann in der Aufnahme oder als Beschriftung vorkommen. Wenn die Art der Referenz gegeben ist, sollte eine der Untereigenschaften dieser Eigenschaft verwendet werden."@de .
+                    skos:example ""@de ,
+                                 ""@en ;
+                    skos:scopeNote "A reference usually describes the capture or mention of a resource by an Information Object, a Creative Concept or other resources. A reference to a resource can be contained in a recording of the resource or in the labeling of an information carrier among others. In case the type of reference is given, one of the subproperties of this property should be used."@en ,
+                                   "Eine Referenz beschreibt in der Regel die Erfassung oder Erwähnung einer Ressource von einem Informationsobjekt, einem Kreativen Konzept oder anderer Ressourcen. Eine Referenz zu einer Ressource kann zum Beispiel Teil einer Aufnahme der Ressource oder der Beschriftung eines Informationsträgers sein. Wenn die Art der Referenz gegeben ist, sollte eine der Untereigenschaften dieser Eigenschaft verwendet werden."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasRelatedPlace
@@ -712,7 +936,11 @@ nvto:hasRelatedPlace rdf:type owl:ObjectProperty ;
                      rdfs:label "has related place"@en ,
                                 "hat Bezug zu Ort"@de ;
                      skos:definition "Connects a resource to a place it is related to in any way."@en ,
-                                     "Verbindet eine Ressource mit einem Ort, mit dem sie auf nicht näher bestimmte Weise in Verbindung steht."@de .
+                                     "Verbindet eine Ressource mit einem Ort, mit dem sie auf nicht näher bestimmte Weise in Verbindung steht."@de ;
+                     skos:example ""@de ,
+                                  ""@en ;
+                     skos:scopeNote ""@de ,
+                                    ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasRelatedWebsite
@@ -721,7 +949,11 @@ nvto:hasRelatedWebsite rdf:type owl:ObjectProperty ;
                        rdfs:label "has related website"@en ,
                                   "hat Bezug zu Webseite"@de ;
                        skos:definition "Connects to a related website of an agent or a resource."@en ,
-                                       "Verbindet mit einer Webseite, die auf nicht näher bestimmte Weise mit einem Agens oder einer Ressource in Verbindung steht."@de .
+                                       "Verbindet mit einer Webseite, die auf nicht näher bestimmte Weise mit einem Agens oder einer Ressource in Verbindung steht."@de ;
+                       skos:example ""@de ,
+                                    ""@en ;
+                       skos:scopeNote ""@de ,
+                                      ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasResidence
@@ -733,7 +965,11 @@ nvto:hasResidence rdf:type owl:ObjectProperty ;
                   rdfs:label "has residence"@en ,
                              "hat Residenz"@de ;
                   skos:definition "Connects an agent to its place of residency."@en ,
-                                  "Verbindet einen Agens mit seiner Residenz."@de .
+                                  "Verbindet einen Agens mit seiner Residenz."@de ;
+                  skos:example ""@de ,
+                               ""@en ;
+                  skos:scopeNote ""@de ,
+                                 ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasRestagedVersion
@@ -743,7 +979,11 @@ nvto:hasRestagedVersion rdf:type owl:ObjectProperty ;
                         rdfs:label "has restaged version"@en ,
                                    "hat Wiederaufnahme"@de ;
                         skos:definition "Connects a performing arts production with its restaged version."@en ,
-                                        "Verbindet eine Produktion der darstellenden Künste mit ihrer Wiederaufnahme."@de .
+                                        "Verbindet eine Produktion der darstellenden Künste mit ihrer Wiederaufnahme."@de ;
+                        skos:example ""@de ,
+                                     ""@en ;
+                        skos:scopeNote ""@de ,
+                                       ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasRightsHolder
@@ -758,7 +998,11 @@ nvto:hasSeamster rdf:type owl:ObjectProperty ;
                  rdfs:label "has seamster"@en ,
                             "hat Näher*in"@de ;
                  skos:definition "Connects a resource to an agent who contributed to the resource as seamster."@en ,
-                                 "Verbindet eine Ressource mit einem Agens, der als Näher*in mitgewirkt hat."@de .
+                                 "Verbindet eine Ressource mit einem Agens, der als Näher*in mitgewirkt hat."@de ;
+                 skos:example ""@de ,
+                              ""@en ;
+                 skos:scopeNote ""@en ,
+                                "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasSeason
@@ -768,7 +1012,11 @@ nvto:hasSeason rdf:type owl:ObjectProperty ;
                rdfs:label "has season"@en ,
                           "hat Spielzeit"@de ;
                skos:definition "Verbindet eine Produktion der darstellenden Künste mit der Spielzeit, in der die Produktion aufgeführt wird oder wurde."@en ,
-                               "connects to the season in which a performing arts production was or is performed."@en .
+                               "connects to the season in which a performing arts production was or is performed."@en ;
+               skos:example ""@de ,
+                            ""@en ;
+               skos:scopeNote ""@de ,
+                              ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasSetBuilder
@@ -778,7 +1026,11 @@ nvto:hasSetBuilder rdf:type owl:ObjectProperty ;
                    rdfs:label "has set builder"@en ,
                               "hat Bühnenbauer*in"@de ;
                    skos:definition "Connects a resource to an agent who contributed to the resource as set builder."@en ,
-                                   "Verbindet eine Ressource mit einem Agens, der als Bühnenbauer*in mitgewirkt hat."@de .
+                                   "Verbindet eine Ressource mit einem Agens, der als Bühnenbauer*in mitgewirkt hat."@de ;
+                   skos:example ""@de ,
+                                ""@en ;
+                   skos:scopeNote ""@en ,
+                                  "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasSetDesigner
@@ -788,7 +1040,11 @@ nvto:hasSetDesigner rdf:type owl:ObjectProperty ;
                     rdfs:label "has set designer"@en ,
                                "hat Bühnenbildner*in"@de ;
                     skos:definition "Connects a resource to an agent who contributed to the resource as set designer."@en ,
-                                    "Verbindet eine Ressource mit einem Agens, der als Bühnenbildner*in mitgewirkt hat."@de .
+                                    "Verbindet eine Ressource mit einem Agens, der als Bühnenbildner*in mitgewirkt hat."@de ;
+                    skos:example ""@de ,
+                                 ""@en ;
+                    skos:scopeNote ""@en ,
+                                   "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasSinger
@@ -797,7 +1053,11 @@ nvto:hasSinger rdf:type owl:ObjectProperty ;
                rdfs:label "has singer"@en ,
                           "hat Sänger*in"@de ;
                skos:definition "Connects a resource to an agent who contributed to the resource as singer."@en ,
-                               "Verbindet eine Ressource mit einem Agens, der als Sänger*in mitgewirkt hat."@de .
+                               "Verbindet eine Ressource mit einem Agens, der als Sänger*in mitgewirkt hat."@de ;
+               skos:example ""@de ,
+                            ""@en ;
+               skos:scopeNote ""@en ,
+                              "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasSoundDesigner
@@ -807,7 +1067,11 @@ nvto:hasSoundDesigner rdf:type owl:ObjectProperty ;
                       rdfs:label "has sound designer"@en ,
                                  "hat Tongestalter*in"@de ;
                       skos:definition "Connects a resource to an agent who contributed to the resource as sound designer."@en ,
-                                      "Verbindet eine Ressource mit einem Agens, der als Tongestalter*in mitgewirkt hat."@de .
+                                      "Verbindet eine Ressource mit einem Agens, der als Tongestalter*in mitgewirkt hat."@de ;
+                      skos:example ""@de ,
+                                   ""@en ;
+                      skos:scopeNote ""@en ,
+                                     "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasSource
@@ -822,7 +1086,11 @@ nvto:hasSpeaker rdf:type owl:ObjectProperty ;
                 rdfs:label "has speaker"@en ,
                            "hat Sprecher*in"@de ;
                 skos:definition "Connects a resource to an agent who contributed to the resource as speaker."@en ,
-                                "Verbindet eine Ressource mit einem Agens, der als Sprecher*in mitgewirkt hat."@de .
+                                "Verbindet eine Ressource mit einem Agens, der als Sprecher*in mitgewirkt hat."@de ;
+                skos:example ""@de ,
+                             ""@en ;
+                skos:scopeNote ""@en ,
+                               "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasStageManager
@@ -832,7 +1100,11 @@ nvto:hasStageManager rdf:type owl:ObjectProperty ;
                      rdfs:label "has stage manager"@en ,
                                 "hat Inspizient*in"@de ;
                      skos:definition "Connects a resource to an agent who contributed to the resource as stage manager."@en ,
-                                     "Verbindet eine Ressource mit einem Agens, der als Inspizient*in mitgewirkt hat."@de .
+                                     "Verbindet eine Ressource mit einem Agens, der als Inspizient*in mitgewirkt hat."@de ;
+                     skos:example ""@de ,
+                                  ""@en ;
+                     skos:scopeNote ""@en ,
+                                    "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasSuccessor
@@ -842,7 +1114,11 @@ nvto:hasSuccessor rdf:type owl:ObjectProperty ;
                   rdfs:label "has successor"@en ,
                              "hat Nachfolger"@de ;
                   skos:definition "Beschreibt den Nachfolger oder verbindet mit dem Nachfolger einer Ressource."@de ,
-                                  "Describes or connects to the succeeding resource of a resource."@en .
+                                  "Describes or connects to the succeeding resource of a resource."@en ;
+                  skos:example ""@de ,
+                               ""@en ;
+                  skos:scopeNote ""@de ,
+                                 ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasSurtitleCreator
@@ -852,7 +1128,11 @@ nvto:hasSurtitleCreator rdf:type owl:ObjectProperty ;
                         rdfs:label "has surtitle creator"@en ,
                                    "hat Übertitel Schöpfer*in"@de ;
                         skos:definition "Connects a resource to an agent who contributed to the resource as author of surtitles."@en ,
-                                        "Verbindet eine Ressource mit einem Agens, der als Übertitel Schöpfer*in mitgewirkt hat."@de .
+                                        "Verbindet eine Ressource mit einem Agens, der als Übertitel Schöpfer*in mitgewirkt hat."@de ;
+                        skos:example ""@de ,
+                                     ""@en ;
+                        skos:scopeNote ""@en ,
+                                       "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasTechnician
@@ -862,17 +1142,25 @@ nvto:hasTechnician rdf:type owl:ObjectProperty ;
                    rdfs:label "has technician"@en ,
                               "hat Techniker*in"@de ;
                    skos:definition "Connects a resource to an agent who contributed to the resource as technician."@en ,
-                                   "Verbindet eine Ressource mit einem Agens, der als Techniker*in mitgewirkt hat."@de .
+                                   "Verbindet eine Ressource mit einem Agens, der als Techniker*in mitgewirkt hat."@de ;
+                   skos:example ""@de ,
+                                ""@en ;
+                   skos:scopeNote ""@en ,
+                                  "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo
 nvto:hasTextualReferenceTo rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf nvto:hasReferenceTo ;
                            owl:inverseOf nvto:isTextuallyReferencedIn ;
-                           rdfs:label "beinhaltet textuelle Referenz zu"@de ,
-                                      "has textual reference to"@en ;
+                           rdfs:label "has textual reference to"@en ,
+                                      "hat textuelle Referenz zu"@de ;
                            skos:definition "Connects a resource to another resource it has a textual reference to."@en ,
-                                           "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine textuelle Referenz enthält."@de .
+                                           "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine textuelle Referenz enthält."@de ;
+                           skos:example ""@de ,
+                                        ""@en ;
+                           skos:scopeNote "A textual reference usually describes  mention of a resource by an Information Object, a Creative Concept or another resource in written form. A Textual References can be contained in programme booklets, literature or the labeling of an information carrier among others. A textual reference is a specific form of reference."@en ,
+                                          "Eine textuelle Referenz beschreibt in der Regel die schriftliche Erwähnung einer Ressource von einem Informationsobjekt, einem Kreativen Konzept oder anderer Ressourcen. Textuelle Referenzen zu Ressourcen kommen zum Beispiel in Programmheften, Literatur oder in der Beschriftung eines Informationsträgers vor. Eine textuelle Referenz ist eine spezielle Form der Referenz."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasTimeOfOccurrence
@@ -883,7 +1171,11 @@ nvto:hasTimeOfOccurrence rdf:type owl:ObjectProperty ;
                          rdfs:label "ereignet sich zu Zeitpunkt"@de ,
                                     "has time of occurrence"@en ;
                          skos:definition "Connects an event to the timespan it occurred at."@en ,
-                                         "Verbindet ein Ereignis mit der Zeitspanne, in der es sich ereignet."@de .
+                                         "Verbindet ein Ereignis mit der Zeitspanne, in der es sich ereignet."@de ;
+                         skos:example ""@de ,
+                                      ""@en ;
+                         skos:scopeNote ""@de ,
+                                        ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasTranslator
@@ -893,7 +1185,11 @@ nvto:hasTranslator rdf:type owl:ObjectProperty ;
                    rdfs:label "has translator"@en ,
                               "hat Übersetzer*in"@de ;
                    skos:definition "Connects a resource to an agent who contributed to the resource as translator."@en ,
-                                   "Verbindet eine Ressource mit einem Agens, der als Übersetzer*in mitgewirkt hat."@de .
+                                   "Verbindet eine Ressource mit einem Agens, der als Übersetzer*in mitgewirkt hat."@de ;
+                   skos:example ""@de ,
+                                ""@en ;
+                   skos:scopeNote ""@en ,
+                                  "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasType
@@ -908,7 +1204,11 @@ nvto:hasVideoDesigner rdf:type owl:ObjectProperty ;
                       rdfs:label "hat Videodesigner*in"@de ,
                                  "video designer"@en ;
                       skos:definition "Connects a resource to an agent responsible for its video design."@en ,
-                                      "Verbindet eine Ressource mit einem Agens, der als Videodesigner*in mitgewirkt hat."@de .
+                                      "Verbindet eine Ressource mit einem Agens, der als Videodesigner*in mitgewirkt hat."@de ;
+                      skos:example ""@de ,
+                                   ""@en ;
+                      skos:scopeNote ""@en ,
+                                     "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasVideoEditor
@@ -918,17 +1218,25 @@ nvto:hasVideoEditor rdf:type owl:ObjectProperty ;
                     rdfs:label "hat Videoeditor*in"@de ,
                                "video editor"@en ;
                     skos:definition "Connects a resource to an agent responsible for its video editing."@en ,
-                                    "Verbindet eine Ressource mit einem Agens, der als Videoeditor*in mitgewirkt hat."@de .
+                                    "Verbindet eine Ressource mit einem Agens, der als Videoeditor*in mitgewirkt hat."@de ;
+                    skos:example ""@de ,
+                                 ""@en ;
+                    skos:scopeNote ""@en ,
+                                   "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo
 nvto:hasVisualReferenceTo rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf nvto:hasAudioVisualReferenceTo ;
                           owl:inverseOf nvto:isVisuallyReferencedIn ;
-                          rdfs:label "beinhaltet visuelle Referenz zu"@de ,
-                                     "has visual reference to"@en ;
+                          rdfs:label "has visual reference to"@en ,
+                                     "hat visuelle Referenz zu"@de ;
                           skos:definition "Connects a resource to another resource it has a visual reference to."@en ,
-                                          "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine visuelle Referenz enthält."@de .
+                                          "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine visuelle Referenz enthält."@de ;
+                          skos:example ""@de ,
+                                       ""@en ;
+                          skos:scopeNote "A visual reference usually describes the visual capture of a resource by an Information Object, for example on a photograph. A visual reference is a specific form of reference."@en ,
+                                         "Eine visuelle Referenz beschreibt in der Regel die sichtbare Erfassung einer Ressource von einem Informationsobjekt, zum Beispiel auf einer Fotografie. Eine visuelle Referenz ist eine spezielle Form der Referenz."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/isAcrobatOf
@@ -978,15 +1286,15 @@ nvto:isAssistantDirectorOf rdf:type owl:ObjectProperty ;
 
 ###  http://lod.iti-germany.de/schema/nvto/isAudiblyReferencedIn
 nvto:isAudiblyReferencedIn rdf:type owl:ObjectProperty ;
-                           rdfs:subPropertyOf nvto:isAudiovisuallyReferencedIn ;
+                           rdfs:subPropertyOf nvto:isAudioVisuallyReferencedIn ;
                            rdfs:comment "Invers von 'beinhaltet hörbare Referenz zu'."@de ,
                                         "Inverse of 'has audible reference to'."@en ;
                            rdfs:label "is audibly referenced in"@en ,
                                       "ist hörbar referenziert in"@de .
 
 
-###  http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn
-nvto:isAudiovisuallyReferencedIn rdf:type owl:ObjectProperty ;
+###  http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn
+nvto:isAudioVisuallyReferencedIn rdf:type owl:ObjectProperty ;
                                  rdfs:subPropertyOf nvto:isReferencedIn ;
                                  rdfs:comment "Invers von 'beinhaltet audiovisuelle Referenz zu'."@de ,
                                               "Inverse of 'has audiovisual reference to'."@en ;
@@ -1186,7 +1494,7 @@ nvto:isIllustratorOf rdf:type owl:ObjectProperty ;
 
 ###  http://lod.iti-germany.de/schema/nvto/isInfluencedBy
 nvto:isInfluencedBy rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf nvto:isReferencedIn ;
+                    rdfs:subPropertyOf nvto:hasReferenceTo ;
                     rdfs:label "is influenced by"@en ,
                                "ist beeinflusst von"@de ;
                     skos:definiiton "Invers von 'hat beeinflusst'."@de ;
@@ -1648,7 +1956,7 @@ nvto:isVideoEditorOf rdf:type owl:ObjectProperty ;
 
 ###  http://lod.iti-germany.de/schema/nvto/isVisuallyReferencedIn
 nvto:isVisuallyReferencedIn rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf nvto:isAudiovisuallyReferencedIn ;
+                            rdfs:subPropertyOf nvto:isAudioVisuallyReferencedIn ;
                             rdfs:comment "Invers von 'beinhaltet visuelle Referenz zu'."@de ,
                                          "Inverse of 'has visual reference to'."@en ;
                             rdfs:label "is visually referenced in"@en ,
@@ -1659,6 +1967,10 @@ nvto:isVisuallyReferencedIn rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
+###  http://lod.iti-germany.de/schema/nvto/Person
+nvto:Person rdf:type owl:DatatypeProperty .
+
+
 ###  http://lod.iti-germany.de/schema/nvto/beginsAtTime
 nvto:beginsAtTime rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf nvto:hasDate ;
@@ -1666,7 +1978,11 @@ nvto:beginsAtTime rdf:type owl:DatatypeProperty ;
                   rdfs:label "beginnt zu Zeitpunkt"@de ,
                              "begins at time"@en ;
                   skos:definition "Beschreibt den Startzeitpunkt einer Zeitspanne."@de ,
-                                  "Describes the begin date/point in time of a time span."@en .
+                                  "Describes the begin date/point in time of a time span."@en ;
+                  skos:example ""@de ,
+                               ""@en ;
+                  skos:scopeNote ""@en ,
+                                 "Das Datum sollte nach ISO XY angegeben werden."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/endsAtTime
@@ -1676,7 +1992,11 @@ nvto:endsAtTime rdf:type owl:DatatypeProperty ;
                 rdfs:label "endet zu Zeitpunkt"@de ,
                            "ends at time"@en ;
                 skos:definition "Beschreibt den Endzeitpunkt einer Zeitspanne."@de ,
-                                "Describes the end date/point in time of a time span."@en .
+                                "Describes the end date/point in time of a time span."@en ;
+                skos:example ""@de ,
+                             ""@en ;
+                skos:scopeNote ""@en ,
+                               "Das Datum sollte nach ISO XY angegeben werden."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasAddress
@@ -1684,7 +2004,11 @@ nvto:hasAddress rdf:type owl:DatatypeProperty ;
                 rdfs:label "has address"@en ,
                            "hat Adresse"@de ;
                 skos:definition "Beschreibt die Adresse einer Ressource."@de ,
-                                "Describes the address of a resource."@en .
+                                "Describes the address of a resource."@en ;
+                skos:example ""@de ,
+                             ""@en ;
+                skos:scopeNote ""@en ,
+                               "Addressen sollten in Form X geschrieben sein."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasCondition
@@ -1693,6 +2017,8 @@ nvto:hasCondition rdf:type owl:DatatypeProperty ;
                              "hat Zustand"@de ;
                   skos:definition "Beschreibt oder verbindet mit dem Zustand einer Ressource."@de ,
                                   "Describes or connects to the condition of a resource."@en ;
+                  skos:example ""@de ,
+                               ""@en ;
                   skos:scopeNote "E.g. the condition of a physical object or a digital file."@en ,
                                  "Z.B. der Zustand eines physischen Objekts oder einer digitalen Datei."@de .
 
@@ -1702,27 +2028,39 @@ nvto:hasDate rdf:type owl:DatatypeProperty ;
              rdfs:label "has date"@en ,
                         "hat Datum"@de ;
              skos:definition "Beschreibt einen einzelnen Zeitpunkt."@de ,
-                             "Describes a singular date/point in time."@en .
+                             "Describes a singular date/point in time."@en ;
+             skos:example ""@de ,
+                          ""@en ;
+             skos:scopeNote ""@en ,
+                            "Das Datum sollte nach ISO XY angegeben werden. Wenn genauere Zeiträume bekannt sind, sollten Zeitspannen genutzt werden."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasDateOfBirth
 nvto:hasDateOfBirth rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf nvto:hasDate ;
-                    rdfs:domain nvto:Agent ;
+                    rdfs:domain nvto:Person ;
                     rdfs:label "has date of birth"@en ,
                                "hat Geburtsdatum"@de ;
                     skos:definition "Beschreibt das Geburtsdatum eines Agens."@de ,
-                                    "Describes the date of birth of an agent."@en .
+                                    "Describes the date of birth of an agent."@en ;
+                    skos:example ""@de ,
+                                 ""@en ;
+                    skos:scopeNote ""@en ,
+                                   "Das Datum sollte nach ISO XY angegeben werden."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasDateOfDeath
 nvto:hasDateOfDeath rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf nvto:hasDate ;
+                    rdfs:subPropertyOf nvto:Person ;
                     rdfs:domain nvto:Agent ;
                     rdfs:label "has date of death"@en ,
                                "hat Todesdatum"@de ;
                     skos:definition "Beschreibt das Todesdatum eines Agens."@de ,
-                                    "Describes the date of death of an agent."@en .
+                                    "Describes the date of death of an agent."@en ;
+                    skos:example ""@de ,
+                                 ""@en ;
+                    skos:scopeNote ""@en ,
+                                   "Das Datum sollte nach ISO XY angegeben werden."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasDescription
@@ -1730,7 +2068,9 @@ nvto:hasDescription rdf:type owl:DatatypeProperty ;
                     rdfs:label "has description"@en ,
                                "hat Beschreibung"@de ;
                     skos:definition "A general description of a resource."@en ,
-                                    "Eine generelle Beschreibung einer Ressource."@de .
+                                    "Eine generelle Beschreibung einer Ressource."@de ;
+                    skos:example ""@de ,
+                                 ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasDimensions
@@ -1739,8 +2079,8 @@ nvto:hasDimensions rdf:type owl:DatatypeProperty ;
                               "hat Dimensionen"@de ;
                    skos:definition "Beschreibt die Dimensionen einer Ressource."@de ,
                                    "Describes the dimensions of a resource."@en ;
-                   skos:scopeNote "E.g. the dimensions of a physical object or a digital file."@en ,
-                                  "Z.B. die Dimensionen eines physischen Objekts oder einer digitalen Datei."@de .
+                   skos:example ""@de ,
+                                ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasExtent
@@ -1750,13 +2090,13 @@ nvto:hasExtent rdf:type owl:DatatypeProperty ;
                           "hat Umfang"@de ;
                skos:definition "Beschreibt den Umfang einer Ressource."@de ,
                                "Describes the extent of a resource."@en ;
-               skos:scopeNote "E.g. the extent of a physical object or a digital file."@en ,
-                              "Z.B. der Umfang eines physischen Objekts oder einer digitalen Datei."@de .
+               skos:example ""@de ,
+                            ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasFamilyName
 nvto:hasFamilyName rdf:type owl:DatatypeProperty ;
-                   rdfs:domain nvto:Agent ;
+                   rdfs:domain nvto:Person ;
                    rdfs:label "has family name"@en ,
                               "hat Familienname"@de ;
                    skos:definition "Beschreibt den Familiennamen eines Agens."@de ,
@@ -1765,11 +2105,13 @@ nvto:hasFamilyName rdf:type owl:DatatypeProperty ;
 
 ###  http://lod.iti-germany.de/schema/nvto/hasFirstName
 nvto:hasFirstName rdf:type owl:DatatypeProperty ;
-                  rdfs:domain nvto:Agent ;
+                  rdfs:domain nvto:Person ;
                   rdfs:label "has first name"@en ,
                              "hat Vorname"@de ;
                   skos:definition "Beschreibt den Vornamen eines Agens."@de ,
-                                  "Describes the first name of an agent."@en .
+                                  "Describes the first name of an agent."@en ;
+                  skos:example ""@de ,
+                               ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate
@@ -1780,6 +2122,8 @@ nvto:hasFirstPerformanceDate rdf:type owl:DatatypeProperty ;
                                         "hat erstes Aufführungsdatum"@de ;
                              skos:definition "Beschreibt das erste Aufführungsdatum einer Produktion der darstellenden Kunst."@de ,
                                              "Describes the first performance date of a performing arts production."@en ;
+                             skos:example ""@de ,
+                                          ""@en ;
                              skos:scopeNote "A workaround property for describing the first performance date of a performing arts production in case of insufficient description of related performances."@en ,
                                             "Eine behelfsmäßige Eigenschaft zur Beschreibung des ersten Aufführungsdatums einer Produktion der darstellenden Künste bei nicht ausreichender Beschreibung der zugehörigen Aufführungen."@de .
 
@@ -1797,7 +2141,9 @@ nvto:hasLabeling rdf:type owl:DatatypeProperty ;
                  rdfs:label "has labeling"@en ,
                             "hat Beschriftung"@de ;
                  skos:definition "Beschreibt die Beschriftung einer Ressource."@de ,
-                                 "Describes the labeling of a resource."@en .
+                                 "Describes the labeling of a resource."@en ;
+                 skos:example ""@de ,
+                              ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasLabelingBack
@@ -1806,7 +2152,9 @@ nvto:hasLabelingBack rdf:type owl:DatatypeProperty ;
                      rdfs:label "has labeling back"@en ,
                                 "hat Beschriftung hinten"@de ;
                      skos:definition "Beschreibt die Beschriftung der Rückseite einer Ressource."@de ,
-                                     "Describes the labeling on the back of a resource."@en .
+                                     "Describes the labeling on the back of a resource."@en ;
+                     skos:example ""@de ,
+                                  ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasLabelingFront
@@ -1815,7 +2163,9 @@ nvto:hasLabelingFront rdf:type owl:DatatypeProperty ;
                       rdfs:label "has labeling front"@en ,
                                  "hat Beschriftung vorn"@de ;
                       skos:definition "Beschreibt die Beschriftung der Vorderseite einer Ressource."@de ,
-                                      "Describes the labeling on the front of a resource."@en .
+                                      "Describes the labeling on the front of a resource."@en ;
+                      skos:example ""@de ,
+                                   ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasLanguage
@@ -1823,7 +2173,11 @@ nvto:hasLanguage rdf:type owl:DatatypeProperty ;
                  rdfs:label "has language"@en ,
                             "hat Sprache"@de ;
                  skos:definition "Beschreibt die Sprache, die einer Ressource zugeordnet ist."@de ,
-                                 "Describes the language associated to a resource."@en .
+                                 "Describes the language associated to a resource."@en ;
+                 skos:example ""@de ,
+                              ""@en ;
+                 skos:scopeNote ""@en ,
+                                "Sprachen sollten nach BCP 47 angegeben werden."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate
@@ -1834,6 +2188,8 @@ nvto:hasLastPerformanceDate rdf:type owl:DatatypeProperty ;
                                        "hat Dernierendatum"@de ;
                             skos:definition "Beschreibt das letzte Aufführungsdatum einer Produktion der darstellenden Kunst."@de ,
                                             "Describes the last performance date of a performing arts production."@en ;
+                            skos:example ""@de ,
+                                         ""@en ;
                             skos:scopeNote "A workaround property for describing the last performance date of a performing arts production in case of insufficient description of related performances."@en ,
                                            "Eine behelfsmäßige Eigenschaft zur Beschreibung des letzten Aufführungsdatums einer Produktion der darstellenden Künste bei nicht ausreichender Beschreibung der zugehörigen Aufführungen."@de .
 
@@ -1844,7 +2200,9 @@ nvto:hasName rdf:type owl:DatatypeProperty ;
              rdfs:label "has name"@en ,
                         "hat Name"@de ;
              skos:definition "Beschreibt den Namen eines Agens."@en ,
-                             "Describes the name of an agent."@en .
+                             "Describes the name of an agent."@en ;
+             skos:example ""@de ,
+                          ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasRights
@@ -1852,7 +2210,11 @@ nvto:hasRights rdf:type owl:DatatypeProperty ;
                rdfs:label "has rights"@en ,
                           "hat Rechte"@de ;
                skos:definition "Beschreibt einen oder mehrere rechtliche Aussagen einer Ressource."@en ,
-                               "Describes one or more rights statements of a resource."@en .
+                               "Describes one or more rights statements of a resource."@en ;
+               skos:example ""@de ,
+                            ""@en ;
+               skos:scopeNote ""@de ,
+                              ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasSubtitle
@@ -1860,7 +2222,11 @@ nvto:hasSubtitle rdf:type owl:DatatypeProperty ;
                  rdfs:label "has subtitle"@en ,
                             "hat Untertitel"@de ;
                  skos:definition "Beschreibt den Untertitel einer Ressource."@en ,
-                                 "Describes the subtitle of a resource."@en .
+                                 "Describes the subtitle of a resource."@en ;
+                 skos:example ""@de ,
+                              ""@en ;
+                 skos:scopeNote ""@de ,
+                                ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasTableOfContents
@@ -1869,7 +2235,11 @@ nvto:hasTableOfContents rdf:type owl:DatatypeProperty ;
                         rdfs:label "has table of contents"@en ,
                                    "hat Inhaltsverzeichnis"@de ;
                         skos:definition "Beschreibt das Inhaltsverzeichnis einer Ressource."@de ,
-                                        "Describes the table of contents of a resource."@en .
+                                        "Describes the table of contents of a resource."@en ;
+                        skos:example ""@de ,
+                                     ""@en ;
+                        skos:scopeNote ""@de ,
+                                       ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasTitle
@@ -1877,7 +2247,11 @@ nvto:hasTitle rdf:type owl:DatatypeProperty ;
               rdfs:label "has title"@en ,
                          "hat Titel"@de ;
               skos:definition "Beschreibt den Titel einer Ressource."@en ,
-                              "Describes the title of a resource."@en .
+                              "Describes the title of a resource."@en ;
+              skos:example ""@de ,
+                           ""@en ;
+              skos:scopeNote ""@de ,
+                             ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/isCreatedAtTime
@@ -1906,10 +2280,12 @@ nvto:isIssuedAtTime rdf:type owl:DatatypeProperty ;
 nvto:Agent rdf:type owl:Class ;
            rdfs:label "Agens"@de ,
                       "Agent"@en ;
-           skos:definition "Diese Klasse umfasst alle Agenzien wie etwa Personen und Institutionen."@de ,
+           skos:definition "Diese Klasse umfasst alle Agens wie etwa Personen und Institutionen."@de ,
                            "This class comprises all agents such as persons or institutions."@en ;
            skos:example "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"@de ,
-                        "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"@en .
+                        "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"@en ;
+           skos:scopeNote "Agens sind handlungsfähige Entitäten, in der Regel einzelne Personen oder Personengruppierungen. Diese Klasse dient vor allem als Oberklasse für genauer definierte Agens."@de ,
+                          "Agents are entities that are capable of acting, usually persons or groups of persons. This class primarily serves as top class for more specifically defined concepts."@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/City
@@ -1920,7 +2296,9 @@ nvto:City rdf:type owl:Class ;
           skos:definition "Diese Klasse umfasst Städte abhängig von Zeit und/oder Geopolitik."@de ,
                           "This class comprises cities dependent on time and/or geopolitics."@en ;
           skos:example "Berlin, West Berlin, East Berlin"@en ,
-                       "Berlin, Westberlin, Ostberlin"@de .
+                       "Berlin, Westberlin, Ostberlin"@de ;
+          skos:scopeNote "Cities can be real places that existed or exist. Fictional places are possible as well."@en ,
+                         "Städte können reale Orte sein, die existiert haben oder existieren. Auch fiktive Städte sind möglich."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/Collection
@@ -1930,7 +2308,9 @@ nvto:Collection rdf:type owl:Class ;
                 skos:definition "Diese Klasse umfasst (benannte) Sammlungen von Ressourcen in willkürlicher Reihenfolge."@de ,
                                 "This class comprises (named) resource collections in arbitrary order."@en ;
                 skos:example "COL"@de ,
-                             "COL"@en .
+                             "COL"@en ;
+                skos:scopeNote "A Collection is a set of physical and/or digital objects, originating from or created by an institution or a person. Collections can be created to cover a topic, event or entire archives."@en ,
+                               "Eine Sammlung ist eine von einer Institution oder Person stammende oder zusammengestellte Menge an physischen und/oder digitalen Objekten, sowie deren beschreibende Datensätze. Sammlungen können zu einem Thema oder einem Ereignis angelegt sein oder ganze Archivbestände abdecken."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/Country
@@ -1941,19 +2321,21 @@ nvto:Country rdf:type owl:Class ;
              skos:definition "Diese Klasse umfasst Länder abhängig von Zeit und/oder Geopolitik."@de ,
                              "This class comprises countries dependent on time and/or geopolitics."@en ;
              skos:example "FRG, West Germany, GDR"@en ,
-                          "Französische Republik, Westdeutschland, DDR"@de .
+                          "Französische Republik, Westdeutschland, DDR"@de ;
+             skos:scopeNote "Countries can be real places that existed or exist. Fictional countries are possible as well."@en ,
+                            "Länder können reale Orte sein, die existiert haben oder existieren. Auch fiktive Länder sind möglich."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/CreativeConcept
 nvto:CreativeConcept rdf:type owl:Class ;
                      rdfs:label "Creative Concept"@en ,
                                 "Kreatives Konzept"@de ;
-                     skos:definition "Diese Klasse umfasst alle kreativen Konzepte."@de ,
-                                     "This class comprises all creative concepts."@en ;
+                     skos:definition "Diese Klasse umfasst alle Kreativen Konzepte."@de ,
+                                     "This class comprises all Creative Concepts."@en ;
                      skos:example "Produktion der darstellenden Künste; Filmproduktion; Festival"@de ,
                                   "performing arts production; film production, festival"@en ;
-                     skos:scopeNote "Comparable to FRBR Expressions. This class primarily serves as top class for more specifically defined concepts."@en ,
-                                    "Vergleichbar mit Expressionen aus FRBR. Diese Klasse dient vor allem als Oberklasse für genauer definierte Konzepte."@de .
+                     skos:scopeNote "Diese Klasse dient als Oberklasse für genauer definierte Kreative Konzepte, wie Filmproduktionen oder Produktionen der darstellenden Künste. Vergleichbar mit Expressionen aus FRBR."@de ,
+                                    "This class primarily serves as top class for more specifically defined Creative Concepts such as film productions or performing arts productions. Comparable to FRBR Expressions."@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/DigitalObject
@@ -1963,7 +2345,9 @@ nvto:DigitalObject rdf:type owl:Class ;
                    skos:definition "Die digitale Repräsentation des Inhalts eines Mediums. Digitaler Informationsträger."@de ,
                                    "The digital representation of the contents of a medium. Digital information carrier."@en ;
                    skos:example "A specific digital file with name IMG-001.tif, VID-001.avi"@en ,
-                                "Eine spezifische digitale Datei mit Namen IMG-001.tif, VID-001.avi"@de .
+                                "Eine spezifische digitale Datei mit Namen IMG-001.tif, VID-001.avi"@de ;
+                   skos:scopeNote "Diese Klasse umfasst sowohl digitale Repräsentationen der Inhalte von Physischen Objekten, als auch nativ digitale Objekte. Digitale Objekte sind wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte."@de ,
+                                  "This class comprises digital representations of the contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, are information carriers of one or more Information Objects."@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/Event
@@ -1971,56 +2355,49 @@ nvto:Event rdf:type owl:Class ;
            rdfs:label "Ereignis"@de ,
                       "Event"@en ;
            skos:definition "Diese Klasse umfasst alle Ereignisse."@de ,
-                           "This class comprises all events."@en ;
+                           "This class comprises all Events."@en ;
            skos:example "A performance of 'Hamlet', a workshop regarding a specific acting technique, an exhibition about an actor/actress"@en ,
                         "Eine Aufführung von 'Hamlet', ein Workshop zu einer speziellen Schauspieltechnik, eine Ausstellung über eine/n Darsteller/in"@de ;
-           skos:scopeNote "Speziell für Ereignisse im Bereich der darstellenden Künste genutzt."@de ,
-                          "Used specifically for events in the realm of performing arts."@en .
+           skos:scopeNote "An Event can be fictional or real, has a starting and ending point and occurrs at a place. Not all attributes of an event have to be known. This class is generally used for Events in the realm of performing arts."@en ,
+                          "Ein Ereignis kann real oder fiktional sein, hat einen Start- und Endzeitpunkt und findet an einem Ort statt. Nicht alle Eigenschaften eines Ereignisses müssen bekannt sein. In der Regel wird diese Klasse für Ereignisse im Bereich der darstellenden Künste wie Aufführungen oder Workshops genutzt."@de .
 
 
-###  http://lod.iti-germany.de/schema/nvto/Festival
-nvto:Festival rdf:type owl:Class ;
-              rdfs:subClassOf nvto:CreativeConcept ;
-              rdfs:label "Festival"@de ,
-                         "Festival"@en ;
-              skos:definition "Diese Klasse umfasst alle Festivals."@de ,
-                              "This class comprises all festivals."@en ;
-              skos:example "Das zweijährliche internationale Theaterfestival 'Theater der Welt'"@de ,
-                           "The biannual international theatre festival 'Theater der Welt'"@en ;
-              skos:scopeNote "Speziell für Festivals im Bereich der darstellenden Künste genutzt."@de ,
-                             "Used specifically for festivals in the realm of performing arts."@en .
+###  http://lod.iti-germany.de/schema/nvto/FestivalPlan
+nvto:FestivalPlan rdf:type owl:Class ;
+                  rdfs:subClassOf nvto:CreativeConcept ;
+                  rdfs:label "Festival Plan"@en ,
+                             "Festivalplan"@de ;
+                  skos:definition "Diese Klasse umfasst alle Festivalpläne."@de ,
+                                  "This class comprises all festival plans."@en ;
+                  skos:example "Das zweijährliche internationale Theaterfestival 'Theater der Welt'"@de ,
+                               "The biannual international theatre festival 'Theater der Welt'"@en ;
+                  skos:scopeNote "A festival plan is the Creative Concept behind a festival event or a series of festival events. This class can be used for aggregating single iterations of periodic Festivals under one concept."@en ,
+                                 "Ein Festivalplan ist das Kreative Konzept, das einem Festivalereignis oder einer Reihe von Festivalereignissen zugrunde liegt. Diese Klasse wird unter anderem dazu verwendet, die einzelnen Iterationen regelmäßig stattfindender Festivals im Bereich der darstellenden Künste unter einem Konzept zu sammeln."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/FilmProduction
 nvto:FilmProduction rdf:type owl:Class ;
                     rdfs:subClassOf nvto:CreativeConcept ;
-                    rdfs:label "Performing Arts Production"@en ,
-                               "Performing Arts Produktion"@de ;
-                    skos:definition "Diese Klasse umfasst Filmnproduktionen, die aufgenommen wurden."@de ,
-                                    "This class comprises film productions that were or are performed in performing arts events."@en ;
+                    rdfs:label "Film Production"@en ,
+                               "Filmproduktion"@de ;
+                    skos:definition "Diese Klasse umfasst alle Filmproduktionen."@de ,
+                                    "This class comprises all film productions."@en ;
                     skos:example "Example"@de ,
-                                 "Example"@en .
+                                 "Example"@en ;
+                    skos:scopeNote "A Film Production is the Creative Concept behind a film. A film production may be described further by objects such as scripts, camera instructions or lighting instructions."@en ,
+                                   "Eine Filmproduktion ist das Kreative Konzept, das einem Film zugrunde liegt. Eine Filmproduktion kann zum Beispiel durch ein Drehbuch, Kamera- oder Lichtanweisungen genauer beschrieben werden."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/InformationObject
 nvto:InformationObject rdf:type owl:Class ;
                        rdfs:label "Information Object"@en ,
                                   "Informationsobjekt"@de ;
-                       skos:definition "Conceptual representation of the contents of a medium captured by a physical or digital (archival) object. The same information object can be captured in multiple pyhsical or digital objects (e.g. a magazine edition). Also one physical or digital object can carry multiple information objects (e.g. multiple movies in a single video tape)."@en ,
-                                       "Konzeptuelle Repräsentation des Inhalts eines Mediums, erfasst von einem physischen oder digitalen (Archiv-)Objekt. Dasselbe Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel einer Ausgabe in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann außerdem mehere Informationsobjekte tragen (z.B. mehrere Videos auf einer einzelnen Videokassette)"@de ;
+                       skos:definition "\"Diese Klasse umfasst alle Informationsobjekte."@de ,
+                                       "\"This class comprises all Information Objects."@en ;
                        skos:example "Aufnahme von Aufführung X, Inhalt von Programmheft Y"@de ,
-                                    "Recording of Performance X, Contents of programme booklet Y"@en .
-
-
-###  http://lod.iti-germany.de/schema/nvto/Organization
-nvto:Organization rdf:type owl:Class ;
-                  rdfs:subClassOf nvto:Agent ;
-                  rdfs:label "Organisation"@de ,
-                             "Organization"@en ;
-                  skos:definition "Diese Klasse umfasst alle Organisationen."@de ,
-                                  "This class comprises all organizations"@en ;
-                  skos:example "Theater der Welt, Sony BMG"@de ,
-                               "Theater der Welt, Sony BMG"@en .
+                                    "Recording of Performance X, Contents of programme booklet Y"@en ;
+                       skos:scopeNote " An Information Object is  the conceptual representation of a Physical or Digital Object. The same Information Object can be captured in multiple Physical or Digital Objects (e.g. a magazine edition). In addition, one Physical or Digital Object can carry multiple Information Objects (e.g. multiple movies on a single video tape)."@en ,
+                                      "Ein Informationsobjekt ist die konzeptuelle Repräsentation des Inhalts eines Physischen oder Digitalen Objekts. Dasselbe Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel ein Foto und eine Kopie des Fotos in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann außerdem mehere Informationsobjekte tragen (z.B. mehrere Videos auf einer einzelnen Videokassette)"@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup
@@ -2028,10 +2405,12 @@ nvto:PerformingArtsGroup rdf:type owl:Class ;
                          rdfs:subClassOf nvto:Agent ;
                          rdfs:label "Performing Arts Group"@en ,
                                     "Performing Arts Gruppe"@de ;
-                         skos:definition "Diese Klasse umfasst alle Ensembles, Companies und ähnliche Gruppen im Bereich der darstellenden Künste."@de ,
-                                         "This class comprises ensembles and similar groups in the realm of performing arts."@en ;
+                         skos:definition "Diese Klasse umfasst alle Ensembles, Kompanien und ähnliche Gruppen im Bereich der darstellenden Künste."@de ,
+                                         "This class comprises ensembles, companies and similar groups in the realm of performing arts."@en ;
                          skos:example "DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg"@de ,
-                                      "DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg"@en .
+                                      "DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg"@en ;
+                         skos:scopeNote "Die Performing Arts Gruppe besteht üblicherweise aus zwei oder mehr Personen. Diese Klasse bezieht sich speziell auf den Bereich der darstellenden Künste."@de ,
+                                        "The Performing Arts Group is usually comprised of two or more Persons. This class is used specifically for the realm of performing arts."@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation
@@ -2042,7 +2421,9 @@ nvto:PerformingArtsLocation rdf:type owl:Class ;
                             skos:definition "Diese Klasse umfasst Orte, die für darstellende Künste genutzt werden oder wurden."@de ,
                                             "This class comprises locations that were or are used for performing arts."@en ;
                             skos:example "Volksbühne, Pratergarten"@de ,
-                                         "Volksbühne, Pratergarten"@en .
+                                         "Volksbühne, Pratergarten"@en ;
+                            skos:scopeNote "A Performing Arts Location usually is a venue or a public place. Generally any location used for a performance can be a Performing Arts Location. Fictional Locations for fictional performances are not excluded."@en ,
+                                           "Ein Performing Arts Aufführungsort ist in der Regel eine Spielstätte oder ein öffentlicher Platz. Generell kann jeder Ort, an dem aufgeführt wird, ein Performing Arts Aufführungsort sein. Fiktive Orte von fiktiven Aufführungen sind nicht ausgeschlossen."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction
@@ -2050,31 +2431,29 @@ nvto:PerformingArtsProduction rdf:type owl:Class ;
                               rdfs:subClassOf nvto:CreativeConcept ;
                               rdfs:label "Performing Arts Production"@en ,
                                          "Performing Arts Produktion"@de ;
-                              skos:definition "Diese Klasse umfasst Produktionen der darstellenden Kunst, die aufgeführt werden oder wurden."@de ,
-                                              "This class comprises productions that were or are performed in performing arts events."@en ;
+                              skos:definition "Diese Klasse umfasst Produktionen der darstellenden Kunst."@de ,
+                                              "This class comprises Performing Arts Productions."@en ;
                               skos:example "Blaubart, Hamlet"@de ,
-                                           "Blaubart, Hamlet"@en .
+                                           "Blaubart, Hamlet"@en ;
+                              skos:scopeNote "A Performing Arts Production is the Creative Concept behind a Performance or a Series of Performances in the realm of performing arts. A Performing Arts Production may be described further by manuscripts or stage directions."@en ,
+                                             "Eine Performing Arts Produktion ist das Kreative Konzept, das einer Aufführung oder einer Reihe von Aufführungen im Bereich der darstellenden Künste zugrunde liegt. Eine Performing Arts Produktion kann zum Beispiel von Manuskripten oder Regieanweisungen genauer beschrieben werden."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/Person
 nvto:Person rdf:type owl:Class ;
-            rdfs:subClassOf nvto:Agent ;
-            rdfs:label "Person"@de ,
-                       "Person"@en ;
-            skos:definition "Diese Klasse umfasst alle Personen"@de ,
-                            "This class comprises all persons"@en ;
-            skos:example "Eberhard Kube, Conny Hege"@de ,
-                         "Eberhard Kube, Conny Hege"@en .
+            rdfs:subClassOf nvto:Agent .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/PhysicalObject
 nvto:PhysicalObject rdf:type owl:Class ;
                     rdfs:label "Physical Object"@en ,
                                "Physisches Objekt"@de ;
-                    skos:definition "Die physische Repräsentation des Inhalts eines Mediums. Physischer Informationsträger."@de ,
-                                    "The physical representation of the contents of a medium. Physical information carrier. "@en ;
+                    skos:definition "Diese Klasse umfasst alle Physischen Objekte."@de ,
+                                    "This class comprises all Physical Objects."@en ;
                     skos:example "Tape with recording of performance X, programme booklet Y"@en ,
-                                 "Videokassette mit Aufnahme von Aufführung X, Programmheft Y"@de .
+                                 "Videokassette mit Aufnahme von Aufführung X, Programmheft Y"@de ;
+                    skos:scopeNote "All material objects with physical extent are Physical Objects. Physical Objects, like Digital Objects, can be information carriers of Information Objects. Typical physical information carriers are video cassettes, analogue photographs or program booklets."@en ,
+                                   "Alle materiellen Objekte mit physischen Ausmaßen sind Physische Objekte. Wie Digitale Objekte können auch Physische Objekte Informationsträger von Informationsobjekten sein. Typische physische Informationsträger sind Videokassetten, analoge Fotografien oder Programmhefte."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/Place
@@ -2082,7 +2461,11 @@ nvto:Place rdf:type owl:Class ;
            rdfs:label "Ort"@de ,
                       "Place"@en ;
            skos:definition "Diese Klasse umfasst alle Orte."@de ,
-                           "This class comprises all places."@en .
+                           "This class comprises all places."@en ;
+           skos:example "Place"@de ,
+                        "Place"@en ;
+           skos:scopeNote "Orte können existieren oder existiert haben. Fiktive Orte sind nicht ausgeschlossen."@de ,
+                          "Places can exist or have existed. Fictional Places are not excluded."@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/Series
@@ -2090,97 +2473,125 @@ nvto:Series rdf:type owl:Class ;
             rdfs:label "Serie"@de ,
                        "Series"@en ;
             skos:definition "Diese Klasse umfasst alle Serien."@en ,
-                            "This class comprises all series."@en ;
+                            "This class comprises all Series."@en ;
             skos:example "SRS"@de ,
-                         "SRS"@en .
+                         "SRS"@en ;
+            skos:scopeNote "A Series is an ordered set of Objects. A Series can describe photographs of movements or the documentation of the development of a production in a chronological or otherwise intended sequence."@en ,
+                           "Eine Serie ist ein geordnetes Set von Objekten. Mit einer Serie können zum Beispiel Fotografien von Bewegungsabläufen oder die Dokumentation zur Entwicklung einer Produktion in eine chronologische oder anderweitig beabsichtigte Reihenfolge gebracht werden."@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/TimeSpan
 nvto:TimeSpan rdf:type owl:Class ;
               rdfs:label "Timespan"@en ,
                          "Zeitspanne"@de ;
-              skos:definition "Diese Klasse umfasst Zeitspannen jeglicher Länge."@de ,
-                              "This class comprises timespans of any length."@en ;
+              skos:definition "Diese Klasse umfasst alle Zeitspannen."@de ,
+                              "This class comprises all timespans."@en ;
               skos:example "1979-1989, 00:00:00:00-00:52:23:17"@de ,
-                           "1979-1989, 00:00:00:00-00:52:23:17"@en .
+                           "1979-1989, 00:00:00:00-00:52:23:17"@en ;
+              skos:scopeNote "A Time-Span is a temporal extent with starting point, end point and duration. A Time-Span can be defined for entities such as Information Objects and Events. A Time-Span is unlimited in its duration. Not all attributes of a Time-Span have to be known for it to be described."@en ,
+                             "Eine Zeitspanne ist ein zeitliches Ausmaß mit Startzeitpunkt, Endzeitpunkt und Dauer. Eine Zeitspanne kann sich auf Entitäten wie Informationsobjekte und Ereignisse beziehen. Eine Zeitspanne ist in ihrer Dauer unbeschränkt. Nicht alle Eigenschaften einer Zeitspanne müssen bekannt sein, um sie zu beschreiben."@de .
 
 
 #################################################################
 #    Annotations
 #################################################################
 
-nvto:hasFirstEdition skos:definition "Beschreibt oder verbindet mit der Erstausgabe einer Ressource."@de ;
+nvto:Person skos:scopeNote "A Person usually is a human who either lives or has lived. Fictional Persons are not excluded."@en ;
+            skos:example "Eberhard Kube, Conny Hege"@en ;
+            rdfs:label "Person"@en ;
+            skos:scopeNote "Eine Person ist in der Regel ein Mensch, der lebt oder gelebt hat. Fiktive Personen sind nicht ausgeschlossen."@de ;
+            skos:definition "Diese Klasse umfasst alle Personen."@de ;
+            skos:example "Eberhard Kube, Conny Hege"@de ;
+            skos:definition "This class comprises all persons."@en ;
+            rdfs:label "Person"@de .
+
+
+nvto:hasFirstEdition skos:example ""@en ;
+                     skos:definition "Beschreibt oder verbindet mit der Erstausgabe einer Ressource."@de ;
                      rdfs:label "has first edition"@en ;
                      skos:definition "Describes or connects to the first edition of a resource."@en ;
+                     skos:example ""@de ;
                      rdfs:label "hat Erstausgabe"@de .
 
 
 nvto:hasFirstLocalizedEdition skos:definition "Beschreibt oder verbindet mit der übersetzten Erstausgabe einer Ressource."@de ;
                               rdfs:label "hat übersetzte Erstausgabe"@de ;
+                              skos:example ""@en ;
                               skos:definition "Describes or connects to the first localized edition of a resource."@en ;
-                              rdfs:label "has first localized edition"@en .
+                              rdfs:label "has first localized edition"@en ;
+                              skos:example ""@de .
 
 
 nvto:hasFormat rdfs:label "has format"@en ;
-               skos:scopeNote "E.g. the format of a physical object or a digital file."@en ,
-                              "Z.B. das Format eines physischen Objekts oder einer digitalen Datei."@de ;
+               skos:example ""@en ,
+                            ""@de ;
                skos:definition "Describes or connects to the format of a resource."@en ,
                                "Beschreibt oder verbindet mit dem Format einer Ressource."@de ;
                rdfs:label "hat Format"@de .
 
 
-nvto:hasIdentifier skos:definition "Beschreibt einen oder mehr alternative Bezeichner einer Ressource."@de ;
-                   rdfs:label "hat Bezeichner"@de ,
-                              "has identifier"@en ;
-                   skos:definition "Describes one or more alternative identifiers of a resource."@en .
-
-
 nvto:hasIsbn rdfs:label "has ISBN"@en ;
-             skos:definition "Describes the ISBN of a resource."@en ,
-                             "Beschreibt die ISBN einer Ressource."@de ;
+             skos:definition "Describes the ISBN of a resource."@en ;
+             skos:example ""@de ;
+             skos:definition "Beschreibt die ISBN einer Ressource."@de ;
+             skos:example ""@en ;
              rdfs:label "hat ISBN"@de .
 
 
 nvto:hasIssn rdfs:label "hat ISSN"@de ;
              skos:definition "Beschreibt die ISSN einer Ressource."@de ;
              rdfs:label "has ISSN"@en ;
-             skos:definition "Describes the ISSN of a resource."@en .
+             skos:example ""@de ;
+             skos:definition "Describes the ISSN of a resource."@en ;
+             skos:example ""@en .
 
 
-nvto:hasMedium skos:definition "Beschreibt oder verbindet mit dem Medium einer Ressource."@en ;
-               rdfs:label "has medium"@en ,
-                          "hat Medium"@de ;
+nvto:hasMedium skos:example ""@de ;
+               skos:definition "Beschreibt oder verbindet mit dem Medium einer Ressource."@en ;
+               rdfs:label "has medium"@en ;
+               skos:example ""@en ;
+               rdfs:label "hat Medium"@de ;
                skos:definition "Describes or connects to the medium of a resource."@en .
 
 
-nvto:hasPhotoStudio rdfs:label "has photo studio"@en ;
-                    skos:definition "Describes or connects a resource to a photo studio that contributed to its creation."@en ;
-                    rdfs:label "hat Fotostudio"@de ;
-                    skos:definition "Beschreibt ein Fotostudio oder verbindet eine Ressource mit einem Fotostudio, dass bei ihrer Kreierung beigetragen hat."@de .
-
-
 nvto:hasProvenance skos:definition "Describes or connects to the provenance of a resource."@en ;
-                   rdfs:label "hat Herkunft"@de ,
-                              "has provenance"@en ;
-                   skos:definition "Beschreibt die Herkunft oder verbindet mit der Herkunft einer Ressource."@de .
+                   skos:example ""@de ;
+                   skos:scopeNote ""@de ;
+                   rdfs:label "hat Herkunft"@de ;
+                   skos:example ""@en ;
+                   rdfs:label "has provenance"@en ;
+                   skos:definition "Beschreibt die Herkunft oder verbindet mit der Herkunft einer Ressource."@de ;
+                   skos:scopeNote ""@en .
 
 
-nvto:hasRightsHolder rdfs:label "hat Rechteinhaber"@de ,
-                                "has rights holder"@en ;
+nvto:hasRightsHolder skos:example ""@en ;
+                     skos:scopeNote ""@en ;
+                     rdfs:label "hat Rechteinhaber"@de ;
+                     skos:example ""@de ;
+                     rdfs:label "has rights holder"@en ;
+                     skos:scopeNote ""@de ;
                      skos:definition "Describes the rights holder of a resource or connects the resource to an agent who holds rights to the resource."@en ,
                                      "Beschreibt den/die Rechteinhaber*in einer Ressource oder verbindet die Ressource mit einem Agens, der/die Rechteinhaber*in dieser Ressource ist."@en .
 
 
-nvto:hasSource skos:definition "Describes or connects to the source of a resource."@en ,
+nvto:hasSource skos:scopeNote ""@en ;
+               skos:example ""@en ;
+               skos:definition "Describes or connects to the source of a resource."@en ,
                                "Beschreibt oder verbindet mit der Quelle einer Ressource."@de ;
-               rdfs:label "has source"@en ,
-                          "hat Quelle"@de .
+               rdfs:label "hat Quelle"@de ,
+                          "has source"@en ;
+               skos:scopeNote ""@de ;
+               skos:example ""@de .
 
 
 nvto:hasType skos:definition "Describes or connects to the type of a resource."@en ;
+             skos:example ""@de ;
+             skos:scopeNote ""@en ;
              rdfs:label "hat Typ"@de ;
              skos:definition "Beschreibt oder verbindet mit dem Typ einer Ressource."@de ;
-             rdfs:label "has type"@en .
+             rdfs:label "has type"@en ;
+             skos:example ""@en ;
+             skos:scopeNote ""@de .
 
 
 nvto:isRestagedVersionOf skos:definition "Inverse of 'has restaged version'."@en ;

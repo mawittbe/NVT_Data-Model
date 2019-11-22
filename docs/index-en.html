@@ -7,7 +7,7 @@
 
 <!-- SCHEMA.ORG METADATA -->
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://ld.iti-germany.de/schema/nvto/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://ld.iti-germany.de/schema/nvto/","name":"Non-Verbal Theatre Ontology", "headline":"Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the "NONVERBALES THEATER
-                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS).", "datePublished":"Mon Oct 28 10:05:34 CET 2019", "license":"https://creativecommons.org/licenses/by/4.0/deed.en", "contributor":[{"@type":"Person","name":"Jonas Pitz"},{"@type":"Person","name":"Maxim Wittenbecher"}]}</script>
+                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS).", "datePublished":"Fri Nov 22 13:58:17 CET 2019", "license":"https://creativecommons.org/licenses/by/4.0/deed.en", "contributor":[{"@type":"Person","name":"Jonas Pitz"},{"@type":"Person","name":"Maxim Wittenbecher"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -78,7 +78,35 @@ function loadTOC(){
 Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the "NONVERBALES THEATER
                                                           IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS).</span>
 </div>
-<div id="toc"></div>  
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://ld.iti-germany.de/schema/nvto/&gt;</td></tr>
+<tr><td><b>nvto</b></td><td>&lt;http://lod.iti-germany.de/schema/nvto&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+<tr><td><b>4-0</b></td><td>&lt;https://creativecommons.org/licenses/by/4.0&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+<tr><td><b>default namespace</b></td><td>&lt;http://ld.iti-germany.de/schema/nvto&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
 
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">Non-Verbal Theatre Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -111,15 +139,16 @@ This ontology has the following classes and properties.</span>
       <a href="#http://lod.iti-germany.de/schema/nvto/Event" title="http://lod.iti-germany.de/schema/nvto/Event">Event</a>
    </li>
    <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/Festival" title="http://lod.iti-germany.de/schema/nvto/Festival">Festival</a>
+      <a href="#http://lod.iti-germany.de/schema/nvto/FestivalPlan"
+         title="http://lod.iti-germany.de/schema/nvto/FestivalPlan">Festival Plan</a>
+   </li>
+   <li>
+      <a href="#http://lod.iti-germany.de/schema/nvto/FilmProduction"
+         title="http://lod.iti-germany.de/schema/nvto/FilmProduction">Film Production</a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/InformationObject"
          title="http://lod.iti-germany.de/schema/nvto/InformationObject">Information Object</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/Organization"
-         title="http://lod.iti-germany.de/schema/nvto/Organization">Organization</a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup"
@@ -130,15 +159,13 @@ This ontology has the following classes and properties.</span>
          title="http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation">Performing Arts Location</a>
    </li>
    <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/FilmProduction"
-         title="http://lod.iti-germany.de/schema/nvto/FilmProduction">Performing Arts Production</a>
-   </li>
-   <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction"
          title="http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction">Performing Arts Production</a>
    </li>
    <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">Person</a>
+      <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">
+         <span>Person</span>
+      </a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/PhysicalObject"
@@ -270,9 +297,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasIdentifier"
-         title="http://lod.iti-germany.de/schema/nvto/hasIdentifier">
-         <span>has identifier</span>
-      </a>
+         title="http://lod.iti-germany.de/schema/nvto/hasIdentifier">has identifier</a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasIllustrator"
@@ -349,9 +374,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotoStudio"
-         title="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">
-         <span>has photo studio</span>
-      </a>
+         title="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">has photo studio</a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotographer"
@@ -359,7 +382,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence"
-         title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">has place of Occurrence</a>
+         title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">has place of occurrence</a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasPlaywright"
@@ -533,8 +556,8 @@ This ontology has the following classes and properties.</span>
          title="http://lod.iti-germany.de/schema/nvto/isAudiblyReferencedIn">is audibly referenced in</a>
    </li>
    <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn"
-         title="http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn">is audiovisually referenced in</a>
+      <a href="#http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
+         title="http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn">is audiovisually referenced in</a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/isAuthorOf"
@@ -985,20 +1008,8 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasIdentifier"
-         title="http://lod.iti-germany.de/schema/nvto/hasIdentifier">
-         <span>has identifier</span>
-      </a>
-   </li>
-   <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasMedium" title="http://lod.iti-germany.de/schema/nvto/hasMedium">
          <span>has medium</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotoStudio"
-         title="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">
-         <span>has photo studio</span>
       </a>
    </li>
    <li>
@@ -1045,6 +1056,14 @@ This ontology has the following classes and properties.</span>
    </li>
 </ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
 </div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Non-Verbal Theatre Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+
+</div>
    
 
 <!--CROSSREF SECTION-->
@@ -1078,15 +1097,16 @@ This section provides details for each class and property defined by Non-Verbal 
          <a href="#http://lod.iti-germany.de/schema/nvto/Event" title="http://lod.iti-germany.de/schema/nvto/Event">Event</a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/Festival" title="http://lod.iti-germany.de/schema/nvto/Festival">Festival</a>
+         <a href="#http://lod.iti-germany.de/schema/nvto/FestivalPlan"
+            title="http://lod.iti-germany.de/schema/nvto/FestivalPlan">Festival Plan</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/FilmProduction"
+            title="http://lod.iti-germany.de/schema/nvto/FilmProduction">Film Production</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/InformationObject"
             title="http://lod.iti-germany.de/schema/nvto/InformationObject">Information Object</a>
-      </li>
-      <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/Organization"
-            title="http://lod.iti-germany.de/schema/nvto/Organization">Organization</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup"
@@ -1097,15 +1117,13 @@ This section provides details for each class and property defined by Non-Verbal 
             title="http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation">Performing Arts Location</a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/FilmProduction"
-            title="http://lod.iti-germany.de/schema/nvto/FilmProduction">Performing Arts Production</a>
-      </li>
-      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction"
             title="http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction">Performing Arts Production</a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">Person</a>
+         <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">
+            <span>Person</span>
+         </a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/PhysicalObject"
@@ -1143,23 +1161,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://lod.iti-germany.de/schema/nvto/Organization"
-               title="http://lod.iti-germany.de/schema/nvto/Organization">Organization</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup"
+            <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup"
                title="http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup">Performing Arts Group</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">Person</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfBirth"
-               title="http://lod.iti-germany.de/schema/nvto/hasDateOfBirth">has date of birth</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfDeath"
+            <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfDeath"
                title="http://lod.iti-germany.de/schema/nvto/hasDateOfDeath">has date of death</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasFamilyName"
-               title="http://lod.iti-germany.de/schema/nvto/hasFamilyName">has family name</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstName"
-               title="http://lod.iti-germany.de/schema/nvto/hasFirstName">has first name</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasName" title="http://lod.iti-germany.de/schema/nvto/hasName">has name</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasResidence"
                title="http://lod.iti-germany.de/schema/nvto/hasResidence">has residence</a>
@@ -1255,7 +1265,7 @@ This section provides details for each class and property defined by Non-Verbal 
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/CreativeConcept</p>
       <div class="comment">
-         <span class="markdown">This class comprises all creative concepts.</span>
+         <span class="markdown">This class comprises all Creative Concepts.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1269,9 +1279,10 @@ This section provides details for each class and property defined by Non-Verbal 
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://lod.iti-germany.de/schema/nvto/Festival" title="http://lod.iti-germany.de/schema/nvto/Festival">Festival</a>
+            <a href="#http://lod.iti-germany.de/schema/nvto/FestivalPlan"
+               title="http://lod.iti-germany.de/schema/nvto/FestivalPlan">Festival Plan</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/FilmProduction"
-               title="http://lod.iti-germany.de/schema/nvto/FilmProduction">Performing Arts Production</a>
+               title="http://lod.iti-germany.de/schema/nvto/FilmProduction">Film Production</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction"
                title="http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction">Performing Arts Production</a>
             <sup class="type-c" title="class">c</sup>
@@ -1314,7 +1325,7 @@ This section provides details for each class and property defined by Non-Verbal 
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/Event</p>
       <div class="comment">
-         <span class="markdown">This class comprises all events.</span>
+         <span class="markdown">This class comprises all Events.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1329,7 +1340,7 @@ This section provides details for each class and property defined by Non-Verbal 
          <dt>is in domain of</dt>
          <dd>
             <a href="#http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence"
-               title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">has place of Occurrence</a>
+               title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">has place of occurrence</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasTimeOfOccurrence"
                title="http://lod.iti-germany.de/schema/nvto/hasTimeOfOccurrence">has time of occurrence</a>
             <sup class="type-op" title="object property">op</sup>
@@ -1342,15 +1353,15 @@ This section provides details for each class and property defined by Non-Verbal 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/Festival">
-      <h3>Festival<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/FestivalPlan">
+      <h3>Festival Plan<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/Festival</p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/FestivalPlan</p>
       <div class="comment">
-         <span class="markdown">This class comprises all festivals.</span>
+         <span class="markdown">This class comprises all festival plans.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1370,6 +1381,34 @@ This section provides details for each class and property defined by Non-Verbal 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/FilmProduction">
+      <h3>Film Production<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/FilmProduction</p>
+      <div class="comment">
+         <span class="markdown">This class comprises all film productions.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Example</pre>
+         </dd>
+         <dd>
+            <pre>Example</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://lod.iti-germany.de/schema/nvto/CreativeConcept"
+               title="http://lod.iti-germany.de/schema/nvto/CreativeConcept">Creative Concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/InformationObject">
       <h3>Information Object<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1378,7 +1417,7 @@ This section provides details for each class and property defined by Non-Verbal 
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/InformationObject</p>
       <div class="comment">
-         <span class="markdown">Conceptual representation of the contents of a medium captured by a physical or digital (archival) object. The same information object can be captured in multiple pyhsical or digital objects (e.g. a magazine edition). Also one physical or digital object can carry multiple information objects (e.g. multiple movies in a single video tape).</span>
+         <span class="markdown">"This class comprises all Information Objects.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1400,33 +1439,6 @@ This section provides details for each class and property defined by Non-Verbal 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/Organization">
-      <h3>Organization<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/Organization</p>
-      <div class="comment">
-         <span class="markdown">This class comprises all organizations</span>
-      </div>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <pre>Theater der Welt, Sony BMG</pre>
-         </dd>
-         <dd>
-            <pre>Theater der Welt, Sony BMG</pre>
-         </dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#http://lod.iti-germany.de/schema/nvto/Agent" title="http://lod.iti-germany.de/schema/nvto/Agent">Agent</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup">
       <h3>Performing Arts Group<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1435,7 +1447,7 @@ This section provides details for each class and property defined by Non-Verbal 
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup</p>
       <div class="comment">
-         <span class="markdown">This class comprises ensembles and similar groups in the realm of performing arts.</span>
+         <span class="markdown">This class comprises ensembles, companies and similar groups in the realm of performing arts.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1481,34 +1493,6 @@ This section provides details for each class and property defined by Non-Verbal 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/FilmProduction">
-      <h3>Performing Arts Production<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/FilmProduction</p>
-      <div class="comment">
-         <span class="markdown">This class comprises film productions that were or are performed in performing arts events.</span>
-      </div>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <pre>Example</pre>
-         </dd>
-         <dd>
-            <pre>Example</pre>
-         </dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#http://lod.iti-germany.de/schema/nvto/CreativeConcept"
-               title="http://lod.iti-germany.de/schema/nvto/CreativeConcept">Creative Concept</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction">
       <h3>Performing Arts Production<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1517,7 +1501,7 @@ This section provides details for each class and property defined by Non-Verbal 
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction</p>
       <div class="comment">
-         <span class="markdown">This class comprises productions that were or are performed in performing arts events.</span>
+         <span class="markdown">This class comprises Performing Arts Productions.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1564,24 +1548,24 @@ This section provides details for each class and property defined by Non-Verbal 
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/Person</p>
-      <div class="comment">
-         <span class="markdown">This class comprises all persons</span>
-      </div>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <pre>Eberhard Kube, Conny Hege</pre>
-         </dd>
-         <dd>
-            <pre>Eberhard Kube, Conny Hege</pre>
-         </dd>
-      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#http://lod.iti-germany.de/schema/nvto/Agent" title="http://lod.iti-germany.de/schema/nvto/Agent">Agent</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfBirth"
+               title="http://lod.iti-germany.de/schema/nvto/hasDateOfBirth">has date of birth</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasFamilyName"
+               title="http://lod.iti-germany.de/schema/nvto/hasFamilyName">has family name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstName"
+               title="http://lod.iti-germany.de/schema/nvto/hasFirstName">has first name</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>data property</dd>
       </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PhysicalObject">
@@ -1592,7 +1576,7 @@ This section provides details for each class and property defined by Non-Verbal 
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PhysicalObject</p>
       <div class="comment">
-         <span class="markdown">The physical representation of the contents of a medium. Physical information carrier. </span>
+         <span class="markdown">This class comprises all Physical Objects.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1622,6 +1606,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">This class comprises all places.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Place</pre>
+         </dd>
+         <dd>
+            <pre>Place</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
@@ -1634,7 +1627,7 @@ This section provides details for each class and property defined by Non-Verbal 
          <dt>is in range of</dt>
          <dd>
             <a href="#http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence"
-               title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">has place of Occurrence</a>
+               title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">has place of occurrence</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasPublishingPlace"
                title="http://lod.iti-germany.de/schema/nvto/hasPublishingPlace">has publishing place</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasRelatedPlace"
@@ -1675,7 +1668,7 @@ This section provides details for each class and property defined by Non-Verbal 
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/TimeSpan</p>
       <div class="comment">
-         <span class="markdown">This class comprises timespans of any length.</span>
+         <span class="markdown">This class comprises all timespans.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1823,9 +1816,7 @@ This section provides details for each class and property defined by Non-Verbal 
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasIdentifier"
-            title="http://lod.iti-germany.de/schema/nvto/hasIdentifier">
-            <span>has identifier</span>
-         </a>
+            title="http://lod.iti-germany.de/schema/nvto/hasIdentifier">has identifier</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasIllustrator"
@@ -1902,9 +1893,7 @@ This section provides details for each class and property defined by Non-Verbal 
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotoStudio"
-            title="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">
-            <span>has photo studio</span>
-         </a>
+            title="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">has photo studio</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotographer"
@@ -1912,7 +1901,7 @@ This section provides details for each class and property defined by Non-Verbal 
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence"
-            title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">has place of Occurrence</a>
+            title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">has place of occurrence</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasPlaywright"
@@ -2086,8 +2075,8 @@ This section provides details for each class and property defined by Non-Verbal 
             title="http://lod.iti-germany.de/schema/nvto/isAudiblyReferencedIn">is audibly referenced in</a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn"
-            title="http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn">is audiovisually referenced in</a>
+         <a href="#http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
+            title="http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn">is audiovisually referenced in</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/isAuthorOf"
@@ -2412,6 +2401,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as acrobat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2439,6 +2437,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as actor.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2465,6 +2472,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as adaptor.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2492,6 +2508,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as artistic director.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2519,6 +2544,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as assistant director.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2546,6 +2580,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to another resource it has an audible reference to.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>In Video Z wird über Aufführung X geredet, In Audioaufnahme R ist Person K im Gespräch zu hören, In Video E ist Person L zu hören, aber nicht zu sehen.</pre>
+         </dd>
+         <dd>
+            <pre>In video Z it is talked about performance X, In audio recording R Person K is heard talking, In video E Person L is heard, but not seen.</pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2573,6 +2616,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to another resource it has an audiovisual reference to.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>In Video R ist Person K im Gespräch zu hören, In Video R ist Person K zu sehen, Video R zeigt Video T</pre>
+         </dd>
+         <dd>
+            <pre>In video R Person K is heard talking, In video R Person K is seen, Video R shows video T</pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2591,8 +2643,8 @@ This section provides details for each class and property defined by Non-Verbal 
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn"
-                  title="http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn">is audiovisually referenced in</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
+                  title="http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn">is audiovisually referenced in</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -2608,6 +2660,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as author.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2635,6 +2696,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as choreographer.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2662,6 +2732,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as cinematographer.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2689,6 +2768,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as clown.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2715,6 +2803,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as composer.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2742,6 +2839,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as concept originator.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2769,6 +2875,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to another resource with matching content.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasContributor">
       <h3>has contributor<sup class="type-op" title="object property">op</sup>
@@ -2780,6 +2895,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -2899,6 +3023,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as costume builder.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2926,6 +3059,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as costume designer.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2953,6 +3095,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as creator.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2980,6 +3131,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as dancer.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3005,8 +3165,17 @@ This section provides details for each class and property defined by Non-Verbal 
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasDigitalVersion</p>
       <div class="comment">
-         <span class="markdown">Connects a physical object with a digital version of itself.</span>
+         <span class="markdown">Connects a physical object with a digital version of itself or a digital version of a part of the object.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -3040,6 +3209,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as director.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3067,6 +3245,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as dramaturge.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3094,6 +3281,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as editor.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3180,6 +3376,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a performing arts production with its first performance version.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -3239,6 +3444,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects to a homepage of an agent.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3263,6 +3477,18 @@ This section provides details for each class and property defined by Non-Verbal 
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasIdentifier</p>
+      <div class="comment">
+         <span class="markdown">Describes a local or global identifier of a resource.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -3277,8 +3503,6 @@ This section provides details for each class and property defined by Non-Verbal 
                   title="http://lod.iti-germany.de/schema/nvto/isIdentifierOf">is identifier of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>is also defined as</dt>
-            <dd>annotation property</dd>
          </dl>
       </div>
    </div>
@@ -3292,6 +3516,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as illustrator.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3319,12 +3552,21 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to another resource that it influenced.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Performing Arts Production Y forms basis of Performing Arts Production X, Text Y has influence on Film X</pre>
+         </dd>
+         <dd>
+            <pre>Performing Arts Produktion Y ist Basis von Performing Arts Produktion X, Text Y hatte Einfluss auf Film X</pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">has reference to</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/isReferencedIn"
+                  title="http://lod.iti-germany.de/schema/nvto/isReferencedIn">is referenced in</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -3346,6 +3588,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects an information object with a physical or digital object it is represented on.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -3413,6 +3664,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as layouter.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3440,6 +3700,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as light designer.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3467,6 +3736,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as make up artist.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3494,6 +3772,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as mask builder.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3521,6 +3808,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as mask designer.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3548,6 +3844,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as mediator.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -3594,6 +3899,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as mime.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3620,6 +3934,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as musician.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3647,6 +3970,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as pantomime.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3674,6 +4006,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to another resource which is a part of it.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> transitive</p>
@@ -3696,6 +4037,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as participant.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3723,6 +4073,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as performer.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3747,6 +4106,18 @@ This section provides details for each class and property defined by Non-Verbal 
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPhotoStudio</p>
+      <div class="comment">
+         <span class="markdown">Describes or connects a resource to a photo studio that contributed to its creation.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -3755,8 +4126,6 @@ This section provides details for each class and property defined by Non-Verbal 
                   title="http://lod.iti-germany.de/schema/nvto/isPhotoStudioOf">is photo studio of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>is also defined as</dt>
-            <dd>annotation property</dd>
          </dl>
       </div>
    </div>
@@ -3770,6 +4139,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as photographer.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3788,7 +4166,7 @@ This section provides details for each class and property defined by Non-Verbal 
       </div>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">
-      <h3>has place of Occurrence<sup class="type-op" title="object property">op</sup>
+      <h3>has place of occurrence<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -3797,6 +4175,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects an event to the place it happened at.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3834,6 +4221,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as playwright.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3861,6 +4257,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes or connects to the preceding resource of a resource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> transitive</p>
@@ -3884,6 +4289,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as producer.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3911,6 +4325,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to a festival or event by curating or directing the programme of the event.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3938,6 +4361,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as prompter.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3983,8 +4415,17 @@ This section provides details for each class and property defined by Non-Verbal 
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPublisher</p>
       <div class="comment">
-         <span class="markdown">Beschreibt den/die Herausgeber*in einer Ressource oder verbindet die Ressource mit einem Agens, der/die als Verleger*in an der Ressource mitgewirkt hat.</span>
+         <span class="markdown">Connects the resource to an agent who contributed to the resource as publisher.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4012,6 +4453,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects the resource to an agent who contributed to the resource as publishing company.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -4033,6 +4483,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to the place it was or is published at.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4065,6 +4524,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as puppet builder.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4092,6 +4560,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as puppet designer.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4119,6 +4596,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects an information object to an event that it recorded.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre>Video X hat Aufnahme von Event Y</pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4157,6 +4643,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as recordist.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4184,18 +4679,27 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to another resource it has any kind of reference to.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo"
                   title="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">has audiovisual reference to</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasInfluenceOn"
-                  title="http://lod.iti-germany.de/schema/nvto/hasInfluenceOn">has influence on</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasRecordingOf"
                   title="http://lod.iti-germany.de/schema/nvto/hasRecordingOf">has recording of</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo"
                   title="http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo">has textual reference to</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/isInfluencedBy"
+                  title="http://lod.iti-germany.de/schema/nvto/isInfluencedBy">is influenced by</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -4217,12 +4721,21 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to a place it is related to in any way.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence"
-                  title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">has place of Occurrence</a>
+                  title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">has place of occurrence</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasPublishingPlace"
                   title="http://lod.iti-germany.de/schema/nvto/hasPublishingPlace">has publishing place</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasResidence"
@@ -4255,6 +4768,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects to a related website of an agent or a resource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -4282,6 +4804,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects an agent to its place of residency.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4319,6 +4850,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a performing arts production with its restaged version.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -4366,6 +4906,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as seamster.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4393,6 +4942,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Verbindet eine Produktion der darstellenden Künste mit der Spielzeit, in der die Produktion aufgeführt wird oder wurde.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has range</dt>
@@ -4419,6 +4977,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as set builder.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4446,6 +5013,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as set designer.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4473,6 +5049,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as singer.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -4494,6 +5079,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as sound designer.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4541,6 +5135,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as speaker.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4568,6 +5171,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as stage manager.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4598,6 +5210,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes or connects to the succeeding resource of a resource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -4619,6 +5240,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as author of surtitles.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4646,6 +5276,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as technician.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4673,6 +5312,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to another resource it has a textual reference to.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4700,6 +5348,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects an event to the timespan it occurred at.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -4731,6 +5388,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent who contributed to the resource as translator.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4777,6 +5443,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to another resource it has a visual reference to.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4940,8 +5615,8 @@ This section provides details for each class and property defined by Non-Verbal 
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn"
-                  title="http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn">is audiovisually referenced in</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
+                  title="http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn">is audiovisually referenced in</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -4953,13 +5628,13 @@ This section provides details for each class and property defined by Non-Verbal 
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn">
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn">
       <h3>is audiovisually referenced in<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn</p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn</p>
       <div class="comment">
          <span class="markdown">Inverse of 'has audiovisual reference to'.</span>
       </div>
@@ -5645,8 +6320,8 @@ This section provides details for each class and property defined by Non-Verbal 
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isReferencedIn"
-                  title="http://lod.iti-germany.de/schema/nvto/isReferencedIn">is referenced in</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
+                  title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">has reference to</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -6084,7 +6759,7 @@ This section provides details for each class and property defined by Non-Verbal 
             <dt>is inverse of</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence"
-                  title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">has place of Occurrence</a>
+                  title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">has place of occurrence</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -6443,10 +7118,10 @@ This section provides details for each class and property defined by Non-Verbal 
          <dl>
             <dt>has sub-properties</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn"
-                  title="http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn">is audiovisually referenced in</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/isInfluencedBy"
-                  title="http://lod.iti-germany.de/schema/nvto/isInfluencedBy">is influenced by</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasInfluenceOn"
+                  title="http://lod.iti-germany.de/schema/nvto/hasInfluenceOn">has influence on</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
+                  title="http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn">is audiovisually referenced in</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/isRecordedIn"
                   title="http://lod.iti-germany.de/schema/nvto/isRecordedIn">is recorded in</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/isTextuallyReferencedIn"
@@ -7009,8 +7684,8 @@ This section provides details for each class and property defined by Non-Verbal 
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn"
-                  title="http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn">is audiovisually referenced in</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
+                  title="http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn">is audiovisually referenced in</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -7032,6 +7707,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to the location it originated at.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7064,6 +7748,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent responsible for its video design.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7091,6 +7784,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Connects a resource to an agent responsible for its video editing.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7214,6 +7916,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes the begin date/point in time of a time span.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7239,6 +7950,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes the end date/point in time of a time span.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7264,6 +7984,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes the address of a resource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasCondition">
       <h3>has condition<sup class="type-dp" title="data property">dp</sup>
@@ -7275,6 +8004,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes or connects to the condition of a resource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasDate">
       <h3>has date<sup class="type-dp" title="data property">dp</sup>
@@ -7286,6 +8024,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes a singular date/point in time.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -7296,8 +8043,6 @@ This section provides details for each class and property defined by Non-Verbal 
                   title="http://lod.iti-germany.de/schema/nvto/endsAtTime">ends at time</a>
                <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfBirth"
                   title="http://lod.iti-germany.de/schema/nvto/hasDateOfBirth">has date of birth</a>
-               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfDeath"
-                  title="http://lod.iti-germany.de/schema/nvto/hasDateOfDeath">has date of death</a>
                <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate"
                   title="http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate">has first performance date</a>
                <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate"
@@ -7321,6 +8066,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes the date of birth of an agent.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7330,7 +8084,7 @@ This section provides details for each class and property defined by Non-Verbal 
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/Agent" title="http://lod.iti-germany.de/schema/nvto/Agent">Agent</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">Person</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -7346,11 +8100,20 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes the date of death of an agent.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasDate" title="http://lod.iti-germany.de/schema/nvto/hasDate">has date</a>
+               <span class="dotted" title="http://lod.iti-germany.de/schema/nvto/Person">Person</span>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -7371,6 +8134,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">A general description of a resource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -7392,6 +8164,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes the dimensions of a resource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasFamilyName">
       <h3>has family name<sup class="type-dp" title="data property">dp</sup>
@@ -7407,7 +8188,7 @@ This section provides details for each class and property defined by Non-Verbal 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/Agent" title="http://lod.iti-germany.de/schema/nvto/Agent">Agent</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">Person</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -7423,11 +8204,20 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes the first name of an agent.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/Agent" title="http://lod.iti-germany.de/schema/nvto/Agent">Agent</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">Person</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -7443,6 +8233,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes the first performance date of a performing arts production.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7469,6 +8268,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes the labeling of a resource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -7492,6 +8300,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes the labeling on the back of a resource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7513,6 +8330,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes the labeling on the front of a resource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7534,6 +8360,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes the language associated to a resource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate">
       <h3>has last performance date<sup class="type-dp" title="data property">dp</sup>
@@ -7545,6 +8380,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes the last performance date of a performing arts production.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7571,6 +8415,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Beschreibt den Namen eines Agens.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -7591,6 +8444,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Beschreibt einen oder mehrere rechtliche Aussagen einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasSubtitle">
       <h3>has subtitle<sup class="type-dp" title="data property">dp</sup>
@@ -7602,6 +8464,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Beschreibt den Untertitel einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasTableOfContents">
       <h3>has table of contents<sup class="type-dp" title="data property">dp</sup>
@@ -7613,6 +8484,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Describes the table of contents of a resource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7634,6 +8514,15 @@ This section provides details for each class and property defined by Non-Verbal 
       <div class="comment">
          <span class="markdown">Beschreibt den Titel einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/isCreatedAtTime">
       <h3>was created at time<sup class="type-dp" title="data property">dp</sup>
@@ -7721,20 +8610,8 @@ This section provides details for each class and property defined by Non-Verbal 
          </a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasIdentifier"
-            title="http://lod.iti-germany.de/schema/nvto/hasIdentifier">
-            <span>has identifier</span>
-         </a>
-      </li>
-      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasMedium" title="http://lod.iti-germany.de/schema/nvto/hasMedium">
             <span>has medium</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotoStudio"
-            title="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">
-            <span>has photo studio</span>
          </a>
       </li>
       <li>
@@ -7886,28 +8763,6 @@ This section provides details for each class and property defined by Non-Verbal 
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasIdentifier">
-      <h3>has identifier<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasIdentifier</p>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isIdentifierOf"
-                  title="http://lod.iti-germany.de/schema/nvto/isIdentifierOf">is identifier of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasIdentifier">object property</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasMedium">
       <h3>has medium<sup class="type-ap" title="annotation property">ap</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
@@ -7926,28 +8781,6 @@ This section provides details for each class and property defined by Non-Verbal 
             <dt>is also defined as</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/hasMedium">object property</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">
-      <h3>has photo studio<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPhotoStudio</p>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isPhotoStudioOf"
-                  title="http://lod.iti-germany.de/schema/nvto/isPhotoStudioOf">is photo studio of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">object property</a>
             </dd>
          </dl>
       </div>
@@ -8080,6 +8913,15 @@ This section provides details for each class and property defined by Non-Verbal 
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
 </div>
 <div id="acknowledgements">
 <h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

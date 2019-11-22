@@ -7,7 +7,7 @@
 
 <!-- SCHEMA.ORG METADATA -->
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://ld.iti-germany.de/schema/nvto/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://ld.iti-germany.de/schema/nvto/","name":"Ontologie für nonverbales Theater", "headline":"Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts "NONVERBALES THEATER
-                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS).", "datePublished":"Mon Oct 28 10:05:53 CET 2019", "license":"https://creativecommons.org/licenses/by/4.0/deed.en", "contributor":[{"@type":"Person","name":"Jonas Pitz"},{"@type":"Person","name":"Maxim Wittenbecher"}]}</script>
+                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS).", "datePublished":"Fri Nov 22 13:58:31 CET 2019", "license":"https://creativecommons.org/licenses/by/4.0/deed.en", "contributor":[{"@type":"Person","name":"Jonas Pitz"},{"@type":"Person","name":"Maxim Wittenbecher"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -78,7 +78,35 @@ function loadTOC(){
 Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts "NONVERBALES THEATER
                                                           IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS).</span>
 </div>
-<div id="toc"></div>  
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://ld.iti-germany.de/schema/nvto/&gt;</td></tr>
+<tr><td><b>nvto</b></td><td>&lt;http://lod.iti-germany.de/schema/nvto&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+<tr><td><b>4-0</b></td><td>&lt;https://creativecommons.org/licenses/by/4.0&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+<tr><td><b>default namespace</b></td><td>&lt;http://ld.iti-germany.de/schema/nvto&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
 
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">Ontologie für nonverbales Theater: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -97,7 +125,12 @@ This ontology has the following classes and properties.</span>
       <a href="#http://lod.iti-germany.de/schema/nvto/Event" title="http://lod.iti-germany.de/schema/nvto/Event">Ereignis</a>
    </li>
    <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/Festival" title="http://lod.iti-germany.de/schema/nvto/Festival">Festival</a>
+      <a href="#http://lod.iti-germany.de/schema/nvto/FestivalPlan"
+         title="http://lod.iti-germany.de/schema/nvto/FestivalPlan">Festivalplan</a>
+   </li>
+   <li>
+      <a href="#http://lod.iti-germany.de/schema/nvto/FilmProduction"
+         title="http://lod.iti-germany.de/schema/nvto/FilmProduction">Filmproduktion</a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/InformationObject"
@@ -111,10 +144,6 @@ This ontology has the following classes and properties.</span>
       <a href="#http://lod.iti-germany.de/schema/nvto/Country" title="http://lod.iti-germany.de/schema/nvto/Country">Land</a>
    </li>
    <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/Organization"
-         title="http://lod.iti-germany.de/schema/nvto/Organization">Organisation</a>
-   </li>
-   <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/Place" title="http://lod.iti-germany.de/schema/nvto/Place">Ort</a>
    </li>
    <li>
@@ -126,15 +155,13 @@ This ontology has the following classes and properties.</span>
          title="http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup">Performing Arts Gruppe</a>
    </li>
    <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/FilmProduction"
-         title="http://lod.iti-germany.de/schema/nvto/FilmProduction">Performing Arts Produktion</a>
-   </li>
-   <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction"
          title="http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction">Performing Arts Produktion</a>
    </li>
    <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">Person</a>
+      <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">
+         <span>Person</span>
+      </a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/PhysicalObject"
@@ -155,26 +182,6 @@ This ontology has the following classes and properties.</span>
    </li>
 </ul><h4>Object Properties</h4><ul class="hlist">
    <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo"
-         title="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">beinhaltet audiovisuelle Referenz zu</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo"
-         title="http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo">beinhaltet hörbare Referenz zu</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
-         title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">beinhaltet Referenz zu</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo"
-         title="http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo">beinhaltet textuelle Referenz zu</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo"
-         title="http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo">beinhaltet visuelle Referenz zu</a>
-   </li>
-   <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence"
          title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">ereignet sich an Ort</a>
    </li>
@@ -189,21 +196,19 @@ This ontology has the following classes and properties.</span>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasAcrobat" title="http://lod.iti-germany.de/schema/nvto/hasAcrobat">hat Akrobat*in</a>
    </li>
    <li>
+      <a href="#http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo"
+         title="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">hat audiovisuelle Referenz zu</a>
+   </li>
+   <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasRecordingOf"
-         title="http://lod.iti-germany.de/schema/nvto/hasRecordingOf">hat aufgenommen</a>
+         title="http://lod.iti-germany.de/schema/nvto/hasRecordingOf">hat Aufnahme von</a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasAuthor" title="http://lod.iti-germany.de/schema/nvto/hasAuthor">hat Autor*in</a>
    </li>
    <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasInfluenceOn"
-         title="http://lod.iti-germany.de/schema/nvto/hasInfluenceOn">hat beeinflusst</a>
-   </li>
-   <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasIdentifier"
-         title="http://lod.iti-germany.de/schema/nvto/hasIdentifier">
-         <span>hat Bezeichner</span>
-      </a>
+         title="http://lod.iti-germany.de/schema/nvto/hasIdentifier">hat Bezeichner</a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasRelatedPlace"
@@ -245,6 +250,10 @@ This ontology has the following classes and properties.</span>
          title="http://lod.iti-germany.de/schema/nvto/hasDramaturge">hat Dramaturg*in</a>
    </li>
    <li>
+      <a href="#http://lod.iti-germany.de/schema/nvto/hasInfluenceOn"
+         title="http://lod.iti-germany.de/schema/nvto/hasInfluenceOn">hat Einfluss auf</a>
+   </li>
+   <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceVersion"
          title="http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceVersion">hat Erstaufführungsversion</a>
    </li>
@@ -265,9 +274,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotoStudio"
-         title="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">
-         <span>hat Fotostudio</span>
-      </a>
+         title="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">hat Fotostudio</a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasContentMatch"
@@ -286,6 +293,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasHomepage"
          title="http://lod.iti-germany.de/schema/nvto/hasHomepage">hat Homepage</a>
+   </li>
+   <li>
+      <a href="#http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo"
+         title="http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo">hat hörbare Referenz zu</a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasIllustrator"
@@ -408,6 +419,10 @@ This ontology has the following classes and properties.</span>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasEditor" title="http://lod.iti-germany.de/schema/nvto/hasEditor">hat Redakteur*in</a>
    </li>
    <li>
+      <a href="#http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
+         title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">hat Referenz zu</a>
+   </li>
+   <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasAssistantDirector"
          title="http://lod.iti-germany.de/schema/nvto/hasAssistantDirector">hat Regieassistent*in</a>
    </li>
@@ -449,6 +464,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasParticipant"
          title="http://lod.iti-germany.de/schema/nvto/hasParticipant">hat Teilnehmer*in</a>
+   </li>
+   <li>
+      <a href="#http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo"
+         title="http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo">hat textuelle Referenz zu</a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasSoundDesigner"
@@ -500,6 +519,10 @@ This ontology has the following classes and properties.</span>
          title="http://lod.iti-germany.de/schema/nvto/hasMakeUpArtist">hat Visagist*in</a>
    </li>
    <li>
+      <a href="#http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo"
+         title="http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo">hat visuelle Referenz zu</a>
+   </li>
+   <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasPredecessor"
          title="http://lod.iti-germany.de/schema/nvto/hasPredecessor">hat Vorgänger</a>
    </li>
@@ -530,8 +553,8 @@ This ontology has the following classes and properties.</span>
          title="http://lod.iti-germany.de/schema/nvto/isAcrobatOf">ist Akrobat*in von</a>
    </li>
    <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn"
-         title="http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn">ist audiovisuell referenziert in</a>
+      <a href="#http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
+         title="http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn">ist audiovisuell referenziert in</a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/isRecordedIn"
@@ -968,12 +991,6 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasIdentifier"
-         title="http://lod.iti-germany.de/schema/nvto/hasIdentifier">
-         <span>hat Bezeichner</span>
-      </a>
-   </li>
-   <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstEdition"
          title="http://lod.iti-germany.de/schema/nvto/hasFirstEdition">
          <span>hat Erstausgabe</span>
@@ -982,12 +999,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasFormat" title="http://lod.iti-germany.de/schema/nvto/hasFormat">
          <span>hat Format</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotoStudio"
-         title="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">
-         <span>hat Fotostudio</span>
       </a>
    </li>
    <li>
@@ -1045,6 +1056,14 @@ This ontology has the following classes and properties.</span>
    </li>
 </ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
 </div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Ontologie für nonverbales Theater: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+
+</div>
    
 
 <!--CROSSREF SECTION-->
@@ -1064,7 +1083,12 @@ This section provides details for each class and property defined by Ontologie f
          <a href="#http://lod.iti-germany.de/schema/nvto/Event" title="http://lod.iti-germany.de/schema/nvto/Event">Ereignis</a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/Festival" title="http://lod.iti-germany.de/schema/nvto/Festival">Festival</a>
+         <a href="#http://lod.iti-germany.de/schema/nvto/FestivalPlan"
+            title="http://lod.iti-germany.de/schema/nvto/FestivalPlan">Festivalplan</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/FilmProduction"
+            title="http://lod.iti-germany.de/schema/nvto/FilmProduction">Filmproduktion</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/InformationObject"
@@ -1078,10 +1102,6 @@ This section provides details for each class and property defined by Ontologie f
          <a href="#http://lod.iti-germany.de/schema/nvto/Country" title="http://lod.iti-germany.de/schema/nvto/Country">Land</a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/Organization"
-            title="http://lod.iti-germany.de/schema/nvto/Organization">Organisation</a>
-      </li>
-      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/Place" title="http://lod.iti-germany.de/schema/nvto/Place">Ort</a>
       </li>
       <li>
@@ -1093,15 +1113,13 @@ This section provides details for each class and property defined by Ontologie f
             title="http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup">Performing Arts Gruppe</a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/FilmProduction"
-            title="http://lod.iti-germany.de/schema/nvto/FilmProduction">Performing Arts Produktion</a>
-      </li>
-      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction"
             title="http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction">Performing Arts Produktion</a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">Person</a>
+         <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">
+            <span>Person</span>
+         </a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/PhysicalObject"
@@ -1129,7 +1147,7 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/Agent</p>
       <div class="comment">
-         <span class="markdown">Diese Klasse umfasst alle Agenzien wie etwa Personen und Institutionen.</span>
+         <span class="markdown">Diese Klasse umfasst alle Agens wie etwa Personen und Institutionen.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1143,26 +1161,18 @@ This section provides details for each class and property defined by Ontologie f
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://lod.iti-germany.de/schema/nvto/Organization"
-               title="http://lod.iti-germany.de/schema/nvto/Organization">Organisation</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup"
+            <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup"
                title="http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup">Performing Arts Gruppe</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">Person</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://lod.iti-germany.de/schema/nvto/hasFamilyName"
-               title="http://lod.iti-germany.de/schema/nvto/hasFamilyName">hat Familienname</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfBirth"
-               title="http://lod.iti-germany.de/schema/nvto/hasDateOfBirth">hat Geburtsdatum</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasName" title="http://lod.iti-germany.de/schema/nvto/hasName">hat Name</a>
+            <a href="#http://lod.iti-germany.de/schema/nvto/hasName" title="http://lod.iti-germany.de/schema/nvto/hasName">hat Name</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasResidence"
                title="http://lod.iti-germany.de/schema/nvto/hasResidence">hat Residenz</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfDeath"
                title="http://lod.iti-germany.de/schema/nvto/hasDateOfDeath">hat Todesdatum</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstName"
-               title="http://lod.iti-germany.de/schema/nvto/hasFirstName">hat Vorname</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -1232,20 +1242,20 @@ This section provides details for each class and property defined by Ontologie f
          <dt>is in range of</dt>
          <dd>
             <a href="#http://lod.iti-germany.de/schema/nvto/hasRecordingOf"
-               title="http://lod.iti-germany.de/schema/nvto/hasRecordingOf">hat aufgenommen</a>
+               title="http://lod.iti-germany.de/schema/nvto/hasRecordingOf">hat Aufnahme von</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/Festival">
-      <h3>Festival<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/FestivalPlan">
+      <h3>Festivalplan<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/Festival</p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/FestivalPlan</p>
       <div class="comment">
-         <span class="markdown">Diese Klasse umfasst alle Festivals.</span>
+         <span class="markdown">Diese Klasse umfasst alle Festivalpläne.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1265,6 +1275,34 @@ This section provides details for each class and property defined by Ontologie f
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/FilmProduction">
+      <h3>Filmproduktion<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/FilmProduction</p>
+      <div class="comment">
+         <span class="markdown">Diese Klasse umfasst alle Filmproduktionen.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Example</pre>
+         </dd>
+         <dd>
+            <pre>Example</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://lod.iti-germany.de/schema/nvto/CreativeConcept"
+               title="http://lod.iti-germany.de/schema/nvto/CreativeConcept">Kreatives Konzept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/InformationObject">
       <h3>Informationsobjekt<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1273,7 +1311,7 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/InformationObject</p>
       <div class="comment">
-         <span class="markdown">Konzeptuelle Repräsentation des Inhalts eines Mediums, erfasst von einem physischen oder digitalen (Archiv-)Objekt. Dasselbe Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel einer Ausgabe in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann außerdem mehere Informationsobjekte tragen (z.B. mehrere Videos auf einer einzelnen Videokassette)</span>
+         <span class="markdown">"Diese Klasse umfasst alle Informationsobjekte.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1287,10 +1325,10 @@ This section provides details for each class and property defined by Ontologie f
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://lod.iti-germany.de/schema/nvto/hasInformationCarrier"
+            <a href="#http://lod.iti-germany.de/schema/nvto/hasRecordingOf"
+               title="http://lod.iti-germany.de/schema/nvto/hasRecordingOf">hat Aufnahme von</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasInformationCarrier"
                title="http://lod.iti-germany.de/schema/nvto/hasInformationCarrier">hat Informationsträger</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasRecordingOf"
-               title="http://lod.iti-germany.de/schema/nvto/hasRecordingOf">hat aufgenommen</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1303,7 +1341,7 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/CreativeConcept</p>
       <div class="comment">
-         <span class="markdown">Diese Klasse umfasst alle kreativen Konzepte.</span>
+         <span class="markdown">Diese Klasse umfasst alle Kreativen Konzepte.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1317,9 +1355,10 @@ This section provides details for each class and property defined by Ontologie f
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://lod.iti-germany.de/schema/nvto/Festival" title="http://lod.iti-germany.de/schema/nvto/Festival">Festival</a>
+            <a href="#http://lod.iti-germany.de/schema/nvto/FestivalPlan"
+               title="http://lod.iti-germany.de/schema/nvto/FestivalPlan">Festivalplan</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/FilmProduction"
-               title="http://lod.iti-germany.de/schema/nvto/FilmProduction">Performing Arts Produktion</a>
+               title="http://lod.iti-germany.de/schema/nvto/FilmProduction">Filmproduktion</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction"
                title="http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction">Performing Arts Produktion</a>
             <sup class="type-c" title="class">c</sup>
@@ -1353,33 +1392,6 @@ This section provides details for each class and property defined by Ontologie f
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/Organization">
-      <h3>Organisation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/Organization</p>
-      <div class="comment">
-         <span class="markdown">Diese Klasse umfasst alle Organisationen.</span>
-      </div>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <pre>Theater der Welt, Sony BMG</pre>
-         </dd>
-         <dd>
-            <pre>Theater der Welt, Sony BMG</pre>
-         </dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#http://lod.iti-germany.de/schema/nvto/Agent" title="http://lod.iti-germany.de/schema/nvto/Agent">Agens</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/Place">
       <h3>Ort<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1390,6 +1402,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Orte.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Place</pre>
+         </dd>
+         <dd>
+            <pre>Place</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
@@ -1450,7 +1471,7 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup</p>
       <div class="comment">
-         <span class="markdown">Diese Klasse umfasst alle Ensembles, Companies und ähnliche Gruppen im Bereich der darstellenden Künste.</span>
+         <span class="markdown">Diese Klasse umfasst alle Ensembles, Kompanien und ähnliche Gruppen im Bereich der darstellenden Künste.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1469,34 +1490,6 @@ This section provides details for each class and property defined by Ontologie f
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/FilmProduction">
-      <h3>Performing Arts Produktion<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/FilmProduction</p>
-      <div class="comment">
-         <span class="markdown">Diese Klasse umfasst Filmnproduktionen, die aufgenommen wurden.</span>
-      </div>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <pre>Example</pre>
-         </dd>
-         <dd>
-            <pre>Example</pre>
-         </dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#http://lod.iti-germany.de/schema/nvto/CreativeConcept"
-               title="http://lod.iti-germany.de/schema/nvto/CreativeConcept">Kreatives Konzept</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction">
       <h3>Performing Arts Produktion<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1505,7 +1498,7 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction</p>
       <div class="comment">
-         <span class="markdown">Diese Klasse umfasst Produktionen der darstellenden Kunst, die aufgeführt werden oder wurden.</span>
+         <span class="markdown">Diese Klasse umfasst Produktionen der darstellenden Kunst.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1552,24 +1545,24 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/Person</p>
-      <div class="comment">
-         <span class="markdown">Diese Klasse umfasst alle Personen</span>
-      </div>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <pre>Eberhard Kube, Conny Hege</pre>
-         </dd>
-         <dd>
-            <pre>Eberhard Kube, Conny Hege</pre>
-         </dd>
-      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#http://lod.iti-germany.de/schema/nvto/Agent" title="http://lod.iti-germany.de/schema/nvto/Agent">Agens</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://lod.iti-germany.de/schema/nvto/hasFamilyName"
+               title="http://lod.iti-germany.de/schema/nvto/hasFamilyName">hat Familienname</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfBirth"
+               title="http://lod.iti-germany.de/schema/nvto/hasDateOfBirth">hat Geburtsdatum</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstName"
+               title="http://lod.iti-germany.de/schema/nvto/hasFirstName">hat Vorname</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>data property</dd>
       </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/PhysicalObject">
@@ -1580,7 +1573,7 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PhysicalObject</p>
       <div class="comment">
-         <span class="markdown">Die physische Repräsentation des Inhalts eines Mediums. Physischer Informationsträger.</span>
+         <span class="markdown">Diese Klasse umfasst alle Physischen Objekte.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1675,7 +1668,7 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/TimeSpan</p>
       <div class="comment">
-         <span class="markdown">Diese Klasse umfasst Zeitspannen jeglicher Länge.</span>
+         <span class="markdown">Diese Klasse umfasst alle Zeitspannen.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1708,26 +1701,6 @@ This section provides details for each class and property defined by Ontologie f
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo"
-            title="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">beinhaltet audiovisuelle Referenz zu</a>
-      </li>
-      <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo"
-            title="http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo">beinhaltet hörbare Referenz zu</a>
-      </li>
-      <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
-            title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">beinhaltet Referenz zu</a>
-      </li>
-      <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo"
-            title="http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo">beinhaltet textuelle Referenz zu</a>
-      </li>
-      <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo"
-            title="http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo">beinhaltet visuelle Referenz zu</a>
-      </li>
-      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence"
             title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">ereignet sich an Ort</a>
       </li>
@@ -1742,21 +1715,19 @@ This section provides details for each class and property defined by Ontologie f
          <a href="#http://lod.iti-germany.de/schema/nvto/hasAcrobat" title="http://lod.iti-germany.de/schema/nvto/hasAcrobat">hat Akrobat*in</a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo"
+            title="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">hat audiovisuelle Referenz zu</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasRecordingOf"
-            title="http://lod.iti-germany.de/schema/nvto/hasRecordingOf">hat aufgenommen</a>
+            title="http://lod.iti-germany.de/schema/nvto/hasRecordingOf">hat Aufnahme von</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasAuthor" title="http://lod.iti-germany.de/schema/nvto/hasAuthor">hat Autor*in</a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasInfluenceOn"
-            title="http://lod.iti-germany.de/schema/nvto/hasInfluenceOn">hat beeinflusst</a>
-      </li>
-      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasIdentifier"
-            title="http://lod.iti-germany.de/schema/nvto/hasIdentifier">
-            <span>hat Bezeichner</span>
-         </a>
+            title="http://lod.iti-germany.de/schema/nvto/hasIdentifier">hat Bezeichner</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasRelatedPlace"
@@ -1798,6 +1769,10 @@ This section provides details for each class and property defined by Ontologie f
             title="http://lod.iti-germany.de/schema/nvto/hasDramaturge">hat Dramaturg*in</a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasInfluenceOn"
+            title="http://lod.iti-germany.de/schema/nvto/hasInfluenceOn">hat Einfluss auf</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceVersion"
             title="http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceVersion">hat Erstaufführungsversion</a>
       </li>
@@ -1818,9 +1793,7 @@ This section provides details for each class and property defined by Ontologie f
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotoStudio"
-            title="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">
-            <span>hat Fotostudio</span>
-         </a>
+            title="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">hat Fotostudio</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasContentMatch"
@@ -1839,6 +1812,10 @@ This section provides details for each class and property defined by Ontologie f
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasHomepage"
             title="http://lod.iti-germany.de/schema/nvto/hasHomepage">hat Homepage</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo"
+            title="http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo">hat hörbare Referenz zu</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasIllustrator"
@@ -1961,6 +1938,10 @@ This section provides details for each class and property defined by Ontologie f
          <a href="#http://lod.iti-germany.de/schema/nvto/hasEditor" title="http://lod.iti-germany.de/schema/nvto/hasEditor">hat Redakteur*in</a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
+            title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">hat Referenz zu</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasAssistantDirector"
             title="http://lod.iti-germany.de/schema/nvto/hasAssistantDirector">hat Regieassistent*in</a>
       </li>
@@ -2002,6 +1983,10 @@ This section provides details for each class and property defined by Ontologie f
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasParticipant"
             title="http://lod.iti-germany.de/schema/nvto/hasParticipant">hat Teilnehmer*in</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo"
+            title="http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo">hat textuelle Referenz zu</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasSoundDesigner"
@@ -2053,6 +2038,10 @@ This section provides details for each class and property defined by Ontologie f
             title="http://lod.iti-germany.de/schema/nvto/hasMakeUpArtist">hat Visagist*in</a>
       </li>
       <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo"
+            title="http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo">hat visuelle Referenz zu</a>
+      </li>
+      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasPredecessor"
             title="http://lod.iti-germany.de/schema/nvto/hasPredecessor">hat Vorgänger</a>
       </li>
@@ -2083,8 +2072,8 @@ This section provides details for each class and property defined by Ontologie f
             title="http://lod.iti-germany.de/schema/nvto/isAcrobatOf">ist Akrobat*in von</a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn"
-            title="http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn">ist audiovisuell referenziert in</a>
+         <a href="#http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
+            title="http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn">ist audiovisuell referenziert in</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/isRecordedIn"
@@ -2402,155 +2391,6 @@ This section provides details for each class and property defined by Ontologie f
             title="http://lod.iti-germany.de/schema/nvto/isSurtitleCreatorOf">ist Übertitel Schöpfer*in von</a>
       </li>
    </ul>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">
-      <h3>beinhaltet audiovisuelle Referenz zu<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo</p>
-      <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine audiovisuelle Referenz enthält.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">beinhaltet Referenz zu</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo">beinhaltet hörbare Referenz zu</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo">beinhaltet visuelle Referenz zu</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn"
-                  title="http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn">ist audiovisuell referenziert in</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo">
-      <h3>beinhaltet hörbare Referenz zu<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo</p>
-      <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">beinhaltet audiovisuelle Referenz zu</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isAudiblyReferencedIn"
-                  title="http://lod.iti-germany.de/schema/nvto/isAudiblyReferencedIn">ist hörbar referenziert in</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">
-      <h3>beinhaltet Referenz zu<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasReferenceTo</p>
-      <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine Referenz enthält.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">beinhaltet audiovisuelle Referenz zu</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo">beinhaltet textuelle Referenz zu</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasRecordingOf"
-                  title="http://lod.iti-germany.de/schema/nvto/hasRecordingOf">hat aufgenommen</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasInfluenceOn"
-                  title="http://lod.iti-germany.de/schema/nvto/hasInfluenceOn">hat beeinflusst</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isReferencedIn"
-                  title="http://lod.iti-germany.de/schema/nvto/isReferencedIn">ist referenziert in</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo">
-      <h3>beinhaltet textuelle Referenz zu<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo</p>
-      <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine textuelle Referenz enthält.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">beinhaltet Referenz zu</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isTextuallyReferencedIn"
-                  title="http://lod.iti-germany.de/schema/nvto/isTextuallyReferencedIn">ist textuell referenziert in</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo">
-      <h3>beinhaltet visuelle Referenz zu<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo</p>
-      <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine visuelle Referenz enthält.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">beinhaltet audiovisuelle Referenz zu</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isVisuallyReferencedIn"
-                  title="http://lod.iti-germany.de/schema/nvto/isVisuallyReferencedIn">ist visuell referenziert in</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">
       <h3>ereignet sich an Ort<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2561,6 +2401,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet ein Ereignis mit einem Ort, an dem es sich ereignet.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2598,6 +2447,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet ein Ereignis mit der Zeitspanne, in der es sich ereignet.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -2629,6 +2487,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als (Text-)Bearbeiter*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2656,6 +2523,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Akrobat*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2673,22 +2549,75 @@ This section provides details for each class and property defined by Ontologie f
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">
+      <h3>hat audiovisuelle Referenz zu<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo</p>
+      <div class="comment">
+         <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine audiovisuelle Referenz enthält.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>In Video R ist Person K im Gespräch zu hören, In Video R ist Person K zu sehen, Video R zeigt Video T</pre>
+         </dd>
+         <dd>
+            <pre>In video R Person K is heard talking, In video R Person K is seen, Video R shows video T</pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
+                  title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">hat Referenz zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo"
+                  title="http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo">hat hörbare Referenz zu</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo"
+                  title="http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo">hat visuelle Referenz zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
+                  title="http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn">ist audiovisuell referenziert in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasRecordingOf">
-      <h3>hat aufgenommen<sup class="type-op" title="object property">op</sup>
+      <h3>hat Aufnahme von<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasRecordingOf</p>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, von der sie eine Aufnahme enthält.</span>
+         <span class="markdown">Verbindet ein Informationsobjekt mit einem Ereignis, von dem es eine Aufnahme enthält.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre>Video X hat Aufnahme von Event Y</pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">beinhaltet Referenz zu</a>
+                  title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">hat Referenz zu</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -2721,6 +2650,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Autor*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2738,33 +2676,6 @@ This section provides details for each class and property defined by Ontologie f
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasInfluenceOn">
-      <h3>hat beeinflusst<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasInfluenceOn</p>
-      <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, die sie beeinflusst hat.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">beinhaltet Referenz zu</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isInfluencedBy"
-                  title="http://lod.iti-germany.de/schema/nvto/isInfluencedBy">ist beeinflusst von</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasIdentifier">
       <h3>hat Bezeichner<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2772,6 +2683,18 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasIdentifier</p>
+      <div class="comment">
+         <span class="markdown">Beschreibt einen lokalen oder globalen Bezeichner einer Ressource.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -2786,8 +2709,6 @@ This section provides details for each class and property defined by Ontologie f
                   title="http://lod.iti-germany.de/schema/nvto/isIdentifierOf">ist Bezeichner von</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>is also defined as</dt>
-            <dd>annotation property</dd>
          </dl>
       </div>
    </div>
@@ -2801,6 +2722,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Ort, mit dem sie auf nicht näher bestimmte Weise in Verbindung steht.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -2839,6 +2769,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet mit einer Webseite, die auf nicht näher bestimmte Weise mit einem Agens oder einer Ressource in Verbindung steht.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -2866,6 +2805,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Bühnenbauer*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2893,6 +2841,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Bühnenbildner*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2920,6 +2877,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Choreograf*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2947,6 +2913,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Clown*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2973,6 +2948,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Darsteller*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2998,8 +2982,17 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasDigitalVersion</p>
       <div class="comment">
-         <span class="markdown">Connects a physical object with a digital version of itself.</span>
+         <span class="markdown">Connects a physical object with a digital version of itself or a digital version of a part of the object.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -3033,6 +3026,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Dramatiker*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3060,6 +3062,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Dramaturg*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3077,6 +3088,42 @@ This section provides details for each class and property defined by Ontologie f
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasInfluenceOn">
+      <h3>hat Einfluss auf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasInfluenceOn</p>
+      <div class="comment">
+         <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, die sie beeinflusst hat.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Performing Arts Production Y forms basis of Performing Arts Production X, Text Y has influence on Film X</pre>
+         </dd>
+         <dd>
+            <pre>Performing Arts Produktion Y ist Basis von Performing Arts Produktion X, Text Y hatte Einfluss auf Film X</pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/isReferencedIn"
+                  title="http://lod.iti-germany.de/schema/nvto/isReferencedIn">ist referenziert in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/isInfluencedBy"
+                  title="http://lod.iti-germany.de/schema/nvto/isInfluencedBy">ist beeinflusst von</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceVersion">
       <h3>hat Erstaufführungsversion<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -3085,8 +3132,17 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceVersion</p>
       <div class="comment">
-         <span class="markdown">Verbindet eine Produktion der darstellenden Künste mit ihrer Erstaufführungsversion.</span>
+         <span class="markdown">Verbindet eine Performing Arts Produktion mit ihrer Erstaufführungsversion.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -3166,6 +3222,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Fotograf*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3190,6 +3255,18 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPhotoStudio</p>
+      <div class="comment">
+         <span class="markdown">Beschreibt ein Fotostudio oder verbindet eine Ressource mit einem Fotostudio, dass bei ihrer Kreierung beigetragen hat.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -3198,8 +3275,6 @@ This section provides details for each class and property defined by Ontologie f
                   title="http://lod.iti-germany.de/schema/nvto/isPhotoStudioOf">ist Fotostudio von</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>is also defined as</dt>
-            <dd>annotation property</dd>
          </dl>
       </div>
    </div>
@@ -3213,6 +3288,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource mit gleichem Inhalt.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasPublisher">
       <h3>hat Herausgeber*in<sup class="type-op" title="object property">op</sup>
@@ -3222,8 +3306,17 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPublisher</p>
       <div class="comment">
-         <span class="markdown">Beschreibt den/die Herausgeber*in einer Ressource oder verbindet die Ressource mit einem Agens, der/die als Verleger*in an der Ressource mitgewirkt hat.</span>
+         <span class="markdown">Connects the resource to an agent who contributed to the resource as publisher.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3271,6 +3364,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet mit der Homepage eines Agens.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3288,6 +3390,42 @@ This section provides details for each class and property defined by Ontologie f
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo">
+      <h3>hat hörbare Referenz zu<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo</p>
+      <div class="comment">
+         <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>In Video Z wird über Aufführung X geredet, In Audioaufnahme R ist Person K im Gespräch zu hören, In Video E ist Person L zu hören, aber nicht zu sehen.</pre>
+         </dd>
+         <dd>
+            <pre>In video Z it is talked about performance X, In audio recording R Person K is heard talking, In video E Person L is heard, but not seen.</pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo"
+                  title="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">hat audiovisuelle Referenz zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/isAudiblyReferencedIn"
+                  title="http://lod.iti-germany.de/schema/nvto/isAudiblyReferencedIn">ist hörbar referenziert in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasIllustrator">
       <h3>hat Illustrator*in<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -3298,6 +3436,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Illustrator*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3325,6 +3472,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Connects an information object with a physical or digital object it is represented on.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -3352,6 +3508,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Inspizient*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3419,6 +3584,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Kameramann/Kamerafrau mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3446,6 +3620,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Komponist*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3473,6 +3656,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Konzept Urheber*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3500,6 +3692,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Kostümbauer*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3527,6 +3728,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Kostümdesigner*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3554,6 +3764,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als künstlerische*r Leiter*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3581,6 +3800,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Layouter*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3608,6 +3836,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Lichtgestalter*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3635,6 +3872,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Maskenbauer*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3662,6 +3908,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Maskengestalter*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3714,6 +3969,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Mime/Mimin mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3740,6 +4004,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der an der Ressource mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -3859,6 +4132,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Musiker*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3889,6 +4171,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt den Nachfolger oder verbindet mit dem Nachfolger einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -3910,6 +4201,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Näher*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3937,6 +4237,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Pantomime/Pantomimin mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3964,6 +4273,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Produzent*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -3991,6 +4309,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der durch Kuration oder Leitung des Programmes bei einem Festival mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4018,6 +4345,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Puppenbauer*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4045,6 +4381,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Puppengestalter*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4112,6 +4457,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Redakteur*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4129,6 +4483,48 @@ This section provides details for each class and property defined by Ontologie f
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">
+      <h3>hat Referenz zu<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasReferenceTo</p>
+      <div class="comment">
+         <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine Referenz enthält.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasRecordingOf"
+                  title="http://lod.iti-germany.de/schema/nvto/hasRecordingOf">hat Aufnahme von</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo"
+                  title="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">hat audiovisuelle Referenz zu</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo"
+                  title="http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo">hat textuelle Referenz zu</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/isInfluencedBy"
+                  title="http://lod.iti-germany.de/schema/nvto/isInfluencedBy">ist beeinflusst von</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/isReferencedIn"
+                  title="http://lod.iti-germany.de/schema/nvto/isReferencedIn">ist referenziert in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasAssistantDirector">
       <h3>hat Regieassistent*in<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -4139,6 +4535,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Regieassistent*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4166,6 +4571,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Regisseur*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4193,6 +4607,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet einen Agens mit seiner Residenz.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4230,6 +4653,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Schauspieler*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4256,6 +4688,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Schöpfer*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4283,6 +4724,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Souffleur/Souffleuse mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4310,6 +4760,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Produktion der darstellenden Künste mit der Spielzeit, in der die Produktion aufgeführt wird oder wurde.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has range</dt>
@@ -4336,6 +4795,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Sprecher*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4363,6 +4831,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Sänger*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -4384,6 +4861,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Techniker*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4411,6 +4897,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, die ein Teil von ihr ist.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> transitive</p>
@@ -4433,6 +4928,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Teilnehmer*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4450,6 +4954,42 @@ This section provides details for each class and property defined by Ontologie f
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo">
+      <h3>hat textuelle Referenz zu<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo</p>
+      <div class="comment">
+         <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine textuelle Referenz enthält.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
+                  title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">hat Referenz zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/isTextuallyReferencedIn"
+                  title="http://lod.iti-germany.de/schema/nvto/isTextuallyReferencedIn">ist textuell referenziert in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasSoundDesigner">
       <h3>hat Tongestalter*in<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -4460,6 +5000,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Tongestalter*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4487,6 +5036,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Tonmeister*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4533,6 +5091,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Tänzer*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4579,6 +5146,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit dem Ort, an dem sie ihren Ursprung hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4611,6 +5187,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Connects the resource to an agent who contributed to the resource as publishing company.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -4632,6 +5217,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit dem Ort, an dem sie verlegt wird oder wurde.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4664,6 +5258,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Vermittler*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -4685,6 +5288,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Videodesigner*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4712,6 +5324,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Videoeditor*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4739,6 +5360,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Visagist*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4756,6 +5386,42 @@ This section provides details for each class and property defined by Ontologie f
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo">
+      <h3>hat visuelle Referenz zu<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo</p>
+      <div class="comment">
+         <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine visuelle Referenz enthält.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo"
+                  title="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">hat audiovisuelle Referenz zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/isVisuallyReferencedIn"
+                  title="http://lod.iti-germany.de/schema/nvto/isVisuallyReferencedIn">ist visuell referenziert in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasPredecessor">
       <h3>hat Vorgänger<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -4766,6 +5432,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt den Vorgänger oder verbindet mit dem Vorgänger einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> transitive</p>
@@ -4789,6 +5464,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Produktion der darstellenden Künste mit ihrer Wiederaufnahme.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -4816,6 +5500,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Übersetzer*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4863,6 +5556,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Übertitel Schöpfer*in mitgewirkt hat.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4932,13 +5634,13 @@ This section provides details for each class and property defined by Ontologie f
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn">
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn">
       <h3>ist audiovisuell referenziert in<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn</p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn</p>
       <div class="comment">
          <span class="markdown">Invers von 'beinhaltet audiovisuelle Referenz zu'.</span>
       </div>
@@ -4961,7 +5663,7 @@ This section provides details for each class and property defined by Ontologie f
             <dt>is inverse of</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">beinhaltet audiovisuelle Referenz zu</a>
+                  title="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">hat audiovisuelle Referenz zu</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -4988,7 +5690,7 @@ This section provides details for each class and property defined by Ontologie f
             <dt>is inverse of</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/hasRecordingOf"
-                  title="http://lod.iti-germany.de/schema/nvto/hasRecordingOf">hat aufgenommen</a>
+                  title="http://lod.iti-germany.de/schema/nvto/hasRecordingOf">hat Aufnahme von</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -5034,14 +5736,14 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isReferencedIn"
-                  title="http://lod.iti-germany.de/schema/nvto/isReferencedIn">ist referenziert in</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
+                  title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">hat Referenz zu</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/hasInfluenceOn"
-                  title="http://lod.iti-germany.de/schema/nvto/hasInfluenceOn">hat beeinflusst</a>
+                  title="http://lod.iti-germany.de/schema/nvto/hasInfluenceOn">hat Einfluss auf</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -5482,14 +6184,14 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn"
-                  title="http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn">ist audiovisuell referenziert in</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
+                  title="http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn">ist audiovisuell referenziert in</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo">beinhaltet hörbare Referenz zu</a>
+                  title="http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo">hat hörbare Referenz zu</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -6334,12 +7036,12 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has sub-properties</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn"
-                  title="http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn">ist audiovisuell referenziert in</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasInfluenceOn"
+                  title="http://lod.iti-germany.de/schema/nvto/hasInfluenceOn">hat Einfluss auf</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
+                  title="http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn">ist audiovisuell referenziert in</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/isRecordedIn"
                   title="http://lod.iti-germany.de/schema/nvto/isRecordedIn">ist aufgenommen von</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/isInfluencedBy"
-                  title="http://lod.iti-germany.de/schema/nvto/isInfluencedBy">ist beeinflusst von</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/isTextuallyReferencedIn"
                   title="http://lod.iti-germany.de/schema/nvto/isTextuallyReferencedIn">ist textuell referenziert in</a>
                <sup class="type-op" title="object property">op</sup>
@@ -6347,7 +7049,7 @@ This section provides details for each class and property defined by Ontologie f
             <dt>is inverse of</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">beinhaltet Referenz zu</a>
+                  title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">hat Referenz zu</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -6675,7 +7377,7 @@ This section provides details for each class and property defined by Ontologie f
             <dt>is inverse of</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo">beinhaltet textuelle Referenz zu</a>
+                  title="http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo">hat textuelle Referenz zu</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -6972,14 +7674,14 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn"
-                  title="http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn">ist audiovisuell referenziert in</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
+                  title="http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn">ist audiovisuell referenziert in</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo"
-                  title="http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo">beinhaltet visuelle Referenz zu</a>
+                  title="http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo">hat visuelle Referenz zu</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -7214,6 +7916,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt den Startzeitpunkt einer Zeitspanne.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7239,6 +7950,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt den Endzeitpunkt einer Zeitspanne.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7264,6 +7984,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt die Adresse einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasDescription">
       <h3>hat Beschreibung<sup class="type-dp" title="data property">dp</sup>
@@ -7275,6 +8004,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Eine generelle Beschreibung einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -7296,6 +8034,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt die Beschriftung einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -7319,6 +8066,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt die Beschriftung der Rückseite einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7340,6 +8096,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt die Beschriftung der Vorderseite einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7361,6 +8126,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt einen einzelnen Zeitpunkt.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -7373,8 +8147,6 @@ This section provides details for each class and property defined by Ontologie f
                   title="http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate">hat Dernierendatum</a>
                <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfBirth"
                   title="http://lod.iti-germany.de/schema/nvto/hasDateOfBirth">hat Geburtsdatum</a>
-               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfDeath"
-                  title="http://lod.iti-germany.de/schema/nvto/hasDateOfDeath">hat Todesdatum</a>
                <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate"
                   title="http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate">hat erstes Aufführungsdatum</a>
                <sup class="type-dp" title="data property">dp</sup>, <a href="#http://lod.iti-germany.de/schema/nvto/isIssuedAtTime"
@@ -7396,6 +8168,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt das letzte Aufführungsdatum einer Produktion der darstellenden Kunst.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7422,6 +8203,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt die Dimensionen einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate">
       <h3>hat erstes Aufführungsdatum<sup class="type-dp" title="data property">dp</sup>
@@ -7433,6 +8223,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt das erste Aufführungsdatum einer Produktion der darstellenden Kunst.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7463,7 +8262,7 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/Agent" title="http://lod.iti-germany.de/schema/nvto/Agent">Agens</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">Person</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -7479,6 +8278,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt das Geburtsdatum eines Agens.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7488,7 +8296,7 @@ This section provides details for each class and property defined by Ontologie f
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/Agent" title="http://lod.iti-germany.de/schema/nvto/Agent">Agens</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">Person</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -7504,6 +8312,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt das Inhaltsverzeichnis einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -7525,6 +8342,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt den Namen eines Agens.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -7545,6 +8371,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt einen oder mehrere rechtliche Aussagen einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasLanguage">
       <h3>hat Sprache<sup class="type-dp" title="data property">dp</sup>
@@ -7556,6 +8391,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt die Sprache, die einer Ressource zugeordnet ist.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasTitle">
       <h3>hat Titel<sup class="type-dp" title="data property">dp</sup>
@@ -7567,6 +8411,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt den Titel einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasDateOfDeath">
       <h3>hat Todesdatum<sup class="type-dp" title="data property">dp</sup>
@@ -7578,11 +8431,20 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt das Todesdatum eines Agens.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasDate" title="http://lod.iti-germany.de/schema/nvto/hasDate">hat Datum</a>
+               <span class="dotted" title="http://lod.iti-germany.de/schema/nvto/Person">Person</span>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -7603,6 +8465,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt den Untertitel einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasFirstName">
       <h3>hat Vorname<sup class="type-dp" title="data property">dp</sup>
@@ -7614,11 +8485,20 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt den Vornamen eines Agens.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/Agent" title="http://lod.iti-germany.de/schema/nvto/Agent">Agens</a>
+               <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">Person</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -7634,6 +8514,15 @@ This section provides details for each class and property defined by Ontologie f
       <div class="comment">
          <span class="markdown">Beschreibt oder verbindet mit dem Zustand einer Ressource.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/isIssuedAtTime">
       <h3>wurde zu Zeitpunkt ausgegeben<sup class="type-dp" title="data property">dp</sup>
@@ -7704,12 +8593,6 @@ This section provides details for each class and property defined by Ontologie f
          </a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasIdentifier"
-            title="http://lod.iti-germany.de/schema/nvto/hasIdentifier">
-            <span>hat Bezeichner</span>
-         </a>
-      </li>
-      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstEdition"
             title="http://lod.iti-germany.de/schema/nvto/hasFirstEdition">
             <span>hat Erstausgabe</span>
@@ -7718,12 +8601,6 @@ This section provides details for each class and property defined by Ontologie f
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasFormat" title="http://lod.iti-germany.de/schema/nvto/hasFormat">
             <span>hat Format</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotoStudio"
-            title="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">
-            <span>hat Fotostudio</span>
          </a>
       </li>
       <li>
@@ -7820,28 +8697,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#example</p>
    </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasIdentifier">
-      <h3>hat Bezeichner<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasIdentifier</p>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isIdentifierOf"
-                  title="http://lod.iti-germany.de/schema/nvto/isIdentifierOf">ist Bezeichner von</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasIdentifier">object property</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasFirstEdition">
       <h3>hat Erstausgabe<sup class="type-ap" title="annotation property">ap</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
@@ -7882,28 +8737,6 @@ This section provides details for each class and property defined by Ontologie f
             <dt>is also defined as</dt>
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/hasFormat">object property</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">
-      <h3>hat Fotostudio<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPhotoStudio</p>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isPhotoStudioOf"
-                  title="http://lod.iti-germany.de/schema/nvto/isPhotoStudioOf">ist Fotostudio von</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">object property</a>
             </dd>
          </dl>
       </div>
@@ -8080,6 +8913,15 @@ This section provides details for each class and property defined by Ontologie f
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
 </div>
 <div id="acknowledgements">
 <h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

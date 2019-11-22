@@ -49,7 +49,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Diese Klasse umfasst alle Agenzien wie etwa Personen und Institutionen."
+    "@value" : "Diese Klasse umfasst alle Agens wie etwa Personen und Institutionen."
   }, {
     "@language" : "en",
     "@value" : "This class comprises all agents such as persons or institutions."
@@ -60,6 +60,13 @@
   }, {
     "@language" : "en",
     "@value" : "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : "Agens sind handlungsfähige Entitäten, in der Regel einzelne Personen oder Personengruppierungen. Diese Klasse dient vor allem als Oberklasse für genauer definierte Agens."
+  }, {
+    "@language" : "en",
+    "@value" : "Agents are entities that are capable of acting, usually persons or groups of persons. This class primarily serves as top class for more specifically defined concepts."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/City",
@@ -87,6 +94,13 @@
   }, {
     "@language" : "de",
     "@value" : "Berlin, Westberlin, Ostberlin"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Cities can be real places that existed or exist. Fictional places are possible as well."
+  }, {
+    "@language" : "de",
+    "@value" : "Städte können reale Orte sein, die existiert haben oder existieren. Auch fiktive Städte sind möglich."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/Collection",
@@ -111,6 +125,13 @@
   }, {
     "@language" : "en",
     "@value" : "COL"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "A Collection is a set of physical and/or digital objects, originating from or created by an institution or a person. Collections can be created to cover a topic, event or entire archives."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Sammlung ist eine von einer Institution oder Person stammende oder zusammengestellte Menge an physischen und/oder digitalen Objekten, sowie deren beschreibende Datensätze. Sammlungen können zu einem Thema oder einem Ereignis angelegt sein oder ganze Archivbestände abdecken."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/Country",
@@ -138,6 +159,13 @@
   }, {
     "@language" : "de",
     "@value" : "Französische Republik, Westdeutschland, DDR"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Countries can be real places that existed or exist. Fictional countries are possible as well."
+  }, {
+    "@language" : "de",
+    "@value" : "Länder können reale Orte sein, die existiert haben oder existieren. Auch fiktive Länder sind möglich."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/CreativeConcept",
@@ -151,10 +179,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Diese Klasse umfasst alle kreativen Konzepte."
+    "@value" : "Diese Klasse umfasst alle Kreativen Konzepte."
   }, {
     "@language" : "en",
-    "@value" : "This class comprises all creative concepts."
+    "@value" : "This class comprises all Creative Concepts."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -164,11 +192,11 @@
     "@value" : "performing arts production; film production, festival"
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
-    "@language" : "en",
-    "@value" : "Comparable to FRBR Expressions. This class primarily serves as top class for more specifically defined concepts."
-  }, {
     "@language" : "de",
-    "@value" : "Vergleichbar mit Expressionen aus FRBR. Diese Klasse dient vor allem als Oberklasse für genauer definierte Konzepte."
+    "@value" : "Diese Klasse dient als Oberklasse für genauer definierte Kreative Konzepte, wie Filmproduktionen oder Produktionen der darstellenden Künste. Vergleichbar mit Expressionen aus FRBR."
+  }, {
+    "@language" : "en",
+    "@value" : "This class primarily serves as top class for more specifically defined Creative Concepts such as film productions or performing arts productions. Comparable to FRBR Expressions."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/DigitalObject",
@@ -193,6 +221,13 @@
   }, {
     "@language" : "de",
     "@value" : "Eine spezifische digitale Datei mit Namen IMG-001.tif, VID-001.avi"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : "Diese Klasse umfasst sowohl digitale Repräsentationen der Inhalte von Physischen Objekten, als auch nativ digitale Objekte. Digitale Objekte sind wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte."
+  }, {
+    "@language" : "en",
+    "@value" : "This class comprises digital representations of the contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, are information carriers of one or more Information Objects."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/Event",
@@ -209,7 +244,7 @@
     "@value" : "Diese Klasse umfasst alle Ereignisse."
   }, {
     "@language" : "en",
-    "@value" : "This class comprises all events."
+    "@value" : "This class comprises all Events."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -219,31 +254,31 @@
     "@value" : "Eine Aufführung von 'Hamlet', ein Workshop zu einer speziellen Schauspieltechnik, eine Ausstellung über eine/n Darsteller/in"
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
-    "@language" : "de",
-    "@value" : "Speziell für Ereignisse im Bereich der darstellenden Künste genutzt."
-  }, {
     "@language" : "en",
-    "@value" : "Used specifically for events in the realm of performing arts."
+    "@value" : "An Event can be fictional or real, has a starting and ending point and occurrs at a place. Not all attributes of an event have to be known. This class is generally used for Events in the realm of performing arts."
+  }, {
+    "@language" : "de",
+    "@value" : "Ein Ereignis kann real oder fiktional sein, hat einen Start- und Endzeitpunkt und findet an einem Ort statt. Nicht alle Eigenschaften eines Ereignisses müssen bekannt sein. In der Regel wird diese Klasse für Ereignisse im Bereich der darstellenden Künste wie Aufführungen oder Workshops genutzt."
   } ]
 }, {
-  "@id" : "http://lod.iti-germany.de/schema/nvto/Festival",
+  "@id" : "http://lod.iti-germany.de/schema/nvto/FestivalPlan",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "de",
-    "@value" : "Festival"
-  }, {
     "@language" : "en",
-    "@value" : "Festival"
+    "@value" : "Festival Plan"
+  }, {
+    "@language" : "de",
+    "@value" : "Festivalplan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://lod.iti-germany.de/schema/nvto/CreativeConcept"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Diese Klasse umfasst alle Festivals."
+    "@value" : "Diese Klasse umfasst alle Festivalpläne."
   }, {
     "@language" : "en",
-    "@value" : "This class comprises all festivals."
+    "@value" : "This class comprises all festival plans."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -253,31 +288,31 @@
     "@value" : "The biannual international theatre festival 'Theater der Welt'"
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
-    "@language" : "de",
-    "@value" : "Speziell für Festivals im Bereich der darstellenden Künste genutzt."
-  }, {
     "@language" : "en",
-    "@value" : "Used specifically for festivals in the realm of performing arts."
+    "@value" : "A festival plan is the Creative Concept behind a festival event or a series of festival events. This class can be used for aggregating single iterations of periodic Festivals under one concept."
+  }, {
+    "@language" : "de",
+    "@value" : "Ein Festivalplan ist das Kreative Konzept, das einem Festivalereignis oder einer Reihe von Festivalereignissen zugrunde liegt. Diese Klasse wird unter anderem dazu verwendet, die einzelnen Iterationen regelmäßig stattfindender Festivals im Bereich der darstellenden Künste unter einem Konzept zu sammeln."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/FilmProduction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Performing Arts Production"
+    "@value" : "Film Production"
   }, {
     "@language" : "de",
-    "@value" : "Performing Arts Produktion"
+    "@value" : "Filmproduktion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://lod.iti-germany.de/schema/nvto/CreativeConcept"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Diese Klasse umfasst Filmnproduktionen, die aufgenommen wurden."
+    "@value" : "Diese Klasse umfasst alle Filmproduktionen."
   }, {
     "@language" : "en",
-    "@value" : "This class comprises film productions that were or are performed in performing arts events."
+    "@value" : "This class comprises all film productions."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -285,6 +320,13 @@
   }, {
     "@language" : "en",
     "@value" : "Example"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "A Film Production is the Creative Concept behind a film. A film production may be described further by objects such as scripts, camera instructions or lighting instructions."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Filmproduktion ist das Kreative Konzept, das einem Film zugrunde liegt. Eine Filmproduktion kann zum Beispiel durch ein Drehbuch, Kamera- oder Lichtanweisungen genauer beschrieben werden."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/InformationObject",
@@ -297,11 +339,11 @@
     "@value" : "Informationsobjekt"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Conceptual representation of the contents of a medium captured by a physical or digital (archival) object. The same information object can be captured in multiple pyhsical or digital objects (e.g. a magazine edition). Also one physical or digital object can carry multiple information objects (e.g. multiple movies in a single video tape)."
-  }, {
     "@language" : "de",
-    "@value" : "Konzeptuelle Repräsentation des Inhalts eines Mediums, erfasst von einem physischen oder digitalen (Archiv-)Objekt. Dasselbe Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel einer Ausgabe in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann außerdem mehere Informationsobjekte tragen (z.B. mehrere Videos auf einer einzelnen Videokassette)"
+    "@value" : "\"Diese Klasse umfasst alle Informationsobjekte."
+  }, {
+    "@language" : "en",
+    "@value" : "\"This class comprises all Information Objects."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -309,33 +351,13 @@
   }, {
     "@language" : "en",
     "@value" : "Recording of Performance X, Contents of programme booklet Y"
-  } ]
-}, {
-  "@id" : "http://lod.iti-germany.de/schema/nvto/Organization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "de",
-    "@value" : "Organisation"
-  }, {
-    "@language" : "en",
-    "@value" : "Organization"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://lod.iti-germany.de/schema/nvto/Agent"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "de",
-    "@value" : "Diese Klasse umfasst alle Organisationen."
-  }, {
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
-    "@value" : "This class comprises all organizations"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "de",
-    "@value" : "Theater der Welt, Sony BMG"
+    "@value" : " An Information Object is  the conceptual representation of a Physical or Digital Object. The same Information Object can be captured in multiple Physical or Digital Objects (e.g. a magazine edition). In addition, one Physical or Digital Object can carry multiple Information Objects (e.g. multiple movies on a single video tape)."
   }, {
-    "@language" : "en",
-    "@value" : "Theater der Welt, Sony BMG"
+    "@language" : "de",
+    "@value" : "Ein Informationsobjekt ist die konzeptuelle Repräsentation des Inhalts eines Physischen oder Digitalen Objekts. Dasselbe Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel ein Foto und eine Kopie des Fotos in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann außerdem mehere Informationsobjekte tragen (z.B. mehrere Videos auf einer einzelnen Videokassette)"
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup",
@@ -352,10 +374,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Diese Klasse umfasst alle Ensembles, Companies und ähnliche Gruppen im Bereich der darstellenden Künste."
+    "@value" : "Diese Klasse umfasst alle Ensembles, Kompanien und ähnliche Gruppen im Bereich der darstellenden Künste."
   }, {
     "@language" : "en",
-    "@value" : "This class comprises ensembles and similar groups in the realm of performing arts."
+    "@value" : "This class comprises ensembles, companies and similar groups in the realm of performing arts."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -363,6 +385,13 @@
   }, {
     "@language" : "en",
     "@value" : "DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : "Die Performing Arts Gruppe besteht üblicherweise aus zwei oder mehr Personen. Diese Klasse bezieht sich speziell auf den Bereich der darstellenden Künste."
+  }, {
+    "@language" : "en",
+    "@value" : "The Performing Arts Group is usually comprised of two or more Persons. This class is used specifically for the realm of performing arts."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation",
@@ -390,6 +419,13 @@
   }, {
     "@language" : "en",
     "@value" : "Volksbühne, Pratergarten"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "A Performing Arts Location usually is a venue or a public place. Generally any location used for a performance can be a Performing Arts Location. Fictional Locations for fictional performances are not excluded."
+  }, {
+    "@language" : "de",
+    "@value" : "Ein Performing Arts Aufführungsort ist in der Regel eine Spielstätte oder ein öffentlicher Platz. Generell kann jeder Ort, an dem aufgeführt wird, ein Performing Arts Aufführungsort sein. Fiktive Orte von fiktiven Aufführungen sind nicht ausgeschlossen."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction",
@@ -406,10 +442,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Diese Klasse umfasst Produktionen der darstellenden Kunst, die aufgeführt werden oder wurden."
+    "@value" : "Diese Klasse umfasst Produktionen der darstellenden Kunst."
   }, {
     "@language" : "en",
-    "@value" : "This class comprises productions that were or are performed in performing arts events."
+    "@value" : "This class comprises Performing Arts Productions."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -417,10 +453,17 @@
   }, {
     "@language" : "en",
     "@value" : "Blaubart, Hamlet"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "A Performing Arts Production is the Creative Concept behind a Performance or a Series of Performances in the realm of performing arts. A Performing Arts Production may be described further by manuscripts or stage directions."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Performing Arts Produktion ist das Kreative Konzept, das einer Aufführung oder einer Reihe von Aufführungen im Bereich der darstellenden Künste zugrunde liegt. Eine Performing Arts Produktion kann zum Beispiel von Manuskripten oder Regieanweisungen genauer beschrieben werden."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/Person",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Person"
@@ -433,10 +476,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Diese Klasse umfasst alle Personen"
+    "@value" : "Diese Klasse umfasst alle Personen."
   }, {
     "@language" : "en",
-    "@value" : "This class comprises all persons"
+    "@value" : "This class comprises all persons."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -444,6 +487,13 @@
   }, {
     "@language" : "en",
     "@value" : "Eberhard Kube, Conny Hege"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "A Person usually is a human who either lives or has lived. Fictional Persons are not excluded."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Person ist in der Regel ein Mensch, der lebt oder gelebt hat. Fiktive Personen sind nicht ausgeschlossen."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/PhysicalObject",
@@ -457,10 +507,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Die physische Repräsentation des Inhalts eines Mediums. Physischer Informationsträger."
+    "@value" : "Diese Klasse umfasst alle Physischen Objekte."
   }, {
     "@language" : "en",
-    "@value" : "The physical representation of the contents of a medium. Physical information carrier. "
+    "@value" : "This class comprises all Physical Objects."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -468,6 +518,13 @@
   }, {
     "@language" : "de",
     "@value" : "Videokassette mit Aufnahme von Aufführung X, Programmheft Y"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "All material objects with physical extent are Physical Objects. Physical Objects, like Digital Objects, can be information carriers of Information Objects. Typical physical information carriers are video cassettes, analogue photographs or program booklets."
+  }, {
+    "@language" : "de",
+    "@value" : "Alle materiellen Objekte mit physischen Ausmaßen sind Physische Objekte. Wie Digitale Objekte können auch Physische Objekte Informationsträger von Informationsobjekten sein. Typische physische Informationsträger sind Videokassetten, analoge Fotografien oder Programmhefte."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/Place",
@@ -485,6 +542,20 @@
   }, {
     "@language" : "en",
     "@value" : "This class comprises all places."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : "Place"
+  }, {
+    "@language" : "en",
+    "@value" : "Place"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : "Orte können existieren oder existiert haben. Fiktive Orte sind nicht ausgeschlossen."
+  }, {
+    "@language" : "en",
+    "@value" : "Places can exist or have existed. Fictional Places are not excluded."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/Series",
@@ -501,7 +572,7 @@
     "@value" : "Diese Klasse umfasst alle Serien."
   }, {
     "@language" : "en",
-    "@value" : "This class comprises all series."
+    "@value" : "This class comprises all Series."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -509,6 +580,13 @@
   }, {
     "@language" : "en",
     "@value" : "SRS"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "A Series is an ordered set of Objects. A Series can describe photographs of movements or the documentation of the development of a production in a chronological or otherwise intended sequence."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Serie ist ein geordnetes Set von Objekten. Mit einer Serie können zum Beispiel Fotografien von Bewegungsabläufen oder die Dokumentation zur Entwicklung einer Produktion in eine chronologische oder anderweitig beabsichtigte Reihenfolge gebracht werden."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/TimeSpan",
@@ -522,10 +600,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Diese Klasse umfasst Zeitspannen jeglicher Länge."
+    "@value" : "Diese Klasse umfasst alle Zeitspannen."
   }, {
     "@language" : "en",
-    "@value" : "This class comprises timespans of any length."
+    "@value" : "This class comprises all timespans."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -533,6 +611,13 @@
   }, {
     "@language" : "en",
     "@value" : "1979-1989, 00:00:00:00-00:52:23:17"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "A Time-Span is a temporal extent with starting point, end point and duration. A Time-Span can be defined for entities such as Information Objects and Events. A Time-Span is unlimited in its duration. Not all attributes of a Time-Span have to be known for it to be described."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Zeitspanne ist ein zeitliches Ausmaß mit Startzeitpunkt, Endzeitpunkt und Dauer. Eine Zeitspanne kann sich auf Entitäten wie Informationsobjekte und Ereignisse beziehen. Eine Zeitspanne ist in ihrer Dauer unbeschränkt. Nicht alle Eigenschaften einer Zeitspanne müssen bekannt sein, um sie zu beschreiben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/beginsAtTime",
@@ -556,6 +641,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the begin date/point in time of a time span."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Das Datum sollte nach ISO XY angegeben werden."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/endsAtTime",
@@ -579,6 +678,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the end date/point in time of a time span."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Das Datum sollte nach ISO XY angegeben werden."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasAcrobat",
@@ -602,6 +715,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Akrobat*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Akrobat*in beschrieben. "
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasActor",
@@ -625,6 +752,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Schauspieler*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Schauspieler*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasAdaptor",
@@ -648,6 +789,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als (Text-)Bearbeiter*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einem Text, einer Produktion, einer Aufführung oder einer anderen Ressource als (Text-)Bearbeiter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel in Form einer Adaptation eines literarischen Werkes in ein Drama oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasAddress",
@@ -665,6 +820,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the address of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Addressen sollten in Form X geschrieben sein."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasArtisticDirector",
@@ -688,6 +857,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als künstlerische*r Leiter*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einem Festivalplan, einer Aufführung oder einer anderen Ressource als künstlerische*r Leiter*in beschrieben. Eine Mitwirkung kann zum Beispiel in Form der Leitung des künstlerischen Gesamtkonzepts eines Festivalplans oder einer einzelnen Performing Arts Aufführung erfolgen."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasAssistantDirector",
@@ -711,16 +894,30 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Regieassistent*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "de",
-    "@value" : "beinhaltet hörbare Referenz zu"
-  }, {
     "@language" : "en",
     "@value" : "has audible reference to"
+  }, {
+    "@language" : "de",
+    "@value" : "hat hörbare Referenz zu"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo"
@@ -734,22 +931,36 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : "In Video Z wird über Aufführung X geredet, In Audioaufnahme R ist Person K im Gespräch zu hören, In Video E ist Person L zu hören, aber nicht zu sehen."
+  }, {
+    "@language" : "en",
+    "@value" : "In video Z it is talked about performance X, In audio recording R Person K is heard talking, In video E Person L is heard, but not seen."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "An audible reference usually describes the audible mention or capture of a resource by an Information Object. An audible reference is a specific form of reference."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource von einem Informationsobjekt. Eine hörbare Referenz ist eine spezielle Form der Referenz."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "de",
-    "@value" : "beinhaltet audiovisuelle Referenz zu"
-  }, {
     "@language" : "en",
     "@value" : "has audiovisual reference to"
+  }, {
+    "@language" : "de",
+    "@value" : "hat audiovisuelle Referenz zu"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -757,6 +968,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine audiovisuelle Referenz enthält."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : "In Video R ist Person K im Gespräch zu hören, In Video R ist Person K zu sehen, Video R zeigt Video T"
+  }, {
+    "@language" : "en",
+    "@value" : "In video R Person K is heard talking, In video R Person K is seen, Video R shows video T"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "An audiovisual reference usually describes the audible and/or visual mention or capture of a resource by an Information Object. This property can be used if the differentiation between audible and visual reference is not given or deemed necessary. An audiovisual reference is a specific form of reference."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine audiovisuelle Referenz beschreibt in der Regel die hör- und/oder sichtbare Erwähnung oder Erfassung einer Ressource von einem Informationsobjekt. Diese Eigenschaft kann genutzt werden, wenn die Differenzierung zwischen hörbarer und sichtbarer Referenz nicht gegeben oder als notwendig erachtet ist. Eine audiovisuelle Referenz ist eine spezielle Form der Referenz."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasAuthor",
@@ -780,6 +1005,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Autor*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einem Text, einer Produktion, einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Autor*in eines literarischen Werkes oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasChoreographer",
@@ -803,6 +1042,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Choreograf*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Choreograf*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasCinematographer",
@@ -826,6 +1079,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Kameramann/Kamerafrau mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Kameramann/Kamerafrau beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasClown",
@@ -849,6 +1116,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Clown*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasComposer",
@@ -872,6 +1153,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Komponist*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Komponist*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Komponist*in eines musikalischen Werks oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasConceptOriginator",
@@ -895,6 +1190,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Konzept Urheber*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Konzept Urheber*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Konzept Urheber*in einer textuellen Grundlage einer Produktion oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasCondition",
@@ -912,6 +1221,13 @@
   }, {
     "@language" : "en",
     "@value" : "Describes or connects to the condition of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
@@ -936,6 +1252,13 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einer anderen Ressource mit gleichem Inhalt."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
@@ -966,6 +1289,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der an der Ressource mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Ausmaß Mitwirkung unbeschränkt, schöpferische Tätigkeit, lose Beteiligung, auch genaue Form der Mitwirkung nicht festgelegt."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasCostumeBuilder",
@@ -989,6 +1326,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Kostümbauer*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Kostümbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Kostümbauer*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Kostümdesigner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung eines Kostüms als auf dessen Gestaltung."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner",
@@ -1012,6 +1363,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Kostümdesigner*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Kostümgestalter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Kostümgestalter*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Kostümbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasCreator",
@@ -1035,6 +1400,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Schöpfer*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, eines Informationsobjekts oder einer anderen Ressource als Schöpfer*in beschrieben. Es können pro Ressource mehrere Agens als Schöpfer*in beteiligt sein. Aussagen über die Form der schöpferischen Tätigkeit des Agens können mit entsprechenden Eigenschaften parallel zu dieser getroffen werden."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasDancer",
@@ -1058,6 +1437,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Tänzer*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Tänzer*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasDate",
@@ -1075,12 +1468,26 @@
   }, {
     "@language" : "en",
     "@value" : "Describes a singular date/point in time."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Das Datum sollte nach ISO XY angegeben werden. Wenn genauere Zeiträume bekannt sind, sollten Zeitspannen genutzt werden."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasDateOfBirth",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.iti-germany.de/schema/nvto/Agent"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/Person"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1098,6 +1505,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the date of birth of an agent."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Das Datum sollte nach ISO XY angegeben werden."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasDateOfDeath",
@@ -1113,7 +1534,7 @@
     "@value" : "hat Todesdatum"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://lod.iti-germany.de/schema/nvto/hasDate"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/Person"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
@@ -1121,6 +1542,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the date of death of an agent."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Das Datum sollte nach ISO XY angegeben werden."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasDescription",
@@ -1138,6 +1573,13 @@
   }, {
     "@language" : "de",
     "@value" : "Eine generelle Beschreibung einer Ressource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasDigitalVersion",
@@ -1160,10 +1602,17 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a physical object with a digital version of itself."
+    "@value" : "Connects a physical object with a digital version of itself or a digital version of a part of the object."
   }, {
     "@language" : "en",
-    "@value" : "Verbindet ein physisches Objekt mit seiner digitalen Version."
+    "@value" : "Verbindet ein physisches Objekt mit seiner digitalen Version oder einer digitalen Version eines Teils des Objekts."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasDimensions",
@@ -1182,12 +1631,12 @@
     "@language" : "en",
     "@value" : "Describes the dimensions of a resource."
   } ],
-  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
-    "@language" : "en",
-    "@value" : "E.g. the dimensions of a physical object or a digital file."
-  }, {
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
-    "@value" : "Z.B. die Dimensionen eines physischen Objekts oder einer digitalen Datei."
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasDirector",
@@ -1211,6 +1660,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Regisseur*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, eines, Films, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Regisseur*in eines Spielfilms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasDramaturge",
@@ -1234,6 +1697,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Dramaturg*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung, einem Text oder einer anderen Ressource als Dramaturg*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Bearbeiter eines dramatischen Texts oder implizit, zum Beispiel in Form einer konzeptionellen Beteiligung im Rahmen einer Produktion erfolgen."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasEditor",
@@ -1257,6 +1734,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Redakteur*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einem Text oder einer anderen Ressource als Redakteur*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Herausgeber*in einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasExtent",
@@ -1278,18 +1769,18 @@
     "@language" : "en",
     "@value" : "Describes the extent of a resource."
   } ],
-  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
-    "@language" : "en",
-    "@value" : "E.g. the extent of a physical object or a digital file."
-  }, {
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
-    "@value" : "Z.B. der Umfang eines physischen Objekts oder einer digitalen Datei."
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasFamilyName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.iti-germany.de/schema/nvto/Agent"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/Person"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1324,6 +1815,13 @@
   }, {
     "@language" : "en",
     "@value" : "Describes or connects to the first edition of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasFirstLocalizedEdition",
@@ -1344,12 +1842,19 @@
   }, {
     "@language" : "en",
     "@value" : "Describes or connects to the first localized edition of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasFirstName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.iti-germany.de/schema/nvto/Agent"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/Person"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1364,6 +1869,13 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the first name of an agent."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate",
@@ -1387,6 +1899,13 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the first performance date of a performing arts production."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
@@ -1419,7 +1938,21 @@
     "@value" : "Connects a performing arts production with its first performance version."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine Produktion der darstellenden Künste mit ihrer Erstaufführungsversion."
+    "@value" : "Verbindet eine Performing Arts Produktion mit ihrer Erstaufführungsversion."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Erstaufführungsversion ist eine originale, zum ersten Mal aufgeführte Performing Arts Produktion."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasFormat",
@@ -1441,12 +1974,12 @@
     "@language" : "en",
     "@value" : "Describes or connects to the format of a resource."
   } ],
-  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
-    "@language" : "en",
-    "@value" : "E.g. the format of a physical object or a digital file."
-  }, {
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
-    "@value" : "Z.B. das Format eines physischen Objekts oder einer digitalen Datei."
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasHomepage",
@@ -1470,10 +2003,17 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet mit der Homepage eines Agens."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasIdentifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has identifier"
@@ -1486,10 +2026,24 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Beschreibt einen oder mehr alternative Bezeichner einer Ressource."
+    "@value" : "Beschreibt einen lokalen oder globalen Bezeichner einer Ressource."
   }, {
     "@language" : "en",
-    "@value" : "Describes one or more alternative identifiers of a resource."
+    "@value" : "Describes a local or global identifier of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Ein Bezeichner kann von lokaler oder globaler Eindeutigkeit sein. Sowohl Literale als auch Links sind möglich."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasIllustrator",
@@ -1513,6 +2067,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Illustrator*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Illustrator*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Herausgeber*in einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasInfluenceOn",
@@ -1522,10 +2090,10 @@
     "@value" : "has influence on"
   }, {
     "@language" : "de",
-    "@value" : "hat beeinflusst"
+    "@value" : "hat Einfluss auf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/isReferencedIn"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://lod.iti-germany.de/schema/nvto/isInfluencedBy"
@@ -1536,6 +2104,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einer anderen Ressource, die sie beeinflusst hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Performing Arts Production Y forms basis of Performing Arts Production X, Text Y has influence on Film X"
+  }, {
+    "@language" : "de",
+    "@value" : "Performing Arts Produktion Y ist Basis von Performing Arts Produktion X, Text Y hatte Einfluss auf Film X"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : "Diese Eigenschaft beschreibt die Beeinflussung im weiteren Sinne einer Ressource auf eine andere Ressource. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form des referenziert werdens."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the influence in a broader sense of a resource on another resource. An influence can be more or less recognizable and should be verifiable. An influence is a specific form of being referenced."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasInformationCarrier",
@@ -1559,6 +2141,20 @@
   }, {
     "@language" : "en",
     "@value" : "Verbindet ein Informationsobjekt mit einem physischen oder digitalen Objekt, auf dem es repräsentiert ist."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Ein Informationsträger ist eine Entität, die einen Inhalt, also ein Informationsobjekt repräsentiert. Ein Informationsobjekt kann von mehreren Informationsträgern repräsentiert werden, zum Beispiel die gleiche Aufnahme einer Aufführung auf einer Videokassette und auf einem USB-Stick. Auf einem Informationsträger können mehrere Informationsobjekte repräsentiert werden, zum Beispiel mehrere Aufnahmen von verschiedenen Aufführungen auf einer Videokassette."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasIsbn",
@@ -1579,6 +2175,13 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the ISBN of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasIssn",
@@ -1599,6 +2202,13 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the ISSN of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasLabeling",
@@ -1616,6 +2226,13 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the labeling of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasLabelingBack",
@@ -1636,6 +2253,13 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the labeling on the back of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasLabelingFront",
@@ -1656,6 +2280,13 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the labeling on the front of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasLanguage",
@@ -1673,6 +2304,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the language associated to a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Sprachen sollten nach BCP 47 angegeben werden."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate",
@@ -1696,6 +2341,13 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the last performance date of a performing arts production."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
@@ -1726,6 +2378,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Layouter*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Publikation oder einer anderen Ressource als Layouter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Gestalter*in des Layouts einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasLightingDesigner",
@@ -1749,6 +2415,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Lichtgestalter*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Lichtgestalter*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasMakeUpArtist",
@@ -1772,6 +2452,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Visagist*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Visagist*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasMaskBuilder",
@@ -1795,6 +2489,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Maskenbauer*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Maskenbauer*in einer Maske oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Maskengestalter*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf dessen Gestaltung."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasMaskDesigner",
@@ -1818,6 +2526,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Maskengestalter*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Maskengestalter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Maskengestalter*in einer Maske oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasMediator",
@@ -1838,6 +2560,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Vermittler*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einem Festival, einem Workshop oder einer anderen Ressource als Vermittler*in beschrieben. Vermittler*innen können zum Beispiel Lehrer in einem Workshop oder Dozenten eines Vortrags sein."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasMedium",
@@ -1861,6 +2597,13 @@
   }, {
     "@language" : "en",
     "@value" : "Describes or connects to the medium of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasMime",
@@ -1884,6 +2627,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Mime/Mimin mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Mime/Mimin beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasMusician",
@@ -1907,6 +2664,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Musiker*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Musiker*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Musiker*in für ein musikalisches Werk oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasName",
@@ -1927,6 +2698,13 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the name of an agent."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPantomime",
@@ -1950,6 +2728,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Pantomime/Pantomimin mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Pantomime/Pantomimin beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPart",
@@ -1970,6 +2762,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einer anderen Ressource, die ein Teil von ihr ist."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Teilbeziehung kann zwischen verschiedenen Arten von Ressourcen bestehen und muss nicht von physischer Natur sein. Ein Informationsobjekt kann zum Beispiel Teil eines physischen Objekts oder eines anderen Informationsobjekts sein, eine Aufführung kann Teil eines Festivals sein."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasParticipant",
@@ -1993,6 +2799,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Teilnehmer*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einem Festival, einem Workshop oder einer anderen Ressource als Teilnehmer*in beschrieben. Teilnehmer*innen können zum Beispiel Teilnehmer*innen in einem Workshop oder an einem Vortrag sein."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPerformer",
@@ -2016,10 +2836,24 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Darsteller*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Darsteller*in beschrieben. Diese Eigenschaft kann entweder als allgemeine Eigenschaft für die Mitwirkung einer Person in jeglicher darstellerischen Form genutzt werden, wenn keine genaueren Angaben vorhanden sind oder als konkrete Bezeichnung, wenn die Rolle explizit als Darsteller*in beschrieben wurde."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPhotoStudio",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has photo studio"
@@ -2036,6 +2870,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes or connects a resource to a photo studio that contributed to its creation."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPhotographer",
@@ -2059,6 +2907,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Fotograf*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence",
@@ -2071,7 +2933,7 @@
     "@value" : "ereignet sich an Ort"
   }, {
     "@language" : "en",
-    "@value" : "has place of Occurrence"
+    "@value" : "has place of occurrence"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://lod.iti-germany.de/schema/nvto/Place"
@@ -2088,6 +2950,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet ein Ereignis mit einem Ort, an dem es sich ereignet."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPlaceOfOrigin",
@@ -2114,6 +2990,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit dem Ort, an dem sie ihren Ursprung hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPlaywright",
@@ -2137,6 +3027,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Dramatiker*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in  beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPredecessor",
@@ -2157,6 +3061,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes or connects to the preceding resource of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasProducer",
@@ -2180,6 +3098,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Produzent*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasProgrammeDirector",
@@ -2203,6 +3135,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der durch Kuration oder Leitung des Programmes bei einem Festival mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPrompter",
@@ -2226,6 +3172,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Souffleur/Souffleuse mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasProvenance",
@@ -2246,6 +3206,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes or connects to the provenance of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPublisher",
@@ -2265,10 +3239,24 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Beschreibt den/die Herausgeber*in einer Ressource oder verbindet die Ressource mit einem Agens, der/die als Verleger*in an der Ressource mitgewirkt hat."
+    "@value" : "Connects the resource to an agent who contributed to the resource as publisher."
   }, {
     "@language" : "en",
-    "@value" : "Describes the publisher of a resource or connects the resource to an agent who contributed to the resource as publisher."
+    "@value" : "Verbindet die Ressource mit einem Agens, der/die als Verleger*in an der Ressource mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPublishingCompany",
@@ -2289,6 +3277,20 @@
   }, {
     "@language" : "en",
     "@value" : "Verbindet die Ressource mit einem Agens, derals Verlag an der Ressource mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPublishingPlace",
@@ -2315,6 +3317,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit dem Ort, an dem sie verlegt wird oder wurde."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPuppetBuilder",
@@ -2338,6 +3354,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Puppenbauer*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner",
@@ -2361,6 +3391,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Puppengestalter*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasRecordingOf",
@@ -2373,7 +3417,7 @@
     "@value" : "has recording of"
   }, {
     "@language" : "de",
-    "@value" : "hat aufgenommen"
+    "@value" : "hat Aufnahme von"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://lod.iti-germany.de/schema/nvto/Event"
@@ -2389,7 +3433,21 @@
     "@value" : "Connects an information object to an event that it recorded."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine Ressource mit einer anderen Ressource, von der sie eine Aufnahme enthält."
+    "@value" : "Verbindet ein Informationsobjekt mit einem Ereignis, von dem es eine Aufnahme enthält."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Video X hat Aufnahme von Event Y"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : "Diese Eigenschaft ist eine Form von Referenz, die speziell die Aufnahme eines Ereignisses von einem Informationsobjekt beschreibt."
+  }, {
+    "@language" : "en",
+    "@value" : "This property is a form of reference that specifically describes the recording of an event by an Information Object."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasRecordist",
@@ -2413,16 +3471,30 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Tonmeister*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasReferenceTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "de",
-    "@value" : "beinhaltet Referenz zu"
-  }, {
     "@language" : "en",
     "@value" : "has reference to"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Referenz zu"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://lod.iti-germany.de/schema/nvto/isReferencedIn"
@@ -2434,12 +3506,19 @@
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine Referenz enthält."
   } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
-    "@value" : "A reference can occur in the recording or as labeling. In case the type of reference is detailed, one of the subproperties of this property should be used."
+    "@value" : "A reference usually describes the capture or mention of a resource by an Information Object, a Creative Concept or other resources. A reference to a resource can be contained in a recording of the resource or in the labeling of an information carrier among others. In case the type of reference is given, one of the subproperties of this property should be used."
   }, {
     "@language" : "de",
-    "@value" : "Eine Referenz kann in der Aufnahme oder als Beschriftung vorkommen. Wenn die Art der Referenz gegeben ist, sollte eine der Untereigenschaften dieser Eigenschaft verwendet werden."
+    "@value" : "Eine Referenz beschreibt in der Regel die Erfassung oder Erwähnung einer Ressource von einem Informationsobjekt, einem Kreativen Konzept oder anderer Ressourcen. Eine Referenz zu einer Ressource kann zum Beispiel Teil einer Aufnahme der Ressource oder der Beschriftung eines Informationsträgers sein. Wenn die Art der Referenz gegeben ist, sollte eine der Untereigenschaften dieser Eigenschaft verwendet werden."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasRelatedPlace",
@@ -2463,6 +3542,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Ort, mit dem sie auf nicht näher bestimmte Weise in Verbindung steht."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasRelatedWebsite",
@@ -2483,6 +3576,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet mit einer Webseite, die auf nicht näher bestimmte Weise mit einem Agens oder einer Ressource in Verbindung steht."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasResidence",
@@ -2512,6 +3619,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet einen Agens mit seiner Residenz."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasRestagedVersion",
@@ -2535,6 +3656,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Produktion der darstellenden Künste mit ihrer Wiederaufnahme."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasRights",
@@ -2552,6 +3687,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes one or more rights statements of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasRightsHolder",
@@ -2572,6 +3721,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the rights holder of a resource or connects the resource to an agent who holds rights to the resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasSeamster",
@@ -2595,6 +3758,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Näher*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasSeason",
@@ -2618,6 +3795,20 @@
   }, {
     "@language" : "en",
     "@value" : "connects to the season in which a performing arts production was or is performed."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasSetBuilder",
@@ -2641,6 +3832,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Bühnenbauer*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasSetDesigner",
@@ -2664,6 +3869,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Bühnenbildner*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasSinger",
@@ -2684,6 +3903,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Sänger*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasSoundDesigner",
@@ -2707,6 +3940,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Tongestalter*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasSource",
@@ -2727,6 +3974,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes or connects to the source of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasSpeaker",
@@ -2750,6 +4011,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Sprecher*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasStageManager",
@@ -2773,6 +4048,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Inspizient*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasSubtitle",
@@ -2790,6 +4079,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the subtitle of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasSuccessor",
@@ -2814,6 +4117,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes or connects to the succeeding resource of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasSurtitleCreator",
@@ -2837,6 +4154,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Übertitel Schöpfer*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasTableOfContents",
@@ -2857,6 +4188,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the table of contents of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasTechnician",
@@ -2880,16 +4225,30 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Techniker*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "de",
-    "@value" : "beinhaltet textuelle Referenz zu"
-  }, {
     "@language" : "en",
     "@value" : "has textual reference to"
+  }, {
+    "@language" : "de",
+    "@value" : "hat textuelle Referenz zu"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
@@ -2903,6 +4262,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine textuelle Referenz enthält."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "A textual reference usually describes  mention of a resource by an Information Object, a Creative Concept or another resource in written form. A Textual References can be contained in programme booklets, literature or the labeling of an information carrier among others. A textual reference is a specific form of reference."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine textuelle Referenz beschreibt in der Regel die schriftliche Erwähnung einer Ressource von einem Informationsobjekt, einem Kreativen Konzept oder anderer Ressourcen. Textuelle Referenzen zu Ressourcen kommen zum Beispiel in Programmheften, Literatur oder in der Beschriftung eines Informationsträgers vor. Eine textuelle Referenz ist eine spezielle Form der Referenz."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasTimeOfOccurrence",
@@ -2929,6 +4302,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet ein Ereignis mit der Zeitspanne, in der es sich ereignet."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasTitle",
@@ -2946,6 +4333,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes the title of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasTranslator",
@@ -2969,6 +4370,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Übersetzer*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasType",
@@ -2989,6 +4404,20 @@
   }, {
     "@language" : "en",
     "@value" : "Describes or connects to the type of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasVideoDesigner",
@@ -3012,6 +4441,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Videodesigner*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasVideoEditor",
@@ -3035,16 +4478,30 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Agens, der als Videoeditor*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung einer Person an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "de",
-    "@value" : "beinhaltet visuelle Referenz zu"
-  }, {
     "@language" : "en",
     "@value" : "has visual reference to"
+  }, {
+    "@language" : "de",
+    "@value" : "hat visuelle Referenz zu"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo"
@@ -3058,6 +4515,20 @@
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine visuelle Referenz enthält."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "A visual reference usually describes the visual capture of a resource by an Information Object, for example on a photograph. A visual reference is a specific form of reference."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine visuelle Referenz beschreibt in der Regel die sichtbare Erfassung einer Ressource von einem Informationsobjekt, zum Beispiel auf einer Fotografie. Eine visuelle Referenz ist eine spezielle Form der Referenz."
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/isAcrobatOf",
@@ -3177,10 +4648,10 @@
     "@value" : "ist hörbar referenziert in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
   } ]
 }, {
-  "@id" : "http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn",
+  "@id" : "http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -3646,7 +5117,7 @@
     "@value" : "ist beeinflusst von"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://lod.iti-germany.de/schema/nvto/isReferencedIn"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
   } ],
   "http://www.w3.org/2004/02/skos/core#definiiton" : [ {
     "@language" : "de",
@@ -4706,7 +6177,7 @@
     "@value" : "ist visuell referenziert in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://lod.iti-germany.de/schema/nvto/isAudiovisuallyReferencedIn"
+    "@id" : "http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/rights",

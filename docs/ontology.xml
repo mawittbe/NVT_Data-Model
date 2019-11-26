@@ -3217,12 +3217,12 @@
 
 
     <owl:Class rdf:about="http://lod.iti-germany.de/schema/nvto/DigitalObject">
-        <rdfs:comment xml:lang="de">Diese Klasse umfasst sowohl digitale Repräsentationen von Inhalten von Physischen Objekten, als auch nativ digitale Objekte. Digitale Objekte sind wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This class comprises digital representations of contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, are information carriers of one or more Information Objects.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Diese Klasse umfasst sowohl digitale Repräsentationen von Inhalten von Physischen Objekten, als auch nativ digitale Objekte. Digitale Objekte können wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte sein.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class comprises digital representations of contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, can be information carriers of one or more Information Objects.</rdfs:comment>
         <rdfs:label xml:lang="en">Digital Object</rdfs:label>
         <rdfs:label xml:lang="de">Digitales Objekt</rdfs:label>
-        <skos:definition xml:lang="de">Die digitale Repräsentation des Inhalts eines Mediums. Digitaler Informationsträger.</skos:definition>
-        <skos:definition xml:lang="en">The digital representation of the contents of a medium. Digital information carrier.</skos:definition>
+        <skos:definition xml:lang="de">Diese Klasse umfasst alle digitalen Objekte.</skos:definition>
+        <skos:definition xml:lang="en">This class comprises all Digital Objects.</skos:definition>
         <skos:example xml:lang="en">A specific digital file with name IMG-001.tif, VID-001.avi</skos:example>
         <skos:example xml:lang="de">Eine spezifische digitale Datei mit Namen IMG-001.tif, VID-001.avi</skos:example>
     </owl:Class>

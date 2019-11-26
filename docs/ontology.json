@@ -203,10 +203,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Diese Klasse umfasst sowohl digitale Repräsentationen von Inhalten von Physischen Objekten, als auch nativ digitale Objekte. Digitale Objekte sind wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte."
+    "@value" : "Diese Klasse umfasst sowohl digitale Repräsentationen von Inhalten von Physischen Objekten, als auch nativ digitale Objekte. Digitale Objekte können wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte sein."
   }, {
     "@language" : "en",
-    "@value" : "This class comprises digital representations of contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, are information carriers of one or more Information Objects."
+    "@value" : "This class comprises digital representations of contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, can be information carriers of one or more Information Objects."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -217,10 +217,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Die digitale Repräsentation des Inhalts eines Mediums. Digitaler Informationsträger."
+    "@value" : "Diese Klasse umfasst alle digitalen Objekte."
   }, {
     "@language" : "en",
-    "@value" : "The digital representation of the contents of a medium. Digital information carrier."
+    "@value" : "This class comprises all Digital Objects."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",

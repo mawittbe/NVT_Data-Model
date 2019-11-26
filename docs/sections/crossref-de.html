@@ -1,1013 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
- <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Ontologie für nonverbales Theater</title>
-
-
-<!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://ld.iti-germany.de/schema/nvto/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://ld.iti-germany.de/schema/nvto/","name":"Ontologie für nonverbales Theater", "headline":"Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts "NONVERBALES THEATER
-                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS).", "datePublished":"Tue Nov 26 16:12:25 CET 2019", "license":"https://creativecommons.org/licenses/by/4.0/deed.en", "contributor":[{"@type":"Person","name":"Jonas Pitz"},{"@type":"Person","name":"Maxim Wittenbecher"}]}</script>
-
-<script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
-    <script> 
-function loadHash() {
-  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
-	var hash = location.hash;
-	if($(hash).offset()!=null){
-	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
-}
-	loadTOC();
-}
-function loadTOC(){
-	//process toc dynamically
-	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
-	  jQuery(".list").each(function(){
-		if(jQuery(this).is('h2')){
-			if(j>0){
-				t+='</ul>';
-				j=0;
-			}
-			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
-			i++;
-		}
-		if(jQuery(this).is('h3')){
-			if(j==0){
-				t+='<ul>';
-			}
-			j++;
-			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
-		}
-	  });
-	  t+='</ul>';
-	  $("#toc").html(t); 
-}
- $.fn.ignore = function(sel){
-        return this.clone().find(sel||">*").remove().end();
- }; 
-   </script> 
-  </head> 
-
-<body>
-<div class="container">
-<div class="head">
-<div style="float:right">language <a href="index-de.html"><b>de</b></a> <a href="index-en.html"><b>en</b></a> </div>
-<h1>Ontologie für nonverbales Theater</h1>
-
-
-<dl>
-<dt>Contributors:</dt>
-<dd>Jonas Pitz</dd><dd>Maxim Wittenbecher</dd>
-
-<dt>Publisher:</dt>
-<dd>Mediathek für Tanz und Theater / ITI Deutschland</dd>
-<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://creativecommons.org/licenses/by/4.0/deed.en" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/deed.en-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/deed.en" /></a>
-</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
-<dt>Cite as:</dt>
-<dd> Ontologie für nonverbales Theater.</dd>
-</dl>
-
-<hr/>
-</div>
-<div class="status">
-<div>
-<span>Ontology Specification Draft</span>
-</div>
-</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts "NONVERBALES THEATER
-                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS).</span>
-</div>
-<div id="toc"></div> 
-
-<!--INTRODUCTION SECTION-->
-    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
-<div id="namespacedeclarations">
-<h3 id="ns" class="list">Namespace declarations</h3>
-<div id="ns" align="center">
-<table>
-<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
-<tbody>
-<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://ld.iti-germany.de/schema/nvto/&gt;</td></tr>
-<tr><td><b>nvto</b></td><td>&lt;http://lod.iti-germany.de/schema/nvto&gt;</td></tr>
-<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
-<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
-<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
-<tr><td><b>4-0</b></td><td>&lt;https://creativecommons.org/licenses/by/4.0&gt;</td></tr>
-<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
-<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
-<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
-<tr><td><b>default namespace</b></td><td>&lt;http://ld.iti-germany.de/schema/nvto&gt;</td></tr>
-<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-  
-
-<!--OVERVIEW SECTION-->
-    <div id="overview"><h2 id="overv" class="list">Ontologie für nonverbales Theater: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This ontology has the following classes and properties.</span>
-<h4>Classes</h4>
-<ul class="hlist">
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/Agent" title="http://lod.iti-germany.de/schema/nvto/Agent">Agens</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation"
-         title="http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation">Aufführungsort (darstellende Künste)</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/DigitalObject"
-         title="http://lod.iti-germany.de/schema/nvto/DigitalObject">Digitales Objekt</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/Event" title="http://lod.iti-germany.de/schema/nvto/Event">Ereignis</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/FestivalPlan"
-         title="http://lod.iti-germany.de/schema/nvto/FestivalPlan">Festivalplan</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/FilmProduction"
-         title="http://lod.iti-germany.de/schema/nvto/FilmProduction">Filmproduktion</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup"
-         title="http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup">Gruppe (darstellende Künste)</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/InformationObject"
-         title="http://lod.iti-germany.de/schema/nvto/InformationObject">Informationsobjekt</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/CreativeConcept"
-         title="http://lod.iti-germany.de/schema/nvto/CreativeConcept">Kreatives Konzept</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/Country" title="http://lod.iti-germany.de/schema/nvto/Country">Land</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/Place" title="http://lod.iti-germany.de/schema/nvto/Place">Ort</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/Person" title="http://lod.iti-germany.de/schema/nvto/Person">
-         <span>Person</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/PhysicalObject"
-         title="http://lod.iti-germany.de/schema/nvto/PhysicalObject">Physisches Objekt</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction"
-         title="http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction">Produktion (darstellende Künste)</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/Collection"
-         title="http://lod.iti-germany.de/schema/nvto/Collection">Sammlung</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/Series" title="http://lod.iti-germany.de/schema/nvto/Series">Serie</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/City" title="http://lod.iti-germany.de/schema/nvto/City">Stadt</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/TimeSpan" title="http://lod.iti-germany.de/schema/nvto/TimeSpan">Zeitspanne</a>
-   </li>
-</ul><h4>Object Properties</h4><ul class="hlist">
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence"
-         title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence">ereignet sich an Ort</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasTimeOfOccurrence"
-         title="http://lod.iti-germany.de/schema/nvto/hasTimeOfOccurrence">ereignet sich zu Zeitpunkt</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasAdaptor" title="http://lod.iti-germany.de/schema/nvto/hasAdaptor">hat (Text-)Bearbeiter*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasAcrobat" title="http://lod.iti-germany.de/schema/nvto/hasAcrobat">hat Akrobat*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo"
-         title="http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo">hat audiovisuelle Referenz zu</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasRecordingOf"
-         title="http://lod.iti-germany.de/schema/nvto/hasRecordingOf">hat Aufnahme von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasAuthor" title="http://lod.iti-germany.de/schema/nvto/hasAuthor">hat Autor*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasIdentifier"
-         title="http://lod.iti-germany.de/schema/nvto/hasIdentifier">hat Bezeichner</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasRelatedPlace"
-         title="http://lod.iti-germany.de/schema/nvto/hasRelatedPlace">hat Bezug zu Ort</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasRelatedWebsite"
-         title="http://lod.iti-germany.de/schema/nvto/hasRelatedWebsite">hat Bezug zu Webseite</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasSetBuilder"
-         title="http://lod.iti-germany.de/schema/nvto/hasSetBuilder">hat Bühnenbauer*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasSetDesigner"
-         title="http://lod.iti-germany.de/schema/nvto/hasSetDesigner">hat Bühnenbildner*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasChoreographer"
-         title="http://lod.iti-germany.de/schema/nvto/hasChoreographer">hat Choreograf*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasClown" title="http://lod.iti-germany.de/schema/nvto/hasClown">hat Clown*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPerformer"
-         title="http://lod.iti-germany.de/schema/nvto/hasPerformer">hat Darsteller*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasDigitalVersion"
-         title="http://lod.iti-germany.de/schema/nvto/hasDigitalVersion">hat digitale Version</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPlaywright"
-         title="http://lod.iti-germany.de/schema/nvto/hasPlaywright">hat Dramatiker*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasDramaturge"
-         title="http://lod.iti-germany.de/schema/nvto/hasDramaturge">hat Dramaturg*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasInfluenceOn"
-         title="http://lod.iti-germany.de/schema/nvto/hasInfluenceOn">hat Einfluss auf</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceVersion"
-         title="http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceVersion">hat Erstaufführungsversion</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotographer"
-         title="http://lod.iti-germany.de/schema/nvto/hasPhotographer">hat Fotograf*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPhotoStudio"
-         title="http://lod.iti-germany.de/schema/nvto/hasPhotoStudio">hat Fotostudio</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasContentMatch"
-         title="http://lod.iti-germany.de/schema/nvto/hasContentMatch">hat gleichen Inhalt</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPublisher"
-         title="http://lod.iti-germany.de/schema/nvto/hasPublisher">hat Herausgeber*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasHomepage"
-         title="http://lod.iti-germany.de/schema/nvto/hasHomepage">hat Homepage</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo"
-         title="http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo">hat hörbare Referenz zu</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasIllustrator"
-         title="http://lod.iti-germany.de/schema/nvto/hasIllustrator">hat Illustrator*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasInformationCarrier"
-         title="http://lod.iti-germany.de/schema/nvto/hasInformationCarrier">hat Informationsträger</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasStageManager"
-         title="http://lod.iti-germany.de/schema/nvto/hasStageManager">hat Inspizient*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasIsbn" title="http://lod.iti-germany.de/schema/nvto/hasIsbn">
-         <span>hat ISBN</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasIssn" title="http://lod.iti-germany.de/schema/nvto/hasIssn">
-         <span>hat ISSN</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasCinematographer"
-         title="http://lod.iti-germany.de/schema/nvto/hasCinematographer">hat Kameramann/Kamerafrau</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasComposer"
-         title="http://lod.iti-germany.de/schema/nvto/hasComposer">hat Komponist*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasConceptOriginator"
-         title="http://lod.iti-germany.de/schema/nvto/hasConceptOriginator">hat Konzept Urheber*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasCostumeBuilder"
-         title="http://lod.iti-germany.de/schema/nvto/hasCostumeBuilder">hat Kostümbauer*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner"
-         title="http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner">hat Kostümgestalter*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasArtisticDirector"
-         title="http://lod.iti-germany.de/schema/nvto/hasArtisticDirector">hat künstlerische*n Leiter*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasLayouter"
-         title="http://lod.iti-germany.de/schema/nvto/hasLayouter">hat Layouter*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasLightingDesigner"
-         title="http://lod.iti-germany.de/schema/nvto/hasLightingDesigner">hat Lichtgestalter*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasMaskBuilder"
-         title="http://lod.iti-germany.de/schema/nvto/hasMaskBuilder">hat Maskenbauer*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasMaskDesigner"
-         title="http://lod.iti-germany.de/schema/nvto/hasMaskDesigner">hat Maskengestalter*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasMedium" title="http://lod.iti-germany.de/schema/nvto/hasMedium">
-         <span>hat Medium</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasMime" title="http://lod.iti-germany.de/schema/nvto/hasMime">hat Mime/Mimin</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasContributor"
-         title="http://lod.iti-germany.de/schema/nvto/hasContributor">hat Mitwirkende*n</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasMusician"
-         title="http://lod.iti-germany.de/schema/nvto/hasMusician">hat Musiker*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasSuccessor"
-         title="http://lod.iti-germany.de/schema/nvto/hasSuccessor">hat Nachfolger</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasSeamster"
-         title="http://lod.iti-germany.de/schema/nvto/hasSeamster">hat Näher*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPantomime"
-         title="http://lod.iti-germany.de/schema/nvto/hasPantomime">hat Pantomime/Pantomimin</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasProducer"
-         title="http://lod.iti-germany.de/schema/nvto/hasProducer">hat Produzent*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasProgrammeDirector"
-         title="http://lod.iti-germany.de/schema/nvto/hasProgrammeDirector">hat Programmdirektor*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPuppetBuilder"
-         title="http://lod.iti-germany.de/schema/nvto/hasPuppetBuilder">hat Puppenbauer*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner"
-         title="http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner">hat Puppengestalter*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasSource" title="http://lod.iti-germany.de/schema/nvto/hasSource">hat Quelle</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasEditor" title="http://lod.iti-germany.de/schema/nvto/hasEditor">hat Redakteur*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasReferenceTo"
-         title="http://lod.iti-germany.de/schema/nvto/hasReferenceTo">hat Referenz zu</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasAssistantDirector"
-         title="http://lod.iti-germany.de/schema/nvto/hasAssistantDirector">hat Regieassistent*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasDirector"
-         title="http://lod.iti-germany.de/schema/nvto/hasDirector">hat Regisseur*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasResidence"
-         title="http://lod.iti-germany.de/schema/nvto/hasResidence">hat Residenz</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasActor" title="http://lod.iti-germany.de/schema/nvto/hasActor">hat Schauspieler*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasCreator" title="http://lod.iti-germany.de/schema/nvto/hasCreator">hat Schöpfer*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPrompter"
-         title="http://lod.iti-germany.de/schema/nvto/hasPrompter">hat Souffleur/Souffleuse</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasSeason" title="http://lod.iti-germany.de/schema/nvto/hasSeason">hat Spielzeit</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasSpeaker"
-         title="http://lod.iti-germany.de/schema/nvto/hasSpeaker">hat Sprecher*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasSinger" title="http://lod.iti-germany.de/schema/nvto/hasSinger">hat Sänger*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasTechnician"
-         title="http://lod.iti-germany.de/schema/nvto/hasTechnician">hat Techniker*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPart" title="http://lod.iti-germany.de/schema/nvto/hasPart">hat Teil</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasParticipant"
-         title="http://lod.iti-germany.de/schema/nvto/hasParticipant">hat Teilnehmer*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo"
-         title="http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo">hat textuelle Referenz zu</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasSoundDesigner"
-         title="http://lod.iti-germany.de/schema/nvto/hasSoundDesigner">hat Tongestalter*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasRecordist"
-         title="http://lod.iti-germany.de/schema/nvto/hasRecordist">hat Tonmeister*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasDancer" title="http://lod.iti-germany.de/schema/nvto/hasDancer">hat Tänzer*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPlaceOfOrigin"
-         title="http://lod.iti-germany.de/schema/nvto/hasPlaceOfOrigin">hat Ursprung in Ort</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPublishingCompany"
-         title="http://lod.iti-germany.de/schema/nvto/hasPublishingCompany">hat Verlag</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPublishingPlace"
-         title="http://lod.iti-germany.de/schema/nvto/hasPublishingPlace">hat Verlagsort</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasMediator"
-         title="http://lod.iti-germany.de/schema/nvto/hasMediator">hat Vermittler*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasVideoDesigner"
-         title="http://lod.iti-germany.de/schema/nvto/hasVideoDesigner">hat Videodesigner*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasVideoEditor"
-         title="http://lod.iti-germany.de/schema/nvto/hasVideoEditor">hat Videoeditor*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasMakeUpArtist"
-         title="http://lod.iti-germany.de/schema/nvto/hasMakeUpArtist">hat Visagist*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo"
-         title="http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo">hat visuelle Referenz zu</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasPredecessor"
-         title="http://lod.iti-germany.de/schema/nvto/hasPredecessor">hat Vorgänger</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasRestagedVersion"
-         title="http://lod.iti-germany.de/schema/nvto/hasRestagedVersion">hat Wiederaufnahme</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasTranslator"
-         title="http://lod.iti-germany.de/schema/nvto/hasTranslator">hat Übersetzer*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasSurtitleCreator"
-         title="http://lod.iti-germany.de/schema/nvto/hasSurtitleCreator">hat Übertitel Schöpfer*in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isAdaptorOf"
-         title="http://lod.iti-germany.de/schema/nvto/isAdaptorOf">ist (Text-)Bearbeiter*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isAcrobatOf"
-         title="http://lod.iti-germany.de/schema/nvto/isAcrobatOf">ist Akrobat*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn"
-         title="http://lod.iti-germany.de/schema/nvto/isAudioVisuallyReferencedIn">ist audiovisuell referenziert in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isRecordedIn"
-         title="http://lod.iti-germany.de/schema/nvto/isRecordedIn">ist aufgenommen von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isAuthorOf"
-         title="http://lod.iti-germany.de/schema/nvto/isAuthorOf">ist Autor*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isInfluencedBy"
-         title="http://lod.iti-germany.de/schema/nvto/isInfluencedBy">ist beeinflusst von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isIdentifierOf"
-         title="http://lod.iti-germany.de/schema/nvto/isIdentifierOf">ist Bezeichner von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isSetBuilderOf"
-         title="http://lod.iti-germany.de/schema/nvto/isSetBuilderOf">ist Bühnenbauer*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isSetDesignerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isSetDesignerOf">ist Bühnenbildner*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isChoreographerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isChoreographerOf">ist Choreograf*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isClownOf" title="http://lod.iti-germany.de/schema/nvto/isClownOf">ist Clown*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isPerformerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isPerformerOf">ist Darsteller*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isDigitalVersionOf"
-         title="http://lod.iti-germany.de/schema/nvto/isDigitalVersionOf">ist digitale Version von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isPlaywrightOf"
-         title="http://lod.iti-germany.de/schema/nvto/isPlaywrightOf">ist Dramatiker*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isDramaturgeOf"
-         title="http://lod.iti-germany.de/schema/nvto/isDramaturgeOf">ist Dramaturg*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isFirstPerformanceVersionOf"
-         title="http://lod.iti-germany.de/schema/nvto/isFirstPerformanceVersionOf">ist Erstaufführungsversion von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isFormatOf"
-         title="http://lod.iti-germany.de/schema/nvto/isFormatOf">ist Format von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isPhotographerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isPhotographerOf">ist Fotograf*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isPhotoStudioOf"
-         title="http://lod.iti-germany.de/schema/nvto/isPhotoStudioOf">ist Fotostudio von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isPublisherOf"
-         title="http://lod.iti-germany.de/schema/nvto/isPublisherOf">ist Herausgeber*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isProvenanceOf"
-         title="http://lod.iti-germany.de/schema/nvto/isProvenanceOf">ist Herkunft von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isHomepageOf"
-         title="http://lod.iti-germany.de/schema/nvto/isHomepageOf">ist Homepage von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isAudiblyReferencedIn"
-         title="http://lod.iti-germany.de/schema/nvto/isAudiblyReferencedIn">ist hörbar referenziert in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isIllustratorOf"
-         title="http://lod.iti-germany.de/schema/nvto/isIllustratorOf">ist Illustrator*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isInformationCarrierOf"
-         title="http://lod.iti-germany.de/schema/nvto/isInformationCarrierOf">ist Informationsträger von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isStageManagerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isStageManagerOf">ist Inspizient*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isCinematographerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isCinematographerOf">ist Kameramann/Kamerafrau von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isComposerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isComposerOf">ist Komponist*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isConceptOriginatorOf"
-         title="http://lod.iti-germany.de/schema/nvto/isConceptOriginatorOf">ist Konzept Urheber*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isCostumeBuilder"
-         title="http://lod.iti-germany.de/schema/nvto/isCostumeBuilder">ist Kostümbauer*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isCostumeDesigner"
-         title="http://lod.iti-germany.de/schema/nvto/isCostumeDesigner">ist Kostümdesigner*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isArtisticDirectorOf"
-         title="http://lod.iti-germany.de/schema/nvto/isArtisticDirectorOf">ist künstlerische*r Leiter*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isLayouterOf"
-         title="http://lod.iti-germany.de/schema/nvto/isLayouterOf">ist Layouter*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isLightingDesignerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isLightingDesignerOf">ist Lichtgestalter*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isMaskBuilderOf"
-         title="http://lod.iti-germany.de/schema/nvto/isMaskBuilderOf">ist Maskenbauer*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isMaskDesignerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isMaskDesignerOf">ist Maskengestalter*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isMediumOf"
-         title="http://lod.iti-germany.de/schema/nvto/isMediumOf">ist Medium von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isMimeOf" title="http://lod.iti-germany.de/schema/nvto/isMimeOf">ist Mime/Mimin von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isContributorOf"
-         title="http://lod.iti-germany.de/schema/nvto/isContributorOf">ist Mitwirkende*r von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isMusicianOf"
-         title="http://lod.iti-germany.de/schema/nvto/isMusicianOf">ist Musiker*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isSeamsterOf"
-         title="http://lod.iti-germany.de/schema/nvto/isSeamsterOf">ist Näher*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isPlaceOfOccurrenceOf"
-         title="http://lod.iti-germany.de/schema/nvto/isPlaceOfOccurrenceOf">ist Ort von Ereignis</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isRelatedPlaceOf"
-         title="http://lod.iti-germany.de/schema/nvto/isRelatedPlaceOf">ist Ort, der in Verbindung steht mit</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isPantomimeOf"
-         title="http://lod.iti-germany.de/schema/nvto/isPantomimeOf">ist Pantomime/Pantomimin von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isProducerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isProducerOf">ist Produzent*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isProgrammeDirectorOf"
-         title="http://lod.iti-germany.de/schema/nvto/isProgrammeDirectorOf">ist Programmdirektor*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isPuppetBuilderOf"
-         title="http://lod.iti-germany.de/schema/nvto/isPuppetBuilderOf">ist Puppenbauer*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isPuppetDesignerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isPuppetDesignerOf">ist Puppengestalter*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isSourceOf"
-         title="http://lod.iti-germany.de/schema/nvto/isSourceOf">ist Quelle von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isRightsHolderOf"
-         title="http://lod.iti-germany.de/schema/nvto/isRightsHolderOf">ist Rechteinhaber von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isEditorOf"
-         title="http://lod.iti-germany.de/schema/nvto/isEditorOf">ist Redakteur*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isReferencedIn"
-         title="http://lod.iti-germany.de/schema/nvto/isReferencedIn">ist referenziert in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isAssistantDirectorOf"
-         title="http://lod.iti-germany.de/schema/nvto/isAssistantDirectorOf">ist Regieassistent*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isDirectorOf"
-         title="http://lod.iti-germany.de/schema/nvto/isDirectorOf">ist Regisseur*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isResidenceOf"
-         title="http://lod.iti-germany.de/schema/nvto/isResidenceOf">ist Residenz von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isActorOf" title="http://lod.iti-germany.de/schema/nvto/isActorOf">ist Schauspieler*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isCreatorOf"
-         title="http://lod.iti-germany.de/schema/nvto/isCreatorOf">ist Schöpfer*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isPrompterOf"
-         title="http://lod.iti-germany.de/schema/nvto/isPrompterOf">ist Souffleur/Souffleuse von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isSeasonOf"
-         title="http://lod.iti-germany.de/schema/nvto/isSeasonOf">ist Spielzeit von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isSpeakerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isSpeakerOf">ist Sprecher*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isSingerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isSingerOf">ist Sänger*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isTechnicianOf"
-         title="http://lod.iti-germany.de/schema/nvto/isTechnicianOf">ist Techniker*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isPartOf" title="http://lod.iti-germany.de/schema/nvto/isPartOf">ist Teil von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isParticipantOf"
-         title="http://lod.iti-germany.de/schema/nvto/isParticipantOf">ist Teilnehmer*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isTextuallyReferencedIn"
-         title="http://lod.iti-germany.de/schema/nvto/isTextuallyReferencedIn">ist textuell referenziert in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isSoundDesignerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isSoundDesignerOf">ist Tongestalter*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isRecordistOf"
-         title="http://lod.iti-germany.de/schema/nvto/isRecordistOf">ist Tonmeister*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isTypeOf" title="http://lod.iti-germany.de/schema/nvto/isTypeOf">ist Typ von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isDancerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isDancerOf">ist Tänzer*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isPlaceOfOriginOf"
-         title="http://lod.iti-germany.de/schema/nvto/isPlaceOfOriginOf">ist Ursprungsort von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isPublishingCompanyOf"
-         title="http://lod.iti-germany.de/schema/nvto/isPublishingCompanyOf">ist Verlag von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isPublishingPlaceOf"
-         title="http://lod.iti-germany.de/schema/nvto/isPublishingPlaceOf">ist Verlagsort von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isMediatorOf"
-         title="http://lod.iti-germany.de/schema/nvto/isMediatorOf">ist Vermittler*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isVideoDesignerOf"
-         title="http://lod.iti-germany.de/schema/nvto/isVideoDesignerOf">ist Videodesigner*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isVideoEditorOf"
-         title="http://lod.iti-germany.de/schema/nvto/isVideoEditorOf">ist Videoeditor*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isMakeUpArtistOf"
-         title="http://lod.iti-germany.de/schema/nvto/isMakeUpArtistOf">ist Visagist*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isVisuallyReferencedIn"
-         title="http://lod.iti-germany.de/schema/nvto/isVisuallyReferencedIn">ist visuell referenziert in</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isRelatedWebsiteOf"
-         title="http://lod.iti-germany.de/schema/nvto/isRelatedWebsiteOf">ist Website, die in Verbindung steht mit</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isTimeOfOccurrenceOf"
-         title="http://lod.iti-germany.de/schema/nvto/isTimeOfOccurrenceOf">ist Zeitpunkt des Ereignisses von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isTranslatorOf"
-         title="http://lod.iti-germany.de/schema/nvto/isTranslatorOf">ist Übersetzer*in von</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isSurtitleCreatorOf"
-         title="http://lod.iti-germany.de/schema/nvto/isSurtitleCreatorOf">ist Übertitel Schöpfer*in von</a>
-   </li>
-</ul><h4>Data Properties</h4><ul class="hlist">
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/beginsAtTime"
-         title="http://lod.iti-germany.de/schema/nvto/beginsAtTime">beginnt zu Zeitpunkt</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/endsAtTime"
-         title="http://lod.iti-germany.de/schema/nvto/endsAtTime">endet zu Zeitpunkt</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasAddress"
-         title="http://lod.iti-germany.de/schema/nvto/hasAddress">hat Adresse</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasDescription"
-         title="http://lod.iti-germany.de/schema/nvto/hasDescription">hat Beschreibung</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasLabeling"
-         title="http://lod.iti-germany.de/schema/nvto/hasLabeling">hat Beschriftung</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasLabelingBack"
-         title="http://lod.iti-germany.de/schema/nvto/hasLabelingBack">hat Beschriftung hinten</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasLabelingFront"
-         title="http://lod.iti-germany.de/schema/nvto/hasLabelingFront">hat Beschriftung vorn</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasDate" title="http://lod.iti-germany.de/schema/nvto/hasDate">hat Datum</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfFirstEdition"
-         title="http://lod.iti-germany.de/schema/nvto/hasDateOfFirstEdition">hat Datum von Erstausgabe</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfFirstLocalizedEdition"
-         title="http://lod.iti-germany.de/schema/nvto/hasDateOfFirstLocalizedEdition">hat Datum von übersetzter Erstausgabe</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate"
-         title="http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate">hat Dernierendatum</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasDimensions"
-         title="http://lod.iti-germany.de/schema/nvto/hasDimensions">hat Dimensionen</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate"
-         title="http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate">hat erstes Aufführungsdatum</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasFamilyName"
-         title="http://lod.iti-germany.de/schema/nvto/hasFamilyName">hat Familienname</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfBirth"
-         title="http://lod.iti-germany.de/schema/nvto/hasDateOfBirth">hat Geburtsdatum</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasTableOfContents"
-         title="http://lod.iti-germany.de/schema/nvto/hasTableOfContents">hat Inhaltsverzeichnis</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasName" title="http://lod.iti-germany.de/schema/nvto/hasName">hat Name</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasRights" title="http://lod.iti-germany.de/schema/nvto/hasRights">hat Rechte</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasLanguage"
-         title="http://lod.iti-germany.de/schema/nvto/hasLanguage">hat Sprache</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasTitle" title="http://lod.iti-germany.de/schema/nvto/hasTitle">hat Titel</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasDateOfDeath"
-         title="http://lod.iti-germany.de/schema/nvto/hasDateOfDeath">hat Todesdatum</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasExtent" title="http://lod.iti-germany.de/schema/nvto/hasExtent">hat Umfang</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasSubtitle"
-         title="http://lod.iti-germany.de/schema/nvto/hasSubtitle">hat Untertitel</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasFirstName"
-         title="http://lod.iti-germany.de/schema/nvto/hasFirstName">hat Vorname</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasCondition"
-         title="http://lod.iti-germany.de/schema/nvto/hasCondition">hat Zustand</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isIssuedAtTime"
-         title="http://lod.iti-germany.de/schema/nvto/isIssuedAtTime">wurde zu Zeitpunkt ausgegeben</a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/isCreatedAtTime"
-         title="http://lod.iti-germany.de/schema/nvto/isCreatedAtTime">wurde zu Zeitpunkt kreiert</a>
-   </li>
-</ul><h4>Annotation Properties</h4><ul class="hlist">
-   <li>
-      <a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract">
-         <span>abstract</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">
-         <span>contributor</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.w3.org/2004/02/skos/core#definiiton" title="http://www.w3.org/2004/02/skos/core#definiiton">
-         <span>definiiton</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition">
-         <span>definition</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.w3.org/2004/02/skos/core#example" title="http://www.w3.org/2004/02/skos/core#example">
-         <span>example</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasFormat" title="http://lod.iti-germany.de/schema/nvto/hasFormat">
-         <span>hat Format</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasProvenance"
-         title="http://lod.iti-germany.de/schema/nvto/hasProvenance">
-         <span>hat Herkunft</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasMedium" title="http://lod.iti-germany.de/schema/nvto/hasMedium">
-         <span>hat Medium</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasRightsHolder"
-         title="http://lod.iti-germany.de/schema/nvto/hasRightsHolder">
-         <span>hat Rechteinhaber</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasType" title="http://lod.iti-germany.de/schema/nvto/hasType">
-         <span>hat Typ</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher">
-         <span>publisher</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/dc/elements/1.1/rights" title="http://purl.org/dc/elements/1.1/rights">
-         <span>rights</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title">
-         <span>title</span>
-      </a>
-   </li>
-</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
-</div>
-  
-
-<!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">Ontologie für nonverbales Theater: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
-
-</div>
-   
-
-<!--CROSSREF SECTION-->
-   <div id="crossref"><h2 id="crossreference" class="list">Cross reference for Ontologie für nonverbales Theater classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="crossreference" class="list">Cross reference for Ontologie für nonverbales Theater classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Ontologie für nonverbales Theater.
 <div id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
@@ -1087,9 +78,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/Agent</p>
       <div class="comment">
-         <span class="markdown">Agens sind handlungsfähige Entitäten, in der Regel einzelne Personen oder Personengruppierungen. Diese Klasse dient auch als Oberklasse für genauer definierte Agens.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Agens wie Personen und Institutionen.</span>
       </div>
       <dl>
@@ -1134,9 +122,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation</p>
       <div class="comment">
-         <span class="markdown">Ein Performing Arts Aufführungsort ist in der Regel eine Spielstätte oder ein öffentlicher Platz. Generell kann jeder Ort, an dem aufgeführt wird, ein Aufführungsort (darstellende Künste) sein. Fiktive Orte von fiktiven Aufführungen sind nicht ausgeschlossen.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Diese Klasse umfasst Orte, die für darstellende Künste genutzt werden oder wurden.</span>
       </div>
       <dl>
@@ -1164,10 +149,7 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/DigitalObject</p>
       <div class="comment">
-         <span class="markdown">Diese Klasse umfasst sowohl digitale Repräsentationen von Inhalten von Physischen Objekten, als auch nativ digitale Objekte. Digitale Objekte können wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte sein.</span>
-      </div>
-      <div class="comment">
-         <span class="markdown">Diese Klasse umfasst alle digitalen Objekte.</span>
+         <span class="markdown">Die digitale Repräsentation des Inhalts eines Mediums. Digitaler Informationsträger.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -1194,9 +176,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/Event</p>
-      <div class="comment">
-         <span class="markdown">Ein Ereignis kann real oder fiktional sein, hat einen Start- und Endzeitpunkt und findet an einem Ort statt. Nicht alle Eigenschaften eines Ereignisses müssen bekannt sein. In der Regel wird diese Klasse für Ereignisse im Bereich der darstellenden Künste wie Aufführungen oder Workshops genutzt.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Ereignisse.</span>
       </div>
@@ -1234,9 +213,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/FestivalPlan</p>
       <div class="comment">
-         <span class="markdown">Ein Festivalplan ist das Kreative Konzept, das einem Festivalereignis oder einer Reihe von Festivalereignissen zugrunde liegt. Diese Klasse wird unter anderem dazu verwendet, die einzelnen Iterationen regelmäßig stattfindender Festivals im Bereich der darstellenden Künste unter einem Konzept zu sammeln.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Festivalpläne.</span>
       </div>
       <dl>
@@ -1264,9 +240,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/FilmProduction</p>
-      <div class="comment">
-         <span class="markdown">Eine Filmproduktion ist das Kreative Konzept, das einem Film zugrunde liegt. Eine Filmproduktion kann zum Beispiel durch ein Drehbuch, Kamera- oder Lichtanweisungen genauer beschrieben werden.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Filmproduktionen.</span>
       </div>
@@ -1296,9 +269,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PerformingArtsGroup</p>
       <div class="comment">
-         <span class="markdown">Eine Gruppe (darstellende Künste) besteht üblicherweise aus zwei oder mehr Personen.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Ensembles, Kompanien und ähnliche Gruppen im Bereich der darstellenden Künste.</span>
       </div>
       <dl>
@@ -1325,9 +295,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/InformationObject</p>
-      <div class="comment">
-         <span class="markdown">Ein Informationsobjekt ist ein immaterielles, beschreibbares Objekt, das in der Regel von einem oder mehreren Informationsträgern repräsentiert wird. Dasselbe Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer Kopie der Fotografie in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann mehere Informationsobjekte tragen (z.B. mehrere Videos auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans).</span>
-      </div>
       <div class="comment">
          <span class="markdown">"Diese Klasse umfasst alle Informationsobjekte.</span>
       </div>
@@ -1358,9 +325,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/CreativeConcept</p>
-      <div class="comment">
-         <span class="markdown">Diese Klasse dient als Oberklasse für genauer definierte Kreative Konzepte, wie Filmproduktionen oder Produktionen der darstellenden Künste.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Kreativen Konzepte.</span>
       </div>
@@ -1394,9 +358,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/Country</p>
       <div class="comment">
-         <span class="markdown">Länder können reale Orte sein, die existiert haben oder existieren. Auch fiktive Länder sind möglich.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Diese Klasse umfasst Länder abhängig von Zeit und/oder Geopolitik.</span>
       </div>
       <dl>
@@ -1423,9 +384,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/Place</p>
-      <div class="comment">
-         <span class="markdown">Orte können existieren oder existiert haben. Fiktive Orte sind nicht ausgeschlossen.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Orte.</span>
       </div>
@@ -1498,9 +456,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PhysicalObject</p>
       <div class="comment">
-         <span class="markdown">Alle materiellen Objekte mit physischen Ausmaßen sind Physische Objekte. Wie Digitale Objekte können auch Physische Objekte Informationsträger von Informationsobjekten sein. Typische physische Informationsträger sind Videokassetten, analoge Fotografien oder Programmhefte.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Physischen Objekte.</span>
       </div>
       <dl>
@@ -1528,9 +483,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction</p>
-      <div class="comment">
-         <span class="markdown">Eine Produktion (darstellende Künste) ist das Kreative Konzept, das einer Aufführung oder einer Reihe von Aufführungen im Bereich der darstellenden Künste zugrunde liegt. Eine Produktion (darstellende Künste) muss nicht zwangsläufig aufgeführt werden. Eine Produktion (darstellende Künste) kann zum Beispiel von Manuskripten oder Regieanweisungen genauer beschrieben werden.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Diese Klasse umfasst Produktionen der darstellenden Künste.</span>
       </div>
@@ -1580,9 +532,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/Collection</p>
       <div class="comment">
-         <span class="markdown">Eine Sammlung ist eine von einer Institution oder Person stammende oder zusammengestellte Menge an physischen und/oder digitalen Objekten, sowie deren beschreibende Datensätze. Sammlungen können zu einem Thema oder einem Ereignis angelegt sein oder ganze Archivbestände abdecken.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Diese Klasse umfasst (benannte) Sammlungen von Ressourcen in willkürlicher Reihenfolge.</span>
       </div>
       <dl>
@@ -1603,9 +552,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/Series</p>
       <div class="comment">
-         <span class="markdown">Eine Serie ist ein geordnetes Set von Objekten. Mit einer Serie können zum Beispiel Fotografien von Bewegungsabläufen oder die Dokumentation zur Entwicklung einer Produktion in eine chronologische oder anderweitig beabsichtigte Reihenfolge gebracht werden.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Serien.</span>
       </div>
       <dl>
@@ -1625,9 +571,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/City</p>
-      <div class="comment">
-         <span class="markdown">Städte können reale Orte sein, die existiert haben oder existieren. Auch fiktive Städte sind möglich.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Diese Klasse umfasst Städte abhängig von Zeit und/oder Geopolitik.</span>
       </div>
@@ -1655,9 +598,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/TimeSpan</p>
-      <div class="comment">
-         <span class="markdown">Eine Zeitspanne ist ein zeitliches Ausmaß mit Startzeitpunkt, Endzeitpunkt und Dauer. Eine Zeitspanne kann sich auf Entitäten wie Informationsobjekte und Ereignisse beziehen. Eine Zeitspanne ist in ihrer Dauer unbeschränkt. Nicht alle Eigenschaften einer Zeitspanne müssen bekannt sein, um sie zu beschreiben.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Zeitspannen.</span>
       </div>
@@ -1896,9 +836,6 @@ This section provides details for each class and property defined by Ontologie f
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner"
             title="http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner">hat Puppengestalter*in</a>
-      </li>
-      <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasSource" title="http://lod.iti-germany.de/schema/nvto/hasSource">hat Quelle</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasEditor" title="http://lod.iti-germany.de/schema/nvto/hasEditor">hat Redakteur*in</a>
@@ -2387,9 +1324,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasTimeOfOccurrence</p>
       <div class="comment">
-         <span class="markdown">Zeitspanne erklären?</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet ein Ereignis mit der Zeitspanne, in der es sich ereignet.</span>
       </div>
       <dl>
@@ -2430,9 +1364,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasAdaptor</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einem Text, einer Produktion, einer Aufführung oder einer anderen Ressource als (Text-)Bearbeiter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel in Form einer Adaptation eines literarischen Werkes in ein Drama oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als (Text-)Bearbeiter*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -2469,9 +1400,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasAcrobat</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Akrobat*in beschrieben. </span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Akrobat*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -2507,9 +1435,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo</p>
-      <div class="comment">
-         <span class="markdown">Eine audiovisuelle Referenz beschreibt in der Regel die hör- und/oder sichtbare Erwähnung oder Erfassung einer Ressource von einem Informationsobjekt. Diese Eigenschaft kann genutzt werden, wenn die Differenzierung zwischen hörbarer und sichtbarer Referenz nicht gegeben oder als notwendig erachtet ist. Eine audiovisuelle Referenz ist eine spezielle Form der Referenz.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine audiovisuelle Referenz enthält.</span>
       </div>
@@ -2554,9 +1479,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasRecordingOf</p>
-      <div class="comment">
-         <span class="markdown">Diese Eigenschaft ist eine Form von Referenz, die speziell die Aufnahme eines Ereignisses von einem Informationsobjekt beschreibt.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet ein Informationsobjekt mit einem Ereignis, von dem es eine Aufnahme enthält.</span>
       </div>
@@ -2605,9 +1527,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasAuthor</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einem Text, einer Produktion, einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Autor*in eines literarischen Werkes oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Autor*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -2644,9 +1563,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasIdentifier</p>
       <div class="comment">
-         <span class="markdown">Ein Bezeichner kann von lokaler oder globaler Eindeutigkeit sein. Sowohl Literale als auch Weblinks sind erlaubt.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Beschreibt einen lokalen oder globalen Bezeichner einer Ressource.</span>
       </div>
       <dl>
@@ -2682,9 +1598,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasRelatedPlace</p>
-      <div class="comment">
-         <span class="markdown">Wenn genauere Angaben der Beziehung zwischen Ressource und Ort bekannt sind, sollte eine der Untereigenschaften dieser Eigenschaft genutzt werden.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Ort, mit dem sie in Verbindung steht.</span>
       </div>
@@ -2769,9 +1682,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasSetBuilder</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einem Bühnenbild, einer Produktion oder einer anderen Ressource als Bühnenbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Bühnenbauer*in eines Bühnenbilds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Bühnenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung eines Kostüms als auf dessen Gestaltung.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Bühnenbauer*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -2807,9 +1717,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasSetDesigner</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einem Bühnenbild, einer Produktion oder einer anderen Ressource als Bühnenbildner*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Bühnenbildner*in eines Bühnenbilds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Bühnenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Bühnenbildner*in mitgewirkt hat.</span>
       </div>
@@ -2847,9 +1754,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasChoreographer</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Choreograf*in beschrieben.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Choreograf*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -2886,9 +1790,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasClown</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Clown*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -2923,9 +1824,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPerformer</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Darsteller*in beschrieben. Diese Eigenschaft kann als allgemeine Eigenschaft für die Mitwirkung eines Agens in jeglicher darstellerischen Form genutzt werden, wenn keine genaueren Angaben bekannt sind.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Darsteller*in mitgewirkt hat.</span>
       </div>
@@ -3005,9 +1903,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPlaywright</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Dramatiker*in  beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Verfasser*in eines dramatischen Texts oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Dramatiker*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -3043,9 +1938,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasDramaturge</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung, einem Text oder einer anderen Ressource als Dramaturg*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Bearbeiter*in eines dramatischen Texts oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Dramaturg*in mitgewirkt hat.</span>
       </div>
@@ -3083,9 +1975,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasInfluenceOn</p>
       <div class="comment">
-         <span class="markdown">Diese Eigenschaft beschreibt die Beeinflussung im weiteren Sinne einer Ressource auf eine andere Ressource. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form des referenziert werdens.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, die sie beeinflusst hat.</span>
       </div>
       <dl>
@@ -3121,9 +2010,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceVersion</p>
-      <div class="comment">
-         <span class="markdown">Eine Erstaufführungsversion ist eine originale, zum ersten Mal aufgeführte Produktion (darstellende Künste).</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Produktion (darstellende Künste) mit ihrer Erstaufführungsversion.</span>
       </div>
@@ -3167,9 +2053,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPhotographer</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Fotografie, einer Produktion oder einer anderen Ressource als Fotograf*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Fotograf*in einer Fotografie oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Fotograf*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -3206,9 +2089,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPhotoStudio</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Fotografie, einer Produktion oder einer anderen Ressource als Fotostudio  beschrieben</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Fotostudio, dass bei ihrer Kreierung beigetragen hat.</span>
       </div>
       <dl>
@@ -3239,9 +2119,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasContentMatch</p>
       <div class="comment">
-         <span class="markdown">Eine behelfsmäßige Eigenschaft zur Verbindung einer Ressource mit einer anderen Ressource mit teilweise oder vollständig gleichem Inhalt.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource mit gleichem Inhalt.</span>
       </div>
       <dl>
@@ -3261,9 +2138,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPublisher</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Zeitung, einer Produktion oder einer anderen Ressource als Herausgeber*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Herausgeber*in einer Zeitung oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Connects a resource to an Agent that contributed to the resource as publisher.</span>
       </div>
@@ -3337,9 +2211,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo</p>
       <div class="comment">
-         <span class="markdown">Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource von einem Informationsobjekt. Eine hörbare Referenz ist eine spezielle Form der Referenz.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält.</span>
       </div>
       <dl>
@@ -3375,9 +2246,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasIllustrator</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Illustrator*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Herausgeber*in einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Illustrator*in mitgewirkt hat.</span>
       </div>
@@ -3415,9 +2283,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasInformationCarrier</p>
       <div class="comment">
-         <span class="markdown">Ein Informationsträger ist eine Entität, die ein Informationsobjekt repräsentiert. Ein Informationsobjekt kann von mehreren Informationsträgern repräsentiert werden, zum Beispiel die gleiche Aufnahme einer Aufführung auf einer Videokassette und als Digitales Objekt auf einem USB-Stick. Auf einem Informationsträger können mehrere Informationsobjekte repräsentiert werden, zum Beispiel mehrere Aufnahmen von verschiedenen Aufführungen auf einer Videokassette.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Connects an information object with a physical or digital object it is represented on.</span>
       </div>
       <dl>
@@ -3453,9 +2318,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasStageManager</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Inspizient*in beschrieben.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Inspizient*in mitgewirkt hat.</span>
       </div>
@@ -3533,9 +2395,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasCinematographer</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Kameramann/Kamerafrau beschrieben.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Kameramann/Kamerafrau mitgewirkt hat.</span>
       </div>
       <dl>
@@ -3571,9 +2430,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasComposer</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Komponist*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Komponist*in eines musikalischen Werks oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Komponist*in mitgewirkt hat.</span>
       </div>
@@ -3611,9 +2467,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasConceptOriginator</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Konzept Urheber*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Konzept Urheber*in einer textuellen Grundlage einer Produktion oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Konzept Urheber*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -3649,9 +2502,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasCostumeBuilder</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einem Kostüm, einer Produktion oder einer anderen Ressource als Kostümbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Kostümbauer*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Kostümdesigner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung eines Kostüms als auf dessen Gestaltung.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Kostümbauer*in mitgewirkt hat.</span>
       </div>
@@ -3689,9 +2539,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasCostumeDesigner</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einem Kostüm, einer Produktion oder einer anderen Ressource als Kostümgestalter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Kostümgestalter*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Kostümbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Kostümdesigner*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -3727,9 +2574,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasArtisticDirector</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Festivalplan, einer Aufführung oder einer anderen Ressource als künstlerische*r Leiter*in beschrieben. Eine Mitwirkung kann zum Beispiel in Form der Leitung des künstlerischen Gesamtkonzepts eines Festivalplans oder einer einzelnen Performing Arts Aufführung erfolgen.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als künstlerische*r Leiter*in mitgewirkt hat.</span>
       </div>
@@ -3767,9 +2611,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasLayouter</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Publikation oder einer anderen Ressource als Layouter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Gestalter*in des Layouts einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Layouter*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -3805,9 +2646,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasLightingDesigner</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Lichtgestalter*in beschrieben.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Lichtgestalter*in mitgewirkt hat.</span>
       </div>
@@ -3845,9 +2683,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasMaskBuilder</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Maske, einer Produktion oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Maskenbauer*in einer Maske oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Maskengestalter*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Maskenbauer*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -3883,9 +2718,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasMaskDesigner</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Maske, einer Produktion oder einer anderen Ressource als Maskengestalter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Maskengestalter*in einer Maske oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Maske als auf deren Fertigung.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Maskengestalter*in mitgewirkt hat.</span>
       </div>
@@ -3948,9 +2780,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasMime</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Mime/Mimin beschrieben.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Mime/Mimin mitgewirkt hat.</span>
       </div>
       <dl>
@@ -3985,9 +2814,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasContributor</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Informationsobjekt oder einer anderen Ressource als Mitwirkende*n beschrieben. Es können pro Ressource mehrere Agens als Mitwirkende beteiligt sein. Wenn genauere Angaben der Beziehung zwischen Ressource und Mitwirkender/Mitwirkendem bekannt sind, sollte eine der Untereigenschaften dieser Eigenschaft genutzt werden.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der an der Ressource mitgewirkt hat.</span>
       </div>
@@ -4119,9 +2945,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasMusician</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Musiker*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Musiker*in für ein musikalisches Werk oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Musiker*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -4158,7 +2981,7 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasSuccessor</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">Invers von 'hat Vorgänger'.</span>
       </div>
       <div class="comment">
          <span class="markdown">Beschreibt den Nachfolger oder verbindet mit dem Nachfolger einer Ressource.</span>
@@ -4190,9 +3013,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasSeamster</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Kostüm oder einer anderen Ressource als Näher*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Näher*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Näher*in mitgewirkt hat.</span>
       </div>
@@ -4230,9 +3050,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPantomime</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Pantomime/Pantomimin beschrieben.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Pantomime/Pantomimin mitgewirkt hat.</span>
       </div>
       <dl>
@@ -4268,9 +3085,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasProducer</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Film oder einer anderen Ressource als Produzent*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Produzent*in eines Films oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Produzent*in mitgewirkt hat.</span>
       </div>
@@ -4308,9 +3122,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasProgrammeDirector</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Programmdirektor*in beschrieben.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der durch Kuration oder Leitung des Programmes bei einem Festival mitgewirkt hat.</span>
       </div>
       <dl>
@@ -4346,9 +3157,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPuppetBuilder</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Puppe, einer Produktion oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Puppenbauer*in einer Puppe oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Puppengestalter*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Puppenbauer*in mitgewirkt hat.</span>
       </div>
@@ -4386,9 +3194,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPuppetDesigner</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Puppe, einer Produktion oder einer anderen Ressource als Puppengestalter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Puppengestalter*in einer Puppe oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Puppengestalter*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Puppe als auf deren Fertigung.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Puppengestalter*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -4417,39 +3222,6 @@ This section provides details for each class and property defined by Ontologie f
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasSource">
-      <h3>hat Quelle<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasSource</p>
-      <div class="comment">
-         <span class="markdown">Diese Eigenschaft beschreibt, aus welcher Quelle ein Datensatz oder Teile eines Datensatzes stammen. Sowohl Literale als auch Weblinks sind erlaubt.</span>
-      </div>
-      <div class="comment">
-         <span class="markdown">Beschreibt oder verbindet mit der Quelle einer Ressource.</span>
-      </div>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <pre/>
-         </dd>
-         <dd>
-            <pre/>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isSourceOf"
-                  title="http://lod.iti-germany.de/schema/nvto/isSourceOf">ist Quelle von</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasEditor">
       <h3>hat Redakteur*in<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -4457,9 +3229,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasEditor</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Text oder einer anderen Ressource als Redakteur*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Herausgeber*in einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Redakteur*in mitgewirkt hat.</span>
       </div>
@@ -4496,9 +3265,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasReferenceTo</p>
-      <div class="comment">
-         <span class="markdown">Eine Referenz beschreibt in der Regel die Erfassung oder Erwähnung einer Ressource von einem Informationsobjekt, einem Kreativen Konzept oder anderer Ressourcen. Eine Referenz zu einer Ressource kann zum Beispiel Teil einer Aufnahme der Ressource oder der Beschriftung eines Informationsträgers sein. Wenn die Art der Referenz gegeben ist, sollte eine der Untereigenschaften dieser Eigenschaft verwendet werden.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine Referenz enthält.</span>
       </div>
@@ -4542,9 +3308,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasAssistantDirector</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Regieassistent*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -4580,9 +3343,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasDirector</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Regisseur*in eines Spielfilms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Regisseur*in mitgewirkt hat.</span>
       </div>
@@ -4666,9 +3426,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasActor</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Schauspieler*in beschrieben.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Schauspieler*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -4703,9 +3460,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasCreator</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Informationsobjekt oder einer anderen Ressource als Schöpfer*in beschrieben. Es können pro Ressource mehrere Agens als Schöpfer*in beteiligt sein. Aussagen über die Form der schöpferischen Tätigkeit des Agens können mit entsprechenden Eigenschaften parallel zu dieser getroffen werden.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Schöpfer*in mitgewirkt hat.</span>
       </div>
@@ -4743,9 +3497,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPrompter</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Souffleur/Souffleuse beschrieben.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Souffleur/Souffleuse mitgewirkt hat.</span>
       </div>
       <dl>
@@ -4782,9 +3533,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasSeason</p>
       <div class="comment">
-         <span class="markdown">Spielzeit erklären oder klar?</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Produktion der darstellenden Künste mit der Spielzeit, in der die Produktion aufgeführt wird oder wurde.</span>
       </div>
       <dl>
@@ -4819,9 +3567,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasSpeaker</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung, einem Film oder einer anderen Ressource als Sprecher*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Sprecher*in für einen Film oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Sprecher*in mitgewirkt hat.</span>
       </div>
@@ -4859,9 +3604,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasSinger</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Lied, einer Aufführung oder einer anderen Ressource als Sänger*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Sänger*in eines Lieds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Sänger*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -4891,9 +3633,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasTechnician</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Techniker*in beschrieben.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Techniker*in mitgewirkt hat.</span>
       </div>
@@ -4931,9 +3670,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPart</p>
       <div class="comment">
-         <span class="markdown">Eine Teilbeziehung kann zwischen verschiedenen Arten von Ressourcen bestehen und muss nicht von physischer Natur sein. Ein Informationsobjekt kann zum Beispiel Teil eines physischen Objekts oder eines anderen Informationsobjekts sein, eine Aufführung kann Teil eines Festivals sein.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, die ein Teil von ihr ist.</span>
       </div>
       <dl>
@@ -4964,9 +3700,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasParticipant</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einem Festival, einem Workshop oder einer anderen Ressource als Teilnehmer*in beschrieben. Teilnehmer*innen können zum Beispiel Teilnehmer*innen in einem Workshop oder an einem Vortrag sein.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Teilnehmer*in mitgewirkt hat.</span>
       </div>
@@ -5004,9 +3737,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasTextualReferenceTo</p>
       <div class="comment">
-         <span class="markdown">Eine textuelle Referenz beschreibt in der Regel die schriftliche Erwähnung einer Ressource von einem Informationsobjekt, einem Kreativen Konzept oder anderer Ressourcen. Textuelle Referenzen zu Ressourcen kommen zum Beispiel in Programmheften, Literatur oder in der Beschriftung eines Informationsträgers vor. Eine textuelle Referenz ist eine spezielle Form der Referenz.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine textuelle Referenz enthält.</span>
       </div>
       <dl>
@@ -5042,9 +3772,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasSoundDesigner</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Tongestalter*in beschrieben.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Tongestalter*in mitgewirkt hat.</span>
       </div>
@@ -5082,9 +3809,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasRecordist</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Tonmeister*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Tonmeister*in einer Audioaufnahme oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Tonmeister*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -5121,9 +3845,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasDancer</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Tänzer*in beschrieben.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Tänzer*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -5159,9 +3880,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPlaceOfOrigin</p>
-      <div class="comment">
-         <span class="markdown"/>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit dem Ort, an dem sie ihren Ursprung hat.</span>
       </div>
@@ -5203,9 +3921,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPublishingCompany</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einem Buch, einer Produktion oder einer anderen Ressource als Verlag beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Verfasser*in eines Buchs oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Connects a resource to an Agent that operated as publishing company for the resource.</span>
       </div>
@@ -5284,9 +3999,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasMediator</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einem Festival, einem Workshop oder einer anderen Ressource als Vermittler*in beschrieben. Vermittler*innen können zum Beispiel Lehrer in einem Workshop oder Dozenten eines Vortrags sein.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Vermittler*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -5316,9 +4028,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasVideoDesigner</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung, einem Video oder einer anderen Ressource als Videodesigner*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Designer*in für ein Video als Teil eines Bühnenbilds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Videodesigner*in mitgewirkt hat.</span>
       </div>
@@ -5356,9 +4065,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasVideoEditor</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung, einem Video oder einer anderen Ressource als Videoeditor*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Editor*in für ein Video oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Videoeditor*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -5394,9 +4100,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasMakeUpArtist</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Visagist*in beschrieben.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Visagist*in mitgewirkt hat.</span>
       </div>
@@ -5434,9 +4137,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasVisualReferenceTo</p>
       <div class="comment">
-         <span class="markdown">Eine visuelle Referenz beschreibt in der Regel die sichtbare Erfassung einer Ressource von einem Informationsobjekt, zum Beispiel auf einer Fotografie. Eine visuelle Referenz ist eine spezielle Form der Referenz.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine visuelle Referenz enthält.</span>
       </div>
       <dl>
@@ -5473,9 +4173,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPredecessor</p>
       <div class="comment">
-         <span class="markdown"/>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Vorgänger dieser Ressource.</span>
       </div>
       <dl>
@@ -5507,9 +4204,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasRestagedVersion</p>
-      <div class="comment">
-         <span class="markdown">Erklären, was Wiederaufnahme ist oder klar?</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Produktion der darstellenden Künste mit ihrer Wiederaufnahme.</span>
       </div>
@@ -5547,9 +4241,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasTranslator</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einem Text, einer Produktion, einer Aufführung oder einer anderen Ressource als Übersetzer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Übersetzer*in für einen Text oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Übersetzer*in mitgewirkt hat.</span>
       </div>
       <dl>
@@ -5585,9 +4276,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasSurtitleCreator</p>
-      <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung, einem Übertitel oder einer anderen Ressource als Übertitel Schöpfer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Schöpfer*in eines Übertitels oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einem Agens, der als Übertitel Schöpfer*in mitgewirkt hat.</span>
       </div>
@@ -6985,7 +5673,7 @@ This section provides details for each class and property defined by Ontologie f
          <dl>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasSource" title="http://lod.iti-germany.de/schema/nvto/hasSource">hat Quelle</a>
+               <span class="dotted" title="http://lod.iti-germany.de/schema/nvto/hasSource">hat Quelle</span>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -7926,9 +6614,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/beginsAtTime</p>
       <div class="comment">
-         <span class="markdown">Das Datum sollte nach ISO XY angegeben werden.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Beschreibt den Startzeitpunkt einer Zeitspanne.</span>
       </div>
       <dl>
@@ -7963,9 +6648,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/endsAtTime</p>
       <div class="comment">
-         <span class="markdown">Das Datum sollte nach ISO XY angegeben werden.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Beschreibt den Endzeitpunkt einer Zeitspanne.</span>
       </div>
       <dl>
@@ -7999,9 +6681,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasAddress</p>
-      <div class="comment">
-         <span class="markdown">Addressen sollten in Form X geschrieben sein.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Beschreibt die Adresse einer Ressource.</span>
       </div>
@@ -8145,9 +6824,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasDate</p>
       <div class="comment">
-         <span class="markdown">Das Datum sollte nach ISO XY angegeben werden. Wenn genauere Zeiträume bekannt sind, sollten Zeitspannen genutzt werden.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Beschreibt einen einzelnen Zeitpunkt.</span>
       </div>
       <dl>
@@ -8252,9 +6928,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasLastPerformanceDate</p>
       <div class="comment">
-         <span class="markdown">Eine behelfsmäßige Eigenschaft zur Beschreibung des letzten Aufführungsdatums einer Produktion der darstellenden Künste bei nicht ausreichender Beschreibung der zugehörigen Aufführungen.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Beschreibt das letzte Aufführungsdatum einer Produktion der darstellenden Künste.</span>
       </div>
       <dl>
@@ -8310,9 +6983,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasFirstPerformanceDate</p>
       <div class="comment">
-         <span class="markdown">Eine behelfsmäßige Eigenschaft zur Beschreibung des ersten Aufführungsdatums einer Produktion der darstellenden Künste bei nicht ausreichender Beschreibung der zugehörigen Aufführungen.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Beschreibt das erste Aufführungsdatum einer Produktion der darstellenden Künste.</span>
       </div>
       <dl>
@@ -8367,9 +7037,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasDateOfBirth</p>
-      <div class="comment">
-         <span class="markdown">Das Datum sollte nach ISO XY angegeben werden.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Beschreibt das Geburtsdatum eines Agens.</span>
       </div>
@@ -8484,9 +7151,6 @@ This section provides details for each class and property defined by Ontologie f
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasLanguage</p>
       <div class="comment">
-         <span class="markdown">Sprachen sollten nach BCP 47 angegeben werden.</span>
-      </div>
-      <div class="comment">
          <span class="markdown">Beschreibt die Sprache, die einer Ressource zugeordnet ist.</span>
       </div>
       <dl>
@@ -8526,9 +7190,6 @@ This section provides details for each class and property defined by Ontologie f
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasDateOfDeath</p>
-      <div class="comment">
-         <span class="markdown">Das Datum sollte nach ISO XY angegeben werden.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Beschreibt das Todesdatum eines Agens.</span>
       </div>
@@ -8694,242 +7355,6 @@ This section provides details for each class and property defined by Ontologie f
          </dl>
       </div>
    </div>
-</div><div id="annotationproperties">
-   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract">
-            <span>abstract</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">
-            <span>contributor</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.w3.org/2004/02/skos/core#definiiton" title="http://www.w3.org/2004/02/skos/core#definiiton">
-            <span>definiiton</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition">
-            <span>definition</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.w3.org/2004/02/skos/core#example" title="http://www.w3.org/2004/02/skos/core#example">
-            <span>example</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasFormat" title="http://lod.iti-germany.de/schema/nvto/hasFormat">
-            <span>hat Format</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasProvenance"
-            title="http://lod.iti-germany.de/schema/nvto/hasProvenance">
-            <span>hat Herkunft</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasMedium" title="http://lod.iti-germany.de/schema/nvto/hasMedium">
-            <span>hat Medium</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasRightsHolder"
-            title="http://lod.iti-germany.de/schema/nvto/hasRightsHolder">
-            <span>hat Rechteinhaber</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasType" title="http://lod.iti-germany.de/schema/nvto/hasType">
-            <span>hat Typ</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher">
-            <span>publisher</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/elements/1.1/rights" title="http://purl.org/dc/elements/1.1/rights">
-            <span>rights</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title">
-            <span>title</span>
-         </a>
-      </li>
-   </ul>
-   <div class="entity" id="http://purl.org/dc/terms/abstract">
-      <h3>abstract<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/abstract</p>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/contributor">
-      <h3>contributor<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/contributor</p>
-   </div>
-   <div class="entity" id="http://www.w3.org/2004/02/skos/core#definiiton">
-      <h3>definiiton<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#definiiton</p>
-   </div>
-   <div class="entity" id="http://www.w3.org/2004/02/skos/core#definition">
-      <h3>definition<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#definition</p>
-   </div>
-   <div class="entity" id="http://www.w3.org/2004/02/skos/core#example">
-      <h3>example<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#example</p>
-   </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasFormat">
-      <h3>hat Format<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasFormat</p>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isFormatOf"
-                  title="http://lod.iti-germany.de/schema/nvto/isFormatOf">ist Format von</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>object property</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasProvenance">
-      <h3>hat Herkunft<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasProvenance</p>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isProvenanceOf"
-                  title="http://lod.iti-germany.de/schema/nvto/isProvenanceOf">ist Herkunft von</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>object property</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasMedium">
-      <h3>hat Medium<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasMedium</p>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isMediumOf"
-                  title="http://lod.iti-germany.de/schema/nvto/isMediumOf">ist Medium von</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/hasMedium">object property</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasRightsHolder">
-      <h3>hat Rechteinhaber<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasRightsHolder</p>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isRightsHolderOf"
-                  title="http://lod.iti-germany.de/schema/nvto/isRightsHolderOf">ist Rechteinhaber von</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>object property</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasType">
-      <h3>hat Typ<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasType</p>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isTypeOf" title="http://lod.iti-germany.de/schema/nvto/isTypeOf">ist Typ von</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>object property</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/publisher">
-      <h3>publisher<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/publisher</p>
-   </div>
-   <div class="entity" id="http://purl.org/dc/elements/1.1/rights">
-      <h3>rights<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/rights</p>
-   </div>
-   <div class="entity" id="http://purl.org/dc/elements/1.1/title">
-      <h3>title<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/title</p>
-   </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
@@ -8939,23 +7364,3 @@ This section provides details for each class and property defined by Ontologie f
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>
-</div>
-    
-
-<!--REFERENCES SECTION-->
-  <div id="references">
-<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
-
-</div>
-<div id="acknowledgements">
-<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<p>
-The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
-</div>
-
-
-</div>
-</body>
-</html>

@@ -41,10 +41,6 @@
 <http://lod.iti-germany.de/schema/nvto/hasRightsHolder> rdf:type owl:AnnotationProperty .
 
 
-###  http://lod.iti-germany.de/schema/nvto/hasSource
-<http://lod.iti-germany.de/schema/nvto/hasSource> rdf:type owl:AnnotationProperty .
-
-
 ###  http://lod.iti-germany.de/schema/nvto/hasType
 <http://lod.iti-germany.de/schema/nvto/hasType> rdf:type owl:AnnotationProperty .
 
@@ -271,7 +267,7 @@
 <http://lod.iti-germany.de/schema/nvto/hasContributor> rdf:type owl:ObjectProperty ;
                                                        rdfs:range <http://lod.iti-germany.de/schema/nvto/Agent> ;
                                                        rdfs:comment ""@en ,
-                                                                    "Ausmaß Mitwirkung unbeschränkt, schöpferische Tätigkeit, lose Beteiligung, auch genaue Form der Mitwirkung nicht festgelegt."@de ;
+                                                                    "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Informationsobjekt oder einer anderen Ressource als Mitwirkende*n beschrieben. Es können pro Ressource mehrere Agens als Mitwirkende beteiligt sein. Wenn genauere Angaben der Beziehung zwischen Ressource und Mitwirkender/Mitwirkendem bekannt sind, sollte eine der Untereigenschaften dieser Eigenschaft genutzt werden."@de ;
                                                        rdfs:label "has contributor"@en ,
                                                                   "hat Mitwirkende*n"@de ;
                                                        <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource."@en ,
@@ -310,7 +306,7 @@
 <http://lod.iti-germany.de/schema/nvto/hasCreator> rdf:type owl:ObjectProperty ;
                                                    rdfs:subPropertyOf <http://lod.iti-germany.de/schema/nvto/hasContributor> ;
                                                    rdfs:comment ""@en ,
-                                                                "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, eines Informationsobjekts oder einer anderen Ressource als Schöpfer*in beschrieben. Es können pro Ressource mehrere Agens als Schöpfer*in beteiligt sein. Aussagen über die Form der schöpferischen Tätigkeit des Agens können mit entsprechenden Eigenschaften parallel zu dieser getroffen werden."@de ;
+                                                                "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Informationsobjekt oder einer anderen Ressource als Schöpfer*in beschrieben. Es können pro Ressource mehrere Agens als Schöpfer*in beteiligt sein. Aussagen über die Form der schöpferischen Tätigkeit des Agens können mit entsprechenden Eigenschaften parallel zu dieser getroffen werden."@de ;
                                                    rdfs:label "has creator"@en ,
                                                               "hat Schöpfer*in"@de ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as creator."@en ,
@@ -348,7 +344,7 @@
 <http://lod.iti-germany.de/schema/nvto/hasDirector> rdf:type owl:ObjectProperty ;
                                                     rdfs:subPropertyOf <http://lod.iti-germany.de/schema/nvto/hasContributor> ;
                                                     rdfs:comment ""@en ,
-                                                                 "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, eines, Films, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Regisseur*in eines Spielfilms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de ;
+                                                                 "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Regisseur*in eines Spielfilms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de ;
                                                     rdfs:label "has director"@en ,
                                                                "hat Regisseur*in"@de ;
                                                     <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as director."@en ,
@@ -415,7 +411,7 @@
 ###  http://lod.iti-germany.de/schema/nvto/hasIdentifier
 <http://lod.iti-germany.de/schema/nvto/hasIdentifier> rdf:type owl:ObjectProperty ;
                                                       rdfs:comment ""@en ,
-                                                                   "Ein Bezeichner kann von lokaler oder globaler Eindeutigkeit sein. Sowohl Literale als auch Links sind erlaubt."@de ;
+                                                                   "Ein Bezeichner kann von lokaler oder globaler Eindeutigkeit sein. Sowohl Literale als auch Weblinks sind erlaubt."@de ;
                                                       rdfs:label "has identifier"@en ,
                                                                  "hat Bezeichner"@de ;
                                                       <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt einen lokalen oder globalen Bezeichner einer Ressource."@de ,
@@ -624,7 +620,7 @@
 <http://lod.iti-germany.de/schema/nvto/hasPerformer> rdf:type owl:ObjectProperty ;
                                                      rdfs:subPropertyOf <http://lod.iti-germany.de/schema/nvto/hasContributor> ;
                                                      rdfs:comment ""@en ,
-                                                                  "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Darsteller*in beschrieben. Diese Eigenschaft kann als allgemeine Eigenschaft für die Mitwirkung eines Agens in jeglicher darstellerischen Form genutzt werden, wenn keine genaueren Angaben vorhanden sind."@de ;
+                                                                  "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung oder einer anderen Ressource als Darsteller*in beschrieben. Diese Eigenschaft kann als allgemeine Eigenschaft für die Mitwirkung eines Agens in jeglicher darstellerischen Form genutzt werden, wenn keine genaueren Angaben bekannt sind."@de ;
                                                      rdfs:label "has performer"@en ,
                                                                 "hat Darsteller*in"@de ;
                                                      <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as performer."@en ,
@@ -663,8 +659,6 @@
                                                              rdfs:subPropertyOf <http://lod.iti-germany.de/schema/nvto/hasRelatedPlace> ;
                                                              rdfs:domain <http://lod.iti-germany.de/schema/nvto/Event> ;
                                                              rdfs:range <http://lod.iti-germany.de/schema/nvto/Place> ;
-                                                             rdfs:comment ""@de ,
-                                                                          ""@en ;
                                                              rdfs:label "ereignet sich an Ort"@de ,
                                                                         "has place of occurrence"@en ;
                                                              <http://www.w3.org/2004/02/skos/core#definition> "Connects an event to the place it happened at."@en ,
@@ -717,7 +711,7 @@
 <http://lod.iti-germany.de/schema/nvto/hasProducer> rdf:type owl:ObjectProperty ;
                                                     rdfs:subPropertyOf <http://lod.iti-germany.de/schema/nvto/hasContributor> ;
                                                     rdfs:comment ""@en ,
-                                                                 "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, eines Films oder einer anderen Ressource als Produzent*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Produzent*in eines Films oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de ;
+                                                                 "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Film oder einer anderen Ressource als Produzent*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Produzent*in eines Films oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de ;
                                                     rdfs:label "has producer"@en ,
                                                                "hat Produzent*in"@de ;
                                                     <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as producer."@en ,
@@ -863,8 +857,8 @@
 ###  http://lod.iti-germany.de/schema/nvto/hasRelatedPlace
 <http://lod.iti-germany.de/schema/nvto/hasRelatedPlace> rdf:type owl:ObjectProperty ;
                                                         rdfs:range <http://lod.iti-germany.de/schema/nvto/Place> ;
-                                                        rdfs:comment ""@de ,
-                                                                     ""@en ;
+                                                        rdfs:comment ""@en ,
+                                                                     "Wenn genauere Angaben der Beziehung zwischen Ressource und Ort bekannt sind, sollte eine der Untereigenschaften dieser Eigenschaft genutzt werden."@de ;
                                                         rdfs:label "has related place"@en ,
                                                                    "hat Bezug zu Ort"@de ;
                                                         <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to a place it is related to."@en ,
@@ -875,8 +869,6 @@
 
 ###  http://lod.iti-germany.de/schema/nvto/hasRelatedWebsite
 <http://lod.iti-germany.de/schema/nvto/hasRelatedWebsite> rdf:type owl:ObjectProperty ;
-                                                          rdfs:comment ""@de ,
-                                                                       ""@en ;
                                                           rdfs:label "has related website"@en ,
                                                                      "hat Bezug zu Webseite"@de ;
                                                           <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to a related website of the resource."@en ,
@@ -890,8 +882,6 @@
                                                      rdfs:subPropertyOf <http://lod.iti-germany.de/schema/nvto/hasRelatedPlace> ;
                                                      rdfs:domain <http://lod.iti-germany.de/schema/nvto/Agent> ;
                                                      rdfs:range <http://lod.iti-germany.de/schema/nvto/Place> ;
-                                                     rdfs:comment ""@de ,
-                                                                  ""@en ;
                                                      rdfs:label "has residence"@en ,
                                                                 "hat Residenz"@de ;
                                                      <http://www.w3.org/2004/02/skos/core#definition> "Connects an Agent to a Place in which he resides or resided."@en ,
@@ -922,7 +912,7 @@
 <http://lod.iti-germany.de/schema/nvto/hasSeamster> rdf:type owl:ObjectProperty ;
                                                     rdfs:subPropertyOf <http://lod.iti-germany.de/schema/nvto/hasContributor> ;
                                                     rdfs:comment ""@en ,
-                                                                 "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, eines Kostüms oder einer anderen Ressource als Näher*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Näher*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de ;
+                                                                 "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Kostüm oder einer anderen Ressource als Näher*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Näher*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de ;
                                                     rdfs:label "has seamster"@en ,
                                                                "hat Näher*in"@de ;
                                                     <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as seamster."@en ,
@@ -973,7 +963,7 @@
 ###  http://lod.iti-germany.de/schema/nvto/hasSinger
 <http://lod.iti-germany.de/schema/nvto/hasSinger> rdf:type owl:ObjectProperty ;
                                                   rdfs:comment ""@en ,
-                                                               "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, eines Lieds, einer Aufführung oder einer anderen Ressource als Sänger*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Sänger*in eines Lieds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de ;
+                                                               "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einem Lied, einer Aufführung oder einer anderen Ressource als Sänger*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Sänger*in eines Lieds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de ;
                                                   rdfs:label "has singer"@en ,
                                                              "hat Sänger*in"@de ;
                                                   <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as singer."@en ,
@@ -996,7 +986,15 @@
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasSource
-<http://lod.iti-germany.de/schema/nvto/hasSource> rdf:type owl:ObjectProperty .
+<http://lod.iti-germany.de/schema/nvto/hasSource> rdf:type owl:ObjectProperty ;
+                                                  rdfs:comment ""@en ,
+                                                               "Diese Eigenschaft beschreibt, aus welcher Quelle ein Datensatz oder Teile eines Datensatzes stammen. Sowohl Literale als auch Weblinks sind erlaubt."@de ;
+                                                  rdfs:label "has source"@en ,
+                                                             "hat Quelle"@de ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt oder verbindet mit der Quelle einer Ressource."@de ,
+                                                                                                   "Describes or connects to the source of a resource."@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#example> ""@de ,
+                                                                                                ""@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasSpeaker
@@ -1044,7 +1042,7 @@
 <http://lod.iti-germany.de/schema/nvto/hasSurtitleCreator> rdf:type owl:ObjectProperty ;
                                                            rdfs:subPropertyOf <http://lod.iti-germany.de/schema/nvto/hasContributor> ;
                                                            rdfs:comment ""@en ,
-                                                                        "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung, eines Übertitels oder einer anderen Ressource als Übertitel Schöpfer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Schöpfer*in eines Übertitels oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de ;
+                                                                        "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung, einem Übertitel oder einer anderen Ressource als Übertitel Schöpfer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Schöpfer*in eines Übertitels oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de ;
                                                            rdfs:label "has surtitle creator"@en ,
                                                                       "hat Übertitel Schöpfer*in"@de ;
                                                            <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as author of surtitles."@en ,
@@ -1114,7 +1112,7 @@
 <http://lod.iti-germany.de/schema/nvto/hasVideoDesigner> rdf:type owl:ObjectProperty ;
                                                          rdfs:subPropertyOf <http://lod.iti-germany.de/schema/nvto/hasContributor> ;
                                                          rdfs:comment ""@en ,
-                                                                      "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung, eines Videos oder einer anderen Ressource als Videodesigner*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Designer*in für ein Video als Teil eines Bühnenbilds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de ;
+                                                                      "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung, einem Video oder einer anderen Ressource als Videodesigner*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Designer*in für ein Video als Teil eines Bühnenbilds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."@de ;
                                                          rdfs:label "hat Videodesigner*in"@de ,
                                                                     "video designer"@en ;
                                                          <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent responsible for its video design."@en ,
@@ -1127,7 +1125,7 @@
 <http://lod.iti-germany.de/schema/nvto/hasVideoEditor> rdf:type owl:ObjectProperty ;
                                                        rdfs:subPropertyOf <http://lod.iti-germany.de/schema/nvto/hasContributor> ;
                                                        rdfs:comment ""@en ,
-                                                                    "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung, eines Videos oder einer anderen Ressource als Videoeditor*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Editor*in für ein Video oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen"@de ;
+                                                                    "Mit dieser Eigenschaft wird die Mitwirkung eines Agens an einer Produktion, einer Aufführung, einem Video oder einer anderen Ressource als Videoeditor*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Editor*in für ein Video oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen"@de ;
                                                        rdfs:label "hat Videoeditor*in"@de ,
                                                                   "video editor"@en ;
                                                        <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent responsible for its video editing."@en ,
@@ -1989,8 +1987,6 @@
 
 ###  http://lod.iti-germany.de/schema/nvto/hasCondition
 <http://lod.iti-germany.de/schema/nvto/hasCondition> rdf:type owl:DatatypeProperty ;
-                                                     rdfs:comment "E.g. the condition of a physical object or a digital file."@en ,
-                                                                  "Z.B. der Zustand eines physischen Objekts oder einer digitalen Datei."@de ;
                                                      rdfs:label "has condition"@en ,
                                                                 "hat Zustand"@de ;
                                                      <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt oder verbindet mit dem Zustand einer Ressource."@de ,
@@ -2381,7 +2377,7 @@
 ###  http://lod.iti-germany.de/schema/nvto/InformationObject
 <http://lod.iti-germany.de/schema/nvto/InformationObject> rdf:type owl:Class ;
                                                           rdfs:comment "An Information Object is an immaterial, describable object, usually represented by one or more information carriers. The same Information Object can be captured in multiple Physical or Digital Objects (e.g. a magazine edition). One Physical or Digital Object can carry multiple Information Objects (e.g. multiple movies on a single video tape). An Information Object can be part of another Information Object (e.g. a chapter of a novel)."@en ,
-                                                                       "Ein Informationsobjekt ist immaterielles, beschreibbares Objekt, das in der Regel von einem oder mehreren Informationsträgern repräsentiert wird. Dasselbe Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer Kopie der Fotografie in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann mehere Informationsobjekte tragen (z.B. mehrere Videos auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans)."@de ;
+                                                                       "Ein Informationsobjekt ist ein immaterielles, beschreibbares Objekt, das in der Regel von einem oder mehreren Informationsträgern repräsentiert wird. Dasselbe Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer Kopie der Fotografie in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann mehere Informationsobjekte tragen (z.B. mehrere Videos auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans)."@de ;
                                                           rdfs:label "Information Object"@en ,
                                                                      "Informationsobjekt"@de ;
                                                           <http://www.w3.org/2004/02/skos/core#definition> "\"Diese Klasse umfasst alle Informationsobjekte."@de ,
@@ -2546,18 +2542,8 @@
                                                                                                       ""@en .
 
 
-<http://lod.iti-germany.de/schema/nvto/hasSource> rdfs:comment ""@de ,
-                                                               ""@en ;
-                                                  rdfs:label "has source"@en ,
-                                                             "hat Quelle"@de ;
-                                                  <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt oder verbindet mit der Quelle einer Ressource."@de ,
-                                                                                                   "Describes or connects to the source of a resource."@en ;
-                                                  <http://www.w3.org/2004/02/skos/core#example> ""@de ,
-                                                                                                ""@en .
-
-
-<http://lod.iti-germany.de/schema/nvto/hasType> rdfs:comment ""@de ,
-                                                             ""@en ;
+<http://lod.iti-germany.de/schema/nvto/hasType> rdfs:comment ""@en ,
+                                                             "Sowohl Literale als auch Weblinks sind erlaubt"@de ;
                                                 rdfs:label "has type"@en ,
                                                            "hat Typ"@de ;
                                                 <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt oder verbindet mit dem Typ einer Ressource."@de ,

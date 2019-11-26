@@ -7,7 +7,7 @@
 
 <!-- SCHEMA.ORG METADATA -->
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://ld.iti-germany.de/schema/nvto/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://ld.iti-germany.de/schema/nvto/","name":"Non-Verbal Theatre Ontology", "headline":"Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the "NONVERBALES THEATER
-                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS).", "datePublished":"Tue Nov 26 14:01:37 CET 2019", "license":"https://creativecommons.org/licenses/by/4.0/deed.en", "contributor":[{"@type":"Person","name":"Jonas Pitz"},{"@type":"Person","name":"Maxim Wittenbecher"}]}</script>
+                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS).", "datePublished":"Tue Nov 26 16:12:15 CET 2019", "license":"https://creativecommons.org/licenses/by/4.0/deed.en", "contributor":[{"@type":"Person","name":"Jonas Pitz"},{"@type":"Person","name":"Maxim Wittenbecher"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -451,6 +451,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasSoundDesigner"
          title="http://lod.iti-germany.de/schema/nvto/hasSoundDesigner">has sound designer</a>
+   </li>
+   <li>
+      <a href="#http://lod.iti-germany.de/schema/nvto/hasSource" title="http://lod.iti-germany.de/schema/nvto/hasSource">has source</a>
    </li>
    <li>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasSpeaker"
@@ -969,11 +972,6 @@ This ontology has the following classes and properties.</span>
       <a href="#http://lod.iti-germany.de/schema/nvto/hasRightsHolder"
          title="http://lod.iti-germany.de/schema/nvto/hasRightsHolder">
          <span>has rights holder</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://lod.iti-germany.de/schema/nvto/hasSource" title="http://lod.iti-germany.de/schema/nvto/hasSource">
-         <span>has source</span>
       </a>
    </li>
    <li>
@@ -1963,6 +1961,9 @@ This section provides details for each class and property defined by Non-Verbal 
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasSoundDesigner"
             title="http://lod.iti-germany.de/schema/nvto/hasSoundDesigner">has sound designer</a>
+      </li>
+      <li>
+         <a href="#http://lod.iti-germany.de/schema/nvto/hasSource" title="http://lod.iti-germany.de/schema/nvto/hasSource">has source</a>
       </li>
       <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasSpeaker"
@@ -4154,9 +4155,6 @@ This section provides details for each class and property defined by Non-Verbal 
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasPlaceOfOccurrence</p>
       <div class="comment">
-         <span class="markdown"/>
-      </div>
-      <div class="comment">
          <span class="markdown">Connects an event to the place it happened at.</span>
       </div>
       <dl>
@@ -4775,9 +4773,6 @@ This section provides details for each class and property defined by Non-Verbal 
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasRelatedWebsite</p>
       <div class="comment">
-         <span class="markdown"/>
-      </div>
-      <div class="comment">
          <span class="markdown">Connects a resource to a related website of the resource.</span>
       </div>
       <dl>
@@ -4813,9 +4808,6 @@ This section provides details for each class and property defined by Non-Verbal 
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasResidence</p>
-      <div class="comment">
-         <span class="markdown"/>
-      </div>
       <div class="comment">
          <span class="markdown">Connects an Agent to a Place in which he resides or resided.</span>
       </div>
@@ -5116,6 +5108,39 @@ This section provides details for each class and property defined by Non-Verbal 
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/isSoundDesignerOf"
                   title="http://lod.iti-germany.de/schema/nvto/isSoundDesignerOf">is sound designer of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasSource">
+      <h3>has source<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasSource</p>
+      <div class="comment">
+         <span class="markdown"/>
+      </div>
+      <div class="comment">
+         <span class="markdown">Describes or connects to the source of a resource.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://lod.iti-germany.de/schema/nvto/isSourceOf"
+                  title="http://lod.iti-germany.de/schema/nvto/isSourceOf">is source of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -7374,7 +7399,7 @@ This section provides details for each class and property defined by Non-Verbal 
          <dl>
             <dt>is inverse of</dt>
             <dd>
-               <span class="dotted" title="http://lod.iti-germany.de/schema/nvto/hasSource">has source</span>
+               <a href="#http://lod.iti-germany.de/schema/nvto/hasSource" title="http://lod.iti-germany.de/schema/nvto/hasSource">has source</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -7997,9 +8022,6 @@ This section provides details for each class and property defined by Non-Verbal 
       </h3>
       <p>
          <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasCondition</p>
-      <div class="comment">
-         <span class="markdown">E.g. the condition of a physical object or a digital file.</span>
-      </div>
       <div class="comment">
          <span class="markdown">Describes or connects to the condition of a resource.</span>
       </div>
@@ -8723,11 +8745,6 @@ This section provides details for each class and property defined by Non-Verbal 
          </a>
       </li>
       <li>
-         <a href="#http://lod.iti-germany.de/schema/nvto/hasSource" title="http://lod.iti-germany.de/schema/nvto/hasSource">
-            <span>has source</span>
-         </a>
-      </li>
-      <li>
          <a href="#http://lod.iti-germany.de/schema/nvto/hasType" title="http://lod.iti-germany.de/schema/nvto/hasType">
             <span>has type</span>
          </a>
@@ -8863,26 +8880,6 @@ This section provides details for each class and property defined by Non-Verbal 
             <dd>
                <a href="#http://lod.iti-germany.de/schema/nvto/isRightsHolderOf"
                   title="http://lod.iti-germany.de/schema/nvto/isRightsHolderOf">is rights holder of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>object property</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://lod.iti-germany.de/schema/nvto/hasSource">
-      <h3>has source<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://lod.iti-germany.de/schema/nvto/hasSource</p>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://lod.iti-germany.de/schema/nvto/isSourceOf"
-                  title="http://lod.iti-germany.de/schema/nvto/isSourceOf">is source of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>is also defined as</dt>

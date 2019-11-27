@@ -41,8 +41,10 @@ nvto:Agent rdf:type owl:Class ;
            skos:definition """This class comprises all agents such as persons or institutions."""@en ;
            skos:scopeNote """Agens sind handlungsfähige Entitäten, in der Regel einzelne Personen oder Personengruppierungen. Diese Klasse dient auch als Oberklasse für genauer definierte Agens."""@de ;
            skos:scopeNote """Agents are entities that are capable of acting, usually persons or groups of persons. This class also serves as top class for more specifically defined concepts."""@en ;
-           skos:example "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"@de ;
-           skos:example "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"@en .
+           skos:example "Burkhart Seidemann"@de,
+                        "Pantomimen-Theater vom Prenzlauer Berg"@de ;
+           skos:example "Burkhart Seidemann"@en,
+                        "Pantomimen-Theater vom Prenzlauer Berg"@en .
 
 nvto:City rdf:type owl:Class ;
           rdfs:subClassOf nvto:Place ;
@@ -52,8 +54,12 @@ nvto:City rdf:type owl:Class ;
           skos:definition """This class comprises cities dependent on time and/or geopolitics."""@en ;
           skos:scopeNote """Städte können reale Orte sein, die existiert haben oder existieren. Auch fiktive Städte sind möglich."""@de ;
           skos:scopeNote """Cities can be real places that existed or exist. Fictional places are possible as well."""@en ;
-          skos:example "Berlin, Westberlin, Ostberlin"@de ;
-          skos:example "Berlin, West Berlin, East Berlin"@en .
+          skos:example "Berlin"@de ,
+                       "Westberlin"@de ,
+                       "Ostberlin"@de ;
+          skos:example "Berlin"@en ,
+                       "West Berlin"@en ,
+                       "East Berlin"@en .
 
 nvto:Collection rdf:type owl:Class ;
                 rdfs:label "Sammlung"@de ;
@@ -73,8 +79,12 @@ nvto:Country rdf:type owl:Class ;
              skos:definition """This class comprises countries dependent on time and/or geopolitics."""@en ;
              skos:scopeNote """Länder können reale Orte sein, die existiert haben oder existieren. Auch fiktive Länder sind möglich."""@de ;
              skos:scopeNote """Countries can be real places that existed or exist. Fictional countries are possible as well."""@en ;
-             skos:example "Französische Republik, Westdeutschland, DDR"@de  ;
-             skos:example "FRG, West Germany, GDR"@en  .
+             skos:example "Französische Republik"@de ,
+                          "Westdeutschland"@de ,
+                          "DDR"@de ;
+             skos:example "Federal Republic of Germany"@de ,
+                          "West Germany"@en ,
+                          "GDR"@en .
 
 nvto:CreativeConcept rdf:type owl:Class ;
                     rdfs:label "Kreatives Konzept"@de ;
@@ -83,8 +93,12 @@ nvto:CreativeConcept rdf:type owl:Class ;
                     skos:definition """This class comprises all Creative Concepts."""@en ;
                     skos:scopeNote """Diese Klasse dient als Oberklasse für genauer definierte Kreative Konzepte, wie Filmproduktionen oder Produktionen der darstellenden Künste."""@de ;
                     skos:scopeNote """This class primarily serves as top class for more specifically defined Creative Concepts such as film productions or performing arts productions."""@en ;
-                    skos:example "Produktion (darstellende Künste); Filmproduktion; Festival"@de ;
-                    skos:example "performing arts production; film production, festival"@en .
+                    skos:example "Eine Produktion (darstellende Künste)"@de ,
+                                 "Eine Filmproduktion"@de ,
+                                 "Ein Festival"@de ;
+                    skos:example "A performing arts production"@en ,
+                                 "A film production"@en ,
+                                 "A festival"@en .
 
 
 nvto:DigitalObject rdf:type owl:Class ;
@@ -94,8 +108,10 @@ nvto:DigitalObject rdf:type owl:Class ;
                    skos:definition """This class comprises all Digital Objects."""@en ;
                    skos:scopeNote """Diese Klasse umfasst sowohl digitale Repräsentationen von Inhalten von Physischen Objekten, als auch nativ digitale Objekte. Digitale Objekte können wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte sein."""@de ;
                    skos:scopeNote """This class comprises digital representations of contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, can be information carriers of one or more Information Objects."""@en ;
-                   skos:example "Eine spezifische digitale Datei mit Namen IMG-001.tif, VID-001.avi"@de ;
-                   skos:example "A specific digital file with name IMG-001.tif, VID-001.avi"@en .
+                   skos:example "Eine spezifische digitale Datei mit Namen IMG-001.tif"@de ,
+                                "Eine spezifische digitale Datei mit Namen VID-001.avi"@de ;
+                   skos:example "A specific digital file with name IMG-001.tif"@en ,
+                                "A specific digital file with name VID-001.avi"@en .
 
 nvto:Event rdf:type owl:Class ;
            rdfs:label "Ereignis"@de ;
@@ -104,8 +120,12 @@ nvto:Event rdf:type owl:Class ;
            skos:definition """This class comprises all Events."""@en ;
            skos:scopeNote """Ein Ereignis kann real oder fiktional sein, hat einen Start- und Endzeitpunkt und findet an einem Ort statt. Nicht alle Eigenschaften eines Ereignisses müssen bekannt sein. In der Regel wird diese Klasse für Ereignisse im Bereich der darstellenden Künste wie Aufführungen oder Workshops genutzt."""@de ;
            skos:scopeNote "An Event can be fictional or real, has a starting and ending point and occurrs at a place. Not all attributes of an Event have to be known. This class is generally used for Events in the realm of performing arts."@en ;
-           skos:example "Eine Aufführung von 'Hamlet', ein Workshop zu einer speziellen Schauspieltechnik, eine Ausstellung über eine/n Darsteller/in"@de ;
-           skos:example "A performance of 'Hamlet', a workshop regarding a specific acting technique, an exhibition about an actor/actress"@en .
+           skos:example "Eine Aufführung von 'Hamlet'"@de ,
+                        "Ein Workshop zu einer speziellen Schauspieltechnik"@de ,
+                        "Eine Ausstellung über eine/n Darsteller/in"@de ;
+           skos:example "A performance of 'Hamlet'"@en ,
+                        "A workshop regarding a specific acting technique"@en ,
+                        "An exhibition about an actor/actress"@en .
 
 nvto:FestivalPlan rdf:type owl:Class ;
               rdfs:subClassOf nvto:CreativeConcept ;
@@ -167,7 +187,8 @@ nvto:PerformingArtsLocation rdf:type owl:Class ;
                             skos:definition """This class comprises locations that were or are used for performing arts."""@en ;
                             skos:scopeNote """Ein Performing Arts Aufführungsort ist in der Regel eine Spielstätte oder ein öffentlicher Platz. Generell kann jeder Ort, an dem aufgeführt wird, ein Aufführungsort (darstellende Künste) sein. Fiktive Orte von fiktiven Aufführungen sind nicht ausgeschlossen."""@de ;
                             skos:scopeNote """A Performing Arts Location usually is a venue or a public place. Generally any location used for a performance can be a Performing Arts Location. Fictional Locations for fictional performances are not excluded."""@en ;
-                            skos:example "Volksbühne, Pratergarten"@de  ;
+                            skos:example "Das Theater 'Volksbühne am Rosa-Luxemburg-Platz' in Berlin."@de ,
+                                         "Pratergarten"@de  ;
                             skos:example "Volksbühne, Pratergarten"@en  .
 
 nvto:PerformingArtsProduction rdf:type owl:Class ;
@@ -178,7 +199,7 @@ nvto:PerformingArtsProduction rdf:type owl:Class ;
                               skos:definition """This class comprises Performing Arts Productions."""@en ;
                               skos:scopeNote """Eine Produktion (darstellende Künste) ist das Kreative Konzept, das einer Aufführung oder einer Reihe von Aufführungen im Bereich der darstellenden Künste zugrunde liegt. Eine Produktion (darstellende Künste) muss nicht zwangsläufig aufgeführt werden. Eine Produktion (darstellende Künste) kann zum Beispiel von Manuskripten oder Regieanweisungen genauer beschrieben werden."""@de ;
                               skos:scopeNote """A Performing Arts Production is the Creative Concept behind a Performance or a Series of Performances in the realm of performing arts. A Performing Arts Production doesn't necessarily have to be performed. A Performing Arts Production may be described further by manuscripts or stage directions."""@en ;
-                              skos:example "Blaubart, Hamlet"@de  ;
+                              skos:example "Die Produktion 'Blaubart'...von, am, am am"@de, "Hamlet"@de  ;
                               skos:example "Blaubart, Hamlet"@en  .
 
 nvto:Person rdf:type owl:Class ;
@@ -243,8 +264,12 @@ nvto:hasAudibleReferenceTo rdf:type owl:ObjectProperty ;
                                 skos:definition "Connects a resource to another resource it has an audible reference to."@en ;
                                 skos:scopeNote """Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource von einem Informationsobjekt. Eine hörbare Referenz ist eine spezielle Form der Referenz."""@de ;
                                 skos:scopeNote """An audible reference usually describes the audible mention or capture of a resource by an Information Object. An audible reference is a specific form of reference."""@en ;
-                                skos:example "In Video Z wird über Aufführung X geredet, In Audioaufnahme R ist Person K im Gespräch zu hören, In Video E ist Person L zu hören, aber nicht zu sehen."@de ;
-                                skos:example "In video Z it is talked about performance X, In audio recording R Person K is heard talking, In video E Person L is heard, but not seen."@en ;
+                                skos:example "In Video Z wird über Aufführung X geredet."@de,
+                                             "In Audioaufnahme R ist Person K im Gespräch zu hören."@de,
+                                             "In Video E ist Person L zu hören, aber nicht zu sehen."@de ;
+                                skos:example "Performance X is being talked about in video Z"@en,
+                                             "In audio recording R Person K is heard talking"@en,
+                                             "In video E Person L is heard, but not seen."@en ;
                                 rdfs:label "hat hörbare Referenz zu"@de ;
                                 rdfs:label "has audible reference to"@en .
 

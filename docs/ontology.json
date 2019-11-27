@@ -63,10 +63,16 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
-    "@value" : "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"
+    "@value" : "Burkhart Seidemann"
   }, {
     "@language" : "en",
-    "@value" : "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"
+    "@value" : "Burkhart Seidemann"
+  }, {
+    "@language" : "de",
+    "@value" : "Pantomimen-Theater vom Prenzlauer Berg"
+  }, {
+    "@language" : "en",
+    "@value" : "Pantomimen-Theater vom Prenzlauer Berg"
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/City",
@@ -96,11 +102,23 @@
     "@value" : "This class comprises cities dependent on time and/or geopolitics."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : "Berlin"
+  }, {
     "@language" : "en",
-    "@value" : "Berlin, West Berlin, East Berlin"
+    "@value" : "Berlin"
+  }, {
+    "@language" : "en",
+    "@value" : "East Berlin"
   }, {
     "@language" : "de",
-    "@value" : "Berlin, Westberlin, Ostberlin"
+    "@value" : "Ostberlin"
+  }, {
+    "@language" : "en",
+    "@value" : "West Berlin"
+  }, {
+    "@language" : "de",
+    "@value" : "Westberlin"
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/Collection",
@@ -161,11 +179,23 @@
     "@value" : "This class comprises countries dependent on time and/or geopolitics."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "FRG, West Germany, GDR"
+    "@language" : "de",
+    "@value" : "DDR"
   }, {
     "@language" : "de",
-    "@value" : "Französische Republik, Westdeutschland, DDR"
+    "@value" : "Federal Republic of Germany"
+  }, {
+    "@language" : "de",
+    "@value" : "Französische Republik"
+  }, {
+    "@language" : "en",
+    "@value" : "GDR"
+  }, {
+    "@language" : "en",
+    "@value" : "West Germany"
+  }, {
+    "@language" : "de",
+    "@value" : "Westdeutschland"
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/CreativeConcept",
@@ -192,11 +222,23 @@
     "@value" : "This class comprises all Creative Concepts."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "de",
-    "@value" : "Produktion (darstellende Künste); Filmproduktion; Festival"
+    "@language" : "en",
+    "@value" : "A festival"
   }, {
     "@language" : "en",
-    "@value" : "performing arts production; film production, festival"
+    "@value" : "A film production"
+  }, {
+    "@language" : "en",
+    "@value" : "A performing arts production"
+  }, {
+    "@language" : "de",
+    "@value" : "Ein Festival"
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Filmproduktion"
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Produktion (darstellende Künste)"
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/DigitalObject",
@@ -224,10 +266,16 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
-    "@value" : "A specific digital file with name IMG-001.tif, VID-001.avi"
+    "@value" : "A specific digital file with name IMG-001.tif"
+  }, {
+    "@language" : "en",
+    "@value" : "A specific digital file with name VID-001.avi"
   }, {
     "@language" : "de",
-    "@value" : "Eine spezifische digitale Datei mit Namen IMG-001.tif, VID-001.avi"
+    "@value" : "Eine spezifische digitale Datei mit Namen IMG-001.tif"
+  }, {
+    "@language" : "de",
+    "@value" : "Eine spezifische digitale Datei mit Namen VID-001.avi"
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/Event",
@@ -255,10 +303,22 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
-    "@value" : "A performance of 'Hamlet', a workshop regarding a specific acting technique, an exhibition about an actor/actress"
+    "@value" : "A performance of 'Hamlet'"
+  }, {
+    "@language" : "en",
+    "@value" : "A workshop regarding a specific acting technique"
+  }, {
+    "@language" : "en",
+    "@value" : "An exhibition about an actor/actress"
   }, {
     "@language" : "de",
-    "@value" : "Eine Aufführung von 'Hamlet', ein Workshop zu einer speziellen Schauspieltechnik, eine Ausstellung über eine/n Darsteller/in"
+    "@value" : "Ein Workshop zu einer speziellen Schauspieltechnik"
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Aufführung von 'Hamlet'"
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Ausstellung über eine/n Darsteller/in"
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/FestivalPlan",
@@ -422,7 +482,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
-    "@value" : "Volksbühne, Pratergarten"
+    "@value" : "Das Theater 'Volksbühne am Rosa-Luxemburg-Platz' in Berlin."
+  }, {
+    "@language" : "de",
+    "@value" : "Pratergarten"
   }, {
     "@language" : "en",
     "@value" : "Volksbühne, Pratergarten"
@@ -455,11 +518,14 @@
     "@value" : "This class comprises Performing Arts Productions."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "de",
-    "@value" : "Blaubart, Hamlet"
-  }, {
     "@language" : "en",
     "@value" : "Blaubart, Hamlet"
+  }, {
+    "@language" : "de",
+    "@value" : "Die Produktion 'Blaubart'...von, am, am am"
+  }, {
+    "@language" : "de",
+    "@value" : "Hamlet"
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/Person",
@@ -923,10 +989,22 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
-    "@value" : "In Video Z wird über Aufführung X geredet, In Audioaufnahme R ist Person K im Gespräch zu hören, In Video E ist Person L zu hören, aber nicht zu sehen."
+    "@value" : "In Audioaufnahme R ist Person K im Gespräch zu hören."
+  }, {
+    "@language" : "de",
+    "@value" : "In Video E ist Person L zu hören, aber nicht zu sehen."
+  }, {
+    "@language" : "de",
+    "@value" : "In Video Z wird über Aufführung X geredet."
   }, {
     "@language" : "en",
-    "@value" : "In video Z it is talked about performance X, In audio recording R Person K is heard talking, In video E Person L is heard, but not seen."
+    "@value" : "In audio recording R Person K is heard talking"
+  }, {
+    "@language" : "en",
+    "@value" : "In video E Person L is heard, but not seen."
+  }, {
+    "@language" : "en",
+    "@value" : "Performance X is being talked about in video Z"
   } ]
 }, {
   "@id" : "http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo",

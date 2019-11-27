@@ -136,8 +136,12 @@
 <http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo> <http://www.w3.org/2000/01/rdf-schema#label> "hat hörbare Referenz zu"@de .
 <http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to another resource it has an audible reference to."@en .
 <http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält."@de .
-<http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In Video Z wird über Aufführung X geredet, In Audioaufnahme R ist Person K im Gespräch zu hören, In Video E ist Person L zu hören, aber nicht zu sehen."@de .
-<http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In video Z it is talked about performance X, In audio recording R Person K is heard talking, In video E Person L is heard, but not seen."@en .
+<http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In Audioaufnahme R ist Person K im Gespräch zu hören."@de .
+<http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In Video E ist Person L zu hören, aber nicht zu sehen."@de .
+<http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In Video Z wird über Aufführung X geredet."@de .
+<http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In audio recording R Person K is heard talking"@en .
+<http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In video E Person L is heard, but not seen."@en .
+<http://lod.iti-germany.de/schema/nvto/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "Performance X is being talked about in video Z"@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo
 <http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -2069,8 +2073,10 @@
 <http://lod.iti-germany.de/schema/nvto/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@en .
 <http://lod.iti-germany.de/schema/nvto/Agent> <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Agens wie Personen und Institutionen."@de .
 <http://lod.iti-germany.de/schema/nvto/Agent> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises all agents such as persons or institutions."@en .
-<http://lod.iti-germany.de/schema/nvto/Agent> <http://www.w3.org/2004/02/skos/core#example> "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"@de .
-<http://lod.iti-germany.de/schema/nvto/Agent> <http://www.w3.org/2004/02/skos/core#example> "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"@en .
+<http://lod.iti-germany.de/schema/nvto/Agent> <http://www.w3.org/2004/02/skos/core#example> "Burkhart Seidemann"@de .
+<http://lod.iti-germany.de/schema/nvto/Agent> <http://www.w3.org/2004/02/skos/core#example> "Burkhart Seidemann"@en .
+<http://lod.iti-germany.de/schema/nvto/Agent> <http://www.w3.org/2004/02/skos/core#example> "Pantomimen-Theater vom Prenzlauer Berg"@de .
+<http://lod.iti-germany.de/schema/nvto/Agent> <http://www.w3.org/2004/02/skos/core#example> "Pantomimen-Theater vom Prenzlauer Berg"@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/City
 <http://lod.iti-germany.de/schema/nvto/City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2081,8 +2087,12 @@
 <http://lod.iti-germany.de/schema/nvto/City> <http://www.w3.org/2000/01/rdf-schema#label> "Stadt"@de .
 <http://lod.iti-germany.de/schema/nvto/City> <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst Städte abhängig von Zeit und/oder Geopolitik."@de .
 <http://lod.iti-germany.de/schema/nvto/City> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises cities dependent on time and/or geopolitics."@en .
-<http://lod.iti-germany.de/schema/nvto/City> <http://www.w3.org/2004/02/skos/core#example> "Berlin, West Berlin, East Berlin"@en .
-<http://lod.iti-germany.de/schema/nvto/City> <http://www.w3.org/2004/02/skos/core#example> "Berlin, Westberlin, Ostberlin"@de .
+<http://lod.iti-germany.de/schema/nvto/City> <http://www.w3.org/2004/02/skos/core#example> "Berlin"@de .
+<http://lod.iti-germany.de/schema/nvto/City> <http://www.w3.org/2004/02/skos/core#example> "Berlin"@en .
+<http://lod.iti-germany.de/schema/nvto/City> <http://www.w3.org/2004/02/skos/core#example> "East Berlin"@en .
+<http://lod.iti-germany.de/schema/nvto/City> <http://www.w3.org/2004/02/skos/core#example> "Ostberlin"@de .
+<http://lod.iti-germany.de/schema/nvto/City> <http://www.w3.org/2004/02/skos/core#example> "West Berlin"@en .
+<http://lod.iti-germany.de/schema/nvto/City> <http://www.w3.org/2004/02/skos/core#example> "Westberlin"@de .
 # 
 # http://lod.iti-germany.de/schema/nvto/Collection
 <http://lod.iti-germany.de/schema/nvto/Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2104,8 +2114,12 @@
 <http://lod.iti-germany.de/schema/nvto/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Land"@de .
 <http://lod.iti-germany.de/schema/nvto/Country> <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst Länder abhängig von Zeit und/oder Geopolitik."@de .
 <http://lod.iti-germany.de/schema/nvto/Country> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises countries dependent on time and/or geopolitics."@en .
-<http://lod.iti-germany.de/schema/nvto/Country> <http://www.w3.org/2004/02/skos/core#example> "FRG, West Germany, GDR"@en .
-<http://lod.iti-germany.de/schema/nvto/Country> <http://www.w3.org/2004/02/skos/core#example> "Französische Republik, Westdeutschland, DDR"@de .
+<http://lod.iti-germany.de/schema/nvto/Country> <http://www.w3.org/2004/02/skos/core#example> "DDR"@de .
+<http://lod.iti-germany.de/schema/nvto/Country> <http://www.w3.org/2004/02/skos/core#example> "Federal Republic of Germany"@de .
+<http://lod.iti-germany.de/schema/nvto/Country> <http://www.w3.org/2004/02/skos/core#example> "Französische Republik"@de .
+<http://lod.iti-germany.de/schema/nvto/Country> <http://www.w3.org/2004/02/skos/core#example> "GDR"@en .
+<http://lod.iti-germany.de/schema/nvto/Country> <http://www.w3.org/2004/02/skos/core#example> "West Germany"@en .
+<http://lod.iti-germany.de/schema/nvto/Country> <http://www.w3.org/2004/02/skos/core#example> "Westdeutschland"@de .
 # 
 # http://lod.iti-germany.de/schema/nvto/CreativeConcept
 <http://lod.iti-germany.de/schema/nvto/CreativeConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2115,8 +2129,12 @@
 <http://lod.iti-germany.de/schema/nvto/CreativeConcept> <http://www.w3.org/2000/01/rdf-schema#label> "Kreatives Konzept"@de .
 <http://lod.iti-germany.de/schema/nvto/CreativeConcept> <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Kreativen Konzepte."@de .
 <http://lod.iti-germany.de/schema/nvto/CreativeConcept> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises all Creative Concepts."@en .
-<http://lod.iti-germany.de/schema/nvto/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "Produktion (darstellende Künste); Filmproduktion; Festival"@de .
-<http://lod.iti-germany.de/schema/nvto/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "performing arts production; film production, festival"@en .
+<http://lod.iti-germany.de/schema/nvto/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "A festival"@en .
+<http://lod.iti-germany.de/schema/nvto/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "A film production"@en .
+<http://lod.iti-germany.de/schema/nvto/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "A performing arts production"@en .
+<http://lod.iti-germany.de/schema/nvto/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "Ein Festival"@de .
+<http://lod.iti-germany.de/schema/nvto/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "Eine Filmproduktion"@de .
+<http://lod.iti-germany.de/schema/nvto/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "Eine Produktion (darstellende Künste)"@de .
 # 
 # http://lod.iti-germany.de/schema/nvto/DigitalObject
 <http://lod.iti-germany.de/schema/nvto/DigitalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2126,8 +2144,10 @@
 <http://lod.iti-germany.de/schema/nvto/DigitalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Digitales Objekt"@de .
 <http://lod.iti-germany.de/schema/nvto/DigitalObject> <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle digitalen Objekte."@de .
 <http://lod.iti-germany.de/schema/nvto/DigitalObject> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises all Digital Objects."@en .
-<http://lod.iti-germany.de/schema/nvto/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "A specific digital file with name IMG-001.tif, VID-001.avi"@en .
-<http://lod.iti-germany.de/schema/nvto/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "Eine spezifische digitale Datei mit Namen IMG-001.tif, VID-001.avi"@de .
+<http://lod.iti-germany.de/schema/nvto/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "A specific digital file with name IMG-001.tif"@en .
+<http://lod.iti-germany.de/schema/nvto/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "A specific digital file with name VID-001.avi"@en .
+<http://lod.iti-germany.de/schema/nvto/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "Eine spezifische digitale Datei mit Namen IMG-001.tif"@de .
+<http://lod.iti-germany.de/schema/nvto/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "Eine spezifische digitale Datei mit Namen VID-001.avi"@de .
 # 
 # http://lod.iti-germany.de/schema/nvto/Event
 <http://lod.iti-germany.de/schema/nvto/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2137,8 +2157,12 @@
 <http://lod.iti-germany.de/schema/nvto/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
 <http://lod.iti-germany.de/schema/nvto/Event> <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Ereignisse."@de .
 <http://lod.iti-germany.de/schema/nvto/Event> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises all Events."@en .
-<http://lod.iti-germany.de/schema/nvto/Event> <http://www.w3.org/2004/02/skos/core#example> "A performance of 'Hamlet', a workshop regarding a specific acting technique, an exhibition about an actor/actress"@en .
-<http://lod.iti-germany.de/schema/nvto/Event> <http://www.w3.org/2004/02/skos/core#example> "Eine Aufführung von 'Hamlet', ein Workshop zu einer speziellen Schauspieltechnik, eine Ausstellung über eine/n Darsteller/in"@de .
+<http://lod.iti-germany.de/schema/nvto/Event> <http://www.w3.org/2004/02/skos/core#example> "A performance of 'Hamlet'"@en .
+<http://lod.iti-germany.de/schema/nvto/Event> <http://www.w3.org/2004/02/skos/core#example> "A workshop regarding a specific acting technique"@en .
+<http://lod.iti-germany.de/schema/nvto/Event> <http://www.w3.org/2004/02/skos/core#example> "An exhibition about an actor/actress"@en .
+<http://lod.iti-germany.de/schema/nvto/Event> <http://www.w3.org/2004/02/skos/core#example> "Ein Workshop zu einer speziellen Schauspieltechnik"@de .
+<http://lod.iti-germany.de/schema/nvto/Event> <http://www.w3.org/2004/02/skos/core#example> "Eine Aufführung von 'Hamlet'"@de .
+<http://lod.iti-germany.de/schema/nvto/Event> <http://www.w3.org/2004/02/skos/core#example> "Eine Ausstellung über eine/n Darsteller/in"@de .
 # 
 # http://lod.iti-germany.de/schema/nvto/FestivalPlan
 <http://lod.iti-germany.de/schema/nvto/FestivalPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2196,7 +2220,8 @@
 <http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Performing Arts Location"@en .
 <http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation> <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst Orte, die für darstellende Künste genutzt werden oder wurden."@de .
 <http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises locations that were or are used for performing arts."@en .
-<http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation> <http://www.w3.org/2004/02/skos/core#example> "Volksbühne, Pratergarten"@de .
+<http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation> <http://www.w3.org/2004/02/skos/core#example> "Das Theater 'Volksbühne am Rosa-Luxemburg-Platz' in Berlin."@de .
+<http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation> <http://www.w3.org/2004/02/skos/core#example> "Pratergarten"@de .
 <http://lod.iti-germany.de/schema/nvto/PerformingArtsLocation> <http://www.w3.org/2004/02/skos/core#example> "Volksbühne, Pratergarten"@en .
 # 
 # http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction
@@ -2208,8 +2233,9 @@
 <http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction> <http://www.w3.org/2000/01/rdf-schema#label> "Produktion (darstellende Künste)"@de .
 <http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction> <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst Produktionen der darstellenden Künste."@de .
 <http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises Performing Arts Productions."@en .
-<http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction> <http://www.w3.org/2004/02/skos/core#example> "Blaubart, Hamlet"@de .
 <http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction> <http://www.w3.org/2004/02/skos/core#example> "Blaubart, Hamlet"@en .
+<http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction> <http://www.w3.org/2004/02/skos/core#example> "Die Produktion 'Blaubart'...von, am, am am"@de .
+<http://lod.iti-germany.de/schema/nvto/PerformingArtsProduction> <http://www.w3.org/2004/02/skos/core#example> "Hamlet"@de .
 # 
 # http://lod.iti-germany.de/schema/nvto/Person
 <http://lod.iti-germany.de/schema/nvto/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

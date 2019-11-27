@@ -155,8 +155,12 @@
                                                                          "hat hörbare Referenz zu"@de ;
                                                               <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to another resource it has an audible reference to."@en ,
                                                                                                                "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält."@de ;
-                                                              <http://www.w3.org/2004/02/skos/core#example> "In Video Z wird über Aufführung X geredet, In Audioaufnahme R ist Person K im Gespräch zu hören, In Video E ist Person L zu hören, aber nicht zu sehen."@de ,
-                                                                                                            "In video Z it is talked about performance X, In audio recording R Person K is heard talking, In video E Person L is heard, but not seen."@en .
+                                                              <http://www.w3.org/2004/02/skos/core#example> "In Audioaufnahme R ist Person K im Gespräch zu hören."@de ,
+                                                                                                            "In Video E ist Person L zu hören, aber nicht zu sehen."@de ,
+                                                                                                            "In Video Z wird über Aufführung X geredet."@de ,
+                                                                                                            "In audio recording R Person K is heard talking"@en ,
+                                                                                                            "In video E Person L is heard, but not seen."@en ,
+                                                                                                            "Performance X is being talked about in video Z"@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/hasAudioVisualReferenceTo
@@ -2270,8 +2274,10 @@
                                                          "Agent"@en ;
                                               <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Agens wie Personen und Institutionen."@de ,
                                                                                                "This class comprises all agents such as persons or institutions."@en ;
-                                              <http://www.w3.org/2004/02/skos/core#example> "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"@de ,
-                                                                                            "Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg"@en .
+                                              <http://www.w3.org/2004/02/skos/core#example> "Burkhart Seidemann"@de ,
+                                                                                            "Burkhart Seidemann"@en ,
+                                                                                            "Pantomimen-Theater vom Prenzlauer Berg"@de ,
+                                                                                            "Pantomimen-Theater vom Prenzlauer Berg"@en .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/City
@@ -2283,8 +2289,12 @@
                                                         "Stadt"@de ;
                                              <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst Städte abhängig von Zeit und/oder Geopolitik."@de ,
                                                                                               "This class comprises cities dependent on time and/or geopolitics."@en ;
-                                             <http://www.w3.org/2004/02/skos/core#example> "Berlin, West Berlin, East Berlin"@en ,
-                                                                                           "Berlin, Westberlin, Ostberlin"@de .
+                                             <http://www.w3.org/2004/02/skos/core#example> "Berlin"@de ,
+                                                                                           "Berlin"@en ,
+                                                                                           "East Berlin"@en ,
+                                                                                           "Ostberlin"@de ,
+                                                                                           "West Berlin"@en ,
+                                                                                           "Westberlin"@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/Collection
@@ -2308,8 +2318,12 @@
                                                            "Land"@de ;
                                                 <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst Länder abhängig von Zeit und/oder Geopolitik."@de ,
                                                                                                  "This class comprises countries dependent on time and/or geopolitics."@en ;
-                                                <http://www.w3.org/2004/02/skos/core#example> "FRG, West Germany, GDR"@en ,
-                                                                                              "Französische Republik, Westdeutschland, DDR"@de .
+                                                <http://www.w3.org/2004/02/skos/core#example> "DDR"@de ,
+                                                                                              "Federal Republic of Germany"@de ,
+                                                                                              "Französische Republik"@de ,
+                                                                                              "GDR"@en ,
+                                                                                              "West Germany"@en ,
+                                                                                              "Westdeutschland"@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/CreativeConcept
@@ -2320,8 +2334,12 @@
                                                                    "Kreatives Konzept"@de ;
                                                         <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Kreativen Konzepte."@de ,
                                                                                                          "This class comprises all Creative Concepts."@en ;
-                                                        <http://www.w3.org/2004/02/skos/core#example> "Produktion (darstellende Künste); Filmproduktion; Festival"@de ,
-                                                                                                      "performing arts production; film production, festival"@en .
+                                                        <http://www.w3.org/2004/02/skos/core#example> "A festival"@en ,
+                                                                                                      "A film production"@en ,
+                                                                                                      "A performing arts production"@en ,
+                                                                                                      "Ein Festival"@de ,
+                                                                                                      "Eine Filmproduktion"@de ,
+                                                                                                      "Eine Produktion (darstellende Künste)"@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/DigitalObject
@@ -2332,8 +2350,10 @@
                                                                  "Digitales Objekt"@de ;
                                                       <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle digitalen Objekte."@de ,
                                                                                                        "This class comprises all Digital Objects."@en ;
-                                                      <http://www.w3.org/2004/02/skos/core#example> "A specific digital file with name IMG-001.tif, VID-001.avi"@en ,
-                                                                                                    "Eine spezifische digitale Datei mit Namen IMG-001.tif, VID-001.avi"@de .
+                                                      <http://www.w3.org/2004/02/skos/core#example> "A specific digital file with name IMG-001.tif"@en ,
+                                                                                                    "A specific digital file with name VID-001.avi"@en ,
+                                                                                                    "Eine spezifische digitale Datei mit Namen IMG-001.tif"@de ,
+                                                                                                    "Eine spezifische digitale Datei mit Namen VID-001.avi"@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/Event
@@ -2344,8 +2364,12 @@
                                                          "Event"@en ;
                                               <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Ereignisse."@de ,
                                                                                                "This class comprises all Events."@en ;
-                                              <http://www.w3.org/2004/02/skos/core#example> "A performance of 'Hamlet', a workshop regarding a specific acting technique, an exhibition about an actor/actress"@en ,
-                                                                                            "Eine Aufführung von 'Hamlet', ein Workshop zu einer speziellen Schauspieltechnik, eine Ausstellung über eine/n Darsteller/in"@de .
+                                              <http://www.w3.org/2004/02/skos/core#example> "A performance of 'Hamlet'"@en ,
+                                                                                            "A workshop regarding a specific acting technique"@en ,
+                                                                                            "An exhibition about an actor/actress"@en ,
+                                                                                            "Ein Workshop zu einer speziellen Schauspieltechnik"@de ,
+                                                                                            "Eine Aufführung von 'Hamlet'"@de ,
+                                                                                            "Eine Ausstellung über eine/n Darsteller/in"@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/FestivalPlan
@@ -2408,7 +2432,8 @@
                                                                           "Performing Arts Location"@en ;
                                                                <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst Orte, die für darstellende Künste genutzt werden oder wurden."@de ,
                                                                                                                 "This class comprises locations that were or are used for performing arts."@en ;
-                                                               <http://www.w3.org/2004/02/skos/core#example> "Volksbühne, Pratergarten"@de ,
+                                                               <http://www.w3.org/2004/02/skos/core#example> "Das Theater 'Volksbühne am Rosa-Luxemburg-Platz' in Berlin."@de ,
+                                                                                                             "Pratergarten"@de ,
                                                                                                              "Volksbühne, Pratergarten"@en .
 
 
@@ -2421,8 +2446,9 @@
                                                                             "Produktion (darstellende Künste)"@de ;
                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst Produktionen der darstellenden Künste."@de ,
                                                                                                                   "This class comprises Performing Arts Productions."@en ;
-                                                                 <http://www.w3.org/2004/02/skos/core#example> "Blaubart, Hamlet"@de ,
-                                                                                                               "Blaubart, Hamlet"@en .
+                                                                 <http://www.w3.org/2004/02/skos/core#example> "Blaubart, Hamlet"@en ,
+                                                                                                               "Die Produktion 'Blaubart'...von, am, am am"@de ,
+                                                                                                               "Hamlet"@de .
 
 
 ###  http://lod.iti-germany.de/schema/nvto/Person

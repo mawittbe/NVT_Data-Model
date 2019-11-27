@@ -239,8 +239,12 @@
         <rdfs:label xml:lang="de">hat hörbare Referenz zu</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to another resource it has an audible reference to.</skos:definition>
         <skos:definition xml:lang="de">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält.</skos:definition>
-        <skos:example xml:lang="de">In Video Z wird über Aufführung X geredet, In Audioaufnahme R ist Person K im Gespräch zu hören, In Video E ist Person L zu hören, aber nicht zu sehen.</skos:example>
-        <skos:example xml:lang="en">In video Z it is talked about performance X, In audio recording R Person K is heard talking, In video E Person L is heard, but not seen.</skos:example>
+        <skos:example xml:lang="de">In Audioaufnahme R ist Person K im Gespräch zu hören.</skos:example>
+        <skos:example xml:lang="de">In Video E ist Person L zu hören, aber nicht zu sehen.</skos:example>
+        <skos:example xml:lang="de">In Video Z wird über Aufführung X geredet.</skos:example>
+        <skos:example xml:lang="en">In audio recording R Person K is heard talking</skos:example>
+        <skos:example xml:lang="en">In video E Person L is heard, but not seen.</skos:example>
+        <skos:example xml:lang="en">Performance X is being talked about in video Z</skos:example>
     </owl:ObjectProperty>
     
 
@@ -3135,8 +3139,10 @@
         <rdfs:label xml:lang="en">Agent</rdfs:label>
         <skos:definition xml:lang="de">Diese Klasse umfasst alle Agens wie Personen und Institutionen.</skos:definition>
         <skos:definition xml:lang="en">This class comprises all agents such as persons or institutions.</skos:definition>
-        <skos:example xml:lang="de">Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg</skos:example>
-        <skos:example xml:lang="en">Burkhart Seidemann, Pantomimen-Theater vom Prenzlauer Berg</skos:example>
+        <skos:example xml:lang="de">Burkhart Seidemann</skos:example>
+        <skos:example xml:lang="en">Burkhart Seidemann</skos:example>
+        <skos:example xml:lang="de">Pantomimen-Theater vom Prenzlauer Berg</skos:example>
+        <skos:example xml:lang="en">Pantomimen-Theater vom Prenzlauer Berg</skos:example>
     </owl:Class>
     
 
@@ -3152,8 +3158,12 @@
         <rdfs:label xml:lang="de">Stadt</rdfs:label>
         <skos:definition xml:lang="de">Diese Klasse umfasst Städte abhängig von Zeit und/oder Geopolitik.</skos:definition>
         <skos:definition xml:lang="en">This class comprises cities dependent on time and/or geopolitics.</skos:definition>
-        <skos:example xml:lang="en">Berlin, West Berlin, East Berlin</skos:example>
-        <skos:example xml:lang="de">Berlin, Westberlin, Ostberlin</skos:example>
+        <skos:example xml:lang="de">Berlin</skos:example>
+        <skos:example xml:lang="en">Berlin</skos:example>
+        <skos:example xml:lang="en">East Berlin</skos:example>
+        <skos:example xml:lang="de">Ostberlin</skos:example>
+        <skos:example xml:lang="en">West Berlin</skos:example>
+        <skos:example xml:lang="de">Westberlin</skos:example>
     </owl:Class>
     
 
@@ -3185,8 +3195,12 @@
         <rdfs:label xml:lang="de">Land</rdfs:label>
         <skos:definition xml:lang="de">Diese Klasse umfasst Länder abhängig von Zeit und/oder Geopolitik.</skos:definition>
         <skos:definition xml:lang="en">This class comprises countries dependent on time and/or geopolitics.</skos:definition>
-        <skos:example xml:lang="en">FRG, West Germany, GDR</skos:example>
-        <skos:example xml:lang="de">Französische Republik, Westdeutschland, DDR</skos:example>
+        <skos:example xml:lang="de">DDR</skos:example>
+        <skos:example xml:lang="de">Federal Republic of Germany</skos:example>
+        <skos:example xml:lang="de">Französische Republik</skos:example>
+        <skos:example xml:lang="en">GDR</skos:example>
+        <skos:example xml:lang="en">West Germany</skos:example>
+        <skos:example xml:lang="de">Westdeutschland</skos:example>
     </owl:Class>
     
 
@@ -3201,8 +3215,12 @@
         <rdfs:label xml:lang="de">Kreatives Konzept</rdfs:label>
         <skos:definition xml:lang="de">Diese Klasse umfasst alle Kreativen Konzepte.</skos:definition>
         <skos:definition xml:lang="en">This class comprises all Creative Concepts.</skos:definition>
-        <skos:example xml:lang="de">Produktion (darstellende Künste); Filmproduktion; Festival</skos:example>
-        <skos:example xml:lang="en">performing arts production; film production, festival</skos:example>
+        <skos:example xml:lang="en">A festival</skos:example>
+        <skos:example xml:lang="en">A film production</skos:example>
+        <skos:example xml:lang="en">A performing arts production</skos:example>
+        <skos:example xml:lang="de">Ein Festival</skos:example>
+        <skos:example xml:lang="de">Eine Filmproduktion</skos:example>
+        <skos:example xml:lang="de">Eine Produktion (darstellende Künste)</skos:example>
     </owl:Class>
     
 
@@ -3217,8 +3235,10 @@
         <rdfs:label xml:lang="de">Digitales Objekt</rdfs:label>
         <skos:definition xml:lang="de">Diese Klasse umfasst alle digitalen Objekte.</skos:definition>
         <skos:definition xml:lang="en">This class comprises all Digital Objects.</skos:definition>
-        <skos:example xml:lang="en">A specific digital file with name IMG-001.tif, VID-001.avi</skos:example>
-        <skos:example xml:lang="de">Eine spezifische digitale Datei mit Namen IMG-001.tif, VID-001.avi</skos:example>
+        <skos:example xml:lang="en">A specific digital file with name IMG-001.tif</skos:example>
+        <skos:example xml:lang="en">A specific digital file with name VID-001.avi</skos:example>
+        <skos:example xml:lang="de">Eine spezifische digitale Datei mit Namen IMG-001.tif</skos:example>
+        <skos:example xml:lang="de">Eine spezifische digitale Datei mit Namen VID-001.avi</skos:example>
     </owl:Class>
     
 
@@ -3233,8 +3253,12 @@
         <rdfs:label xml:lang="en">Event</rdfs:label>
         <skos:definition xml:lang="de">Diese Klasse umfasst alle Ereignisse.</skos:definition>
         <skos:definition xml:lang="en">This class comprises all Events.</skos:definition>
-        <skos:example xml:lang="en">A performance of &apos;Hamlet&apos;, a workshop regarding a specific acting technique, an exhibition about an actor/actress</skos:example>
-        <skos:example xml:lang="de">Eine Aufführung von &apos;Hamlet&apos;, ein Workshop zu einer speziellen Schauspieltechnik, eine Ausstellung über eine/n Darsteller/in</skos:example>
+        <skos:example xml:lang="en">A performance of &apos;Hamlet&apos;</skos:example>
+        <skos:example xml:lang="en">A workshop regarding a specific acting technique</skos:example>
+        <skos:example xml:lang="en">An exhibition about an actor/actress</skos:example>
+        <skos:example xml:lang="de">Ein Workshop zu einer speziellen Schauspieltechnik</skos:example>
+        <skos:example xml:lang="de">Eine Aufführung von &apos;Hamlet&apos;</skos:example>
+        <skos:example xml:lang="de">Eine Ausstellung über eine/n Darsteller/in</skos:example>
     </owl:Class>
     
 
@@ -3317,7 +3341,8 @@
         <rdfs:label xml:lang="en">Performing Arts Location</rdfs:label>
         <skos:definition xml:lang="de">Diese Klasse umfasst Orte, die für darstellende Künste genutzt werden oder wurden.</skos:definition>
         <skos:definition xml:lang="en">This class comprises locations that were or are used for performing arts.</skos:definition>
-        <skos:example xml:lang="de">Volksbühne, Pratergarten</skos:example>
+        <skos:example xml:lang="de">Das Theater &apos;Volksbühne am Rosa-Luxemburg-Platz&apos; in Berlin.</skos:example>
+        <skos:example xml:lang="de">Pratergarten</skos:example>
         <skos:example xml:lang="en">Volksbühne, Pratergarten</skos:example>
     </owl:Class>
     
@@ -3334,8 +3359,9 @@
         <rdfs:label xml:lang="de">Produktion (darstellende Künste)</rdfs:label>
         <skos:definition xml:lang="de">Diese Klasse umfasst Produktionen der darstellenden Künste.</skos:definition>
         <skos:definition xml:lang="en">This class comprises Performing Arts Productions.</skos:definition>
-        <skos:example xml:lang="de">Blaubart, Hamlet</skos:example>
         <skos:example xml:lang="en">Blaubart, Hamlet</skos:example>
+        <skos:example xml:lang="de">Die Produktion &apos;Blaubart&apos;...von, am, am am</skos:example>
+        <skos:example xml:lang="de">Hamlet</skos:example>
     </owl:Class>
     
 

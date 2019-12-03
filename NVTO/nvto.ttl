@@ -66,8 +66,8 @@ nvto:Collection rdf:type owl:Class ;
                 rdfs:label "Collection"@en ;
                 skos:definition """Diese Klasse umfasst (benannte) Sammlungen von Ressourcen in willkürlicher Reihenfolge."""@de ;
                 skos:definition """This class comprises (named) resource collections in arbitrary order."""@en ;
-                skos:scopeNote """Eine Sammlung ist eine von einer Institution oder Person stammende oder zusammengestellte Menge an physischen und/oder digitalen Objekten, sowie deren beschreibende Datensätze. Sammlungen können zu einem Thema oder einem Ereignis angelegt sein oder ganze Archivbestände abdecken."""@de ;
-                skos:scopeNote """A Collection is a set of physical and/or digital objects, originating from or created by an institution or a person. Collections can be created to cover a topic, event or entire archives."""@en ;
+                skos:scopeNote """Eine Sammlung ist eine von einer Personengruppierung oder Person stammende oder zusammengestellte Menge an physischen und/oder digitalen Objekten in willkürlicher Reihenfolge. Sammlungen können zu einem Thema oder einem Ereignis angelegt sein oder ganze Archivbestände abdecken."""@de ;
+                skos:scopeNote """A Collection is a set of physical and/or digital objects in arbitrary order. originating from or created by a group of persons or a person. Collections can be created to cover a topic, event or entire archives."""@en ;
                 skos:example "COL"@de ;
                 skos:example "COL"@en .
 
@@ -75,8 +75,8 @@ nvto:Country rdf:type owl:Class ;
              rdfs:subClassOf nvto:Place ;
              rdfs:label "Land"@de ;
              rdfs:label "Country"@en ;
-             skos:definition """Diese Klasse umfasst Länder abhängig von Zeit und/oder Geopolitik."""@de ;
-             skos:definition """This class comprises countries dependent on time and/or geopolitics."""@en ;
+             skos:definition """Diese Klasse umfasst alle Länder abhängig von Zeit und/oder Geopolitik."""@de ;
+             skos:definition """This class comprises all countries dependent on time and/or geopolitics."""@en ;
              skos:scopeNote """Länder können reale Orte sein, die existiert haben oder existieren. Auch fiktive Länder sind möglich."""@de ;
              skos:scopeNote """Countries can be real places that existed or exist. Fictional countries are possible as well."""@en ;
              skos:example "Französische Republik"@de ,
@@ -91,8 +91,8 @@ nvto:CreativeConcept rdf:type owl:Class ;
                     rdfs:label "Creative Concept"@en ;
                     skos:definition """Diese Klasse umfasst alle Kreativen Konzepte."""@de ;
                     skos:definition """This class comprises all Creative Concepts."""@en ;
-                    skos:scopeNote """Diese Klasse dient als Oberklasse für genauer definierte Kreative Konzepte, wie Filmproduktionen oder Produktionen der darstellenden Künste."""@de ;
-                    skos:scopeNote """This class primarily serves as top class for more specifically defined Creative Concepts such as film productions or performing arts productions."""@en ;
+                    skos:scopeNote """Kreative Konzepte umfassen Ideen, Planungen und Konzeptionen, die als kreative Grundlage von Ereignissen, Informationsobjekten oder anderen Ressourcen dienen. Kreative Konzepte müssen nicht verwirklicht werden. Diese Klasse dient als Oberklasse für genauer definierte Kreative Konzepte, wie Filmproduktionen oder Produktionen der darstellenden Künste."""@de ;
+                    skos:scopeNote """Creative Concepts comprise ideas, plans and conceptions that serve as a creative foundation for Events, Information Objects or other resources. Creative Concepts do not have to be realized. This class primarily serves as top class for more specifically defined Creative Concepts such as film productions or performing arts productions."""@en ;
                     skos:example "Eine Produktion (darstellende Künste)"@de ,
                                  "Eine Filmproduktion"@de ,
                                  "Ein Festival"@de ;
@@ -106,7 +106,7 @@ nvto:DigitalObject rdf:type owl:Class ;
                    rdfs:label "Digital Object"@en ;
                    skos:definition """Diese Klasse umfasst alle digitalen Objekte."""@de ;
                    skos:definition """This class comprises all Digital Objects."""@en ;
-                   skos:scopeNote """Diese Klasse umfasst sowohl digitale Repräsentationen von Inhalten von Physischen Objekten, als auch nativ digitale Objekte. Digitale Objekte können wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte sein."""@de ;
+                   skos:scopeNote """Diese Klasse umfasst sowohl digitale Repräsentationen von Inhalten von Physischen Objekten als auch nativ digitale Objekte. Digitale Objekte können wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte sein."""@de ;
                    skos:scopeNote """This class comprises digital representations of contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, can be information carriers of one or more Information Objects."""@en ;
                    skos:example "Eine spezifische digitale Datei mit Namen IMG-001.tif"@de ,
                                 "Eine spezifische digitale Datei mit Namen VID-001.avi"@de ;
@@ -152,10 +152,10 @@ nvto:FilmProduction rdf:type owl:Class ;
 nvto:InformationObject rdf:type owl:Class ;
                        rdfs:label "Informationsobjekt"@de ;
                        rdfs:label "Information Object"@en ;
-                       skos:definition """"Diese Klasse umfasst alle Informationsobjekte."""@de ;
-                       skos:definition """"This class comprises all Information Objects."""@en ;
-                       skos:scopeNote """Ein Informationsobjekt ist ein immaterielles, beschreibbares Objekt, das in der Regel von einem oder mehreren Informationsträgern repräsentiert wird. Dasselbe Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer Kopie der Fotografie in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann mehere Informationsobjekte tragen (z.B. mehrere Videos auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans)."""@de ;
-                       skos:scopeNote """An Information Object is an immaterial, describable object, usually represented by one or more information carriers. The same Information Object can be captured in multiple Physical or Digital Objects (e.g. a magazine edition). One Physical or Digital Object can carry multiple Information Objects (e.g. multiple movies on a single video tape). An Information Object can be part of another Information Object (e.g. a chapter of a novel)."""@en ;
+                       skos:definition """Diese Klasse umfasst alle Informationsobjekte."""@de ;
+                       skos:definition """This class comprises all Information Objects."""@en ;
+                       skos:scopeNote """Ein Informationsobjekt ist ein immaterielles, beschreibbares Objekt, das in der Regel von einem oder mehreren Informationsträgern repräsentiert wird. Das gleiche Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer Kopie der Fotografie in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann mehrere Informationsobjekte tragen (z.B. mehrere Videoaufzeichnungen auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans)."""@de ;
+                       skos:scopeNote """An Information Object is an immaterial, describable object, usually represented by one or more information carriers. The same Information Object can be captured in multiple Physical or Digital Objects (e.g. a magazine edition). One Physical or Digital Object can carry multiple Information Objects (e.g. multiple video recordings on a single video tape). An Information Object can be part of another Information Object (e.g. a chapter of a novel)."""@en ;
                        skos:example "Aufnahme von Aufführung X, Inhalt von Programmheft Y"@de ;
                        skos:example "Recording of Performance X, Contents of programme booklet Y"@en .
 
@@ -181,11 +181,11 @@ nvto:PerformingArtsGroup rdf:type owl:Class ;
 
 nvto:PerformingArtsLocation rdf:type owl:Class ;
                             rdfs:subClassOf nvto:Place ;
-                            rdfs:label "Aufführungsort (darstellende Künste)"@de ;
+                            rdfs:label "Ort (darstellende Künste)"@de ;
                             rdfs:label "Performing Arts Location"@en ;
                             skos:definition """Diese Klasse umfasst Orte, die für darstellende Künste genutzt werden oder wurden."""@de ;
                             skos:definition """This class comprises locations that were or are used for performing arts."""@en ;
-                            skos:scopeNote """Ein Performing Arts Aufführungsort ist in der Regel eine Spielstätte oder ein öffentlicher Platz. Generell kann jeder Ort, an dem aufgeführt wird, ein Aufführungsort (darstellende Künste) sein. Fiktive Orte von fiktiven Aufführungen sind nicht ausgeschlossen."""@de ;
+                            skos:scopeNote """Ein Ort (darstellende Künste) ist in der Regel eine Spielstätte oder ein öffentlicher Platz. Generell kann jeder Ort, an dem aufgeführt wird oder der anderweitig für darstellende Künste genutzt wird, ein Ort (darstellende Künste) sein. Fiktive Orte von fiktiven Aufführungen sind nicht ausgeschlossen."""@de ;
                             skos:scopeNote """A Performing Arts Location usually is a venue or a public place. Generally any location used for a performance can be a Performing Arts Location. Fictional Locations for fictional performances are not excluded."""@en ;
                             skos:example "Das Theater 'Volksbühne am Rosa-Luxemburg-Platz' in Berlin."@de ,
                                          "Pratergarten"@de  ;

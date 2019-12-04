@@ -1,5 +1,5 @@
-@prefix nvto: <http://lod.iti-germany.de/schema/nvto/> .
-@prefix ex: <http://lod.iti-germany.de/nvto/resource/examples/> .
+@prefix paam: <http://lod.medidathek-tanz-theater.de/schema/paam/> .
+@prefix ex: <http://lod.medidathek-tanz-theater.de/examples/paam/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -13,15 +13,13 @@
 ###   Inverse Relationen                    ###
 ###############################################
 
-un:isRecordedThrough rdf:type owl:ObjectProperty ;
+paam:isRecordedIn rdf:type owl:ObjectProperty ;
                       owl:inverseOf un:records .
 
 un:isUsedDuring rdf:type owl:ObjectProperty ;
                 owl:inverseOf un:uses .
 
-nvto:containsReference owl:inverseOf un:isReferencedBy .
-nvto:hasDigitalRepresentation owl:inverseOf un:isDigitalRepresentationOf .
-nvto:hasInformationCarrier owl:inverseOf un:isInformationCarrierOf .
+paam:hasInformationCarrier owl:inverseOf un:isInformationCarrierOf .
 dcterms:isPartOf owl:inverseOf un:hasPart .
 
 ###############################################
@@ -34,265 +32,252 @@ dcterms:isPartOf owl:inverseOf un:hasPart .
 #Digitale Objekte
 
 #Produktion
-ex:Produktion1 rdf:type nvto:Production ;
+ex:Produktion1 rdf:type paam:PerformingArtsProduction ;
                 rdfs:label "Unsichtbare Welt"@de ;
-                dcterms:title "Unsichtbare Welt"@de ;
+                paam:hasTitle "Unsichtbare Welt"@de ;
                 rdfs:label "Invisible World"@en ;
-                dcterms:title "Invisible World"@en ;
-                nvto:hasFirstPerformanceDate "2001-08-14" ;
-                un:hasLastPerformanceDate "2001-08-17" .
+                paam:hasTitle "Invisible World"@en ;
+                paam:hasDate "2001-08-17" .
 
 #Aufführungen mit ihren Timespans
-ex:Auffuehrung1  rdf:type nvto:Event ;
-                dcterms:type "Premiere" ;
-                nvto:occuredAtTime ex:TimespanA1 ;
-                nvto:happenedAtPlace ex:Place1 ;
-                dcterms:date "2001-08-14" .
+ex:Auffuehrung1  rdf:type paam:Event ;
+                paam:hasType "Premiere" ;
+                paam:hasTimeOfOccurrence ex:TimespanA1 ;
+                paam:happenedAtPlace ex:Place1 ;
+                paam:hasDate "2001-08-14" .
 
-ex:TimespanA1   rdf:type nvto:TimeSpan ;
-                nvto:beginsAtTime "2001-08-14T20:00" ;
-                nvto:endsAtTime "2001-08-14T21:00" .
+ex:TimespanA1   rdf:type paam:TimeSpan ;
+                paam:beginsAtTime "2001-08-14T20:00" ;
+                paam:endsAtTime "2001-08-14T21:00" .
 
-ex:Auffuehrung2 rdf:type nvto:Event ;
-                dcterms:type "Aufführung" ;
-                nvto:occuredAtTime ex:TimespanA2 ;
-                dcterms:date "2001-08-15" .
+ex:Auffuehrung2 rdf:type paam:Event ;
+                paam:hasType "Aufführung" ;
+                paam:hasTimeOfOccurrence ex:TimespanA2 ;
+                paam:hasDate "2001-08-15" .
 
-ex:TimespanA2   rdf:type nvto:TimeSpan ;
-                nvto:beginsAtTime "2001-08-15T20:00" ;
-                nvto:endsAtTime "2001-08-15T21:00" .
+ex:TimespanA2   rdf:type paam:TimeSpan ;
+                paam:beginsAtTime "2001-08-15T20:00" ;
+                paam:endsAtTime "2001-08-15T21:00" .
 
-ex:Auffuehrung3 rdf:type nvto:Event ;
-                dcterms:type "Aufführung" ;
-                nvto:occuredAtTime ex:TimespanA3 ;
-                dcterms:date "2001-08-16" .
+ex:Auffuehrung3 rdf:type paam:Event ;
+                paam:hasType "Aufführung" ;
+                paam:hasTimeOfOccurrence ex:TimespanA3 ;
+                paam:hasDate "2001-08-16" .
 
-ex:TimespanA3   rdf:type nvto:TimeSpan ;
-                nvto:beginsAtTime "2001-08-16T19:00" ;
-                nvto:endsAtTime "2001-08-16T20:00" .
+ex:TimespanA3   rdf:type paam:TimeSpan ;
+                paam:beginsAtTime "2001-08-16T19:00" ;
+                paam:endsAtTime "2001-08-16T20:00" .
 
-ex:Auffuehrung4 rdf:type nvto:Event ;
-                dcterms:type "Derniere" ;
-                nvto:occuredAtTime ex:TimespanA4 ;
-                dcterms:date "2001-08-17" .
+ex:Auffuehrung4 rdf:type paam:Event ;
+                paam:hasType "Derniere" ;
+                paam:hasTimeOfOccurrence ex:TimespanA4 ;
+                paam:hasDate "2001-08-17" .
 
-ex:TimespanA4   rdf:type nvto:TimeSpan ;
-                nvto:beginsAtTime "2001-08-14T22:00" ;
-                nvto:endsAtTime "2001-08-14T23:00" .
+ex:TimespanA4   rdf:type paam:TimeSpan ;
+                paam:beginsAtTime "2001-08-14T22:00" ;
+                paam:endsAtTime "2001-08-14T23:00" .
 
 #Personen
-ex:Author1 rdf:type nvto:Agent ;
-            rdf:type foaf:Person ;
-            foaf:name "Arthur Autorus" ;
+ex:Author1 rdf:type paam:Agent ;
+            rdf:type paam:Person ;
+            paam:hasName "Arthur Autorus" ;
             rdfs:label "Arthur Autorus" ;
             skos:prefLabel "Arthur Autorus" ;
-            foaf:firstName "Arthur" ;
-            foaf:lastName "Autorus" .
+            paam:hasFirstName "Arthur" ;
+            paam:hasLastName "Autorus" .
 
-ex:Performer1 rdf:type nvto:Agent ;
-            rdf:type foaf:Person ;
-            foaf:name "Peter Perforante" ;
+ex:Performer1 rdf:type paam:Agent ;
+            rdf:type paam:Person ;
+            paam:hasName "Peter Perforante" ;
             rdfs:label "Peter Perforante" ;
             skos:prefLabel "Peter Perforante" ;
-            foaf:firstName "Peter" ;
-            foaf:lastName "Perforante" .
+            paam:hasFirstName "Peter" ;
+            paam:hasLastName "Perforante" .
 
-ex:Performer2 rdf:type nvto:Agent ;
-            rdf:type foaf:Person ;
-            foaf:name "Pamela Stagé" ;
+ex:Performer2 rdf:type paam:Agent ;
+            rdf:type paam:Person ;
+            paam:hasName "Pamela Stagé" ;
             rdfs:label "Pamela Stagé" ;
             skos:prefLabel "Pamela Stagé" ;
-            foaf:firstName "Pamela" ;
-            foaf:lastName "Stagé" .
+            paam:hasFirstName "Pamela" ;
+            paam:hasLastName "Stagé" .
 
-ex:Photographer1 rdf:type nvto:Agent ;
-            rdf:type foaf:Person ;
-            foaf:name "Berndt Lichte" ;
+ex:Photographer1 rdf:type paam:Agent ;
+            rdf:type paam:Person ;
+            paam:hasName "Berndt Lichte" ;
             rdfs:label "Berndt Lichte" ;
             skos:prefLabel "Berndt Lichte" ;
-            foaf:firstName "Berndt" ;
-            foaf:lastName "Lichte" .
+            paam:hasFirstName "Berndt" ;
+            paam:hasLastName "Lichte" .
 
-ex:CostumeDesigner1 rdf:type nvto:Agent ;
-            rdf:type foaf:Person ;
-            foaf:name "Anna von Stoffe" ;
+ex:CostumeDesigner1 rdf:type paam:Agent ;
+            rdf:type paam:Person ;
+            paam:hasName "Anna von Stoffe" ;
             rdfs:label "Anna von Stoffe" ;
             skos:prefLabel "Anna von Stoffe" ;
-            foaf:firstName "Anna" ;
-            foaf:lastName "von Stoffe" .
+            paam:hasFirstName "Anna" ;
+            paam:hasLastName "von Stoffe" .
 
-ex:Editor1 rdf:type nvto:Agent ;
-            rdf:type foaf:Person ;
-            foaf:name "Ernst Wiktus" ;
+ex:Editor1 rdf:type paam:Agent ;
+            rdf:type paam:Person ;
+            paam:hasName "Ernst Wiktus" ;
             rdfs:label "Ernst Wiktus" ;
             skos:prefLabel "Ernst Wiktus" ;
-            foaf:firstName "Ernst" ;
-            foaf:lastName "Wiktus" .
+            paam:hasFirstName "Ernst" ;
+            paam:hasLastName "Wiktus" .
 
 #Gruppen
-ex:Group1 rdf:type nvto:Agent ;
-            rdf:type foaf:Person ;
-            foaf:name "Die wilden Mimen" ;
+ex:Group1 rdf:type paam:Agent ;
+            rdf:type nvto:PerformingArtsGroup ;
+            paam:hasName "Die wilden Mimen" ;
             rdfs:label "Die wilden Mimen"@de ;
             rdfs:label "The wild mimes"@en ;
             skos:prefLabel "Die wilden Mimen" .
 
 #Orte
-ex:Place1 rdf:type nvto:Place ;
+ex:Place1 rdf:type paam:Place ;
           rdfs:label "Mime Centrum Berlin"@de ;
           rdfs:label "Mime Centre Berlin"@de ;
           schema:streetAddress "Mariannenplatz 2, 10997, Berlin" .
 
 #Archivobjekte
-ex:VideoRecording1 rdf:type nvto:PhysicalObject ;
+ex:VideoRecording1 rdf:type paam:PhysicalObject ;
           rdfs:label "Unsichbare Welt - Band 1, 16.8.2001" ;
-          dcterms:format "S-VHS" ;
-          dcterms:type "Videodokumentation" .
+          paam:hasFormat "S-VHS" ;
+          paam:hasType "Videodokumentation" .
 
-ex:Negativstreifen1 rdf:type nvto:PhysicalObject ;
+ex:Negativstreifen1 rdf:type paam:PhysicalObject ;
           rdfs:label "UW, 16 Aug, 2001, 55/56/57" ;
-          dcterms:type "Negativstreifen" .
+          paam:hasType "Negativstreifen" .
 
-ex:Abendzettel1 rdf:type nvto:PhysicalObject ;
+ex:Abendzettel1 rdf:type paam:PhysicalObject ;
           rdfs:label "Unsichtbare Welt - 14.-17.August"@de ;
-          dcterms:type "Abendzettel" .
+          paam:hasType "Abendzettel" .
 
-ex:Kostüm1 rdf:type nvto:PhysicalObject ;
+ex:Kostüm1 rdf:type paam:PhysicalObject ;
           rdfs:label "Unsichbare Maske des dritten Ichs"@de ;
-          dcterms:type "Kostüm" ;
-          dcterms:type "Maske" .
+          paam:hasType "Kostüm" ;
+          paam:hasType "Maske" .
 
 #Objektinhalte (Expressions)
-ex:ContentVideoRecording1 rdf:type nvto:InformationObject ;
+ex:ContentVideoRecording1 rdf:type paam:InformationObject ;
           rdfs:label "Inhalt von Unsichbare Welt - Band 1, 16.8.2001" ;
-          dcterms:type "Videodokumentation" .
+          paam:hasType "Videodokumentation" .
 
-ex:ContentNegativstreifen1 rdf:type nvto:InformationObject ;
+ex:ContentNegativstreifen1 rdf:type paam:InformationObject ;
           rdfs:label "Inhalt von UW, 16 Aug, 2001, 55/56/57" ;
-          dcterms:type "Negativstreifen" .
+          paam:hasType "Negativstreifen" .
 
-ex:ContentTeilbild1 rdf:type nvto:InformationObject ;
+ex:ContentTeilbild1 rdf:type paam:InformationObject ;
           rdfs:label "Inhalt von 55" ;
-          dcterms:type "Einzelbild" .
+          paam:hasType "Einzelbild" .
 
-ex:ContentTeilbild2 rdf:type nvto:InformationObject ;
+ex:ContentTeilbild2 rdf:type paam:InformationObject ;
           rdfs:label "Inhalt von 56" ;
-          dcterms:type "Einzelbild" .
+          paam:hasType "Einzelbild" .
 
-ex:ContentTeilbild3 rdf:type nvto:InformationObject ;
+ex:ContentTeilbild3 rdf:type paam:InformationObject ;
           rdfs:label "Inhalt von 57" ;
-          dcterms:type "Einzelbild" .
+          paam:hasType "Einzelbild" .
 
-ex:ContentAbendzettel1 rdf:type nvto:InformationObject ;
+ex:ContentAbendzettel1 rdf:type paam:InformationObject ;
           rdfs:label "Inhalt von Unsichtbare Welt - 14.-17.August"@de ;
-          dcterms:type "Abendzettel" .
+          paam:hasType "Abendzettel" .
 
-ex:ContentKostüm1 rdf:type nvto:InformationObject ;
+ex:ContentKostüm1 rdf:type paam:InformationObject ;
           rdfs:label "Inhalt von Unsichbare Maske des dritten Ichs"@de ;
-          dcterms:type "Kostüm" ;
-          dcterms:type "Maske" .
+          paam:hasType "Kostüm" ;
+          paam:hasType "Maske" .
 
-ex:ContentDigitalVideoRecording1 rdf:type nvto:InformationObject ;
+ex:ContentDigitalVideoRecording1 rdf:type paam:InformationObject ;
           rdfs:label "Inhalt von UnsichtbareWelt_3840_60p.MXF" .
 
 
 #Digitale Objekte
-ex:DigitalVideoRecording1 rdf:type nvto:DigitalObject ;
-          rdfs:label "UnsichtbareWelt_3840_60p.MXF" ;
+<https://pfad.zum/objekt/DigitalVideoRecording1.MXF> rdf:type paam:DigitalObject ;
           un:videoCodec "Sony XAVC-Intra" ;
           un:videoContainer "MXF" .
 
 #Digitalisate
-ex:DigiVideoRecording1 rdf:type nvto:DigitalObject ;
-          rdfs:label "vid_Unsichbare-Welt_1_16-8-2001.avi" ;
-          dcterms:type "Videodokumentation" ;
+<https://pfad.zum/objekt/DigiVideoRecording1.avi> rdf:type paam:DigitalObject ;
+          paam:hasType "Videodokumentation" ;
           un:videoCodec "Uncompressed 10bit YUV" ;
           un:videoContainer "avi" .
 
-ex:DigiNegativstreifen1 rdf:type nvto:DigitalObject ;
-          rdfs:label "img_UW_16_Aug_2001_55/56/57.tif" ;
-          dcterms:format "tif" ;
-          dcterms:type "Negativstreifen" .
+<https://pfad.zum/objekt/DigiNegativstreifen1.tif> rdf:type paam:DigitalObject ;
+          paam:hasFormat "tif" ;
+          paam:hasType "Negativstreifen" .
 
-ex:DigiTeilbild1 rdf:type nvto:DigitalObject ;
-          rdfs:label "txt_55.tif" ;
-          dcterms:format "tif" ;
-          dcterms:type "Einzelbild" .
+<https://pfad.zum/objekt/DigiTeilbild1.tif> rdf:type paam:DigitalObject ;
+          paam:hasFormat "tif" ;
+          paam:hasType "Einzelbild" .
 
-ex:DigiTeilbild2 rdf:type nvto:DigitalObject ;
-          rdfs:label "txt_56.tif" ;
-          dcterms:format "tif" ;
-          dcterms:type "Einzelbild" .
+<https://pfad.zum/objekt/DigiTeilbild2.tif> rdf:type paam:DigitalObject ;
+          paam:hasFormat "tif" ;
+          paam:hasType "Einzelbild" .
 
-ex:DigiTeilbild3 rdf:type nvto:DigitalObject ;
-          rdfs:label "txt_57.tif" ;
-          dcterms:format "tif" ;
-          dcterms:type "Einzelbild" .
+<https://pfad.zum/objekt/DigiTeilbild3.tif> rdf:type paam:DigitalObject ;
+          paam:hasFormat "tif" ;
+          paam:hasType "Einzelbild" .
 
-ex:DigiAbendzettel1P rdf:type nvto:DigitalObject ;
-          rdfs:label "Unsichtbare_Welt-14_17_August.pdf" ;
-          dcterms:format "pdf" ;
-          dcterms:type "Abendzettel" .
+<https://pfad.zum/objekt/DigiAbendzettel1P.pdf> rdf:type paam:DigitalObject ;
+          paam:hasFormat "pdf" ;
+          paam:hasType "Abendzettel" .
 
-ex:DigiAbendzettel1T rdf:type nvto:DigitalObject ;
-          rdfs:label "Unsichtbare_Welt-14_17_August.tif" ;
-          dcterms:format "multi page tif" ;
-          dcterms:type "Abendzettel" .
+<https://pfad.zum/objekt/DigiAbendzettel1T.tif> rdf:type paam:DigitalObject ;
+          paam:hasFormat "multi page tif" ;
+          paam:hasType "Abendzettel" .
 
-ex:DigiAbendzettel1T_P1 rdf:type nvto:DigitalObject ;
-          rdfs:label "Unsichtbare_Welt-14_17_August_Page1.tif" ;
-          dcterms:format "tif" ;
-          dcterms:type "Abendzettel" .
+<https://pfad.zum/objekt/DigiAbendzettel1T_P1.tif> rdf:type paam:DigitalObject ;
+          paam:hasFormat "tif" ;
+          paam:hasType "Abendzettel" .
 
-ex:DigiAbendzettel1T_P2 rdf:type nvto:DigitalObject ;
-          rdfs:label "Unsichtbare_Welt-14_17_August_Page2.tif" ;
-          dcterms:format "tif" ;
-          dcterms:type "Abendzettel" .
+<https://pfad.zum/objekt/DigiAbendzettel1T_P2.tif> rdf:type paam:DigitalObject ;
+          paam:hasFormat "tif" ;
+          paam:hasType "Abendzettel" .
 
-ex:DigiKostüm1_B rdf:type nvto:DigitalObject ;
-          rdfs:label "Abbildung von Kostüm1.jpg" ;
-          dcterms:format "jpg" ;
-          dcterms:type "Kostüm" ;
-          dcterms:type "Maske" .
+<https://pfad.zum/objekt/DigiKostüm1_B.jpg> rdf:type paam:DigitalObject ;
+          paam:hasFormat "jpg" ;
+          paam:hasType "Kostüm" ;
+          paam:hasType "Maske" .
 
-ex:DigiKostüm1_3D rdf:type nvto:DigitalObject ;
-          rdfs:label "Kostüm1.obj" ;
-          dcterms:format "obj";
-          dcterms:type "Kostüm" ;
-          dcterms:type "Maske" .
+<https://pfad.zum/objekt/DigiKostüm1_3D.obj> rdf:type paam:DigitalObject ;
+          paam:hasFormat "obj";
+          paam:hasType "Kostüm" ;
+          paam:hasType "Maske" .
 
 ###############################################
 ###   Relationen zwischen Entitäten         ###
 ###############################################
 
 #Produktion und Aufführungen
-ex:Produktion1 un:isPerformedThrough ex:Auffuehrung1 , ex:Auffuehrung2 , ex:Auffuehrung3 , ex:Auffuehrung4 ;
-                nvto:hasAuthor ex:Author1 ;
-                nvto:hasCostumeDesigner ex:CostumeDesigner1 .
+ex:Produktion1 paam:hasPart ex:Auffuehrung1 , ex:Auffuehrung2 , ex:Auffuehrung3 , ex:Auffuehrung4 ;
+                paam:hasAuthor ex:Author1 ;
+                paam:hasCostumeDesigner ex:CostumeDesigner1 .
 
 #Aufführungen und Objekte
-ex:Auffuehrung3 un:isRecordedThrough ex:ContentVideoRecording1 .
-ex:Auffuehrung1 un:isRecordedThrough ex:ContentNegativstreifen1 , ex:ContentTeilbild1 .
-ex:Auffuehrung2 un:isRecordedThrough ex:ContentNegativstreifen1 , ex:ContentTeilbild2 .
-ex:Auffuehrung3 un:isRecordedThrough ex:ContentNegativstreifen1 , ex:ContentTeilbild3 .
+ex:Auffuehrung3 paam:isRecordedIn ex:ContentVideoRecording1 .
+ex:Auffuehrung1 paam:isRecordedIn ex:ContentNegativstreifen1 , ex:ContentTeilbild1 .
+ex:Auffuehrung2 paam:isRecordedIn ex:ContentNegativstreifen1 , ex:ContentTeilbild2 .
+ex:Auffuehrung3 paam:isRecordedIn ex:ContentNegativstreifen1 , ex:ContentTeilbild3 .
 
-ex:ContentAbendzettel1 nvto:containsTextualReference ex:Auffuehrung1 , ex:Auffuehrung2 , ex:Auffuehrung3 , ex:Auffuehrung4 , ex:Produktion1 .
+ex:ContentAbendzettel1 paam:containsTextualReferenceTo ex:Auffuehrung1 , ex:Auffuehrung2 , ex:Auffuehrung3 , ex:Auffuehrung4 , ex:Produktion1 .
 
 ex:Kostüm1 un:isUsedDuring ex:Auffuehrung1 , ex:Auffuehrung2 , ex:Auffuehrung3 , ex:Auffuehrung4 .
 
 #Objekte und ihre Inhalte/enthaltenen Expressions
-ex:ContentVideoRecording1 nvto:hasInformationCarrier ex:VideoRecording1 , ex:DigiVideoRecording1 .
-ex:ContentNegativstreifen1 nvto:hasInformationCarrier ex:Negativstreifen1 , ex:DigiNegativstreifen1 ;
+ex:ContentVideoRecording1 paam:hasInformationCarrier ex:VideoRecording1 , ex:DigiVideoRecording1 .
+ex:ContentNegativstreifen1 paam:hasInformationCarrier ex:Negativstreifen1 , ex:DigiNegativstreifen1 ;
                           un:hasPart ex:ContentTeilbild1, ex:ContentTeilbild2 , ex:ContentTeilbild3 .
-ex:ContentTeilbild1  nvto:hasInformationCarrier ex:DigiTeilbild1  .
-ex:ContentTeilbild2  nvto:hasInformationCarrier ex:DigiTeilbild2  .
-ex:ContentTeilbild3  nvto:hasInformationCarrier ex:DigiTeilbild3  .
-ex:ContentAbendzettel1  nvto:hasInformationCarrier ex:DigiAbendzettel1P , ex:DigiAbendzettel1T , ex:DigiAbendzettel1T_P1 , ex:DigiAbendzettel1T_P2 .
-ex:ContentKostüm1  nvto:hasInformationCarrier ex:Kostüm1  , ex:Kostüm1  , ex:DigiKostüm1_B , ex:DigiKostüm1_3D .
-ex:ContentDigitalVideoRecording1 nvto:hasInformationCarrier ex:DigitalVideoRecording1 .
+ex:ContentTeilbild1  paam:hasInformationCarrier ex:DigiTeilbild1  .
+ex:ContentTeilbild2  paam:hasInformationCarrier ex:DigiTeilbild2  .
+ex:ContentTeilbild3  paam:hasInformationCarrier ex:DigiTeilbild3  .
+ex:ContentAbendzettel1  paam:hasInformationCarrier ex:DigiAbendzettel1P , ex:DigiAbendzettel1T , ex:DigiAbendzettel1T_P1 , ex:DigiAbendzettel1T_P2 .
+ex:ContentKostüm1  paam:hasInformationCarrier ex:Kostüm1  , ex:Kostüm1  , ex:DigiKostüm1_B , ex:DigiKostüm1_3D .
+ex:ContentDigitalVideoRecording1 paam:hasInformationCarrier ex:DigitalVideoRecording1 .
 
 #Objektinhalte und Digitalisate
-ex:VideoRecording1 nvto:hasDigitalRepresentation ex:DigiVideoRecording1 .
-ex:Abendzettel1 nvto:hasDigitalRepresentation ex:DigiAbendzettel1P , ex:DigiAbendzettel1T , ex:DigiAbendzettel1T_P1 , ex:DigiAbendzettel1T_P2 .
-ex:Negativstreifen1 nvto:hasDigitalRepresentation ex:DigiNegativstreifen1 , ex:DigiTeilbild1 , ex:DigiTeilbild2 , ex:DigiTeilbild3 .
-ex:Kostüm1 nvto:hasDigitalRepresentation ex:DigiKostüm1_B , ex:DigiKostüm1_3D .
+ex:VideoRecording1 paam:hasDigitalVersion ex:DigiVideoRecording1 .
+ex:Abendzettel1 paam:hasDigitalVersion ex:DigiAbendzettel1P , ex:DigiAbendzettel1T , ex:DigiAbendzettel1T_P1 , ex:DigiAbendzettel1T_P2 .
+ex:Negativstreifen1 paam:hasDigitalVersion ex:DigiNegativstreifen1 , ex:DigiTeilbild1 , ex:DigiTeilbild2 , ex:DigiTeilbild3 .
+ex:Kostüm1 paam:hasDigitalVersion ex:DigiKostüm1_B , ex:DigiKostüm1_3D .

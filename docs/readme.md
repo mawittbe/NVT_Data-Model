@@ -15,11 +15,13 @@ Vorhaben des Projekts
   * **Mitwirkungen** von **Personen** und **Companies/Ensembles**
   * **Dokumentierenden Objekten** wie Fotografien, Videoaufzeichnungen, Audiomitschnitten usw.
   * **Künstlerischen Objekten** wie Masken, Kostümen, Requisiten, Skizzen, Modellen usw.
+
   zur Beantwortung konkreter Fragen wie
   * Welche Akteure waren an welchen Produktionen beteiligt?
   * Wann und wo wurde eine Produktion geprobt und aufgeführt?
   * Welche Akteure und Ereignisse sind in einem Video- Foto- oder Textdokument sichtbar, beschrieben oder erwähnt?
   * An welchen Ereignissen und Produktionen hat ein/e Akteur*in mitgewirkt?
+
   und zur Betrachtung komplexer Zusammenhänge wie
   * Gemeinsamkeiten in Produktionzusammenhängen verschiedener Theaterensembles
   * Wirkungsgeschichten einzelner Künstler und Gruppen

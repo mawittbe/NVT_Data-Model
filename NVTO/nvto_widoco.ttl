@@ -1,4 +1,4 @@
-@prefix nvto: <https://lod.mediathek-tanz-theater.de/schema/paam/> .
+@prefix paam: <https://lod.mediathek-tanz-theater.de/schema/paam/> .
 
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -34,124 +34,167 @@
 
 ## NVTO CLASSES
 
-nvto:Agent rdf:type owl:Class ;
+paam:Agent rdf:type owl:Class ;
            rdfs:label "Akteur*in"@de ;
            rdfs:label "Agent"@en ;
            skos:definition """Diese Klasse umfasst alle Akteur*innen."""@de ;
            skos:definition """This class comprises all agents."""@en ;
            rdfs:comment """Akteur*innen sind handlungsfähige Entitäten wie Personen, Personengruppierungen und Organisationen. Diese Klasse dient auch als Oberklasse für genauer definierte Akteur*innen."""@de ;
            rdfs:comment """Agents are entities that are capable of acting, usually persons or groups of persons. This class also serves as top class for more specifically defined Agents."""@en ;
-           skos:example "Burkhart Seidemann"@de,
-                        "Pantomimen-Theater vom Prenzlauer Berg"@de ;
-           skos:example "Burkhart Seidemann"@en,
-                        "Pantomimen-Theater vom Prenzlauer Berg"@en .
+           skos:example "William Shakespeare"@de,
+                        "Burkhart Seidemann"@de,
+                        "Das 'Pantomimen-Theater vom Prenzlauer Berg'"@de ;
+           skos:example "William Shakespeare"@en,
+                        "Burkhart Seidemann"@en,
+                        "The 'Pantomimen-Theater vom Prenzlauer Berg'"@en .
 
-nvto:Collection rdf:type owl:Class ;
+paam:Collection rdf:type owl:Class ;
                 rdfs:label "Sammlung"@de ;
                 rdfs:label "Collection"@en ;
                 skos:definition """Diese Klasse umfasst alle Sammlungen von Objekten."""@de ;
                 skos:definition """This class comprises all Collections of Objects."""@en ;
                 rdfs:comment """Sammlungen sind eine von einer Organisation oder Person intentional angelegte, offene oder geschlossene Menge an Physischen und/oder Digitalen Objekten ohne definierte Reihenfolge. Sammlungen können zum Beispiel einen inhaltlichen oder historischen Zusammenhang haben."""@de ;
                 rdfs:comment """Collections are an open or closed Set of Physical and/or Digital Objects without defined order that are intentionally created by an Organisation or a Person. Collections can be created to cover a topic, event or entire archives."""@en ;
-                skos:example "COL"@de ;
-                skos:example "COL"@en .
+                skos:example "Die Sammlung des 'Pantomimen-Theaters vom Prenzlauer Berg'"@de ,
+                             "Die Sammlung Bauhaus"@de ,
+                             "Die Märchensammlung 'Grimms Märchen'"@de ;
+                skos:example "The Collection of the 'Pantomimen-Theater vom Prenzlauer Berg'"@en ,
+                             "The Bauhaus Collection"@en ,
+                             "The Collection of tales 'Grimms' Fairy Tales'"@en .
 
-nvto:CreativeConcept rdf:type owl:Class ;
+paam:CreativeConcept rdf:type owl:Class ;
                     rdfs:label "Kreatives Konzept"@de ;
                     rdfs:label "Creative Concept"@en ;
                     skos:definition """Diese Klasse umfasst alle Kreativen Konzepte."""@de ;
                     skos:definition """This class comprises all Creative Concepts."""@en ;
                     rdfs:comment """Kreative Konzepte umfassen Ideen, Planungen und Konzeptionen, die als kreative Grundlage von Ereignissen, Informationsobjekten oder anderen Ressourcen dienen. Kreative Konzepte müssen nicht verwirklicht werden. Diese Klasse dient als Oberklasse für genauer definierte Kreative Konzepte, wie Filmproduktionen oder Produktionen der darstellenden Künste."""@de ;
                     rdfs:comment """Creative Concepts comprise ideas, plans and conceptions that serve as a creative foundation for Events, Information Objects or other resources. Creative Concepts do not have to be realized. This class primarily serves as top class for more specifically defined Creative Concepts such as film productions or performing arts productions."""@en ;
-                    skos:example "Eine Produktion (darstellende Künste)"@de ,
-                                 "Eine Filmproduktion"@de ,
-                                 "Ein Festival"@de ;
-                    skos:example "A performing arts production"@en ,
-                                 "A film production"@en ,
-                                 "A festival"@en .
+                    skos:example "Die Produktion (darstellende Künste) 'Die Horatier und die Kuratier' von dem 'Pantomimen-Theater vom Prenzlauer Berg' aus dem Jahr 1982"@de ,
+                                 "Die Filmproduktion 'Metropolis' von Fritz Lang aus dem Jahr 1927"@de ,
+                                 "Das Festivalkonzept hinter der seit 1982 zweijährlich veranstalteten Festivalreihe 'Theater der Welt'"@de ;
+                    skos:example "The Performing Arts Production 'Die Horatier und die Kuratier' by the 'Pantomimen-Theater vom Prenzlauer Berg' from 1982"@en ,
+                                 "The Film Production 'Metropolis' by Fritz Lang from 1927"@en ,
+                                 "The Festival Concept behind the biannual festival series 'Theater der Welt', held since 1982"@en .
 
-nvto:DigitalObject rdf:type owl:Class ;
+paam:DigitalObject rdf:type owl:Class ;
                    rdfs:label "Digitales Objekt"@de ;
                    rdfs:label "Digital Object"@en ;
                    skos:definition """Diese Klasse umfasst alle digitalen Objekte."""@de ;
                    skos:definition """This class comprises all Digital Objects."""@en ;
                    rdfs:comment """Diese Klasse umfasst sowohl digitale Repräsentationen von Inhalten von Physischen Objekten als auch nativ digitale Objekte. Digitale Objekte können wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte sein."""@de ;
                    rdfs:comment """This class comprises digital representations of contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, can be information carriers of one or more Information Objects."""@en ;
-                   skos:example "Eine spezifische digitale Datei mit Namen IMG-001.tif"@de ,
-                                "Eine spezifische digitale Datei mit Namen VID-001.avi"@de ;
-                   skos:example "A specific digital file with name IMG-001.tif"@en ,
-                                "A specific digital file with name VID-001.avi"@en .
+                   skos:example "Die Digitalisierung einer analogen Fotografie von einer Probe zur Produktion (darstellende Künste) 'Wir Wohner' mit Namen 'nvt_img-i30-002.JP2'"@de ,
+                                "Das Foto '20190911_152231.jpg', das mit einer Digitalkamera gemacht wurde und eine Landschaft zeigt."@de ,
+                                "Die Digitalisierung einer Videokassette mit Namen 'VID_001.avi', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' enthält."@de ;
+                   skos:example "The digitisation of an analogue photography of a rehearsal of the Performing Arts Production 'Wir Wohner', named 'nvt_img-i30-002.JP2'"@en ,
+                                "The photograph '20190911_152231.jpg', taken with a digital camera and depicting a landscape."@en ,
+                                "The digitisation of a VHS tape named 'VID-001.avi', showing recordings of two different performances of the play 'Hamlet'"@en .
 
-nvto:Event rdf:type owl:Class ;
+paam:Event rdf:type owl:Class ;
            rdfs:label "Ereignis"@de ;
            rdfs:label "Event"@en ;
            skos:definition """Diese Klasse umfasst alle Ereignisse."""@de ;
            skos:definition """This class comprises all Events."""@en ;
-           rdfs:comment """Ereignisse können real oder fiktional sein, haben einen Start- und Endzeitpunkt und finden an einem Ort statt. Nicht alle Eigenschaften eines Ereignisses müssen bekannt sein. Diese Klasse kann für Ereignisse im Bereich der darstellenden Künste wie Aufführungen oder Workshops genutzt werden."""@de ;
-           rdfs:comment "Events can be fictional or real, have a starting and ending point and occur at a place. Not all attributes of an Event have to be known. This class can be used for Events in the realm of performing arts such as performances or workshops."@en ;
-           skos:example "Eine Aufführung von 'Hamlet'"@de ,
-                        "Ein Workshop zu einer speziellen Schauspieltechnik"@de ,
-                        "Eine Ausstellung über eine/n Darsteller/in"@de ;
-           skos:example "A performance of 'Hamlet'"@en ,
-                        "A workshop regarding a specific acting technique"@en ,
-                        "An exhibition about an actor/actress"@en .
+           rdfs:comment """Ereignisse können real oder fiktional sein, haben einen Start- und Endzeitpunkt und finden an einem Ort statt. Nicht alle Eigenschaften eines Ereignisses müssen bekannt sein. Diese Klasse kann für Ereignisse im Bereich der darstellenden Künste wie Aufführungen, Konferenzen oder Workshops genutzt werden."""@de ;
+           rdfs:comment "Events can be fictional or real, have a starting and ending point and occur at a place. Not all attributes of an Event have to be known. This class can be used for Events in the realm of performing arts such as performances, conferences or workshops."@en ;
+           skos:example "Die Uraufführung von 'Iphigenie auf Tauris' von dem 'Wuppertaler Tanztheater' am 21.04.1974"@de ,
+                        "Die 11. Ausgabe des Festivals 'Theater der Welt' vom 19.06.2008 bis zum 06.07.2008"@de ,
+                        "Der 'New African Dance Workshop' im Rahmen des Festivals 'Woche des Gestischen Theaters' im Jahr 1990"@de ;
+           skos:example "The premiere of 'Iphigenie auf Tauris' by the 'Wuppertaler Tanztheater' on 21 April 1974"@en ,
+                        "The 11. edition of the festival 'Theater der Welt' from 19 June 2008 to 06 July 2008"@en ,
+                        "The 'New African Dance Workshop' as part of the festival 'Woche des Gestischen Theaters' in 1990"@en .
 
-nvto:FestivalConcept rdf:type owl:Class ;
-                    rdfs:subClassOf nvto:CreativeConcept ;
+paam:FestivalConcept rdf:type owl:Class ;
+                    rdfs:subClassOf paam:CreativeConcept ;
                     rdfs:label "Festivalkonzept"@de ;
                     rdfs:label "Festival Concept"@en ;
                     skos:definition """Diese Klasse umfasst alle Festivalkonzepte."""@de ;
                     skos:definition """This class comprises all Festival Concepts."""@en ;
                     rdfs:comment "Festivalkonzepte sind die Kreative Konzepte, die Festivalereignissen zugrunde liegen. Ein Festivalkonzept kann sowohl das Konzept hinter einem einzelnen Festivalereignis beschreiben, als auch ein übergreifendes Konzept hinter einer Reihe von Festivalausgaben."@de ;
                     rdfs:comment "Festival Concepts are the Creative Concepts behind festival Events. A Festival Concept can either be the Concept behind a singular festival Event or an overarching Concept for a series of festival editions."@en ;
-                    skos:example "Das zweijährliche internationale Theaterfestival 'Theater der Welt'"@de ;
-                    skos:example "The biannual international theatre festival 'Theater der Welt'"@en .
+                    skos:example "Das Festivalkonzept hinter der seit 1982 zweijährlich veranstalteten Festivalreihe 'Theater der Welt'"@de ,
+                                 "Das Festivalkonzept hinter der 11. Ausgabe des Festivals 'Theater der Welt', das vom 19.06.2008 bis zum 06.07.2008 stattfand"@de ,
+                                 "Das Konzept hinter der 10. 'Weltausstellung' in Paris im Jahre 1889"@de ;
+                    skos:example "The Festival Concept behind the biannual festival series 'Theater der Welt', held since 1982"@en ,
+                                 "The Festival Concept behind the 11. edition of the festival 'Theater der Welt' from 19 June 2008 to 06 July 2008"@en ,
+                                 "The Concept behind the 10. 'World Expo' in Paris in 1889"@en .
 
-nvto:FilmProduction rdf:type owl:Class ;
-                    rdfs:subClassOf nvto:CreativeConcept ;
+paam:FilmProduction rdf:type owl:Class ;
+                    rdfs:subClassOf paam:CreativeConcept ;
                     rdfs:label "Filmproduktion"@de ;
                     rdfs:label "Film Production"@en ;
                     skos:definition """Diese Klasse umfasst alle Filmproduktionen."""@de ;
                     skos:definition """This class comprises all film productions."""@en ;
-                    rdfs:comment """Filmproduktion ist das Kreative Konzept, das einem Film zugrunde liegt. Eine Filmproduktion kann zum Beispiel durch ein Drehbuch, Kamera- oder Lichtanweisungen genauer beschrieben werden."""@de ;
-                    rdfs:comment """A Film Production is the Creative Concept behind a film. A film production may be described further by objects such as scripts, camera instructions or lighting instructions."""@en ;
-                    skos:example "Example"@de  ;
-                    skos:example "Example"@en  .
+                    rdfs:comment """Filmproduktionen sind die Kreativen Konzepte, die Filmen zugrunde liegen. Eine Filmproduktion kann zum Beispiel durch ein Drehbuch, Kamera- oder Lichtanweisungen genauer beschrieben werden."""@de ;
+                    rdfs:comment """Film Productions are the Creative Concepts behind films. A film production may be described further by objects such as scripts, camera instructions or lighting instructions."""@en ;
+                    skos:example "Das Kreative Konzept hinter dem Film 'Metropolis' von Fritz Lang aus dem Jahr 1927"@de  ,
+                                 "Das Kreative Konzept mit Anweisungen für Licht und Ton für die Videoaufzeichnung einer Aufführung von Georg Büchners 'Woyzeck'"@de  ,
+                                 "Das Kreative Konzept hinter dem Film 'Verwandlungsspiele' mit dem 'Pantomimen-Theater vom Prenzlauer Berg' für das Fernsehen der DDR"@de  ;
+                    skos:example "The Creative Concept behind the movie 'Metropolis' by Fritz Lang from 1927"@en  ,
+                                 "The Creative Concept with instructions for light and sound for the video recording of a performance of Georg Büchner's 'Woyzeck'"@en  ,
+                                 "The Creative Concept behind the film 'Verwandlungsspiele' with the 'Pantomimen-Theater vom Prenzlauer Berg' for the television programme of the GDR"@en  .
 
-nvto:InformationObject rdf:type owl:Class ;
+paam:InformationCarrier rdf:type owl:Class ;
+                        rdfs:label "Informationsträger"@de ;
+                        rdfs:label "Information Carrier"@en ;
+                        skos:definition """Diese Klasse umfasst alle Informationsträger."""@de ;
+                        skos:definition """This class comprises all Information Carriers."""@en ;
+                        rdfs:comment """Informationsträger sind physische oder digitale Objekte, die Träger eines Informationsobjekts oder mehrerer Informationsobjekte sind."""@de ;
+                        rdfs:comment """Information Carriers are Physical or Digital Objects that are Carriers of one or more Information Objects."""@en ;
+                        skos:example ""@de ,
+                                     ""@de ,
+                                     ""@de ;
+                        skos:example ""@en ,
+                                     ""@en ,
+                                     ""@en .
+
+
+paam:InformationObject rdf:type owl:Class ;
                        rdfs:label "Informationsobjekt"@de ;
                        rdfs:label "Information Object"@en ;
                        skos:definition """Diese Klasse umfasst alle Informationsobjekte."""@de ;
                        skos:definition """This class comprises all Information Objects."""@en ;
-                       rdfs:comment """Ein Informationsobjekt ist ein immaterielles, beschreibbares Objekt, das in der Regel von einem oder mehreren Informationsträgern repräsentiert wird. Das gleiche Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer Kopie der Fotografie in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann mehrere Informationsobjekte tragen (z.B. mehrere Videoaufzeichnungen auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans)."""@de ;
-                       rdfs:comment """An Information Object is an immaterial, describable object, usually represented by one or more information carriers. The same Information Object can be captured in multiple Physical or Digital Objects (e.g. a magazine edition). One Physical or Digital Object can carry multiple Information Objects (e.g. multiple video recordings on a single video tape). An Information Object can be part of another Information Object (e.g. a chapter of a novel)."""@en ;
-                       skos:example "Aufnahme von Aufführung X, Inhalt von Programmheft Y"@de ;
-                       skos:example "Recording of Performance X, Contents of programme booklet Y"@en .
+                       rdfs:comment """Informationsobjekte sind immaterielle, beschreibbare Objekte, die in der Regel von einem oder mehreren Informationsträgern repräsentiert werden. Das gleiche Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer Kopie der Fotografie in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann mehrere Informationsobjekte tragen (z.B. mehrere Videoaufzeichnungen auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans)."""@de ;
+                       rdfs:comment """Information Objects are immaterial, describable objects, usually represented by one or more information carriers. The same Information Object can be captured in multiple Physical or Digital Objects (e.g. a magazine edition). One Physical or Digital Object can carry multiple Information Objects (e.g. multiple video recordings on a single video tape). An Information Object can be part of another Information Object (e.g. a chapter of a novel)."""@en ;
+                       skos:example "Die Aufzeichnung einer Aufführung von 'Himmelhölle' am 03.12.1988, zu finden auf einer Videokassette und als Teil der Digitalisierung des Inhalts dieser Videokassette"@de ,
+                                    "Der Film 'Metropolis' von Fritz Lang aus dem Jahr 1927"@de ,
+                                    "Ein Foto von Eberhard Kube als Teil eines Artikels aus einem unbekannten Magazin"@de ;
+                       skos:example "The recording of a performance of 'Himmelhölle' on 03 December 1988, to be found on a video cassette and as part of the digitisation of the contents of that video cassette"@en ,
+                                    "The movie 'Metropolis' by Fritz Lang from 1927"@en ,
+                                    "A picture of Eberhard Kube as part of an article from an unknown magazine"@en .
 
-nvto:Organization rdf:type owl:Class ;
-                  rdfs:subClassOf nvto:Agent ;
+paam:Organization rdf:type owl:Class ;
+                  rdfs:subClassOf paam:Agent ;
                   rdfs:label "Organisation"@de ;
                   rdfs:label "Organization"@en ;
                   skos:definition """Diese Klasse umfasst alle Organisationen."""@de ;
                   skos:definition """This class comprises all organizations"""@en ;
                   rdfs:comment """"""@de ;
                   rdfs:comment """"""@en ;
-                  skos:example "Theater der Welt, Sony BMG"@de ;
-                  skos:example "Theater der Welt, Sony BMG"@en .
+                  skos:example "Deutsches Theater"@de ,
+                               "ITI Deutschland"@de ,
+                               "Sony BMG"@de ;
+                  skos:example "Deutsches Theater"@en ,
+                               "ITI Germany"@en ,
+                               "Theater der Welt, Sony BMG"@en .
 
-nvto:PerformingArtsGroup rdf:type owl:Class ;
-                         rdfs:subClassOf nvto:Agent ;
+paam:PerformingArtsGroup rdf:type owl:Class ;
+                         rdfs:subClassOf paam:Agent ;
                          rdfs:label "Gruppe (darstellende Künste)"@de ;
                          rdfs:label "Performing Arts Group"@en ;
-                         skos:definition """Diese Klasse umfasst alle Ensembles, Kompanien und ähnliche Gruppen im Bereich der darstellenden Künste."""@de ;
-                         skos:definition """This class comprises ensembles, companies and similar groups in the realm of performing arts."""@en ;
-                         rdfs:comment """Eine Gruppe (darstellende Künste) besteht üblicherweise aus zwei oder mehr Personen."""@de ;
-                         rdfs:comment """A Performing Arts Group is usually comprised of two or more Persons."""@en ;
-                         skos:example "DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg"@de  ;
-                         skos:example "DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg"@en  .
+                         skos:definition """Diese Klasse umfasst alle Gruppen (darstellende Künste)."""@de ;
+                         skos:definition """This class comprises all Performing Arts Groups."""@en ;
+                         rdfs:comment """Gruppen (darstellende Künste) sind in der Regel Ensembles, Kompanien und ähnliche Gruppen im Bereich der darstellenden Künste."""@de ;
+                         rdfs:comment """Performing Arts Groups usally are ensembles, companies and similar groups in the realm of performing arts."""@en ;
+                         skos:example "Das 'Pantomimen-Theater vom Prenzlauer Berg'"@de ,
+                                      "Das 'Pantomime-Ensemble des Deutschen Theaters'"@de ,
+                                      "Das 'Nationale Koreanische Tanzensemble'"@de ;
+                         skos:example "The 'Pantomimen-Theater vom Prenzlauer Berg'"@en ,
+                                      "The 'Pantomime-Ensemble des Deutschen Theaters'"@en ,
+                                      "The 'National Dance Company of Korea'"@en .
 
-# nvto:PerformingArtsLocation rdf:type owl:Class ;
-#                             rdfs:subClassOf nvto:Place ;
+# paam:PerformingArtsLocation rdf:type owl:Class ;
+#                             rdfs:subClassOf paam:Place ;
 #                             rdfs:label "Ort (darstellende Künste)"@de ;
 #                             rdfs:label "Performing Arts Location"@en ;
 #                             skos:definition """Diese Klasse umfasst Orte, die für darstellende Künste genutzt werden oder wurden."""@de ;
@@ -162,60 +205,72 @@ nvto:PerformingArtsGroup rdf:type owl:Class ;
 #                                          "Pratergarten"@de  ;
 #                             skos:example "Volksbühne, Pratergarten"@en  .
 
-nvto:PerformingArtsProduction rdf:type owl:Class ;
-                              rdfs:subClassOf nvto:CreativeConcept ;
+paam:PerformingArtsProduction rdf:type owl:Class ;
+                              rdfs:subClassOf paam:CreativeConcept ;
                               rdfs:label "Produktion (darstellende Künste)"@de ;
                               rdfs:label "Performing Arts Production"@en ;
                               skos:definition """Diese Klasse umfasst Produktionen der darstellenden Künste."""@de ;
                               skos:definition """This class comprises Performing Arts Productions."""@en ;
-                              rdfs:comment """Eine Produktion (darstellende Künste) ist das Kreative Konzept, das einer Aufführung oder einer Reihe von Aufführungen im Bereich der darstellenden Künste zugrunde liegt. Eine Produktion (darstellende Künste) muss nicht zwangsläufig aufgeführt werden. Eine Produktion (darstellende Künste) kann zum Beispiel von Manuskripten oder Regieanweisungen genauer beschrieben werden."""@de ;
-                              rdfs:comment """A Performing Arts Production is the Creative Concept behind a Performance or a Series of Performances in the realm of performing arts. A Performing Arts Production doesn't necessarily have to be performed. A Performing Arts Production may be described further by manuscripts or stage directions."""@en ;
-                              skos:example "Die Produktion 'Blaubart'...von, am, am am"@de, "Hamlet"@de  ;
-                              skos:example "Blaubart, Hamlet"@en  .
+                              rdfs:comment """Produktionen (darstellende Künste) sind die Kreativen Konzepte, die einer Aufführung oder einer Reihe von Aufführungen im Bereich der darstellenden Künste zugrunde liegen. Eine Produktion (darstellende Künste) muss nicht zwangsläufig aufgeführt werden. Eine Produktion (darstellende Künste) kann zum Beispiel von Manuskripten oder Regieanweisungen genauer beschrieben werden."""@de ;
+                              rdfs:comment """Performing Arts Productions are the Creative Concepts behind a Performance or a Series of Performances in the realm of performing arts. A Performing Arts Production doesn't necessarily have to be performed. A Performing Arts Production may be described further by manuscripts or stage directions."""@en ;
+                              skos:example "Die Produktion (darstellende Künste) 'Die Horatier und die Kuratier' von dem 'Pantomimen-Theater vom Prenzlauer Berg' aus dem Jahr 1982"@de,
+                                           ""@de  ,
+                                           "Hamlet"@de ;
+                              skos:example "The Performing Arts Production 'Die Horatier und die Kuratier' by the 'Pantomimen-Theater vom Prenzlauer Berg' from 1982"@en ,
+                                           ""@en ,
+                                           "Hamlet"@en  .
 
-nvto:Person rdf:type owl:Class ;
-            rdfs:subClassOf nvto:Agent ;
+paam:Person rdf:type owl:Class ;
+            rdfs:subClassOf paam:Agent ;
             rdfs:label "Person"@de ;
             rdfs:label "Person"@en ;
             skos:definition """Diese Klasse umfasst alle Personen."""@de ;
             skos:definition """This class comprises all persons."""@en ;
             rdfs:comment """Eine Person ist in der Regel ein Mensch, der lebt oder gelebt hat. Fiktive Personen sind nicht ausgeschlossen."""@de ;
             rdfs:comment """A Person usually is a human who either lives or has lived. Fictional Persons are not excluded."""@en ;
-            skos:example "Eberhard Kube, Conny Hege"@de ;
-            skos:example "Eberhard Kube, Conny Hege"@en .
+            skos:example "Eberhard Kube"@de ,
+                         "Johann Sebastian Bach"@de ,
+                         "Nikolajewitsch Bogdanow"@de ;
+            skos:example "Eberhard Kube"@en ,
+                         "Johann Sebastian Bach"@en ,
+                         "Nikolajewitsch Bogdanow"@en .
 
-nvto:PhysicalObject rdf:type owl:Class ;
+paam:PhysicalObject rdf:type owl:Class ;
                     rdfs:label "Physisches Objekt"@de ;
                     rdfs:label "Physical Object"@en ;
                     skos:definition """Diese Klasse umfasst alle Physischen Objekte."""@de ;
                     skos:definition """This class comprises all Physical Objects."""@en ;
                     rdfs:comment """Alle materiellen Objekte mit physischen Ausmaßen sind Physische Objekte. Wie Digitale Objekte können auch Physische Objekte Informationsträger von Informationsobjekten sein. Typische physische Informationsträger sind Videokassetten, analoge Fotografien oder Programmhefte."""@de ;
                     rdfs:comment """All material objects with physical extent are Physical Objects. Physical Objects, like Digital Objects, can be information carriers of Information Objects. Typical physical information carriers are video cassettes, analogue photographs or program booklets."""@en ;
-                    skos:example "Videokassette mit Aufnahme von Aufführung X, Programmheft Y"@de ;
-                    skos:example "Tape with recording of performance X, programme booklet Y"@en .
+                    skos:example "Eine Videokassette mit Beschriftung 'Hamlet, 1985', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' enthält"@de ,
+                                 "Ein Programmheft, das eine Besetzungsliste und Beschreibung zur Produktion (darstellende Künste) 'Hanswurst' enthält"@de ,
+                                 "Ein Negativstreifen mit drei Einzelbildern, die Proben zur Produktion (darstellende Künste) 'Himmelhölle' zeigen."@de ;
+                    skos:example "A video cassette with label 'Hamlet, 1985' containing two different recordings of the theatre play 'Hamlet'"@en ,
+                                 "A programme booklet containing cast and description of the performing arts production 'Hanswurst'"@en ,
+                                 "A negative strip with three images, depicting rehearsals of the Performing Arts Production 'Himmelhölle'"@en .
 
-nvto:Place rdf:type owl:Class ;
+paam:Place rdf:type owl:Class ;
            rdfs:label "Ort"@de ;
            rdfs:label "Place"@en ;
            skos:definition """Diese Klasse umfasst alle Orte."""@de ;
            skos:definition """This class comprises all places."""@en ;
            rdfs:comment """Orte können existieren oder existiert haben. Fiktive Orte sind nicht ausgeschlossen."""@de ;
            rdfs:comment """Places can exist or have existed. Fictional Places are not excluded."""@en ;
-           skos:example "Place"@de  ;
-           skos:example "Place"@en  .
+           skos:example "Hier"@de  ;
+           skos:example "Da"@en  .
 
-nvto:Series rdf:type owl:Class ;
+paam:Series rdf:type owl:Class ;
             rdfs:label "Serie"@de ;
             rdfs:label "Series"@en ;
             skos:definition """Diese Klasse umfasst alle Serien."""@en ;
             skos:definition """This class comprises all Series."""@en ;
-            rdfs:comment """Eine Serie ist eine geordnete Menge von Objekten. Mit einer Serie können zum Beispiel Fotografien von Bewegungsabläufen oder die fotografische Dokumentation zur Entwicklung einer Produktion in eine chronologische oder anderweitig beabsichtigte Reihenfolge gebracht werden."""@de ;
-            rdfs:comment """A Series is an ordered set of Objects. A Series can describe photographs of movements or the documentation of the development of a production in a chronological or otherwise intended sequence."""@en ;
+            rdfs:comment """Serien sind geordnete Mengen von Objekten. Mit einer Serie können zum Beispiel Fotografien von Bewegungsabläufen oder die fotografische Dokumentation zur Entwicklung einer Produktion in eine chronologische oder anderweitig beabsichtigte Reihenfolge gebracht werden."""@de ;
+            rdfs:comment """Series are ordered sets of Objects. A Series can describe photographs of movements or the documentation of the development of a production in a chronological or otherwise intended sequence."""@en ;
             skos:example "SRS"@de  ;
             skos:example "SRS"@en  .
 
-nvto:Site rdf:type owl:Class ;
-          rdfs:subClassOf nvto:Place ;
+paam:Site rdf:type owl:Class ;
+          rdfs:subClassOf paam:Place ;
           rdfs:label "Stätte"@de ;
           rdfs:label "Site"@en ;
           skos:definition """Diese Klasse umfasst alle Stätten."""@de ;
@@ -229,13 +284,13 @@ nvto:Site rdf:type owl:Class ;
                        ""@en ,
                        ""@en .
 
-nvto:TimeSpan rdf:type owl:Class ;
+paam:TimeSpan rdf:type owl:Class ;
               rdfs:label "Zeitspanne"@de ;
               rdfs:label "Timespan"@en ;
               skos:definition """Diese Klasse umfasst alle Zeitspannen."""@de ;
               skos:definition """This class comprises all timespans."""@en ;
-              rdfs:comment """Eine Zeitspanne ist ein zeitliches Ausmaß mit Startzeitpunkt, Endzeitpunkt und Dauer. Eine Zeitspanne kann sich auf Entitäten wie Informationsobjekte und Ereignisse beziehen. Eine Zeitspanne ist in ihrer Dauer unbeschränkt. Nicht alle Eigenschaften einer Zeitspanne müssen bekannt sein."""@de ;
-              rdfs:comment """A Time-Span is a temporal extent with starting point, end point and duration. A Time-Span can be defined for entities such as Information Objects and Events. A Time-Span is unlimited in its duration. Not all attributes of a Time-Span have to be known."""@en ;
+              rdfs:comment """Zeitspannen sind zeitliche Ausmaße mit Startzeitpunkt, Endzeitpunkt und Dauer. Eine Zeitspanne kann sich auf Entitäten wie Informationsobjekte und Ereignisse beziehen. Eine Zeitspanne ist in ihrer Dauer unbeschränkt. Nicht alle Eigenschaften einer Zeitspanne müssen bekannt sein."""@de ;
+              rdfs:comment """Time-Spans are temporal extents with starting point, end point and duration. A Time-Span can be defined for entities such as Information Objects and Events. A Time-Span is unlimited in its duration. Not all attributes of a Time-Span have to be known."""@en ;
               skos:example "1979-1989, 00:00:00:00-00:52:23:17"@de  ;
               skos:example "1979-1989, 00:00:00:00-00:52:23:17"@en  .
 
@@ -244,11 +299,11 @@ nvto:TimeSpan rdf:type owl:Class ;
 
 ## REFERENCES
 
-nvto:hasAudibleReferenceTo rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf nvto:hasAudioVisualReferenceTo ;
+paam:hasAudibleReferenceTo rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf paam:hasAudioVisualReferenceTo ;
                                 skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält."@de ;
                                 skos:definition "Connects a resource to another resource it has an audible reference to."@en ;
-                                rdfs:comment """Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource von einem Informationsobjekt. Eine hörbare Referenz ist eine spezielle Form der Referenz."""@de ;
+                                rdfs:comment """Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt. Eine hörbare Referenz ist eine spezielle Form der Referenz."""@de ;
                                 rdfs:comment """An audible reference usually describes the audible mention or capture of a resource by an Information Object. An audible reference is a specific form of reference."""@en ;
                                 skos:example "In Video Z wird über Aufführung X geredet."@de,
                                              "In Audioaufnahme R ist Person K im Gespräch zu hören."@de,
@@ -259,67 +314,67 @@ nvto:hasAudibleReferenceTo rdf:type owl:ObjectProperty ;
                                 rdfs:label "hat hörbare Referenz zu"@de ;
                                 rdfs:label "has audible reference to"@en .
 
-nvto:hasAudioVisualReferenceTo rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf nvto:hasReferenceTo ;
+paam:hasAudioVisualReferenceTo rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf paam:hasReferenceTo ;
                                     skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine audiovisuelle Referenz enthält."@de ;
                                     skos:definition "Connects a resource to another resource it has an audiovisual reference to."@en ;
-                                    rdfs:comment """Eine audiovisuelle Referenz beschreibt in der Regel die hör- und/oder sichtbare Erwähnung oder Erfassung einer Ressource von einem Informationsobjekt. Diese Eigenschaft kann genutzt werden, wenn die Differenzierung zwischen hörbarer und sichtbarer Referenz nicht gegeben oder als notwendig erachtet ist. Eine audiovisuelle Referenz ist eine spezielle Form der Referenz."""@de ;
-                                    rdfs:comment """An audiovisual reference usually describes the audible and/or visual mention or capture of a resource by an Information Object. This property can be used if the differentiation between audible and visual reference is not given or deemed necessary. An audiovisual reference is a specific form of reference."""@en ;
+                                    rdfs:comment """Eine audiovisuelle Referenz beschreibt in der Regel die hör- und/oder sichtbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt. Diese Eigenschaft kann genutzt werden, wenn die Differenzierung zwischen hörbarer und sichtbarer Referenz nicht bekannt oder als notwendig erachtet ist. Eine audiovisuelle Referenz ist eine spezielle Form der Referenz."""@de ;
+                                    rdfs:comment """An audiovisual reference usually describes the audible and/or visual mention or capture of a resource by an Information Object. This property can be used if the differentiation between audible and visual reference is not known or deemed necessary. An audiovisual reference is a specific form of reference."""@en ;
                                     skos:example "In Video R ist Person K im Gespräch zu hören, In Video R ist Person K zu sehen, Video R zeigt Video T"@de ;
                                     skos:example "In video R Person K is heard talking, In video R Person K is seen, Video R shows video T"@en ;
                                     rdfs:label "hat audiovisuelle Referenz zu"@de ;
                                     rdfs:label "has audiovisual reference to"@en .
 
-nvto:hasInfluenceFrom rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf nvto:hasReferenceTo ;
+paam:hasInfluenceFrom rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf paam:hasReferenceTo ;
                             skos:definition "Verbindet eine Ressource mit einer anderen Ressource, von der sie beeinflusst ist."@de ;
                             skos:definition "Connects a resource to another resource that it is influenced by."@en ;
-                            rdfs:comment """Diese Eigenschaft beschreibt die Beeinflussung im weiteren Sinne einer Ressource von einer anderen Ressource. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form der Referenzierung."""@de ;
-                            rdfs:comment """This property describes the influence in a broader sense on a resource from another resource. An influence can be more or less recognizable and should be verifiable. An influence is a specific form of referencing."""@en ;
+                            rdfs:comment """Diese Eigenschaft beschreibt die Beeinflussung im weiteren Sinne einer Ressource von einer anderen Ressource. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form der Referenz."""@de ;
+                            rdfs:comment """This property describes the influence in a broader sense on a resource from another resource. An influence can be more or less recognizable and should be verifiable. An influence is a specific form of reference."""@en ;
                             skos:example "Produktion (darstellende Künste) Y ist basiert auf Produktion (darstellende Künste) X, Text Y ist beeinflusst von Film X"@de ;
                             skos:example "Performing Arts Production Y is based on Performing Arts Production X, Text Y is influenced by Film X"@en ;
                             rdfs:label "hat Einfluss auf"@de ;
                             rdfs:label "has influence on"@en .
 
-nvto:hasRecordingOf rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf nvto:hasReferenceTo ;
-                    rdfs:domain nvto:InformationObject ;
-                    rdfs:range nvto:Event ;
+paam:hasRecordingOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf paam:hasReferenceTo ;
+                    rdfs:domain paam:InformationObject ;
+                    rdfs:range paam:Event ;
                     skos:definition "Verbindet ein Informationsobjekt mit einem Ereignis, von dem es eine Aufnahme enthält."@de ;
                     skos:definition "Connects an information object to an event that it recorded."@en ;
-                    rdfs:comment """Diese Eigenschaft ist eine Form von Referenz, die speziell die Aufnahme eines Ereignisses von einem Informationsobjekt beschreibt."""@de ;
-                    rdfs:comment """This property is a form of reference that specifically describes the recording of an event by an Information Object."""@en ;
+                    rdfs:comment """Diese Eigenschaft ist eine Form von Referenz, die die Aufnahme eines Ereignisses durch ein Informationsobjekt beschreibt."""@de ;
+                    rdfs:comment """This property is a form of reference that describes the recording of an event by an Information Object."""@en ;
                     skos:example "Video X hat Aufnahme von Event Y"@de ;
                     skos:example ""@en ;
                     rdfs:label "hat Aufnahme von"@de ;
                     rdfs:label "has recording of"@en .
 
-nvto:hasReferenceTo rdf:type owl:ObjectProperty ;
+paam:hasReferenceTo rdf:type owl:ObjectProperty ;
                          skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine Referenz enthält."@de ;
                          skos:definition "Connects a resource to another resource it has any kind of reference to."@en ;
-                         rdfs:comment "Eine Referenz beschreibt in der Regel die Erfassung oder Erwähnung einer Ressource von einem Informationsobjekt, einem Kreativen Konzept oder anderer Ressourcen. Eine Referenz zu einer Ressource kann zum Beispiel Teil einer Aufnahme der Ressource oder der Beschriftung eines Informationsträgers sein. Wenn die Art der Referenz gegeben ist, sollte eine der Untereigenschaften dieser Eigenschaft verwendet werden."@de ;
-                         rdfs:comment "A reference usually describes the capture or mention of a resource by an Information Object, a Creative Concept or other resources. A reference to a resource can be contained in a recording of the resource or in the labeling of an information carrier among others. In case the type of reference is given, one of the subproperties of this property should be used."@en ;
+                         rdfs:comment "Eine Referenz beschreibt in der Regel die Erfassung oder Erwähnung einer Ressource durch ein Informationsobjekt, ein Kreatives Konzept oder eine andere Ressource. Eine Referenz zu einer Ressource kann zum Beispiel Teil einer Aufzeichnung oder der Beschriftung eines Informationsträgers sein. Wenn die Art der Referenz bekannt ist, sollte eine der Untereigenschaften dieser Eigenschaft verwendet werden."@de ;
+                         rdfs:comment "A reference usually describes the capture or mention of a resource by an Information Object, a Creative Concept or other resources. A reference to a resource can be contained in a recording or in the labeling of an information carrier among others. In case the type of reference is given, one of the subproperties of this property should be used."@en ;
                          skos:example ""@de ;
                          skos:example ""@en ;
                          rdfs:label "hat Referenz zu"@de ;
                          rdfs:label "has reference to"@en .
 
-nvto:hasTextualReferenceTo rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf nvto:hasReferenceTo ;
+paam:hasTextualReferenceTo rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf paam:hasReferenceTo ;
                                 skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine textuelle Referenz enthält."@de ;
                                 skos:definition "Connects a resource to another resource it has a textual reference to."@en ;
-                                rdfs:comment """Eine textuelle Referenz beschreibt in der Regel die schriftliche Erwähnung einer Ressource von einem Informationsobjekt, einem Kreativen Konzept oder anderer Ressourcen. Textuelle Referenzen zu Ressourcen kommen zum Beispiel in Programmheften, Literatur oder in der Beschriftung eines Informationsträgers vor. Eine textuelle Referenz ist eine spezielle Form der Referenz."""@de ;
+                                rdfs:comment """Eine textuelle Referenz beschreibt in der Regel die schriftliche Erwähnung einer Ressource durch ein Informationsobjekt, ein Kreatives Konzept oder einer andere Ressource. Textuelle Referenzen zu Ressourcen kommen zum Beispiel in Programmheften, Literatur oder in der Beschriftung eines Informationsträgers vor. Eine textuelle Referenz ist eine spezielle Form der Referenz."""@de ;
                                 rdfs:comment """A textual reference usually describes the mention of a resource by an Information Object, a Creative Concept or another resource in written form. A Textual References can be contained in programme booklets, literature or the labeling of an information carrier among others. A textual reference is a specific form of reference."""@en ;
                                 skos:example ""@de ;
                                 skos:example ""@en ;
                                 rdfs:label "hat textuelle Referenz zu"@de ;
                                 rdfs:label "has textual reference to"@en .
 
-nvto:hasVisualReferenceTo rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf nvto:hasAudioVisualReferenceTo ;
+paam:hasVisualReferenceTo rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf paam:hasAudioVisualReferenceTo ;
                                skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine visuelle Referenz enthält."@de ;
                                skos:definition "Connects a resource to another resource it has a visual reference to."@en ;
-                               rdfs:comment """Eine visuelle Referenz beschreibt in der Regel die sichtbare Erfassung einer Ressource von einem Informationsobjekt, zum Beispiel auf einer Fotografie. Eine visuelle Referenz ist eine spezielle Form der Referenz."""@de ;
+                               rdfs:comment """Eine visuelle Referenz beschreibt in der Regel die sichtbare Erfassung einer Ressource durch ein Informationsobjekt, zum Beispiel auf einer Fotografie. Eine visuelle Referenz ist eine spezielle Form der Referenz."""@de ;
                                rdfs:comment """A visual reference usually describes the visual capture of a resource by an Information Object, for example on a photograph. A visual reference is a specific form of reference."""@en ;
                                skos:example ""@de ;
                                skos:example ""@en ;
@@ -328,9 +383,9 @@ nvto:hasVisualReferenceTo rdf:type owl:ObjectProperty ;
 
 ## Other Properties
 
-nvto:beginsAtTime rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf nvto:hasDate ;
-                 rdfs:domain nvto:TimeSpan ;
+paam:beginsAtTime rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf paam:hasDate ;
+                 rdfs:domain paam:TimeSpan ;
                  skos:definition "Beschreibt den Startzeitpunkt einer Zeitspanne."@de ;
                  skos:definition "Describes the begin date/point in time of a time span."@en ;
                  rdfs:comment """Das Datum sollte nach ISO XY angegeben werden."""@de ;
@@ -340,9 +395,9 @@ nvto:beginsAtTime rdf:type owl:DatatypeProperty ;
                  rdfs:label "beginnt zu Zeitpunkt"@de ;
                  rdfs:label "begins at time"@en .
 
-nvto:endsAtTime rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf nvto:hasDate ;
-                rdfs:domain nvto:TimeSpan ;
+paam:endsAtTime rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf paam:hasDate ;
+                rdfs:domain paam:TimeSpan ;
                 skos:definition "Beschreibt den Endzeitpunkt einer Zeitspanne."@de ;
                 skos:definition "Describes the end date/point in time of a time span."@en ;
                 rdfs:comment """Das Datum sollte nach ISO XY angegeben werden."""@de ;
@@ -352,10 +407,10 @@ nvto:endsAtTime rdf:type owl:DatatypeProperty ;
                 rdfs:label "endet zu Zeitpunkt"@de ;
                 rdfs:label "ends at time"@en .
 
-nvto:hasPlaceOfOccurrence rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf nvto:hasRelatedPlace ;
-                     rdfs:domain nvto:Event ;
-                     rdfs:range nvto:Place ;
+paam:hasPlaceOfOccurrence rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf paam:hasRelatedPlace ;
+                     rdfs:domain paam:Event ;
+                     rdfs:range paam:Site ;
                      skos:definition "Verbindet ein Ereignis mit einem Ort, an dem es sich ereignet."@de ;
                      skos:definition "Connects an event to the place it happened at."@en ;
                      skos:example ""@de ;
@@ -363,8 +418,8 @@ nvto:hasPlaceOfOccurrence rdf:type owl:ObjectProperty ;
                      rdfs:label "ereignet sich an Ort"@de ;
                      rdfs:label "has place of occurrence"@en .
 
-nvto:hasAcrobat rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasAcrobat rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf paam:hasContributor ;
                 skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Akrobat*in mitgewirkt hat."@de ;
                 skos:definition "Connects a resource to an Agent that contributed to the resource as acrobat."@en ;
                 rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Akrobat*in beschrieben. """@de ;
@@ -374,8 +429,8 @@ nvto:hasAcrobat rdf:type owl:ObjectProperty ;
                 rdfs:label "hat Akrobat*in"@de ;
                 rdfs:label "has acrobat"@en .
 
-nvto:hasActor rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasActor rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf paam:hasContributor ;
          skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Schauspieler*in mitgewirkt hat."@de ;
          skos:definition "Connects a resource to an Agent that contributed to the resource as actor."@en ;
          rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Schauspieler*in beschrieben."""@de ;
@@ -385,8 +440,8 @@ nvto:hasActor rdf:type owl:ObjectProperty ;
          rdfs:label "hat Schauspieler*in"@de ;
          rdfs:label "has actor"@en .
 
-nvto:hasAdaptor rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasAdaptor rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf paam:hasContributor ;
                 skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als (Text-)Bearbeiter*in mitgewirkt hat."@de ;
                 skos:definition "Connects a resource to an Agent that contributed to the resource as adaptor."@en ;
                 rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion, einer Aufführung oder einer anderen Ressource als (Text-)Bearbeiter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel in Form einer Adaptation eines literarischen Werkes in ein Drama oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -396,7 +451,7 @@ nvto:hasAdaptor rdf:type owl:ObjectProperty ;
                 rdfs:label "hat (Text-)Bearbeiter*in"@de ;
                 rdfs:label "has adaptor"@en .
 
-nvto:hasAddress rdf:type owl:DatatypeProperty ;
+paam:hasAddress rdf:type owl:DatatypeProperty ;
                 skos:definition "Beschreibt die Adresse einer Ressource."@de ;
                 skos:definition "Describes the address of a resource."@en ;
                 rdfs:comment """Addressen sollten in Form X geschrieben sein."""@de ;
@@ -406,8 +461,8 @@ nvto:hasAddress rdf:type owl:DatatypeProperty ;
                 rdfs:label "hat Adresse"@de ;
                 rdfs:label "has address"@en .
 
-nvto:hasArtisticDirector rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasArtisticDirector rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf paam:hasContributor ;
                         skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als künstlerische*r Leiter*in mitgewirkt hat."@de ;
                         skos:definition "Connects a resource to an Agent that contributed to the resource as artistic director."@en ;
                         rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Festivalkonzept, einer Aufführung oder einer anderen Ressource als künstlerische*r Leiter*in beschrieben. Eine Mitwirkung kann zum Beispiel in Form der Leitung des künstlerischen Gesamtkonzepts eines Festivalkonzepts oder einer einzelnen Performing Arts Aufführung erfolgen."""@de ;
@@ -417,8 +472,8 @@ nvto:hasArtisticDirector rdf:type owl:ObjectProperty ;
                         rdfs:label "hat künstlerische*n Leiter*in"@de ;
                         rdfs:label "has artistic director"@en .
 
-nvto:hasAssistantDirector rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasAssistantDirector rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf paam:hasContributor ;
                           skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Regieassistent*in mitgewirkt hat."@de ;
                           skos:definition "Connects a resource to an Agent that contributed to the resource as assistant director."@en ;
                           rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben."""@de ;
@@ -428,8 +483,8 @@ nvto:hasAssistantDirector rdf:type owl:ObjectProperty ;
                           rdfs:label "hat Regieassistent*in"@de ;
                           rdfs:label "has assistant director"@en .
 
-nvto:hasAuthor  rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasAuthor  rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf paam:hasContributor ;
                 skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Autor*in mitgewirkt hat."@de ;
                 skos:definition "Connects a resource to an Agent that contributed to the resource as author."@en ;
                 rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion, einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Autor*in eines literarischen Werkes oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -439,8 +494,8 @@ nvto:hasAuthor  rdf:type owl:ObjectProperty ;
                 rdfs:label "hat Autor*in"@de ;
                 rdfs:label "has author"@en .
 
-nvto:hasChoreographer rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasChoreographer rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf paam:hasContributor ;
                       skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Choreograf*in mitgewirkt hat."@de ;
                       skos:definition "Connects a resource to an Agent that contributed to the resource as choreographer."@en ;
                       rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Choreograf*in beschrieben."""@de ;
@@ -450,8 +505,8 @@ nvto:hasChoreographer rdf:type owl:ObjectProperty ;
                       rdfs:label "hat Choreograf*in"@de ;
                       rdfs:label "has choreographer"@en .
 
-nvto:hasCinematographer rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasCinematographer rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf paam:hasContributor ;
                         skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Kameramann/Kamerafrau mitgewirkt hat."@de ;
                         skos:definition "Connects a resource to an Agent that contributed to the resource as cinematographer."@en ;
                         rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Kameramann/Kamerafrau beschrieben."""@de ;
@@ -461,8 +516,8 @@ nvto:hasCinematographer rdf:type owl:ObjectProperty ;
                         rdfs:label "hat Kameramann/Kamerafrau"@de ;
                         rdfs:label "has cinematographer"@en .
 
-nvto:hasClown rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasClown rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf paam:hasContributor ;
                         skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Clown*in mitgewirkt hat."@de ;
                         skos:definition "Connects a resource to an Agent that contributed to the resource as clown."@en ;
                         rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."""@de ;
@@ -472,8 +527,8 @@ nvto:hasClown rdf:type owl:ObjectProperty ;
                         rdfs:label "hat Clown*in"@de ;
                         rdfs:label "has clown"@en .
 
-nvto:hasComposer rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasComposer rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf paam:hasContributor ;
                  skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Komponist*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an Agent that contributed to the resource as composer."@en ;
                  rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Komponist*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Komponist*in eines musikalischen Werks oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -483,8 +538,8 @@ nvto:hasComposer rdf:type owl:ObjectProperty ;
                  rdfs:label "hat Komponist*in"@de ;
                  rdfs:label "has composer"@en .
 
-nvto:hasConceptOriginator rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasConceptOriginator rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf paam:hasContributor ;
                           skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Konzept Urheber*in mitgewirkt hat."@de ;
                           skos:definition "Connects a resource to an Agent that contributed to the resource as concept originator."@en ;
                           rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Konzept Urheber*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Konzept Urheber*in einer textuellen Grundlage einer Produktion oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -494,7 +549,7 @@ nvto:hasConceptOriginator rdf:type owl:ObjectProperty ;
                           rdfs:label "hat Konzept Urheber*in"@de ;
                           rdfs:label "has concept originator"@en .
 
-nvto:hasCondition rdf:type owl:DatatypeProperty ;
+paam:hasCondition rdf:type owl:DatatypeProperty ;
                   skos:definition "Beschreibt oder verbindet mit dem Zustand einer Ressource."@de ;
                   skos:definition "Describes or connects to the condition of a resource."@en ;
 #                  rdfs:comment "Z.B. der Zustand eines physischen Objekts oder einer digitalen Datei."@de ;
@@ -504,7 +559,7 @@ nvto:hasCondition rdf:type owl:DatatypeProperty ;
                   rdfs:label "hat Zustand"@de ;
                   rdfs:label "has condition"@en .
 
-nvto:hasContentMatch rdf:type owl:ObjectProperty ;
+paam:hasContentMatch rdf:type owl:ObjectProperty ;
                      rdf:type owl:SymmetricProperty ;
                      skos:definition "Verbindet eine Ressource mit einer anderen Ressource mit gleichem Inhalt."@de ;
                      skos:definition "Connects a resource to another resource with matching content."@en ;
@@ -515,19 +570,19 @@ nvto:hasContentMatch rdf:type owl:ObjectProperty ;
                      rdfs:label "hat gleichen Inhalt"@de ;
                      rdfs:label "has content match"@en .
 
-nvto:hasContributor rdf:type owl:ObjectProperty ;
-                    rdfs:range nvto:Agent ;
+paam:hasContributor rdf:type owl:ObjectProperty ;
+                    rdfs:range paam:Agent ;
                     skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die an der Ressource mitgewirkt hat."@de ;
                     skos:definition "Connects a resource to an Agent that contributed to the resource."@en ;
-                    rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Informationsobjekt oder einer anderen Ressource als Mitwirkende*n beschrieben. Es können pro Ressource mehrere Akteur*innen als Mitwirkende beteiligt sein. Wenn genauere Angaben der Beziehung zwischen Ressource und Mitwirkender/Mitwirkendem bekannt sind, sollte eine der Untereigenschaften dieser Eigenschaft genutzt werden."""@de ;
+                    rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Informationsobjekt oder einer anderen Ressource als Mitwirkende*n beschrieben. Es können pro Ressource mehrere Akteur*innen als Mitwirkende beteiligt sein. Wenn genauere Angaben der Beziehung zwischen Ressource und Mitwirkender/m bekannt sind, sollte eine der Untereigenschaften dieser Eigenschaft genutzt werden."""@de ;
                     rdfs:comment """"""@en ;
                     skos:example ""@de ;
                     skos:example ""@en ;
                     rdfs:label "hat Mitwirkende*n"@de ;
                     rdfs:label "has contributor"@en .
 
-nvto:hasCostumeBuilder rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasCostumeBuilder rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf paam:hasContributor ;
                        skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Kostümbauer*in mitgewirkt hat."@de ;
                        skos:definition "Connects a resource to an Agent that contributed to the resource as costume builder."@en ;
                        rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion oder einer anderen Ressource als Kostümbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Kostümbauer*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Kostümdesigner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung eines Kostüms als auf dessen Gestaltung."""@de ;
@@ -537,8 +592,8 @@ nvto:hasCostumeBuilder rdf:type owl:ObjectProperty ;
                        rdfs:label "hat Kostümbauer*in"@de ;
                        rdfs:label "has costume builder"@en .
 
-nvto:hasCostumeDesigner rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasCostumeDesigner rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf paam:hasContributor ;
                         skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Kostümdesigner*in mitgewirkt hat."@de ;
                         skos:definition "Connects a resource to an Agent that contributed to the resource as costume designer."@en ;
                         rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion oder einer anderen Ressource als Kostümgestalter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Kostümgestalter*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Kostümbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung."""@de ;
@@ -548,8 +603,8 @@ nvto:hasCostumeDesigner rdf:type owl:ObjectProperty ;
                         rdfs:label "hat Kostümgestalter*in"@de ;
                         rdfs:label "has costume designer"@en .
 
-nvto:hasCreator rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasCreator rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf paam:hasContributor ;
                 skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Schöpfer*in mitgewirkt hat."@de ;
                 skos:definition "Connects a resource to an Agent that contributed to the resource as creator."@en ;
                 rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Informationsobjekt oder einer anderen Ressource als Schöpfer*in beschrieben. Es können pro Ressource mehrere Akteur*innen als Schöpfer*in beteiligt sein. Aussagen über die Form der schöpferischen Tätigkeit des Akteur*innen können mit entsprechenden Eigenschaften parallel zu dieser getroffen werden."""@de ;
@@ -559,8 +614,8 @@ nvto:hasCreator rdf:type owl:ObjectProperty ;
                 rdfs:label "hat Schöpfer*in"@de ;
                 rdfs:label "has creator"@en .
 
-nvto:hasDancer rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasDancer rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf paam:hasContributor ;
                skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tänzer*in mitgewirkt hat."@de ;
                skos:definition "Connects a resource to an Agent that contributed to the resource as dancer."@en ;
                rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Tänzer*in beschrieben."""@de ;
@@ -570,7 +625,7 @@ nvto:hasDancer rdf:type owl:ObjectProperty ;
                rdfs:label "hat Tänzer*in"@de ;
                rdfs:label "has dancer"@en .
 
-nvto:hasDate rdf:type owl:DatatypeProperty ;
+paam:hasDate rdf:type owl:DatatypeProperty ;
              skos:definition "Beschreibt einen einzelnen Zeitpunkt."@de ;
              skos:definition "Describes a singular date/point in time."@en ;
              rdfs:comment """Das Datum sollte nach ISO XY angegeben werden. Wenn genauere Zeiträume bekannt sind, sollten Zeitspannen genutzt werden."""@de ;
@@ -580,9 +635,9 @@ nvto:hasDate rdf:type owl:DatatypeProperty ;
              rdfs:label "hat Datum"@de ;
              rdfs:label "has date"@en .
 
-nvto:hasDateOfBirth rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf nvto:hasDate ;
-                    rdfs:domain nvto:Person ;
+paam:hasDateOfBirth rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf paam:hasDate ;
+                    rdfs:domain paam:Person ;
                     skos:definition "Beschreibt das Geburtsdatum einer Person."@de ;
                     skos:definition "Describes the date of birth of an agent."@en ;
                     rdfs:comment """Das Datum sollte nach ISO XY angegeben werden."""@de ;
@@ -592,9 +647,9 @@ nvto:hasDateOfBirth rdf:type owl:DatatypeProperty ;
                     rdfs:label "hat Geburtsdatum"@de ;
                     rdfs:label "has date of birth"@en .
 
-nvto:hasDateOfDeath rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf nvto:hasDate ;
-                    rdfs:domain nvto:Person ;
+paam:hasDateOfDeath rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf paam:hasDate ;
+                    rdfs:domain paam:Person ;
                     skos:definition "Beschreibt das Todesdatum einer Person."@de ;
                     skos:definition "Describes the date of death of an agent."@en ;
                     rdfs:comment """Das Datum sollte nach ISO XY angegeben werden."""@de ;
@@ -604,7 +659,7 @@ nvto:hasDateOfDeath rdf:type owl:DatatypeProperty ;
                     rdfs:label "hat Todesdatum"@de ;
                     rdfs:label "has date of death"@en .
 
-nvto:hasDescription rdf:type owl:DatatypeProperty ;
+paam:hasDescription rdf:type owl:DatatypeProperty ;
                     skos:definition "Eine generelle Beschreibung einer Ressource."@de ;
                     skos:definition "A general description of a resource."@en ;
                     skos:example ""@de ;
@@ -612,9 +667,9 @@ nvto:hasDescription rdf:type owl:DatatypeProperty ;
                     rdfs:label "hat Beschreibung"@de ;
                     rdfs:label "has description"@en .
 
-nvto:hasDigitalVersion rdf:type owl:ObjectProperty ;
-                       rdfs:domain nvto:PhysicalObject ;
-                       rdfs:range nvto:DigitalObject ;
+paam:hasDigitalVersion rdf:type owl:ObjectProperty ;
+                       rdfs:domain paam:PhysicalObject ;
+                       rdfs:range paam:DigitalObject ;
                        skos:definition "Verbindet ein physisches Objekt mit seiner digitalen Version oder einer digitalen Version eines Teils des Objekts."@en ;
                        skos:definition "Connects a physical object with a digital version of itself or a digital version of a part of the object."@en ;
                        skos:example ""@de ;
@@ -622,7 +677,7 @@ nvto:hasDigitalVersion rdf:type owl:ObjectProperty ;
                        rdfs:label "hat digitale Version"@de ;
                        rdfs:label "has digital version"@en .
 
-nvto:hasDimensions rdf:type owl:DatatypeProperty ;
+paam:hasDimensions rdf:type owl:DatatypeProperty ;
                    skos:definition "Beschreibt die Dimensionen einer Ressource."@de ;
                    skos:definition "Describes the dimensions of a resource."@en ;
 #                   rdfs:comment "Z.B. die Dimensionen eines physischen Objekts oder einer digitalen Datei."@de ;
@@ -632,8 +687,8 @@ nvto:hasDimensions rdf:type owl:DatatypeProperty ;
                    rdfs:label "hat Dimensionen"@de ;
                    rdfs:label "has dimensions"@en .
 
-nvto:hasDirector rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasDirector rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf paam:hasContributor ;
                  skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Regisseur*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an Agent that contributed to the resource as director."@en ;
                  rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Regisseur*in eines Spielfilms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -643,8 +698,8 @@ nvto:hasDirector rdf:type owl:ObjectProperty ;
                  rdfs:label "hat Regisseur*in"@de ;
                  rdfs:label "has director"@en .
 
-nvto:hasDramaturge rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasDramaturge rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf paam:hasContributor ;
                    skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Dramaturg*in mitgewirkt hat."@de ;
                    skos:definition "Connects a resource to an Agent that contributed to the resource as dramaturge."@en ;
                    rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung, einem Text oder einer anderen Ressource als Dramaturg*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Bearbeiter*in eines dramatischen Texts oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -654,8 +709,8 @@ nvto:hasDramaturge rdf:type owl:ObjectProperty ;
                    rdfs:label "hat Dramaturg*in"@de ;
                    rdfs:label "has dramaturge"@en .
 
-nvto:hasEditor rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasEditor rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf paam:hasContributor ;
                skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Redakteur*in mitgewirkt hat."@de ;
                skos:definition "Connects a resource to an Agent that contributed to the resource as editor."@en ;
                rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Text oder einer anderen Ressource als Redakteur*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Herausgeber*in einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -665,8 +720,8 @@ nvto:hasEditor rdf:type owl:ObjectProperty ;
                rdfs:label "hat Redakteur*in"@de ;
                rdfs:label "has editor"@en .
 
-nvto:hasExtent rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf nvto:hasFormat ;
+paam:hasExtent rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf paam:hasFormat ;
                skos:definition "Beschreibt den Umfang einer Ressource."@de ;
                skos:definition "Describes the extent of a resource."@en ;
 #               rdfs:comment "Z.B. der Umfang eines physischen Objekts oder einer digitalen Datei."@de ;
@@ -676,15 +731,15 @@ nvto:hasExtent rdf:type owl:DatatypeProperty ;
                rdfs:label "hat Umfang"@de ;
                rdfs:label "has extent"@en .
 
-nvto:hasFamilyName rdf:type owl:DatatypeProperty ;
-                   rdfs:domain nvto:Person ;
+paam:hasFamilyName rdf:type owl:DatatypeProperty ;
+                   rdfs:domain paam:Person ;
                    skos:definition "Beschreibt den Familiennamen einer Person."@de ;
                    skos:definition "Describes the family name of a Person."@en ;
                    rdfs:label "hat Familienname"@de ;
                    rdfs:label "has family name"@en .
 
-nvto:hasDateOfFirstEdition rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf nvto:hasDate ;
+paam:hasDateOfFirstEdition rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf paam:hasDate ;
                            skos:definition "Beschreibt das Datum der Erstausgabe einer Ressource."@de ;
                            skos:definition "Describes the date of the first edition of a resource."@en ;
                            skos:example ""@de ;
@@ -692,8 +747,8 @@ nvto:hasDateOfFirstEdition rdf:type owl:DatatypeProperty ;
                            rdfs:label "hat Datum von Erstausgabe"@de ;
                            rdfs:label "has date of first edition"@en .
 
-nvto:hasDateOfFirstLocalizedEdition rdf:type owl:DatatypeProperty ;
-                                    rdfs:subPropertyOf nvto:hasDate ;
+paam:hasDateOfFirstLocalizedEdition rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf paam:hasDate ;
                                     skos:definition "Beschreibt das Datum der übersetzten Erstausgabe einer Ressource."@de ;
                                     skos:definition "Describes the date of the first localized edition of a resource."@en ;
                                     skos:example ""@de ;
@@ -701,18 +756,18 @@ nvto:hasDateOfFirstLocalizedEdition rdf:type owl:DatatypeProperty ;
                                     rdfs:label "hat Datum von übersetzter Erstausgabe"@de ;
                                     rdfs:label "has date of first localized edition"@en .
 
-nvto:hasFirstName rdf:type owl:DatatypeProperty ;
-                  rdfs:domain nvto:Person ;
-                  skos:definition "Beschreibt den Vornamen eienr Person."@de ;
+paam:hasFirstName rdf:type owl:DatatypeProperty ;
+                  rdfs:domain paam:Person ;
+                  skos:definition "Beschreibt den Vornamen einer Person."@de ;
                   skos:definition "Describes the first name of a Person."@en ;
                   skos:example ""@de ;
                   skos:example ""@en ;
                   rdfs:label "hat Vorname"@de ;
                   rdfs:label "has first name"@en .
 
-nvto:hasFirstPerformanceDate rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf nvto:hasDate ;
-                             rdfs:domain nvto:PerformingArtsProduction ;
+paam:hasFirstPerformanceDate rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf paam:hasDate ;
+                             rdfs:domain paam:PerformingArtsProduction ;
                              skos:definition "Beschreibt das erste Aufführungsdatum einer Produktion der darstellenden Künste."@de ;
                              skos:definition "Describes the first performance date of a performing arts production."@en ;
                              rdfs:comment "Eine behelfsmäßige Eigenschaft zur Beschreibung des ersten Aufführungsdatums einer Produktion der darstellenden Künste bei nicht ausreichender Beschreibung der zugehörigen Aufführungen."@de ;
@@ -722,9 +777,9 @@ nvto:hasFirstPerformanceDate rdf:type owl:DatatypeProperty ;
                              rdfs:label "hat erstes Aufführungsdatum"@de ;
                              rdfs:label "has first performance date"@en .
 
-nvto:hasFirstPerformanceVersion rdf:type owl:ObjectProperty ;
-                                rdfs:domain nvto:PerformingArtsProduction ;
-                                rdfs:range nvto:PerformingArtsProduction ;
+paam:hasFirstPerformanceVersion rdf:type owl:ObjectProperty ;
+                                rdfs:domain paam:PerformingArtsProduction ;
+                                rdfs:range paam:PerformingArtsProduction ;
                                 skos:definition "Verbindet eine Produktion (darstellende Künste) mit ihrer Erstaufführungsversion."@de ;
                                 skos:definition "Connects a performing arts production with its first performance version."@en ;
                                 rdfs:comment """Eine Erstaufführungsversion ist eine originale, zum ersten Mal aufgeführte Produktion (darstellende Künste)."""@de ;
@@ -734,7 +789,7 @@ nvto:hasFirstPerformanceVersion rdf:type owl:ObjectProperty ;
                                 rdfs:label "hat Erstaufführungsversion"@de ;
                                 rdfs:label "has first performance version"@en .
 
-nvto:hasFormat rdf:type owl:AnnotationProperty ;
+paam:hasFormat rdf:type owl:ObjectProperty ;
                skos:definition "Beschreibt oder verbindet mit dem Format einer Ressource."@de ;
                skos:definition "Describes or connects to the format of a resource."@en ;
 #               rdfs:comment "Z.B. das Format eines physischen Objekts oder einer digitalen Datei."@de ;
@@ -744,9 +799,9 @@ nvto:hasFormat rdf:type owl:AnnotationProperty ;
                rdfs:label "hat Format"@de ;
                rdfs:label "has format"@en .
 
-nvto:hasHomepage rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf nvto:hasRelatedWebsite ;
-                 rdfs:domain nvto:Agent ;
+paam:hasHomepage rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf paam:hasRelatedWebsite ;
+                 rdfs:domain paam:Agent ;
                  skos:definition "Verbindet mit der Homepage eines/r Akteur*in."@de ;
                  skos:definition "Connects to a homepage of an agent."@en ;
                  skos:example ""@de ;
@@ -754,7 +809,7 @@ nvto:hasHomepage rdf:type owl:ObjectProperty ;
                  rdfs:label "hat Homepage"@de ;
                  rdfs:label "has homepage"@en .
 
-nvto:hasIdentifier rdf:type owl:ObjectProperty ;
+paam:hasIdentifier rdf:type owl:ObjectProperty ;
                    skos:definition "Beschreibt einen lokalen oder globalen Bezeichner einer Ressource."@de ;
                    skos:definition "Describes a local or global identifier of a resource."@en ;
                    rdfs:comment """Ein Bezeichner kann von lokaler oder globaler Eindeutigkeit sein. Sowohl Literale als auch Weblinks sind erlaubt."""@de ;
@@ -764,8 +819,8 @@ nvto:hasIdentifier rdf:type owl:ObjectProperty ;
                    rdfs:label "hat Bezeichner"@de ;
                    rdfs:label "has identifier"@en .
 
-nvto:hasIllustrator rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasIllustrator rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf paam:hasContributor ;
                     skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Illustrator*in mitgewirkt hat."@de ;
                     skos:definition "Connects a resource to an Agent that contributed to the resource as illustrator."@en ;
                     rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Illustrator*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Herausgeber*in einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -775,8 +830,9 @@ nvto:hasIllustrator rdf:type owl:ObjectProperty ;
                     rdfs:label "hat Illustrator*in"@de ;
                     rdfs:label "has illustrator"@en .
 
-nvto:hasInformationCarrier rdf:type owl:ObjectProperty ;
-                           rdfs:domain nvto:InformationObject ;
+paam:hasInformationCarrier rdf:type owl:ObjectProperty ;
+                           rdfs:domain paam:InformationObject ;
+                           rdfs:range paam:InformationCarrier ;
                            skos:definition "Verbindet ein Informationsobjekt mit einem physischen oder digitalen Objekt, auf dem es repräsentiert ist."@en ;
                            skos:definition "Connects an information object with a physical or digital object it is represented on."@en ;
                            rdfs:comment """Ein Informationsträger ist eine Entität, die ein Informationsobjekt repräsentiert. Ein Informationsobjekt kann von mehreren Informationsträgern repräsentiert werden, zum Beispiel die gleiche Aufnahme einer Aufführung auf einer Videokassette und als Digitales Objekt auf einem USB-Stick. Auf einem Informationsträger können mehrere Informationsobjekte repräsentiert werden, zum Beispiel mehrere Aufnahmen von verschiedenen Aufführungen auf einer Videokassette."""@de ;
@@ -786,8 +842,8 @@ nvto:hasInformationCarrier rdf:type owl:ObjectProperty ;
                            rdfs:label "hat Informationsträger"@de ;
                            rdfs:label "has information carrier"@en .
 
-nvto:hasIsbn rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf nvto:hasIdentifier ;
+paam:hasIsbn rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf paam:hasIdentifier ;
              skos:definition "Beschreibt die ISBN einer Ressource."@de ;
              skos:definition "Describes the ISBN of a resource."@en ;
              skos:example ""@de ;
@@ -795,8 +851,8 @@ nvto:hasIsbn rdf:type owl:DatatypeProperty ;
              rdfs:label "hat ISBN"@de ;
              rdfs:label "has ISBN"@en .
 
-nvto:hasIssn rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf nvto:hasIdentifier ;
+paam:hasIssn rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf paam:hasIdentifier ;
              skos:definition "Beschreibt die ISSN einer Ressource."@de ;
              skos:definition "Describes the ISSN of a resource."@en ;
              skos:example ""@de ;
@@ -804,7 +860,7 @@ nvto:hasIssn rdf:type owl:DatatypeProperty ;
              rdfs:label "hat ISSN"@de ;
              rdfs:label "has ISSN"@en .
 
-nvto:hasLabeling rdf:type owl:DatatypeProperty ;
+paam:hasLabeling rdf:type owl:DatatypeProperty ;
                  skos:definition "Beschreibt die Beschriftung einer Ressource."@de ;
                  skos:definition "Describes the labeling of a resource."@en ;
                  skos:example ""@de ;
@@ -812,8 +868,8 @@ nvto:hasLabeling rdf:type owl:DatatypeProperty ;
                  rdfs:label "hat Beschriftung"@de ;
                  rdfs:label "has labeling"@en .
 
-nvto:hasLabelingBack rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf nvto:hasLabeling ;
+paam:hasLabelingBack rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf paam:hasLabeling ;
                      skos:definition "Beschreibt die Beschriftung der Rückseite einer Ressource."@de ;
                      skos:definition "Describes the labeling on the back of a resource."@en ;
                      skos:example ""@de ;
@@ -821,8 +877,8 @@ nvto:hasLabelingBack rdf:type owl:DatatypeProperty ;
                      rdfs:label "hat Beschriftung hinten"@de ;
                      rdfs:label "has labeling back"@en .
 
-nvto:hasLabelingFront rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf nvto:hasLabeling ;
+paam:hasLabelingFront rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf paam:hasLabeling ;
                       skos:definition "Beschreibt die Beschriftung der Vorderseite einer Ressource."@de ;
                       skos:definition "Describes the labeling on the front of a resource."@en ;
                       skos:example ""@de ;
@@ -830,7 +886,7 @@ nvto:hasLabelingFront rdf:type owl:DatatypeProperty ;
                       rdfs:label "hat Beschriftung vorn"@de ;
                       rdfs:label "has labeling front"@en .
 
-nvto:hasLanguage rdf:type owl:DatatypeProperty ;
+paam:hasLanguage rdf:type owl:DatatypeProperty ;
                  skos:definition "Beschreibt die Sprache, die einer Ressource zugeordnet ist."@de ;
                  skos:definition "Describes the language associated to a resource."@en ;
                  rdfs:comment """Sprachen sollten nach BCP 47 angegeben werden."""@de ;
@@ -840,9 +896,9 @@ nvto:hasLanguage rdf:type owl:DatatypeProperty ;
                  rdfs:label "hat Sprache"@de ;
                  rdfs:label "has language"@en .
 
-nvto:hasLastPerformanceDate rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf nvto:hasDate ;
-                            rdfs:domain nvto:PerformingArtsProduction ;
+paam:hasLastPerformanceDate rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf paam:hasDate ;
+                            rdfs:domain paam:PerformingArtsProduction ;
                             skos:definition "Beschreibt das letzte Aufführungsdatum einer Produktion der darstellenden Künste."@de ;
                             skos:definition "Describes the last performance date of a performing arts production."@en ;
                             rdfs:comment "Eine behelfsmäßige Eigenschaft zur Beschreibung des letzten Aufführungsdatums einer Produktion der darstellenden Künste bei nicht ausreichender Beschreibung der zugehörigen Aufführungen."@de ;
@@ -852,19 +908,19 @@ nvto:hasLastPerformanceDate rdf:type owl:DatatypeProperty ;
                             rdfs:label "hat Dernierendatum"@de ;
                             rdfs:label "has last performance date"@en .
 
-nvto:hasLayouter rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasLayouter rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf paam:hasContributor ;
                  skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Layouter*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an Agent that contributed to the resource as layouter."@en ;
-                 rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Publikation oder einer anderen Ressource als Layouter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Gestalter*in des Layouts einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
+                 rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Publikation oder einer anderen Ressource als Layouter*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt, zum Beispiel als Gestalter*in des Layouts einer Publikation oder zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
                  rdfs:comment """"""@en ;
                  skos:example ""@de ;
                  skos:example ""@en ;
                  rdfs:label "hat Layouter*in"@de ;
                  rdfs:label "has layouter"@en .
 
-nvto:hasLightingDesigner rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasLightingDesigner rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf paam:hasContributor ;
                       skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Lichtgestalter*in mitgewirkt hat."@de ;
                       skos:definition "Connects a resource to an Agent that contributed to the resource as light designer."@en ;
                       rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Lichtgestalter*in beschrieben."""@de ;
@@ -874,8 +930,8 @@ nvto:hasLightingDesigner rdf:type owl:ObjectProperty ;
                       rdfs:label "hat Lichtgestalter*in"@de ;
                       rdfs:label "has lighting designer"@en .
 
-nvto:hasMakeUpArtist rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasMakeUpArtist rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf paam:hasContributor ;
                      skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Visagist*in mitgewirkt hat."@de ;
                      skos:definition "Connects a resource to an Agent that contributed to the resource as make up artist."@en ;
                      rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Visagist*in beschrieben."""@de ;
@@ -885,8 +941,8 @@ nvto:hasMakeUpArtist rdf:type owl:ObjectProperty ;
                      rdfs:label "hat Visagist*in"@de ;
                      rdfs:label "has make up artist"@en .
 
-nvto:hasMaskBuilder rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasMaskBuilder rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf paam:hasContributor ;
                     skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Maskenbauer*in mitgewirkt hat."@de ;
                     skos:definition "Connects a resource to an Agent that contributed to the resource as mask builder."@en ;
                     rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Maskenbauer*in einer Maske oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Maskengestalter*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung."""@de ;
@@ -896,8 +952,8 @@ nvto:hasMaskBuilder rdf:type owl:ObjectProperty ;
                     rdfs:label "hat Maskenbauer*in"@de ;
                     rdfs:label "has mask builder"@en .
 
-nvto:hasMaskDesigner rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasMaskDesigner rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf paam:hasContributor ;
                      skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Maskengestalter*in mitgewirkt hat."@de ;
                      skos:definition "Connects a resource to an Agent that contributed to the resource as mask designer."@en ;
                      rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion oder einer anderen Ressource als Maskengestalter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Maskengestalter*in einer Maske oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Maske als auf deren Fertigung."""@de ;
@@ -907,7 +963,7 @@ nvto:hasMaskDesigner rdf:type owl:ObjectProperty ;
                      rdfs:label "hat Maskengestalter*in"@de ;
                      rdfs:label "has mask designer"@en .
 
-nvto:hasMediator rdf:type owl:ObjectProperty ;
+paam:hasMediator rdf:type owl:ObjectProperty ;
                  skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Vermittler*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an Agent that contributed to the resource as mediator."@en ;
                  rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Festival, einem Workshop oder einer anderen Ressource als Vermittler*in beschrieben. Vermittler*innen können zum Beispiel Lehrer in einem Workshop oder Dozenten eines Vortrags sein."""@de ;
@@ -917,8 +973,8 @@ nvto:hasMediator rdf:type owl:ObjectProperty ;
                  rdfs:label "hat Vermittler*in"@de ;
                  rdfs:label "has mediator"@en .
 
-nvto:hasMedium rdf:type owl:AnnotationProperty ;
-               rdfs:subPropertyOf nvto:hasFormat ;
+paam:hasMedium rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf paam:hasFormat ;
                skos:definition "Beschreibt oder verbindet mit dem Medium einer Ressource."@en ;
                skos:definition "Describes or connects to the medium of a resource."@en ;
                skos:example ""@de ;
@@ -926,8 +982,8 @@ nvto:hasMedium rdf:type owl:AnnotationProperty ;
                rdfs:label "hat Medium"@de ;
                rdfs:label "has medium"@en .
 
-nvto:hasMime rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasMime rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf paam:hasContributor ;
              skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Mim*in mitgewirkt hat."@de ;
              skos:definition "Connects a resource to an Agent that contributed to the resource as mime."@en ;
              rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Mime/Mimin beschrieben."""@de ;
@@ -937,8 +993,8 @@ nvto:hasMime rdf:type owl:ObjectProperty ;
              rdfs:label "hat Mim*in"@de ;
              rdfs:label "has mime"@en .
 
-nvto:hasMusician rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasMusician rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf paam:hasContributor ;
                  skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Musiker*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an Agent that contributed to the resource as musician."@en ;
                  rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Musiker*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Musiker*in für ein musikalisches Werk oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -948,8 +1004,8 @@ nvto:hasMusician rdf:type owl:ObjectProperty ;
                  rdfs:label "hat Musiker*in"@de ;
                  rdfs:label "has musician"@en .
 
-nvto:hasName rdf:type owl:DatatypeProperty ;
-             rdfs:domain nvto:Agent ;
+paam:hasName rdf:type owl:DatatypeProperty ;
+             rdfs:domain paam:Agent ;
              skos:definition "Beschreibt den Namen eines/r Akteur*in."@en ;
              skos:definition "Describes the name of an agent."@en ;
              skos:example ""@de ;
@@ -957,8 +1013,8 @@ nvto:hasName rdf:type owl:DatatypeProperty ;
              rdfs:label "hat Name"@de ;
              rdfs:label "has name"@en .
 
-nvto:hasPantomime rdf:type owl:ObjectProperty ;
-                           rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasPantomime rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf paam:hasContributor ;
                            skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Pantomim*in mitgewirkt hat."@de ;
                            skos:definition "Connects a resource to an Agent that contributed to the resource as pantomime."@en ;
                            rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Pantomim*in beschrieben."""@de ;
@@ -968,7 +1024,7 @@ nvto:hasPantomime rdf:type owl:ObjectProperty ;
                            rdfs:label "hat Pantomim*in"@de ;
                            rdfs:label "has pantomime"@en .
 
-nvto:hasPart rdf:type owl:ObjectProperty ;
+paam:hasPart rdf:type owl:ObjectProperty ;
              rdf:type owl:TransitiveProperty ;
              skos:definition "Verbindet eine Ressource mit einer anderen Ressource, die ein Teil von ihr ist."@de ;
              skos:definition "Connects a resource to another resource which is a part of it."@en ;
@@ -979,8 +1035,8 @@ nvto:hasPart rdf:type owl:ObjectProperty ;
              rdfs:label "hat Teil"@de ;
              rdfs:label "has part"@en .
 
-nvto:hasParticipant rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasParticipant rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf paam:hasContributor ;
                     skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Teilnehmer*in mitgewirkt hat."@de ;
                     skos:definition "Connects a resource to an Agent that contributed to the resource as participant."@en ;
                     rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Festival, einem Workshop oder einer anderen Ressource als Teilnehmer*in beschrieben. Teilnehmer*innen können zum Beispiel Teilnehmer*innen in einem Workshop oder an einem Vortrag sein."""@de ;
@@ -990,19 +1046,19 @@ nvto:hasParticipant rdf:type owl:ObjectProperty ;
                     rdfs:label "hat Teilnehmer*in"@de ;
                     rdfs:label "has participant"@en .
 
-nvto:hasPerformer rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasPerformer rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf paam:hasContributor ;
                   skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Darsteller*in mitgewirkt hat."@de ;
                   skos:definition "Connects a resource to an Agent that contributed to the resource as performer."@en ;
-                  rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Darsteller*in beschrieben. Diese Eigenschaft kann als allgemeine Eigenschaft für die Mitwirkung eines/r Akteur*in in jeglicher darstellerischen Form genutzt werden, wenn keine genaueren Angaben bekannt sind."""@de ;
+                  rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Darsteller*in beschrieben. Diese Eigenschaft kann als allgemeine Eigenschaft für die Mitwirkung eines/r Akteur*in in jeglicher darstellerischen Form genutzt werden."""@de ;
                   rdfs:comment """"""@en ;
                   skos:example ""@de ;
                   skos:example ""@en ;
                   rdfs:label "hat Darsteller*in"@de ;
                   rdfs:label "has performer"@en .
 
-nvto:hasPhotographer rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasPhotographer rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf paam:hasContributor ;
                      skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Fotograf*in mitgewirkt hat."@de ;
                      skos:definition "Connects a resource to an Agent that contributed to the resource as photographer."@en ;
                      rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Fotografie, einer Produktion oder einer anderen Ressource als Fotograf*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Fotograf*in einer Fotografie oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -1012,8 +1068,8 @@ nvto:hasPhotographer rdf:type owl:ObjectProperty ;
                      rdfs:label "hat Fotograf*in"@de ;
                      rdfs:label "has photographer"@en .
 
-nvto:hasPhotoStudio rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasPhotoStudio rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf paam:hasContributor ;
                     skos:definition "Verbindet eine Ressource mit einem Fotostudio, dass bei ihrer Kreierung beigetragen hat."@de ;
                     skos:definition "Connects a resource to a photo studio that contributed to its creation."@en ;
                     rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Fotografie, einer Produktion oder einer anderen Ressource als Fotostudio  beschrieben"""@de ;
@@ -1023,8 +1079,8 @@ nvto:hasPhotoStudio rdf:type owl:ObjectProperty ;
                     rdfs:label "hat Fotostudio"@de ;
                     rdfs:label "has photo studio"@en .
 
-nvto:hasPlaywright rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasPlaywright rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf paam:hasContributor ;
                    skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Dramatiker*in mitgewirkt hat."@de ;
                    skos:definition "Connects a resource to an Agent that contributed to the resource as playwright."@en ;
                    rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Dramatiker*in  beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Verfasser*in eines dramatischen Texts oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -1034,7 +1090,7 @@ nvto:hasPlaywright rdf:type owl:ObjectProperty ;
                    rdfs:label "hat Dramatiker*in"@de ;
                    rdfs:label "has playwright"@en .
 
-nvto:hasPredecessor rdf:type owl:ObjectProperty ;
+paam:hasPredecessor rdf:type owl:ObjectProperty ;
                     rdf:type owl:TransitiveProperty ;
                     skos:definition "Verbindet eine Ressource mit einem Vorgänger dieser Ressource."@de ;
                     skos:definition "Connects a resource to a predecessor of this resource."@en ;
@@ -1045,8 +1101,8 @@ nvto:hasPredecessor rdf:type owl:ObjectProperty ;
                     rdfs:label "hat Vorgänger"@de ;
                     rdfs:label "has predecessor"@en .
 
-nvto:hasProducer rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasProducer rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf paam:hasContributor ;
                  skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Produzent*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an Agent that contributed to the resource as producer."@en ;
                  rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Film oder einer anderen Ressource als Produzent*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Produzent*in eines Films oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -1056,8 +1112,8 @@ nvto:hasProducer rdf:type owl:ObjectProperty ;
                  rdfs:label "hat Produzent*in"@de ;
                  rdfs:label "has producer"@en .
 
-nvto:hasProgrammeDirector rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasProgrammeDirector rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf paam:hasContributor ;
                           skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die durch Kuration oder Leitung des Programmes bei einem Festival mitgewirkt hat."@de ;
                           skos:definition "Connects a resource to an Agent that contributed to a festival or event by curating or directing the programme of the event."@en ;
                           rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Programmdirektor*in beschrieben."""@de ;
@@ -1067,8 +1123,8 @@ nvto:hasProgrammeDirector rdf:type owl:ObjectProperty ;
                           rdfs:label "hat Programmdirektor*in"@de ;
                           rdfs:label "has programme director"@en .
 
-nvto:hasPrompter rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasPrompter rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf paam:hasContributor ;
                  skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Souffleur/Souffleuse mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an Agent that contributed to the resource as prompter."@en ;
                  rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Souffleur/Souffleuse beschrieben."""@de ;
@@ -1078,7 +1134,7 @@ nvto:hasPrompter rdf:type owl:ObjectProperty ;
                  rdfs:label "hat Souffleur/Souffleuse"@de ;
                  rdfs:label "has prompter"@en .
 
-nvto:hasProvenance rdf:type owl:AnnotationProperty ;
+paam:hasProvenance rdf:type owl:ObjectProperty ;
                    skos:definition "Beschreibt die Herkunft oder verbindet mit der Herkunft einer Ressource."@de ;
                    skos:definition "Describes or connects to the provenance of a resource."@en ;
                    rdfs:comment """"""@de ;
@@ -1088,8 +1144,8 @@ nvto:hasProvenance rdf:type owl:AnnotationProperty ;
                    rdfs:label "hat Herkunft"@de ;
                    rdfs:label "has provenance"@en .
 
-nvto:hasPublisher rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasPublisher rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf paam:hasContributor ;
                   skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Verleger*in an der Ressource mitgewirkt hat."@en ;
                   skos:definition "Connects a resource to an Agent that contributed to the resource as publisher."@en ;
                   rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Zeitung, einer Produktion oder einer anderen Ressource als Herausgeber*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Herausgeber*in einer Zeitung oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -1099,8 +1155,8 @@ nvto:hasPublisher rdf:type owl:ObjectProperty ;
                   rdfs:label "hat Herausgeber*in"@de ;
                   rdfs:label "has publisher"@en .
 
-nvto:hasPublishingCompany rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasPublishingCompany rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf paam:hasContributor ;
                           skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Verlag für die Ressource mitgewirkt hat."@en ;
                           skos:definition "Connects a resource to an Agent that operated as publishing company for the resource."@en ;
                           rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Buch, einer Produktion oder einer anderen Ressource als Verlag beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Verfasser*in eines Buchs oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -1110,9 +1166,9 @@ nvto:hasPublishingCompany rdf:type owl:ObjectProperty ;
                           rdfs:label "hat Verlag"@de ;
                           rdfs:label "has publishing company"@en .
 
-nvto:hasPublishingPlace rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf nvto:hasRelatedPlace ;
-                        rdfs:range nvto:Place ;
+paam:hasPublishingPlace rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf paam:hasRelatedPlace ;
+                        rdfs:range paam:Place ;
                         skos:definition "Verbindet eine Ressource mit dem Ort, an dem sie verlegt wird oder wurde."@de ;
                         skos:definition "Connects a resource to the place it was or is published at."@en ;
                         skos:example ""@de ;
@@ -1120,8 +1176,8 @@ nvto:hasPublishingPlace rdf:type owl:ObjectProperty ;
                         rdfs:label "hat Verlagsort"@de ;
                         rdfs:label "has publishing place"@en .
 
-nvto:hasPuppetBuilder rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasPuppetBuilder rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf paam:hasContributor ;
                        skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenbauer*in mitgewirkt hat."@de ;
                        skos:definition "Connects a resource to an Agent that contributed to the resource as puppet builder."@en ;
                        rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Puppenbauer*in einer Puppe oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Puppengestalter*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung."""@de ;
@@ -1131,8 +1187,8 @@ nvto:hasPuppetBuilder rdf:type owl:ObjectProperty ;
                        rdfs:label "hat Puppenbauer*in"@de ;
                        rdfs:label "has puppet builder"@en .
 
-nvto:hasPuppetDesigner rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasPuppetDesigner rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf paam:hasContributor ;
                        skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppengestalter*in mitgewirkt hat."@de ;
                        skos:definition "Connects a resource to an Agent that contributed to the resource as puppet designer."@en ;
                        rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion oder einer anderen Ressource als Puppengestalter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Puppengestalter*in einer Puppe oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Puppengestalter*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Puppe als auf deren Fertigung."""@de ;
@@ -1142,8 +1198,8 @@ nvto:hasPuppetDesigner rdf:type owl:ObjectProperty ;
                        rdfs:label "hat Puppengestalter*in"@de ;
                        rdfs:label "has puppet designer"@en .
 
-nvto:hasRecordist rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasRecordist rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf paam:hasContributor ;
                   skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tonmeister*in mitgewirkt hat."@de ;
                   skos:definition "Connects a resource to an Agent that contributed to the resource as recordist."@en ;
                   rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Tonmeister*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Tonmeister*in einer Audioaufnahme oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -1153,8 +1209,8 @@ nvto:hasRecordist rdf:type owl:ObjectProperty ;
                   rdfs:label "hat Tonmeister*in"@de ;
                   rdfs:label "has recordist"@en .
 
-nvto:hasRelatedPlace rdf:type owl:ObjectProperty ;
-                     rdfs:range nvto:Place ;
+paam:hasRelatedPlace rdf:type owl:ObjectProperty ;
+                     rdfs:range paam:Place ;
                      skos:definition "Verbindet eine Ressource mit einem Ort, mit dem sie in Verbindung steht."@de ;
                      skos:definition "Connects a resource to a place it is related to."@en ;
                      rdfs:comment """Wenn genauere Angaben der Beziehung zwischen Ressource und Ort bekannt sind, sollte eine der Untereigenschaften dieser Eigenschaft genutzt werden."""@de ;
@@ -1164,7 +1220,7 @@ nvto:hasRelatedPlace rdf:type owl:ObjectProperty ;
                      rdfs:label "hat Bezug zu Ort"@de ;
                      rdfs:label "has related place"@en .
 
-nvto:hasRelatedWebsite rdf:type owl:ObjectProperty ;
+paam:hasRelatedWebsite rdf:type owl:ObjectProperty ;
                        skos:definition "Verbindet eine Ressource mit einer Webseite, die einen Bezug auf die Ressource hat."@de ;
                        skos:definition "Connects a resource to a related website of the resource."@en ;
                        skos:example ""@de ;
@@ -1172,10 +1228,10 @@ nvto:hasRelatedWebsite rdf:type owl:ObjectProperty ;
                        rdfs:label "hat Bezug zu Webseite"@de ;
                        rdfs:label "has related website"@en .
 
-nvto:hasResidence rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf nvto:hasRelatedPlace ;
-                  rdfs:domain nvto:Agent ;
-                  rdfs:range nvto:Place ;
+paam:hasResidence rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf paam:hasRelatedPlace ;
+                  rdfs:domain paam:Agent ;
+                  rdfs:range paam:Place ;
                   skos:definition "Verbindet eine/n Akteur*in mit einem Ort, an dem er/sie residiert oder residierte."@de ;
                   skos:definition "Connects an Agent to a Place in which he resides or resided."@en ;
                   skos:example ""@de ;
@@ -1183,9 +1239,9 @@ nvto:hasResidence rdf:type owl:ObjectProperty ;
                   rdfs:label "hat Residenz"@de ;
                   rdfs:label "has residence"@en .
 
-nvto:hasRestagedVersion rdf:type owl:ObjectProperty ;
-                        rdfs:domain nvto:PerformingArtsProduction ;
-                        rdfs:range nvto:PerformingArtsProduction ;
+paam:hasRestagedVersion rdf:type owl:ObjectProperty ;
+                        rdfs:domain paam:PerformingArtsProduction ;
+                        rdfs:range paam:PerformingArtsProduction ;
                         skos:definition "Verbindet eine Produktion der darstellenden Künste mit ihrer Wiederaufnahme."@de ;
                         skos:definition "Connects a performing arts production with its restaged version."@en ;
                         rdfs:comment """Erklären, was Wiederaufnahme ist oder klar?"""@de ;
@@ -1195,7 +1251,7 @@ nvto:hasRestagedVersion rdf:type owl:ObjectProperty ;
                         rdfs:label "hat Wiederaufnahme"@de ;
                         rdfs:label "has restaged version"@en .
 
-nvto:hasRights rdf:type owl:DatatypeProperty ;
+paam:hasRights rdf:type owl:DatatypeProperty ;
                skos:definition "Beschreibt eine rechtliche Aussage über eine Ressource."@en ;
                skos:definition "Describes a rights statements about a resource."@en ;
                skos:example ""@de ;
@@ -1203,7 +1259,7 @@ nvto:hasRights rdf:type owl:DatatypeProperty ;
                rdfs:label "hat Rechte"@de ;
                rdfs:label "has rights"@en .
 
-nvto:hasRightsHolder rdf:type owl:AnnotationProperty ;
+paam:hasRightsHolder rdf:type owl:ObjectProperty ;
                      skos:definition "Beschreibt den/die Rechteinhaber*in einer Ressource oder verbindet die Ressource mit einem/r Akteur*in, der/die Rechteinhaber*in dieser Ressource ist."@en ;
                      skos:definition "Describes the rights holder of a resource or connects the resource to an agent who holds rights to the resource."@en ;
                      skos:example ""@de ;
@@ -1211,8 +1267,8 @@ nvto:hasRightsHolder rdf:type owl:AnnotationProperty ;
                      rdfs:label "hat Rechteinhaber"@de ;
                      rdfs:label "has rights holder"@en .
 
-nvto:hasSeamster rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasSeamster rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf paam:hasContributor ;
                  skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Näher*in mitgewirkt hat."@de ;
                  skos:definition "Connects a resource to an Agent that contributed to the resource as seamster."@en ;
                  rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Kostüm oder einer anderen Ressource als Näher*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Näher*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -1222,8 +1278,8 @@ nvto:hasSeamster rdf:type owl:ObjectProperty ;
                  rdfs:label "hat Näher*in"@de ;
                  rdfs:label "has seamster"@en .
 
-nvto:hasSeason rdf:type owl:ObjectProperty ;
-               rdfs:range nvto:TimeSpan ;
+paam:hasSeason rdf:type owl:ObjectProperty ;
+               rdfs:range paam:TimeSpan ;
                skos:definition "Verbindet eine Produktion der darstellenden Künste mit der Spielzeit, in der die Produktion aufgeführt wird oder wurde."@en ;
                skos:definition "connects to the season in which a performing arts production was or is performed."@en ;
                rdfs:comment """Spielzeit erklären oder klar?"""@de ;
@@ -1233,8 +1289,8 @@ nvto:hasSeason rdf:type owl:ObjectProperty ;
                rdfs:label "hat Spielzeit"@de ;
                rdfs:label "has season"@en .
 
-nvto:hasSetBuilder rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasSetBuilder rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf paam:hasContributor ;
                    skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Bühnenbauer*in mitgewirkt hat."@de ;
                    skos:definition "Connects a resource to an Agent that contributed to the resource as set builder."@en ;
                    rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Bühnenbild, einer Produktion oder einer anderen Ressource als Bühnenbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Bühnenbauer*in eines Bühnenbilds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Bühnenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung eines Kostüms als auf dessen Gestaltung."""@de ;
@@ -1244,8 +1300,8 @@ nvto:hasSetBuilder rdf:type owl:ObjectProperty ;
                    rdfs:label "hat Bühnenbauer*in"@de ;
                    rdfs:label "has set builder"@en .
 
-nvto:hasSetDesigner rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasSetDesigner rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf paam:hasContributor ;
                     skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Bühnenbildner*in mitgewirkt hat."@de ;
                     skos:definition "Connects a resource to an Agent that contributed to the resource as set designer."@en ;
                     rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Bühnenbild, einer Produktion oder einer anderen Ressource als Bühnenbildner*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Bühnenbildner*in eines Bühnenbilds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Bühnenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung."""@de ;
@@ -1255,7 +1311,7 @@ nvto:hasSetDesigner rdf:type owl:ObjectProperty ;
                     rdfs:label "hat Bühnenbildner*in"@de ;
                     rdfs:label "has set designer"@en .
 
-nvto:hasSinger rdf:type owl:ObjectProperty ;
+paam:hasSinger rdf:type owl:ObjectProperty ;
                skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Sänger*in mitgewirkt hat."@de ;
                skos:definition "Connects a resource to an Agent that contributed to the resource as singer."@en ;
                rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Lied, einer Aufführung oder einer anderen Ressource als Sänger*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Sänger*in eines Lieds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -1265,8 +1321,8 @@ nvto:hasSinger rdf:type owl:ObjectProperty ;
                rdfs:label "hat Sänger*in"@de ;
                rdfs:label "has singer"@en .
 
-nvto:hasSoundDesigner rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasSoundDesigner rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf paam:hasContributor ;
                       skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tongestalter*in mitgewirkt hat."@de ;
                       skos:definition "Connects a resource to an Agent that contributed to the resource as sound designer."@en ;
                       rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Tongestalter*in beschrieben."""@de ;
@@ -1276,7 +1332,7 @@ nvto:hasSoundDesigner rdf:type owl:ObjectProperty ;
                       rdfs:label "hat Tongestalter*in"@de ;
                       rdfs:label "has sound designer"@en .
 
-nvto:hasSource rdf:type owl:ObjectProperty ;
+paam:hasSource rdf:type owl:ObjectProperty ;
                skos:definition "Beschreibt oder verbindet mit der Quelle einer Ressource."@de ;
                skos:definition "Describes or connects to the source of a resource."@en ;
                rdfs:comment """Diese Eigenschaft beschreibt, aus welcher Quelle ein Datensatz oder Teile eines Datensatzes stammen. Sowohl Literale als auch Weblinks sind erlaubt."""@de ;
@@ -1286,8 +1342,8 @@ nvto:hasSource rdf:type owl:ObjectProperty ;
                rdfs:label "hat Quelle"@de ;
                rdfs:label "has source"@en .
 
-nvto:hasSpeaker rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasSpeaker rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf paam:hasContributor ;
                 skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Sprecher*in mitgewirkt hat."@de ;
                 skos:definition "Connects a resource to an Agent that contributed to the resource as speaker."@en ;
                 rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung, einem Film oder einer anderen Ressource als Sprecher*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Sprecher*in für einen Film oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -1297,8 +1353,8 @@ nvto:hasSpeaker rdf:type owl:ObjectProperty ;
                 rdfs:label "hat Sprecher*in"@de ;
                 rdfs:label "has speaker"@en .
 
-nvto:hasStageManager rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasStageManager rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf paam:hasContributor ;
                               skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Inspizient*in mitgewirkt hat."@de ;
                               skos:definition "Connects a resource to an Agent that contributed to the resource as stage manager."@en ;
                               rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Inspizient*in beschrieben."""@de ;
@@ -1308,7 +1364,7 @@ nvto:hasStageManager rdf:type owl:ObjectProperty ;
                               rdfs:label "hat Inspizient*in"@de ;
                               rdfs:label "has stage manager"@en .
 
-nvto:hasSubtitle  rdf:type owl:DatatypeProperty ;
+paam:hasSubtitle  rdf:type owl:DatatypeProperty ;
                   skos:definition "Beschreibt den Untertitel einer Ressource."@en ;
                   skos:definition "Describes the subtitle of a resource."@en ;
                   skos:example ""@de ;
@@ -1316,8 +1372,8 @@ nvto:hasSubtitle  rdf:type owl:DatatypeProperty ;
                   rdfs:label "hat Untertitel"@de ;
                   rdfs:label "has subtitle"@en .
 
-nvto:hasSurtitleCreator rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasSurtitleCreator rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf paam:hasContributor ;
                        skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Übertitel Schöpfer*in mitgewirkt hat."@de ;
                        skos:definition "Connects a resource to an Agent that contributed to the resource as author of surtitles."@en ;
                        rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung, einem Übertitel oder einer anderen Ressource als Übertitel Schöpfer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Schöpfer*in eines Übertitels oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -1327,8 +1383,8 @@ nvto:hasSurtitleCreator rdf:type owl:ObjectProperty ;
                        rdfs:label "hat Übertitel Schöpfer*in"@de ;
                        rdfs:label "has surtitle creator"@en .
 
-nvto:hasTableOfContents rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf nvto:hasDescription ;
+paam:hasTableOfContents rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf paam:hasDescription ;
                         skos:definition "Beschreibt das Inhaltsverzeichnis einer Ressource."@de ;
                         skos:definition "Describes the table of contents of a resource."@en ;
                         skos:example ""@de ;
@@ -1336,8 +1392,8 @@ nvto:hasTableOfContents rdf:type owl:DatatypeProperty ;
                         rdfs:label "hat Inhaltsverzeichnis"@de ;
                         rdfs:label "has table of contents"@en .
 
-nvto:hasTechnician rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasTechnician rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf paam:hasContributor ;
                    skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Techniker*in mitgewirkt hat."@de ;
                    skos:definition "Connects a resource to an Agent that contributed to the resource as technician."@en ;
                    rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Techniker*in beschrieben."""@de ;
@@ -1347,7 +1403,7 @@ nvto:hasTechnician rdf:type owl:ObjectProperty ;
                    rdfs:label "hat Techniker*in"@de ;
                    rdfs:label "has technician"@en .
 
-nvto:hasTitle rdf:type owl:DatatypeProperty ;
+paam:hasTitle rdf:type owl:DatatypeProperty ;
               skos:definition "Beschreibt den Titel einer Ressource."@en ;
               skos:definition "Describes the title of a resource."@en ;
               skos:example ""@de ;
@@ -1355,8 +1411,8 @@ nvto:hasTitle rdf:type owl:DatatypeProperty ;
               rdfs:label "hat Titel"@de ;
               rdfs:label "has title"@en .
 
-nvto:hasTranslator rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasTranslator rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf paam:hasContributor ;
                    skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Übersetzer*in mitgewirkt hat."@de ;
                    skos:definition "Connects a resource to an Agent that contributed to the resource as translator."@en ;
                    rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion, einer Aufführung oder einer anderen Ressource als Übersetzer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Übersetzer*in für einen Text oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -1366,7 +1422,7 @@ nvto:hasTranslator rdf:type owl:ObjectProperty ;
                    rdfs:label "hat Übersetzer*in"@de ;
                    rdfs:label "has translator"@en .
 
-nvto:hasType rdf:type owl:AnnotationProperty ;
+paam:hasType rdf:type owl:ObjectProperty ;
              skos:definition "Beschreibt oder verbindet mit dem Typ einer Ressource."@de ;
              skos:definition "Describes or connects to the type of a resource."@en ;
              rdfs:comment """Sowohl Literale als auch Weblinks sind erlaubt"""@de ;
@@ -1376,8 +1432,8 @@ nvto:hasType rdf:type owl:AnnotationProperty ;
              rdfs:label "hat Typ"@de ;
              rdfs:label "has type"@en .
 
-nvto:hasVideoDesigner rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasVideoDesigner rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf paam:hasContributor ;
                       skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Videodesigner*in mitgewirkt hat."@de ;
                       skos:definition "Connects a resource to an Agent responsible for its video design."@en ;
                       rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung, einem Video oder einer anderen Ressource als Videodesigner*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Designer*in für ein Video als Teil eines Bühnenbilds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."""@de ;
@@ -1387,8 +1443,8 @@ nvto:hasVideoDesigner rdf:type owl:ObjectProperty ;
                       rdfs:label "hat Videodesigner*in"@de ;
                       rdfs:label "video designer"@en .
 
-nvto:hasVideoEditor   rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf nvto:hasContributor ;
+paam:hasVideoEditor   rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf paam:hasContributor ;
                       skos:definition "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Videoeditor*in mitgewirkt hat."@de ;
                       skos:definition "Connects a resource to an Agent responsible for its video editing."@en ;
                       rdfs:comment """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung, einem Video oder einer anderen Ressource als Videoeditor*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Editor*in für ein Video oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen"""@de ;
@@ -1398,9 +1454,9 @@ nvto:hasVideoEditor   rdf:type owl:ObjectProperty ;
                       rdfs:label "hat Videoeditor*in"@de ;
                       rdfs:label "video editor"@en .
 
-nvto:hasTimeOfOccurrence rdf:type owl:ObjectProperty ;
-                         rdfs:domain nvto:Event ;
-                         rdfs:range nvto:TimeSpan ;
+paam:hasTimeOfOccurrence rdf:type owl:ObjectProperty ;
+                         rdfs:domain paam:Event ;
+                         rdfs:range paam:TimeSpan ;
                          skos:definition "Verbindet ein Ereignis mit der Zeitspanne, in der es sich ereignet."@de ;
                          skos:definition "Connects an Event to the Timespan it occurred at."@en ;
                          rdfs:comment """Zeitspanne erklären?"""@de ;
@@ -1410,9 +1466,9 @@ nvto:hasTimeOfOccurrence rdf:type owl:ObjectProperty ;
                          rdfs:label "ereignet sich zu Zeitpunkt"@de ;
                          rdfs:label "has time of occurrence"@en .
 
-nvto:hasPlaceOfOrigin rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf nvto:hasRelatedPlace ;
-                       rdfs:range nvto:Place ;
+paam:hasPlaceOfOrigin rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf paam:hasRelatedPlace ;
+                       rdfs:range paam:Place ;
                        skos:definition "Verbindet eine Ressource mit dem Ort, an dem sie ihren Ursprung hat."@de ;
                        skos:definition "Connects a resource to the Place it originated at."@en ;
                        rdfs:comment """"""@de ;
@@ -1422,8 +1478,8 @@ nvto:hasPlaceOfOrigin rdf:type owl:ObjectProperty ;
                        rdfs:label "hat Ursprung in Ort"@de ;
                        rdfs:label "originated at place"@en .
 
-nvto:hasSuccessor rdf:type owl:ObjectProperty ;
-                  owl:inverseOf nvto:hasPredecessor ;
+paam:hasSuccessor rdf:type owl:ObjectProperty ;
+                  owl:inverseOf paam:hasPredecessor ;
                   skos:definition "Beschreibt den Nachfolger oder verbindet mit dem Nachfolger einer Ressource."@de ;
                   skos:definition "Describes or connects to the succeeding resource of a resource."@en ;
                   rdfs:comment "Invers von 'hat Vorgänger'."@de ;
@@ -1435,569 +1491,569 @@ nvto:hasSuccessor rdf:type owl:ObjectProperty ;
                   rdfs:label "hat Nachfolger"@de ;
                   rdfs:label "has successor"@en .
 
-nvto:isAudiblyReferencedIn owl:inverseOf nvto:hasAudibleReferenceTo ;
-                            rdfs:subPropertyOf nvto:isAudioVisuallyReferencedIn ;
+paam:isAudiblyReferencedIn owl:inverseOf paam:hasAudibleReferenceTo ;
+                            rdfs:subPropertyOf paam:isAudioVisuallyReferencedIn ;
                             rdfs:comment "Invers von 'beinhaltet hörbare Referenz zu'."@de ;
                             rdfs:comment "Inverse of 'has audible reference to'."@en ;
                             rdfs:label "ist hörbar referenziert in"@de ;
                             rdfs:label "is audibly referenced in"@en .
 
-nvto:isAudioVisuallyReferencedIn owl:inverseOf nvto:hasAudioVisualReferenceTo ;
-                                rdfs:subPropertyOf nvto:isReferencedIn ;
+paam:isAudioVisuallyReferencedIn owl:inverseOf paam:hasAudioVisualReferenceTo ;
+                                rdfs:subPropertyOf paam:isReferencedIn ;
                                 rdfs:comment "Invers von 'beinhaltet audiovisuelle Referenz zu'."@de ;
                                 rdfs:comment "Inverse of 'has audiovisual reference to'."@en ;
                                 rdfs:label "ist audiovisuell referenziert in"@de ;
                                 rdfs:label "is audiovisually referenced in"@en .
 
-nvto:isRecordedIn owl:inverseOf nvto:hasRecordingOf ;
-                             rdfs:subPropertyOf nvto:isReferencedIn ;
-                             skos:definiiton "Invers von 'hat Aufnahme von'."@de ;
+paam:isRecordedIn owl:inverseOf paam:hasRecordingOf ;
+                             rdfs:subPropertyOf paam:isReferencedIn ;
+                             skos:definition "Invers von 'hat Aufnahme von'."@de ;
                              skos:definition "Inverse of 'has recording of'."@en ;
                              rdfs:label "ist aufgenommen von"@de ;
                              rdfs:label "is recorded in"@en .
 
-nvto:isReferencedIn owl:inverseOf nvto:hasReferenceTo ;
+paam:isReferencedIn owl:inverseOf paam:hasReferenceTo ;
                     rdfs:comment "Invers von 'beinhaltet Referenz zu'."@de ;
                     rdfs:comment "Inverse of 'has reference to'."@en ;
                     rdfs:label "ist referenziert in"@de ;
                     rdfs:label "is referenced in"@en .
 
-nvto:isTextuallyReferencedIn owl:inverseOf nvto:hasTextualReferenceTo ;
-                            rdfs:subPropertyOf nvto:isReferencedIn ;
+paam:isTextuallyReferencedIn owl:inverseOf paam:hasTextualReferenceTo ;
+                            rdfs:subPropertyOf paam:isReferencedIn ;
                             rdfs:comment "Invers von 'beinhaltet textuelle Referenz zu'."@de ;
                             rdfs:comment "Inverse of 'has textual reference to'."@en ;
                             rdfs:label "ist textuell referenziert in"@de ;
                             rdfs:label "is textually referenced in"@en .
 
-nvto:isVisuallyReferencedIn owl:inverseOf nvto:hasVisualReferenceTo ;
-                             rdfs:subPropertyOf nvto:isAudioVisuallyReferencedIn ;
+paam:isVisuallyReferencedIn owl:inverseOf paam:hasVisualReferenceTo ;
+                             rdfs:subPropertyOf paam:isAudioVisuallyReferencedIn ;
                              rdfs:comment "Invers von 'beinhaltet visuelle Referenz zu'."@de ;
                              rdfs:comment "Inverse of 'has visual reference to'."@en ;
                              rdfs:label "ist visuell referenziert in"@de ;
                              rdfs:label "is visually referenced in"@en .
 
-nvto:isPlaceOfOccurrenceOf owl:inverseOf nvto:hasPlaceOfOccurrence ;
-                     rdfs:subPropertyOf nvto:isRelatedPlaceOf ;
+paam:isPlaceOfOccurrenceOf owl:inverseOf paam:hasPlaceOfOccurrence ;
+                     rdfs:subPropertyOf paam:isRelatedPlaceOf ;
                      rdfs:comment "Invers von 'ereignet sich an Ort'."@de ;
                      rdfs:comment "Inverse of 'has place of occurrence'."@en ;
                      rdfs:label "ist Ort von Ereignis"@de ;
                      rdfs:label "is place of occurrence of"@en .
 
-nvto:isActorOf owl:inverseOf nvto:hasActor ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isActorOf owl:inverseOf paam:hasActor ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Schauspieler*in'."@de ;
                rdfs:comment "Inverse of 'has actor'."@en ;
                rdfs:label "ist Schauspieler*in von"@de ;
                rdfs:label "is actor of"@en .
 
-nvto:isAcrobatOf owl:inverseOf nvto:hasAcrobat ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isAcrobatOf owl:inverseOf paam:hasAcrobat ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Akrobat*in'."@de ;
                rdfs:comment "Inverse of 'has acrobat'."@en ;
                rdfs:label "ist Akrobat*in von"@de ;
                rdfs:label "is acrobat of"@en .
 
-nvto:isAdaptorOf owl:inverseOf nvto:hasAdaptor ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isAdaptorOf owl:inverseOf paam:hasAdaptor ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat (Text-)Bearbeiter*in'."@de ;
                rdfs:comment "Inverse of 'has adaptor'."@en ;
                rdfs:label "ist (Text-)Bearbeiter*in von"@de ;
                rdfs:label "is adaptor of"@en .
 
-nvto:isArtisticDirectorOf owl:inverseOf nvto:hasArtisticDirector ;
-                         rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isArtisticDirectorOf owl:inverseOf paam:hasArtisticDirector ;
+                         rdfs:subPropertyOf paam:isContributorOf ;
                          rdfs:comment "Invers von 'hat künstlerische*n Leiter*in'."@de ;
                          rdfs:comment "Inverse of 'has artistic director'."@en ;
                          rdfs:label "ist künstlerische*r Leiter*in von"@de ;
                          rdfs:label "is artistic director of"@en .
 
-nvto:isAssistantDirectorOf owl:inverseOf nvto:hasAssistantDirector ;
-                           rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isAssistantDirectorOf owl:inverseOf paam:hasAssistantDirector ;
+                           rdfs:subPropertyOf paam:isContributorOf ;
                            rdfs:comment "Invers von 'hat Regieassistent*in'."@de ;
                            rdfs:comment "Inverse of 'has assistant director'."@en ;
                            rdfs:label "ist Regieassistent*in von"@de ;
                            rdfs:label "is assistant director of"@en .
 
-nvto:isAuthorOf owl:inverseOf nvto:hasAuthor ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isAuthorOf owl:inverseOf paam:hasAuthor ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Autor*in'."@de ;
                rdfs:comment "Inverse of 'has author'."@en ;
                rdfs:label "ist Autor*in von"@de ;
                rdfs:label "is author of"@en .
 
-nvto:isChoreographerOf owl:inverseOf nvto:hasChoreographer ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isChoreographerOf owl:inverseOf paam:hasChoreographer ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Choreograf*in'."@de ;
                rdfs:comment "Inverse of 'has choreographer'."@en ;
                rdfs:label "ist Choreograf*in von"@de ;
                rdfs:label "is choreographer of"@en .
 
-nvto:isCinematographerOf owl:inverseOf nvto:hasCinematographer ;
-                         rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isCinematographerOf owl:inverseOf paam:hasCinematographer ;
+                         rdfs:subPropertyOf paam:isContributorOf ;
                          rdfs:comment "Invers von 'hat Kameramann/Kamerafrau'."@de ;
                          rdfs:comment "Inverse of 'has cinematographer'."@en ;
                          rdfs:label "ist Kameramann/Kamerafrau von"@de ;
                          rdfs:label "is cinematographer of"@en .
 
-nvto:isClownOf owl:inverseOf nvto:hasClown ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isClownOf owl:inverseOf paam:hasClown ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Clown*in'."@de ;
                rdfs:comment "Inverse of 'has clown'."@en ;
                rdfs:label "ist Clown*in von"@de ;
                rdfs:label "is clown of"@en .
 
- nvto:isComposerOf owl:inverseOf nvto:hasComposer ;
+ paam:isComposerOf owl:inverseOf paam:hasComposer ;
                 rdfs:comment "Invers von 'hat Komponist*in'."@de ;
                 rdfs:comment "Inverse of 'has composer'."@en ;
                 rdfs:label "ist Komponist*in von"@de ;
                 rdfs:label "is composer of"@en .
 
-nvto:isConceptOriginatorOf owl:inverseOf nvto:hasConceptOriginator ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isConceptOriginatorOf owl:inverseOf paam:hasConceptOriginator ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Konzept Urheber*in'."@de ;
                rdfs:comment "Inverse of 'has concept originator'."@en ;
                rdfs:label "ist Konzept Urheber*in von"@de ;
                rdfs:label "is concept originator of"@en .
 
-nvto:isContributorOf owl:inverseOf nvto:hasContributor ;
+paam:isContributorOf owl:inverseOf paam:hasContributor ;
                    rdfs:comment "Invers von 'hat Mitwirkende*in'."@de ;
                    rdfs:comment "Inverse of 'has contributor'."@en ;
                    rdfs:label "ist Mitwirkende*r von"@de ;
                    rdfs:label "is contributor of"@en .
 
-nvto:isCostumeBuilder owl:inverseOf nvto:hasCostumeBuilder ;
-                       rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isCostumeBuilder owl:inverseOf paam:hasCostumeBuilder ;
+                       rdfs:subPropertyOf paam:isContributorOf ;
                        rdfs:comment "Invers von 'hat Kostümbauer*in'."@de ;
                        rdfs:comment "Inverse of 'has costume builder'."@en ;
                        rdfs:label "ist Kostümbauer*in von"@de ;
                        rdfs:label "is costume builder of"@en .
 
-nvto:isCostumeDesigner owl:inverseOf nvto:hasCostumeDesigner ;
-                       rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isCostumeDesigner owl:inverseOf paam:hasCostumeDesigner ;
+                       rdfs:subPropertyOf paam:isContributorOf ;
                        rdfs:comment "Invers von 'hat Kostümgestalter*in'."@de ;
                        rdfs:comment "Inverse of 'has costume designer'."@en ;
                        rdfs:label "ist Kostümdesigner*in von"@de ;
                        rdfs:label "is costume designer of"@en .
 
-nvto:isCreatorOf owl:inverseOf nvto:hasCreator ;
-                 rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isCreatorOf owl:inverseOf paam:hasCreator ;
+                 rdfs:subPropertyOf paam:isContributorOf ;
                  rdfs:comment "Invers von 'hat Schöpfer*in'."@de ;
                  rdfs:comment "Inverse of 'has creator'."@en ;
                  rdfs:label "ist Schöpfer*in von"@de ;
                  rdfs:label "is creator of"@en .
 
-nvto:isDancerOf owl:inverseOf nvto:hasDancer ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isDancerOf owl:inverseOf paam:hasDancer ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Tänzer*in'."@de ;
                rdfs:comment "Inverse of 'has dancer'."@en ;
                rdfs:label "ist Tänzer*in von"@de ;
                rdfs:label "is dancer of"@en .
 
-nvto:isDigitalVersionOf owl:inverseOf nvto:hasDigitalVersion ;
+paam:isDigitalVersionOf owl:inverseOf paam:hasDigitalVersion ;
                        rdfs:comment "Invers von 'hat digitale Version'."@de ;
                        rdfs:comment "has digital version'."@en ;
                        rdfs:label "ist digitale Version von"@de ;
                        rdfs:label "is digital version of"@en .
 
-nvto:isDirectorOf owl:inverseOf nvto:hasDirector ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isDirectorOf owl:inverseOf paam:hasDirector ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Regisseur*in'."@de ;
                rdfs:comment "Inverse of 'has director'."@en ;
                rdfs:label "ist Regisseur*in von"@de ;
                rdfs:label "is director of"@en .
 
-nvto:isDramaturgeOf owl:inverseOf nvto:hasDramaturge ;
-                   rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isDramaturgeOf owl:inverseOf paam:hasDramaturge ;
+                   rdfs:subPropertyOf paam:isContributorOf ;
                    rdfs:comment "Invers von 'hat Dramaturg*in'."@de ;
                    rdfs:comment "Inverse of 'has dramaturge'."@en ;
                    rdfs:label "ist Dramaturg*in von"@de ;
                    rdfs:label "is dramaturge of"@en .
 
-nvto:isEditorOf owl:inverseOf nvto:hasEditor ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isEditorOf owl:inverseOf paam:hasEditor ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Redakteur*in'."@de ;
                rdfs:comment "Inverse of 'has editor'."@en ;
                rdfs:label "ist Redakteur*in von"@de ;
                rdfs:label "is editor of"@en .
 
-nvto:isFirstPerformanceVersionOf owl:inverseOf nvto:hasFirstPerformanceVersion ;
+paam:isFirstPerformanceVersionOf owl:inverseOf paam:hasFirstPerformanceVersion ;
                               skos:definition "Invers von 'hat Erstaufführungsversion'."@de ;
                               skos:definition "Inverse of 'has first performance version'."@en ;
                               rdfs:label "ist Erstaufführungsversion von"@de ;
                               rdfs:label "is first performance version of"@en .
 
-nvto:isFormatOf owl:inverseOf nvto:hasFormat ;
+paam:isFormatOf owl:inverseOf paam:hasFormat ;
                rdfs:comment "Invers von 'hat Format'."@de ;
                rdfs:comment "Inverse of 'has format'."@en ;
                rdfs:label "ist Format von"@de ;
                rdfs:label "is format of"@en .
 
-nvto:isHomepageOf owl:inverseOf nvto:hasHomepage ;
-                 rdfs:subPropertyOf nvto:isRelatedWebsiteOf ;
+paam:isHomepageOf owl:inverseOf paam:hasHomepage ;
+                 rdfs:subPropertyOf paam:isRelatedWebsiteOf ;
                  rdfs:comment "Invers von 'hat Homepage'."@de ;
                  rdfs:comment "Inverse of 'has homepage'."@en ;
                  rdfs:label "ist Homepage von"@de ;
                  rdfs:label "is homepage of"@en .
 
-nvto:isIdentifierOf owl:inverseOf nvto:hasIdentifier ;
+paam:isIdentifierOf owl:inverseOf paam:hasIdentifier ;
                   rdfs:comment "Invers von 'hat Bezeichner'."@de ;
                   rdfs:comment "Inverse of 'has identifier'."@en ;
                   rdfs:label "ist Bezeichner von"@de ;
                   rdfs:label "is identifier of"@en .
 
-nvto:isIllustratorOf owl:inverseOf nvto:hasIllustrator ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isIllustratorOf owl:inverseOf paam:hasIllustrator ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Illustrator*in'."@de ;
                rdfs:comment "Inverse of 'has illustrator'."@en ;
                rdfs:label "ist Illustrator*in von"@de ;
                rdfs:label "is illustrator of"@en .
 
-nvto:isInfluenceOn owl:inverseOf nvto:hasInfluenceFrom ;
-                             rdfs:subPropertyOf nvto:isReferencedIn ;
-                             skos:definiiton "Invers von 'hat Einfluss von'."@de ;
+paam:isInfluenceOn owl:inverseOf paam:hasInfluenceFrom ;
+                             rdfs:subPropertyOf paam:isReferencedIn ;
+                             skos:definition "Invers von 'hat Einfluss von'."@de ;
                              skos:definition "Inverse of 'has influence from'."@en ;
                              rdfs:label "ist Einfluss auf"@de ;
                              rdfs:label "is influence on"@en .
 
-nvto:isInformationCarrierOf owl:inverseOf nvto:hasInformationCarrier ;
+paam:isInformationCarrierOf owl:inverseOf paam:hasInformationCarrier ;
                             rdfs:comment "Invers von 'hat Informationsträger'."@de ;
                             rdfs:comment "Inverse of 'has information carrier'."@en ;
                             rdfs:label "ist Informationsträger von"@de ;
                             rdfs:label "is information carrier of"@en .
 
-nvto:isLayouterOf owl:inverseOf nvto:hasLayouter ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isLayouterOf owl:inverseOf paam:hasLayouter ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Layouter*in'."@de ;
                rdfs:comment "Inverse of 'has layouter'."@en ;
                rdfs:label "ist Layouter*in von"@de ;
                rdfs:label "is layouter of"@en .
 
-nvto:isLightingDesignerOf owl:inverseOf nvto:hasLightingDesigner ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isLightingDesignerOf owl:inverseOf paam:hasLightingDesigner ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Lichtgestalter*in'."@de ;
                rdfs:comment "Inverse of 'has lighting designer'."@en ;
                rdfs:label "ist Lichtgestalter*in von"@de ;
                rdfs:label "is lighting designer of"@en .
 
-nvto:isMakeUpArtistOf owl:inverseOf nvto:hasMakeUpArtist ;
-                     rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isMakeUpArtistOf owl:inverseOf paam:hasMakeUpArtist ;
+                     rdfs:subPropertyOf paam:isContributorOf ;
                      rdfs:comment "Invers von 'hat Visagist*in'."@de ;
                      rdfs:comment "Inverse of 'has make up artist'."@en ;
                      rdfs:label "ist Visagist*in von"@de ;
                      rdfs:label "is make up artist of"@en .
 
-nvto:isMaskBuilderOf owl:inverseOf nvto:hasMaskBuilder ;
-                     rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isMaskBuilderOf owl:inverseOf paam:hasMaskBuilder ;
+                     rdfs:subPropertyOf paam:isContributorOf ;
                      rdfs:comment "Invers von 'hat Maskenbauer*in'."@de ;
                      rdfs:comment "Inverse of 'has mask builder'."@en ;
                      rdfs:label "ist Maskenbauer*in von"@de ;
                      rdfs:label "is mask builder of"@en .
 
-nvto:isMaskDesignerOf owl:inverseOf nvto:hasMaskDesigner ;
-                     rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isMaskDesignerOf owl:inverseOf paam:hasMaskDesigner ;
+                     rdfs:subPropertyOf paam:isContributorOf ;
                      rdfs:comment "Invers von 'hat Maskengestalter*in'."@de ;
                      rdfs:comment "Inverse of 'has mask designer'."@en ;
                      rdfs:label "ist Maskengestalter*in von"@de ;
                      rdfs:label "is mask designer of"@en .
 
-nvto:isMediatorOf owl:inverseOf nvto:hasMediator ;
+paam:isMediatorOf owl:inverseOf paam:hasMediator ;
                      rdfs:comment "Invers von 'hat Vermittler*in'."@de ;
                      rdfs:comment "Inverse of 'has mediator'."@en ;
                      rdfs:label "ist Vermittler*in von"@de ;
                      rdfs:label "is mediator of"@en .
 
-nvto:isMediumOf owl:inverseOf nvto:hasMedium ;
-               rdfs:subPropertyOf nvto:isFormatOf ;
+paam:isMediumOf owl:inverseOf paam:hasMedium ;
+               rdfs:subPropertyOf paam:isFormatOf ;
                rdfs:comment "Invers von 'hat Medium'."@de ;
                rdfs:comment "Inverse of 'has medium'."@en ;
                rdfs:label "ist Medium von"@de ;
                rdfs:label "is medium of"@en .
 
-nvto:isMimeOf owl:inverseOf nvto:hasMime ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isMimeOf owl:inverseOf paam:hasMime ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Mime/Mimin'."@de ;
                rdfs:comment "Inverse of 'has mime'."@en ;
                rdfs:label "ist Mime/Mimin von"@de ;
                rdfs:label "is mime of"@en .
 
-nvto:isMusicianOf owl:inverseOf nvto:hasMusician ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isMusicianOf owl:inverseOf paam:hasMusician ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Musiker*in'."@de ;
                rdfs:comment "Inverse of 'has musician'."@en ;
                rdfs:label "ist Musiker*in von"@de ;
                rdfs:label "is musician of"@en .
 
-nvto:isPantomimeOf owl:inverseOf nvto:hasPantomime ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isPantomimeOf owl:inverseOf paam:hasPantomime ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Pantomime/Pantomimin'."@de ;
                rdfs:comment "Inverse of 'has pantomime'."@en ;
                rdfs:label "ist Pantomime/Pantomimin von"@de ;
                rdfs:label "is pantomime of"@en .
 
-nvto:isPartOf rdf:type owl:ObjectProperty ;
-              owl:inverseOf nvto:hasPart ;
+paam:isPartOf rdf:type owl:ObjectProperty ;
+              owl:inverseOf paam:hasPart ;
               rdfs:comment "Invers von 'hat Teil'."@de ;
               rdfs:comment "Inverse of 'has part'."@en ;
               rdfs:label "ist Teil von"@de ;
               rdfs:label "is part of"@en .
 
-nvto:isParticipantOf owl:inverseOf nvto:hasParticipant ;
-               rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isParticipantOf owl:inverseOf paam:hasParticipant ;
+               rdfs:subPropertyOf paam:isContributorOf ;
                rdfs:comment "Invers von 'hat Teilnehmer*in'."@de ;
                rdfs:comment "Inverse of 'has participant'."@en ;
                rdfs:label "ist Teilnehmer*in von"@de ;
                rdfs:label "is participant of"@en .
 
-nvto:isPerformerOf owl:inverseOf nvto:hasPerformer ;
-                 rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isPerformerOf owl:inverseOf paam:hasPerformer ;
+                 rdfs:subPropertyOf paam:isContributorOf ;
                  rdfs:comment "Invers von 'hat Darsteller*in'."@de ;
                  rdfs:comment "Inverse of 'has performer'."@en ;
                  rdfs:label "ist Darsteller*in von"@de ;
                  rdfs:label "is performer of"@en .
 
-nvto:isPhotographerOf owl:inverseOf nvto:hasPhotographer ;
-                 rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isPhotographerOf owl:inverseOf paam:hasPhotographer ;
+                 rdfs:subPropertyOf paam:isContributorOf ;
                  rdfs:comment "Invers von 'hat Fotograf*in'."@de ;
                  rdfs:comment "Inverse of 'has photographer'."@en ;
                  rdfs:label "ist Fotograf*in von"@de ;
                  rdfs:label "is photographer of"@en .
 
-nvto:isPhotoStudioOf owl:inverseOf nvto:hasPhotoStudio ;
+paam:isPhotoStudioOf owl:inverseOf paam:hasPhotoStudio ;
                  rdfs:comment "Invers von 'hat Fotostudio'."@de ;
                  rdfs:comment "Inverse of 'has photo studio'."@en ;
                  rdfs:label "ist Fotostudio von"@de ;
                  rdfs:label "is photo studio of"@en .
 
-nvto:isPlaceOfOriginOf owl:inverseOf nvto:hasPlaceOfOrigin ;
-                      rdfs:subPropertyOf nvto:isRelatedPlaceOf ;
+paam:isPlaceOfOriginOf owl:inverseOf paam:hasPlaceOfOrigin ;
+                      rdfs:subPropertyOf paam:isRelatedPlaceOf ;
                       rdfs:comment "Invers von 'hat Ursprung in Ort'."@de ;
                       rdfs:comment "Inverse of 'originated at place'."@en ;
                       rdfs:label "ist Ursprungsort von"@de ;
                       rdfs:label "is place of origin of"@en .
 
-nvto:isPlaywrightOf owl:inverseOf nvto:hasPlaywright ;
-                           rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isPlaywrightOf owl:inverseOf paam:hasPlaywright ;
+                           rdfs:subPropertyOf paam:isContributorOf ;
                            rdfs:comment "Invers von 'hat Dramatiker*in'."@de ;
                            rdfs:comment "Inverse of 'has playwright'."@en ;
                            rdfs:label "ist Dramatiker*in von"@de ;
                            rdfs:label "is playwright of"@en .
 
-nvto:isProducerOf owl:inverseOf nvto:hasProducer ;
-                 rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isProducerOf owl:inverseOf paam:hasProducer ;
+                 rdfs:subPropertyOf paam:isContributorOf ;
                  rdfs:comment "Invers von 'hat Produzent*in'."@de ;
                  rdfs:comment "Inverse of 'has producer'."@en ;
                  rdfs:label "ist Produzent*in von"@de ;
                  rdfs:label "is producer of"@en .
 
-nvto:isProgrammeDirectorOf owl:inverseOf nvto:hasProgrammeDirector ;
-                 rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isProgrammeDirectorOf owl:inverseOf paam:hasProgrammeDirector ;
+                 rdfs:subPropertyOf paam:isContributorOf ;
                  rdfs:comment "Invers von 'hat Programmdirektor*in'."@de ;
                  rdfs:comment "Inverse of 'has programme director'."@en ;
                  rdfs:label "ist Programmdirektor*in von"@de ;
                  rdfs:label "is programme director of"@en .
 
-nvto:isPrompterOf owl:inverseOf nvto:hasPrompter ;
-                 rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isPrompterOf owl:inverseOf paam:hasPrompter ;
+                 rdfs:subPropertyOf paam:isContributorOf ;
                  rdfs:comment "Invers von 'hat Souffleur/Souffleuse'."@de ;
                  rdfs:comment "Inverse of 'has prompter'."@en ;
                  rdfs:label "ist Souffleur/Souffleuse von"@de ;
                  rdfs:label "is prompter of"@en .
 
-nvto:isProvenanceOf owl:inverseOf nvto:hasProvenance ;
+paam:isProvenanceOf owl:inverseOf paam:hasProvenance ;
                    rdfs:comment "Invers von 'hat Herkunft'."@de ;
                    rdfs:comment "Inverse of 'has provenance'."@en ;
                    rdfs:label "ist Herkunft von"@de ;
                    rdfs:label "is provenance of"@en .
 
-nvto:isPublisherOf owl:inverseOf nvto:hasPublisher ;
-                   rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isPublisherOf owl:inverseOf paam:hasPublisher ;
+                   rdfs:subPropertyOf paam:isContributorOf ;
                    rdfs:comment "Invers von 'hat Herausgeber*in'."@de ;
                    rdfs:comment "Inverse of 'has publisher'."@en ;
                    rdfs:label "ist Herausgeber*in von"@de ;
                    rdfs:label "is publisher of"@en .
 
-nvto:isPublishingCompanyOf owl:inverseOf nvto:hasPublishingCompany ;
-                           rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isPublishingCompanyOf owl:inverseOf paam:hasPublishingCompany ;
+                           rdfs:subPropertyOf paam:isContributorOf ;
                            rdfs:comment "Invers von 'hat Verlag'."@de ;
                            rdfs:comment "Inverse of 'has publisher'."@en ;
                            rdfs:label "ist Verlag von"@de ;
                            rdfs:label "is publisher of"@en .
 
-nvto:isPublishingPlaceOf owl:inverseOf nvto:hasPublishingPlace ;
-                         rdfs:subPropertyOf nvto:isRelatedPlaceOf ;
+paam:isPublishingPlaceOf owl:inverseOf paam:hasPublishingPlace ;
+                         rdfs:subPropertyOf paam:isRelatedPlaceOf ;
                          rdfs:comment "Invers von 'hat Verlagsort'."@de ;
                          rdfs:comment "Inverse of 'has publishing place'."@en ;
                          rdfs:label "ist Verlagsort von"@de ;
                          rdfs:label "is publishing place of"@en .
 
-nvto:isPuppetBuilderOf owl:inverseOf nvto:hasPuppetBuilder ;
-                      rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isPuppetBuilderOf owl:inverseOf paam:hasPuppetBuilder ;
+                      rdfs:subPropertyOf paam:isContributorOf ;
                       rdfs:comment "Invers von 'hat Puppenbauer*in'."@de ;
                       rdfs:comment "Inverse of 'has puppet builder'."@en ;
                       rdfs:label "ist Puppenbauer*in von"@de ;
                       rdfs:label "is puppet builder of"@en .
 
-nvto:isPuppetDesignerOf owl:inverseOf nvto:hasPuppetDesigner ;
-                       rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isPuppetDesignerOf owl:inverseOf paam:hasPuppetDesigner ;
+                       rdfs:subPropertyOf paam:isContributorOf ;
                        rdfs:comment "Invers von 'hat Puppengestalter*in'."@de ;
                        rdfs:comment "Inverse of 'has puppet designer'."@en ;
                        rdfs:label "ist Puppengestalter*in von"@de ;
                        rdfs:label "is puppet designer of"@en .
 
-nvto:isRecordistOf owl:inverseOf nvto:hasRecordist ;
-                 rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isRecordistOf owl:inverseOf paam:hasRecordist ;
+                 rdfs:subPropertyOf paam:isContributorOf ;
                  rdfs:comment "Invers von 'hat Tonmeister*in'."@de ;
                  rdfs:comment "Inverse of 'has recordist'."@en ;
                  rdfs:label "ist Tonmeister*in von"@de ;
                  rdfs:label "is recordist of"@en .
 
-nvto:isRelatedPlaceOf owl:inverseOf nvto:hasRelatedPlace ;
+paam:isRelatedPlaceOf owl:inverseOf paam:hasRelatedPlace ;
                        rdfs:comment "Invers von 'hat Bezug zu Ort'."@de ;
                        rdfs:comment "Inverse of 'has related place'."@en ;
                        rdfs:label "ist Ort, der in Verbindung steht mit"@de ;
                        rdfs:label "is related place of"@en .
 
-nvto:isRelatedWebsiteOf owl:inverseOf nvto:hasRelatedWebsite ;
+paam:isRelatedWebsiteOf owl:inverseOf paam:hasRelatedWebsite ;
                        rdfs:comment "Invers von 'hat Bezug zu Webseite'."@de ;
                        rdfs:comment "Inverse of 'has related website'."@en ;
                        rdfs:label "ist Website, die in Verbindung steht mit"@de ;
                        rdfs:label "is related website of"@en .
 
-nvto:isResidenceOf owl:inverseOf nvto:hasResidence ;
-                   rdfs:subPropertyOf nvto:isRelatedPlaceOf ;
+paam:isResidenceOf owl:inverseOf paam:hasResidence ;
+                   rdfs:subPropertyOf paam:isRelatedPlaceOf ;
                    rdfs:comment "Invers von 'hat Residenz'."@de ;
                    rdfs:comment "Inverse of 'has residence'."@en ;
                    rdfs:label "ist Residenz von"@de ;
                    rdfs:label "is residence of"@en .
 
-nvto:isRestagedVersionOf owl:InverseOf nvto:hasRestagedVersion ;
+paam:isRestagedVersionOf owl:InverseOf paam:hasRestagedVersion ;
                         skos:definition "Invers von 'hat Wiederaufnahme'."@de ;
                         skos:definition "Inverse of 'has restaged version'."@en ;
                         rdfs:label "ist Wiederaufnahme von"@de ;
                         rdfs:label "is restaged version of"@en .
 
-nvto:isRightsHolderOf owl:inverseOf nvto:hasRightsHolder ;
+paam:isRightsHolderOf owl:inverseOf paam:hasRightsHolder ;
                        rdfs:comment "Invers von 'hat Rechteinhaber'."@de ;
                        rdfs:comment "Inverse of 'has rights holder'."@en ;
                        rdfs:label "ist Rechteinhaber von"@de ;
                        rdfs:label "is rights holder of"@en .
 
-nvto:isSeamsterOf owl:inverseOf nvto:hasSeamster ;
-                 rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isSeamsterOf owl:inverseOf paam:hasSeamster ;
+                 rdfs:subPropertyOf paam:isContributorOf ;
                  rdfs:comment "Invers von 'hat Näher*in'."@de ;
                  rdfs:comment "Inverse of 'has seamster'."@en ;
                  rdfs:label "ist Näher*in von"@de ;
                  rdfs:label "is seamster of"@en .
 
-nvto:isSeasonOf owl:inverseOf nvto:hasSeason ;
+paam:isSeasonOf owl:inverseOf paam:hasSeason ;
                rdfs:comment "Invers von 'hat Spielzeit'."@de ;
                rdfs:comment "Inverse of 'has season'."@en ;
                rdfs:label "ist Spielzeit von"@de ;
                rdfs:label "is season of"@en .
 
-nvto:isSetBuilderOf owl:inverseOf nvto:hasSetBuilder ;
-                 rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isSetBuilderOf owl:inverseOf paam:hasSetBuilder ;
+                 rdfs:subPropertyOf paam:isContributorOf ;
                  rdfs:comment "Invers von 'hat Bühnenbauer*in'."@de ;
                  rdfs:comment "Inverse of 'has set builder'."@en ;
                  rdfs:label "ist Bühnenbauer*in von"@de ;
                  rdfs:label "is set builder of"@en .
 
-nvto:isSetDesignerOf owl:inverseOf nvto:hasSetDesigner ;
-                 rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isSetDesignerOf owl:inverseOf paam:hasSetDesigner ;
+                 rdfs:subPropertyOf paam:isContributorOf ;
                  rdfs:comment "Invers von 'hat Bühnenbildner*in'."@de ;
                  rdfs:comment "Inverse of 'has set designer'."@en ;
                  rdfs:label "ist Bühnenbildner*in von"@de ;
                  rdfs:label "is set designer of"@en .
 
-nvto:isSingerOf owl:inverseOf nvto:hasSinger ;
+paam:isSingerOf owl:inverseOf paam:hasSinger ;
                  rdfs:comment "Invers von 'hat Sänger*in'."@de ;
                  rdfs:comment "Inverse of 'has singer'."@en ;
                  rdfs:label "ist Sänger*in von"@de ;
                  rdfs:label "is singer of"@en .
 
-nvto:isSoundDesignerOf owl:inverseOf nvto:hasSoundDesigner ;
-                rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isSoundDesignerOf owl:inverseOf paam:hasSoundDesigner ;
+                rdfs:subPropertyOf paam:isContributorOf ;
                 rdfs:comment "Invers von 'hat Tongestalter*in'."@de ;
                 rdfs:comment "Inverse of 'has sound designer'."@en ;
                 rdfs:label "ist Tongestalter*in von"@de ;
                 rdfs:label "is sound designer of"@en .
 
-nvto:isSourceOf owl:inverseOf nvto:hasSource ;
+paam:isSourceOf owl:inverseOf paam:hasSource ;
          rdfs:comment "Invers von 'hat Quelle'."@de ;
          rdfs:comment "Inverse of 'has source'."@en ;
          rdfs:label "ist Quelle von"@de ;
          rdfs:label "is source of"@en .
 
-nvto:isSpeakerOf owl:inverseOf nvto:hasSpeaker ;
-                rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isSpeakerOf owl:inverseOf paam:hasSpeaker ;
+                rdfs:subPropertyOf paam:isContributorOf ;
                 rdfs:comment "Invers von 'hat Sprecher*in'."@de ;
                 rdfs:comment "Inverse of 'has speaker'."@en ;
                 rdfs:label "ist Sprecher*in von"@de ;
                 rdfs:label "is speaker of"@en .
 
-nvto:isStageManagerOf owl:inverseOf nvto:hasStageManager ;
-                      rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isStageManagerOf owl:inverseOf paam:hasStageManager ;
+                      rdfs:subPropertyOf paam:isContributorOf ;
                       rdfs:comment "Invers von 'hat Inspizient*in'."@de ;
                       rdfs:comment "Inverse of 'has stage manager'."@en ;
                       rdfs:label "ist Inspizient*in von"@de ;
                       rdfs:label "is stage manager of"@en .
 
-nvto:isSurtitleCreatorOf owl:inverseOf nvto:hasSurtitleCreator ;
-                       rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isSurtitleCreatorOf owl:inverseOf paam:hasSurtitleCreator ;
+                       rdfs:subPropertyOf paam:isContributorOf ;
                        rdfs:comment "Invers von 'hat Übertitel Schöpfer*in'."@de ;
                        rdfs:comment "Inverse of 'has surtitle creator'."@en ;
                        rdfs:label "ist Übertitel Schöpfer*in von"@de ;
                        rdfs:label "is surtitle creator of"@en .
 
-nvto:isTechnicianOf owl:inverseOf nvto:hasTechnician ;
-                   rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isTechnicianOf owl:inverseOf paam:hasTechnician ;
+                   rdfs:subPropertyOf paam:isContributorOf ;
                    rdfs:comment "Invers von 'hat Techniker*in'."@de ;
                    rdfs:comment "Inverse of 'has technician'."@en ;
                    rdfs:label "ist Techniker*in von"@de ;
                    rdfs:label "is technician of"@en .
 
-nvto:isTimeOfOccurrenceOf owl:inverseOf nvto:hasTimeOfOccurrence ;
+paam:isTimeOfOccurrenceOf owl:inverseOf paam:hasTimeOfOccurrence ;
                         rdfs:comment "Invers von 'ereignet sich zu Zeitpunkt'."@de ;
                         rdfs:comment "Inverse of 'occurred at time'."@en ;
                         rdfs:label "ist Zeitpunkt des Ereignisses von"@de ;
                         rdfs:label "is time of occurrence of"@en .
 
-nvto:isTranslatorOf owl:inverseOf nvto:hasTranslator ;
-                   rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isTranslatorOf owl:inverseOf paam:hasTranslator ;
+                   rdfs:subPropertyOf paam:isContributorOf ;
                    rdfs:comment "Invers von 'hat Übersetzer*in'."@de ;
                    rdfs:comment "Inverse of 'has translator'."@en ;
                    rdfs:label "ist Übersetzer*in von"@de ;
                    rdfs:label "is translator of"@en .
 
-nvto:isTypeOf owl:inverseOf nvto:hasType ;
+paam:isTypeOf owl:inverseOf paam:hasType ;
              rdfs:comment "Invers von 'hat Typ'."@de ;
              rdfs:comment "Inverse of 'has type'."@en ;
              rdfs:label "ist Typ von"@de ;
              rdfs:label "is type of"@en .
 
-nvto:isVideoDesignerOf owl:inverseOf nvto:hasVideoDesigner ;
-                   rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isVideoDesignerOf owl:inverseOf paam:hasVideoDesigner ;
+                   rdfs:subPropertyOf paam:isContributorOf ;
                    rdfs:comment "Invers von 'hat Videodesigner*in'."@de ;
                    rdfs:comment "Inverse of 'has video designer'."@en ;
                    rdfs:label "ist Videodesigner*in von"@de ;
                    rdfs:label "is video designer of"@en .
 
-nvto:isVideoEditorOf owl:inverseOf nvto:hasVideoEditor ;
-                   rdfs:subPropertyOf nvto:isContributorOf ;
+paam:isVideoEditorOf owl:inverseOf paam:hasVideoEditor ;
+                   rdfs:subPropertyOf paam:isContributorOf ;
                    rdfs:comment "Invers von 'hat Videoeditor*in'."@de ;
                    rdfs:comment "Inverse of 'has video editor'."@en ;
                    rdfs:label "ist Videoeditor*in von"@de ;
                    rdfs:label "is video editor of"@en .
 
-nvto:isCreatedAtTime rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf nvto:hasDate ;
+paam:isCreatedAtTime rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf paam:hasDate ;
                      skos:definition "Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource kreiert wurde."@de ;
                      skos:definition "Describes a singular date/point in time at which a resource was created."@en ;
                      rdfs:label "wurde zu Zeitpunkt kreiert"@de ;
                      rdfs:label "was created at time"@en .
 
-nvto:isIssuedAtTime rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf nvto:hasDate ;
+paam:isIssuedAtTime rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf paam:hasDate ;
                      skos:definition "Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource ausgegeben wurde ."@de ;
                      skos:definition "Describes a singular date/point in time at which a resource was issued."@en ;
                      rdfs:label "wurde zu Zeitpunkt ausgegeben"@de ;

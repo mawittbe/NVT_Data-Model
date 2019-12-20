@@ -7,7 +7,7 @@
 
 <!-- SCHEMA.ORG METADATA -->
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://lod.mediathek-tanz-theater.de/schema/paam/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://lod.mediathek-tanz-theater.de/schema/paam/","name":"Performing Arts Archive Model", "headline":"Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the "NONVERBALES THEATER
-                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS).", "datePublished":"Wed Dec 04 17:19:44 CET 2019", "license":"https://creativecommons.org/licenses/by/4.0/deed.en", "contributor":[{"@type":"Person","name":"Jonas Pitz"},{"@type":"Person","name":"Maxim Wittenbecher"}]}</script>
+                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS).", "datePublished":"Fri Dec 20 16:43:11 CET 2019", "license":"https://creativecommons.org/licenses/by/4.0/deed.en", "contributor":[{"@type":"Person","name":"Jonas Pitz"},{"@type":"Person","name":"Maxim Wittenbecher"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -134,12 +134,8 @@ This ontology has the following classes and properties.</span>
          title="https://lod.mediathek-tanz-theater.de/schema/paam/Event">Event</a>
    </li>
    <li>
-      <a href="#FestivalConcept"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/FestivalConcept">Festival Concept</a>
-   </li>
-   <li>
-      <a href="#FilmProduction"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/FilmProduction">Film Production</a>
+      <a href="#InformationCarrier"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier">Information Carrier</a>
    </li>
    <li>
       <a href="#InformationObject"
@@ -154,8 +150,8 @@ This ontology has the following classes and properties.</span>
          title="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup">Performing Arts Group</a>
    </li>
    <li>
-      <a href="#PerformingArtsProduction"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction">Performing Arts Production</a>
+      <a href="#PerformingArtsSite"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsSite">Performing Arts Site</a>
    </li>
    <li>
       <a href="#Person"
@@ -283,10 +279,6 @@ This ontology has the following classes and properties.</span>
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasHomepage">has homepage</a>
    </li>
    <li>
-      <a href="#hasIdentifier"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIdentifier">has identifier</a>
-   </li>
-   <li>
       <a href="#hasIllustrator"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator">has illustrator</a>
    </li>
@@ -297,18 +289,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#hasInformationCarrier"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier">has information carrier</a>
-   </li>
-   <li>
-      <a href="#hasIsbn"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIsbn">
-         <span>has ISBN</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasIssn"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIssn">
-         <span>has ISSN</span>
-      </a>
    </li>
    <li>
       <a href="#hasLayouter"
@@ -336,9 +316,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#hasMedium"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasMedium">
-         <span>has medium</span>
-      </a>
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasMedium">has medium</a>
    </li>
    <li>
       <a href="#hasMime"
@@ -377,6 +355,10 @@ This ontology has the following classes and properties.</span>
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOccurrence">has place of occurrence</a>
    </li>
    <li>
+      <a href="#hasPlaceOfOrigin"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOrigin">has place of origin</a>
+   </li>
+   <li>
       <a href="#hasPlaywright"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright">has playwright</a>
    </li>
@@ -397,6 +379,10 @@ This ontology has the following classes and properties.</span>
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPrompter">has prompter</a>
    </li>
    <li>
+      <a href="#hasProvenance"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasProvenance">has provenance</a>
+   </li>
+   <li>
       <a href="#hasPublisher"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher">has publisher</a>
    </li>
@@ -415,6 +401,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#hasPuppetDesigner"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner">has puppet designer</a>
+   </li>
+   <li>
+      <a href="#hasPuppeteer"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppeteer">has puppeteer</a>
    </li>
    <li>
       <a href="#hasRecordingOf"
@@ -443,6 +433,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#hasRestagedVersion"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRestagedVersion">has restaged version</a>
+   </li>
+   <li>
+      <a href="#hasRightsHolder"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRightsHolder">has rights holder</a>
    </li>
    <li>
       <a href="#hasSeamster"
@@ -503,6 +497,22 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#hasTranslator"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator">has translator</a>
+   </li>
+   <li>
+      <a href="#hasType"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasType">has type</a>
+   </li>
+   <li>
+      <a href="#hasVersion"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVersion">has version</a>
+   </li>
+   <li>
+      <a href="#hasVideoDesigner"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner">has video designer</a>
+   </li>
+   <li>
+      <a href="#hasVideoEditor"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor">has video editor</a>
    </li>
    <li>
       <a href="#hasVisualReferenceTo"
@@ -599,10 +609,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#isFirstPerformanceVersionOf"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/isFirstPerformanceVersionOf">is first performance version of</a>
-   </li>
-   <li>
-      <a href="#isFormatOf"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/isFormatOf">is format of</a>
    </li>
    <li>
       <a href="#isHomepageOf"
@@ -733,6 +739,10 @@ This ontology has the following classes and properties.</span>
          title="https://lod.mediathek-tanz-theater.de/schema/paam/isPuppetDesignerOf">is puppet designer of</a>
    </li>
    <li>
+      <a href="#isPuppeteerOf"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/isPuppeteerOf">is puppeteer of</a>
+   </li>
+   <li>
       <a href="#isRecordedIn"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn">is recorded in</a>
    </li>
@@ -755,6 +765,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#isResidenceOf"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/isResidenceOf">is residence of</a>
+   </li>
+   <li>
+      <a href="#isRestagedVersionOf"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/isRestagedVersionOf">is restaged version of</a>
    </li>
    <li>
       <a href="#isRightsHolderOf"
@@ -821,6 +835,10 @@ This ontology has the following classes and properties.</span>
          title="https://lod.mediathek-tanz-theater.de/schema/paam/isTypeOf">is type of</a>
    </li>
    <li>
+      <a href="#isVersionOf"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/isVersionOf">is version of</a>
+   </li>
+   <li>
       <a href="#isVideoDesignerOf"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/isVideoDesignerOf">is video designer of</a>
    </li>
@@ -831,18 +849,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#isVisuallyReferencedIn"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/isVisuallyReferencedIn">is visually referenced in</a>
-   </li>
-   <li>
-      <a href="#hasPlaceOfOrigin"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOrigin">originated at place</a>
-   </li>
-   <li>
-      <a href="#hasVideoDesigner"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner">video designer</a>
-   </li>
-   <li>
-      <a href="#hasVideoEditor"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor">video editor</a>
    </li>
 </ul><h4>Data Properties</h4><ul class="hlist">
    <li>
@@ -856,6 +862,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#hasAddress"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasAddress">has address</a>
+   </li>
+   <li>
+      <a href="#hasAlternativeTitle"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasAlternativeTitle">has alternative title</a>
    </li>
    <li>
       <a href="#hasCondition"
@@ -886,10 +896,6 @@ This ontology has the following classes and properties.</span>
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasDescription">has description</a>
    </li>
    <li>
-      <a href="#hasDimensions"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasDimensions">has dimensions</a>
-   </li>
-   <li>
       <a href="#hasExtent"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasExtent">has extent</a>
    </li>
@@ -904,6 +910,14 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#hasFirstPerformanceDate"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate">has first performance date</a>
+   </li>
+   <li>
+      <a href="#hasIsbn"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIsbn">has ISBN</a>
+   </li>
+   <li>
+      <a href="#hasIssn"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIssn">has ISSN</a>
    </li>
    <li>
       <a href="#hasLabeling"
@@ -930,6 +944,10 @@ This ontology has the following classes and properties.</span>
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasName">has name</a>
    </li>
    <li>
+      <a href="#hasPhysicalExtent"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPhysicalExtent">has physical extent</a>
+   </li>
+   <li>
       <a href="#hasRights"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRights">has rights</a>
    </li>
@@ -942,6 +960,10 @@ This ontology has the following classes and properties.</span>
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasTableOfContents">has table of contents</a>
    </li>
    <li>
+      <a href="#hasTemporalExtent"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasTemporalExtent">has temporal extent</a>
+   </li>
+   <li>
       <a href="#hasTitle"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasTitle">has title</a>
    </li>
@@ -952,77 +974,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#isIssuedAtTime"
          title="https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime">was issued at time</a>
-   </li>
-</ul><h4>Annotation Properties</h4><ul class="hlist">
-   <li>
-      <a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract">
-         <span>abstract</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">
-         <span>contributor</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.w3.org/2004/02/skos/core#definiiton" title="http://www.w3.org/2004/02/skos/core#definiiton">
-         <span>definiiton</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition">
-         <span>definition</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.w3.org/2004/02/skos/core#example" title="http://www.w3.org/2004/02/skos/core#example">
-         <span>example</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasFormat"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFormat">
-         <span>has format</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasMedium"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasMedium">
-         <span>has medium</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasProvenance"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasProvenance">
-         <span>has provenance</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasRightsHolder"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRightsHolder">
-         <span>has rights holder</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasType"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasType">
-         <span>has type</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher">
-         <span>publisher</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/dc/elements/1.1/rights" title="http://purl.org/dc/elements/1.1/rights">
-         <span>rights</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title">
-         <span>title</span>
-      </a>
    </li>
 </ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
 </div>
@@ -1063,12 +1014,8 @@ This section provides details for each class and property defined by Performing 
             title="https://lod.mediathek-tanz-theater.de/schema/paam/Event">Event</a>
       </li>
       <li>
-         <a href="#FestivalConcept"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/FestivalConcept">Festival Concept</a>
-      </li>
-      <li>
-         <a href="#FilmProduction"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/FilmProduction">Film Production</a>
+         <a href="#InformationCarrier"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier">Information Carrier</a>
       </li>
       <li>
          <a href="#InformationObject"
@@ -1083,8 +1030,8 @@ This section provides details for each class and property defined by Performing 
             title="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup">Performing Arts Group</a>
       </li>
       <li>
-         <a href="#PerformingArtsProduction"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction">Performing Arts Production</a>
+         <a href="#PerformingArtsSite"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsSite">Performing Arts Site</a>
       </li>
       <li>
          <a href="#Person"
@@ -1119,7 +1066,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/Agent</p>
       <div class="comment">
-         <span class="markdown">Agents are entities that are capable of acting, usually persons or groups of persons. This class also serves as top class for more specifically defined Agents.</span>
+         <span class="markdown">Agents are entities that are capable of acting, usually persons, groups of persons and Organizations. This class also serves as top class for more specifically defined Agents.</span>
       </div>
       <div class="comment">
          <span class="markdown">This class comprises all agents.</span>
@@ -1127,16 +1074,22 @@ This section provides details for each class and property defined by Performing 
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>Burkhart Seidemann</pre>
+            <pre>'Burkhart Seidemann'</pre>
          </dd>
          <dd>
-            <pre>Burkhart Seidemann</pre>
+            <pre>'Burkhart Seidemann'</pre>
          </dd>
          <dd>
-            <pre>Pantomimen-Theater vom Prenzlauer Berg</pre>
+            <pre>'Pantomimentheater vom Prenzlauer Berg'</pre>
          </dd>
          <dd>
-            <pre>Pantomimen-Theater vom Prenzlauer Berg</pre>
+            <pre>'Pantomimentheater vom Prenzlauer Berg'</pre>
+         </dd>
+         <dd>
+            <pre>'William Shakespeare'</pre>
+         </dd>
+         <dd>
+            <pre>'William Shakespeare'</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1176,7 +1129,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/Collection</p>
       <div class="comment">
-         <span class="markdown">Collections are an open or closed Set of Physical and/or Digital Objects without defined order that are intentionally created by an Organisation or a Person. Collections can be created to cover a topic, event or entire archives.</span>
+         <span class="markdown">Collections are an open or closed Set of Physical and/or Digital Objects without defined order that are intentionally created by an Organisation or a Person. Collections may have a thematic or historical context among others. Objects can be part of multiple Collections</span>
       </div>
       <div class="comment">
          <span class="markdown">This class comprises all Collections of Objects.</span>
@@ -1184,10 +1137,22 @@ This section provides details for each class and property defined by Performing 
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>COL</pre>
+            <pre>Die 'Sammlung Bauhaus' des 'Bauhaus-Archivs' in Berlin</pre>
          </dd>
          <dd>
-            <pre>COL</pre>
+            <pre>Die Sammlung von Märchen von den 'Brüdern Grimm'</pre>
+         </dd>
+         <dd>
+            <pre>Die Sammlung zum 'Pantomimentheater vom Prenzlauer Berg' an der Mediathek für Tanz und Theater des 'ITI Deutschland' in Berlin</pre>
+         </dd>
+         <dd>
+            <pre>The 'Bauhaus Collection' of the 'Bauhaus-Archiv' in Berlin</pre>
+         </dd>
+         <dd>
+            <pre>The Collection about the 'Pantomimentheater vom Prenzlauer Berg' at the media library for dance and theatre of the 'ITI Germany' in Berlin</pre>
+         </dd>
+         <dd>
+            <pre>The Collection of fairy tales by the 'Brothers Grimm'</pre>
          </dd>
       </dl>
    </div>
@@ -1199,7 +1164,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept</p>
       <div class="comment">
-         <span class="markdown">Creative Concepts comprise ideas, plans and conceptions that serve as a creative foundation for Events, Information Objects or other resources. Creative Concepts do not have to be realized. This class primarily serves as top class for more specifically defined Creative Concepts such as film productions or performing arts productions.</span>
+         <span class="markdown">Creative Concepts comprise ideas, plans and conceptions that serve as a creative foundation for Events, Information Objects or other resources. Creative Concepts do not have to be realized. This class primarily serves as top class for more specifically defined Creative Concepts such as film performing arts productions or performing arts performing arts productions.</span>
       </div>
       <div class="comment">
          <span class="markdown">This class comprises all Creative Concepts.</span>
@@ -1207,34 +1172,48 @@ This section provides details for each class and property defined by Performing 
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>A festival</pre>
+            <pre>Das Festivalkonzept hinter der seit 1981 veranstalteten Theaterfestivalreihe 'Theater der Welt'</pre>
          </dd>
          <dd>
-            <pre>A film production</pre>
+            <pre>Die Filmproduktion 'Metropolis' von 'Fritz Lang' aus dem Jahr 1927</pre>
          </dd>
          <dd>
-            <pre>A performing arts production</pre>
+            <pre>Die Produktion (darstellende Künste) 'Die Horatier und die Kuratier' von dem 'Pantomimentheater vom Prenzlauer Berg' aus dem Jahr 1982</pre>
          </dd>
          <dd>
-            <pre>Ein Festival</pre>
+            <pre>The festival concept behind the theatre festival series 'Theater der Welt', held since 1981</pre>
          </dd>
          <dd>
-            <pre>Eine Filmproduktion</pre>
+            <pre>The film performing arts production 'Metropolis' by 'Fritz Lang' from 1927</pre>
          </dd>
          <dd>
-            <pre>Eine Produktion (darstellende Künste)</pre>
+            <pre>The performing arts performing arts production 'Die Horatier und die Kuratier' by the 'Pantomimentheater vom Prenzlauer Berg' from 1982</pre>
          </dd>
       </dl>
       <dl class="description">
-         <dt>has sub-classes</dt>
+         <dt>is in domain of</dt>
          <dd>
-            <a href="#FestivalConcept"
-               title="https://lod.mediathek-tanz-theater.de/schema/paam/FestivalConcept">Festival Concept</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#FilmProduction"
-               title="https://lod.mediathek-tanz-theater.de/schema/paam/FilmProduction">Film Production</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PerformingArtsProduction"
-               title="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction">Performing Arts Production</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#hasFirstPerformanceDate"
+               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate">has first performance date</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFirstPerformanceVersion"
+               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceVersion">has first performance version</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasLastPerformanceDate"
+               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate">has last performance date</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasRestagedVersion"
+               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRestagedVersion">has restaged version</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasVersion"
+               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVersion">has version</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasFirstPerformanceVersion"
+               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceVersion">has first performance version</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasRestagedVersion"
+               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRestagedVersion">has restaged version</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasVersion"
+               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVersion">has version</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -1246,7 +1225,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject</p>
       <div class="comment">
-         <span class="markdown">This class comprises digital representations of contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, can be information carriers of one or more Information Objects.</span>
+         <span class="markdown">This class comprises digital representations of contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, may be information carriers of one or more Information Objects.</span>
       </div>
       <div class="comment">
          <span class="markdown">This class comprises all Digital Objects.</span>
@@ -1254,16 +1233,22 @@ This section provides details for each class and property defined by Performing 
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>A specific digital file with name IMG-001.tif</pre>
+            <pre>Die Datei '20190911_152231.jpg', das mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt</pre>
          </dd>
          <dd>
-            <pre>A specific digital file with name VID-001.avi</pre>
+            <pre>Die Digitalisierung einer Videokassette mit Namen 'VID_001.avi', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' trägt</pre>
          </dd>
          <dd>
-            <pre>Eine spezifische digitale Datei mit Namen IMG-001.tif</pre>
+            <pre>Die Digitalisierung einer analogen Fotografie von einer Probe zur Produktion (darstellende Künste) 'Wir Wohner' mit Namen 'nvt_img-i30-002.JP2'</pre>
          </dd>
          <dd>
-            <pre>Eine spezifische digitale Datei mit Namen VID-001.avi</pre>
+            <pre>The digitisation of a VHS tape named 'VID-001.avi', carrying recordings of two different performances of the play 'Hamlet'</pre>
+         </dd>
+         <dd>
+            <pre>The digitisation of an analogue photography of a rehearsal of the performing arts performing arts production 'Wir Wohner', named 'nvt_img-i30-002.JP2'</pre>
+         </dd>
+         <dd>
+            <pre>The file '20190911_152231.jpg', taken with a digital camera and carrying the photograph of a landscape</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1283,7 +1268,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/Event</p>
       <div class="comment">
-         <span class="markdown">Events can be fictional or real, have a starting and ending point and occur at a place. Not all attributes of an Event have to be known. This class can be used for Events in the realm of performing arts such as performances or workshops.</span>
+         <span class="markdown">Events may be fictional or real, have a starting and ending point and occur at a place. Not all attributes of an Event have to be known. This class may be used for Events in the realm of performing arts such as performances, conferences or workshops.</span>
       </div>
       <div class="comment">
          <span class="markdown">This class comprises all Events.</span>
@@ -1291,22 +1276,22 @@ This section provides details for each class and property defined by Performing 
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>A performance of 'Hamlet'</pre>
+            <pre>Der 'New African Dance Workshop' im Rahmen des Festivals 'Woche des Gestischen Theaters' im Jahr 1990</pre>
          </dd>
          <dd>
-            <pre>A workshop regarding a specific acting technique</pre>
+            <pre>Die 11. Ausgabe des Festivals 'Theater der Welt' vom 19.06.2008 bis zum 06.07.2008</pre>
          </dd>
          <dd>
-            <pre>An exhibition about an actor/actress</pre>
+            <pre>Die Uraufführung von 'Iphigenie auf Tauris' von der Gruppe (darstellende Künste) 'Wuppertaler Tanztheater' am 21.04.1974</pre>
          </dd>
          <dd>
-            <pre>Ein Workshop zu einer speziellen Schauspieltechnik</pre>
+            <pre>The 'New African Dance Workshop' as part of the festival 'Woche des Gestischen Theaters' in 1990</pre>
          </dd>
          <dd>
-            <pre>Eine Aufführung von 'Hamlet'</pre>
+            <pre>The 11. edition of the festival 'Theater der Welt' from 19 June 2008 to 06 July 2008</pre>
          </dd>
          <dd>
-            <pre>Eine Ausstellung über eine/n Darsteller/in</pre>
+            <pre>The premiere of 'Iphigenie auf Tauris' by the 'Wuppertaler Tanztheater' on 21 April 1974</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1326,65 +1311,52 @@ This section provides details for each class and property defined by Performing 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="FestivalConcept">
-      <h3>Festival Concept<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="InformationCarrier">
+      <h3>Information Carrier<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/FestivalConcept</p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier</p>
       <div class="comment">
-         <span class="markdown">Festival Concepts are the Creative Concepts behind festival Events. A Festival Concept can either be the Concept behind a singular festival Event or an overarching Concept for a series of festival editions.</span>
+         <span class="markdown">Information Carriers are Physical or Digital Objects that are Carriers of one or more Information Objects.</span>
       </div>
       <div class="comment">
-         <span class="markdown">This class comprises all Festival Concepts.</span>
-      </div>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <pre>Das zweijährliche internationale Theaterfestival 'Theater der Welt'</pre>
-         </dd>
-         <dd>
-            <pre>The biannual international theatre festival 'Theater der Welt'</pre>
-         </dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#CreativeConcept"
-               title="https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept">Creative Concept</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="FilmProduction">
-      <h3>Film Production<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/FilmProduction</p>
-      <div class="comment">
-         <span class="markdown">A Film Production is the Creative Concept behind a film. A film production may be described further by objects such as scripts, camera instructions or lighting instructions.</span>
-      </div>
-      <div class="comment">
-         <span class="markdown">This class comprises all film productions.</span>
+         <span class="markdown">This class comprises all Information Carriers.</span>
       </div>
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>Example</pre>
+            <pre>A programme booklet carrying information of the performing arts performing arts production 'Hanswurst'</pre>
          </dd>
          <dd>
-            <pre>Example</pre>
+            <pre>A video cassette labeled 'Hamlet, 1985' carrying two different recordings of the theatre play 'Hamlet'</pre>
+         </dd>
+         <dd>
+            <pre>Die Datei '20190911_152231.jpg', das mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt</pre>
+         </dd>
+         <dd>
+            <pre>Die Digitalisierung einer Videokassette mit Namen 'VID_001.avi', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' trägt</pre>
+         </dd>
+         <dd>
+            <pre>Ein Programmheft, das Informationen über die Produktion (darstellende Künste) 'Hanswurst' trägt</pre>
+         </dd>
+         <dd>
+            <pre>Eine Videokassette mit Beschriftung 'Hamlet, 1985', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' enthält</pre>
+         </dd>
+         <dd>
+            <pre>The digitisation of a VHS tape named 'VID-001.avi', carrying recordings of two different performances of the play 'Hamlet'</pre>
+         </dd>
+         <dd>
+            <pre>The file '20190911_152231.jpg', taken with a digital camera and carrying the photograph of a landscape</pre>
          </dd>
       </dl>
       <dl class="description">
-         <dt>has super-classes</dt>
+         <dt>is in range of</dt>
          <dd>
-            <a href="#CreativeConcept"
-               title="https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept">Creative Concept</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#hasInformationCarrier"
+               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier">has information carrier</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -1396,7 +1368,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject</p>
       <div class="comment">
-         <span class="markdown">An Information Object is an immaterial, describable object, usually represented by one or more information carriers. The same Information Object can be captured in multiple Physical or Digital Objects (e.g. a magazine edition). One Physical or Digital Object can carry multiple Information Objects (e.g. multiple video recordings on a single video tape). An Information Object can be part of another Information Object (e.g. a chapter of a novel).</span>
+         <span class="markdown">Information Objects are immaterial, describable objects, usually represented by one or more information carriers. The same Information Object may be captured in multiple Physical or Digital Objects (e.g. a magazine edition). One Physical or Digital Object can carry multiple Information Objects (e.g. multiple video recordings on a single video tape). An Information Object may be part of another Information Object (e.g. a chapter of a novel).</span>
       </div>
       <div class="comment">
          <span class="markdown">This class comprises all Information Objects.</span>
@@ -1404,10 +1376,22 @@ This section provides details for each class and property defined by Performing 
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>Aufnahme von Aufführung X, Inhalt von Programmheft Y</pre>
+            <pre>A picture of 'Eberhard Kube' as part of an article from an unknown magazine</pre>
          </dd>
          <dd>
-            <pre>Recording of Performance X, Contents of programme booklet Y</pre>
+            <pre>Der Film 'Metropolis' von Fritz Lang aus dem Jahr 1927</pre>
+         </dd>
+         <dd>
+            <pre>Die Aufzeichnung einer Aufführung von 'Himmelhölle' am 03.12.1988, zu finden auf einer Videokassette und als Teil der Digitalisierung des Inhalts dieser Videokassette</pre>
+         </dd>
+         <dd>
+            <pre>Ein Foto von 'Eberhard Kube' als Teil eines Artikels aus einem unbekannten Magazin</pre>
+         </dd>
+         <dd>
+            <pre>The movie 'Metropolis' by 'Fritz Lang' from 1927</pre>
+         </dd>
+         <dd>
+            <pre>The recording of a performance of 'Himmelhölle' on 03 December 1988, to be found on a video cassette and as part of the digitisation of the contents of that video cassette</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1437,10 +1421,22 @@ This section provides details for each class and property defined by Performing 
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>Theater der Welt, Sony BMG</pre>
+            <pre>'Deutsches Theater'</pre>
          </dd>
          <dd>
-            <pre>Theater der Welt, Sony BMG</pre>
+            <pre>'Deutsches Theater'</pre>
+         </dd>
+         <dd>
+            <pre>'ITI Deutschland'</pre>
+         </dd>
+         <dd>
+            <pre>'ITI Germany'</pre>
+         </dd>
+         <dd>
+            <pre>'Sony BMG'</pre>
+         </dd>
+         <dd>
+            <pre>'Sony BMG'</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1448,6 +1444,12 @@ This section provides details for each class and property defined by Performing 
          <dd>
             <a href="#Agent"
                title="https://lod.mediathek-tanz-theater.de/schema/paam/Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#PerformingArtsSite"
+               title="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsSite">Performing Arts Site</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1460,18 +1462,30 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup</p>
       <div class="comment">
-         <span class="markdown">A Performing Arts Group is usually comprised of two or more Persons.</span>
+         <span class="markdown">Performing Arts Groups usally are ensembles, companies and similar groups in the realm of performing arts.</span>
       </div>
       <div class="comment">
-         <span class="markdown">This class comprises ensembles, companies and similar groups in the realm of performing arts.</span>
+         <span class="markdown">This class comprises all Performing Arts Groups.</span>
       </div>
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg</pre>
+            <pre>'National Dance Company of Korea'</pre>
          </dd>
          <dd>
-            <pre>DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg</pre>
+            <pre>'Nationales Koreanisches Tanzensemble'</pre>
+         </dd>
+         <dd>
+            <pre>'Pantomime-Ensemble des Deutschen Theaters'</pre>
+         </dd>
+         <dd>
+            <pre>'Pantomime-Ensemble des Deutschen Theaters'</pre>
+         </dd>
+         <dd>
+            <pre>'Pantomimentheater vom Prenzlauer Berg'</pre>
+         </dd>
+         <dd>
+            <pre>'Pantomimentheater vom Prenzlauer Berg'</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1483,57 +1497,48 @@ This section provides details for each class and property defined by Performing 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="PerformingArtsProduction">
-      <h3>Performing Arts Production<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="PerformingArtsSite">
+      <h3>Performing Arts Site<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction</p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsSite</p>
       <div class="comment">
-         <span class="markdown">A Performing Arts Production is the Creative Concept behind a Performance or a Series of Performances in the realm of performing arts. A Performing Arts Production doesn't necessarily have to be performed. A Performing Arts Production may be described further by manuscripts or stage directions.</span>
+         <span class="markdown">Performing Arts Sites are Organizations within the realm of performing arts, that simultaneously serve as Sites for performances, rehearsals or similar Events within the realm of performing arts.</span>
       </div>
       <div class="comment">
-         <span class="markdown">This class comprises Performing Arts Productions.</span>
+         <span class="markdown">This class comprises all Performing Arts Sites.</span>
       </div>
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>Blaubart, Hamlet</pre>
+            <pre>'Deutsches Theater' in Berlin</pre>
          </dd>
          <dd>
-            <pre>Die Produktion 'Blaubart'...von, am, am am</pre>
+            <pre>'Deutsches Theater' in Berlin</pre>
          </dd>
          <dd>
-            <pre>Hamlet</pre>
+            <pre>Das 'Off Theater' in Wien</pre>
+         </dd>
+         <dd>
+            <pre>Die 'Volksbühne' in Berlin</pre>
+         </dd>
+         <dd>
+            <pre>The 'Off Theater' in Vienna</pre>
+         </dd>
+         <dd>
+            <pre>The 'Volksbühne' in Berlin</pre>
          </dd>
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#CreativeConcept"
-               title="https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept">Creative Concept</a>
+            <a href="#Organization"
+               title="https://lod.mediathek-tanz-theater.de/schema/paam/Organization">Organization</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Site"
+               title="https://lod.mediathek-tanz-theater.de/schema/paam/Site">Site</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#hasFirstPerformanceDate"
-               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate">has first performance date</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFirstPerformanceVersion"
-               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceVersion">has first performance version</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasLastPerformanceDate"
-               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate">has last performance date</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasRestagedVersion"
-               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRestagedVersion">has restaged version</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasFirstPerformanceVersion"
-               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceVersion">has first performance version</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasRestagedVersion"
-               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRestagedVersion">has restaged version</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -1553,10 +1558,22 @@ This section provides details for each class and property defined by Performing 
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>Eberhard Kube, Conny Hege</pre>
+            <pre>'Eberhard Kube'</pre>
          </dd>
          <dd>
-            <pre>Eberhard Kube, Conny Hege</pre>
+            <pre>'Eberhard Kube'</pre>
+         </dd>
+         <dd>
+            <pre>'Johann Sebastian Bach'</pre>
+         </dd>
+         <dd>
+            <pre>'Johann Sebastian Bach'</pre>
+         </dd>
+         <dd>
+            <pre>'Nikolajewitsch Bogdanow'</pre>
+         </dd>
+         <dd>
+            <pre>'Nikolajewitsch Bogdanow'</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1588,7 +1605,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject</p>
       <div class="comment">
-         <span class="markdown">All material objects with physical extent are Physical Objects. Physical Objects, like Digital Objects, can be information carriers of Information Objects. Typical physical information carriers are video cassettes, analogue photographs or program booklets.</span>
+         <span class="markdown">All material objects with physical extent are Physical Objects. Physical Objects, like Digital Objects, may be information carriers of Information Objects. Typical physical information carriers are video cassettes, analogue photographs or program booklets.</span>
       </div>
       <div class="comment">
          <span class="markdown">This class comprises all Physical Objects.</span>
@@ -1596,10 +1613,22 @@ This section provides details for each class and property defined by Performing 
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>Tape with recording of performance X, programme booklet Y</pre>
+            <pre>A negative strip with three images, depicting rehearsals of the performing arts performing arts production 'Himmelhölle'</pre>
          </dd>
          <dd>
-            <pre>Videokassette mit Aufnahme von Aufführung X, Programmheft Y</pre>
+            <pre>A programme booklet carrying information of the performing arts performing arts production 'Hanswurst'</pre>
+         </dd>
+         <dd>
+            <pre>A video cassette labeled 'Hamlet, 1985' carrying two different recordings of the theatre play 'Hamlet'</pre>
+         </dd>
+         <dd>
+            <pre>Ein Negativstreifen mit drei Einzelbildern, die Proben zur Produktion (darstellende Künste) 'Himmelhölle' zeigen</pre>
+         </dd>
+         <dd>
+            <pre>Ein Programmheft, das Informationen über die Produktion (darstellende Künste) 'Hanswurst' trägt</pre>
+         </dd>
+         <dd>
+            <pre>Eine Videokassette mit Beschriftung 'Hamlet, 1985', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' enthält</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1627,10 +1656,22 @@ This section provides details for each class and property defined by Performing 
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>Place</pre>
+            <pre>'Berlin (Ost)'</pre>
          </dd>
          <dd>
-            <pre>Place</pre>
+            <pre>'Deutsches Theater'</pre>
+         </dd>
+         <dd>
+            <pre>'East Berlin'</pre>
+         </dd>
+         <dd>
+            <pre>'Französische Republik'</pre>
+         </dd>
+         <dd>
+            <pre>'French Republic'</pre>
+         </dd>
+         <dd>
+            <pre>'Deutsches Theater'</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1642,16 +1683,14 @@ This section provides details for each class and property defined by Performing 
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasPlaceOfOccurrence"
-               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOccurrence">has place of occurrence</a>
+            <a href="#hasPlaceOfOrigin"
+               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOrigin">has place of origin</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasPublishingPlace"
                title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingPlace">has publishing place</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasRelatedPlace"
                title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRelatedPlace">has related place</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasResidence"
                title="https://lod.mediathek-tanz-theater.de/schema/paam/hasResidence">has residence</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfOrigin"
-               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOrigin">originated at place</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1664,7 +1703,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/Series</p>
       <div class="comment">
-         <span class="markdown">A Series is an ordered set of Objects. A Series can describe photographs of movements or the documentation of the development of a production in a chronological or otherwise intended sequence.</span>
+         <span class="markdown">Series are ordered sets of Objects. A Series can describe photographs of movements or the documentation of the development of a performing arts production in a chronological or otherwise intended sequence.</span>
       </div>
       <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Serien.</span>
@@ -1672,10 +1711,10 @@ This section provides details for each class and property defined by Performing 
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>SRS</pre>
+            <pre>A Series of photographies created as motion study of the sequence of movements of a performer</pre>
          </dd>
          <dd>
-            <pre>SRS</pre>
+            <pre>Eine Serie von Fotografien, die als Bewegungsstudie über Bewegungsabläufe eines Performers erstellt wurde</pre>
          </dd>
       </dl>
    </div>
@@ -1687,7 +1726,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/Site</p>
       <div class="comment">
-         <span class="markdown">Sites are Places something happens or happened at and/or something is or was placed at. Sites can be real Places that exist or have existed. Fictional Sites are not excluded.</span>
+         <span class="markdown">Sites are Places something happens or happened at and/or something is or was placed at. Sites may be real Places that exist or have existed. Fictional Sites are not excluded.</span>
       </div>
       <div class="comment">
          <span class="markdown">This class comprises all Sites.</span>
@@ -1695,16 +1734,22 @@ This section provides details for each class and property defined by Performing 
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre/>
+            <pre>Das Foyer des 'Deutschen Theaters' in Berlin, in dem 1988 die Produktion (darstellende Künste) 'Clownonade' aufgeführt wurde</pre>
          </dd>
          <dd>
-            <pre>Alexanderplatz YZ, wo V aufgenommen wurde</pre>
+            <pre>Der Museumsplatz in Wien, an dem 2019 Aufführungen im Rahmen der 'Wiener Festwochen' stattfanden</pre>
          </dd>
          <dd>
-            <pre>Bühne X, an der Aufführung Y stattfand</pre>
+            <pre>Die 'Volksbühne' in Berlin</pre>
          </dd>
          <dd>
-            <pre>Wiese in X, auf der Y passierte</pre>
+            <pre>The 'Museumsplatz' in Wien where performances occurred as part of the 'Wiener Festwochen' in 2019</pre>
+         </dd>
+         <dd>
+            <pre>The 'Volksbühne' in Berlin</pre>
+         </dd>
+         <dd>
+            <pre>The foyer of 'Deutsches Theater' in Berlin where the performing arts performing arts production 'Clownonade' was performed in 1988</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1713,6 +1758,18 @@ This section provides details for each class and property defined by Performing 
             <a href="#Place"
                title="https://lod.mediathek-tanz-theater.de/schema/paam/Place">Place</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#PerformingArtsSite"
+               title="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsSite">Performing Arts Site</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasPlaceOfOccurrence"
+               title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOccurrence">has place of occurrence</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -1724,7 +1781,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan</p>
       <div class="comment">
-         <span class="markdown">A Time-Span is a temporal extent with starting point, end point and duration. A Time-Span can be defined for entities such as Information Objects and Events. A Time-Span is unlimited in its duration. Not all attributes of a Time-Span have to be known.</span>
+         <span class="markdown">Time-Spans are temporal extents with starting point, end point and duration. A Time-Span may be defined for resources such as Information Objects and Events. A Time-Span is unlimited in its duration. Not all attributes of a Time-Span have to be known.</span>
       </div>
       <div class="comment">
          <span class="markdown">This class comprises all timespans.</span>
@@ -1732,10 +1789,22 @@ This section provides details for each class and property defined by Performing 
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>1979-1989, 00:00:00:00-00:52:23:17</pre>
+            <pre>00h:00m:00s - 00h:52m:23s auf einer Videokassette</pre>
          </dd>
          <dd>
-            <pre>1979-1989, 00:00:00:00-00:52:23:17</pre>
+            <pre>00h:00m:00s - 00h:52m:23s on a video cassette</pre>
+         </dd>
+         <dd>
+            <pre>Die Dauer der 'Wiener Festwochen' von 2019</pre>
+         </dd>
+         <dd>
+            <pre>From 1979 to 1989</pre>
+         </dd>
+         <dd>
+            <pre>The duration of 'Wiener Festwochen' in 2019</pre>
+         </dd>
+         <dd>
+            <pre>Von 1979 bis 1989</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1861,10 +1930,6 @@ This section provides details for each class and property defined by Performing 
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasHomepage">has homepage</a>
       </li>
       <li>
-         <a href="#hasIdentifier"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIdentifier">has identifier</a>
-      </li>
-      <li>
          <a href="#hasIllustrator"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator">has illustrator</a>
       </li>
@@ -1875,18 +1940,6 @@ This section provides details for each class and property defined by Performing 
       <li>
          <a href="#hasInformationCarrier"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier">has information carrier</a>
-      </li>
-      <li>
-         <a href="#hasIsbn"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIsbn">
-            <span>has ISBN</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasIssn"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIssn">
-            <span>has ISSN</span>
-         </a>
       </li>
       <li>
          <a href="#hasLayouter"
@@ -1914,9 +1967,7 @@ This section provides details for each class and property defined by Performing 
       </li>
       <li>
          <a href="#hasMedium"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasMedium">
-            <span>has medium</span>
-         </a>
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasMedium">has medium</a>
       </li>
       <li>
          <a href="#hasMime"
@@ -1955,6 +2006,10 @@ This section provides details for each class and property defined by Performing 
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOccurrence">has place of occurrence</a>
       </li>
       <li>
+         <a href="#hasPlaceOfOrigin"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOrigin">has place of origin</a>
+      </li>
+      <li>
          <a href="#hasPlaywright"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright">has playwright</a>
       </li>
@@ -1975,6 +2030,10 @@ This section provides details for each class and property defined by Performing 
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPrompter">has prompter</a>
       </li>
       <li>
+         <a href="#hasProvenance"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasProvenance">has provenance</a>
+      </li>
+      <li>
          <a href="#hasPublisher"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher">has publisher</a>
       </li>
@@ -1993,6 +2052,10 @@ This section provides details for each class and property defined by Performing 
       <li>
          <a href="#hasPuppetDesigner"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner">has puppet designer</a>
+      </li>
+      <li>
+         <a href="#hasPuppeteer"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppeteer">has puppeteer</a>
       </li>
       <li>
          <a href="#hasRecordingOf"
@@ -2021,6 +2084,10 @@ This section provides details for each class and property defined by Performing 
       <li>
          <a href="#hasRestagedVersion"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRestagedVersion">has restaged version</a>
+      </li>
+      <li>
+         <a href="#hasRightsHolder"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRightsHolder">has rights holder</a>
       </li>
       <li>
          <a href="#hasSeamster"
@@ -2081,6 +2148,22 @@ This section provides details for each class and property defined by Performing 
       <li>
          <a href="#hasTranslator"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator">has translator</a>
+      </li>
+      <li>
+         <a href="#hasType"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasType">has type</a>
+      </li>
+      <li>
+         <a href="#hasVersion"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVersion">has version</a>
+      </li>
+      <li>
+         <a href="#hasVideoDesigner"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner">has video designer</a>
+      </li>
+      <li>
+         <a href="#hasVideoEditor"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor">has video editor</a>
       </li>
       <li>
          <a href="#hasVisualReferenceTo"
@@ -2177,10 +2260,6 @@ This section provides details for each class and property defined by Performing 
       <li>
          <a href="#isFirstPerformanceVersionOf"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/isFirstPerformanceVersionOf">is first performance version of</a>
-      </li>
-      <li>
-         <a href="#isFormatOf"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/isFormatOf">is format of</a>
       </li>
       <li>
          <a href="#isHomepageOf"
@@ -2311,6 +2390,10 @@ This section provides details for each class and property defined by Performing 
             title="https://lod.mediathek-tanz-theater.de/schema/paam/isPuppetDesignerOf">is puppet designer of</a>
       </li>
       <li>
+         <a href="#isPuppeteerOf"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/isPuppeteerOf">is puppeteer of</a>
+      </li>
+      <li>
          <a href="#isRecordedIn"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn">is recorded in</a>
       </li>
@@ -2333,6 +2416,10 @@ This section provides details for each class and property defined by Performing 
       <li>
          <a href="#isResidenceOf"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/isResidenceOf">is residence of</a>
+      </li>
+      <li>
+         <a href="#isRestagedVersionOf"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/isRestagedVersionOf">is restaged version of</a>
       </li>
       <li>
          <a href="#isRightsHolderOf"
@@ -2399,6 +2486,10 @@ This section provides details for each class and property defined by Performing 
             title="https://lod.mediathek-tanz-theater.de/schema/paam/isTypeOf">is type of</a>
       </li>
       <li>
+         <a href="#isVersionOf"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/isVersionOf">is version of</a>
+      </li>
+      <li>
          <a href="#isVideoDesignerOf"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/isVideoDesignerOf">is video designer of</a>
       </li>
@@ -2410,18 +2501,6 @@ This section provides details for each class and property defined by Performing 
          <a href="#isVisuallyReferencedIn"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/isVisuallyReferencedIn">is visually referenced in</a>
       </li>
-      <li>
-         <a href="#hasPlaceOfOrigin"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOrigin">originated at place</a>
-      </li>
-      <li>
-         <a href="#hasVideoDesigner"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner">video designer</a>
-      </li>
-      <li>
-         <a href="#hasVideoEditor"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor">video editor</a>
-      </li>
    </ul>
    <div class="entity" id="hasAcrobat">
       <h3>has acrobat<sup class="type-op" title="object property">op</sup>
@@ -2431,10 +2510,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasAcrobat</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as an acrobat.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as acrobat.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as an acrobat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2470,10 +2549,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasActor</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a movie, a performance or another resource as an actor.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as actor.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as an actor.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2509,10 +2588,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an adaptor. The contribution may occur towards an Information Object, for example by adapting a literary work into a drama. The contribution may also occur in form of a participation in the context of a performing arts production.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as adaptor.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as an adaptor.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2548,10 +2627,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasArtisticDirector</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as an artistic director. The contribution may occur by directing the overall artistic concept of a festival concept or a performance.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as artistic director.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as an artistic director.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2587,10 +2666,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasAssistantDirector</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as an assistant director.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as assistant director.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as an assistant director.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2626,7 +2705,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo</p>
       <div class="comment">
-         <span class="markdown">An audible reference usually describes the audible mention or capture of a resource by an Information Object. An audible reference is a specific form of reference.</span>
+         <span class="markdown">An audible reference usually describes the audible mention or capture of a resource by an Information Object, for example in an audio recording. An audible reference is a specific form of reference.</span>
       </div>
       <div class="comment">
          <span class="markdown">Connects a resource to another resource it has an audible reference to.</span>
@@ -2656,6 +2735,12 @@ This section provides details for each class and property defined by Performing 
          <dl>
             <dt>has super-properties</dt>
             <dd>
+               <a href="#hasReferenceTo"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasReferenceTo">has reference to</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
                <a href="#hasAudioVisualReferenceTo"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo">has audiovisual reference to</a>
                <sup class="type-op" title="object property">op</sup>
@@ -2677,7 +2762,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo</p>
       <div class="comment">
-         <span class="markdown">An audiovisual reference usually describes the audible and/or visual mention or capture of a resource by an Information Object. This property can be used if the differentiation between audible and visual reference is not given or deemed necessary. An audiovisual reference is a specific form of reference.</span>
+         <span class="markdown">An audiovisual reference usually describes the audible and visual mention or capture of a resource by an Information Object, for example in a video recording. An audiovisual reference is a specific form of reference.</span>
       </div>
       <div class="comment">
          <span class="markdown">Connects a resource to another resource it has an audiovisual reference to.</span>
@@ -2694,12 +2779,6 @@ This section provides details for each class and property defined by Performing 
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
-            <dd>
-               <a href="#hasReferenceTo"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasReferenceTo">has reference to</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has sub-properties</dt>
             <dd>
                <a href="#hasAudibleReferenceTo"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo">has audible reference to</a>
@@ -2724,10 +2803,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an author. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as author.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as an author.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2763,10 +2842,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasChoreographer</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a choreographer.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as choreographer.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a choreographer.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2802,10 +2881,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasCinematographer</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a film production, a performance or another resource as a cinematographer.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as cinematographer.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a cinematographer.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2841,10 +2920,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasClown</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a clown.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as clown.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a clown.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2880,10 +2959,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasComposer</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a composer. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as composer.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a composer.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2919,10 +2998,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a concept originator. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as concept originator.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a concept originator.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2961,7 +3040,7 @@ This section provides details for each class and property defined by Performing 
          <span class="markdown">A workaround property for connecting a resource to another resource with partly or entirely matching contents.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to another resource with matching content.</span>
+         <span class="markdown">Connects a resource to another resource to matching content.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2981,7 +3060,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, an Information Object or another resource as a contributor. Multiple Agents may contribute to the same resource. If details about the relation between resource and Agent are known, one of the subproperties of this property should be used.</span>
       </div>
       <div class="comment">
          <span class="markdown">Connects a resource to an Agent that contributed to the resource.</span>
@@ -3077,6 +3156,8 @@ This section provides details for each class and property defined by Performing 
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder">has puppet builder</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#hasPuppetDesigner"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner">has puppet designer</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#hasPuppeteer"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppeteer">has puppeteer</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#hasRecordist"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist">has recordist</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#hasSeamster"
@@ -3098,9 +3179,9 @@ This section provides details for each class and property defined by Performing 
                <sup class="type-op" title="object property">op</sup>, <a href="#hasTranslator"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator">has translator</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#hasVideoDesigner"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner">video designer</a>
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner">has video designer</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#hasVideoEditor"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor">video editor</a>
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor">has video editor</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -3126,10 +3207,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeBuilder</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a  costume, a performing arts production or another resource as a costume builder. XXXX Compared to the costume designer this term relates more closely to the aspect of manifacturing a costume rather than designing it.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as costume builder.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a costume builder.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3165,10 +3246,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeDesigner</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a costume, a performing arts production or another resource as acostume designer. XXXX Compared to the costume designer this term relates more closely to the aspect of designing a costume rather than manufacturing it.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as costume designer.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a costume designer.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3204,10 +3285,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasCreator</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, an Information Object or another resource as a creator. Multiple Agents may contribute to the same resource as creators. Statements about the type of creative activity of the Agent may be made by using corresponding contributor properties in addition to this property.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as creator.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a creator.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3243,10 +3324,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasDancer</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a dancer.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as dancer.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a dancer.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3282,7 +3363,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasDigitalVersion</p>
       <div class="comment">
-         <span class="markdown">Connects a physical object with a digital version of itself or a digital version of a part of the object.</span>
+         <span class="markdown">Connects a Physical Object to a digital version of itself or a digital version of a part of the object.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3324,10 +3405,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a director. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as director.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a director.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3363,10 +3444,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasDramaturge</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance, a text or another resource as a dramaturge. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as dramaturge.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a dramaturge.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3402,10 +3483,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasEditor</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as an editor. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as editor.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a editor.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3441,10 +3522,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceVersion</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">A first performance version usually is an original performing arts production, that is being performed for the first time</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a performing arts production with its first performance version.</span>
+         <span class="markdown">Connects a Creative Concept to its first performance version.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3457,16 +3538,22 @@ This section provides details for each class and property defined by Performing 
       </dl>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasVersion"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVersion">has version</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#PerformingArtsProduction"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction">Performing Arts Production</a>
+               <a href="#CreativeConcept"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept">Creative Concept</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#PerformingArtsProduction"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction">Performing Arts Production</a>
+               <a href="#CreativeConcept"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept">Creative Concept</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -3486,7 +3573,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasHomepage</p>
       <div class="comment">
-         <span class="markdown">Connects to a homepage of an agent.</span>
+         <span class="markdown">Connects to a homepage of an Agent.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3520,47 +3607,6 @@ This section provides details for each class and property defined by Performing 
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasIdentifier">
-      <h3>has identifier<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasIdentifier</p>
-      <div class="comment">
-         <span class="markdown"/>
-      </div>
-      <div class="comment">
-         <span class="markdown">Describes a local or global identifier of a resource.</span>
-      </div>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <pre/>
-         </dd>
-         <dd>
-            <pre/>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#hasIsbn"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIsbn">has ISBN</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#hasIssn"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIssn">has ISSN</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isIdentifierOf"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isIdentifierOf">is identifier of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="hasIllustrator">
       <h3>has illustrator<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -3569,10 +3615,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a poster or another resource as an illustrator. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as illustrator.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as an illustrator.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3608,7 +3654,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom</p>
       <div class="comment">
-         <span class="markdown">This property describes the influence in a broader sense on a resource from another resource. An influence can be more or less recognizable and should be verifiable. An influence is a specific form of referencing.</span>
+         <span class="markdown">This property describes the influence in a broader sense on a resource by another resource. An influence may be more or less recognizable and should be verifiable. An influence is a specific form of reference.</span>
       </div>
       <div class="comment">
          <span class="markdown">Connects a resource to another resource that it is influenced by.</span>
@@ -3616,10 +3662,10 @@ This section provides details for each class and property defined by Performing 
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>Performing Arts Production Y is based on Performing Arts Production X, Text Y is influenced by Film X</pre>
+            <pre>Produktion (darstellende Künste) Y ist basiert auf Produktion (darstellende Künste) X, Text Y ist beeinflusst von Film X</pre>
          </dd>
          <dd>
-            <pre>Produktion (darstellende Künste) Y ist basiert auf Produktion (darstellende Künste) X, Text Y ist beeinflusst von Film X</pre>
+            <pre>performing arts performing arts production Y is based on performing arts performing arts production X, Text Y is influenced by Film X</pre>
          </dd>
       </dl>
       <div class="description">
@@ -3647,10 +3693,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">An Information Carrier is a resource, that carries an Information Object. An Information Object may be carried by multiple Information Carriers, for example the same recording of a performance on a video cassette and on a USB flash drive. Multiple Information Objects may be carried by the same Information Carrier, for example multiple recordings of different performances on the same video cassette.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects an information object with a physical or digital object it is represented on.</span>
+         <span class="markdown">Connects an information object to a physical or digital object it is represented on.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3669,52 +3715,18 @@ This section provides details for each class and property defined by Performing 
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject">Information Object</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InformationCarrier"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier">Information Carrier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#isInformationCarrierOf"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isInformationCarrierOf">is information carrier of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasIsbn">
-      <h3>has ISBN<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasIsbn</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#hasIdentifier"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIdentifier">has identifier</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>data property</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasIssn">
-      <h3>has ISSN<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasIssn</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#hasIdentifier"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIdentifier">has identifier</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>data property</dd>
          </dl>
       </div>
    </div>
@@ -3726,10 +3738,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasLayouter</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a publication or another resource as a layouter. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as layouter.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a layouter.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3765,10 +3777,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as lighting designer.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as light designer.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a light designer.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3804,10 +3816,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasMakeUpArtist</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a make up artist.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as make up artist.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a make up artist.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3843,10 +3855,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask builder. XXXX Compared to the mask designer this term relates more closely to the aspect of manifacturing a mask rather than designing it.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as mask builder.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a mask builder.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3882,10 +3894,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask designer. XXXX Compared to the costume designer this term relates more closely to the aspect of designing a mask rather than manifacturing it.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as mask designer.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a mask designer.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3921,10 +3933,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasMediator</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a festival, a workshop or another resource as Mediator. This property may be used for teachers of a workshop or lecturers of a lecture among others.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as mediator.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a mediator.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3953,22 +3965,26 @@ This section provides details for each class and property defined by Performing 
       </h3>
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasMedium</p>
+      <div class="comment">
+         <span class="markdown">Connects a resource to a medium of the resource.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted"
-                     title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFormat">has format</span>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#isMediumOf"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isMediumOf">is medium of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>is also defined as</dt>
-            <dd>annotation property</dd>
          </dl>
       </div>
    </div>
@@ -3980,10 +3996,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasMime</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as amime.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as mime.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a mime.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4019,10 +4035,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a musician. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as musician.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a musician.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4058,10 +4074,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPantomime</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a pantomime.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as pantomime.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a pantomime.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4097,10 +4113,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPart</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">A part-relationship may be formed between resources belonging to different classes and does not have to be of physical nature. An Information Object may be part of a Physical Object or another Information Object among others. A performance may be part of a festival.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to another resource which is a part of it.</span>
+         <span class="markdown">Connects a resource to another resource which forms a part of it.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4132,10 +4148,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasParticipant</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a festival, a workshop or another resource as a participant. This property may be used for participants in a workshop or a lecture among others.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as participant.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a participant.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4171,10 +4187,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPerformer</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a performer. This property may be used as a general property for Agents that are contributing to a resource in any form of perfomance.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as performer.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a performer.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4210,7 +4226,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotoStudio</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a photograph, a performing arts production, a performance or another resource as a photo studio.</span>
       </div>
       <div class="comment">
          <span class="markdown">Connects a resource to a photo studio that contributed to its creation.</span>
@@ -4249,10 +4265,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotographer</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a photograph, a performing arts production, a performance or another resource as a photographer. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as photographer.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a photographer.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4288,7 +4304,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOccurrence</p>
       <div class="comment">
-         <span class="markdown">Connects an event to the place it happened at.</span>
+         <span class="markdown">Connects an Event to the Place it happened at.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4315,14 +4331,59 @@ This section provides details for each class and property defined by Performing 
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Place"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/Place">Place</a>
+               <a href="#Site"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/Site">Site</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#isPlaceOfOccurrenceOf"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isPlaceOfOccurrenceOf">is place of occurrence of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPlaceOfOrigin">
+      <h3>has place of origin<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOrigin</p>
+      <div class="comment">
+         <span class="markdown"/>
+      </div>
+      <div class="comment">
+         <span class="markdown">Connects a resource to the Place it originated at.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedPlace"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRelatedPlace">has related place</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Place"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/Place">Place</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isPlaceOfOriginOf"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isPlaceOfOriginOf">is place of origin of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -4336,10 +4397,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a text or another resource as a playwright. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as playwright.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a playwright.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4378,7 +4439,7 @@ This section provides details for each class and property defined by Performing 
          <span class="markdown"/>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to a predecessor of this resource.</span>
+         <span class="markdown">Connects a resource to a predecessor of the resource.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4410,10 +4471,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasProducer</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a film or another resource as a producer. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as producer.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a producer.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4449,10 +4510,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a programme director. This property may be used for curators or directors of the programme of a festival among others.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to a festival or event by curating or directing the programme of the event.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as programme director.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4488,10 +4549,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPrompter</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a prompter.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as prompter.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a prompter.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4519,6 +4580,39 @@ This section provides details for each class and property defined by Performing 
          </dl>
       </div>
    </div>
+   <div class="entity" id="hasProvenance">
+      <h3>has provenance<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasProvenance</p>
+      <div class="comment">
+         <span class="markdown"/>
+      </div>
+      <div class="comment">
+         <span class="markdown">Describes or connects to the provenance of a resource.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isProvenanceOf"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isProvenanceOf">is provenance of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="hasPublisher">
       <h3>has publisher<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -4527,10 +4621,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a publisher. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as publisher.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a publisher.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4566,7 +4660,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingCompany</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a book, a performing arts production or another resource as a publishing company. XXXX</span>
       </div>
       <div class="comment">
          <span class="markdown">Connects a resource to an Agent that operated as publishing company for the resource.</span>
@@ -4605,7 +4699,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingPlace</p>
       <div class="comment">
-         <span class="markdown">Connects a resource to the place it was or is published at.</span>
+         <span class="markdown">Connects a resource to the Place it was or is published at.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4647,10 +4741,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet builder. XXXX Compared to the puppet designer this term relates more closely to the aspect of manifacturing a puppet rather than designing it.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as puppet builder.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a puppet builder.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4686,10 +4780,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet designer. XXXX Compared to the puppet builder this term relates more closely to the aspect of designing a puppet rather than manufacturing it.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as puppet designer.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a puppet designer.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4712,6 +4806,41 @@ This section provides details for each class and property defined by Performing 
             <dd>
                <a href="#isPuppetDesignerOf"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isPuppetDesignerOf">is puppet designer of</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isPuppeteerOf"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isPuppeteerOf">is puppeteer of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPuppeteer">
+      <h3>has puppeteer<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppeteer</p>
+      <div class="comment">
+         <span class="markdown">This property describes the contribution of an Agent to a puppet play, a performing arts production, a performance or another resource as a puppeteer.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a puppeteer.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasContributor"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor">has contributor</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -4725,7 +4854,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordingOf</p>
       <div class="comment">
-         <span class="markdown">This property is a form of reference that specifically describes the recording of an event by an Information Object.</span>
+         <span class="markdown">This property is a form of reference that describes the recording of an Event as an Information Object.</span>
       </div>
       <div class="comment">
          <span class="markdown">Connects an information object to an event that it recorded.</span>
@@ -4776,10 +4905,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a recording, a performance or another resource as a recordist. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as recordist.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a recordist.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4815,10 +4944,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasReferenceTo</p>
       <div class="comment">
-         <span class="markdown">A reference usually describes the capture or mention of a resource by an Information Object, a Creative Concept or other resources. A reference to a resource can be contained in a recording of the resource or in the labeling of an information carrier among others. In case the type of reference is given, one of the subproperties of this property should be used.</span>
+         <span class="markdown">A reference usually describes the capture or mention of a resource by an Information Object, a Creative Concept or other resources. In case the type of reference is given, one of the subproperties of this property should be used.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to another resource it has any kind of reference to.</span>
+         <span class="markdown">Connects a resource to another resource it has a reference to.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4833,14 +4962,16 @@ This section provides details for each class and property defined by Performing 
          <dl>
             <dt>has sub-properties</dt>
             <dd>
-               <a href="#hasAudioVisualReferenceTo"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo">has audiovisual reference to</a>
+               <a href="#hasAudibleReferenceTo"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo">has audible reference to</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#hasInfluenceFrom"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom">has influence on</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#hasRecordingOf"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordingOf">has recording of</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#hasTextualReferenceTo"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasTextualReferenceTo">has textual reference to</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#hasVisualReferenceTo"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVisualReferenceTo">has visual reference to</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -4860,10 +4991,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasRelatedPlace</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">If details about the relation between resource and Place are known, one of the subproperties of this property should be used.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to a place it is related to.</span>
+         <span class="markdown">Connects a resource to a Place it is related to.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4880,12 +5011,12 @@ This section provides details for each class and property defined by Performing 
             <dd>
                <a href="#hasPlaceOfOccurrence"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOccurrence">has place of occurrence</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfOrigin"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOrigin">has place of origin</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#hasPublishingPlace"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingPlace">has publishing place</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#hasResidence"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasResidence">has residence</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfOrigin"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOrigin">originated at place</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -4947,7 +5078,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasResidence</p>
       <div class="comment">
-         <span class="markdown">Connects an Agent to a Place in which he resides or resided.</span>
+         <span class="markdown">Connects an Agent to a Place in which he resides.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4995,10 +5126,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasRestagedVersion</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">A restaged version usually is a performing arts production, which has already been performed in its original version and is performed again with little to no changes to its Concept.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a performing arts production with its restaged version.</span>
+         <span class="markdown">Connects a Creative Concept to its restaged version.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5011,17 +5142,53 @@ This section provides details for each class and property defined by Performing 
       </dl>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasVersion"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVersion">has version</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#PerformingArtsProduction"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction">Performing Arts Production</a>
+               <a href="#CreativeConcept"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept">Creative Concept</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#PerformingArtsProduction"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction">Performing Arts Production</a>
+               <a href="#CreativeConcept"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept">Creative Concept</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRightsHolder">
+      <h3>has rights holder<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasRightsHolder</p>
+      <div class="comment">
+         <span class="markdown">Connects the resource to an agent who holds rights to the resource.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isRightsHolderOf"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isRightsHolderOf">is rights holder of</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -5034,10 +5201,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasSeamster</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a costume, a performing arts production or another resource as a seamster. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as seamster.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a seamster.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5076,7 +5243,7 @@ This section provides details for each class and property defined by Performing 
          <span class="markdown"/>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Produktion der darstellenden Künste mit der Spielzeit, in der die Produktion aufgeführt wird oder wurde.</span>
+         <span class="markdown">Verbindet eine Produktion (darstellende Künste) mit der Spielzeit, in der die Produktion (darstellende Künste) aufgeführt wird oder wurde.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5112,10 +5279,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasSetBuilder</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a set, a performing arts production or another resource as a set builder. XXXX Compared to the set designer this term relates more closely to the aspect of manifacturing a set rather than designing it.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as set builder.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a set builder.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5151,10 +5318,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasSetDesigner</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a set, a performing arts production or another resource as a set designer. XXXX Compared to the set builder this term relates more closely to the aspect of designing a set rather than manifacturing it.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as set designer.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a set designer.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5190,10 +5357,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a singer XXXX. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as singer.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a singer.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5223,10 +5390,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasSoundDesigner</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a sound designer.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as sound designer.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a sound designer.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5262,7 +5429,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasSource</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the source of a data set or part of a data set. Literals as well as Weblinks are accepted.</span>
       </div>
       <div class="comment">
          <span class="markdown">Describes or connects to the source of a resource.</span>
@@ -5295,10 +5462,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasSpeaker</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance a film or another resource as a speaker. XXXX</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as speaker.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a speaker.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5334,10 +5501,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasStageManager</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a stage manager.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as stage manager.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a stage manager.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5376,7 +5543,7 @@ This section provides details for each class and property defined by Performing 
          <span class="markdown"/>
       </div>
       <div class="comment">
-         <span class="markdown">Describes or connects to the succeeding resource of a resource.</span>
+         <span class="markdown">Connects a resource to the successor of the resource.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5406,10 +5573,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasSurtitleCreator</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance, a surtitle or another resource as a surtitle creator.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as author of surtitles.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as an author of surtitles.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5445,10 +5612,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasTechnician</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a technician.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as technician.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a technician.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5484,7 +5651,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasTextualReferenceTo</p>
       <div class="comment">
-         <span class="markdown">A textual reference usually describes the mention of a resource by an Information Object, a Creative Concept or another resource in written form. A Textual References can be contained in programme booklets, literature or the labeling of an information carrier among others. A textual reference is a specific form of reference.</span>
+         <span class="markdown">A textual reference usually describes the mention of a resource by an Information Object, a Creative Concept or another resource in written form. Resources may be textually referenced in programme booklets, books or the labeling of an information carrier among others. A textual reference is a specific form of reference.</span>
       </div>
       <div class="comment">
          <span class="markdown">Connects a resource to another resource it has a textual reference to.</span>
@@ -5568,10 +5735,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as a translator XXXX.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Connects a resource to an Agent that contributed to the resource as translator.</span>
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a translator.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5594,6 +5761,164 @@ This section provides details for each class and property defined by Performing 
             <dd>
                <a href="#isTranslatorOf"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isTranslatorOf">is translator of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasType">
+      <h3>has type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasType</p>
+      <div class="comment">
+         <span class="markdown">Literals as well as Weblinks are accepted.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">Describes or connects to the type of a resource.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isTypeOf"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isTypeOf">is type of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasVersion">
+      <h3>has version<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasVersion</p>
+      <div class="comment">
+         <span class="markdown"/>
+      </div>
+      <div class="comment">
+         <span class="markdown">Connects a Creative Concept to another version of the concept.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#hasFirstPerformanceVersion"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceVersion">has first performance version</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#hasRestagedVersion"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRestagedVersion">has restaged version</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CreativeConcept"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept">Creative Concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CreativeConcept"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept">Creative Concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasVideoDesigner">
+      <h3>has video designer<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner</p>
+      <div class="comment">
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video designer. XXXX</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a video designer.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasContributor"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isVideoDesignerOf"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isVideoDesignerOf">is video designer of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasVideoEditor">
+      <h3>has video editor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor</p>
+      <div class="comment">
+         <span class="markdown">This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video editor. XXXX</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">Connects a resource to an Agent that contributed to the resource as a video editor.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasContributor"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor">has contributor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isVideoEditorOf"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isVideoEditorOf">is video editor of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -5624,6 +5949,12 @@ This section provides details for each class and property defined by Performing 
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasReferenceTo"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasReferenceTo">has reference to</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
             <dd>
                <a href="#hasAudioVisualReferenceTo"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo">has audiovisual reference to</a>
@@ -5787,6 +6118,12 @@ This section provides details for each class and property defined by Performing 
          <dl>
             <dt>has super-properties</dt>
             <dd>
+               <a href="#isReferencedIn"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isReferencedIn">is referenced in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
                <a href="#isAudioVisuallyReferencedIn"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isAudioVisuallyReferencedIn">is audiovisually referenced in</a>
                <sup class="type-op" title="object property">op</sup>
@@ -5813,12 +6150,6 @@ This section provides details for each class and property defined by Performing 
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
-            <dd>
-               <a href="#isReferencedIn"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isReferencedIn">is referenced in</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has sub-properties</dt>
             <dd>
                <a href="#isAudiblyReferencedIn"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isAudiblyReferencedIn">is audibly referenced in</a>
@@ -6079,6 +6410,8 @@ This section provides details for each class and property defined by Performing 
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isPuppetBuilderOf">is puppet builder of</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#isPuppetDesignerOf"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isPuppetDesignerOf">is puppet designer of</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isPuppeteerOf"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isPuppeteerOf">is puppeteer of</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#isRecordistOf"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isRecordistOf">is recordist of</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#isSeamsterOf"
@@ -6336,37 +6669,16 @@ This section provides details for each class and property defined by Performing 
       </div>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#isVersionOf"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isVersionOf">is version of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasFirstPerformanceVersion"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceVersion">has first performance version</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isFormatOf">
-      <h3>is format of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/isFormatOf</p>
-      <div class="comment">
-         <span class="markdown">Inverse of 'has format'.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#isMediumOf"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isMediumOf">is medium of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <span class="dotted"
-                     title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFormat">has format</span>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -6413,8 +6725,8 @@ This section provides details for each class and property defined by Performing 
          <dl>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#hasIdentifier"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIdentifier">has identifier</a>
+               <span class="dotted"
+                     title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIdentifier">has identifier</span>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -6663,12 +6975,6 @@ This section provides details for each class and property defined by Performing 
       </div>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#isFormatOf"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isFormatOf">is format of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasMedium"
@@ -6930,7 +7236,7 @@ This section provides details for each class and property defined by Performing 
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasPlaceOfOrigin"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOrigin">originated at place</a>
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOrigin">has place of origin</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -7058,8 +7364,8 @@ This section provides details for each class and property defined by Performing 
          <dl>
             <dt>is inverse of</dt>
             <dd>
-               <span class="dotted"
-                     title="https://lod.mediathek-tanz-theater.de/schema/paam/hasProvenance">has provenance</span>
+               <a href="#hasProvenance"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasProvenance">has provenance</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -7200,6 +7506,33 @@ This section provides details for each class and property defined by Performing 
          </dl>
       </div>
    </div>
+   <div class="entity" id="isPuppeteerOf">
+      <h3>is puppeteer of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/isPuppeteerOf</p>
+      <div class="comment">
+         <span class="markdown">Inverse of 'has puppeteer'.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#isContributorOf"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isContributorOf">is contributor of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasPuppetDesigner"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner">has puppet designer</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="isRecordedIn">
       <h3>is recorded in<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -7268,14 +7601,16 @@ This section provides details for each class and property defined by Performing 
          <dl>
             <dt>has sub-properties</dt>
             <dd>
-               <a href="#isAudioVisuallyReferencedIn"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isAudioVisuallyReferencedIn">is audiovisually referenced in</a>
+               <a href="#isAudiblyReferencedIn"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isAudiblyReferencedIn">is audibly referenced in</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#isInfluenceOn"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isInfluenceOn">is influence on</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#isRecordedIn"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn">is recorded in</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#isTextuallyReferencedIn"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isTextuallyReferencedIn">is textually referenced in</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isVisuallyReferencedIn"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isVisuallyReferencedIn">is visually referenced in</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -7374,6 +7709,27 @@ This section provides details for each class and property defined by Performing 
          </dl>
       </div>
    </div>
+   <div class="entity" id="isRestagedVersionOf">
+      <h3>is restaged version of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/isRestagedVersionOf</p>
+      <div class="comment">
+         <span class="markdown">Inverse of 'has restaged version'.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#isVersionOf"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isVersionOf">is version of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="isRightsHolderOf">
       <h3>is rights holder of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -7388,8 +7744,8 @@ This section provides details for each class and property defined by Performing 
          <dl>
             <dt>is inverse of</dt>
             <dd>
-               <span class="dotted"
-                     title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRightsHolder">has rights holder</span>
+               <a href="#hasRightsHolder"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRightsHolder">has rights holder</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -7763,8 +8119,31 @@ This section provides details for each class and property defined by Performing 
          <dl>
             <dt>is inverse of</dt>
             <dd>
-               <span class="dotted"
-                     title="https://lod.mediathek-tanz-theater.de/schema/paam/hasType">has type</span>
+               <a href="#hasType"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasType">has type</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isVersionOf">
+      <h3>is version of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/isVersionOf</p>
+      <div class="comment">
+         <span class="markdown">Inverse of 'has version'.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#isFirstPerformanceVersionOf"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isFirstPerformanceVersionOf">is first performance version of</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isRestagedVersionOf"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isRestagedVersionOf">is restaged version of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -7791,7 +8170,7 @@ This section provides details for each class and property defined by Performing 
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasVideoDesigner"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner">video designer</a>
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner">has video designer</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -7818,7 +8197,7 @@ This section provides details for each class and property defined by Performing 
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasVideoEditor"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor">video editor</a>
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor">has video editor</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -7838,6 +8217,12 @@ This section provides details for each class and property defined by Performing 
          <dl>
             <dt>has super-properties</dt>
             <dd>
+               <a href="#isReferencedIn"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isReferencedIn">is referenced in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
                <a href="#isAudioVisuallyReferencedIn"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isAudioVisuallyReferencedIn">is audiovisually referenced in</a>
                <sup class="type-op" title="object property">op</sup>
@@ -7846,129 +8231,6 @@ This section provides details for each class and property defined by Performing 
             <dd>
                <a href="#hasVisualReferenceTo"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasVisualReferenceTo">has visual reference to</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasPlaceOfOrigin">
-      <h3>originated at place<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaceOfOrigin</p>
-      <div class="comment">
-         <span class="markdown"/>
-      </div>
-      <div class="comment">
-         <span class="markdown">Connects a resource to the Place it originated at.</span>
-      </div>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <pre/>
-         </dd>
-         <dd>
-            <pre/>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#hasRelatedPlace"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRelatedPlace">has related place</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Place"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/Place">Place</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isPlaceOfOriginOf"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isPlaceOfOriginOf">is place of origin of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasVideoDesigner">
-      <h3>video designer<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner</p>
-      <div class="comment">
-         <span class="markdown"/>
-      </div>
-      <div class="comment">
-         <span class="markdown">Connects a resource to an Agent responsible for its video design.</span>
-      </div>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <pre/>
-         </dd>
-         <dd>
-            <pre/>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#hasContributor"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor">has contributor</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isVideoDesignerOf"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isVideoDesignerOf">is video designer of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasVideoEditor">
-      <h3>video editor<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor</p>
-      <div class="comment">
-         <span class="markdown"/>
-      </div>
-      <div class="comment">
-         <span class="markdown">Connects a resource to an Agent responsible for its video editing.</span>
-      </div>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <pre/>
-         </dd>
-         <dd>
-            <pre/>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#hasContributor"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor">has contributor</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isVideoEditorOf"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isVideoEditorOf">is video editor of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -7988,6 +8250,10 @@ This section provides details for each class and property defined by Performing 
       <li>
          <a href="#hasAddress"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasAddress">has address</a>
+      </li>
+      <li>
+         <a href="#hasAlternativeTitle"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasAlternativeTitle">has alternative title</a>
       </li>
       <li>
          <a href="#hasCondition"
@@ -8018,10 +8284,6 @@ This section provides details for each class and property defined by Performing 
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasDescription">has description</a>
       </li>
       <li>
-         <a href="#hasDimensions"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasDimensions">has dimensions</a>
-      </li>
-      <li>
          <a href="#hasExtent"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasExtent">has extent</a>
       </li>
@@ -8036,6 +8298,14 @@ This section provides details for each class and property defined by Performing 
       <li>
          <a href="#hasFirstPerformanceDate"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate">has first performance date</a>
+      </li>
+      <li>
+         <a href="#hasIsbn"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIsbn">has ISBN</a>
+      </li>
+      <li>
+         <a href="#hasIssn"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIssn">has ISSN</a>
       </li>
       <li>
          <a href="#hasLabeling"
@@ -8062,6 +8332,10 @@ This section provides details for each class and property defined by Performing 
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasName">has name</a>
       </li>
       <li>
+         <a href="#hasPhysicalExtent"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPhysicalExtent">has physical extent</a>
+      </li>
+      <li>
          <a href="#hasRights"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRights">has rights</a>
       </li>
@@ -8072,6 +8346,10 @@ This section provides details for each class and property defined by Performing 
       <li>
          <a href="#hasTableOfContents"
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasTableOfContents">has table of contents</a>
+      </li>
+      <li>
+         <a href="#hasTemporalExtent"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasTemporalExtent">has temporal extent</a>
       </li>
       <li>
          <a href="#hasTitle"
@@ -8176,6 +8454,26 @@ This section provides details for each class and property defined by Performing 
       </div>
       <div class="comment">
          <span class="markdown">Describes the address of a resource.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="hasAlternativeTitle">
+      <h3>has alternative title<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasAlternativeTitle</p>
+      <div class="comment">
+         <span class="markdown">Beschreibt einen alternativen Titel einer Ressource.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -8344,6 +8642,9 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfFirstEdition</p>
       <div class="comment">
+         <span class="markdown"/>
+      </div>
+      <div class="comment">
          <span class="markdown">Describes the date of the first edition of a resource.</span>
       </div>
       <dl>
@@ -8373,6 +8674,9 @@ This section provides details for each class and property defined by Performing 
       </h3>
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfFirstLocalizedEdition</p>
+      <div class="comment">
+         <span class="markdown"/>
+      </div>
       <div class="comment">
          <span class="markdown">Describes the date of the first localized edition of a resource.</span>
       </div>
@@ -8426,26 +8730,6 @@ This section provides details for each class and property defined by Performing 
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasDimensions">
-      <h3>has dimensions<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasDimensions</p>
-      <div class="comment">
-         <span class="markdown">Describes the dimensions of a resource.</span>
-      </div>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <pre/>
-         </dd>
-         <dd>
-            <pre/>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="hasExtent">
       <h3>has extent<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -8454,7 +8738,7 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasExtent</p>
       <div class="comment">
-         <span class="markdown">Describes the extent of a resource.</span>
+         <span class="markdown">Describes the format of a resource.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -8467,11 +8751,13 @@ This section provides details for each class and property defined by Performing 
       </dl>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
+            <dt>has sub-properties</dt>
             <dd>
-               <span class="dotted"
-                     title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFormat">has format</span>
-               <sup class="type-op" title="object property">op</sup>
+               <a href="#hasPhysicalExtent"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasPhysicalExtent">has physical extent</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#hasTemporalExtent"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasTemporalExtent">has temporal extent</a>
+               <sup class="type-dp" title="data property">dp</sup>
             </dd>
          </dl>
       </div>
@@ -8535,10 +8821,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate</p>
       <div class="comment">
-         <span class="markdown">A workaround property for describing the first performance date of a performing arts production in case of insufficient description of related performances.</span>
+         <span class="markdown">A workaround property for describing the first performance date of a performing arts performing arts production in case of insufficient description of related performances.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Describes the first performance date of a performing arts production.</span>
+         <span class="markdown">Describes the first performance date of a performing arts performing arts production.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -8559,9 +8845,69 @@ This section provides details for each class and property defined by Performing 
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#PerformingArtsProduction"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction">Performing Arts Production</a>
+               <a href="#CreativeConcept"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept">Creative Concept</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasIsbn">
+      <h3>has ISBN<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasIsbn</p>
+      <div class="comment">
+         <span class="markdown">Describes the ISBN of a resource.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIdentifier">has identifier</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasIssn">
+      <h3>has ISSN<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasIssn</p>
+      <div class="comment">
+         <span class="markdown">Describes the ISSN of a resource.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://lod.mediathek-tanz-theater.de/schema/paam/hasIdentifier">has identifier</span>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -8689,10 +9035,10 @@ This section provides details for each class and property defined by Performing 
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate</p>
       <div class="comment">
-         <span class="markdown">A workaround property for describing the last performance date of a performing arts production in case of insufficient description of related performances.</span>
+         <span class="markdown">A workaround property for describing the last performance date of a performing arts performing arts production in case of insufficient description of related performances.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Describes the last performance date of a performing arts production.</span>
+         <span class="markdown">Describes the last performance date of a performing arts performing arts production.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -8713,8 +9059,8 @@ This section provides details for each class and property defined by Performing 
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#PerformingArtsProduction"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction">Performing Arts Production</a>
+               <a href="#CreativeConcept"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept">Creative Concept</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -8746,6 +9092,36 @@ This section provides details for each class and property defined by Performing 
                <a href="#Agent"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/Agent">Agent</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPhysicalExtent">
+      <h3>has physical extent<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPhysicalExtent</p>
+      <div class="comment">
+         <span class="markdown">Describes the physical extent of a resource.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasExtent"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasExtent">has extent</a>
+               <sup class="type-dp" title="data property">dp</sup>
             </dd>
          </dl>
       </div>
@@ -8820,6 +9196,36 @@ This section provides details for each class and property defined by Performing 
          </dl>
       </div>
    </div>
+   <div class="entity" id="hasTemporalExtent">
+      <h3>has temporal extent<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasTemporalExtent</p>
+      <div class="comment">
+         <span class="markdown">Describes the temporal extent of a resource.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre/>
+         </dd>
+         <dd>
+            <pre/>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasExtent"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasExtent">has extent</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="hasTitle">
       <h3>has title<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -8881,246 +9287,6 @@ This section provides details for each class and property defined by Performing 
             </dd>
          </dl>
       </div>
-   </div>
-</div><div id="annotationproperties">
-   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract">
-            <span>abstract</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">
-            <span>contributor</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.w3.org/2004/02/skos/core#definiiton" title="http://www.w3.org/2004/02/skos/core#definiiton">
-            <span>definiiton</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition">
-            <span>definition</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.w3.org/2004/02/skos/core#example" title="http://www.w3.org/2004/02/skos/core#example">
-            <span>example</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasFormat"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFormat">
-            <span>has format</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasMedium"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasMedium">
-            <span>has medium</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasProvenance"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasProvenance">
-            <span>has provenance</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasRightsHolder"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRightsHolder">
-            <span>has rights holder</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasType"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasType">
-            <span>has type</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher">
-            <span>publisher</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/elements/1.1/rights" title="http://purl.org/dc/elements/1.1/rights">
-            <span>rights</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title">
-            <span>title</span>
-         </a>
-      </li>
-   </ul>
-   <div class="entity" id="http://purl.org/dc/terms/abstract">
-      <h3>abstract<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/abstract</p>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/contributor">
-      <h3>contributor<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/contributor</p>
-   </div>
-   <div class="entity" id="http://www.w3.org/2004/02/skos/core#definiiton">
-      <h3>definiiton<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#definiiton</p>
-   </div>
-   <div class="entity" id="http://www.w3.org/2004/02/skos/core#definition">
-      <h3>definition<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#definition</p>
-   </div>
-   <div class="entity" id="http://www.w3.org/2004/02/skos/core#example">
-      <h3>example<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#example</p>
-   </div>
-   <div class="entity" id="hasFormat">
-      <h3>has format<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasFormat</p>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isFormatOf"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isFormatOf">is format of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>object property</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasMedium">
-      <h3>has medium<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasMedium</p>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isMediumOf"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isMediumOf">is medium of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#hasMedium">object property</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasProvenance">
-      <h3>has provenance<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasProvenance</p>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isProvenanceOf"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isProvenanceOf">is provenance of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>object property</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasRightsHolder">
-      <h3>has rights holder<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasRightsHolder</p>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isRightsHolderOf"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isRightsHolderOf">is rights holder of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>object property</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasType">
-      <h3>has type<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasType</p>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isTypeOf"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isTypeOf">is type of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>object property</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/publisher">
-      <h3>publisher<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/publisher</p>
-   </div>
-   <div class="entity" id="http://purl.org/dc/elements/1.1/rights">
-      <h3>rights<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/rights</p>
-   </div>
-   <div class="entity" id="http://purl.org/dc/elements/1.1/title">
-      <h3>title<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/title</p>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

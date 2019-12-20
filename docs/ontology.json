@@ -14,9 +14,6 @@
   "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#definiiton",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://www.w3.org/2004/02/skos/core#definition",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -66,7 +63,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Agents are entities that are capable of acting, usually persons or groups of persons. This class also serves as top class for more specifically defined Agents."
+    "@value" : "Agents are entities that are capable of acting, usually persons, groups of persons and Organizations. This class also serves as top class for more specifically defined Agents."
   }, {
     "@language" : "de",
     "@value" : "Akteur*innen sind handlungsfähige Entitäten wie Personen, Personengruppierungen und Organisationen. Diese Klasse dient auch als Oberklasse für genauer definierte Akteur*innen."
@@ -87,26 +84,32 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
-    "@value" : "Burkhart Seidemann"
+    "@value" : "'Burkhart Seidemann'"
   }, {
     "@language" : "en",
-    "@value" : "Burkhart Seidemann"
+    "@value" : "'Burkhart Seidemann'"
   }, {
     "@language" : "de",
-    "@value" : "Pantomimen-Theater vom Prenzlauer Berg"
+    "@value" : "'Pantomimentheater vom Prenzlauer Berg'"
   }, {
     "@language" : "en",
-    "@value" : "Pantomimen-Theater vom Prenzlauer Berg"
+    "@value" : "'Pantomimentheater vom Prenzlauer Berg'"
+  }, {
+    "@language" : "de",
+    "@value" : "'William Shakespeare'"
+  }, {
+    "@language" : "en",
+    "@value" : "'William Shakespeare'"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/Collection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Collections are an open or closed Set of Physical and/or Digital Objects without defined order that are intentionally created by an Organisation or a Person. Collections can be created to cover a topic, event or entire archives."
+    "@value" : "Collections are an open or closed Set of Physical and/or Digital Objects without defined order that are intentionally created by an Organisation or a Person. Collections may have a thematic or historical context among others. Objects can be part of multiple Collections"
   }, {
     "@language" : "de",
-    "@value" : "Sammlungen sind eine von einer Organisation oder Person intentional angelegte, offene oder geschlossene Menge an Physischen und/oder Digitalen Objekten ohne definierte Reihenfolge. Sammlungen können zum Beispiel einen inhaltlichen oder historischen Zusammenhang haben."
+    "@value" : "Sammlungen sind eine von einer Organisation oder Person intentional angelegte, offene oder geschlossene Menge an Physischen und/oder Digitalen Objekten ohne definierte Reihenfolge. Sammlungen können zum Beispiel einen inhaltlichen oder historischen Zusammenhang haben. Objekte können Teil mehrerer Sammlungen sein."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -124,20 +127,32 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
-    "@value" : "COL"
+    "@value" : "Die 'Sammlung Bauhaus' des 'Bauhaus-Archivs' in Berlin"
+  }, {
+    "@language" : "de",
+    "@value" : "Die Sammlung von Märchen von den 'Brüdern Grimm'"
+  }, {
+    "@language" : "de",
+    "@value" : "Die Sammlung zum 'Pantomimentheater vom Prenzlauer Berg' an der Mediathek für Tanz und Theater des 'ITI Deutschland' in Berlin"
   }, {
     "@language" : "en",
-    "@value" : "COL"
+    "@value" : "The 'Bauhaus Collection' of the 'Bauhaus-Archiv' in Berlin"
+  }, {
+    "@language" : "en",
+    "@value" : "The Collection about the 'Pantomimentheater vom Prenzlauer Berg' at the media library for dance and theatre of the 'ITI Germany' in Berlin"
+  }, {
+    "@language" : "en",
+    "@value" : "The Collection of fairy tales by the 'Brothers Grimm'"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Creative Concepts comprise ideas, plans and conceptions that serve as a creative foundation for Events, Information Objects or other resources. Creative Concepts do not have to be realized. This class primarily serves as top class for more specifically defined Creative Concepts such as film productions or performing arts productions."
+    "@value" : "Creative Concepts comprise ideas, plans and conceptions that serve as a creative foundation for Events, Information Objects or other resources. Creative Concepts do not have to be realized. This class primarily serves as top class for more specifically defined Creative Concepts such as film performing arts productions or performing arts performing arts productions."
   }, {
     "@language" : "de",
-    "@value" : "Kreative Konzepte umfassen Ideen, Planungen und Konzeptionen, die als kreative Grundlage von Ereignissen, Informationsobjekten oder anderen Ressourcen dienen. Kreative Konzepte müssen nicht verwirklicht werden. Diese Klasse dient als Oberklasse für genauer definierte Kreative Konzepte, wie Filmproduktionen oder Produktionen der darstellenden Künste."
+    "@value" : "Kreative Konzepte umfassen Ideen, Planungen und Konzeptionen, die als kreative Grundlage von Ereignissen, Informationsobjekten oder anderen Ressourcen dienen. Kreative Konzepte müssen nicht verwirklicht werden. Diese Klasse dient als Oberklasse für genauer definierte Kreative Konzepte, wie Filmproduktionen oder Produktion (darstellende Künste)en der darstellenden Künste."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -154,23 +169,23 @@
     "@value" : "This class comprises all Creative Concepts."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "A festival"
-  }, {
-    "@language" : "en",
-    "@value" : "A film production"
-  }, {
-    "@language" : "en",
-    "@value" : "A performing arts production"
+    "@language" : "de",
+    "@value" : "Das Festivalkonzept hinter der seit 1981 veranstalteten Theaterfestivalreihe 'Theater der Welt'"
   }, {
     "@language" : "de",
-    "@value" : "Ein Festival"
+    "@value" : "Die Filmproduktion 'Metropolis' von 'Fritz Lang' aus dem Jahr 1927"
   }, {
     "@language" : "de",
-    "@value" : "Eine Filmproduktion"
+    "@value" : "Die Produktion (darstellende Künste) 'Die Horatier und die Kuratier' von dem 'Pantomimentheater vom Prenzlauer Berg' aus dem Jahr 1982"
   }, {
-    "@language" : "de",
-    "@value" : "Eine Produktion (darstellende Künste)"
+    "@language" : "en",
+    "@value" : "The festival concept behind the theatre festival series 'Theater der Welt', held since 1981"
+  }, {
+    "@language" : "en",
+    "@value" : "The film performing arts production 'Metropolis' by 'Fritz Lang' from 1927"
+  }, {
+    "@language" : "en",
+    "@value" : "The performing arts performing arts production 'Die Horatier und die Kuratier' by the 'Pantomimentheater vom Prenzlauer Berg' from 1982"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject",
@@ -180,7 +195,7 @@
     "@value" : "Diese Klasse umfasst sowohl digitale Repräsentationen von Inhalten von Physischen Objekten als auch nativ digitale Objekte. Digitale Objekte können wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte sein."
   }, {
     "@language" : "en",
-    "@value" : "This class comprises digital representations of contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, can be information carriers of one or more Information Objects."
+    "@value" : "This class comprises digital representations of contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, may be information carriers of one or more Information Objects."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -197,27 +212,33 @@
     "@value" : "This class comprises all Digital Objects."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "A specific digital file with name IMG-001.tif"
-  }, {
-    "@language" : "en",
-    "@value" : "A specific digital file with name VID-001.avi"
+    "@language" : "de",
+    "@value" : "Die Datei '20190911_152231.jpg', das mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt"
   }, {
     "@language" : "de",
-    "@value" : "Eine spezifische digitale Datei mit Namen IMG-001.tif"
+    "@value" : "Die Digitalisierung einer Videokassette mit Namen 'VID_001.avi', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' trägt"
   }, {
     "@language" : "de",
-    "@value" : "Eine spezifische digitale Datei mit Namen VID-001.avi"
+    "@value" : "Die Digitalisierung einer analogen Fotografie von einer Probe zur Produktion (darstellende Künste) 'Wir Wohner' mit Namen 'nvt_img-i30-002.JP2'"
+  }, {
+    "@language" : "en",
+    "@value" : "The digitisation of a VHS tape named 'VID-001.avi', carrying recordings of two different performances of the play 'Hamlet'"
+  }, {
+    "@language" : "en",
+    "@value" : "The digitisation of an analogue photography of a rehearsal of the performing arts performing arts production 'Wir Wohner', named 'nvt_img-i30-002.JP2'"
+  }, {
+    "@language" : "en",
+    "@value" : "The file '20190911_152231.jpg', taken with a digital camera and carrying the photograph of a landscape"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/Event",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Ereignisse können real oder fiktional sein, haben einen Start- und Endzeitpunkt und finden an einem Ort statt. Nicht alle Eigenschaften eines Ereignisses müssen bekannt sein. Diese Klasse kann für Ereignisse im Bereich der darstellenden Künste wie Aufführungen oder Workshops genutzt werden."
+    "@value" : "Ereignisse können real oder fiktional sein, haben einen Start- und Endzeitpunkt und finden an einem Ort statt. Nicht alle Eigenschaften eines Ereignisses müssen bekannt sein. Diese Klasse kann für Ereignisse im Bereich der darstellenden Künste wie Aufführungen, Konferenzen oder Workshops genutzt werden."
   }, {
     "@language" : "en",
-    "@value" : "Events can be fictional or real, have a starting and ending point and occur at a place. Not all attributes of an Event have to be known. This class can be used for Events in the realm of performing arts such as performances or workshops."
+    "@value" : "Events may be fictional or real, have a starting and ending point and occur at a place. Not all attributes of an Event have to be known. This class may be used for Events in the realm of performing arts such as performances, conferences or workshops."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -234,101 +255,82 @@
     "@value" : "This class comprises all Events."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "A performance of 'Hamlet'"
-  }, {
-    "@language" : "en",
-    "@value" : "A workshop regarding a specific acting technique"
-  }, {
-    "@language" : "en",
-    "@value" : "An exhibition about an actor/actress"
+    "@language" : "de",
+    "@value" : "Der 'New African Dance Workshop' im Rahmen des Festivals 'Woche des Gestischen Theaters' im Jahr 1990"
   }, {
     "@language" : "de",
-    "@value" : "Ein Workshop zu einer speziellen Schauspieltechnik"
+    "@value" : "Die 11. Ausgabe des Festivals 'Theater der Welt' vom 19.06.2008 bis zum 06.07.2008"
   }, {
     "@language" : "de",
-    "@value" : "Eine Aufführung von 'Hamlet'"
+    "@value" : "Die Uraufführung von 'Iphigenie auf Tauris' von der Gruppe (darstellende Künste) 'Wuppertaler Tanztheater' am 21.04.1974"
   }, {
-    "@language" : "de",
-    "@value" : "Eine Ausstellung über eine/n Darsteller/in"
+    "@language" : "en",
+    "@value" : "The 'New African Dance Workshop' as part of the festival 'Woche des Gestischen Theaters' in 1990"
+  }, {
+    "@language" : "en",
+    "@value" : "The 11. edition of the festival 'Theater der Welt' from 19 June 2008 to 06 July 2008"
+  }, {
+    "@language" : "en",
+    "@value" : "The premiere of 'Iphigenie auf Tauris' by the 'Wuppertaler Tanztheater' on 21 April 1974"
   } ]
 }, {
-  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/FestivalConcept",
+  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Festival Concepts are the Creative Concepts behind festival Events. A Festival Concept can either be the Concept behind a singular festival Event or an overarching Concept for a series of festival editions."
+    "@value" : "Information Carriers are Physical or Digital Objects that are Carriers of one or more Information Objects."
   }, {
     "@language" : "de",
-    "@value" : "Festivalkonzepte sind die Kreative Konzepte, die Festivalereignissen zugrunde liegen. Ein Festivalkonzept kann sowohl das Konzept hinter einem einzelnen Festivalereignis beschreiben, als auch ein übergreifendes Konzept hinter einer Reihe von Festivalausgaben."
+    "@value" : "Informationsträger sind physische oder digitale Objekte, die Träger eines Informationsobjekts oder mehrerer Informationsobjekte sind."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Festival Concept"
+    "@value" : "Information Carrier"
   }, {
     "@language" : "de",
-    "@value" : "Festivalkonzept"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept"
+    "@value" : "Informationsträger"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Diese Klasse umfasst alle Festivalkonzepte."
+    "@value" : "Diese Klasse umfasst alle Informationsträger."
   }, {
     "@language" : "en",
-    "@value" : "This class comprises all Festival Concepts."
+    "@value" : "This class comprises all Information Carriers."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "de",
-    "@value" : "Das zweijährliche internationale Theaterfestival 'Theater der Welt'"
+    "@language" : "en",
+    "@value" : "A programme booklet carrying information of the performing arts performing arts production 'Hanswurst'"
   }, {
     "@language" : "en",
-    "@value" : "The biannual international theatre festival 'Theater der Welt'"
-  } ]
-}, {
-  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/FilmProduction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A Film Production is the Creative Concept behind a film. A film production may be described further by objects such as scripts, camera instructions or lighting instructions."
+    "@value" : "A video cassette labeled 'Hamlet, 1985' carrying two different recordings of the theatre play 'Hamlet'"
   }, {
     "@language" : "de",
-    "@value" : "Filmproduktion ist das Kreative Konzept, das einem Film zugrunde liegt. Eine Filmproduktion kann zum Beispiel durch ein Drehbuch, Kamera- oder Lichtanweisungen genauer beschrieben werden."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Film Production"
+    "@value" : "Die Datei '20190911_152231.jpg', das mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt"
   }, {
     "@language" : "de",
-    "@value" : "Filmproduktion"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Die Digitalisierung einer Videokassette mit Namen 'VID_001.avi', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' trägt"
+  }, {
     "@language" : "de",
-    "@value" : "Diese Klasse umfasst alle Filmproduktionen."
+    "@value" : "Ein Programmheft, das Informationen über die Produktion (darstellende Künste) 'Hanswurst' trägt"
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Videokassette mit Beschriftung 'Hamlet, 1985', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' enthält"
   }, {
     "@language" : "en",
-    "@value" : "This class comprises all film productions."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "de",
-    "@value" : "Example"
+    "@value" : "The digitisation of a VHS tape named 'VID-001.avi', carrying recordings of two different performances of the play 'Hamlet'"
   }, {
     "@language" : "en",
-    "@value" : "Example"
+    "@value" : "The file '20190911_152231.jpg', taken with a digital camera and carrying the photograph of a landscape"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An Information Object is an immaterial, describable object, usually represented by one or more information carriers. The same Information Object can be captured in multiple Physical or Digital Objects (e.g. a magazine edition). One Physical or Digital Object can carry multiple Information Objects (e.g. multiple video recordings on a single video tape). An Information Object can be part of another Information Object (e.g. a chapter of a novel)."
+    "@value" : "Information Objects are immaterial, describable objects, usually represented by one or more information carriers. The same Information Object may be captured in multiple Physical or Digital Objects (e.g. a magazine edition). One Physical or Digital Object can carry multiple Information Objects (e.g. multiple video recordings on a single video tape). An Information Object may be part of another Information Object (e.g. a chapter of a novel)."
   }, {
     "@language" : "de",
-    "@value" : "Ein Informationsobjekt ist ein immaterielles, beschreibbares Objekt, das in der Regel von einem oder mehreren Informationsträgern repräsentiert wird. Das gleiche Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer Kopie der Fotografie in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann mehrere Informationsobjekte tragen (z.B. mehrere Videoaufzeichnungen auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans)."
+    "@value" : "Informationsobjekte sind immaterielle, beschreibbare Objekte, die in der Regel von einem oder mehreren Informationsträgern repräsentiert werden. Das gleiche Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer Kopie der Fotografie in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann mehrere Informationsobjekte tragen (z.B. mehrere Videoaufzeichnungen auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -345,11 +347,23 @@
     "@value" : "This class comprises all Information Objects."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A picture of 'Eberhard Kube' as part of an article from an unknown magazine"
+  }, {
     "@language" : "de",
-    "@value" : "Aufnahme von Aufführung X, Inhalt von Programmheft Y"
+    "@value" : "Der Film 'Metropolis' von Fritz Lang aus dem Jahr 1927"
+  }, {
+    "@language" : "de",
+    "@value" : "Die Aufzeichnung einer Aufführung von 'Himmelhölle' am 03.12.1988, zu finden auf einer Videokassette und als Teil der Digitalisierung des Inhalts dieser Videokassette"
+  }, {
+    "@language" : "de",
+    "@value" : "Ein Foto von 'Eberhard Kube' als Teil eines Artikels aus einem unbekannten Magazin"
   }, {
     "@language" : "en",
-    "@value" : "Recording of Performance X, Contents of programme booklet Y"
+    "@value" : "The movie 'Metropolis' by 'Fritz Lang' from 1927"
+  }, {
+    "@language" : "en",
+    "@value" : "The recording of a performance of 'Himmelhölle' on 03 December 1988, to be found on a video cassette and as part of the digitisation of the contents of that video cassette"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/Organization",
@@ -380,20 +394,32 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
-    "@value" : "Theater der Welt, Sony BMG"
+    "@value" : "'Deutsches Theater'"
   }, {
     "@language" : "en",
-    "@value" : "Theater der Welt, Sony BMG"
+    "@value" : "'Deutsches Theater'"
+  }, {
+    "@language" : "de",
+    "@value" : "'ITI Deutschland'"
+  }, {
+    "@language" : "en",
+    "@value" : "'ITI Germany'"
+  }, {
+    "@language" : "de",
+    "@value" : "'Sony BMG'"
+  }, {
+    "@language" : "en",
+    "@value" : "'Sony BMG'"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A Performing Arts Group is usually comprised of two or more Persons."
-  }, {
     "@language" : "de",
-    "@value" : "Eine Gruppe (darstellende Künste) besteht üblicherweise aus zwei oder mehr Personen."
+    "@value" : "Gruppen (darstellende Künste) sind in der Regel Ensembles, Kompanien und ähnliche Gruppen im Bereich der darstellenden Künste."
+  }, {
+    "@language" : "en",
+    "@value" : "Performing Arts Groups usally are ensembles, companies and similar groups in the realm of performing arts."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -407,54 +433,77 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Diese Klasse umfasst alle Ensembles, Kompanien und ähnliche Gruppen im Bereich der darstellenden Künste."
+    "@value" : "Diese Klasse umfasst alle Gruppen (darstellende Künste)."
   }, {
     "@language" : "en",
-    "@value" : "This class comprises ensembles, companies and similar groups in the realm of performing arts."
+    "@value" : "This class comprises all Performing Arts Groups."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "'National Dance Company of Korea'"
+  }, {
     "@language" : "de",
-    "@value" : "DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg"
+    "@value" : "'Nationales Koreanisches Tanzensemble'"
+  }, {
+    "@language" : "de",
+    "@value" : "'Pantomime-Ensemble des Deutschen Theaters'"
   }, {
     "@language" : "en",
-    "@value" : "DT Ensemble, Berliner Improvisations Trio, Pantomimen-Theater vom Prenzlauer Berg"
+    "@value" : "'Pantomime-Ensemble des Deutschen Theaters'"
+  }, {
+    "@language" : "de",
+    "@value" : "'Pantomimentheater vom Prenzlauer Berg'"
+  }, {
+    "@language" : "en",
+    "@value" : "'Pantomimentheater vom Prenzlauer Berg'"
   } ]
 }, {
-  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction",
+  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsSite",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A Performing Arts Production is the Creative Concept behind a Performance or a Series of Performances in the realm of performing arts. A Performing Arts Production doesn't necessarily have to be performed. A Performing Arts Production may be described further by manuscripts or stage directions."
+    "@value" : "Performing Arts Sites are Organizations within the realm of performing arts, that simultaneously serve as Sites for performances, rehearsals or similar Events within the realm of performing arts."
   }, {
     "@language" : "de",
-    "@value" : "Eine Produktion (darstellende Künste) ist das Kreative Konzept, das einer Aufführung oder einer Reihe von Aufführungen im Bereich der darstellenden Künste zugrunde liegt. Eine Produktion (darstellende Künste) muss nicht zwangsläufig aufgeführt werden. Eine Produktion (darstellende Künste) kann zum Beispiel von Manuskripten oder Regieanweisungen genauer beschrieben werden."
+    "@value" : "Spielstätten (darstellende Künste) sind Organisationen im Bereich der darstellenden Künste, die gleichzeitig als Stätte für Aufführungen, Proben oder ähnliche Ereignisse im Bereich der darstellenden Künste dienen."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Performing Arts Production"
+    "@value" : "Performing Arts Site"
   }, {
     "@language" : "de",
-    "@value" : "Produktion (darstellende Künste)"
+    "@value" : "Spielstätte (darstellende Künste)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept"
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/Organization"
+  }, {
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/Site"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Diese Klasse umfasst Produktionen der darstellenden Künste."
+    "@value" : "Diese Klasse umfasst alle Spielstätten (darstellende Künste)."
   }, {
     "@language" : "en",
-    "@value" : "This class comprises Performing Arts Productions."
+    "@value" : "This class comprises all Performing Arts Sites."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : "'Deutsches Theater' in Berlin"
+  }, {
     "@language" : "en",
-    "@value" : "Blaubart, Hamlet"
+    "@value" : "'Deutsches Theater' in Berlin"
   }, {
     "@language" : "de",
-    "@value" : "Die Produktion 'Blaubart'...von, am, am am"
+    "@value" : "Das 'Off Theater' in Wien"
   }, {
     "@language" : "de",
-    "@value" : "Hamlet"
+    "@value" : "Die 'Volksbühne' in Berlin"
+  }, {
+    "@language" : "en",
+    "@value" : "The 'Off Theater' in Vienna"
+  }, {
+    "@language" : "en",
+    "@value" : "The 'Volksbühne' in Berlin"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/Person",
@@ -485,17 +534,29 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
-    "@value" : "Eberhard Kube, Conny Hege"
+    "@value" : "'Eberhard Kube'"
   }, {
     "@language" : "en",
-    "@value" : "Eberhard Kube, Conny Hege"
+    "@value" : "'Eberhard Kube'"
+  }, {
+    "@language" : "de",
+    "@value" : "'Johann Sebastian Bach'"
+  }, {
+    "@language" : "en",
+    "@value" : "'Johann Sebastian Bach'"
+  }, {
+    "@language" : "de",
+    "@value" : "'Nikolajewitsch Bogdanow'"
+  }, {
+    "@language" : "en",
+    "@value" : "'Nikolajewitsch Bogdanow'"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "All material objects with physical extent are Physical Objects. Physical Objects, like Digital Objects, can be information carriers of Information Objects. Typical physical information carriers are video cassettes, analogue photographs or program booklets."
+    "@value" : "All material objects with physical extent are Physical Objects. Physical Objects, like Digital Objects, may be information carriers of Information Objects. Typical physical information carriers are video cassettes, analogue photographs or program booklets."
   }, {
     "@language" : "de",
     "@value" : "Alle materiellen Objekte mit physischen Ausmaßen sind Physische Objekte. Wie Digitale Objekte können auch Physische Objekte Informationsträger von Informationsobjekten sein. Typische physische Informationsträger sind Videokassetten, analoge Fotografien oder Programmhefte."
@@ -516,10 +577,22 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
-    "@value" : "Tape with recording of performance X, programme booklet Y"
+    "@value" : "A negative strip with three images, depicting rehearsals of the performing arts performing arts production 'Himmelhölle'"
+  }, {
+    "@language" : "en",
+    "@value" : "A programme booklet carrying information of the performing arts performing arts production 'Hanswurst'"
+  }, {
+    "@language" : "en",
+    "@value" : "A video cassette labeled 'Hamlet, 1985' carrying two different recordings of the theatre play 'Hamlet'"
   }, {
     "@language" : "de",
-    "@value" : "Videokassette mit Aufnahme von Aufführung X, Programmheft Y"
+    "@value" : "Ein Negativstreifen mit drei Einzelbildern, die Proben zur Produktion (darstellende Künste) 'Himmelhölle' zeigen"
+  }, {
+    "@language" : "de",
+    "@value" : "Ein Programmheft, das Informationen über die Produktion (darstellende Künste) 'Hanswurst' trägt"
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Videokassette mit Beschriftung 'Hamlet, 1985', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' enthält"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/Place",
@@ -547,20 +620,31 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
-    "@value" : "Place"
+    "@value" : "'Berlin (Ost)'"
   }, {
     "@language" : "en",
-    "@value" : "Place"
+    "@value" : "'Deutsches Theater'"
+  }, {
+    "@language" : "en",
+    "@value" : "'East Berlin'"
+  }, {
+    "@language" : "de",
+    "@value" : "'Französische Republik'"
+  }, {
+    "@language" : "en",
+    "@value" : "'French Republic'"
+  }, {
+    "@value" : "'Deutsches Theater'"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/Series",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A Series is an ordered set of Objects. A Series can describe photographs of movements or the documentation of the development of a production in a chronological or otherwise intended sequence."
-  }, {
     "@language" : "de",
-    "@value" : "Eine Serie ist eine geordnete Menge von Objekten. Mit einer Serie können zum Beispiel Fotografien von Bewegungsabläufen oder die fotografische Dokumentation zur Entwicklung einer Produktion in eine chronologische oder anderweitig beabsichtigte Reihenfolge gebracht werden."
+    "@value" : "Serien sind geordnete Mengen von Objekten. Mit einer Serie können zum Beispiel Fotografien von Bewegungsabläufen oder die fotografische Dokumentation zur Entwicklung einer Produktion (darstellende Künste) in eine chronologische oder anderweitig beabsichtigte Reihenfolge gebracht werden."
+  }, {
+    "@language" : "en",
+    "@value" : "Series are ordered sets of Objects. A Series can describe photographs of movements or the documentation of the development of a performing arts production in a chronological or otherwise intended sequence."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -577,18 +661,18 @@
     "@value" : "This class comprises all Series."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "de",
-    "@value" : "SRS"
-  }, {
     "@language" : "en",
-    "@value" : "SRS"
+    "@value" : "A Series of photographies created as motion study of the sequence of movements of a performer"
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Serie von Fotografien, die als Bewegungsstudie über Bewegungsabläufe eines Performers erstellt wurde"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/Site",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Sites are Places something happens or happened at and/or something is or was placed at. Sites can be real Places that exist or have existed. Fictional Sites are not excluded."
+    "@value" : "Sites are Places something happens or happened at and/or something is or was placed at. Sites may be real Places that exist or have existed. Fictional Sites are not excluded."
   }, {
     "@language" : "de",
     "@value" : "Stätten sind Orte, an denen sich etwas ereignet oder ereignet hat und/oder an denen sich etwas befindet oder befand. Stätten können reale Orte sein, die existieren oder existiert haben. Fiktive Stätten sind nicht ausgeschlossen."
@@ -611,27 +695,33 @@
     "@value" : "This class comprises all Sites."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : "Das Foyer des 'Deutschen Theaters' in Berlin, in dem 1988 die Produktion (darstellende Künste) 'Clownonade' aufgeführt wurde"
+  }, {
+    "@language" : "de",
+    "@value" : "Der Museumsplatz in Wien, an dem 2019 Aufführungen im Rahmen der 'Wiener Festwochen' stattfanden"
+  }, {
+    "@language" : "de",
+    "@value" : "Die 'Volksbühne' in Berlin"
+  }, {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "The 'Museumsplatz' in Wien where performances occurred as part of the 'Wiener Festwochen' in 2019"
   }, {
-    "@language" : "de",
-    "@value" : "Alexanderplatz YZ, wo V aufgenommen wurde"
+    "@language" : "en",
+    "@value" : "The 'Volksbühne' in Berlin"
   }, {
-    "@language" : "de",
-    "@value" : "Bühne X, an der Aufführung Y stattfand"
-  }, {
-    "@language" : "de",
-    "@value" : "Wiese in X, auf der Y passierte"
+    "@language" : "en",
+    "@value" : "The foyer of 'Deutsches Theater' in Berlin where the performing arts performing arts production 'Clownonade' was performed in 1988"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A Time-Span is a temporal extent with starting point, end point and duration. A Time-Span can be defined for entities such as Information Objects and Events. A Time-Span is unlimited in its duration. Not all attributes of a Time-Span have to be known."
+    "@value" : "Time-Spans are temporal extents with starting point, end point and duration. A Time-Span may be defined for resources such as Information Objects and Events. A Time-Span is unlimited in its duration. Not all attributes of a Time-Span have to be known."
   }, {
     "@language" : "de",
-    "@value" : "Eine Zeitspanne ist ein zeitliches Ausmaß mit Startzeitpunkt, Endzeitpunkt und Dauer. Eine Zeitspanne kann sich auf Entitäten wie Informationsobjekte und Ereignisse beziehen. Eine Zeitspanne ist in ihrer Dauer unbeschränkt. Nicht alle Eigenschaften einer Zeitspanne müssen bekannt sein."
+    "@value" : "Zeitspannen sind zeitliche Ausmaße mit Startzeitpunkt, Endzeitpunkt und Dauer. Eine Zeitspanne kann sich auf Ressourcen wie Informationsobjekte und Ereignisse beziehen. Eine Zeitspanne ist in ihrer Dauer unbeschränkt. Nicht alle Eigenschaften einer Zeitspanne müssen bekannt sein."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -649,10 +739,22 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
-    "@value" : "1979-1989, 00:00:00:00-00:52:23:17"
+    "@value" : "00h:00m:00s - 00h:52m:23s auf einer Videokassette"
   }, {
     "@language" : "en",
-    "@value" : "1979-1989, 00:00:00:00-00:52:23:17"
+    "@value" : "00h:00m:00s - 00h:52m:23s on a video cassette"
+  }, {
+    "@language" : "de",
+    "@value" : "Die Dauer der 'Wiener Festwochen' von 2019"
+  }, {
+    "@language" : "en",
+    "@value" : "From 1979 to 1989"
+  }, {
+    "@language" : "en",
+    "@value" : "The duration of 'Wiener Festwochen' in 2019"
+  }, {
+    "@language" : "de",
+    "@value" : "Von 1979 bis 1989"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/beginsAtTime",
@@ -732,11 +834,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasAcrobat",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Akrobat*in beschrieben. "
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Akrobat*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as an acrobat."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -750,7 +852,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as acrobat."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as an acrobat."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Akrobat*in mitgewirkt hat."
@@ -766,11 +868,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasActor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Schauspieler*in beschrieben."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film, einer Aufführung oder einer anderen Ressource als Schauspieler*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a movie, a performance or another resource as an actor."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -784,7 +886,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as actor."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as an actor."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Schauspieler*in mitgewirkt hat."
@@ -800,11 +902,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion, einer Aufführung oder einer anderen Ressource als (Text-)Bearbeiter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel in Form einer Adaptation eines literarischen Werkes in ein Drama oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als (Text-)Bearbeiter*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Adaptation eines literarischen Werkes in ein Drama. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an adaptor. The contribution may occur towards an Information Object, for example by adapting a literary work into a drama. The contribution may also occur in form of a participation in the context of a performing arts production."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -818,7 +920,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as adaptor."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as an adaptor."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als (Text-)Bearbeiter*in mitgewirkt hat."
@@ -862,14 +964,38 @@
     "@value" : ""
   } ]
 }, {
+  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasAlternativeTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has alternative title"
+  }, {
+    "@language" : "de",
+    "@value" : "hat alternativen Titel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Beschreibt einen alternativen Titel einer Ressource."
+  }, {
+    "@language" : "en",
+    "@value" : "Describes an alternative title of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ]
+}, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasArtisticDirector",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Festivalkonzept, einer Aufführung oder einer anderen Ressource als künstlerische*r Leiter*in beschrieben. Eine Mitwirkung kann zum Beispiel in Form der Leitung des künstlerischen Gesamtkonzepts eines Festivalkonzepts oder einer einzelnen Performing Arts Aufführung erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Festivalkonzept, einer Aufführung oder einer anderen Ressource als künstlerische*r Leiter*in beschrieben. Die Mitwirkung kann zum Beispiel durch die Leitung des künstlerischen Gesamtkonzepts eines Festivalkonzepts oder einer Aufführung erfolgen."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as an artistic director. The contribution may occur by directing the overall artistic concept of a festival concept or a performance."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -883,7 +1009,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as artistic director."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as an artistic director."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als künstlerische*r Leiter*in mitgewirkt hat."
@@ -899,11 +1025,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasAssistantDirector",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as an assistant director."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -917,7 +1043,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as assistant director."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as an assistant director."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Regieassistent*in mitgewirkt hat."
@@ -934,10 +1060,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An audible reference usually describes the audible mention or capture of a resource by an Information Object. An audible reference is a specific form of reference."
+    "@value" : "An audible reference usually describes the audible mention or capture of a resource by an Information Object, for example in an audio recording. An audible reference is a specific form of reference."
   }, {
     "@language" : "de",
-    "@value" : "Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource von einem Informationsobjekt. Eine hörbare Referenz ist eine spezielle Form der Referenz."
+    "@value" : "Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt, zum Beispiel in einer Audio Aufzeichnung. Eine hörbare Referenz ist eine spezielle Form der Referenz."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -947,7 +1073,7 @@
     "@value" : "hat hörbare Referenz zu"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo"
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasReferenceTo"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -980,10 +1106,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An audiovisual reference usually describes the audible and/or visual mention or capture of a resource by an Information Object. This property can be used if the differentiation between audible and visual reference is not given or deemed necessary. An audiovisual reference is a specific form of reference."
+    "@value" : "An audiovisual reference usually describes the audible and visual mention or capture of a resource by an Information Object, for example in a video recording. An audiovisual reference is a specific form of reference."
   }, {
     "@language" : "de",
-    "@value" : "Eine audiovisuelle Referenz beschreibt in der Regel die hör- und/oder sichtbare Erwähnung oder Erfassung einer Ressource von einem Informationsobjekt. Diese Eigenschaft kann genutzt werden, wenn die Differenzierung zwischen hörbarer und sichtbarer Referenz nicht gegeben oder als notwendig erachtet ist. Eine audiovisuelle Referenz ist eine spezielle Form der Referenz."
+    "@value" : "Eine audiovisuelle Referenz beschreibt in der Regel die hör- und sichtbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt, zum Beispiel in einer Videoaufzeichnung. Eine audiovisuelle Referenz ist eine spezielle Form der Referenz."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -993,7 +1119,9 @@
     "@value" : "hat audiovisuelle Referenz zu"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasReferenceTo"
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo"
+  }, {
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasVisualReferenceTo"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -1013,11 +1141,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion, einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Autor*in eines literarischen Werkes oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Verfassen eines literarischen Werkes. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an author. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1031,7 +1159,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as author."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as an author."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Autor*in mitgewirkt hat."
@@ -1047,11 +1175,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasChoreographer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Choreograf*in beschrieben."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Choreograf*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a choreographer."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1065,7 +1193,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as choreographer."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a choreographer."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Choreograf*in mitgewirkt hat."
@@ -1081,28 +1209,28 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasCinematographer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Kameramann/Kamerafrau beschrieben."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Filmproduktion, einer Aufführung oder einer anderen Ressource als Cinematograph*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a film production, a performance or another resource as a cinematographer."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has cinematographer"
   }, {
     "@language" : "de",
-    "@value" : "hat Kameramann/Kamerafrau"
+    "@value" : "hat Cinematograph*in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as cinematographer."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a cinematographer."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Kameramann/Kamerafrau mitgewirkt hat."
+    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Cinematograph*in mitgewirkt hat."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -1115,11 +1243,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasClown",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Clown*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a clown."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1133,7 +1261,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as clown."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a clown."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Clown*in mitgewirkt hat."
@@ -1149,11 +1277,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasComposer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Komponist*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Komponist*in eines musikalischen Werks oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Lied, einer Aufführung oder einer anderen Ressource als Komponist*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Komposition eines musikalischen Werks. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a composer. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1167,7 +1295,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as composer."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a composer."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Komponist*in mitgewirkt hat."
@@ -1183,28 +1311,28 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Konzept Urheber*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Konzept Urheber*in einer textuellen Grundlage einer Produktion oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Konzept-Urheber*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Konzept-Urheberschaft einer textuellen Grundlage einer Produktion (darstellende Künste). Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a concept originator. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has concept originator"
   }, {
     "@language" : "de",
-    "@value" : "hat Konzept Urheber*in"
+    "@value" : "hat Konzept-Urheber*in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as concept originator."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a concept originator."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Konzept Urheber*in mitgewirkt hat."
+    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Konzept-Urheber*in mitgewirkt hat."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -1256,7 +1384,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to another resource with matching content."
+    "@value" : "Connects a resource to another resource to matching content."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einer anderen Ressource mit gleichem Inhalt."
@@ -1272,11 +1400,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Informationsobjekt oder einer anderen Ressource als Mitwirkende*n beschrieben. Es können pro Ressource mehrere Akteur*innen als Mitwirkende beteiligt sein. Wenn genauere Angaben der Beziehung zwischen Ressource und Mitwirkender/Mitwirkendem bekannt sind, sollte eine der Untereigenschaften dieser Eigenschaft genutzt werden."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Informationsobjekt oder einer anderen Ressource als Mitwirkende*n beschrieben. Es können pro Ressource mehrere Akteur*innen als Mitwirkende beteiligt sein. Wenn genauere Angaben der Beziehung zwischen Ressource und Mitwirkender/m bekannt sind, sollte eine der Untereigenschaften dieser Eigenschaft genutzt werden."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, an Information Object or another resource as a contributor. Multiple Agents may contribute to the same resource. If details about the relation between resource and Agent are known, one of the subproperties of this property should be used."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1306,11 +1434,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeBuilder",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion oder einer anderen Ressource als Kostümbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Kostümbauer*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Kostümdesigner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung eines Kostüms als auf dessen Gestaltung."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Kostümbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Herstellung eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Kostümdesigner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung eines Kostüms als auf dessen Gestaltung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a  costume, a performing arts production or another resource as a costume builder. XXXX Compared to the costume designer this term relates more closely to the aspect of manifacturing a costume rather than designing it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1324,7 +1452,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as costume builder."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a costume builder."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Kostümbauer*in mitgewirkt hat."
@@ -1340,25 +1468,25 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeDesigner",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion oder einer anderen Ressource als Kostümgestalter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Kostümgestalter*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Kostümbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Kostümbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Kostümbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a costume, a performing arts production or another resource as acostume designer. XXXX Compared to the costume designer this term relates more closely to the aspect of designing a costume rather than manufacturing it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has costume designer"
   }, {
     "@language" : "de",
-    "@value" : "hat Kostümgestalter*in"
+    "@value" : "hat Kostümbildner*in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as costume designer."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a costume designer."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Kostümdesigner*in mitgewirkt hat."
@@ -1374,11 +1502,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasCreator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Informationsobjekt oder einer anderen Ressource als Schöpfer*in beschrieben. Es können pro Ressource mehrere Akteur*innen als Schöpfer*in beteiligt sein. Aussagen über die Form der schöpferischen Tätigkeit des Akteur*innen können mit entsprechenden Eigenschaften parallel zu dieser getroffen werden."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Informationsobjekt oder einer anderen Ressource als Schöpfer*in beschrieben. Es können pro Ressource mehrere Akteur*innen als Schöpfer*innen beteiligt sein. Aussagen über die Form der schöpferischen Tätigkeit des/r Akteur*innen können mit entsprechenden Mitwirkenden-Eigenschaften parallel zu dieser getroffen werden."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, an Information Object or another resource as a creator. Multiple Agents may contribute to the same resource as creators. Statements about the type of creative activity of the Agent may be made by using corresponding contributor properties in addition to this property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1392,7 +1520,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as creator."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a creator."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Schöpfer*in mitgewirkt hat."
@@ -1408,11 +1536,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasDancer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Tänzer*in beschrieben."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Tänzer*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a dancer."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1426,7 +1554,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as dancer."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a dancer."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tänzer*in mitgewirkt hat."
@@ -1546,6 +1674,13 @@
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfFirstEdition",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Das Datum sollte nach ISO XY angegeben werden."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has date of first edition"
@@ -1573,6 +1708,13 @@
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfFirstLocalizedEdition",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "de",
+    "@value" : "Das Datum sollte nach ISO XY angegeben werden."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has date of first localized edition"
@@ -1639,34 +1781,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a physical object with a digital version of itself or a digital version of a part of the object."
+    "@value" : "Connects a Physical Object to a digital version of itself or a digital version of a part of the object."
   }, {
     "@language" : "en",
-    "@value" : "Verbindet ein physisches Objekt mit seiner digitalen Version oder einer digitalen Version eines Teils des Objekts."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "de",
-    "@value" : ""
-  }, {
-    "@language" : "en",
-    "@value" : ""
-  } ]
-}, {
-  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasDimensions",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has dimensions"
-  }, {
-    "@language" : "de",
-    "@value" : "hat Dimensionen"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "de",
-    "@value" : "Beschreibt die Dimensionen einer Ressource."
-  }, {
-    "@language" : "en",
-    "@value" : "Describes the dimensions of a resource."
+    "@value" : "Verbindet ein Physisches Objekt mit seiner digitalen Version oder einer digitalen Version eines Teils des Objekts."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -1679,11 +1797,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Film, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Regisseur*in eines Spielfilms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Regie für einen Spielfilms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a director. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1697,7 +1815,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as director."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a director."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Regisseur*in mitgewirkt hat."
@@ -1713,11 +1831,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasDramaturge",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung, einem Text oder einer anderen Ressource als Dramaturg*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Bearbeiter*in eines dramatischen Texts oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Text oder einer anderen Ressource als Dramaturg*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Bearbeitung eines dramatischen Texts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance, a text or another resource as a dramaturge. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1731,7 +1849,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as dramaturge."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a dramaturge."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Dramaturg*in mitgewirkt hat."
@@ -1747,11 +1865,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasEditor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Text oder einer anderen Ressource als Redakteur*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Herausgeber*in einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Text oder einer anderen Ressource als Redakteur*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Herausgeben einer Publikation. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as an editor. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1765,7 +1883,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as editor."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a editor."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Redakteur*in mitgewirkt hat."
@@ -1785,17 +1903,14 @@
     "@value" : "has extent"
   }, {
     "@language" : "de",
-    "@value" : "hat Umfang"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasFormat"
+    "@value" : "hat Ausmaß"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Beschreibt den Umfang einer Ressource."
+    "@value" : "Beschreibt das Format einer Ressource."
   }, {
     "@language" : "en",
-    "@value" : "Describes the extent of a resource."
+    "@value" : "Describes the format of a resource."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -1839,7 +1954,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Beschreibt den Vornamen eienr Person."
+    "@value" : "Beschreibt den Vornamen einer Person."
   }, {
     "@language" : "en",
     "@value" : "Describes the first name of a Person."
@@ -1856,13 +1971,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A workaround property for describing the first performance date of a performing arts production in case of insufficient description of related performances."
+    "@value" : "A workaround property for describing the first performance date of a performing arts performing arts production in case of insufficient description of related performances."
   }, {
     "@language" : "de",
-    "@value" : "Eine behelfsmäßige Eigenschaft zur Beschreibung des ersten Aufführungsdatums einer Produktion der darstellenden Künste bei nicht ausreichender Beschreibung der zugehörigen Aufführungen."
+    "@value" : "Eine behelfsmäßige Eigenschaft zur Beschreibung des ersten Aufführungsdatums einer Produktion (darstellende Künste) bei nicht ausreichender Beschreibung der zugehörigen Aufführungen."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction"
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1876,10 +1991,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Beschreibt das erste Aufführungsdatum einer Produktion der darstellenden Künste."
+    "@value" : "Beschreibt das erste Aufführungsdatum einer Produktion (darstellende Künste)."
   }, {
     "@language" : "en",
-    "@value" : "Describes the first performance date of a performing arts production."
+    "@value" : "Describes the first performance date of a performing arts performing arts production."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -1893,13 +2008,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "A first performance version usually is an original performing arts production, that is being performed for the first time"
   }, {
     "@language" : "de",
-    "@value" : "Eine Erstaufführungsversion ist eine originale, zum ersten Mal aufgeführte Produktion (darstellende Künste)."
+    "@value" : "Eine Erstaufführungsversion ist in der Regel eine originale, zum ersten Mal aufgeführte Produktion (darstellende Künste)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction"
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1909,38 +2024,17 @@
     "@value" : "hat Erstaufführungsversion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction"
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasVersion"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a performing arts production with its first performance version."
+    "@value" : "Connects a Creative Concept to its first performance version."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine Produktion (darstellende Künste) mit ihrer Erstaufführungsversion."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "de",
-    "@value" : ""
-  }, {
-    "@language" : "en",
-    "@value" : ""
-  } ]
-}, {
-  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasFormat",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has format"
-  }, {
-    "@language" : "de",
-    "@value" : "hat Format"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "de",
-    "@value" : "Beschreibt oder verbindet mit dem Format einer Ressource."
-  }, {
-    "@language" : "en",
-    "@value" : "Describes or connects to the format of a resource."
+    "@value" : "Verbindet ein Kreatives Konzept mit seiner Erstaufführungsversion."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -1967,7 +2061,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects to a homepage of an agent."
+    "@value" : "Connects to a homepage of an Agent."
   }, {
     "@language" : "de",
     "@value" : "Verbindet mit der Homepage eines/r Akteur*in."
@@ -1981,7 +2075,7 @@
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasIdentifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : ""
@@ -2014,11 +2108,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Illustrator*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Herausgeber*in einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Plakats oder einer anderen Ressource als Illustrator*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Illustration eines Plakats. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a poster or another resource as an illustrator. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2032,7 +2126,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as illustrator."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as an illustrator."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Illustrator*in mitgewirkt hat."
@@ -2049,10 +2143,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Diese Eigenschaft beschreibt die Beeinflussung im weiteren Sinne einer Ressource von einer anderen Ressource. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form der Referenzierung."
+    "@value" : "Diese Eigenschaft beschreibt die Beeinflussung im weiteren Sinne einer Ressource durch eine andere Ressource. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form der Referenz."
   }, {
     "@language" : "en",
-    "@value" : "This property describes the influence in a broader sense on a resource from another resource. An influence can be more or less recognizable and should be verifiable. An influence is a specific form of referencing."
+    "@value" : "This property describes the influence in a broader sense on a resource by another resource. An influence may be more or less recognizable and should be verifiable. An influence is a specific form of reference."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2072,21 +2166,21 @@
     "@value" : "Verbindet eine Ressource mit einer anderen Ressource, von der sie beeinflusst ist."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "Performing Arts Production Y is based on Performing Arts Production X, Text Y is influenced by Film X"
-  }, {
     "@language" : "de",
     "@value" : "Produktion (darstellende Künste) Y ist basiert auf Produktion (darstellende Künste) X, Text Y ist beeinflusst von Film X"
+  }, {
+    "@language" : "en",
+    "@value" : "performing arts performing arts production Y is based on performing arts performing arts production X, Text Y is influenced by Film X"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "An Information Carrier is a resource, that carries an Information Object. An Information Object may be carried by multiple Information Carriers, for example the same recording of a performance on a video cassette and on a USB flash drive. Multiple Information Objects may be carried by the same Information Carrier, for example multiple recordings of different performances on the same video cassette."
   }, {
     "@language" : "de",
-    "@value" : "Ein Informationsträger ist eine Entität, die ein Informationsobjekt repräsentiert. Ein Informationsobjekt kann von mehreren Informationsträgern repräsentiert werden, zum Beispiel die gleiche Aufnahme einer Aufführung auf einer Videokassette und als Digitales Objekt auf einem USB-Stick. Auf einem Informationsträger können mehrere Informationsobjekte repräsentiert werden, zum Beispiel mehrere Aufnahmen von verschiedenen Aufführungen auf einer Videokassette."
+    "@value" : "Ein Informationsträger ist eine Ressource, die ein Informationsobjekt trägt. Ein Informationsobjekt kann von mehreren Informationsträgern getragen werden, zum Beispiel die gleiche Aufnahme einer Aufführung auf einer Videokassette und auf einem USB-Stick. Auf einem Informationsträger können mehrere Informationsobjekte getragen werden, zum Beispiel mehrere Aufnahmen von verschiedenen Aufführungen auf derselben Videokassette."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject"
@@ -2098,9 +2192,12 @@
     "@language" : "de",
     "@value" : "hat Informationsträger"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier"
+  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects an information object with a physical or digital object it is represented on."
+    "@value" : "Connects an information object to a physical or digital object it is represented on."
   }, {
     "@language" : "en",
     "@value" : "Verbindet ein Informationsobjekt mit einem physischen oder digitalen Objekt, auf dem es repräsentiert ist."
@@ -2114,7 +2211,7 @@
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasIsbn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has ISBN"
@@ -2141,7 +2238,7 @@
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasIssn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has ISSN"
@@ -2280,13 +2377,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A workaround property for describing the last performance date of a performing arts production in case of insufficient description of related performances."
+    "@value" : "A workaround property for describing the last performance date of a performing arts performing arts production in case of insufficient description of related performances."
   }, {
     "@language" : "de",
-    "@value" : "Eine behelfsmäßige Eigenschaft zur Beschreibung des letzten Aufführungsdatums einer Produktion der darstellenden Künste bei nicht ausreichender Beschreibung der zugehörigen Aufführungen."
+    "@value" : "Eine behelfsmäßige Eigenschaft zur Beschreibung des letzten Aufführungsdatums einer Produktion (darstellende Künste) bei nicht ausreichender Beschreibung der zugehörigen Aufführungen."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction"
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2300,10 +2397,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
-    "@value" : "Beschreibt das letzte Aufführungsdatum einer Produktion der darstellenden Künste."
+    "@value" : "Beschreibt das letzte Aufführungsdatum einer Produktion (darstellende Künste)."
   }, {
     "@language" : "en",
-    "@value" : "Describes the last performance date of a performing arts production."
+    "@value" : "Describes the last performance date of a performing arts performing arts production."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -2316,11 +2413,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasLayouter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Publikation oder einer anderen Ressource als Layouter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Gestalter*in des Layouts einer Publikation oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Publikation oder einer anderen Ressource als Layouter*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung des Layouts einer Publikation. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a publication or another resource as a layouter. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2334,7 +2431,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as layouter."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a layouter."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Layouter*in mitgewirkt hat."
@@ -2350,28 +2447,28 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Lichtgestalter*in beschrieben."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Lichtdesigner*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as lighting designer."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has lighting designer"
   }, {
     "@language" : "de",
-    "@value" : "hat Lichtgestalter*in"
+    "@value" : "hat Lichtdesigner*in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as light designer."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a light designer."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Lichtgestalter*in mitgewirkt hat."
+    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Lichtdesigner*in mitgewirkt hat."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -2384,11 +2481,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasMakeUpArtist",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Visagist*in beschrieben."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Visagist*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a make up artist."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2402,7 +2499,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as make up artist."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a make up artist."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Visagist*in mitgewirkt hat."
@@ -2418,11 +2515,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Maskenbauer*in einer Maske oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Maskengestalter*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Maskenbauer*in einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask builder. XXXX Compared to the mask designer this term relates more closely to the aspect of manifacturing a mask rather than designing it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2436,7 +2533,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as mask builder."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a mask builder."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Maskenbauer*in mitgewirkt hat."
@@ -2452,28 +2549,28 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion oder einer anderen Ressource als Maskengestalter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Maskengestalter*in einer Maske oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Maske als auf deren Fertigung."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Maskenbildner*in einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Maske als auf deren Fertigung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask designer. XXXX Compared to the costume designer this term relates more closely to the aspect of designing a mask rather than manifacturing it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has mask designer"
   }, {
     "@language" : "de",
-    "@value" : "hat Maskengestalter*in"
+    "@value" : "hat Maskenbildner*in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as mask designer."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a mask designer."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Maskengestalter*in mitgewirkt hat."
+    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Maskenbildner*in mitgewirkt hat."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -2486,11 +2583,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasMediator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Festival, einem Workshop oder einer anderen Ressource als Vermittler*in beschrieben. Vermittler*innen können zum Beispiel Lehrer in einem Workshop oder Dozenten eines Vortrags sein."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Festival, einem Workshop oder einer anderen Ressource als Vermittler*in beschrieben. Diese Eigenschaft kann zum Beispiel für Lehrer in einem Workshop oder Dozenten eines Vortrags genutzt werden."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a festival, a workshop or another resource as Mediator. This property may be used for teachers of a workshop or lecturers of a lecture among others."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2501,7 +2598,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as mediator."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a mediator."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Vermittler*in mitgewirkt hat."
@@ -2515,7 +2612,7 @@
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasMedium",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has medium"
@@ -2523,15 +2620,12 @@
     "@language" : "de",
     "@value" : "hat Medium"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasFormat"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Beschreibt oder verbindet mit dem Medium einer Ressource."
+    "@value" : "Connects a resource to a medium of the resource."
   }, {
     "@language" : "en",
-    "@value" : "Describes or connects to the medium of a resource."
+    "@value" : "Verbindet eine Ressource mit einem Medium der Ressource."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -2544,11 +2638,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasMime",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Mime/Mimin beschrieben."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Mim*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as amime."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2562,7 +2656,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as mime."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a mime."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Mim*in mitgewirkt hat."
@@ -2578,11 +2672,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Musiker*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Musiker*in für ein musikalisches Werk oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Lieds, einer Aufführung oder einer anderen Ressource als Musiker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Musiker*in für ein musikalisches Werk. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a musician. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2596,7 +2690,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as musician."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a musician."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Musiker*in mitgewirkt hat."
@@ -2639,11 +2733,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasPantomime",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Pantomim*in beschrieben."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Pantomim*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a pantomime."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2657,7 +2751,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as pantomime."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a pantomime."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Pantomim*in mitgewirkt hat."
@@ -2674,10 +2768,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "A part-relationship may be formed between resources belonging to different classes and does not have to be of physical nature. An Information Object may be part of a Physical Object or another Information Object among others. A performance may be part of a festival."
   }, {
     "@language" : "de",
-    "@value" : "Eine Teilbeziehung kann zwischen verschiedenen Arten von Ressourcen bestehen und muss nicht von physischer Natur sein. Ein Informationsobjekt kann zum Beispiel Teil eines physischen Objekts oder eines anderen Informationsobjekts sein, eine Aufführung kann Teil eines Festivals sein."
+    "@value" : "Eine Teilbeziehung kann zwischen Ressourcen von verschiedenen Klassen bestehen und muss nicht von physischer Natur sein. Ein Informationsobjekt kann zum Beispiel Teil eines Physischen Objekts oder eines anderen Informationsobjekts sein. Eine Aufführung kann Teil eines Festivals sein."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2688,7 +2782,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to another resource which is a part of it."
+    "@value" : "Connects a resource to another resource which forms a part of it."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einer anderen Ressource, die ein Teil von ihr ist."
@@ -2704,11 +2798,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasParticipant",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Festival, einem Workshop oder einer anderen Ressource als Teilnehmer*in beschrieben. Teilnehmer*innen können zum Beispiel Teilnehmer*innen in einem Workshop oder an einem Vortrag sein."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Festival, einem Workshop oder einer anderen Ressource als Teilnehmer*in beschrieben. Diese Bezeichnung kann zum Beispiel für Teilnehmer*innen an einem Workshop oder einem Vortrag genutzt werden."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a festival, a workshop or another resource as a participant. This property may be used for participants in a workshop or a lecture among others."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2722,7 +2816,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as participant."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a participant."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Teilnehmer*in mitgewirkt hat."
@@ -2738,11 +2832,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasPerformer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Darsteller*in beschrieben. Diese Eigenschaft kann als allgemeine Eigenschaft für die Mitwirkung eines/r Akteur*in in jeglicher darstellerischen Form genutzt werden, wenn keine genaueren Angaben bekannt sind."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Darsteller*in beschrieben. Diese Eigenschaft kann als allgemeine Eigenschaft für die Mitwirkung eines/r Akteur*in an einer Ressource in jeglicher darstellerischen Form genutzt werden."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a performer. This property may be used as a general property for Agents that are contributing to a resource in any form of perfomance."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2756,7 +2850,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as performer."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a performer."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Darsteller*in mitgewirkt hat."
@@ -2772,11 +2866,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotoStudio",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Fotografie, einer Produktion oder einer anderen Ressource als Fotostudio  beschrieben"
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Fotografie, einer Produktion (darstellende Künste) oder einer anderen Ressource als Fotostudio beschrieben"
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a photograph, a performing arts production, a performance or another resource as a photo studio."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2806,11 +2900,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotographer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Fotografie, einer Produktion oder einer anderen Ressource als Fotograf*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Fotograf*in einer Fotografie oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Fotografie, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Fotograf*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Aufnehmen einer Fotografie. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a photograph, a performing arts production, a performance or another resource as a photographer. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2824,10 +2918,37 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as photographer."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a photographer."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Fotograf*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasPhysicalExtent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has physical extent"
+  }, {
+    "@language" : "de",
+    "@value" : "hat physisches Ausmaß"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasExtent"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Beschreibt das physische Ausmaß einer Ressource."
+  }, {
+    "@language" : "en",
+    "@value" : "Describes the physical extent of a resource."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -2850,14 +2971,14 @@
     "@value" : "has place of occurrence"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/Place"
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/Site"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasRelatedPlace"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects an event to the place it happened at."
+    "@value" : "Connects an Event to the Place it happened at."
   }, {
     "@language" : "de",
     "@value" : "Verbindet ein Ereignis mit einem Ort, an dem es sich ereignet."
@@ -2880,11 +3001,11 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has place of origin"
+  }, {
     "@language" : "de",
     "@value" : "hat Ursprung in Ort"
-  }, {
-    "@language" : "en",
-    "@value" : "originated at place"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/Place"
@@ -2910,11 +3031,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Dramatiker*in  beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Verfasser*in eines dramatischen Texts oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Text oder einer anderen Ressource als Dramatiker*in  beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Verfassung eines dramatischen Texts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a text or another resource as a playwright. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2928,7 +3049,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as playwright."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a playwright."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Dramatiker*in mitgewirkt hat."
@@ -2959,10 +3080,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to a predecessor of this resource."
+    "@value" : "Connects a resource to a predecessor of the resource."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine Ressource mit einem Vorgänger dieser Ressource."
+    "@value" : "Verbindet eine Ressource mit einem Vorgänger der Ressource."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -2975,11 +3096,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasProducer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Film oder einer anderen Ressource als Produzent*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Produzent*in eines Films oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film oder einer anderen Ressource als Produzent*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Produktion eines Films. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a film or another resource as a producer. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2993,7 +3114,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as producer."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a producer."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Produzent*in mitgewirkt hat."
@@ -3009,11 +3130,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Programmdirektor*in beschrieben."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Programmdirektor*in beschrieben. Diese Eigenschaft kann zum Beispiel Kuratoren oder Leiter des Programmes bei einem Festival genutzt werden. "
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a programme director. This property may be used for curators or directors of the programme of a festival among others."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3027,10 +3148,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to a festival or event by curating or directing the programme of the event."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as programme director."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die durch Kuration oder Leitung des Programmes bei einem Festival mitgewirkt hat."
+    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Programmdirektor*in mitgewirkt hat."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -3043,28 +3164,28 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasPrompter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Souffleur/Souffleuse beschrieben."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Souffleur*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a prompter."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has prompter"
   }, {
     "@language" : "de",
-    "@value" : "hat Souffleur/Souffleuse"
+    "@value" : "hat Souffleur*in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as prompter."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a prompter."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Souffleur/Souffleuse mitgewirkt hat."
+    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Souffleur*in mitgewirkt hat."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -3075,7 +3196,7 @@
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasProvenance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : ""
@@ -3108,11 +3229,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Zeitung, einer Produktion oder einer anderen Ressource als Herausgeber*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Herausgeber*in einer Zeitung oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Zeitung, einer Produktion (darstellende Künste) oder einer anderen Ressource als Herausgeber*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Herausgeben einer Zeitung. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a publisher. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3126,7 +3247,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as publisher."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a publisher."
   }, {
     "@language" : "en",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Verleger*in an der Ressource mitgewirkt hat."
@@ -3142,11 +3263,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingCompany",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Buch, einer Produktion oder einer anderen Ressource als Verlag beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Verfasser*in eines Buchs oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Buch, einer Produktion (darstellende Künste) oder einer anderen Ressource als Verlag beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Verlegen eines Buchs. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a book, a performing arts production or another resource as a publishing company. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3190,7 +3311,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to the place it was or is published at."
+    "@value" : "Connects a resource to the Place it was or is published at."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit dem Ort, an dem sie verlegt wird oder wurde."
@@ -3206,11 +3327,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Puppenbauer*in einer Puppe oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Puppengestalter*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Fertigung einer Puppe. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Puppenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet builder. XXXX Compared to the puppet designer this term relates more closely to the aspect of manifacturing a puppet rather than designing it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3224,7 +3345,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as puppet builder."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a puppet builder."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenbauer*in mitgewirkt hat."
@@ -3240,28 +3361,62 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion oder einer anderen Ressource als Puppengestalter*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Puppengestalter*in einer Puppe oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Puppengestalter*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Puppe als auf deren Fertigung."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion (darstellende Künste) oder einer anderen Ressource als Puppenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung einer Puppe. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Puppenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Puppe als auf deren Fertigung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet designer. XXXX Compared to the puppet builder this term relates more closely to the aspect of designing a puppet rather than manufacturing it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has puppet designer"
   }, {
     "@language" : "de",
-    "@value" : "hat Puppengestalter*in"
+    "@value" : "hat Puppenbildner*in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as puppet designer."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a puppet designer."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppengestalter*in mitgewirkt hat."
+    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenbildner*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppeteer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Puppenspiel, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Puppenspieler*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a puppet play, a performing arts production, a performance or another resource as a puppeteer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has puppeteer"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Puppenspieler*in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a puppeteer."
+  }, {
+    "@language" : "de",
+    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenspieler*in mitgewirkt hat."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -3275,10 +3430,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Diese Eigenschaft ist eine Form von Referenz, die speziell die Aufnahme eines Ereignisses von einem Informationsobjekt beschreibt."
+    "@value" : "Diese Eigenschaft ist eine Form von Referenz, die die Aufzeichnung eines Ereignisses als Informationsobjekt beschreibt."
   }, {
     "@language" : "en",
-    "@value" : "This property is a form of reference that specifically describes the recording of an event by an Information Object."
+    "@value" : "This property is a form of reference that describes the recording of an Event as an Information Object."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject"
@@ -3301,7 +3456,7 @@
     "@value" : "Connects an information object to an event that it recorded."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet ein Informationsobjekt mit einem Ereignis, von dem es eine Aufnahme enthält."
+    "@value" : "Verbindet ein Informationsobjekt mit einem von ihm aufgezeichneten Ereignis ."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -3314,28 +3469,28 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Tonmeister*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Tonmeister*in einer Audioaufnahme oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufnahme, einer Aufführung oder einer anderen Ressource als Tontechniker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Tontechnik einer Audioaufnahme. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a recording, a performance or another resource as a recordist. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has recordist"
   }, {
     "@language" : "de",
-    "@value" : "hat Tonmeister*in"
+    "@value" : "hat Tontechniker*in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as recordist."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a recordist."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tonmeister*in mitgewirkt hat."
+    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tontechniker*in mitgewirkt hat."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -3349,10 +3504,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A reference usually describes the capture or mention of a resource by an Information Object, a Creative Concept or other resources. A reference to a resource can be contained in a recording of the resource or in the labeling of an information carrier among others. In case the type of reference is given, one of the subproperties of this property should be used."
+    "@value" : "A reference usually describes the capture or mention of a resource by an Information Object, a Creative Concept or other resources. In case the type of reference is given, one of the subproperties of this property should be used."
   }, {
     "@language" : "de",
-    "@value" : "Eine Referenz beschreibt in der Regel die Erfassung oder Erwähnung einer Ressource von einem Informationsobjekt, einem Kreativen Konzept oder anderer Ressourcen. Eine Referenz zu einer Ressource kann zum Beispiel Teil einer Aufnahme der Ressource oder der Beschriftung eines Informationsträgers sein. Wenn die Art der Referenz gegeben ist, sollte eine der Untereigenschaften dieser Eigenschaft verwendet werden."
+    "@value" : "Eine Referenz beschreibt in der Regel die Erfassung oder Erwähnung einer Ressource durch ein Informationsobjekt, ein Kreatives Konzept oder eine andere Ressource. Wenn die Art der Referenz bekannt ist, sollte eine der Untereigenschaften dieser Eigenschaft verwendet werden."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3363,7 +3518,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to another resource it has any kind of reference to."
+    "@value" : "Connects a resource to another resource it has a reference to."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine Referenz enthält."
@@ -3380,7 +3535,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "If details about the relation between resource and Place are known, one of the subproperties of this property should be used."
   }, {
     "@language" : "de",
     "@value" : "Wenn genauere Angaben der Beziehung zwischen Ressource und Ort bekannt sind, sollte eine der Untereigenschaften dieser Eigenschaft genutzt werden."
@@ -3397,7 +3552,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to a place it is related to."
+    "@value" : "Connects a resource to a Place it is related to."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem Ort, mit dem sie in Verbindung steht."
@@ -3417,14 +3572,14 @@
     "@value" : "has related website"
   }, {
     "@language" : "de",
-    "@value" : "hat Bezug zu Webseite"
+    "@value" : "hat zugehörige Webseite"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Connects a resource to a related website of the resource."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine Ressource mit einer Webseite, die einen Bezug auf die Ressource hat."
+    "@value" : "Verbindet eine Ressource mit einer ihr zugehörigen Webseite."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -3454,10 +3609,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects an Agent to a Place in which he resides or resided."
+    "@value" : "Connects an Agent to a Place in which he resides."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine/n Akteur*in mit einem Ort, an dem er/sie residiert oder residierte."
+    "@value" : "Verbindet eine/n Akteur*in mit einem Ort, an dem er/sie residiert."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -3471,30 +3626,33 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "A restaged version usually is a performing arts production, which has already been performed in its original version and is performed again with little to no changes to its Concept."
   }, {
     "@language" : "de",
-    "@value" : "Erklären, was Wiederaufnahme ist oder klar?"
+    "@value" : "Eine Wiederaufnahmeversion ist in der Regel eine Produktion (darstellende Künste), die in ihrer ursprünglichen Version bereits aufgeführt wurde und mit wenigen bis keinen Änderungen an ihrem Konzept erneut aufgeführt wird."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction"
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has restaged version"
   }, {
     "@language" : "de",
-    "@value" : "hat Wiederaufnahme"
+    "@value" : "hat Wiederaufnahmeversion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsProduction"
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasVersion"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a performing arts production with its restaged version."
+    "@value" : "Connects a Creative Concept to its restaged version."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine Produktion der darstellenden Künste mit ihrer Wiederaufnahme."
+    "@value" : "Verbindet ein Kreatives Konzept mit seiner Wiederaufnahmeversion."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -3529,7 +3687,7 @@
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasRightsHolder",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has rights holder"
@@ -3539,10 +3697,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Beschreibt den/die Rechteinhaber*in einer Ressource oder verbindet die Ressource mit einem/r Akteur*in, der/die Rechteinhaber*in dieser Ressource ist."
+    "@value" : "Connects the resource to an agent who holds rights to the resource."
   }, {
     "@language" : "en",
-    "@value" : "Describes the rights holder of a resource or connects the resource to an agent who holds rights to the resource."
+    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die Rechteinhaber*in dieser Ressource ist."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -3555,11 +3713,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasSeamster",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Kostüm oder einer anderen Ressource als Näher*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Näher*in eines Kostüms oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Näher*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Nähen eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a costume, a performing arts production or another resource as a seamster. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3573,7 +3731,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as seamster."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a seamster."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Näher*in mitgewirkt hat."
@@ -3607,10 +3765,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Verbindet eine Produktion der darstellenden Künste mit der Spielzeit, in der die Produktion aufgeführt wird oder wurde."
+    "@value" : "Verbindet eine Produktion (darstellende Künste) mit der Spielzeit, in der die Produktion (darstellende Künste) aufgeführt wird oder wurde."
   }, {
     "@language" : "en",
-    "@value" : "connects to the season in which a performing arts production was or is performed."
+    "@value" : "connects to the season in which a performing arts performing arts production was or is performed."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -3623,11 +3781,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasSetBuilder",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Bühnenbild, einer Produktion oder einer anderen Ressource als Bühnenbauer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Bühnenbauer*in eines Bühnenbilds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Bühnenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung eines Kostüms als auf dessen Gestaltung."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Bühnenbild, einer Produktion (darstellende Künste) oder einer anderen Ressource als Bühnenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Fertigung eines Bühnenbilds. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Bühnenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Bühne als auf deren Gestaltung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a set, a performing arts production or another resource as a set builder. XXXX Compared to the set designer this term relates more closely to the aspect of manifacturing a set rather than designing it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3641,7 +3799,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as set builder."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a set builder."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Bühnenbauer*in mitgewirkt hat."
@@ -3657,11 +3815,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasSetDesigner",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Bühnenbild, einer Produktion oder einer anderen Ressource als Bühnenbildner*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Bühnenbildner*in eines Bühnenbilds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen. Im Vergleich zum/zur Bühnenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Bühnenbild, einer Produktion (darstellende Künste) oder einer anderen Ressource als Bühnenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Bühnenbilds. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Bühnenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Bühne als auf deren Fertigung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a set, a performing arts production or another resource as a set designer. XXXX Compared to the set builder this term relates more closely to the aspect of designing a set rather than manifacturing it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3675,7 +3833,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as set designer."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a set designer."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Bühnenbildner*in mitgewirkt hat."
@@ -3691,11 +3849,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einem Lied, einer Aufführung oder einer anderen Ressource als Sänger*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Sänger*in eines Lieds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Lied, einer Aufführung oder einer anderen Ressource als Sänger*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Singen für ein Lied. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a singer XXXX. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3706,7 +3864,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as singer."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a singer."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Sänger*in mitgewirkt hat."
@@ -3722,28 +3880,28 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasSoundDesigner",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Tongestalter*in beschrieben."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Tonmeister*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a sound designer."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has sound designer"
   }, {
     "@language" : "de",
-    "@value" : "hat Tongestalter*in"
+    "@value" : "hat Tonmeister*in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as sound designer."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a sound designer."
   }, {
     "@language" : "de",
-    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tongestalter*in mitgewirkt hat."
+    "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tonmeister*in mitgewirkt hat."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -3756,11 +3914,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasSource",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
     "@value" : "Diese Eigenschaft beschreibt, aus welcher Quelle ein Datensatz oder Teile eines Datensatzes stammen. Sowohl Literale als auch Weblinks sind erlaubt."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the source of a data set or part of a data set. Literals as well as Weblinks are accepted."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3787,11 +3945,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasSpeaker",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung, einem Film oder einer anderen Ressource als Sprecher*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Sprecher*in für einen Film oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Film oder einer anderen Ressource als Sprecher*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Sprechen für einen Film. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance a film or another resource as a speaker. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3805,7 +3963,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as speaker."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a speaker."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Sprecher*in mitgewirkt hat."
@@ -3821,11 +3979,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasStageManager",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Inspizient*in beschrieben."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Inspizient*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a stage manager."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3839,7 +3997,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as stage manager."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a stage manager."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Inspizient*in mitgewirkt hat."
@@ -3902,11 +4060,11 @@
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasPredecessor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "de",
-    "@value" : "Beschreibt den Nachfolger oder verbindet mit dem Nachfolger einer Ressource."
-  }, {
     "@language" : "en",
-    "@value" : "Describes or connects to the succeeding resource of a resource."
+    "@value" : "Connects a resource to the successor of the resource."
+  }, {
+    "@language" : "de",
+    "@value" : "Verbindet eine Ressource mit dem Nachfolger der Ressource."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -3919,11 +4077,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasSurtitleCreator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung, einem Übertitel oder einer anderen Ressource als Übertitel Schöpfer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Schöpfer*in eines Übertitels oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Übertitel oder einer anderen Ressource als Übertitel Schöpfer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Schöpfen eines Übertitels. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance, a surtitle or another resource as a surtitle creator."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3937,7 +4095,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as author of surtitles."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as an author of surtitles."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Übertitel Schöpfer*in mitgewirkt hat."
@@ -3980,11 +4138,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasTechnician",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung oder einer anderen Ressource als Techniker*in beschrieben."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Techniker*in beschrieben."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a technician."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3998,10 +4156,37 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as technician."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a technician."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Techniker*in mitgewirkt hat."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasTemporalExtent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has temporal extent"
+  }, {
+    "@language" : "de",
+    "@value" : "hat zeitlichen Umfang"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasExtent"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Beschreibt den zeitlichen Umfang einer Ressource."
+  }, {
+    "@language" : "en",
+    "@value" : "Describes the temporal extent of a resource."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "de",
@@ -4015,10 +4200,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A textual reference usually describes the mention of a resource by an Information Object, a Creative Concept or another resource in written form. A Textual References can be contained in programme booklets, literature or the labeling of an information carrier among others. A textual reference is a specific form of reference."
+    "@value" : "A textual reference usually describes the mention of a resource by an Information Object, a Creative Concept or another resource in written form. Resources may be textually referenced in programme booklets, books or the labeling of an information carrier among others. A textual reference is a specific form of reference."
   }, {
     "@language" : "de",
-    "@value" : "Eine textuelle Referenz beschreibt in der Regel die schriftliche Erwähnung einer Ressource von einem Informationsobjekt, einem Kreativen Konzept oder anderer Ressourcen. Textuelle Referenzen zu Ressourcen kommen zum Beispiel in Programmheften, Literatur oder in der Beschriftung eines Informationsträgers vor. Eine textuelle Referenz ist eine spezielle Form der Referenz."
+    "@value" : "Eine textuelle Referenz beschreibt in der Regel die schriftliche Erwähnung einer Ressource durch ein Informationsobjekt, ein Kreatives Konzept oder einer andere Ressource. Ressourcen werden zum Beispiel in Programmheften, Büchern oder der Beschriftung eines Informationsträgers textuell referenziert. Eine textuelle Referenz ist eine spezielle Form der Referenz."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4109,11 +4294,11 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion, einer Aufführung oder einer anderen Ressource als Übersetzer*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Übersetzer*in für einen Text oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Übersetzer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Übersetzung eines Texts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as a translator XXXX."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4127,7 +4312,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent that contributed to the resource as translator."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a translator."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Übersetzer*in mitgewirkt hat."
@@ -4141,10 +4326,10 @@
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "Literals as well as Weblinks are accepted."
   }, {
     "@language" : "de",
     "@value" : "Sowohl Literale als auch Weblinks sind erlaubt"
@@ -4171,28 +4356,65 @@
     "@value" : ""
   } ]
 }, {
-  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner",
+  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : ""
   }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung, einem Video oder einer anderen Ressource als Videodesigner*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Designer*in für ein Video als Teil eines Bühnenbilds oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen."
+    "@value" : "Andere Versionen sind z.B...."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has version"
+  }, {
     "@language" : "de",
-    "@value" : "hat Videodesigner*in"
+    "@value" : "hat Version"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Connects a Creative Concept to another version of the concept."
+  }, {
+    "@language" : "de",
+    "@value" : "Verbindet ein kreatives Konzept mit einer anderen Version des Konzepts."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "de",
+    "@value" : ""
   }, {
     "@language" : "en",
-    "@value" : "video designer"
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Video oder einer anderen Ressource als Videodesigner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Videos als Teil eines Bühnenbilds. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video designer. XXXX"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has video designer"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Videodesigner*in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent responsible for its video design."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a video designer."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Videodesigner*in mitgewirkt hat."
@@ -4208,25 +4430,25 @@
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "de",
-    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion, einer Aufführung, einem Video oder einer anderen Ressource als Videoeditor*in beschrieben. Die Mitwirkung kann explizit an einem Informationsobjekt, zum Beispiel als Editor*in für ein Video oder implizit, zum Beispiel in Form einer Beteiligung im Rahmen einer Produktion erfolgen"
+    "@value" : "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Video oder einer anderen Ressource als Videoeditor*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Editieren eines Videos. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."
+  }, {
+    "@language" : "en",
+    "@value" : "This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video editor. XXXX"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has video editor"
+  }, {
     "@language" : "de",
     "@value" : "hat Videoeditor*in"
-  }, {
-    "@language" : "en",
-    "@value" : "video editor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Connects a resource to an Agent responsible for its video editing."
+    "@value" : "Connects a resource to an Agent that contributed to the resource as a video editor."
   }, {
     "@language" : "de",
     "@value" : "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Videoeditor*in mitgewirkt hat."
@@ -4246,7 +4468,7 @@
     "@value" : "A visual reference usually describes the visual capture of a resource by an Information Object, for example on a photograph. A visual reference is a specific form of reference."
   }, {
     "@language" : "de",
-    "@value" : "Eine visuelle Referenz beschreibt in der Regel die sichtbare Erfassung einer Ressource von einem Informationsobjekt, zum Beispiel auf einer Fotografie. Eine visuelle Referenz ist eine spezielle Form der Referenz."
+    "@value" : "Eine visuelle Referenz beschreibt in der Regel die sichtbare Erfassung einer Ressource durch ein Informationsobjekt, zum Beispiel auf einer Fotografie. Eine visuelle Referenz ist eine spezielle Form der Referenz."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4256,7 +4478,7 @@
     "@value" : "hat visuelle Referenz zu"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo"
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasReferenceTo"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -4405,7 +4627,7 @@
     "@value" : "ist hörbar referenziert in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isAudioVisuallyReferencedIn"
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isReferencedIn"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo"
@@ -4428,7 +4650,9 @@
     "@value" : "ist audiovisuell referenziert in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isReferencedIn"
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isAudiblyReferencedIn"
+  }, {
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isVisuallyReferencedIn"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo"
@@ -4484,7 +4708,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Invers von 'hat Kameramann/Kamerafrau'."
+    "@value" : "Invers von 'hat Cinematograph*in'."
   }, {
     "@language" : "en",
     "@value" : "Inverse of 'has cinematographer'."
@@ -4494,7 +4718,7 @@
     "@value" : "is cinematographer of"
   }, {
     "@language" : "de",
-    "@value" : "ist Kameramann/Kamerafrau von"
+    "@value" : "ist Cinematograph*in von"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isContributorOf"
@@ -4550,7 +4774,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Invers von 'hat Konzept Urheber*in'."
+    "@value" : "Invers von 'hat Konzept-Urheber*in'."
   }, {
     "@language" : "en",
     "@value" : "Inverse of 'has concept originator'."
@@ -4560,7 +4784,7 @@
     "@value" : "is concept originator of"
   }, {
     "@language" : "de",
-    "@value" : "ist Konzept Urheber*in von"
+    "@value" : "ist Konzept-Urheber*in von"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isContributorOf"
@@ -4616,7 +4840,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Invers von 'hat Kostümgestalter*in'."
+    "@value" : "Invers von 'hat Kostümbildner*in'."
   }, {
     "@language" : "en",
     "@value" : "Inverse of 'has costume designer'."
@@ -4799,6 +5023,9 @@
     "@language" : "de",
     "@value" : "ist Erstaufführungsversion von"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isVersionOf"
+  } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceVersion"
   } ],
@@ -4808,26 +5035,6 @@
   }, {
     "@language" : "en",
     "@value" : "Inverse of 'has first performance version'."
-  } ]
-}, {
-  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isFormatOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "de",
-    "@value" : "Invers von 'hat Format'."
-  }, {
-    "@language" : "en",
-    "@value" : "Inverse of 'has format'."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is format of"
-  }, {
-    "@language" : "de",
-    "@value" : "ist Format von"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasFormat"
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isHomepageOf",
@@ -4911,11 +5118,10 @@
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom"
   } ],
-  "http://www.w3.org/2004/02/skos/core#definiiton" : [ {
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
     "@value" : "Invers von 'hat Einfluss von'."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+  }, {
     "@language" : "en",
     "@value" : "Inverse of 'has influence from'."
   } ]
@@ -4987,7 +5193,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Invers von 'hat Lichtgestalter*in'."
+    "@value" : "Invers von 'hat Lichtdesigner*in'."
   }, {
     "@language" : "en",
     "@value" : "Inverse of 'has lighting designer'."
@@ -4997,7 +5203,7 @@
     "@value" : "is lighting designer of"
   }, {
     "@language" : "de",
-    "@value" : "ist Lichtgestalter*in von"
+    "@value" : "ist Lichtdesigner*in von"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isContributorOf"
@@ -5056,7 +5262,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Invers von 'hat Maskengestalter*in'."
+    "@value" : "Invers von 'hat Maskenbildner*in'."
   }, {
     "@language" : "en",
     "@value" : "Inverse of 'has mask designer'."
@@ -5066,7 +5272,7 @@
     "@value" : "is mask designer of"
   }, {
     "@language" : "de",
-    "@value" : "ist Maskengestalter*in von"
+    "@value" : "ist Maskenbildner*in von"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isContributorOf"
@@ -5111,9 +5317,6 @@
     "@language" : "de",
     "@value" : "ist Medium von"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isFormatOf"
-  } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasMedium"
   } ]
@@ -5122,7 +5325,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Invers von 'hat Mime/Mimin'."
+    "@value" : "Invers von 'hat Mim*in'."
   }, {
     "@language" : "en",
     "@value" : "Inverse of 'has mime'."
@@ -5132,7 +5335,7 @@
     "@value" : "is mime of"
   }, {
     "@language" : "de",
-    "@value" : "ist Mime/Mimin von"
+    "@value" : "ist Mim*in von"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isContributorOf"
@@ -5168,7 +5371,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Invers von 'hat Pantomime/Pantomimin'."
+    "@value" : "Invers von 'hat Pantomim*in'."
   }, {
     "@language" : "en",
     "@value" : "Inverse of 'has pantomime'."
@@ -5178,7 +5381,7 @@
     "@value" : "is pantomime of"
   }, {
     "@language" : "de",
-    "@value" : "ist Pantomime/Pantomimin von"
+    "@value" : "ist Pantomim*in von"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isContributorOf"
@@ -5415,7 +5618,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Invers von 'hat Souffleur/Souffleuse'."
+    "@value" : "Invers von 'hat Souffleur*in'."
   }, {
     "@language" : "en",
     "@value" : "Inverse of 'has prompter'."
@@ -5425,7 +5628,7 @@
     "@value" : "is prompter of"
   }, {
     "@language" : "de",
-    "@value" : "ist Souffleur/Souffleuse von"
+    "@value" : "ist Souffleur*in von"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isContributorOf"
@@ -5550,7 +5753,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Invers von 'hat Puppengestalter*in'."
+    "@value" : "Invers von 'hat Puppenbildner*in'."
   }, {
     "@language" : "en",
     "@value" : "Inverse of 'has puppet designer'."
@@ -5560,7 +5763,30 @@
     "@value" : "is puppet designer of"
   }, {
     "@language" : "de",
-    "@value" : "ist Puppengestalter*in von"
+    "@value" : "ist Puppenbildner*in von"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isContributorOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner"
+  } ]
+}, {
+  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isPuppeteerOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Invers von 'hat Puppenspieler*in'."
+  }, {
+    "@language" : "en",
+    "@value" : "Inverse of 'has puppeteer'."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is puppeteer of"
+  }, {
+    "@language" : "de",
+    "@value" : "ist Puppenspieler*in von"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isContributorOf"
@@ -5584,11 +5810,10 @@
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordingOf"
   } ],
-  "http://www.w3.org/2004/02/skos/core#definiiton" : [ {
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
     "@value" : "Invers von 'hat Aufnahme von'."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+  }, {
     "@language" : "en",
     "@value" : "Inverse of 'has recording of'."
   } ]
@@ -5597,7 +5822,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Invers von 'hat Tonmeister*in'."
+    "@value" : "Invers von 'hat Tontechniker*in'."
   }, {
     "@language" : "en",
     "@value" : "Inverse of 'has recordist'."
@@ -5607,7 +5832,7 @@
     "@value" : "is recordist of"
   }, {
     "@language" : "de",
-    "@value" : "ist Tonmeister*in von"
+    "@value" : "ist Tontechniker*in von"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isContributorOf"
@@ -5700,12 +5925,16 @@
   } ]
 }, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isRestagedVersionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is restaged version of"
   }, {
     "@language" : "de",
     "@value" : "ist Wiederaufnahme von"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isVersionOf"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "de",
@@ -5848,7 +6077,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Invers von 'hat Tongestalter*in'."
+    "@value" : "Invers von 'hat Tonmeister*in'."
   }, {
     "@language" : "en",
     "@value" : "Inverse of 'has sound designer'."
@@ -5858,7 +6087,7 @@
     "@value" : "is sound designer of"
   }, {
     "@language" : "de",
-    "@value" : "ist Tongestalter*in von"
+    "@value" : "ist Tonmeister*in von"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isContributorOf"
@@ -6065,6 +6294,23 @@
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasType"
   } ]
 }, {
+  "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isVersionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is version of"
+  }, {
+    "@language" : "de",
+    "@value" : "ist Version von"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Invers von 'hat Version'."
+  }, {
+    "@language" : "en",
+    "@value" : "Inverse of 'has version'."
+  } ]
+}, {
   "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isVideoDesignerOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -6128,7 +6374,7 @@
     "@value" : "ist visuell referenziert in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isAudioVisuallyReferencedIn"
+    "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/isReferencedIn"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://lod.mediathek-tanz-theater.de/schema/paam/hasVisualReferenceTo"

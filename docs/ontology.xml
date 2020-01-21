@@ -13,10 +13,8 @@
         <dc:rights rdf:resource="https://creativecommons.org/licenses/by/4.0/deed.en"/>
         <dc:title xml:lang="de">Datenmodell für Archive der Darstellenden Künste</dc:title>
         <dc:title xml:lang="en">Performing Arts Archive Model</dc:title>
-        <terms:abstract xml:lang="de">Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts &quot;NONVERBALES THEATER
-                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991&quot; an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS).</terms:abstract>
-        <terms:abstract xml:lang="en">Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the &quot;NONVERBALES THEATER
-                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991&quot; digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS).</terms:abstract>
+        <terms:abstract xml:lang="de">Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts &quot;NONVERBALES THEATER IM EHEMALIGEN OSTTEIL BERLINS 1970-1991&quot; an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS).</terms:abstract>
+        <terms:abstract xml:lang="en">Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the &quot;NONVERBALES THEATER IM EHEMALIGEN OSTTEIL BERLINS 1970-1991&quot; digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS).</terms:abstract>
         <terms:contributor>Jonas Pitz</terms:contributor>
         <terms:contributor>Maxim Wittenbecher</terms:contributor>
         <terms:publisher xml:lang="en">Media Library for Dance and Theatre / ITI Germany</terms:publisher>
@@ -110,7 +108,7 @@
         <rdfs:label xml:lang="en">has acrobat</rdfs:label>
         <rdfs:label xml:lang="de">hat Akrobat*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as an acrobat.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Akrobat*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Akrobat*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -127,7 +125,7 @@
         <rdfs:label xml:lang="en">has actor</rdfs:label>
         <rdfs:label xml:lang="de">hat Schauspieler*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as an actor.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Schauspieler*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Schauspieler*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -140,13 +138,13 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als (Text-)Bearbeiter*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Adaptation eines literarischen Werkes in ein Drama. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an adaptor. The contribution may occur towards an Information Object, for example by adapting a literary work into a drama. The contribution may also occur in form of a participation in the context of a performing arts production.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an adaptor. The contribution may occur towards an Information Object, for example by adapting a literary work into a drama. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has adaptor</rdfs:label>
         <rdfs:label xml:lang="de">hat (Text-)Bearbeiter*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as an adaptor.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als (Text-)Bearbeiter*in mitgewirkt hat.</skos:definition>
-        <skos:example xml:lang="de"></skos:example>
-        <skos:example xml:lang="en"></skos:example>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als (Text-)Bearbeiter*in mitgewirkt hat.</skos:definition>
+        <skos:example xml:lang="en">&apos;Vladimir Filonow&apos; contributed to the performing arts production &apos;Number 9&apos; as adaptor.</skos:example>
+        <skos:example xml:lang="de">&apos;Vladimir Filonow&apos; hat an der Produktion (darstellende Künste) &apos;Number 9&apos; als (Text-)Bearbeiter mitgewirkt.</skos:example>
     </owl:ObjectProperty>
     
 
@@ -161,7 +159,7 @@
         <rdfs:label xml:lang="en">has artistic director</rdfs:label>
         <rdfs:label xml:lang="de">hat künstlerische*n Leiter*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as an artistic director.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als künstlerische*r Leiter*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als künstlerische*r Leiter*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -178,7 +176,7 @@
         <rdfs:label xml:lang="en">has assistant director</rdfs:label>
         <rdfs:label xml:lang="de">hat Regieassistent*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as an assistant director.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Regieassistent*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Regieassistent*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -191,17 +189,13 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasReferenceTo"/>
         <rdfs:comment xml:lang="en">An audible reference usually describes the audible mention or capture of a resource by an Information Object, for example in an audio recording. An audible reference is a specific form of reference.</rdfs:comment>
-        <rdfs:comment xml:lang="de">Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt, zum Beispiel in einer Audio Aufzeichnung. Eine hörbare Referenz ist eine spezielle Form der Referenz.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt, zum  Beispiel in einer Audioaufzeichnung. Eine hörbare Referenz ist eine spezielle Form der Referenz.</rdfs:comment>
         <rdfs:label xml:lang="en">has audible reference to</rdfs:label>
         <rdfs:label xml:lang="de">hat hörbare Referenz zu</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to another resource it has an audible reference to.</skos:definition>
         <skos:definition xml:lang="de">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält.</skos:definition>
-        <skos:example xml:lang="de">In Audioaufnahme R ist Person K im Gespräch zu hören.</skos:example>
-        <skos:example xml:lang="de">In Video E ist Person L zu hören, aber nicht zu sehen.</skos:example>
-        <skos:example xml:lang="de">In Video Z wird über Aufführung X geredet.</skos:example>
-        <skos:example xml:lang="en">In audio recording R Person K is heard talking</skos:example>
-        <skos:example xml:lang="en">In video E Person L is heard, but not seen.</skos:example>
-        <skos:example xml:lang="en">Performance X is being talked about in video Z</skos:example>
+        <skos:example xml:lang="en">In a video recording of the documentary television film &apos;Die mime corporel nach Etienne Decroux - Arbeitsdemonstration&apos; &apos;Hans-Eckard Eckhardt&apos; can be heard or is talked about</skos:example>
+        <skos:example xml:lang="de">In einer Videoaufzeichnung der Fernseh-Dokumentation &apos;Die mime corporel nach Etienne Decroux - Arbeitsdemonstration&apos; ist &apos;Hans-Eckard Eckhardt&apos; zu hören oder es wird über ihn gesprochen</skos:example>
     </owl:ObjectProperty>
     
 
@@ -218,8 +212,10 @@
         <rdfs:label xml:lang="de">hat audiovisuelle Referenz zu</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to another resource it has an audiovisual reference to.</skos:definition>
         <skos:definition xml:lang="de">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine audiovisuelle Referenz enthält.</skos:definition>
-        <skos:example xml:lang="de">In Video R ist Person K im Gespräch zu hören, In Video R ist Person K zu sehen, Video R zeigt Video T</skos:example>
-        <skos:example xml:lang="en">In video R Person K is heard talking, In video R Person K is seen, Video R shows video T</skos:example>
+        <skos:example xml:lang="en"></skos:example>
+        <skos:example xml:lang="de">In einer Videoaufzeichnung der Aufführung &apos;Eberhard Kube: Stilpantomimen (Solo)&apos; ist &apos;Eberhard Kube&apos; zu sehen und zu hören</skos:example>
+        <skos:example xml:lang="de">In einer Videoaufzeichnung ist die Aufführung &apos;Eberhard Kube: Stilpantomimen (Solo)&apos; zu sehen und zu hören</skos:example>
+        <skos:example xml:lang="de">In einer Videoaufzeichung ist eine Aufführung der Produktion &apos;Café Fatal&apos; zu sehen</skos:example>
     </owl:ObjectProperty>
     
 
@@ -230,13 +226,15 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Verfassen eines literarischen Werkes. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an author. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an author. The contribution may occur towards an Information Object, for example by authoring a literary work. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has author</rdfs:label>
         <rdfs:label xml:lang="de">hat Autor*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as an author.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Autor*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Autor*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
+        <skos:example xml:lang="en">For the performing arts production &apos;Die Horatier und die Kuriatier&apos; the text &apos;Die Horatier und die Kuriatier&apos; by author &apos;Bertold Brecht&apos; was used</skos:example>
+        <skos:example xml:lang="de">Für die Produktion (darstellende Künste) &apos;Die Horatier und die Kuriatier&apos; wurde der Text &apos;Die Horatier und die Kuriatier&apos; von dem Autor &apos;Bertold Brecht&apos; genutzt.</skos:example>
     </owl:ObjectProperty>
     
 
@@ -251,7 +249,7 @@
         <rdfs:label xml:lang="en">has choreographer</rdfs:label>
         <rdfs:label xml:lang="de">hat Choreograf*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a choreographer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Choreograf*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Choreograf*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -268,7 +266,7 @@
         <rdfs:label xml:lang="en">has cinematographer</rdfs:label>
         <rdfs:label xml:lang="de">hat Cinematograph*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a cinematographer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Cinematograph*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Cinematograph*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -285,7 +283,7 @@
         <rdfs:label xml:lang="en">has clown</rdfs:label>
         <rdfs:label xml:lang="de">hat Clown*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a clown.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Clown*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Clown*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -298,11 +296,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasComposer">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Lied, einer Aufführung oder einer anderen Ressource als Komponist*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Komposition eines musikalischen Werks. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a composer. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a composer. The contribution may occur towards an Information Object, for example by composing a musical work. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has composer</rdfs:label>
         <rdfs:label xml:lang="de">hat Komponist*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a composer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Komponist*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Komponist*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -314,12 +312,12 @@
 
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
-        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Konzept-Urheber*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Konzept-Urheberschaft einer textuellen Grundlage einer Produktion (darstellende Künste). Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a concept originator. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Konzept-Urheber*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Urheberschaft eines textuellen Konzepts für eine Produktion (darstellende Künste). Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a concept originator. The contribution may occur towards an Information Object, for example by originating a textual concept for a performing arts production. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has concept originator</rdfs:label>
         <rdfs:label xml:lang="de">hat Konzept-Urheber*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a concept originator.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Konzept-Urheber*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Konzept-Urheber*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -366,11 +364,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeBuilder">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Kostümbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Herstellung eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Kostümdesigner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung eines Kostüms als auf dessen Gestaltung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a  costume, a performing arts production or another resource as a costume builder. XXXX Compared to the costume designer this term relates more closely to the aspect of manifacturing a costume rather than designing it.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a  costume, a performing arts production or another resource as a costume builder. The contribution may occur towards an Information Object, for example by building a costume. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the costume designer this term relates more closely to the aspect of manufacturing a costume rather than designing it.</rdfs:comment>
         <rdfs:label xml:lang="en">has costume builder</rdfs:label>
         <rdfs:label xml:lang="de">hat Kostümbauer*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a costume builder.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Kostümbauer*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Kostümbauer*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -383,11 +381,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeDesigner">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Kostümbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Kostümbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a costume, a performing arts production or another resource as acostume designer. XXXX Compared to the costume designer this term relates more closely to the aspect of designing a costume rather than manufacturing it.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a costume, a performing arts production or another resource as a costume designer. The contribution may occur towards an Information Object, for example by designing a costume. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the costume designer this term relates more closely to the aspect of designing a costume rather than manufacturing it.</rdfs:comment>
         <rdfs:label xml:lang="en">has costume designer</rdfs:label>
         <rdfs:label xml:lang="de">hat Kostümbildner*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a costume designer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Kostümdesigner*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Kostümdesigner*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -404,7 +402,7 @@
         <rdfs:label xml:lang="en">has creator</rdfs:label>
         <rdfs:label xml:lang="de">hat Schöpfer*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a creator.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Schöpfer*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Schöpfer*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -421,9 +419,11 @@
         <rdfs:label xml:lang="en">has dancer</rdfs:label>
         <rdfs:label xml:lang="de">hat Tänzer*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a dancer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tänzer*in mitgewirkt hat.</skos:definition>
-        <skos:example xml:lang="de"></skos:example>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Tänzer*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="en"></skos:example>
+        <skos:example xml:lang="de">&apos;vid_016_002&apos; hat Tänzerin &apos;Edith Demharter&apos;</skos:example>
+        <skos:example xml:lang="de">Der Film &apos;Das triadische Ballett. Ein Film in drei Teilen nach den Tänzen von Oskar Schlemmer&apos; hat Tänzerin &apos;Edith Demharter&apos;</skos:example>
+        <skos:example xml:lang="de">In einer Aufzeichnung von &apos;Das triadische Ballett. Ein Film in drei Teilen nach den Tänzen von Oskar Schlemmer&apos; ist &apos;Edith Demharter&apos; als Tänzerin zu sehen</skos:example>
     </owl:ObjectProperty>
     
 
@@ -449,12 +449,12 @@
 
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
-        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Regie für einen Spielfilms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a director. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Regie für einen Film. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a director. The contribution may occur towards an Information Object, for example by directing a film. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has director</rdfs:label>
         <rdfs:label xml:lang="de">hat Regisseur*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a director.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Regisseur*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Regisseur*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -467,11 +467,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasDramaturge">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Text oder einer anderen Ressource als Dramaturg*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Bearbeitung eines dramatischen Texts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance, a text or another resource as a dramaturge. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance, a text or another resource as a dramaturge. The contribution may occur towards an Information Object, for example by revising a dramatic text. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has dramaturge</rdfs:label>
         <rdfs:label xml:lang="de">hat Dramaturg*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a dramaturge.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Dramaturg*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Dramaturg*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -484,11 +484,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasEditor">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Text oder einer anderen Ressource als Redakteur*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Herausgeben einer Publikation. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as an editor. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as an editor. The contribution may occur towards an Information Object, for example by publishing a publication. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has editor</rdfs:label>
         <rdfs:label xml:lang="de">hat Redakteur*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a editor.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Redakteur*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Redakteur*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -522,8 +522,8 @@
         <rdfs:domain rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/Agent"/>
         <rdfs:label xml:lang="en">has homepage</rdfs:label>
         <rdfs:label xml:lang="de">hat Homepage</rdfs:label>
-        <skos:definition xml:lang="en">Connects to a homepage of an Agent.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet mit der Homepage eines/r Akteur*in.</skos:definition>
+        <skos:definition xml:lang="en">Connects an Agent to a homepage of the Agent.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet einen Akteur mit einer Homepage des/r Akteur*in.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -542,12 +542,12 @@
 
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
-        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Plakats oder einer anderen Ressource als Illustrator*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Illustration eines Plakats. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a poster or another resource as an illustrator. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Plakats oder einer anderen Ressource als Illustrator*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Illustration eines Programmhefts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a poster or another resource as an illustrator. The contribution may occur towards an Information Object, for example by illustrating a programme booklet. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has illustrator</rdfs:label>
         <rdfs:label xml:lang="de">hat Illustrator*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as an illustrator.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Illustrator*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Illustrator*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -559,14 +559,14 @@
 
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasReferenceTo"/>
-        <rdfs:comment xml:lang="de">Diese Eigenschaft beschreibt die Beeinflussung im weiteren Sinne einer Ressource durch eine andere Ressource. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form der Referenz.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the influence in a broader sense on a resource by another resource. An influence may be more or less recognizable and should be verifiable. An influence is a specific form of reference.</rdfs:comment>
-        <rdfs:label xml:lang="en">has influence on</rdfs:label>
-        <rdfs:label xml:lang="de">hat Einfluss auf</rdfs:label>
+        <rdfs:comment xml:lang="de">Diese Eigenschaft beschreibt die Beeinflussung einer Ressource durch eine andere Ressource im weiteren Sinne. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form der Referenz.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the influence on a resource by another resource in a broader sense. An influence may be more or less recognizable and should be verifiable. An influence is a specific form of reference.</rdfs:comment>
+        <rdfs:label xml:lang="en">has influence from</rdfs:label>
+        <rdfs:label xml:lang="de">hat Einfluss von</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to another resource that it is influenced by.</skos:definition>
         <skos:definition xml:lang="de">Verbindet eine Ressource mit einer anderen Ressource, von der sie beeinflusst ist.</skos:definition>
         <skos:example xml:lang="de">Produktion (darstellende Künste) Y ist basiert auf Produktion (darstellende Künste) X, Text Y ist beeinflusst von Film X</skos:example>
-        <skos:example xml:lang="en">performing arts performing arts production Y is based on performing arts performing arts production X, Text Y is influenced by Film X</skos:example>
+        <skos:example xml:lang="en">performing arts production Y is based on performing arts production X, Text Y is influenced by Film X</skos:example>
     </owl:ObjectProperty>
     
 
@@ -579,7 +579,7 @@
         <rdfs:range rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier"/>
         <rdfs:comment xml:lang="en">An Information Carrier is a resource, that carries an Information Object. An Information Object may be carried by multiple Information Carriers, for example the same recording of a performance on a video cassette and on a USB flash drive. Multiple Information Objects may be carried by the same Information Carrier, for example multiple recordings of different performances on the same video cassette.</rdfs:comment>
         <rdfs:comment xml:lang="de">Ein Informationsträger ist eine Ressource, die ein Informationsobjekt trägt. Ein Informationsobjekt kann von mehreren Informationsträgern getragen werden, zum Beispiel die gleiche Aufnahme einer Aufführung auf einer Videokassette und auf einem USB-Stick. Auf einem Informationsträger können mehrere Informationsobjekte getragen werden, zum Beispiel mehrere Aufnahmen von verschiedenen Aufführungen auf derselben Videokassette.</rdfs:comment>
-        <rdfs:label xml:lang="en">has information carrier</rdfs:label>
+        <rdfs:label xml:lang="en">has Information Carrier</rdfs:label>
         <rdfs:label xml:lang="de">hat Informationsträger</rdfs:label>
         <skos:definition xml:lang="en">Connects an information object to a physical or digital object it is represented on.</skos:definition>
         <skos:definition xml:lang="en">Verbindet ein Informationsobjekt mit einem physischen oder digitalen Objekt, auf dem es repräsentiert ist.</skos:definition>
@@ -595,11 +595,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasLayouter">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Publikation oder einer anderen Ressource als Layouter*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung des Layouts einer Publikation. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a publication or another resource as a layouter. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a publication or another resource as a layouter. The contribution may occur towards an Information Object, for example by designing the layout of a publication. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has layouter</rdfs:label>
         <rdfs:label xml:lang="de">hat Layouter*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a layouter.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Layouter*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Layouter*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -612,11 +612,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Lichtdesigner*in beschrieben.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as lighting designer.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a lighting designer.</rdfs:comment>
         <rdfs:label xml:lang="en">has lighting designer</rdfs:label>
         <rdfs:label xml:lang="de">hat Lichtdesigner*in</rdfs:label>
-        <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a light designer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Lichtdesigner*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a lighting designer.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Lichtdesigner*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -633,7 +633,7 @@
         <rdfs:label xml:lang="en">has make up artist</rdfs:label>
         <rdfs:label xml:lang="de">hat Visagist*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a make up artist.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Visagist*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Visagist*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -645,12 +645,12 @@
 
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
-        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Maskenbauer*in einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask builder. XXXX Compared to the mask designer this term relates more closely to the aspect of manifacturing a mask rather than designing it.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Bauen einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask builder. The contribution may occur towards an Information Object, for example by building a mask. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the mask designer this term relates more closely to the aspect of manufacturing a mask rather than designing it.</rdfs:comment>
         <rdfs:label xml:lang="en">has mask builder</rdfs:label>
         <rdfs:label xml:lang="de">hat Maskenbauer*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a mask builder.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Maskenbauer*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Maskenbauer*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -662,12 +662,12 @@
 
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
-        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Maskenbildner*in einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Maske als auf deren Fertigung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask designer. XXXX Compared to the costume designer this term relates more closely to the aspect of designing a mask rather than manifacturing it.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Maske als auf deren Fertigung.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask designer. The contribution may occur towards an Information Object, for example by designing a mask. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the costume designer this term relates more closely to the aspect of designing a mask rather than manufacturing it.</rdfs:comment>
         <rdfs:label xml:lang="en">has mask designer</rdfs:label>
         <rdfs:label xml:lang="de">hat Maskenbildner*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a mask designer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Maskenbildner*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Maskenbildner*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -683,7 +683,7 @@
         <rdfs:label xml:lang="en">has mediator</rdfs:label>
         <rdfs:label xml:lang="de">hat Vermittler*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a mediator.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Vermittler*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Vermittler*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -710,11 +710,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasMime">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Mim*in beschrieben.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as amime.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a mime.</rdfs:comment>
         <rdfs:label xml:lang="en">has mime</rdfs:label>
         <rdfs:label xml:lang="de">hat Mim*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a mime.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Mim*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Mim*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -726,12 +726,12 @@
 
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
-        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Lieds, einer Aufführung oder einer anderen Ressource als Musiker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Musiker*in für ein musikalisches Werk. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a musician. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Lieds, einer Aufführung oder einer anderen Ressource als Musiker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel als Musiker*in für ein musikalisches Werk. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a musician. The contribution may occur towards an Information Object, for example as musician for a musical work. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has musician</rdfs:label>
         <rdfs:label xml:lang="de">hat Musiker*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a musician.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Musiker*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Musiker*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -748,7 +748,7 @@
         <rdfs:label xml:lang="en">has pantomime</rdfs:label>
         <rdfs:label xml:lang="de">hat Pantomim*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a pantomime.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Pantomim*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Pantomim*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -782,7 +782,7 @@
         <rdfs:label xml:lang="en">has participant</rdfs:label>
         <rdfs:label xml:lang="de">hat Teilnehmer*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a participant.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Teilnehmer*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Teilnehmer*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -799,7 +799,7 @@
         <rdfs:label xml:lang="en">has performer</rdfs:label>
         <rdfs:label xml:lang="de">hat Darsteller*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a performer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Darsteller*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Darsteller*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -816,7 +816,7 @@
         <rdfs:label xml:lang="en">has photo studio</rdfs:label>
         <rdfs:label xml:lang="de">hat Fotostudio</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to a photo studio that contributed to its creation.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem Fotostudio, dass bei ihrer Kreierung beigetragen hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem Fotostudio, dass bei ihrer Schaffung beigetragen hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -829,11 +829,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotographer">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Fotografie, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Fotograf*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Aufnehmen einer Fotografie. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a photograph, a performing arts production, a performance or another resource as a photographer. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a photograph, a performing arts production, a performance or another resource as a photographer. The contribution may occur towards an Information Object, for example by taking a photograph. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has photographer</rdfs:label>
         <rdfs:label xml:lang="de">hat Fotograf*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a photographer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Fotograf*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Fotograf*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -881,11 +881,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Text oder einer anderen Ressource als Dramatiker*in  beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Verfassung eines dramatischen Texts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a text or another resource as a playwright. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a text or another resource as a playwright. The contribution may occur towards an Information Object, for example by authoring a dramatic text. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has playwright</rdfs:label>
         <rdfs:label xml:lang="de">hat Dramatiker*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a playwright.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Dramatiker*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Dramatiker*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -915,11 +915,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasProducer">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film oder einer anderen Ressource als Produzent*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Produktion eines Films. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a film or another resource as a producer. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a film or another resource as a producer. The contribution may occur towards an Information Object, for example by producing a film. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has producer</rdfs:label>
         <rdfs:label xml:lang="de">hat Produzent*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a producer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Produzent*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Produzent*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -931,12 +931,12 @@
 
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
-        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Programmdirektor*in beschrieben. Diese Eigenschaft kann zum Beispiel Kuratoren oder Leiter des Programmes bei einem Festival genutzt werden. </rdfs:comment>
+        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Programmdirektor*in beschrieben. Diese Eigenschaft kann zum Beispiel Kurator*innen oder Leiter*innen des Programmes bei einem Festival genutzt werden. </rdfs:comment>
         <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a programme director. This property may be used for curators or directors of the programme of a festival among others.</rdfs:comment>
         <rdfs:label xml:lang="en">has programme director</rdfs:label>
         <rdfs:label xml:lang="de">hat Programmdirektor*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as programme director.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Programmdirektor*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Programmdirektor*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -953,7 +953,7 @@
         <rdfs:label xml:lang="en">has prompter</rdfs:label>
         <rdfs:label xml:lang="de">hat Souffleur*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a prompter.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Souffleur*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Souffleur*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -982,11 +982,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Zeitung, einer Produktion (darstellende Künste) oder einer anderen Ressource als Herausgeber*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Herausgeben einer Zeitung. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a publisher. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a publisher. The contribution may occur towards an Information Object, for example by publishing a newspaper. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has publisher</rdfs:label>
         <rdfs:label xml:lang="de">hat Herausgeber*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a publisher.</skos:definition>
-        <skos:definition xml:lang="en">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Verleger*in an der Ressource mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="en">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Verleger*in an der Ressource mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -999,11 +999,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingCompany">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Buch, einer Produktion (darstellende Künste) oder einer anderen Ressource als Verlag beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Verlegen eines Buchs. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a book, a performing arts production or another resource as a publishing company. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a book, a performing arts production or another resource as a publishing company. The contribution may occur towards an Information Object, for example by publishing a book. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has publishing company</rdfs:label>
         <rdfs:label xml:lang="de">hat Verlag</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that operated as publishing company for the resource.</skos:definition>
-        <skos:definition xml:lang="en">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Verlag für die Ressource mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="en">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Verlag für die Ressource mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1031,12 +1031,12 @@
 
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
-        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Fertigung einer Puppe. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Puppenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet builder. XXXX Compared to the puppet designer this term relates more closely to the aspect of manifacturing a puppet rather than designing it.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Fertigung einer Puppe. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Puppenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet builder. The contribution may occur towards an Information Object, for example by building a puppet. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the puppet designer this term relates more closely to the aspect of manufacturing a puppet rather than designing it.</rdfs:comment>
         <rdfs:label xml:lang="en">has puppet builder</rdfs:label>
         <rdfs:label xml:lang="de">hat Puppenbauer*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a puppet builder.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenbauer*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Puppenbauer*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1049,11 +1049,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion (darstellende Künste) oder einer anderen Ressource als Puppenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung einer Puppe. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Puppenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Puppe als auf deren Fertigung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet designer. XXXX Compared to the puppet builder this term relates more closely to the aspect of designing a puppet rather than manufacturing it.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet designer. The contribution may occur towards an Information Object, for example by designing a puppet. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the puppet builder this term relates more closely to the aspect of designing a puppet rather than manufacturing it.</rdfs:comment>
         <rdfs:label xml:lang="en">has puppet designer</rdfs:label>
         <rdfs:label xml:lang="de">hat Puppenbildner*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a puppet designer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenbildner*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Puppenbildner*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1070,7 +1070,7 @@
         <rdfs:label xml:lang="en">has puppeteer</rdfs:label>
         <rdfs:label xml:lang="de">hat Puppenspieler*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a puppeteer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenspieler*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Puppenspieler*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1084,7 +1084,7 @@
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasReferenceTo"/>
         <rdfs:domain rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject"/>
         <rdfs:range rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/Event"/>
-        <rdfs:comment xml:lang="de">Diese Eigenschaft ist eine Form von Referenz, die die Aufzeichnung eines Ereignisses als Informationsobjekt beschreibt.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Diese Eigenschaft ist eine Form von Referenz, die die Aufzeichnung eines Ereignisses als ein Informationsobjekt beschreibt.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property is a form of reference that describes the recording of an Event as an Information Object.</rdfs:comment>
         <rdfs:label xml:lang="en">has recording of</rdfs:label>
         <rdfs:label xml:lang="de">hat Aufnahme von</rdfs:label>
@@ -1101,12 +1101,12 @@
 
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
-        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufnahme, einer Aufführung oder einer anderen Ressource als Tontechniker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Tontechnik einer Audioaufnahme. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a recording, a performance or another resource as a recordist. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufnahme, einer Aufführung oder einer anderen Ressource als Tontechniker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel als Tontechniker*in einer Audioaufnahme. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a recording, a performance or another resource as a recordist. The contribution may occur towards an Information Object, for example as recordist of an audio recording. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has recordist</rdfs:label>
         <rdfs:label xml:lang="de">hat Tontechniker*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a recordist.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tontechniker*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Tontechniker*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1216,11 +1216,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasSeamster">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Näher*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Nähen eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a costume, a performing arts production or another resource as a seamster. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a costume, a performing arts production or another resource as a seamster. The contribution may occur towards an Information Object, for example by sewing a costume. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has seamster</rdfs:label>
         <rdfs:label xml:lang="de">hat Näher*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a seamster.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Näher*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Näher*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1236,8 +1236,8 @@
         <rdfs:comment xml:lang="de">Spielzeit erklären oder klar?</rdfs:comment>
         <rdfs:label xml:lang="en">has season</rdfs:label>
         <rdfs:label xml:lang="de">hat Spielzeit</rdfs:label>
-        <skos:definition xml:lang="en">Verbindet eine Produktion (darstellende Künste) mit der Spielzeit, in der die Produktion (darstellende Künste) aufgeführt wird oder wurde.</skos:definition>
-        <skos:definition xml:lang="en">connects to the season in which a performing arts performing arts production was or is performed.</skos:definition>
+        <skos:definition xml:lang="en">Verbindet eine Ressource mit der Spielzeit, in der eine Produktion (darstellende Künste) aufgeführt wird oder wurde.</skos:definition>
+        <skos:definition xml:lang="en">connects a resource to the season in which a performing arts production was or is performed. ???</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1250,11 +1250,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasSetBuilder">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Bühnenbild, einer Produktion (darstellende Künste) oder einer anderen Ressource als Bühnenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Fertigung eines Bühnenbilds. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Bühnenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Bühne als auf deren Gestaltung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a set, a performing arts production or another resource as a set builder. XXXX Compared to the set designer this term relates more closely to the aspect of manifacturing a set rather than designing it.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a stage set, a performing arts production or another resource as a set builder. The contribution may occur towards an Information Object, for example by building a stage set. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the set designer this term relates more closely to the aspect of manufacturing a set rather than designing it.</rdfs:comment>
         <rdfs:label xml:lang="en">has set builder</rdfs:label>
         <rdfs:label xml:lang="de">hat Bühnenbauer*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a set builder.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Bühnenbauer*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Bühnenbauer*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1267,11 +1267,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasSetDesigner">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Bühnenbild, einer Produktion (darstellende Künste) oder einer anderen Ressource als Bühnenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Bühnenbilds. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Bühnenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Bühne als auf deren Fertigung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a set, a performing arts production or another resource as a set designer. XXXX Compared to the set builder this term relates more closely to the aspect of designing a set rather than manifacturing it.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a stage set, a performing arts production or another resource as a set designer. The contribution may occur towards an Information Object, for example by designing a stage set. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the set builder this term relates more closely to the aspect of designing a set rather than manufacturing it.</rdfs:comment>
         <rdfs:label xml:lang="en">has set designer</rdfs:label>
         <rdfs:label xml:lang="de">hat Bühnenbildner*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a set designer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Bühnenbildner*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Bühnenbildner*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1283,11 +1283,11 @@
 
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger">
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Lied, einer Aufführung oder einer anderen Ressource als Sänger*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Singen für ein Lied. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a singer XXXX. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a singer. The contribution may occur towards an Information Object, for example by singing for a song. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has singer</rdfs:label>
         <rdfs:label xml:lang="de">hat Sänger*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a singer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Sänger*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Sänger*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1304,7 +1304,7 @@
         <rdfs:label xml:lang="en">has sound designer</rdfs:label>
         <rdfs:label xml:lang="de">hat Tonmeister*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a sound designer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tonmeister*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Tonmeister*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1333,11 +1333,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasSpeaker">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Film oder einer anderen Ressource als Sprecher*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Sprechen für einen Film. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance a film or another resource as a speaker. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance a film or another resource as a speaker. The contribution may occur towards an Information Object, for example by speaking for a film. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has speaker</rdfs:label>
         <rdfs:label xml:lang="de">hat Sprecher*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a speaker.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Sprecher*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Sprecher*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1354,7 +1354,7 @@
         <rdfs:label xml:lang="en">has stage manager</rdfs:label>
         <rdfs:label xml:lang="de">hat Inspizient*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a stage manager.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Inspizient*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Inspizient*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1386,11 +1386,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasSurtitleCreator">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Übertitel oder einer anderen Ressource als Übertitel Schöpfer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Schöpfen eines Übertitels. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance, a surtitle or another resource as a surtitle creator.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance, a surtitle or another resource as a surtitle creator. The contribution may occur towards an Information Object, for example by creating a surtitle. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has surtitle creator</rdfs:label>
         <rdfs:label xml:lang="de">hat Übertitel Schöpfer*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as an author of surtitles.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Übertitel Schöpfer*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Übertiteler*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1407,7 +1407,7 @@
         <rdfs:label xml:lang="en">has technician</rdfs:label>
         <rdfs:label xml:lang="de">hat Techniker*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a technician.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Techniker*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Techniker*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1419,7 +1419,7 @@
 
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasTextualReferenceTo">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasReferenceTo"/>
-        <rdfs:comment xml:lang="en">A textual reference usually describes the mention of a resource by an Information Object, a Creative Concept or another resource in written form. Resources may be textually referenced in programme booklets, books or the labeling of an information carrier among others. A textual reference is a specific form of reference.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A textual reference usually describes the mention of a resource by an Information Object, a Creative Concept or another resource in written form. Resources may be textually referenced in programme booklets, books or the labeling of an Information Carrier among others. A textual reference is a specific form of reference.</rdfs:comment>
         <rdfs:comment xml:lang="de">Eine textuelle Referenz beschreibt in der Regel die schriftliche Erwähnung einer Ressource durch ein Informationsobjekt, ein Kreatives Konzept oder einer andere Ressource. Ressourcen werden zum Beispiel in Programmheften, Büchern oder der Beschriftung eines Informationsträgers textuell referenziert. Eine textuelle Referenz ist eine spezielle Form der Referenz.</rdfs:comment>
         <rdfs:label xml:lang="en">has textual reference to</rdfs:label>
         <rdfs:label xml:lang="de">hat textuelle Referenz zu</rdfs:label>
@@ -1455,11 +1455,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Übersetzer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Übersetzung eines Texts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as a translator XXXX.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as a translator. The contribution may occur towards an Information Object, for example by translating a text. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has translator</rdfs:label>
         <rdfs:label xml:lang="de">hat Übersetzer*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a translator.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Übersetzer*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Übersetzer*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1506,11 +1506,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Video oder einer anderen Ressource als Videodesigner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Videos als Teil eines Bühnenbilds. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video designer. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video designer. The contribution may occur towards an Information Object, for example by designing a video as part of a stage set. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has video designer</rdfs:label>
         <rdfs:label xml:lang="de">hat Videodesigner*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a video designer.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Videodesigner*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Videodesigner*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1523,11 +1523,11 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor"/>
         <rdfs:comment xml:lang="de">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Video oder einer anderen Ressource als Videoeditor*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Editieren eines Videos. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video editor. XXXX</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video editor. The contribution may occur towards an Information Object, for example by editing a video. The contribution may also occur in the context of a process, for example for a performing arts production or a performance.</rdfs:comment>
         <rdfs:label xml:lang="en">has video editor</rdfs:label>
         <rdfs:label xml:lang="de">hat Videoeditor*in</rdfs:label>
         <skos:definition xml:lang="en">Connects a resource to an Agent that contributed to the resource as a video editor.</skos:definition>
-        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Videoeditor*in mitgewirkt hat.</skos:definition>
+        <skos:definition xml:lang="de">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Videoeditor*in mitgewirkt hat.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:ObjectProperty>
@@ -1932,8 +1932,8 @@
     <owl:ObjectProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/isInformationCarrierOf">
         <owl:inverseOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier"/>
         <rdfs:comment xml:lang="de">Invers von &apos;hat Informationsträger&apos;.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Inverse of &apos;has information carrier&apos;.</rdfs:comment>
-        <rdfs:label xml:lang="en">is information carrier of</rdfs:label>
+        <rdfs:comment xml:lang="en">Inverse of &apos;has Information Carrier&apos;.</rdfs:comment>
+        <rdfs:label xml:lang="en">is Information Carrier of</rdfs:label>
         <rdfs:label xml:lang="de">ist Informationsträger von</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2333,7 +2333,7 @@
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/isReferencedIn"/>
         <owl:inverseOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordingOf"/>
         <rdfs:label xml:lang="en">is recorded in</rdfs:label>
-        <rdfs:label xml:lang="de">ist aufgenommen von</rdfs:label>
+        <rdfs:label xml:lang="de">ist aufgenommen in</rdfs:label>
         <skos:definition xml:lang="de">Invers von &apos;hat Aufnahme von&apos;.</skos:definition>
         <skos:definition xml:lang="en">Inverse of &apos;has recording of&apos;.</skos:definition>
     </owl:ObjectProperty>
@@ -2776,8 +2776,8 @@
     <owl:DatatypeProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasCondition">
         <rdfs:label xml:lang="en">has condition</rdfs:label>
         <rdfs:label xml:lang="de">hat Zustand</rdfs:label>
-        <skos:definition xml:lang="de">Beschreibt oder verbindet mit dem Zustand einer Ressource.</skos:definition>
-        <skos:definition xml:lang="en">Describes or connects to the condition of a resource.</skos:definition>
+        <skos:definition xml:lang="de">Beschreibt den Zustand einer Ressource.</skos:definition>
+        <skos:definition xml:lang="en">Describes the condition of a resource.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:DatatypeProperty>
@@ -2811,7 +2811,7 @@
         <rdfs:label xml:lang="en">has date of birth</rdfs:label>
         <rdfs:label xml:lang="de">hat Geburtsdatum</rdfs:label>
         <skos:definition xml:lang="de">Beschreibt das Geburtsdatum einer Person.</skos:definition>
-        <skos:definition xml:lang="en">Describes the date of birth of an agent.</skos:definition>
+        <skos:definition xml:lang="en">Describes the date of birth of a Person.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:DatatypeProperty>
@@ -2829,7 +2829,7 @@
         <rdfs:label xml:lang="en">has date of death</rdfs:label>
         <rdfs:label xml:lang="de">hat Todesdatum</rdfs:label>
         <skos:definition xml:lang="de">Beschreibt das Todesdatum einer Person.</skos:definition>
-        <skos:definition xml:lang="en">Describes the date of death of an agent.</skos:definition>
+        <skos:definition xml:lang="en">Describes the date of death of a Person.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:DatatypeProperty>
@@ -2902,6 +2902,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasFamilyName">
+        <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasName"/>
         <rdfs:domain rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/Person"/>
         <rdfs:label xml:lang="en">has family name</rdfs:label>
         <rdfs:label xml:lang="de">hat Familienname</rdfs:label>
@@ -2915,6 +2916,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstName">
+        <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasName"/>
         <rdfs:domain rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/Person"/>
         <rdfs:label xml:lang="en">has first name</rdfs:label>
         <rdfs:label xml:lang="de">hat Vorname</rdfs:label>
@@ -2932,12 +2934,12 @@
     <owl:DatatypeProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasDate"/>
         <rdfs:domain rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept"/>
-        <rdfs:comment xml:lang="en">A workaround property for describing the first performance date of a performing arts performing arts production in case of insufficient description of related performances.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A workaround property for describing the first performance date of a performing arts production in case of insufficient description of related performances.</rdfs:comment>
         <rdfs:comment xml:lang="de">Eine behelfsmäßige Eigenschaft zur Beschreibung des ersten Aufführungsdatums einer Produktion (darstellende Künste) bei nicht ausreichender Beschreibung der zugehörigen Aufführungen.</rdfs:comment>
         <rdfs:label xml:lang="en">has first performance date</rdfs:label>
         <rdfs:label xml:lang="de">hat erstes Aufführungsdatum</rdfs:label>
         <skos:definition xml:lang="de">Beschreibt das erste Aufführungsdatum einer Produktion (darstellende Künste).</skos:definition>
-        <skos:definition xml:lang="en">Describes the first performance date of a performing arts performing arts production.</skos:definition>
+        <skos:definition xml:lang="en">Describes the first performance date of a performing arts production.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:DatatypeProperty>
@@ -3047,12 +3049,12 @@
     <owl:DatatypeProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasDate"/>
         <rdfs:domain rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept"/>
-        <rdfs:comment xml:lang="en">A workaround property for describing the last performance date of a performing arts performing arts production in case of insufficient description of related performances.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A workaround property for describing the last performance date of a performing arts production in case of insufficient description of related performances.</rdfs:comment>
         <rdfs:comment xml:lang="de">Eine behelfsmäßige Eigenschaft zur Beschreibung des letzten Aufführungsdatums einer Produktion (darstellende Künste) bei nicht ausreichender Beschreibung der zugehörigen Aufführungen.</rdfs:comment>
         <rdfs:label xml:lang="en">has last performance date</rdfs:label>
         <rdfs:label xml:lang="de">hat Dernierendatum</rdfs:label>
         <skos:definition xml:lang="de">Beschreibt das letzte Aufführungsdatum einer Produktion (darstellende Künste).</skos:definition>
-        <skos:definition xml:lang="en">Describes the last performance date of a performing arts performing arts production.</skos:definition>
+        <skos:definition xml:lang="en">Describes the last performance date of a performing arts production.</skos:definition>
         <skos:example xml:lang="de"></skos:example>
         <skos:example xml:lang="en"></skos:example>
     </owl:DatatypeProperty>
@@ -3167,7 +3169,7 @@
     <owl:DatatypeProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/isCreatedAtTime">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasDate"/>
         <rdfs:label xml:lang="en">was created at time</rdfs:label>
-        <rdfs:label xml:lang="de">wurde zu Zeitpunkt kreiert</rdfs:label>
+        <rdfs:label xml:lang="de">wurde zu Zeitpunkt erstellt</rdfs:label>
         <skos:definition xml:lang="de">Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource kreiert wurde.</skos:definition>
         <skos:definition xml:lang="en">Describes a singular date/point in time at which a resource was created.</skos:definition>
     </owl:DatatypeProperty>
@@ -3180,8 +3182,8 @@
     <owl:DatatypeProperty rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime">
         <rdfs:subPropertyOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/hasDate"/>
         <rdfs:label xml:lang="en">was issued at time</rdfs:label>
-        <rdfs:label xml:lang="de">wurde zu Zeitpunkt ausgegeben</rdfs:label>
-        <skos:definition xml:lang="de">Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource ausgegeben wurde .</skos:definition>
+        <rdfs:label xml:lang="de">wurde zu Zeitpunkt herausgegeben</rdfs:label>
+        <skos:definition xml:lang="de">Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource herausgegeben wurde .</skos:definition>
         <skos:definition xml:lang="en">Describes a singular date/point in time at which a resource was issued.</skos:definition>
     </owl:DatatypeProperty>
     
@@ -3243,18 +3245,18 @@
 
 
     <owl:Class rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept">
-        <rdfs:comment xml:lang="en">Creative Concepts comprise ideas, plans and conceptions that serve as a creative foundation for Events, Information Objects or other resources. Creative Concepts do not have to be realized. This class primarily serves as top class for more specifically defined Creative Concepts such as film performing arts productions or performing arts performing arts productions.</rdfs:comment>
-        <rdfs:comment xml:lang="de">Kreative Konzepte umfassen Ideen, Planungen und Konzeptionen, die als kreative Grundlage von Ereignissen, Informationsobjekten oder anderen Ressourcen dienen. Kreative Konzepte müssen nicht verwirklicht werden. Diese Klasse dient als Oberklasse für genauer definierte Kreative Konzepte, wie Filmproduktionen oder Produktion (darstellende Künste)en der darstellenden Künste.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Creative Concepts comprise ideas, plans and conceptions that serve as a creative foundation for Events, Information Objects or other resources. Creative Concepts do not have to be realized.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Kreative Konzepte umfassen Ideen, Planungen und Konzeptionen, die als kreative Grundlage von Ereignissen, Informationsobjekten oder anderen Ressourcen dienen. Kreative Konzepte müssen nicht verwirklicht werden.</rdfs:comment>
         <rdfs:label xml:lang="en">Creative Concept</rdfs:label>
         <rdfs:label xml:lang="de">Kreatives Konzept</rdfs:label>
         <skos:definition xml:lang="de">Diese Klasse umfasst alle Kreativen Konzepte.</skos:definition>
         <skos:definition xml:lang="en">This class comprises all Creative Concepts.</skos:definition>
         <skos:example xml:lang="de">Das Festivalkonzept hinter der seit 1981 veranstalteten Theaterfestivalreihe &apos;Theater der Welt&apos;</skos:example>
         <skos:example xml:lang="de">Die Filmproduktion &apos;Metropolis&apos; von &apos;Fritz Lang&apos; aus dem Jahr 1927</skos:example>
-        <skos:example xml:lang="de">Die Produktion (darstellende Künste) &apos;Die Horatier und die Kuratier&apos; von dem &apos;Pantomimentheater vom Prenzlauer Berg&apos; aus dem Jahr 1982</skos:example>
+        <skos:example xml:lang="de">Die Produktion (darstellende Künste) &apos;Die Horatier und die Kuriatier&apos; von dem &apos;Pantomimentheater vom Prenzlauer Berg&apos; aus dem Jahr 1982</skos:example>
         <skos:example xml:lang="en">The festival concept behind the theatre festival series &apos;Theater der Welt&apos;, held since 1981</skos:example>
-        <skos:example xml:lang="en">The film performing arts production &apos;Metropolis&apos; by &apos;Fritz Lang&apos; from 1927</skos:example>
-        <skos:example xml:lang="en">The performing arts performing arts production &apos;Die Horatier und die Kuratier&apos; by the &apos;Pantomimentheater vom Prenzlauer Berg&apos; from 1982</skos:example>
+        <skos:example xml:lang="en">The film production &apos;Metropolis&apos; by &apos;Fritz Lang&apos; from 1927</skos:example>
+        <skos:example xml:lang="en">The performing arts production &apos;Die Horatier und die Kuriatier&apos; by the &apos;Pantomimentheater vom Prenzlauer Berg&apos; from 1982</skos:example>
     </owl:Class>
     
 
@@ -3264,16 +3266,16 @@
 
     <owl:Class rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject">
         <rdfs:comment xml:lang="de">Diese Klasse umfasst sowohl digitale Repräsentationen von Inhalten von Physischen Objekten als auch nativ digitale Objekte. Digitale Objekte können wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte sein.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This class comprises digital representations of contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, may be information carriers of one or more Information Objects.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class comprises digital representations of contents of Physical Objects as well as native digital objects. Digital Objects, like Physical Objects, may be Information Carriers of one or more Information Objects.</rdfs:comment>
         <rdfs:label xml:lang="en">Digital Object</rdfs:label>
         <rdfs:label xml:lang="de">Digitales Objekt</rdfs:label>
         <skos:definition xml:lang="de">Diese Klasse umfasst alle digitalen Objekte.</skos:definition>
         <skos:definition xml:lang="en">This class comprises all Digital Objects.</skos:definition>
-        <skos:example xml:lang="de">Die Datei &apos;20190911_152231.jpg&apos;, das mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt</skos:example>
+        <skos:example xml:lang="de">Die Datei &apos;20190911_152231.jpg&apos;, die mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt</skos:example>
         <skos:example xml:lang="de">Die Digitalisierung einer Videokassette mit Namen &apos;VID_001.avi&apos;, die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks &apos;Hamlet&apos; trägt</skos:example>
         <skos:example xml:lang="de">Die Digitalisierung einer analogen Fotografie von einer Probe zur Produktion (darstellende Künste) &apos;Wir Wohner&apos; mit Namen &apos;nvt_img-i30-002.JP2&apos;</skos:example>
         <skos:example xml:lang="en">The digitisation of a VHS tape named &apos;VID-001.avi&apos;, carrying recordings of two different performances of the play &apos;Hamlet&apos;</skos:example>
-        <skos:example xml:lang="en">The digitisation of an analogue photography of a rehearsal of the performing arts performing arts production &apos;Wir Wohner&apos;, named &apos;nvt_img-i30-002.JP2&apos;</skos:example>
+        <skos:example xml:lang="en">The digitisation of an analogue photography of a rehearsal of the performing arts production &apos;Wir Wohner&apos;, named &apos;nvt_img-i30-002.JP2&apos;</skos:example>
         <skos:example xml:lang="en">The file &apos;20190911_152231.jpg&apos;, taken with a digital camera and carrying the photograph of a landscape</skos:example>
     </owl:Class>
     
@@ -3309,13 +3311,13 @@
         <rdfs:label xml:lang="de">Informationsträger</rdfs:label>
         <skos:definition xml:lang="de">Diese Klasse umfasst alle Informationsträger.</skos:definition>
         <skos:definition xml:lang="en">This class comprises all Information Carriers.</skos:definition>
-        <skos:example xml:lang="en">A programme booklet carrying information of the performing arts performing arts production &apos;Hanswurst&apos;</skos:example>
-        <skos:example xml:lang="en">A video cassette labeled &apos;Hamlet, 1985&apos; carrying two different recordings of the theatre play &apos;Hamlet&apos;</skos:example>
-        <skos:example xml:lang="de">Die Datei &apos;20190911_152231.jpg&apos;, das mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt</skos:example>
-        <skos:example xml:lang="de">Die Digitalisierung einer Videokassette mit Namen &apos;VID_001.avi&apos;, die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks &apos;Hamlet&apos; trägt</skos:example>
+        <skos:example xml:lang="en">A programme booklet carrying information of the performing arts production &apos;Hanswurst&apos;</skos:example>
+        <skos:example xml:lang="en">A video cassette carrying two different recordings of the theatre play &apos;Hamlet&apos;</skos:example>
+        <skos:example xml:lang="de">Die Datei &apos;20190911_152231.jpg&apos;, die mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt</skos:example>
+        <skos:example xml:lang="de">Die digitalisierte Version einer Videokassette mit Namen &apos;VID_001.avi&apos;, die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks &apos;Hamlet&apos; trägt</skos:example>
         <skos:example xml:lang="de">Ein Programmheft, das Informationen über die Produktion (darstellende Künste) &apos;Hanswurst&apos; trägt</skos:example>
-        <skos:example xml:lang="de">Eine Videokassette mit Beschriftung &apos;Hamlet, 1985&apos;, die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks &apos;Hamlet&apos; enthält</skos:example>
-        <skos:example xml:lang="en">The digitisation of a VHS tape named &apos;VID-001.avi&apos;, carrying recordings of two different performances of the play &apos;Hamlet&apos;</skos:example>
+        <skos:example xml:lang="de">Eine Videokassette, die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks &apos;Hamlet&apos; enthält</skos:example>
+        <skos:example xml:lang="en">The digitised version of a VHS tape named &apos;VID-001.avi&apos;, carrying recordings of two different performances of the play &apos;Hamlet&apos;</skos:example>
         <skos:example xml:lang="en">The file &apos;20190911_152231.jpg&apos;, taken with a digital camera and carrying the photograph of a landscape</skos:example>
     </owl:Class>
     
@@ -3325,18 +3327,18 @@
 
 
     <owl:Class rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject">
-        <rdfs:comment xml:lang="en">Information Objects are immaterial, describable objects, usually represented by one or more information carriers. The same Information Object may be captured in multiple Physical or Digital Objects (e.g. a magazine edition). One Physical or Digital Object can carry multiple Information Objects (e.g. multiple video recordings on a single video tape). An Information Object may be part of another Information Object (e.g. a chapter of a novel).</rdfs:comment>
-        <rdfs:comment xml:lang="de">Informationsobjekte sind immaterielle, beschreibbare Objekte, die in der Regel von einem oder mehreren Informationsträgern repräsentiert werden. Das gleiche Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer Kopie der Fotografie in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann mehrere Informationsobjekte tragen (z.B. mehrere Videoaufzeichnungen auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Information Objects are immaterial, describable objects, usually represented by one or more Information Carriers. The same Information Object may be carried by multiple Physical or Digital Objects (e.g. by a photograph and by a copy of that photograph printed in a magazine). One Physical or Digital Object can carry multiple Information Objects (e.g. multiple video recordings on a single video tape). An Information Object may be part of another Information Object (e.g. a chapter of a novel).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Informationsobjekte sind immaterielle, beschreibbare Objekte, die in der Regel von einem oder mehreren Informationsträgern repräsentiert werden. Das gleiche Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer in einem Magazin abgedruckten Kopie der Fotografie) getragen werden. Ein physisches oder digitales Objekt kann mehrere Informationsobjekte tragen (z.B. mehrere Videoaufzeichnungen auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans).</rdfs:comment>
         <rdfs:label xml:lang="en">Information Object</rdfs:label>
         <rdfs:label xml:lang="de">Informationsobjekt</rdfs:label>
         <skos:definition xml:lang="de">Diese Klasse umfasst alle Informationsobjekte.</skos:definition>
         <skos:definition xml:lang="en">This class comprises all Information Objects.</skos:definition>
         <skos:example xml:lang="en">A picture of &apos;Eberhard Kube&apos; as part of an article from an unknown magazine</skos:example>
         <skos:example xml:lang="de">Der Film &apos;Metropolis&apos; von Fritz Lang aus dem Jahr 1927</skos:example>
-        <skos:example xml:lang="de">Die Aufzeichnung einer Aufführung von &apos;Himmelhölle&apos; am 03.12.1988, zu finden auf einer Videokassette und als Teil der Digitalisierung des Inhalts dieser Videokassette</skos:example>
+        <skos:example xml:lang="de">Die Aufzeichnung einer Aufführung von &apos;Himmelhölle&apos; am 03.12.1988, zu finden auf einer Videokassette und als Teil der digitalisierten Version des Inhalts dieser Videokassette</skos:example>
         <skos:example xml:lang="de">Ein Foto von &apos;Eberhard Kube&apos; als Teil eines Artikels aus einem unbekannten Magazin</skos:example>
         <skos:example xml:lang="en">The movie &apos;Metropolis&apos; by &apos;Fritz Lang&apos; from 1927</skos:example>
-        <skos:example xml:lang="en">The recording of a performance of &apos;Himmelhölle&apos; on 03 December 1988, to be found on a video cassette and as part of the digitisation of the contents of that video cassette</skos:example>
+        <skos:example xml:lang="en">The recording of a performance of &apos;Himmelhölle&apos; on 03 December 1988, to be found on a video cassette and as part of the digitalised version of the contents of that video cassette</skos:example>
     </owl:Class>
     
 
@@ -3346,8 +3348,8 @@
 
     <owl:Class rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/Organization">
         <rdfs:subClassOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/Agent"/>
-        <rdfs:comment xml:lang="de"></rdfs:comment>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="de">Organisationen sind Gruppierungen von Personen, die einen bestimmten Zweck verfolgen. Organisationen können zum Beispiel Unternehmen, politische Parteien oder Interessenverbände sein.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Organizations are groupings of Persons that pursue a particular purpose. For example, Organizations may be Companies, political parties or associations.</rdfs:comment>
         <rdfs:label xml:lang="de">Organisation</rdfs:label>
         <rdfs:label xml:lang="en">Organization</rdfs:label>
         <skos:definition xml:lang="de">Diese Klasse umfasst alle Organisationen.</skos:definition>
@@ -3367,8 +3369,8 @@
 
     <owl:Class rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup">
         <rdfs:subClassOf rdf:resource="https://lod.mediathek-tanz-theater.de/schema/paam/Agent"/>
-        <rdfs:comment xml:lang="de">Gruppen (darstellende Künste) sind in der Regel Ensembles, Kompanien und ähnliche Gruppen im Bereich der darstellenden Künste.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Performing Arts Groups usally are ensembles, companies and similar groups in the realm of performing arts.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gruppen (darstellende Künste) sind in der Regel Ensembles, Kompanien und ähnliche Gruppierungen mehrerer Akteur*innen im Bereich der darstellenden Künste.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Performing Arts Groups usually are ensembles, companies and similar groupings of multiple in the realm of performing arts.</rdfs:comment>
         <rdfs:label xml:lang="de">Gruppe (darstellende Künste)</rdfs:label>
         <rdfs:label xml:lang="en">Performing Arts Group</rdfs:label>
         <skos:definition xml:lang="de">Diese Klasse umfasst alle Gruppen (darstellende Künste).</skos:definition>
@@ -3420,8 +3422,8 @@
         <skos:example xml:lang="en">&apos;Eberhard Kube&apos;</skos:example>
         <skos:example xml:lang="de">&apos;Johann Sebastian Bach&apos;</skos:example>
         <skos:example xml:lang="en">&apos;Johann Sebastian Bach&apos;</skos:example>
-        <skos:example xml:lang="de">&apos;Nikolajewitsch Bogdanow&apos;</skos:example>
-        <skos:example xml:lang="en">&apos;Nikolajewitsch Bogdanow&apos;</skos:example>
+        <skos:example xml:lang="de">&apos;Rita May&apos;</skos:example>
+        <skos:example xml:lang="en">&apos;Rita May&apos;</skos:example>
     </owl:Class>
     
 
@@ -3430,14 +3432,14 @@
 
 
     <owl:Class rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject">
-        <rdfs:comment xml:lang="en">All material objects with physical extent are Physical Objects. Physical Objects, like Digital Objects, may be information carriers of Information Objects. Typical physical information carriers are video cassettes, analogue photographs or program booklets.</rdfs:comment>
+        <rdfs:comment xml:lang="en">All material objects with physical extent are Physical Objects. Physical Objects, like Digital Objects, may be Information Carriers of Information Objects. Typical physical Information Carriers are video cassettes, analogue photographs or program booklets.</rdfs:comment>
         <rdfs:comment xml:lang="de">Alle materiellen Objekte mit physischen Ausmaßen sind Physische Objekte. Wie Digitale Objekte können auch Physische Objekte Informationsträger von Informationsobjekten sein. Typische physische Informationsträger sind Videokassetten, analoge Fotografien oder Programmhefte.</rdfs:comment>
         <rdfs:label xml:lang="en">Physical Object</rdfs:label>
         <rdfs:label xml:lang="de">Physisches Objekt</rdfs:label>
         <skos:definition xml:lang="de">Diese Klasse umfasst alle Physischen Objekte.</skos:definition>
         <skos:definition xml:lang="en">This class comprises all Physical Objects.</skos:definition>
-        <skos:example xml:lang="en">A negative strip with three images, depicting rehearsals of the performing arts performing arts production &apos;Himmelhölle&apos;</skos:example>
-        <skos:example xml:lang="en">A programme booklet carrying information of the performing arts performing arts production &apos;Hanswurst&apos;</skos:example>
+        <skos:example xml:lang="en">A negative strip with three images, depicting rehearsals of the performing arts production &apos;Himmelhölle&apos;</skos:example>
+        <skos:example xml:lang="en">A programme booklet carrying information of the performing arts production &apos;Hanswurst&apos;</skos:example>
         <skos:example xml:lang="en">A video cassette labeled &apos;Hamlet, 1985&apos; carrying two different recordings of the theatre play &apos;Hamlet&apos;</skos:example>
         <skos:example xml:lang="de">Ein Negativstreifen mit drei Einzelbildern, die Proben zur Produktion (darstellende Künste) &apos;Himmelhölle&apos; zeigen</skos:example>
         <skos:example xml:lang="de">Ein Programmheft, das Informationen über die Produktion (darstellende Künste) &apos;Hanswurst&apos; trägt</skos:example>
@@ -3498,7 +3500,7 @@
         <skos:example xml:lang="de">Die &apos;Volksbühne&apos; in Berlin</skos:example>
         <skos:example xml:lang="en">The &apos;Museumsplatz&apos; in Wien where performances occurred as part of the &apos;Wiener Festwochen&apos; in 2019</skos:example>
         <skos:example xml:lang="en">The &apos;Volksbühne&apos; in Berlin</skos:example>
-        <skos:example xml:lang="en">The foyer of &apos;Deutsches Theater&apos; in Berlin where the performing arts performing arts production &apos;Clownonade&apos; was performed in 1988</skos:example>
+        <skos:example xml:lang="en">The foyer of &apos;Deutsches Theater&apos; in Berlin where the performing arts production &apos;Clownonade&apos; was performed in 1988</skos:example>
     </owl:Class>
     
 
@@ -3507,7 +3509,7 @@
 
 
     <owl:Class rdf:about="https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan">
-        <rdfs:comment xml:lang="en">Time-Spans are temporal extents with starting point, end point and duration. A Time-Span may be defined for resources such as Information Objects and Events. A Time-Span is unlimited in its duration. Not all attributes of a Time-Span have to be known.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Timespans are temporal extents with starting point, end point and duration. A Timespan may be defined for resources such as Information Objects and Events. A Timespan is unlimited in its duration. Not all attributes of a Timespan have to be known.</rdfs:comment>
         <rdfs:comment xml:lang="de">Zeitspannen sind zeitliche Ausmaße mit Startzeitpunkt, Endzeitpunkt und Dauer. Eine Zeitspanne kann sich auf Ressourcen wie Informationsobjekte und Ereignisse beziehen. Eine Zeitspanne ist in ihrer Dauer unbeschränkt. Nicht alle Eigenschaften einer Zeitspanne müssen bekannt sein.</rdfs:comment>
         <rdfs:label xml:lang="en">Timespan</rdfs:label>
         <rdfs:label xml:lang="de">Zeitspanne</rdfs:label>
@@ -3515,9 +3517,9 @@
         <skos:definition xml:lang="en">This class comprises all timespans.</skos:definition>
         <skos:example xml:lang="de">00h:00m:00s - 00h:52m:23s auf einer Videokassette</skos:example>
         <skos:example xml:lang="en">00h:00m:00s - 00h:52m:23s on a video cassette</skos:example>
-        <skos:example xml:lang="de">Die Dauer der &apos;Wiener Festwochen&apos; von 2019</skos:example>
+        <skos:example xml:lang="de">Die Dauer der &apos;Wiener Festwochen&apos; vom 10.05.2019 bis zum 16.06.2019</skos:example>
         <skos:example xml:lang="en">From 1979 to 1989</skos:example>
-        <skos:example xml:lang="en">The duration of &apos;Wiener Festwochen&apos; in 2019</skos:example>
+        <skos:example xml:lang="en">The duration of &apos;Wiener Festwochen&apos; from 2019-05-10 to 2019-06-16</skos:example>
         <skos:example xml:lang="de">Von 1979 bis 1989</skos:example>
     </owl:Class>
     

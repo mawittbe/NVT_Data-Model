@@ -311,31 +311,31 @@ paam:TimeSpan rdf:type owl:Class ;
 ## REFERENCES
 
 paam:hasAudibleReferenceTo rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf paam:hasReferenceTo ;
-                                skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält."@de ;
-                                skos:definition "Connects a resource to another resource it has an audible reference to."@en ;
-                                skos:scopeNote """Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt, zum Beispiel in einer Audioaufzeichnung. Eine hörbare Referenz ist eine spezielle Form der Referenz."""@de ;
-                                skos:scopeNote """An audible reference usually describes the audible mention or capture of a resource by an Information Object, for example in an audio recording. An audible reference is a specific form of reference."""@en ;
-                                skos:example "'vid_008' hat hörbare Referenz zu 'Hans-Eckard Eckhardt'"@de,
-                                             "Die Arbeitsdemonstration 'Die mime corporel nach Etienne Decroux' hat hörbare Referenz zu 'Hans-Eckard Eckhardt'"@de,
-                                             "In der Arbeitsdemonstration 'Die mime corporel nach Etienne Decroux' ist 'Hans-Eckard Eckhardt' zu hören"@de ;
-                                skos:example "'vid_008' has audible reference to 'Hans-Eckard Eckhardt'"@en,
-                                             "The work demonstration 'Die mime corporel nach Etienne Decroux' has audible reference to 'Hans-Eckard Eckhardt'"@en,
-                                             ""@en ;
-                                rdfs:label "hat hörbare Referenz zu"@de ;
-                                rdfs:label "has audible reference to"@en .
+                           rdfs:subPropertyOf paam:hasReferenceTo ;
+                           skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält."@de ;
+                           skos:definition "Connects a resource to another resource it has an audible reference to."@en ;
+                           skos:scopeNote """Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt, zum  Beispiel in einer Audioaufzeichnung. Eine hörbare Referenz ist eine spezielle Form der Referenz."""@de ;
+                           skos:scopeNote """An audible reference usually describes the audible mention or capture of a resource by an Information Object, for example in an audio recording. An audible reference is a specific form of reference."""@en ;
+                           skos:example "In einer Videoaufzeichnung der Fernseh-Dokumentation 'Die mime corporel nach Etienne Decroux - Arbeitsdemonstration' ist 'Hans-Eckard Eckhardt' zu hören oder es wird über ihn gesprochen"@de ;
+                           skos:example "In a video recording of the documentary television film 'Die mime corporel nach Etienne Decroux - Arbeitsdemonstration' 'Hans-Eckard Eckhardt' can be heard or is talked about"@en ;
+                           rdfs:label "hat hörbare Referenz zu"@de ;
+                           rdfs:label "has audible reference to"@en .
 
 paam:hasAudioVisualReferenceTo rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf paam:hasAudibleReferenceTo ,
-                                                       paam:hasVisualReferenceTo ;
-                                    skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine audiovisuelle Referenz enthält."@de ;
-                                    skos:definition "Connects a resource to another resource it has an audiovisual reference to."@en ;
-                                    skos:scopeNote """Eine audiovisuelle Referenz beschreibt in der Regel die hör- und sichtbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt, zum Beispiel in einer Videoaufzeichnung. Eine audiovisuelle Referenz ist eine spezielle Form der Referenz."""@de ;
-                                    skos:scopeNote """An audiovisual reference usually describes the audible and visual mention or capture of a resource by an Information Object, for example in a video recording. An audiovisual reference is a specific form of reference."""@en ;
-                                    skos:example "In Video R ist Person K im Gespräch zu hören, In Video R ist Person K zu sehen, Video R zeigt Video T"@de ;
-                                    skos:example "In video R Person K is heard talking, In video R Person K is seen, Video R shows video T"@en ;
-                                    rdfs:label "hat audiovisuelle Referenz zu"@de ;
-                                    rdfs:label "has audiovisual reference to"@en .
+                               rdfs:subPropertyOf paam:hasAudibleReferenceTo ,
+                                                  paam:hasVisualReferenceTo ;
+                               skos:definition "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine audiovisuelle Referenz enthält."@de ;
+                               skos:definition "Connects a resource to another resource it has an audiovisual reference to."@en ;
+                               skos:scopeNote """Eine audiovisuelle Referenz beschreibt in der Regel die hör- und sichtbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt, zum Beispiel in einer Videoaufzeichnung. Eine audiovisuelle Referenz ist eine spezielle Form der Referenz."""@de ;
+                               skos:scopeNote """An audiovisual reference usually describes the audible and visual mention or capture of a resource by an Information Object, for example in a video recording. An audiovisual reference is a specific form of reference."""@en ;
+                               skos:example "In einer Videoaufzeichnung ist die Aufführung 'Eberhard Kube: Stilpantomimen (Solo)' zu sehen und zu hören"@de ,
+                                            "In einer Videoaufzeichnung der Aufführung 'Eberhard Kube: Stilpantomimen (Solo)' ist 'Eberhard Kube' zu sehen und zu hören"@de ,
+                                            "In einer Videoaufzeichung ist eine Aufführung der Produktion 'Café Fatal' zu sehen"@de ;
+                               skos:example ""@en ,
+                                            ""@en ,
+                                            ""@en ;
+                               rdfs:label "hat audiovisuelle Referenz zu"@de ;
+                               rdfs:label "has audiovisual reference to"@en .
 
 paam:hasInfluenceFrom rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf paam:hasReferenceTo ;

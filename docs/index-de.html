@@ -6,8 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://lod.mediathek-tanz-theater.de/schema/paam/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://lod.mediathek-tanz-theater.de/schema/paam/","name":"Datenmodell für Archive der Darstellenden Künste", "headline":"Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts "NONVERBALES THEATER
-                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS).", "datePublished":"Fri Dec 20 16:43:24 CET 2019", "license":"https://creativecommons.org/licenses/by/4.0/deed.en", "contributor":[{"@type":"Person","name":"Jonas Pitz"},{"@type":"Person","name":"Maxim Wittenbecher"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://lod.mediathek-tanz-theater.de/schema/paam/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://lod.mediathek-tanz-theater.de/schema/paam/","name":"Datenmodell für Archive der Darstellenden Künste", "headline":"Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts "NONVERBALES THEATER IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS).", "datePublished":"Tue Jan 21 16:52:25 CET 2020", "license":"https://creativecommons.org/licenses/by/4.0/deed.en", "contributor":[{"@type":"Person","name":"Jonas Pitz"},{"@type":"Person","name":"Maxim Wittenbecher"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -75,8 +74,7 @@ function loadTOC(){
 <span>Ontology Specification Draft</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts "NONVERBALES THEATER
-                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS).</span>
+Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts "NONVERBALES THEATER IM EHEMALIGEN OSTTEIL BERLINS 1970-1991" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS).</span>
 </div>
 <div id="toc"></div> 
 
@@ -248,7 +246,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#hasInfluenceFrom"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom">hat Einfluss auf</a>
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom">hat Einfluss von</a>
    </li>
    <li>
       <a href="#hasFirstPerformanceVersion"
@@ -532,7 +530,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#isRecordedIn"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn">ist aufgenommen von</a>
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn">ist aufgenommen in</a>
    </li>
    <li>
       <a href="#isAuthorOf"
@@ -968,12 +966,48 @@ This ontology has the following classes and properties.</span>
          title="https://lod.mediathek-tanz-theater.de/schema/paam/hasCondition">hat Zustand</a>
    </li>
    <li>
-      <a href="#isIssuedAtTime"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime">wurde zu Zeitpunkt ausgegeben</a>
+      <a href="#isCreatedAtTime"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/isCreatedAtTime">wurde zu Zeitpunkt erstellt</a>
    </li>
    <li>
-      <a href="#isCreatedAtTime"
-         title="https://lod.mediathek-tanz-theater.de/schema/paam/isCreatedAtTime">wurde zu Zeitpunkt kreiert</a>
+      <a href="#isIssuedAtTime"
+         title="https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime">wurde zu Zeitpunkt herausgegeben</a>
+   </li>
+</ul><h4>Annotation Properties</h4><ul class="hlist">
+   <li>
+      <a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract">
+         <span>abstract</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">
+         <span>contributor</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition">
+         <span>definition</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2004/02/skos/core#example" title="http://www.w3.org/2004/02/skos/core#example">
+         <span>example</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher">
+         <span>publisher</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/rights" title="http://purl.org/dc/elements/1.1/rights">
+         <span>rights</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title">
+         <span>title</span>
+      </a>
    </li>
 </ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
 </div>
@@ -1137,7 +1171,7 @@ This section provides details for each class and property defined by Datenmodell
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>Die Datei '20190911_152231.jpg', das mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt</pre>
+            <pre>Die Datei '20190911_152231.jpg', die mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt</pre>
          </dd>
          <dd>
             <pre>Die Digitalisierung einer Videokassette mit Namen 'VID_001.avi', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' trägt</pre>
@@ -1149,7 +1183,7 @@ This section provides details for each class and property defined by Datenmodell
             <pre>The digitisation of a VHS tape named 'VID-001.avi', carrying recordings of two different performances of the play 'Hamlet'</pre>
          </dd>
          <dd>
-            <pre>The digitisation of an analogue photography of a rehearsal of the performing arts performing arts production 'Wir Wohner', named 'nvt_img-i30-002.JP2'</pre>
+            <pre>The digitisation of an analogue photography of a rehearsal of the performing arts production 'Wir Wohner', named 'nvt_img-i30-002.JP2'</pre>
          </dd>
          <dd>
             <pre>The file '20190911_152231.jpg', taken with a digital camera and carrying the photograph of a landscape</pre>
@@ -1223,7 +1257,7 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup</p>
       <div class="comment">
-         <span class="markdown">Gruppen (darstellende Künste) sind in der Regel Ensembles, Kompanien und ähnliche Gruppen im Bereich der darstellenden Künste.</span>
+         <span class="markdown">Gruppen (darstellende Künste) sind in der Regel Ensembles, Kompanien und ähnliche Gruppierungen mehrerer Akteur*innen im Bereich der darstellenden Künste.</span>
       </div>
       <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Gruppen (darstellende Künste).</span>
@@ -1266,7 +1300,7 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject</p>
       <div class="comment">
-         <span class="markdown">Informationsobjekte sind immaterielle, beschreibbare Objekte, die in der Regel von einem oder mehreren Informationsträgern repräsentiert werden. Das gleiche Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer Kopie der Fotografie in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann mehrere Informationsobjekte tragen (z.B. mehrere Videoaufzeichnungen auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans).</span>
+         <span class="markdown">Informationsobjekte sind immaterielle, beschreibbare Objekte, die in der Regel von einem oder mehreren Informationsträgern repräsentiert werden. Das gleiche Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer in einem Magazin abgedruckten Kopie der Fotografie) getragen werden. Ein physisches oder digitales Objekt kann mehrere Informationsobjekte tragen (z.B. mehrere Videoaufzeichnungen auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans).</span>
       </div>
       <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Informationsobjekte.</span>
@@ -1280,7 +1314,7 @@ This section provides details for each class and property defined by Datenmodell
             <pre>Der Film 'Metropolis' von Fritz Lang aus dem Jahr 1927</pre>
          </dd>
          <dd>
-            <pre>Die Aufzeichnung einer Aufführung von 'Himmelhölle' am 03.12.1988, zu finden auf einer Videokassette und als Teil der Digitalisierung des Inhalts dieser Videokassette</pre>
+            <pre>Die Aufzeichnung einer Aufführung von 'Himmelhölle' am 03.12.1988, zu finden auf einer Videokassette und als Teil der digitalisierten Version des Inhalts dieser Videokassette</pre>
          </dd>
          <dd>
             <pre>Ein Foto von 'Eberhard Kube' als Teil eines Artikels aus einem unbekannten Magazin</pre>
@@ -1289,7 +1323,7 @@ This section provides details for each class and property defined by Datenmodell
             <pre>The movie 'Metropolis' by 'Fritz Lang' from 1927</pre>
          </dd>
          <dd>
-            <pre>The recording of a performance of 'Himmelhölle' on 03 December 1988, to be found on a video cassette and as part of the digitisation of the contents of that video cassette</pre>
+            <pre>The recording of a performance of 'Himmelhölle' on 03 December 1988, to be found on a video cassette and as part of the digitalised version of the contents of that video cassette</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1319,25 +1353,25 @@ This section provides details for each class and property defined by Datenmodell
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>A programme booklet carrying information of the performing arts performing arts production 'Hanswurst'</pre>
+            <pre>A programme booklet carrying information of the performing arts production 'Hanswurst'</pre>
          </dd>
          <dd>
-            <pre>A video cassette labeled 'Hamlet, 1985' carrying two different recordings of the theatre play 'Hamlet'</pre>
+            <pre>A video cassette carrying two different recordings of the theatre play 'Hamlet'</pre>
          </dd>
          <dd>
-            <pre>Die Datei '20190911_152231.jpg', das mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt</pre>
+            <pre>Die Datei '20190911_152231.jpg', die mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt</pre>
          </dd>
          <dd>
-            <pre>Die Digitalisierung einer Videokassette mit Namen 'VID_001.avi', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' trägt</pre>
+            <pre>Die digitalisierte Version einer Videokassette mit Namen 'VID_001.avi', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' trägt</pre>
          </dd>
          <dd>
             <pre>Ein Programmheft, das Informationen über die Produktion (darstellende Künste) 'Hanswurst' trägt</pre>
          </dd>
          <dd>
-            <pre>Eine Videokassette mit Beschriftung 'Hamlet, 1985', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' enthält</pre>
+            <pre>Eine Videokassette, die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' enthält</pre>
          </dd>
          <dd>
-            <pre>The digitisation of a VHS tape named 'VID-001.avi', carrying recordings of two different performances of the play 'Hamlet'</pre>
+            <pre>The digitised version of a VHS tape named 'VID-001.avi', carrying recordings of two different performances of the play 'Hamlet'</pre>
          </dd>
          <dd>
             <pre>The file '20190911_152231.jpg', taken with a digital camera and carrying the photograph of a landscape</pre>
@@ -1360,7 +1394,7 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept</p>
       <div class="comment">
-         <span class="markdown">Kreative Konzepte umfassen Ideen, Planungen und Konzeptionen, die als kreative Grundlage von Ereignissen, Informationsobjekten oder anderen Ressourcen dienen. Kreative Konzepte müssen nicht verwirklicht werden. Diese Klasse dient als Oberklasse für genauer definierte Kreative Konzepte, wie Filmproduktionen oder Produktion (darstellende Künste)en der darstellenden Künste.</span>
+         <span class="markdown">Kreative Konzepte umfassen Ideen, Planungen und Konzeptionen, die als kreative Grundlage von Ereignissen, Informationsobjekten oder anderen Ressourcen dienen. Kreative Konzepte müssen nicht verwirklicht werden.</span>
       </div>
       <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Kreativen Konzepte.</span>
@@ -1374,16 +1408,16 @@ This section provides details for each class and property defined by Datenmodell
             <pre>Die Filmproduktion 'Metropolis' von 'Fritz Lang' aus dem Jahr 1927</pre>
          </dd>
          <dd>
-            <pre>Die Produktion (darstellende Künste) 'Die Horatier und die Kuratier' von dem 'Pantomimentheater vom Prenzlauer Berg' aus dem Jahr 1982</pre>
+            <pre>Die Produktion (darstellende Künste) 'Die Horatier und die Kuriatier' von dem 'Pantomimentheater vom Prenzlauer Berg' aus dem Jahr 1982</pre>
          </dd>
          <dd>
             <pre>The festival concept behind the theatre festival series 'Theater der Welt', held since 1981</pre>
          </dd>
          <dd>
-            <pre>The film performing arts production 'Metropolis' by 'Fritz Lang' from 1927</pre>
+            <pre>The film production 'Metropolis' by 'Fritz Lang' from 1927</pre>
          </dd>
          <dd>
-            <pre>The performing arts performing arts production 'Die Horatier und die Kuratier' by the 'Pantomimentheater vom Prenzlauer Berg' from 1982</pre>
+            <pre>The performing arts production 'Die Horatier und die Kuriatier' by the 'Pantomimentheater vom Prenzlauer Berg' from 1982</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1421,7 +1455,7 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/Organization</p>
       <div class="comment">
-         <span class="markdown"/>
+         <span class="markdown">Organisationen sind Gruppierungen von Personen, die einen bestimmten Zweck verfolgen. Organisationen können zum Beispiel Unternehmen, politische Parteien oder Interessenverbände sein.</span>
       </div>
       <div class="comment">
          <span class="markdown">Diese Klasse umfasst alle Organisationen.</span>
@@ -1545,10 +1579,10 @@ This section provides details for each class and property defined by Datenmodell
             <pre>'Johann Sebastian Bach'</pre>
          </dd>
          <dd>
-            <pre>'Nikolajewitsch Bogdanow'</pre>
+            <pre>'Rita May'</pre>
          </dd>
          <dd>
-            <pre>'Nikolajewitsch Bogdanow'</pre>
+            <pre>'Rita May'</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1588,10 +1622,10 @@ This section provides details for each class and property defined by Datenmodell
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>A negative strip with three images, depicting rehearsals of the performing arts performing arts production 'Himmelhölle'</pre>
+            <pre>A negative strip with three images, depicting rehearsals of the performing arts production 'Himmelhölle'</pre>
          </dd>
          <dd>
-            <pre>A programme booklet carrying information of the performing arts performing arts production 'Hanswurst'</pre>
+            <pre>A programme booklet carrying information of the performing arts production 'Hanswurst'</pre>
          </dd>
          <dd>
             <pre>A video cassette labeled 'Hamlet, 1985' carrying two different recordings of the theatre play 'Hamlet'</pre>
@@ -1749,7 +1783,7 @@ This section provides details for each class and property defined by Datenmodell
             <pre>The 'Volksbühne' in Berlin</pre>
          </dd>
          <dd>
-            <pre>The foyer of 'Deutsches Theater' in Berlin where the performing arts performing arts production 'Clownonade' was performed in 1988</pre>
+            <pre>The foyer of 'Deutsches Theater' in Berlin where the performing arts production 'Clownonade' was performed in 1988</pre>
          </dd>
       </dl>
       <dl class="description">
@@ -1795,13 +1829,13 @@ This section provides details for each class and property defined by Datenmodell
             <pre>00h:00m:00s - 00h:52m:23s on a video cassette</pre>
          </dd>
          <dd>
-            <pre>Die Dauer der 'Wiener Festwochen' von 2019</pre>
+            <pre>Die Dauer der 'Wiener Festwochen' vom 10.05.2019 bis zum 16.06.2019</pre>
          </dd>
          <dd>
             <pre>From 1979 to 1989</pre>
          </dd>
          <dd>
-            <pre>The duration of 'Wiener Festwochen' in 2019</pre>
+            <pre>The duration of 'Wiener Festwochen' from 2019-05-10 to 2019-06-16</pre>
          </dd>
          <dd>
             <pre>Von 1979 bis 1989</pre>
@@ -1899,7 +1933,7 @@ This section provides details for each class and property defined by Datenmodell
       </li>
       <li>
          <a href="#hasInfluenceFrom"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom">hat Einfluss auf</a>
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom">hat Einfluss von</a>
       </li>
       <li>
          <a href="#hasFirstPerformanceVersion"
@@ -2183,7 +2217,7 @@ This section provides details for each class and property defined by Datenmodell
       </li>
       <li>
          <a href="#isRecordedIn"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn">ist aufgenommen von</a>
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn">ist aufgenommen in</a>
       </li>
       <li>
          <a href="#isAuthorOf"
@@ -2606,15 +2640,15 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als (Text-)Bearbeiter*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Adaptation eines literarischen Werkes in ein Drama. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als (Text-)Bearbeiter*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als (Text-)Bearbeiter*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre/>
+            <pre>'Vladimir Filonow' contributed to the performing arts production 'Number 9' as adaptor.</pre>
          </dd>
          <dd>
-            <pre/>
+            <pre>'Vladimir Filonow' hat an der Produktion (darstellende Künste) 'Number 9' als (Text-)Bearbeiter mitgewirkt.</pre>
          </dd>
       </dl>
       <div class="description">
@@ -2645,7 +2679,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Akrobat*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Akrobat*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Akrobat*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2689,10 +2723,16 @@ This section provides details for each class and property defined by Datenmodell
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>In Video R ist Person K im Gespräch zu hören, In Video R ist Person K zu sehen, Video R zeigt Video T</pre>
+            <pre/>
          </dd>
          <dd>
-            <pre>In video R Person K is heard talking, In video R Person K is seen, Video R shows video T</pre>
+            <pre>In einer Videoaufzeichnung der Aufführung 'Eberhard Kube: Stilpantomimen (Solo)' ist 'Eberhard Kube' zu sehen und zu hören</pre>
+         </dd>
+         <dd>
+            <pre>In einer Videoaufzeichnung ist die Aufführung 'Eberhard Kube: Stilpantomimen (Solo)' zu sehen und zu hören</pre>
+         </dd>
+         <dd>
+            <pre>In einer Videoaufzeichung ist eine Aufführung der Produktion 'Café Fatal' zu sehen</pre>
          </dd>
       </dl>
       <div class="description">
@@ -2722,7 +2762,7 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordingOf</p>
       <div class="comment">
-         <span class="markdown">Diese Eigenschaft ist eine Form von Referenz, die die Aufzeichnung eines Ereignisses als Informationsobjekt beschreibt.</span>
+         <span class="markdown">Diese Eigenschaft ist eine Form von Referenz, die die Aufzeichnung eines Ereignisses als ein Informationsobjekt beschreibt.</span>
       </div>
       <div class="comment">
          <span class="markdown">Verbindet ein Informationsobjekt mit einem von ihm aufgezeichneten Ereignis .</span>
@@ -2759,7 +2799,7 @@ This section provides details for each class and property defined by Datenmodell
             <dt>is inverse of</dt>
             <dd>
                <a href="#isRecordedIn"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn">ist aufgenommen von</a>
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn">ist aufgenommen in</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -2776,7 +2816,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Verfassen eines literarischen Werkes. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Autor*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Autor*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2785,6 +2825,12 @@ This section provides details for each class and property defined by Datenmodell
          </dd>
          <dd>
             <pre/>
+         </dd>
+         <dd>
+            <pre>For the performing arts production 'Die Horatier und die Kuriatier' the text 'Die Horatier und die Kuriatier' by author 'Bertold Brecht' was used</pre>
+         </dd>
+         <dd>
+            <pre>Für die Produktion (darstellende Künste) 'Die Horatier und die Kuriatier' wurde der Text 'Die Horatier und die Kuriatier' von dem Autor 'Bertold Brecht' genutzt.</pre>
          </dd>
       </dl>
       <div class="description">
@@ -2866,7 +2912,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Bühnenbild, einer Produktion (darstellende Künste) oder einer anderen Ressource als Bühnenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Fertigung eines Bühnenbilds. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Bühnenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Bühne als auf deren Gestaltung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Bühnenbauer*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Bühnenbauer*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2905,7 +2951,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Bühnenbild, einer Produktion (darstellende Künste) oder einer anderen Ressource als Bühnenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Bühnenbilds. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Bühnenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Bühne als auf deren Fertigung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Bühnenbildner*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Bühnenbildner*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2944,7 +2990,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Choreograf*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Choreograf*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Choreograf*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -2983,7 +3029,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Filmproduktion, einer Aufführung oder einer anderen Ressource als Cinematograph*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Cinematograph*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Cinematograph*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3022,7 +3068,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Clown*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Clown*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Clown*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3061,7 +3107,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Darsteller*in beschrieben. Diese Eigenschaft kann als allgemeine Eigenschaft für die Mitwirkung eines/r Akteur*in an einer Ressource in jeglicher darstellerischen Form genutzt werden.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Darsteller*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Darsteller*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3142,7 +3188,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Text oder einer anderen Ressource als Dramatiker*in  beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Verfassung eines dramatischen Texts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Dramatiker*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Dramatiker*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3181,7 +3227,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Text oder einer anderen Ressource als Dramaturg*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Bearbeitung eines dramatischen Texts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Dramaturg*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Dramaturg*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3210,14 +3256,14 @@ This section provides details for each class and property defined by Datenmodell
       </div>
    </div>
    <div class="entity" id="hasInfluenceFrom">
-      <h3>hat Einfluss auf<sup class="type-op" title="object property">op</sup>
+      <h3>hat Einfluss von<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom</p>
       <div class="comment">
-         <span class="markdown">Diese Eigenschaft beschreibt die Beeinflussung im weiteren Sinne einer Ressource durch eine andere Ressource. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form der Referenz.</span>
+         <span class="markdown">Diese Eigenschaft beschreibt die Beeinflussung einer Ressource durch eine andere Ressource im weiteren Sinne. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form der Referenz.</span>
       </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, von der sie beeinflusst ist.</span>
@@ -3228,7 +3274,7 @@ This section provides details for each class and property defined by Datenmodell
             <pre>Produktion (darstellende Künste) Y ist basiert auf Produktion (darstellende Künste) X, Text Y ist beeinflusst von Film X</pre>
          </dd>
          <dd>
-            <pre>performing arts performing arts production Y is based on performing arts performing arts production X, Text Y is influenced by Film X</pre>
+            <pre>performing arts production Y is based on performing arts production X, Text Y is influenced by Film X</pre>
          </dd>
       </dl>
       <div class="description">
@@ -3310,7 +3356,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Fotografie, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Fotograf*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Aufnehmen einer Fotografie. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Fotograf*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Fotograf*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3349,7 +3395,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Fotografie, einer Produktion (darstellende Künste) oder einer anderen Ressource als Fotostudio beschrieben</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem Fotostudio, dass bei ihrer Kreierung beigetragen hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem Fotostudio, dass bei ihrer Schaffung beigetragen hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3480,7 +3526,7 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasHomepage</p>
       <div class="comment">
-         <span class="markdown">Verbindet mit der Homepage eines/r Akteur*in.</span>
+         <span class="markdown">Verbindet einen Akteur mit einer Homepage des/r Akteur*in.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3522,7 +3568,7 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo</p>
       <div class="comment">
-         <span class="markdown">Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt, zum Beispiel in einer Audio Aufzeichnung. Eine hörbare Referenz ist eine spezielle Form der Referenz.</span>
+         <span class="markdown">Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt, zum  Beispiel in einer Audioaufzeichnung. Eine hörbare Referenz ist eine spezielle Form der Referenz.</span>
       </div>
       <div class="comment">
          <span class="markdown">Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält.</span>
@@ -3530,22 +3576,10 @@ This section provides details for each class and property defined by Datenmodell
       <dl>
          <dt>Example</dt>
          <dd>
-            <pre>In Audioaufnahme R ist Person K im Gespräch zu hören.</pre>
+            <pre>In a video recording of the documentary television film 'Die mime corporel nach Etienne Decroux - Arbeitsdemonstration' 'Hans-Eckard Eckhardt' can be heard or is talked about</pre>
          </dd>
          <dd>
-            <pre>In Video E ist Person L zu hören, aber nicht zu sehen.</pre>
-         </dd>
-         <dd>
-            <pre>In Video Z wird über Aufführung X geredet.</pre>
-         </dd>
-         <dd>
-            <pre>In audio recording R Person K is heard talking</pre>
-         </dd>
-         <dd>
-            <pre>In video E Person L is heard, but not seen.</pre>
-         </dd>
-         <dd>
-            <pre>Performance X is being talked about in video Z</pre>
+            <pre>In einer Videoaufzeichnung der Fernseh-Dokumentation 'Die mime corporel nach Etienne Decroux - Arbeitsdemonstration' ist 'Hans-Eckard Eckhardt' zu hören oder es wird über ihn gesprochen</pre>
          </dd>
       </dl>
       <div class="description">
@@ -3579,10 +3613,10 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Plakats oder einer anderen Ressource als Illustrator*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Illustration eines Plakats. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
+         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Plakats oder einer anderen Ressource als Illustrator*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Illustration eines Programmhefts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Illustrator*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Illustrator*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3666,7 +3700,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Inspizient*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Inspizient*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Inspizient*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3705,7 +3739,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Lied, einer Aufführung oder einer anderen Ressource als Komponist*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Komposition eines musikalischen Werks. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Komponist*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Komponist*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3741,10 +3775,10 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Konzept-Urheber*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Konzept-Urheberschaft einer textuellen Grundlage einer Produktion (darstellende Künste). Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
+         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Konzept-Urheber*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Urheberschaft eines textuellen Konzepts für eine Produktion (darstellende Künste). Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Konzept-Urheber*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Konzept-Urheber*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3783,7 +3817,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Kostümbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Herstellung eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Kostümdesigner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung eines Kostüms als auf dessen Gestaltung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Kostümbauer*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Kostümbauer*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3822,7 +3856,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Kostümbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Kostümbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Kostümdesigner*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Kostümdesigner*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3861,7 +3895,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Festivalkonzept, einer Aufführung oder einer anderen Ressource als künstlerische*r Leiter*in beschrieben. Die Mitwirkung kann zum Beispiel durch die Leitung des künstlerischen Gesamtkonzepts eines Festivalkonzepts oder einer Aufführung erfolgen.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als künstlerische*r Leiter*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als künstlerische*r Leiter*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3900,7 +3934,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Publikation oder einer anderen Ressource als Layouter*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung des Layouts einer Publikation. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Layouter*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Layouter*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3939,7 +3973,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Lichtdesigner*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Lichtdesigner*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Lichtdesigner*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -3975,10 +4009,10 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Maskenbauer*in einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung.</span>
+         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Bauen einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Maskenbauer*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Maskenbauer*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4014,10 +4048,10 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Maskenbildner*in einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Maske als auf deren Fertigung.</span>
+         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Maske als auf deren Fertigung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Maskenbildner*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Maskenbildner*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4086,7 +4120,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Mim*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Mim*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Mim*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4269,10 +4303,10 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Lieds, einer Aufführung oder einer anderen Ressource als Musiker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Musiker*in für ein musikalisches Werk. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
+         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Lieds, einer Aufführung oder einer anderen Ressource als Musiker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel als Musiker*in für ein musikalisches Werk. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Musiker*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Musiker*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4344,7 +4378,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Näher*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Nähen eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Näher*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Näher*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4383,7 +4417,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Pantomim*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Pantomim*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Pantomim*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4422,7 +4456,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film oder einer anderen Ressource als Produzent*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Produktion eines Films. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Produzent*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Produzent*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4458,10 +4492,10 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Programmdirektor*in beschrieben. Diese Eigenschaft kann zum Beispiel Kuratoren oder Leiter des Programmes bei einem Festival genutzt werden. </span>
+         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Programmdirektor*in beschrieben. Diese Eigenschaft kann zum Beispiel Kurator*innen oder Leiter*innen des Programmes bei einem Festival genutzt werden. </span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Programmdirektor*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Programmdirektor*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4497,10 +4531,10 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Fertigung einer Puppe. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Puppenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung.</span>
+         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Fertigung einer Puppe. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Puppenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenbauer*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Puppenbauer*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4539,7 +4573,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion (darstellende Künste) oder einer anderen Ressource als Puppenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung einer Puppe. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Puppenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Puppe als auf deren Fertigung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenbildner*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Puppenbildner*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4580,7 +4614,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Puppenspiel, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Puppenspieler*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenspieler*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Puppenspieler*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4676,7 +4710,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Text oder einer anderen Ressource als Redakteur*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Herausgeben einer Publikation. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Redakteur*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Redakteur*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4733,7 +4767,7 @@ This section provides details for each class and property defined by Datenmodell
                <a href="#hasRecordingOf"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordingOf">hat Aufnahme von</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#hasInfluenceFrom"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom">hat Einfluss auf</a>
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom">hat Einfluss von</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#hasAudibleReferenceTo"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo">hat hörbare Referenz zu</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#hasTextualReferenceTo"
@@ -4762,7 +4796,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Regieassistent*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Regieassistent*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4798,10 +4832,10 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Regie für einen Spielfilms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
+         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Regie für einen Film. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Regisseur*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Regisseur*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4888,7 +4922,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film, einer Aufführung oder einer anderen Ressource als Schauspieler*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Schauspieler*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Schauspieler*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4927,7 +4961,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Informationsobjekt oder einer anderen Ressource als Schöpfer*in beschrieben. Es können pro Ressource mehrere Akteur*innen als Schöpfer*innen beteiligt sein. Aussagen über die Form der schöpferischen Tätigkeit des/r Akteur*innen können mit entsprechenden Mitwirkenden-Eigenschaften parallel zu dieser getroffen werden.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Schöpfer*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Schöpfer*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -4966,7 +5000,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Souffleur*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Souffleur*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Souffleur*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5005,7 +5039,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Spielzeit erklären oder klar?</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Produktion (darstellende Künste) mit der Spielzeit, in der die Produktion (darstellende Künste) aufgeführt wird oder wurde.</span>
+         <span class="markdown">Verbindet eine Ressource mit der Spielzeit, in der eine Produktion (darstellende Künste) aufgeführt wird oder wurde.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5044,7 +5078,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Film oder einer anderen Ressource als Sprecher*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Sprechen für einen Film. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Sprecher*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Sprecher*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5083,7 +5117,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Lied, einer Aufführung oder einer anderen Ressource als Sänger*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Singen für ein Lied. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Sänger*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Sänger*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5116,7 +5150,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Techniker*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Techniker*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Techniker*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5190,7 +5224,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Festival, einem Workshop oder einer anderen Ressource als Teilnehmer*in beschrieben. Diese Bezeichnung kann zum Beispiel für Teilnehmer*innen an einem Workshop oder einem Vortrag genutzt werden.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Teilnehmer*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Teilnehmer*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5268,7 +5302,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Tonmeister*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tonmeister*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Tonmeister*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5304,10 +5338,10 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist</p>
       <div class="comment">
-         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufnahme, einer Aufführung oder einer anderen Ressource als Tontechniker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Tontechnik einer Audioaufnahme. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
+         <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufnahme, einer Aufführung oder einer anderen Ressource als Tontechniker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel als Tontechniker*in einer Audioaufnahme. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tontechniker*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Tontechniker*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5379,7 +5413,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Tänzer*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tänzer*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Tänzer*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5387,7 +5421,13 @@ This section provides details for each class and property defined by Datenmodell
             <pre/>
          </dd>
          <dd>
-            <pre/>
+            <pre>'vid_016_002' hat Tänzerin 'Edith Demharter'</pre>
+         </dd>
+         <dd>
+            <pre>Der Film 'Das triadische Ballett. Ein Film in drei Teilen nach den Tänzen von Oskar Schlemmer' hat Tänzerin 'Edith Demharter'</pre>
+         </dd>
+         <dd>
+            <pre>In einer Aufzeichnung von 'Das triadische Ballett. Ein Film in drei Teilen nach den Tänzen von Oskar Schlemmer' ist 'Edith Demharter' als Tänzerin zu sehen</pre>
          </dd>
       </dl>
       <div class="description">
@@ -5544,7 +5584,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Festival, einem Workshop oder einer anderen Ressource als Vermittler*in beschrieben. Diese Eigenschaft kann zum Beispiel für Lehrer in einem Workshop oder Dozenten eines Vortrags genutzt werden.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Vermittler*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Vermittler*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5624,7 +5664,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Video oder einer anderen Ressource als Videodesigner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Videos als Teil eines Bühnenbilds. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Videodesigner*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Videodesigner*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5663,7 +5703,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Video oder einer anderen Ressource als Videoeditor*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Editieren eines Videos. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Videoeditor*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Videoeditor*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5702,7 +5742,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Visagist*in beschrieben.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Visagist*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Visagist*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5902,7 +5942,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Übersetzer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Übersetzung eines Texts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Übersetzer*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Übersetzer*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -5941,7 +5981,7 @@ This section provides details for each class and property defined by Datenmodell
          <span class="markdown">Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Übertitel oder einer anderen Ressource als Übertitel Schöpfer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Schöpfen eines Übertitels. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung.</span>
       </div>
       <div class="comment">
-         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in, der/die als Übertitel Schöpfer*in mitgewirkt hat.</span>
+         <span class="markdown">Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Übertiteler*in mitgewirkt hat.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -6053,7 +6093,7 @@ This section provides details for each class and property defined by Datenmodell
       </div>
    </div>
    <div class="entity" id="isRecordedIn">
-      <h3>ist aufgenommen von<sup class="type-op" title="object property">op</sup>
+      <h3>ist aufgenommen in<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -6385,7 +6425,7 @@ This section provides details for each class and property defined by Datenmodell
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasInfluenceFrom"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom">hat Einfluss auf</a>
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom">hat Einfluss von</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -7421,7 +7461,7 @@ This section provides details for each class and property defined by Datenmodell
                <a href="#isInfluenceOn"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isInfluenceOn">ist Einfluss auf</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#isRecordedIn"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn">ist aufgenommen von</a>
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn">ist aufgenommen in</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#isAudiblyReferencedIn"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/isAudiblyReferencedIn">ist hörbar referenziert in</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#isTextuallyReferencedIn"
@@ -8356,12 +8396,12 @@ This section provides details for each class and property defined by Datenmodell
             title="https://lod.mediathek-tanz-theater.de/schema/paam/hasCondition">hat Zustand</a>
       </li>
       <li>
-         <a href="#isIssuedAtTime"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime">wurde zu Zeitpunkt ausgegeben</a>
+         <a href="#isCreatedAtTime"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/isCreatedAtTime">wurde zu Zeitpunkt erstellt</a>
       </li>
       <li>
-         <a href="#isCreatedAtTime"
-            title="https://lod.mediathek-tanz-theater.de/schema/paam/isCreatedAtTime">wurde zu Zeitpunkt kreiert</a>
+         <a href="#isIssuedAtTime"
+            title="https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime">wurde zu Zeitpunkt herausgegeben</a>
       </li>
    </ul>
    <div class="entity" id="beginsAtTime">
@@ -8681,10 +8721,10 @@ This section provides details for each class and property defined by Datenmodell
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfDeath">hat Todesdatum</a>
                <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFirstPerformanceDate"
                   title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate">hat erstes Aufführungsdatum</a>
-               <sup class="type-dp" title="data property">dp</sup>, <a href="#isIssuedAtTime"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime">wurde zu Zeitpunkt ausgegeben</a>
                <sup class="type-dp" title="data property">dp</sup>, <a href="#isCreatedAtTime"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isCreatedAtTime">wurde zu Zeitpunkt kreiert</a>
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isCreatedAtTime">wurde zu Zeitpunkt erstellt</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#isIssuedAtTime"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime">wurde zu Zeitpunkt herausgegeben</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
          </dl>
@@ -8846,6 +8886,12 @@ This section provides details for each class and property defined by Datenmodell
       </div>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasName"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasName">hat Name</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Person"
@@ -9005,6 +9051,14 @@ This section provides details for each class and property defined by Datenmodell
       </dl>
       <div class="description">
          <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#hasFamilyName"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFamilyName">hat Familienname</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFirstName"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstName">hat Vorname</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Agent"
@@ -9187,6 +9241,12 @@ This section provides details for each class and property defined by Datenmodell
       </dl>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasName"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasName">hat Name</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Person"
@@ -9234,7 +9294,7 @@ This section provides details for each class and property defined by Datenmodell
       <p>
          <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/hasCondition</p>
       <div class="comment">
-         <span class="markdown">Beschreibt oder verbindet mit dem Zustand einer Ressource.</span>
+         <span class="markdown">Beschreibt den Zustand einer Ressource.</span>
       </div>
       <dl>
          <dt>Example</dt>
@@ -9246,29 +9306,8 @@ This section provides details for each class and property defined by Datenmodell
          </dd>
       </dl>
    </div>
-   <div class="entity" id="isIssuedAtTime">
-      <h3>wurde zu Zeitpunkt ausgegeben<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime</p>
-      <div class="comment">
-         <span class="markdown">Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource ausgegeben wurde .</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#hasDate"
-                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasDate">hat Datum</a>
-               <sup class="type-dp" title="data property">dp</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="isCreatedAtTime">
-      <h3>wurde zu Zeitpunkt kreiert<sup class="type-dp" title="data property">dp</sup>
+      <h3>wurde zu Zeitpunkt erstellt<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -9287,6 +9326,122 @@ This section provides details for each class and property defined by Datenmodell
             </dd>
          </dl>
       </div>
+   </div>
+   <div class="entity" id="isIssuedAtTime">
+      <h3>wurde zu Zeitpunkt herausgegeben<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime</p>
+      <div class="comment">
+         <span class="markdown">Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource herausgegeben wurde .</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasDate"
+                  title="https://lod.mediathek-tanz-theater.de/schema/paam/hasDate">hat Datum</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="annotationproperties">
+   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract">
+            <span>abstract</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">
+            <span>contributor</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition">
+            <span>definition</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#example" title="http://www.w3.org/2004/02/skos/core#example">
+            <span>example</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher">
+            <span>publisher</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/rights" title="http://purl.org/dc/elements/1.1/rights">
+            <span>rights</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title">
+            <span>title</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/terms/abstract">
+      <h3>abstract<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/abstract</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/contributor">
+      <h3>contributor<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/contributor</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#definition">
+      <h3>definition<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#definition</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#example">
+      <h3>example<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#example</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/publisher">
+      <h3>publisher<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/publisher</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/rights">
+      <h3>rights<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/rights</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/title">
+      <h3>title<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/title</p>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

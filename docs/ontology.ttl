@@ -10,10 +10,8 @@
                                                       <http://purl.org/dc/elements/1.1/rights> <https://creativecommons.org/licenses/by/4.0/deed.en> ;
                                                       <http://purl.org/dc/elements/1.1/title> "Datenmodell für Archive der Darstellenden Künste"@de ,
                                                                                               "Performing Arts Archive Model"@en ;
-                                                      <http://purl.org/dc/terms/abstract> """Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts \"NONVERBALES THEATER
-                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS)."""@de ,
-                                                                                          """Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the \"NONVERBALES THEATER
-                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS)."""@en ;
+                                                      <http://purl.org/dc/terms/abstract> "Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts \"NONVERBALES THEATER IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS)."@de ,
+                                                                                          "Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the \"NONVERBALES THEATER IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS)."@en ;
                                                       <http://purl.org/dc/terms/contributor> "Jonas Pitz" ,
                                                                                              "Maxim Wittenbecher" ;
                                                       <http://purl.org/dc/terms/publisher> "Media Library for Dance and Theatre / ITI Germany"@en ,
@@ -65,7 +63,7 @@
             rdfs:label "has acrobat"@en ,
                        "hat Akrobat*in"@de ;
             <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an acrobat."@en ,
-                                                             "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Akrobat*in mitgewirkt hat."@de ;
+                                                             "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Akrobat*in mitgewirkt hat."@de ;
             <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                           ""@en .
 
@@ -78,7 +76,7 @@
           rdfs:label "has actor"@en ,
                      "hat Schauspieler*in"@de ;
           <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an actor."@en ,
-                                                           "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Schauspieler*in mitgewirkt hat."@de ;
+                                                           "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Schauspieler*in mitgewirkt hat."@de ;
           <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                         ""@en .
 
@@ -87,13 +85,13 @@
 :hasAdaptor rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :hasContributor ;
             rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als (Text-)Bearbeiter*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Adaptation eines literarischen Werkes in ein Drama. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                         "This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an adaptor. The contribution may occur towards an Information Object, for example by adapting a literary work into a drama. The contribution may also occur in form of a participation in the context of a performing arts production."@en ;
+                         "This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an adaptor. The contribution may occur towards an Information Object, for example by adapting a literary work into a drama. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
             rdfs:label "has adaptor"@en ,
                        "hat (Text-)Bearbeiter*in"@de ;
             <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an adaptor."@en ,
-                                                             "Verbindet eine Ressource mit einem/r Akteur*in, der/die als (Text-)Bearbeiter*in mitgewirkt hat."@de ;
-            <http://www.w3.org/2004/02/skos/core#example> ""@de ,
-                                                          ""@en .
+                                                             "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als (Text-)Bearbeiter*in mitgewirkt hat."@de ;
+            <http://www.w3.org/2004/02/skos/core#example> "'Vladimir Filonow' contributed to the performing arts production 'Number 9' as adaptor."@en ,
+                                                          "'Vladimir Filonow' hat an der Produktion (darstellende Künste) 'Number 9' als (Text-)Bearbeiter mitgewirkt."@de .
 
 
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasArtisticDirector
@@ -104,7 +102,7 @@
                      rdfs:label "has artistic director"@en ,
                                 "hat künstlerische*n Leiter*in"@de ;
                      <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an artistic director."@en ,
-                                                                      "Verbindet eine Ressource mit einem/r Akteur*in, der/die als künstlerische*r Leiter*in mitgewirkt hat."@de ;
+                                                                      "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als künstlerische*r Leiter*in mitgewirkt hat."@de ;
                      <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                    ""@en .
 
@@ -117,7 +115,7 @@
                       rdfs:label "has assistant director"@en ,
                                  "hat Regieassistent*in"@de ;
                       <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an assistant director."@en ,
-                                                                       "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Regieassistent*in mitgewirkt hat."@de ;
+                                                                       "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Regieassistent*in mitgewirkt hat."@de ;
                       <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                     ""@en .
 
@@ -126,17 +124,13 @@
 :hasAudibleReferenceTo rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :hasReferenceTo ;
                        rdfs:comment "An audible reference usually describes the audible mention or capture of a resource by an Information Object, for example in an audio recording. An audible reference is a specific form of reference."@en ,
-                                    "Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt, zum Beispiel in einer Audio Aufzeichnung. Eine hörbare Referenz ist eine spezielle Form der Referenz."@de ;
+                                    "Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt, zum  Beispiel in einer Audioaufzeichnung. Eine hörbare Referenz ist eine spezielle Form der Referenz."@de ;
                        rdfs:label "has audible reference to"@en ,
                                   "hat hörbare Referenz zu"@de ;
                        <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to another resource it has an audible reference to."@en ,
                                                                         "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält."@de ;
-                       <http://www.w3.org/2004/02/skos/core#example> "In Audioaufnahme R ist Person K im Gespräch zu hören."@de ,
-                                                                     "In Video E ist Person L zu hören, aber nicht zu sehen."@de ,
-                                                                     "In Video Z wird über Aufführung X geredet."@de ,
-                                                                     "In audio recording R Person K is heard talking"@en ,
-                                                                     "In video E Person L is heard, but not seen."@en ,
-                                                                     "Performance X is being talked about in video Z"@en .
+                       <http://www.w3.org/2004/02/skos/core#example> "In a video recording of the documentary television film 'Die mime corporel nach Etienne Decroux - Arbeitsdemonstration' 'Hans-Eckard Eckhardt' can be heard or is talked about"@en ,
+                                                                     "In einer Videoaufzeichnung der Fernseh-Dokumentation 'Die mime corporel nach Etienne Decroux - Arbeitsdemonstration' ist 'Hans-Eckard Eckhardt' zu hören oder es wird über ihn gesprochen"@de .
 
 
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo
@@ -149,21 +143,25 @@
                                       "hat audiovisuelle Referenz zu"@de ;
                            <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to another resource it has an audiovisual reference to."@en ,
                                                                             "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine audiovisuelle Referenz enthält."@de ;
-                           <http://www.w3.org/2004/02/skos/core#example> "In Video R ist Person K im Gespräch zu hören, In Video R ist Person K zu sehen, Video R zeigt Video T"@de ,
-                                                                         "In video R Person K is heard talking, In video R Person K is seen, Video R shows video T"@en .
+                           <http://www.w3.org/2004/02/skos/core#example> ""@en ,
+                                                                         "In einer Videoaufzeichnung der Aufführung 'Eberhard Kube: Stilpantomimen (Solo)' ist 'Eberhard Kube' zu sehen und zu hören"@de ,
+                                                                         "In einer Videoaufzeichnung ist die Aufführung 'Eberhard Kube: Stilpantomimen (Solo)' zu sehen und zu hören"@de ,
+                                                                         "In einer Videoaufzeichung ist eine Aufführung der Produktion 'Café Fatal' zu sehen"@de .
 
 
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor
 :hasAuthor rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :hasContributor ;
            rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Verfassen eines literarischen Werkes. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                        "This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an author. XXXX"@en ;
+                        "This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an author. The contribution may occur towards an Information Object, for example by authoring a literary work. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
            rdfs:label "has author"@en ,
                       "hat Autor*in"@de ;
            <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an author."@en ,
-                                                            "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Autor*in mitgewirkt hat."@de ;
+                                                            "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Autor*in mitgewirkt hat."@de ;
            <http://www.w3.org/2004/02/skos/core#example> ""@de ,
-                                                         ""@en .
+                                                         ""@en ,
+                                                         "For the performing arts production 'Die Horatier und die Kuriatier' the text 'Die Horatier und die Kuriatier' by author 'Bertold Brecht' was used"@en ,
+                                                         "Für die Produktion (darstellende Künste) 'Die Horatier und die Kuriatier' wurde der Text 'Die Horatier und die Kuriatier' von dem Autor 'Bertold Brecht' genutzt."@de .
 
 
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasChoreographer
@@ -174,7 +172,7 @@
                   rdfs:label "has choreographer"@en ,
                              "hat Choreograf*in"@de ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a choreographer."@en ,
-                                                                   "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Choreograf*in mitgewirkt hat."@de ;
+                                                                   "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Choreograf*in mitgewirkt hat."@de ;
                   <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                 ""@en .
 
@@ -187,7 +185,7 @@
                     rdfs:label "has cinematographer"@en ,
                                "hat Cinematograph*in"@de ;
                     <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a cinematographer."@en ,
-                                                                     "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Cinematograph*in mitgewirkt hat."@de ;
+                                                                     "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Cinematograph*in mitgewirkt hat."@de ;
                     <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                   ""@en .
 
@@ -200,7 +198,7 @@
           rdfs:label "has clown"@en ,
                      "hat Clown*in"@de ;
           <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a clown."@en ,
-                                                           "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Clown*in mitgewirkt hat."@de ;
+                                                           "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Clown*in mitgewirkt hat."@de ;
           <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                         ""@en .
 
@@ -209,11 +207,11 @@
 :hasComposer rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :hasContributor ;
              rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Lied, einer Aufführung oder einer anderen Ressource als Komponist*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Komposition eines musikalischen Werks. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                          "This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a composer. XXXX"@en ;
+                          "This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a composer. The contribution may occur towards an Information Object, for example by composing a musical work. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
              rdfs:label "has composer"@en ,
                         "hat Komponist*in"@de ;
              <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a composer."@en ,
-                                                              "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Komponist*in mitgewirkt hat."@de ;
+                                                              "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Komponist*in mitgewirkt hat."@de ;
              <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                            ""@en .
 
@@ -221,12 +219,12 @@
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator
 :hasConceptOriginator rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :hasContributor ;
-                      rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Konzept-Urheber*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Konzept-Urheberschaft einer textuellen Grundlage einer Produktion (darstellende Künste). Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                                   "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a concept originator. XXXX"@en ;
+                      rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Konzept-Urheber*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Urheberschaft eines textuellen Konzepts für eine Produktion (darstellende Künste). Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
+                                   "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a concept originator. The contribution may occur towards an Information Object, for example by originating a textual concept for a performing arts production. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
                       rdfs:label "has concept originator"@en ,
                                  "hat Konzept-Urheber*in"@de ;
                       <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a concept originator."@en ,
-                                                                       "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Konzept-Urheber*in mitgewirkt hat."@de ;
+                                                                       "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Konzept-Urheber*in mitgewirkt hat."@de ;
                       <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                     ""@en .
 
@@ -261,11 +259,11 @@
 :hasCostumeBuilder rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :hasContributor ;
                    rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Kostümbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Herstellung eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Kostümdesigner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung eines Kostüms als auf dessen Gestaltung."@de ,
-                                "This property describes the contribution of an Agent to a  costume, a performing arts production or another resource as a costume builder. XXXX Compared to the costume designer this term relates more closely to the aspect of manifacturing a costume rather than designing it."@en ;
+                                "This property describes the contribution of an Agent to a  costume, a performing arts production or another resource as a costume builder. The contribution may occur towards an Information Object, for example by building a costume. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the costume designer this term relates more closely to the aspect of manufacturing a costume rather than designing it."@en ;
                    rdfs:label "has costume builder"@en ,
                               "hat Kostümbauer*in"@de ;
                    <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a costume builder."@en ,
-                                                                    "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Kostümbauer*in mitgewirkt hat."@de ;
+                                                                    "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Kostümbauer*in mitgewirkt hat."@de ;
                    <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                  ""@en .
 
@@ -274,11 +272,11 @@
 :hasCostumeDesigner rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :hasContributor ;
                     rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Kostümbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Kostümbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung."@de ,
-                                 "This property describes the contribution of an Agent to a costume, a performing arts production or another resource as acostume designer. XXXX Compared to the costume designer this term relates more closely to the aspect of designing a costume rather than manufacturing it."@en ;
+                                 "This property describes the contribution of an Agent to a costume, a performing arts production or another resource as a costume designer. The contribution may occur towards an Information Object, for example by designing a costume. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the costume designer this term relates more closely to the aspect of designing a costume rather than manufacturing it."@en ;
                     rdfs:label "has costume designer"@en ,
                                "hat Kostümbildner*in"@de ;
                     <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a costume designer."@en ,
-                                                                     "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Kostümdesigner*in mitgewirkt hat."@de ;
+                                                                     "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Kostümdesigner*in mitgewirkt hat."@de ;
                     <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                   ""@en .
 
@@ -291,7 +289,7 @@
             rdfs:label "has creator"@en ,
                        "hat Schöpfer*in"@de ;
             <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a creator."@en ,
-                                                             "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Schöpfer*in mitgewirkt hat."@de ;
+                                                             "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Schöpfer*in mitgewirkt hat."@de ;
             <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                           ""@en .
 
@@ -304,9 +302,11 @@
            rdfs:label "has dancer"@en ,
                       "hat Tänzer*in"@de ;
            <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a dancer."@en ,
-                                                            "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tänzer*in mitgewirkt hat."@de ;
-           <http://www.w3.org/2004/02/skos/core#example> ""@de ,
-                                                         ""@en .
+                                                            "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Tänzer*in mitgewirkt hat."@de ;
+           <http://www.w3.org/2004/02/skos/core#example> ""@en ,
+                                                         "'vid_016_002' hat Tänzerin 'Edith Demharter'"@de ,
+                                                         "Der Film 'Das triadische Ballett. Ein Film in drei Teilen nach den Tänzen von Oskar Schlemmer' hat Tänzerin 'Edith Demharter'"@de ,
+                                                         "In einer Aufzeichnung von 'Das triadische Ballett. Ein Film in drei Teilen nach den Tänzen von Oskar Schlemmer' ist 'Edith Demharter' als Tänzerin zu sehen"@de .
 
 
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasDigitalVersion
@@ -324,12 +324,12 @@
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector
 :hasDirector rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :hasContributor ;
-             rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Regie für einen Spielfilms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                          "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a director. XXXX"@en ;
+             rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Regie für einen Film. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
+                          "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a director. The contribution may occur towards an Information Object, for example by directing a film. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
              rdfs:label "has director"@en ,
                         "hat Regisseur*in"@de ;
              <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a director."@en ,
-                                                              "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Regisseur*in mitgewirkt hat."@de ;
+                                                              "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Regisseur*in mitgewirkt hat."@de ;
              <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                            ""@en .
 
@@ -338,11 +338,11 @@
 :hasDramaturge rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :hasContributor ;
                rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Text oder einer anderen Ressource als Dramaturg*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Bearbeitung eines dramatischen Texts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                            "This property describes the contribution of an Agent to a performing arts production, a performance, a text or another resource as a dramaturge. XXXX"@en ;
+                            "This property describes the contribution of an Agent to a performing arts production, a performance, a text or another resource as a dramaturge. The contribution may occur towards an Information Object, for example by revising a dramatic text. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
                rdfs:label "has dramaturge"@en ,
                           "hat Dramaturg*in"@de ;
                <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a dramaturge."@en ,
-                                                                "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Dramaturg*in mitgewirkt hat."@de ;
+                                                                "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Dramaturg*in mitgewirkt hat."@de ;
                <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                              ""@en .
 
@@ -351,11 +351,11 @@
 :hasEditor rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :hasContributor ;
            rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Text oder einer anderen Ressource als Redakteur*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Herausgeben einer Publikation. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                        "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as an editor. XXXX"@en ;
+                        "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as an editor. The contribution may occur towards an Information Object, for example by publishing a publication. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
            rdfs:label "has editor"@en ,
                       "hat Redakteur*in"@de ;
            <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a editor."@en ,
-                                                            "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Redakteur*in mitgewirkt hat."@de ;
+                                                            "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Redakteur*in mitgewirkt hat."@de ;
            <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                          ""@en .
 
@@ -381,8 +381,8 @@
              rdfs:domain :Agent ;
              rdfs:label "has homepage"@en ,
                         "hat Homepage"@de ;
-             <http://www.w3.org/2004/02/skos/core#definition> "Connects to a homepage of an Agent."@en ,
-                                                              "Verbindet mit der Homepage eines/r Akteur*in."@de ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Connects an Agent to a homepage of the Agent."@en ,
+                                                              "Verbindet einen Akteur mit einer Homepage des/r Akteur*in."@de ;
              <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                            ""@en .
 
@@ -394,12 +394,12 @@
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator
 :hasIllustrator rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasContributor ;
-                rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Plakats oder einer anderen Ressource als Illustrator*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Illustration eines Plakats. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                             "This property describes the contribution of an Agent to a performing arts production, a poster or another resource as an illustrator. XXXX"@en ;
+                rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Plakats oder einer anderen Ressource als Illustrator*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Illustration eines Programmhefts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
+                             "This property describes the contribution of an Agent to a performing arts production, a poster or another resource as an illustrator. The contribution may occur towards an Information Object, for example by illustrating a programme booklet. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
                 rdfs:label "has illustrator"@en ,
                            "hat Illustrator*in"@de ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an illustrator."@en ,
-                                                                 "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Illustrator*in mitgewirkt hat."@de ;
+                                                                 "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Illustrator*in mitgewirkt hat."@de ;
                 <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                               ""@en .
 
@@ -407,14 +407,14 @@
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom
 :hasInfluenceFrom rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :hasReferenceTo ;
-                  rdfs:comment "Diese Eigenschaft beschreibt die Beeinflussung im weiteren Sinne einer Ressource durch eine andere Ressource. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form der Referenz."@de ,
-                               "This property describes the influence in a broader sense on a resource by another resource. An influence may be more or less recognizable and should be verifiable. An influence is a specific form of reference."@en ;
-                  rdfs:label "has influence on"@en ,
-                             "hat Einfluss auf"@de ;
+                  rdfs:comment "Diese Eigenschaft beschreibt die Beeinflussung einer Ressource durch eine andere Ressource im weiteren Sinne. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form der Referenz."@de ,
+                               "This property describes the influence on a resource by another resource in a broader sense. An influence may be more or less recognizable and should be verifiable. An influence is a specific form of reference."@en ;
+                  rdfs:label "has influence from"@en ,
+                             "hat Einfluss von"@de ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to another resource that it is influenced by."@en ,
                                                                    "Verbindet eine Ressource mit einer anderen Ressource, von der sie beeinflusst ist."@de ;
                   <http://www.w3.org/2004/02/skos/core#example> "Produktion (darstellende Künste) Y ist basiert auf Produktion (darstellende Künste) X, Text Y ist beeinflusst von Film X"@de ,
-                                                                "performing arts performing arts production Y is based on performing arts performing arts production X, Text Y is influenced by Film X"@en .
+                                                                "performing arts production Y is based on performing arts production X, Text Y is influenced by Film X"@en .
 
 
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier
@@ -423,7 +423,7 @@
                        rdfs:range :InformationCarrier ;
                        rdfs:comment "An Information Carrier is a resource, that carries an Information Object. An Information Object may be carried by multiple Information Carriers, for example the same recording of a performance on a video cassette and on a USB flash drive. Multiple Information Objects may be carried by the same Information Carrier, for example multiple recordings of different performances on the same video cassette."@en ,
                                     "Ein Informationsträger ist eine Ressource, die ein Informationsobjekt trägt. Ein Informationsobjekt kann von mehreren Informationsträgern getragen werden, zum Beispiel die gleiche Aufnahme einer Aufführung auf einer Videokassette und auf einem USB-Stick. Auf einem Informationsträger können mehrere Informationsobjekte getragen werden, zum Beispiel mehrere Aufnahmen von verschiedenen Aufführungen auf derselben Videokassette."@de ;
-                       rdfs:label "has information carrier"@en ,
+                       rdfs:label "has Information Carrier"@en ,
                                   "hat Informationsträger"@de ;
                        <http://www.w3.org/2004/02/skos/core#definition> "Connects an information object to a physical or digital object it is represented on."@en ,
                                                                         "Verbindet ein Informationsobjekt mit einem physischen oder digitalen Objekt, auf dem es repräsentiert ist."@en ;
@@ -435,11 +435,11 @@
 :hasLayouter rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :hasContributor ;
              rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Publikation oder einer anderen Ressource als Layouter*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung des Layouts einer Publikation. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                          "This property describes the contribution of an Agent to a performing arts production, a publication or another resource as a layouter. XXXX"@en ;
+                          "This property describes the contribution of an Agent to a performing arts production, a publication or another resource as a layouter. The contribution may occur towards an Information Object, for example by designing the layout of a publication. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
              rdfs:label "has layouter"@en ,
                         "hat Layouter*in"@de ;
              <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a layouter."@en ,
-                                                              "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Layouter*in mitgewirkt hat."@de ;
+                                                              "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Layouter*in mitgewirkt hat."@de ;
              <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                            ""@en .
 
@@ -448,11 +448,11 @@
 :hasLightingDesigner rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :hasContributor ;
                      rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Lichtdesigner*in beschrieben."@de ,
-                                  "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as lighting designer."@en ;
+                                  "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a lighting designer."@en ;
                      rdfs:label "has lighting designer"@en ,
                                 "hat Lichtdesigner*in"@de ;
-                     <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a light designer."@en ,
-                                                                      "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Lichtdesigner*in mitgewirkt hat."@de ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a lighting designer."@en ,
+                                                                      "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Lichtdesigner*in mitgewirkt hat."@de ;
                      <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                    ""@en .
 
@@ -465,7 +465,7 @@
                  rdfs:label "has make up artist"@en ,
                             "hat Visagist*in"@de ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a make up artist."@en ,
-                                                                  "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Visagist*in mitgewirkt hat."@de ;
+                                                                  "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Visagist*in mitgewirkt hat."@de ;
                  <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                ""@en .
 
@@ -473,12 +473,12 @@
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder
 :hasMaskBuilder rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasContributor ;
-                rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Maskenbauer*in einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung."@de ,
-                             "This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask builder. XXXX Compared to the mask designer this term relates more closely to the aspect of manifacturing a mask rather than designing it."@en ;
+                rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Bauen einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung."@de ,
+                             "This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask builder. The contribution may occur towards an Information Object, for example by building a mask. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the mask designer this term relates more closely to the aspect of manufacturing a mask rather than designing it."@en ;
                 rdfs:label "has mask builder"@en ,
                            "hat Maskenbauer*in"@de ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a mask builder."@en ,
-                                                                 "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Maskenbauer*in mitgewirkt hat."@de ;
+                                                                 "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Maskenbauer*in mitgewirkt hat."@de ;
                 <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                               ""@en .
 
@@ -486,12 +486,12 @@
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner
 :hasMaskDesigner rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :hasContributor ;
-                 rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Maskenbildner*in einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Maske als auf deren Fertigung."@de ,
-                              "This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask designer. XXXX Compared to the costume designer this term relates more closely to the aspect of designing a mask rather than manifacturing it."@en ;
+                 rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Maske als auf deren Fertigung."@de ,
+                              "This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask designer. The contribution may occur towards an Information Object, for example by designing a mask. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the costume designer this term relates more closely to the aspect of designing a mask rather than manufacturing it."@en ;
                  rdfs:label "has mask designer"@en ,
                             "hat Maskenbildner*in"@de ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a mask designer."@en ,
-                                                                  "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Maskenbildner*in mitgewirkt hat."@de ;
+                                                                  "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Maskenbildner*in mitgewirkt hat."@de ;
                  <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                ""@en .
 
@@ -503,7 +503,7 @@
              rdfs:label "has mediator"@en ,
                         "hat Vermittler*in"@de ;
              <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a mediator."@en ,
-                                                              "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Vermittler*in mitgewirkt hat."@de ;
+                                                              "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Vermittler*in mitgewirkt hat."@de ;
              <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                            ""@en .
 
@@ -522,11 +522,11 @@
 :hasMime rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :hasContributor ;
          rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Mim*in beschrieben."@de ,
-                      "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as amime."@en ;
+                      "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a mime."@en ;
          rdfs:label "has mime"@en ,
                     "hat Mim*in"@de ;
          <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a mime."@en ,
-                                                          "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Mim*in mitgewirkt hat."@de ;
+                                                          "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Mim*in mitgewirkt hat."@de ;
          <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                        ""@en .
 
@@ -534,12 +534,12 @@
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician
 :hasMusician rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :hasContributor ;
-             rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Lieds, einer Aufführung oder einer anderen Ressource als Musiker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Musiker*in für ein musikalisches Werk. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                          "This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a musician. XXXX"@en ;
+             rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Lieds, einer Aufführung oder einer anderen Ressource als Musiker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel als Musiker*in für ein musikalisches Werk. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
+                          "This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a musician. The contribution may occur towards an Information Object, for example as musician for a musical work. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
              rdfs:label "has musician"@en ,
                         "hat Musiker*in"@de ;
              <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a musician."@en ,
-                                                              "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Musiker*in mitgewirkt hat."@de ;
+                                                              "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Musiker*in mitgewirkt hat."@de ;
              <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                            ""@en .
 
@@ -552,7 +552,7 @@
               rdfs:label "has pantomime"@en ,
                          "hat Pantomim*in"@de ;
               <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a pantomime."@en ,
-                                                               "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Pantomim*in mitgewirkt hat."@de ;
+                                                               "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Pantomim*in mitgewirkt hat."@de ;
               <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                             ""@en .
 
@@ -578,7 +578,7 @@
                 rdfs:label "has participant"@en ,
                            "hat Teilnehmer*in"@de ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a participant."@en ,
-                                                                 "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Teilnehmer*in mitgewirkt hat."@de ;
+                                                                 "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Teilnehmer*in mitgewirkt hat."@de ;
                 <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                               ""@en .
 
@@ -591,7 +591,7 @@
               rdfs:label "has performer"@en ,
                          "hat Darsteller*in"@de ;
               <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a performer."@en ,
-                                                               "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Darsteller*in mitgewirkt hat."@de ;
+                                                               "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Darsteller*in mitgewirkt hat."@de ;
               <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                             ""@en .
 
@@ -604,7 +604,7 @@
                 rdfs:label "has photo studio"@en ,
                            "hat Fotostudio"@de ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to a photo studio that contributed to its creation."@en ,
-                                                                 "Verbindet eine Ressource mit einem Fotostudio, dass bei ihrer Kreierung beigetragen hat."@de ;
+                                                                 "Verbindet eine Ressource mit einem Fotostudio, dass bei ihrer Schaffung beigetragen hat."@de ;
                 <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                               ""@en .
 
@@ -613,11 +613,11 @@
 :hasPhotographer rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :hasContributor ;
                  rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Fotografie, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Fotograf*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Aufnehmen einer Fotografie. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                              "This property describes the contribution of an Agent to a photograph, a performing arts production, a performance or another resource as a photographer. XXXX"@en ;
+                              "This property describes the contribution of an Agent to a photograph, a performing arts production, a performance or another resource as a photographer. The contribution may occur towards an Information Object, for example by taking a photograph. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
                  rdfs:label "has photographer"@en ,
                             "hat Fotograf*in"@de ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a photographer."@en ,
-                                                                  "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Fotograf*in mitgewirkt hat."@de ;
+                                                                  "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Fotograf*in mitgewirkt hat."@de ;
                  <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                ""@en .
 
@@ -653,11 +653,11 @@
 :hasPlaywright rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :hasContributor ;
                rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Text oder einer anderen Ressource als Dramatiker*in  beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Verfassung eines dramatischen Texts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                            "This property describes the contribution of an Agent to a performing arts production, a text or another resource as a playwright. XXXX"@en ;
+                            "This property describes the contribution of an Agent to a performing arts production, a text or another resource as a playwright. The contribution may occur towards an Information Object, for example by authoring a dramatic text. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
                rdfs:label "has playwright"@en ,
                           "hat Dramatiker*in"@de ;
                <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a playwright."@en ,
-                                                                "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Dramatiker*in mitgewirkt hat."@de ;
+                                                                "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Dramatiker*in mitgewirkt hat."@de ;
                <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                              ""@en .
 
@@ -679,11 +679,11 @@
 :hasProducer rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :hasContributor ;
              rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film oder einer anderen Ressource als Produzent*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Produktion eines Films. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                          "This property describes the contribution of an Agent to a performing arts production, a film or another resource as a producer. XXXX"@en ;
+                          "This property describes the contribution of an Agent to a performing arts production, a film or another resource as a producer. The contribution may occur towards an Information Object, for example by producing a film. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
              rdfs:label "has producer"@en ,
                         "hat Produzent*in"@de ;
              <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a producer."@en ,
-                                                              "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Produzent*in mitgewirkt hat."@de ;
+                                                              "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Produzent*in mitgewirkt hat."@de ;
              <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                            ""@en .
 
@@ -691,12 +691,12 @@
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector
 :hasProgrammeDirector rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :hasContributor ;
-                      rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Programmdirektor*in beschrieben. Diese Eigenschaft kann zum Beispiel Kuratoren oder Leiter des Programmes bei einem Festival genutzt werden. "@de ,
+                      rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Programmdirektor*in beschrieben. Diese Eigenschaft kann zum Beispiel Kurator*innen oder Leiter*innen des Programmes bei einem Festival genutzt werden. "@de ,
                                    "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a programme director. This property may be used for curators or directors of the programme of a festival among others."@en ;
                       rdfs:label "has programme director"@en ,
                                  "hat Programmdirektor*in"@de ;
                       <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as programme director."@en ,
-                                                                       "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Programmdirektor*in mitgewirkt hat."@de ;
+                                                                       "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Programmdirektor*in mitgewirkt hat."@de ;
                       <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                     ""@en .
 
@@ -709,7 +709,7 @@
              rdfs:label "has prompter"@en ,
                         "hat Souffleur*in"@de ;
              <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a prompter."@en ,
-                                                              "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Souffleur*in mitgewirkt hat."@de ;
+                                                              "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Souffleur*in mitgewirkt hat."@de ;
              <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                            ""@en .
 
@@ -730,11 +730,11 @@
 :hasPublisher rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :hasContributor ;
               rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Zeitung, einer Produktion (darstellende Künste) oder einer anderen Ressource als Herausgeber*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Herausgeben einer Zeitung. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                           "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a publisher. XXXX"@en ;
+                           "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a publisher. The contribution may occur towards an Information Object, for example by publishing a newspaper. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
               rdfs:label "has publisher"@en ,
                          "hat Herausgeber*in"@de ;
               <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a publisher."@en ,
-                                                               "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Verleger*in an der Ressource mitgewirkt hat."@en ;
+                                                               "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Verleger*in an der Ressource mitgewirkt hat."@en ;
               <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                             ""@en .
 
@@ -743,11 +743,11 @@
 :hasPublishingCompany rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :hasContributor ;
                       rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Buch, einer Produktion (darstellende Künste) oder einer anderen Ressource als Verlag beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Verlegen eines Buchs. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                                   "This property describes the contribution of an Agent to a book, a performing arts production or another resource as a publishing company. XXXX"@en ;
+                                   "This property describes the contribution of an Agent to a book, a performing arts production or another resource as a publishing company. The contribution may occur towards an Information Object, for example by publishing a book. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
                       rdfs:label "has publishing company"@en ,
                                  "hat Verlag"@de ;
                       <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that operated as publishing company for the resource."@en ,
-                                                                       "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Verlag für die Ressource mitgewirkt hat."@en ;
+                                                                       "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Verlag für die Ressource mitgewirkt hat."@en ;
                       <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                     ""@en .
 
@@ -767,12 +767,12 @@
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder
 :hasPuppetBuilder rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :hasContributor ;
-                  rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Fertigung einer Puppe. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Puppenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung."@de ,
-                               "This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet builder. XXXX Compared to the puppet designer this term relates more closely to the aspect of manifacturing a puppet rather than designing it."@en ;
+                  rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Fertigung einer Puppe. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Puppenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung."@de ,
+                               "This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet builder. The contribution may occur towards an Information Object, for example by building a puppet. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the puppet designer this term relates more closely to the aspect of manufacturing a puppet rather than designing it."@en ;
                   rdfs:label "has puppet builder"@en ,
                              "hat Puppenbauer*in"@de ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a puppet builder."@en ,
-                                                                   "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenbauer*in mitgewirkt hat."@de ;
+                                                                   "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Puppenbauer*in mitgewirkt hat."@de ;
                   <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                 ""@en .
 
@@ -781,11 +781,11 @@
 :hasPuppetDesigner rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :hasContributor ;
                    rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion (darstellende Künste) oder einer anderen Ressource als Puppenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung einer Puppe. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Puppenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Puppe als auf deren Fertigung."@de ,
-                                "This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet designer. XXXX Compared to the puppet builder this term relates more closely to the aspect of designing a puppet rather than manufacturing it."@en ;
+                                "This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet designer. The contribution may occur towards an Information Object, for example by designing a puppet. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the puppet builder this term relates more closely to the aspect of designing a puppet rather than manufacturing it."@en ;
                    rdfs:label "has puppet designer"@en ,
                               "hat Puppenbildner*in"@de ;
                    <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a puppet designer."@en ,
-                                                                    "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenbildner*in mitgewirkt hat."@de ;
+                                                                    "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Puppenbildner*in mitgewirkt hat."@de ;
                    <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                  ""@en .
 
@@ -798,7 +798,7 @@
               rdfs:label "has puppeteer"@en ,
                          "hat Puppenspieler*in"@de ;
               <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a puppeteer."@en ,
-                                                               "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenspieler*in mitgewirkt hat."@de ;
+                                                               "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Puppenspieler*in mitgewirkt hat."@de ;
               <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                             ""@en .
 
@@ -808,7 +808,7 @@
                 rdfs:subPropertyOf :hasReferenceTo ;
                 rdfs:domain :InformationObject ;
                 rdfs:range :Event ;
-                rdfs:comment "Diese Eigenschaft ist eine Form von Referenz, die die Aufzeichnung eines Ereignisses als Informationsobjekt beschreibt."@de ,
+                rdfs:comment "Diese Eigenschaft ist eine Form von Referenz, die die Aufzeichnung eines Ereignisses als ein Informationsobjekt beschreibt."@de ,
                              "This property is a form of reference that describes the recording of an Event as an Information Object."@en ;
                 rdfs:label "has recording of"@en ,
                            "hat Aufnahme von"@de ;
@@ -821,12 +821,12 @@
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist
 :hasRecordist rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :hasContributor ;
-              rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufnahme, einer Aufführung oder einer anderen Ressource als Tontechniker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Tontechnik einer Audioaufnahme. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                           "This property describes the contribution of an Agent to a performing arts production, a recording, a performance or another resource as a recordist. XXXX"@en ;
+              rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufnahme, einer Aufführung oder einer anderen Ressource als Tontechniker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel als Tontechniker*in einer Audioaufnahme. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
+                           "This property describes the contribution of an Agent to a performing arts production, a recording, a performance or another resource as a recordist. The contribution may occur towards an Information Object, for example as recordist of an audio recording. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
               rdfs:label "has recordist"@en ,
                          "hat Tontechniker*in"@de ;
               <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a recordist."@en ,
-                                                               "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tontechniker*in mitgewirkt hat."@de ;
+                                                               "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Tontechniker*in mitgewirkt hat."@de ;
               <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                             ""@en .
 
@@ -908,11 +908,11 @@
 :hasSeamster rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :hasContributor ;
              rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Näher*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Nähen eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                          "This property describes the contribution of an Agent to a costume, a performing arts production or another resource as a seamster. XXXX"@en ;
+                          "This property describes the contribution of an Agent to a costume, a performing arts production or another resource as a seamster. The contribution may occur towards an Information Object, for example by sewing a costume. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
              rdfs:label "has seamster"@en ,
                         "hat Näher*in"@de ;
              <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a seamster."@en ,
-                                                              "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Näher*in mitgewirkt hat."@de ;
+                                                              "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Näher*in mitgewirkt hat."@de ;
              <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                            ""@en .
 
@@ -924,8 +924,8 @@
                         "Spielzeit erklären oder klar?"@de ;
            rdfs:label "has season"@en ,
                       "hat Spielzeit"@de ;
-           <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Produktion (darstellende Künste) mit der Spielzeit, in der die Produktion (darstellende Künste) aufgeführt wird oder wurde."@en ,
-                                                            "connects to the season in which a performing arts performing arts production was or is performed."@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit der Spielzeit, in der eine Produktion (darstellende Künste) aufgeführt wird oder wurde."@en ,
+                                                            "connects a resource to the season in which a performing arts production was or is performed. ???"@en ;
            <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                          ""@en .
 
@@ -934,11 +934,11 @@
 :hasSetBuilder rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :hasContributor ;
                rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Bühnenbild, einer Produktion (darstellende Künste) oder einer anderen Ressource als Bühnenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Fertigung eines Bühnenbilds. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Bühnenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Bühne als auf deren Gestaltung."@de ,
-                            "This property describes the contribution of an Agent to a set, a performing arts production or another resource as a set builder. XXXX Compared to the set designer this term relates more closely to the aspect of manifacturing a set rather than designing it."@en ;
+                            "This property describes the contribution of an Agent to a stage set, a performing arts production or another resource as a set builder. The contribution may occur towards an Information Object, for example by building a stage set. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the set designer this term relates more closely to the aspect of manufacturing a set rather than designing it."@en ;
                rdfs:label "has set builder"@en ,
                           "hat Bühnenbauer*in"@de ;
                <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a set builder."@en ,
-                                                                "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Bühnenbauer*in mitgewirkt hat."@de ;
+                                                                "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Bühnenbauer*in mitgewirkt hat."@de ;
                <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                              ""@en .
 
@@ -947,11 +947,11 @@
 :hasSetDesigner rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasContributor ;
                 rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Bühnenbild, einer Produktion (darstellende Künste) oder einer anderen Ressource als Bühnenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Bühnenbilds. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Bühnenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Bühne als auf deren Fertigung."@de ,
-                             "This property describes the contribution of an Agent to a set, a performing arts production or another resource as a set designer. XXXX Compared to the set builder this term relates more closely to the aspect of designing a set rather than manifacturing it."@en ;
+                             "This property describes the contribution of an Agent to a stage set, a performing arts production or another resource as a set designer. The contribution may occur towards an Information Object, for example by designing a stage set. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the set builder this term relates more closely to the aspect of designing a set rather than manufacturing it."@en ;
                 rdfs:label "has set designer"@en ,
                            "hat Bühnenbildner*in"@de ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a set designer."@en ,
-                                                                 "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Bühnenbildner*in mitgewirkt hat."@de ;
+                                                                 "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Bühnenbildner*in mitgewirkt hat."@de ;
                 <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                               ""@en .
 
@@ -959,11 +959,11 @@
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger
 :hasSinger rdf:type owl:ObjectProperty ;
            rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Lied, einer Aufführung oder einer anderen Ressource als Sänger*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Singen für ein Lied. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                        "This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a singer XXXX. XXXX"@en ;
+                        "This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a singer. The contribution may occur towards an Information Object, for example by singing for a song. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
            rdfs:label "has singer"@en ,
                       "hat Sänger*in"@de ;
            <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a singer."@en ,
-                                                            "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Sänger*in mitgewirkt hat."@de ;
+                                                            "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Sänger*in mitgewirkt hat."@de ;
            <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                          ""@en .
 
@@ -976,7 +976,7 @@
                   rdfs:label "has sound designer"@en ,
                              "hat Tonmeister*in"@de ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a sound designer."@en ,
-                                                                   "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tonmeister*in mitgewirkt hat."@de ;
+                                                                   "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Tonmeister*in mitgewirkt hat."@de ;
                   <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                 ""@en .
 
@@ -997,11 +997,11 @@
 :hasSpeaker rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :hasContributor ;
             rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Film oder einer anderen Ressource als Sprecher*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Sprechen für einen Film. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                         "This property describes the contribution of an Agent to a performing arts production, a performance a film or another resource as a speaker. XXXX"@en ;
+                         "This property describes the contribution of an Agent to a performing arts production, a performance a film or another resource as a speaker. The contribution may occur towards an Information Object, for example by speaking for a film. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
             rdfs:label "has speaker"@en ,
                        "hat Sprecher*in"@de ;
             <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a speaker."@en ,
-                                                             "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Sprecher*in mitgewirkt hat."@de ;
+                                                             "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Sprecher*in mitgewirkt hat."@de ;
             <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                           ""@en .
 
@@ -1014,7 +1014,7 @@
                  rdfs:label "has stage manager"@en ,
                             "hat Inspizient*in"@de ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a stage manager."@en ,
-                                                                  "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Inspizient*in mitgewirkt hat."@de ;
+                                                                  "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Inspizient*in mitgewirkt hat."@de ;
                  <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                ""@en .
 
@@ -1038,11 +1038,11 @@
 :hasSurtitleCreator rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :hasContributor ;
                     rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Übertitel oder einer anderen Ressource als Übertitel Schöpfer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Schöpfen eines Übertitels. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                                 "This property describes the contribution of an Agent to a performing arts production, a performance, a surtitle or another resource as a surtitle creator."@en ;
+                                 "This property describes the contribution of an Agent to a performing arts production, a performance, a surtitle or another resource as a surtitle creator. The contribution may occur towards an Information Object, for example by creating a surtitle. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
                     rdfs:label "has surtitle creator"@en ,
                                "hat Übertitel Schöpfer*in"@de ;
                     <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an author of surtitles."@en ,
-                                                                     "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Übertitel Schöpfer*in mitgewirkt hat."@de ;
+                                                                     "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Übertiteler*in mitgewirkt hat."@de ;
                     <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                   ""@en .
 
@@ -1055,7 +1055,7 @@
                rdfs:label "has technician"@en ,
                           "hat Techniker*in"@de ;
                <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a technician."@en ,
-                                                                "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Techniker*in mitgewirkt hat."@de ;
+                                                                "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Techniker*in mitgewirkt hat."@de ;
                <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                              ""@en .
 
@@ -1063,7 +1063,7 @@
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasTextualReferenceTo
 :hasTextualReferenceTo rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :hasReferenceTo ;
-                       rdfs:comment "A textual reference usually describes the mention of a resource by an Information Object, a Creative Concept or another resource in written form. Resources may be textually referenced in programme booklets, books or the labeling of an information carrier among others. A textual reference is a specific form of reference."@en ,
+                       rdfs:comment "A textual reference usually describes the mention of a resource by an Information Object, a Creative Concept or another resource in written form. Resources may be textually referenced in programme booklets, books or the labeling of an Information Carrier among others. A textual reference is a specific form of reference."@en ,
                                     "Eine textuelle Referenz beschreibt in der Regel die schriftliche Erwähnung einer Ressource durch ein Informationsobjekt, ein Kreatives Konzept oder einer andere Ressource. Ressourcen werden zum Beispiel in Programmheften, Büchern oder der Beschriftung eines Informationsträgers textuell referenziert. Eine textuelle Referenz ist eine spezielle Form der Referenz."@de ;
                        rdfs:label "has textual reference to"@en ,
                                   "hat textuelle Referenz zu"@de ;
@@ -1091,11 +1091,11 @@
 :hasTranslator rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :hasContributor ;
                rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Übersetzer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Übersetzung eines Texts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                            "This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as a translator XXXX."@en ;
+                            "This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as a translator. The contribution may occur towards an Information Object, for example by translating a text. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
                rdfs:label "has translator"@en ,
                           "hat Übersetzer*in"@de ;
                <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a translator."@en ,
-                                                                "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Übersetzer*in mitgewirkt hat."@de ;
+                                                                "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Übersetzer*in mitgewirkt hat."@de ;
                <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                              ""@en .
 
@@ -1130,11 +1130,11 @@
 :hasVideoDesigner rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :hasContributor ;
                   rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Video oder einer anderen Ressource als Videodesigner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Videos als Teil eines Bühnenbilds. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                               "This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video designer. XXXX"@en ;
+                               "This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video designer. The contribution may occur towards an Information Object, for example by designing a video as part of a stage set. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
                   rdfs:label "has video designer"@en ,
                              "hat Videodesigner*in"@de ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a video designer."@en ,
-                                                                   "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Videodesigner*in mitgewirkt hat."@de ;
+                                                                   "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Videodesigner*in mitgewirkt hat."@de ;
                   <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                 ""@en .
 
@@ -1143,11 +1143,11 @@
 :hasVideoEditor rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasContributor ;
                 rdfs:comment "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Video oder einer anderen Ressource als Videoeditor*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Editieren eines Videos. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de ,
-                             "This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video editor. XXXX"@en ;
+                             "This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video editor. The contribution may occur towards an Information Object, for example by editing a video. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en ;
                 rdfs:label "has video editor"@en ,
                            "hat Videoeditor*in"@de ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a video editor."@en ,
-                                                                 "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Videoeditor*in mitgewirkt hat."@de ;
+                                                                 "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Videoeditor*in mitgewirkt hat."@de ;
                 <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                               ""@en .
 
@@ -1436,8 +1436,8 @@
 :isInformationCarrierOf rdf:type owl:ObjectProperty ;
                         owl:inverseOf :hasInformationCarrier ;
                         rdfs:comment "Invers von 'hat Informationsträger'."@de ,
-                                     "Inverse of 'has information carrier'."@en ;
-                        rdfs:label "is information carrier of"@en ,
+                                     "Inverse of 'has Information Carrier'."@en ;
+                        rdfs:label "is Information Carrier of"@en ,
                                    "ist Informationsträger von"@de .
 
 
@@ -1721,7 +1721,7 @@
               rdfs:subPropertyOf :isReferencedIn ;
               owl:inverseOf :hasRecordingOf ;
               rdfs:label "is recorded in"@en ,
-                         "ist aufgenommen von"@de ;
+                         "ist aufgenommen in"@de ;
               <http://www.w3.org/2004/02/skos/core#definition> "Invers von 'hat Aufnahme von'."@de ,
                                                                "Inverse of 'has recording of'."@en .
 
@@ -2032,8 +2032,8 @@
 :hasCondition rdf:type owl:DatatypeProperty ;
               rdfs:label "has condition"@en ,
                          "hat Zustand"@de ;
-              <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt oder verbindet mit dem Zustand einer Ressource."@de ,
-                                                               "Describes or connects to the condition of a resource."@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt den Zustand einer Ressource."@de ,
+                                                               "Describes the condition of a resource."@en ;
               <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                             ""@en .
 
@@ -2059,7 +2059,7 @@
                 rdfs:label "has date of birth"@en ,
                            "hat Geburtsdatum"@de ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt das Geburtsdatum einer Person."@de ,
-                                                                 "Describes the date of birth of an agent."@en ;
+                                                                 "Describes the date of birth of a Person."@en ;
                 <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                               ""@en .
 
@@ -2073,7 +2073,7 @@
                 rdfs:label "has date of death"@en ,
                            "hat Todesdatum"@de ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt das Todesdatum einer Person."@de ,
-                                                                 "Describes the date of death of an agent."@en ;
+                                                                 "Describes the date of death of a Person."@en ;
                 <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                               ""@en .
 
@@ -2126,6 +2126,7 @@
 
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasFamilyName
 :hasFamilyName rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :hasName ;
                rdfs:domain :Person ;
                rdfs:label "has family name"@en ,
                           "hat Familienname"@de ;
@@ -2135,6 +2136,7 @@
 
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstName
 :hasFirstName rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :hasName ;
               rdfs:domain :Person ;
               rdfs:label "has first name"@en ,
                          "hat Vorname"@de ;
@@ -2148,12 +2150,12 @@
 :hasFirstPerformanceDate rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf :hasDate ;
                          rdfs:domain :CreativeConcept ;
-                         rdfs:comment "A workaround property for describing the first performance date of a performing arts performing arts production in case of insufficient description of related performances."@en ,
+                         rdfs:comment "A workaround property for describing the first performance date of a performing arts production in case of insufficient description of related performances."@en ,
                                       "Eine behelfsmäßige Eigenschaft zur Beschreibung des ersten Aufführungsdatums einer Produktion (darstellende Künste) bei nicht ausreichender Beschreibung der zugehörigen Aufführungen."@de ;
                          rdfs:label "has first performance date"@en ,
                                     "hat erstes Aufführungsdatum"@de ;
                          <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt das erste Aufführungsdatum einer Produktion (darstellende Künste)."@de ,
-                                                                          "Describes the first performance date of a performing arts performing arts production."@en ;
+                                                                          "Describes the first performance date of a performing arts production."@en ;
                          <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                        ""@en .
 
@@ -2232,12 +2234,12 @@
 :hasLastPerformanceDate rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf :hasDate ;
                         rdfs:domain :CreativeConcept ;
-                        rdfs:comment "A workaround property for describing the last performance date of a performing arts performing arts production in case of insufficient description of related performances."@en ,
+                        rdfs:comment "A workaround property for describing the last performance date of a performing arts production in case of insufficient description of related performances."@en ,
                                      "Eine behelfsmäßige Eigenschaft zur Beschreibung des letzten Aufführungsdatums einer Produktion (darstellende Künste) bei nicht ausreichender Beschreibung der zugehörigen Aufführungen."@de ;
                         rdfs:label "has last performance date"@en ,
                                    "hat Dernierendatum"@de ;
                         <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt das letzte Aufführungsdatum einer Produktion (darstellende Künste)."@de ,
-                                                                         "Describes the last performance date of a performing arts performing arts production."@en ;
+                                                                         "Describes the last performance date of a performing arts production."@en ;
                         <http://www.w3.org/2004/02/skos/core#example> ""@de ,
                                                                       ""@en .
 
@@ -2320,7 +2322,7 @@
 :isCreatedAtTime rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf :hasDate ;
                  rdfs:label "was created at time"@en ,
-                            "wurde zu Zeitpunkt kreiert"@de ;
+                            "wurde zu Zeitpunkt erstellt"@de ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource kreiert wurde."@de ,
                                                                   "Describes a singular date/point in time at which a resource was created."@en .
 
@@ -2329,8 +2331,8 @@
 :isIssuedAtTime rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf :hasDate ;
                 rdfs:label "was issued at time"@en ,
-                           "wurde zu Zeitpunkt ausgegeben"@de ;
-                <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource ausgegeben wurde ."@de ,
+                           "wurde zu Zeitpunkt herausgegeben"@de ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource herausgegeben wurde ."@de ,
                                                                  "Describes a singular date/point in time at which a resource was issued."@en .
 
 
@@ -2372,33 +2374,33 @@
 
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept
 :CreativeConcept rdf:type owl:Class ;
-                 rdfs:comment "Creative Concepts comprise ideas, plans and conceptions that serve as a creative foundation for Events, Information Objects or other resources. Creative Concepts do not have to be realized. This class primarily serves as top class for more specifically defined Creative Concepts such as film performing arts productions or performing arts performing arts productions."@en ,
-                              "Kreative Konzepte umfassen Ideen, Planungen und Konzeptionen, die als kreative Grundlage von Ereignissen, Informationsobjekten oder anderen Ressourcen dienen. Kreative Konzepte müssen nicht verwirklicht werden. Diese Klasse dient als Oberklasse für genauer definierte Kreative Konzepte, wie Filmproduktionen oder Produktion (darstellende Künste)en der darstellenden Künste."@de ;
+                 rdfs:comment "Creative Concepts comprise ideas, plans and conceptions that serve as a creative foundation for Events, Information Objects or other resources. Creative Concepts do not have to be realized."@en ,
+                              "Kreative Konzepte umfassen Ideen, Planungen und Konzeptionen, die als kreative Grundlage von Ereignissen, Informationsobjekten oder anderen Ressourcen dienen. Kreative Konzepte müssen nicht verwirklicht werden."@de ;
                  rdfs:label "Creative Concept"@en ,
                             "Kreatives Konzept"@de ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Kreativen Konzepte."@de ,
                                                                   "This class comprises all Creative Concepts."@en ;
                  <http://www.w3.org/2004/02/skos/core#example> "Das Festivalkonzept hinter der seit 1981 veranstalteten Theaterfestivalreihe 'Theater der Welt'"@de ,
                                                                "Die Filmproduktion 'Metropolis' von 'Fritz Lang' aus dem Jahr 1927"@de ,
-                                                               "Die Produktion (darstellende Künste) 'Die Horatier und die Kuratier' von dem 'Pantomimentheater vom Prenzlauer Berg' aus dem Jahr 1982"@de ,
+                                                               "Die Produktion (darstellende Künste) 'Die Horatier und die Kuriatier' von dem 'Pantomimentheater vom Prenzlauer Berg' aus dem Jahr 1982"@de ,
                                                                "The festival concept behind the theatre festival series 'Theater der Welt', held since 1981"@en ,
-                                                               "The film performing arts production 'Metropolis' by 'Fritz Lang' from 1927"@en ,
-                                                               "The performing arts performing arts production 'Die Horatier und die Kuratier' by the 'Pantomimentheater vom Prenzlauer Berg' from 1982"@en .
+                                                               "The film production 'Metropolis' by 'Fritz Lang' from 1927"@en ,
+                                                               "The performing arts production 'Die Horatier und die Kuriatier' by the 'Pantomimentheater vom Prenzlauer Berg' from 1982"@en .
 
 
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject
 :DigitalObject rdf:type owl:Class ;
                rdfs:comment "Diese Klasse umfasst sowohl digitale Repräsentationen von Inhalten von Physischen Objekten als auch nativ digitale Objekte. Digitale Objekte können wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte sein."@de ,
-                            "This class comprises digital representations of contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, may be information carriers of one or more Information Objects."@en ;
+                            "This class comprises digital representations of contents of Physical Objects as well as native digital objects. Digital Objects, like Physical Objects, may be Information Carriers of one or more Information Objects."@en ;
                rdfs:label "Digital Object"@en ,
                           "Digitales Objekt"@de ;
                <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle digitalen Objekte."@de ,
                                                                 "This class comprises all Digital Objects."@en ;
-               <http://www.w3.org/2004/02/skos/core#example> "Die Datei '20190911_152231.jpg', das mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt"@de ,
+               <http://www.w3.org/2004/02/skos/core#example> "Die Datei '20190911_152231.jpg', die mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt"@de ,
                                                              "Die Digitalisierung einer Videokassette mit Namen 'VID_001.avi', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' trägt"@de ,
                                                              "Die Digitalisierung einer analogen Fotografie von einer Probe zur Produktion (darstellende Künste) 'Wir Wohner' mit Namen 'nvt_img-i30-002.JP2'"@de ,
                                                              "The digitisation of a VHS tape named 'VID-001.avi', carrying recordings of two different performances of the play 'Hamlet'"@en ,
-                                                             "The digitisation of an analogue photography of a rehearsal of the performing arts performing arts production 'Wir Wohner', named 'nvt_img-i30-002.JP2'"@en ,
+                                                             "The digitisation of an analogue photography of a rehearsal of the performing arts production 'Wir Wohner', named 'nvt_img-i30-002.JP2'"@en ,
                                                              "The file '20190911_152231.jpg', taken with a digital camera and carrying the photograph of a landscape"@en .
 
 
@@ -2426,37 +2428,37 @@
                                "Informationsträger"@de ;
                     <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Informationsträger."@de ,
                                                                      "This class comprises all Information Carriers."@en ;
-                    <http://www.w3.org/2004/02/skos/core#example> "A programme booklet carrying information of the performing arts performing arts production 'Hanswurst'"@en ,
-                                                                  "A video cassette labeled 'Hamlet, 1985' carrying two different recordings of the theatre play 'Hamlet'"@en ,
-                                                                  "Die Datei '20190911_152231.jpg', das mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt"@de ,
-                                                                  "Die Digitalisierung einer Videokassette mit Namen 'VID_001.avi', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' trägt"@de ,
+                    <http://www.w3.org/2004/02/skos/core#example> "A programme booklet carrying information of the performing arts production 'Hanswurst'"@en ,
+                                                                  "A video cassette carrying two different recordings of the theatre play 'Hamlet'"@en ,
+                                                                  "Die Datei '20190911_152231.jpg', die mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt"@de ,
+                                                                  "Die digitalisierte Version einer Videokassette mit Namen 'VID_001.avi', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' trägt"@de ,
                                                                   "Ein Programmheft, das Informationen über die Produktion (darstellende Künste) 'Hanswurst' trägt"@de ,
-                                                                  "Eine Videokassette mit Beschriftung 'Hamlet, 1985', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' enthält"@de ,
-                                                                  "The digitisation of a VHS tape named 'VID-001.avi', carrying recordings of two different performances of the play 'Hamlet'"@en ,
+                                                                  "Eine Videokassette, die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' enthält"@de ,
+                                                                  "The digitised version of a VHS tape named 'VID-001.avi', carrying recordings of two different performances of the play 'Hamlet'"@en ,
                                                                   "The file '20190911_152231.jpg', taken with a digital camera and carrying the photograph of a landscape"@en .
 
 
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject
 :InformationObject rdf:type owl:Class ;
-                   rdfs:comment "Information Objects are immaterial, describable objects, usually represented by one or more information carriers. The same Information Object may be captured in multiple Physical or Digital Objects (e.g. a magazine edition). One Physical or Digital Object can carry multiple Information Objects (e.g. multiple video recordings on a single video tape). An Information Object may be part of another Information Object (e.g. a chapter of a novel)."@en ,
-                                "Informationsobjekte sind immaterielle, beschreibbare Objekte, die in der Regel von einem oder mehreren Informationsträgern repräsentiert werden. Das gleiche Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer Kopie der Fotografie in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann mehrere Informationsobjekte tragen (z.B. mehrere Videoaufzeichnungen auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans)."@de ;
+                   rdfs:comment "Information Objects are immaterial, describable objects, usually represented by one or more Information Carriers. The same Information Object may be carried by multiple Physical or Digital Objects (e.g. by a photograph and by a copy of that photograph printed in a magazine). One Physical or Digital Object can carry multiple Information Objects (e.g. multiple video recordings on a single video tape). An Information Object may be part of another Information Object (e.g. a chapter of a novel)."@en ,
+                                "Informationsobjekte sind immaterielle, beschreibbare Objekte, die in der Regel von einem oder mehreren Informationsträgern repräsentiert werden. Das gleiche Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer in einem Magazin abgedruckten Kopie der Fotografie) getragen werden. Ein physisches oder digitales Objekt kann mehrere Informationsobjekte tragen (z.B. mehrere Videoaufzeichnungen auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans)."@de ;
                    rdfs:label "Information Object"@en ,
                               "Informationsobjekt"@de ;
                    <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Informationsobjekte."@de ,
                                                                     "This class comprises all Information Objects."@en ;
                    <http://www.w3.org/2004/02/skos/core#example> "A picture of 'Eberhard Kube' as part of an article from an unknown magazine"@en ,
                                                                  "Der Film 'Metropolis' von Fritz Lang aus dem Jahr 1927"@de ,
-                                                                 "Die Aufzeichnung einer Aufführung von 'Himmelhölle' am 03.12.1988, zu finden auf einer Videokassette und als Teil der Digitalisierung des Inhalts dieser Videokassette"@de ,
+                                                                 "Die Aufzeichnung einer Aufführung von 'Himmelhölle' am 03.12.1988, zu finden auf einer Videokassette und als Teil der digitalisierten Version des Inhalts dieser Videokassette"@de ,
                                                                  "Ein Foto von 'Eberhard Kube' als Teil eines Artikels aus einem unbekannten Magazin"@de ,
                                                                  "The movie 'Metropolis' by 'Fritz Lang' from 1927"@en ,
-                                                                 "The recording of a performance of 'Himmelhölle' on 03 December 1988, to be found on a video cassette and as part of the digitisation of the contents of that video cassette"@en .
+                                                                 "The recording of a performance of 'Himmelhölle' on 03 December 1988, to be found on a video cassette and as part of the digitalised version of the contents of that video cassette"@en .
 
 
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/Organization
 :Organization rdf:type owl:Class ;
               rdfs:subClassOf :Agent ;
-              rdfs:comment ""@de ,
-                           ""@en ;
+              rdfs:comment "Organisationen sind Gruppierungen von Personen, die einen bestimmten Zweck verfolgen. Organisationen können zum Beispiel Unternehmen, politische Parteien oder Interessenverbände sein."@de ,
+                           "Organizations are groupings of Persons that pursue a particular purpose. For example, Organizations may be Companies, political parties or associations."@en ;
               rdfs:label "Organisation"@de ,
                          "Organization"@en ;
               <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Organisationen."@de ,
@@ -2472,8 +2474,8 @@
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup
 :PerformingArtsGroup rdf:type owl:Class ;
                      rdfs:subClassOf :Agent ;
-                     rdfs:comment "Gruppen (darstellende Künste) sind in der Regel Ensembles, Kompanien und ähnliche Gruppen im Bereich der darstellenden Künste."@de ,
-                                  "Performing Arts Groups usally are ensembles, companies and similar groups in the realm of performing arts."@en ;
+                     rdfs:comment "Gruppen (darstellende Künste) sind in der Regel Ensembles, Kompanien und ähnliche Gruppierungen mehrerer Akteur*innen im Bereich der darstellenden Künste."@de ,
+                                  "Performing Arts Groups usually are ensembles, companies and similar groupings of multiple in the realm of performing arts."@en ;
                      rdfs:label "Gruppe (darstellende Künste)"@de ,
                                 "Performing Arts Group"@en ;
                      <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Gruppen (darstellende Künste)."@de ,
@@ -2517,20 +2519,20 @@
                                                       "'Eberhard Kube'"@en ,
                                                       "'Johann Sebastian Bach'"@de ,
                                                       "'Johann Sebastian Bach'"@en ,
-                                                      "'Nikolajewitsch Bogdanow'"@de ,
-                                                      "'Nikolajewitsch Bogdanow'"@en .
+                                                      "'Rita May'"@de ,
+                                                      "'Rita May'"@en .
 
 
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject
 :PhysicalObject rdf:type owl:Class ;
-                rdfs:comment "All material objects with physical extent are Physical Objects. Physical Objects, like Digital Objects, may be information carriers of Information Objects. Typical physical information carriers are video cassettes, analogue photographs or program booklets."@en ,
+                rdfs:comment "All material objects with physical extent are Physical Objects. Physical Objects, like Digital Objects, may be Information Carriers of Information Objects. Typical physical Information Carriers are video cassettes, analogue photographs or program booklets."@en ,
                              "Alle materiellen Objekte mit physischen Ausmaßen sind Physische Objekte. Wie Digitale Objekte können auch Physische Objekte Informationsträger von Informationsobjekten sein. Typische physische Informationsträger sind Videokassetten, analoge Fotografien oder Programmhefte."@de ;
                 rdfs:label "Physical Object"@en ,
                            "Physisches Objekt"@de ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Physischen Objekte."@de ,
                                                                  "This class comprises all Physical Objects."@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "A negative strip with three images, depicting rehearsals of the performing arts performing arts production 'Himmelhölle'"@en ,
-                                                              "A programme booklet carrying information of the performing arts performing arts production 'Hanswurst'"@en ,
+                <http://www.w3.org/2004/02/skos/core#example> "A negative strip with three images, depicting rehearsals of the performing arts production 'Himmelhölle'"@en ,
+                                                              "A programme booklet carrying information of the performing arts production 'Hanswurst'"@en ,
                                                               "A video cassette labeled 'Hamlet, 1985' carrying two different recordings of the theatre play 'Hamlet'"@en ,
                                                               "Ein Negativstreifen mit drei Einzelbildern, die Proben zur Produktion (darstellende Künste) 'Himmelhölle' zeigen"@de ,
                                                               "Ein Programmheft, das Informationen über die Produktion (darstellende Künste) 'Hanswurst' trägt"@de ,
@@ -2579,12 +2581,12 @@
                                                     "Die 'Volksbühne' in Berlin"@de ,
                                                     "The 'Museumsplatz' in Wien where performances occurred as part of the 'Wiener Festwochen' in 2019"@en ,
                                                     "The 'Volksbühne' in Berlin"@en ,
-                                                    "The foyer of 'Deutsches Theater' in Berlin where the performing arts performing arts production 'Clownonade' was performed in 1988"@en .
+                                                    "The foyer of 'Deutsches Theater' in Berlin where the performing arts production 'Clownonade' was performed in 1988"@en .
 
 
 ###  https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan
 :TimeSpan rdf:type owl:Class ;
-          rdfs:comment "Time-Spans are temporal extents with starting point, end point and duration. A Time-Span may be defined for resources such as Information Objects and Events. A Time-Span is unlimited in its duration. Not all attributes of a Time-Span have to be known."@en ,
+          rdfs:comment "Timespans are temporal extents with starting point, end point and duration. A Timespan may be defined for resources such as Information Objects and Events. A Timespan is unlimited in its duration. Not all attributes of a Timespan have to be known."@en ,
                        "Zeitspannen sind zeitliche Ausmaße mit Startzeitpunkt, Endzeitpunkt und Dauer. Eine Zeitspanne kann sich auf Ressourcen wie Informationsobjekte und Ereignisse beziehen. Eine Zeitspanne ist in ihrer Dauer unbeschränkt. Nicht alle Eigenschaften einer Zeitspanne müssen bekannt sein."@de ;
           rdfs:label "Timespan"@en ,
                      "Zeitspanne"@de ;
@@ -2592,9 +2594,9 @@
                                                            "This class comprises all timespans."@en ;
           <http://www.w3.org/2004/02/skos/core#example> "00h:00m:00s - 00h:52m:23s auf einer Videokassette"@de ,
                                                         "00h:00m:00s - 00h:52m:23s on a video cassette"@en ,
-                                                        "Die Dauer der 'Wiener Festwochen' von 2019"@de ,
+                                                        "Die Dauer der 'Wiener Festwochen' vom 10.05.2019 bis zum 16.06.2019"@de ,
                                                         "From 1979 to 1989"@en ,
-                                                        "The duration of 'Wiener Festwochen' in 2019"@en ,
+                                                        "The duration of 'Wiener Festwochen' from 2019-05-10 to 2019-06-16"@en ,
                                                         "Von 1979 bis 1989"@de .
 
 

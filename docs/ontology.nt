@@ -2,8 +2,8 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/> <http://purl.org/dc/elements/1.1/rights> <https://creativecommons.org/licenses/by/4.0/deed.en> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/> <http://purl.org/dc/elements/1.1/title> "Datenmodell für Archive der Darstellenden Künste"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/> <http://purl.org/dc/elements/1.1/title> "Performing Arts Archive Model"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/> <http://purl.org/dc/terms/abstract> "Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts \"NONVERBALES THEATER\r\n                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS)."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/> <http://purl.org/dc/terms/abstract> "Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the \"NONVERBALES THEATER\r\n                                                          IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS)."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/> <http://purl.org/dc/terms/abstract> "Linked-Data Ontologie für die Modellierung von Informationen über Objekte und Ereignisse des kulturellen Erbes aus dem Bereich der darstellenden Künste mit Fokus auf nonverbale Formen von Theater. Die Entwicklung der Ontologie is Teil des Digitalisierungsprojekts \"NONVERBALES THEATER IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" an der Mediathek für Tanz und Theater am deutschen Zentrum des Internationales Theaterinstituts. Das Projekt wird gefördert durch das Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin des Forschungs- und Kompetenzzentrums Digitalisierung Berlin (digiS)."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/> <http://purl.org/dc/terms/abstract> "Linked-Data ontology for modelling cultural heritage information in the domain of performing arts focused on non-verbal form of theatre. The ontology development is part of the \"NONVERBALES THEATER IM EHEMALIGEN OSTTEIL BERLINS 1970-1991\" digitisation project at the Media Library for Dance and Theatre of the German Centre of the International Theatre Institute. The project is funded by the Förderprogramm Digitalisierung von Objekten des kulturellen Erbes Berlin of the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (digiS)."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/> <http://purl.org/dc/terms/contributor> "Jonas Pitz" .
 <https://lod.mediathek-tanz-theater.de/schema/paam/> <http://purl.org/dc/terms/contributor> "Maxim Wittenbecher" .
 <https://lod.mediathek-tanz-theater.de/schema/paam/> <http://purl.org/dc/terms/publisher> "Media Library for Dance and Theatre / ITI Germany"@en .
@@ -57,7 +57,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAcrobat> <http://www.w3.org/2000/01/rdf-schema#label> "has acrobat"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAcrobat> <http://www.w3.org/2000/01/rdf-schema#label> "hat Akrobat*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAcrobat> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an acrobat."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAcrobat> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Akrobat*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAcrobat> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Akrobat*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAcrobat> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAcrobat> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -69,7 +69,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasActor> <http://www.w3.org/2000/01/rdf-schema#label> "has actor"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasActor> <http://www.w3.org/2000/01/rdf-schema#label> "hat Schauspieler*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasActor> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an actor."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasActor> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Schauspieler*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasActor> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Schauspieler*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasActor> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasActor> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -77,13 +77,13 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als (Text-)Bearbeiter*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Adaptation eines literarischen Werkes in ein Drama. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an adaptor. The contribution may occur towards an Information Object, for example by adapting a literary work into a drama. The contribution may also occur in form of a participation in the context of a performing arts production."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an adaptor. The contribution may occur towards an Information Object, for example by adapting a literary work into a drama. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor> <http://www.w3.org/2000/01/rdf-schema#label> "has adaptor"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor> <http://www.w3.org/2000/01/rdf-schema#label> "hat (Text-)Bearbeiter*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an adaptor."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als (Text-)Bearbeiter*in mitgewirkt hat."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor> <http://www.w3.org/2004/02/skos/core#example> ""@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor> <http://www.w3.org/2004/02/skos/core#example> ""@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als (Text-)Bearbeiter*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor> <http://www.w3.org/2004/02/skos/core#example> "'Vladimir Filonow' contributed to the performing arts production 'Number 9' as adaptor."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAdaptor> <http://www.w3.org/2004/02/skos/core#example> "'Vladimir Filonow' hat an der Produktion (darstellende Künste) 'Number 9' als (Text-)Bearbeiter mitgewirkt."@de .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasArtisticDirector
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasArtisticDirector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -93,7 +93,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasArtisticDirector> <http://www.w3.org/2000/01/rdf-schema#label> "has artistic director"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasArtisticDirector> <http://www.w3.org/2000/01/rdf-schema#label> "hat künstlerische*n Leiter*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasArtisticDirector> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an artistic director."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasArtisticDirector> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als künstlerische*r Leiter*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasArtisticDirector> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als künstlerische*r Leiter*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasArtisticDirector> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasArtisticDirector> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -105,7 +105,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAssistantDirector> <http://www.w3.org/2000/01/rdf-schema#label> "has assistant director"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAssistantDirector> <http://www.w3.org/2000/01/rdf-schema#label> "hat Regieassistent*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAssistantDirector> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an assistant director."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAssistantDirector> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Regieassistent*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAssistantDirector> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Regieassistent*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAssistantDirector> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAssistantDirector> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -113,17 +113,13 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasReferenceTo> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2000/01/rdf-schema#comment> "An audible reference usually describes the audible mention or capture of a resource by an Information Object, for example in an audio recording. An audible reference is a specific form of reference."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt, zum Beispiel in einer Audio Aufzeichnung. Eine hörbare Referenz ist eine spezielle Form der Referenz."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Eine hörbare Referenz beschreibt in der Regel die hörbare Erwähnung oder Erfassung einer Ressource durch ein Informationsobjekt, zum  Beispiel in einer Audioaufzeichnung. Eine hörbare Referenz ist eine spezielle Form der Referenz."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2000/01/rdf-schema#label> "has audible reference to"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2000/01/rdf-schema#label> "hat hörbare Referenz zu"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to another resource it has an audible reference to."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine hörbare Referenz enthält."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In Audioaufnahme R ist Person K im Gespräch zu hören."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In Video E ist Person L zu hören, aber nicht zu sehen."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In Video Z wird über Aufführung X geredet."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In audio recording R Person K is heard talking"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In video E Person L is heard, but not seen."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "Performance X is being talked about in video Z"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In a video recording of the documentary television film 'Die mime corporel nach Etienne Decroux - Arbeitsdemonstration' 'Hans-Eckard Eckhardt' can be heard or is talked about"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudibleReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In einer Videoaufzeichnung der Fernseh-Dokumentation 'Die mime corporel nach Etienne Decroux - Arbeitsdemonstration' ist 'Hans-Eckard Eckhardt' zu hören oder es wird über ihn gesprochen"@de .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -135,20 +131,24 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo> <http://www.w3.org/2000/01/rdf-schema#label> "hat audiovisuelle Referenz zu"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to another resource it has an audiovisual reference to."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einer anderen Ressource, zu der sie eine audiovisuelle Referenz enthält."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In Video R ist Person K im Gespräch zu hören, In Video R ist Person K zu sehen, Video R zeigt Video T"@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In video R Person K is heard talking, In video R Person K is seen, Video R shows video T"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo> <http://www.w3.org/2004/02/skos/core#example> ""@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In einer Videoaufzeichnung der Aufführung 'Eberhard Kube: Stilpantomimen (Solo)' ist 'Eberhard Kube' zu sehen und zu hören"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In einer Videoaufzeichnung ist die Aufführung 'Eberhard Kube: Stilpantomimen (Solo)' zu sehen und zu hören"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAudioVisualReferenceTo> <http://www.w3.org/2004/02/skos/core#example> "In einer Videoaufzeichung ist eine Aufführung der Produktion 'Café Fatal' zu sehen"@de .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Verfassen eines literarischen Werkes. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an author. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an author. The contribution may occur towards an Information Object, for example by authoring a literary work. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "has author"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "hat Autor*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an author."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Autor*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Autor*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor> <http://www.w3.org/2004/02/skos/core#example> ""@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor> <http://www.w3.org/2004/02/skos/core#example> "For the performing arts production 'Die Horatier und die Kuriatier' the text 'Die Horatier und die Kuriatier' by author 'Bertold Brecht' was used"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasAuthor> <http://www.w3.org/2004/02/skos/core#example> "Für die Produktion (darstellende Künste) 'Die Horatier und die Kuriatier' wurde der Text 'Die Horatier und die Kuriatier' von dem Autor 'Bertold Brecht' genutzt."@de .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasChoreographer
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasChoreographer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -158,7 +158,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasChoreographer> <http://www.w3.org/2000/01/rdf-schema#label> "has choreographer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasChoreographer> <http://www.w3.org/2000/01/rdf-schema#label> "hat Choreograf*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasChoreographer> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a choreographer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasChoreographer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Choreograf*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasChoreographer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Choreograf*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasChoreographer> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasChoreographer> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -170,7 +170,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCinematographer> <http://www.w3.org/2000/01/rdf-schema#label> "has cinematographer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCinematographer> <http://www.w3.org/2000/01/rdf-schema#label> "hat Cinematograph*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCinematographer> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a cinematographer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasCinematographer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Cinematograph*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasCinematographer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Cinematograph*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCinematographer> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCinematographer> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -182,7 +182,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasClown> <http://www.w3.org/2000/01/rdf-schema#label> "has clown"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasClown> <http://www.w3.org/2000/01/rdf-schema#label> "hat Clown*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasClown> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a clown."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasClown> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Clown*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasClown> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Clown*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasClown> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasClown> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -190,23 +190,23 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasComposer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasComposer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasComposer> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Lied, einer Aufführung oder einer anderen Ressource als Komponist*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Komposition eines musikalischen Werks. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasComposer> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a composer. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasComposer> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a composer. The contribution may occur towards an Information Object, for example by composing a musical work. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasComposer> <http://www.w3.org/2000/01/rdf-schema#label> "has composer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasComposer> <http://www.w3.org/2000/01/rdf-schema#label> "hat Komponist*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasComposer> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a composer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasComposer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Komponist*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasComposer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Komponist*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasComposer> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasComposer> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Konzept-Urheber*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Konzept-Urheberschaft einer textuellen Grundlage einer Produktion (darstellende Künste). Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a concept originator. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Konzept-Urheber*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Urheberschaft eines textuellen Konzepts für eine Produktion (darstellende Künste). Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a concept originator. The contribution may occur towards an Information Object, for example by originating a textual concept for a performing arts production. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator> <http://www.w3.org/2000/01/rdf-schema#label> "has concept originator"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator> <http://www.w3.org/2000/01/rdf-schema#label> "hat Konzept-Urheber*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a concept originator."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Konzept-Urheber*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Konzept-Urheber*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasConceptOriginator> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -238,11 +238,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeBuilder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeBuilder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeBuilder> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Kostümbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Herstellung eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Kostümdesigner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung eines Kostüms als auf dessen Gestaltung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeBuilder> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a  costume, a performing arts production or another resource as a costume builder. XXXX Compared to the costume designer this term relates more closely to the aspect of manifacturing a costume rather than designing it."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeBuilder> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a  costume, a performing arts production or another resource as a costume builder. The contribution may occur towards an Information Object, for example by building a costume. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the costume designer this term relates more closely to the aspect of manufacturing a costume rather than designing it."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeBuilder> <http://www.w3.org/2000/01/rdf-schema#label> "has costume builder"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeBuilder> <http://www.w3.org/2000/01/rdf-schema#label> "hat Kostümbauer*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeBuilder> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a costume builder."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeBuilder> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Kostümbauer*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeBuilder> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Kostümbauer*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeBuilder> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeBuilder> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -250,11 +250,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeDesigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Kostümbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Kostümbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a costume, a performing arts production or another resource as acostume designer. XXXX Compared to the costume designer this term relates more closely to the aspect of designing a costume rather than manufacturing it."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a costume, a performing arts production or another resource as a costume designer. The contribution may occur towards an Information Object, for example by designing a costume. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the costume designer this term relates more closely to the aspect of designing a costume rather than manufacturing it."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "has costume designer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "hat Kostümbildner*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a costume designer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Kostümdesigner*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Kostümdesigner*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeDesigner> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCostumeDesigner> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -266,7 +266,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCreator> <http://www.w3.org/2000/01/rdf-schema#label> "has creator"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCreator> <http://www.w3.org/2000/01/rdf-schema#label> "hat Schöpfer*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCreator> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a creator."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasCreator> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Schöpfer*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasCreator> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Schöpfer*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCreator> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCreator> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -278,9 +278,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDancer> <http://www.w3.org/2000/01/rdf-schema#label> "has dancer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDancer> <http://www.w3.org/2000/01/rdf-schema#label> "hat Tänzer*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDancer> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a dancer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasDancer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tänzer*in mitgewirkt hat."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasDancer> <http://www.w3.org/2004/02/skos/core#example> ""@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasDancer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Tänzer*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDancer> <http://www.w3.org/2004/02/skos/core#example> ""@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasDancer> <http://www.w3.org/2004/02/skos/core#example> "'vid_016_002' hat Tänzerin 'Edith Demharter'"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasDancer> <http://www.w3.org/2004/02/skos/core#example> "Der Film 'Das triadische Ballett. Ein Film in drei Teilen nach den Tänzen von Oskar Schlemmer' hat Tänzerin 'Edith Demharter'"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasDancer> <http://www.w3.org/2004/02/skos/core#example> "In einer Aufzeichnung von 'Das triadische Ballett. Ein Film in drei Teilen nach den Tänzen von Oskar Schlemmer' ist 'Edith Demharter' als Tänzerin zu sehen"@de .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasDigitalVersion
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDigitalVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -296,12 +298,12 @@
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Regie für einen Spielfilms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a director. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film, einer Aufführung oder einer anderen Ressource als Regisseur*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Regie für einen Film. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a director. The contribution may occur towards an Information Object, for example by directing a film. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector> <http://www.w3.org/2000/01/rdf-schema#label> "has director"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector> <http://www.w3.org/2000/01/rdf-schema#label> "hat Regisseur*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a director."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Regisseur*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Regisseur*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDirector> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -309,11 +311,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDramaturge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDramaturge> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDramaturge> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Text oder einer anderen Ressource als Dramaturg*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Bearbeitung eines dramatischen Texts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasDramaturge> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance, a text or another resource as a dramaturge. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasDramaturge> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance, a text or another resource as a dramaturge. The contribution may occur towards an Information Object, for example by revising a dramatic text. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDramaturge> <http://www.w3.org/2000/01/rdf-schema#label> "has dramaturge"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDramaturge> <http://www.w3.org/2000/01/rdf-schema#label> "hat Dramaturg*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDramaturge> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a dramaturge."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasDramaturge> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Dramaturg*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasDramaturge> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Dramaturg*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDramaturge> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDramaturge> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -321,11 +323,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasEditor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasEditor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasEditor> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Text oder einer anderen Ressource als Redakteur*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Herausgeben einer Publikation. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasEditor> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as an editor. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasEditor> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as an editor. The contribution may occur towards an Information Object, for example by publishing a publication. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasEditor> <http://www.w3.org/2000/01/rdf-schema#label> "has editor"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasEditor> <http://www.w3.org/2000/01/rdf-schema#label> "hat Redakteur*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasEditor> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a editor."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasEditor> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Redakteur*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasEditor> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Redakteur*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasEditor> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasEditor> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -349,8 +351,8 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasHomepage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://lod.mediathek-tanz-theater.de/schema/paam/Agent> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasHomepage> <http://www.w3.org/2000/01/rdf-schema#label> "has homepage"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasHomepage> <http://www.w3.org/2000/01/rdf-schema#label> "hat Homepage"@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasHomepage> <http://www.w3.org/2004/02/skos/core#definition> "Connects to a homepage of an Agent."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasHomepage> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet mit der Homepage eines/r Akteur*in."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasHomepage> <http://www.w3.org/2004/02/skos/core#definition> "Connects an Agent to a homepage of the Agent."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasHomepage> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet einen Akteur mit einer Homepage des/r Akteur*in."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasHomepage> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasHomepage> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -360,26 +362,26 @@
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Plakats oder einer anderen Ressource als Illustrator*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Illustration eines Plakats. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a poster or another resource as an illustrator. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Plakats oder einer anderen Ressource als Illustrator*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Illustration eines Programmhefts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a poster or another resource as an illustrator. The contribution may occur towards an Information Object, for example by illustrating a programme booklet. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator> <http://www.w3.org/2000/01/rdf-schema#label> "has illustrator"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator> <http://www.w3.org/2000/01/rdf-schema#label> "hat Illustrator*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an illustrator."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Illustrator*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Illustrator*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasIllustrator> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasReferenceTo> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "Diese Eigenschaft beschreibt die Beeinflussung im weiteren Sinne einer Ressource durch eine andere Ressource. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form der Referenz."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the influence in a broader sense on a resource by another resource. An influence may be more or less recognizable and should be verifiable. An influence is a specific form of reference."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom> <http://www.w3.org/2000/01/rdf-schema#label> "has influence on"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom> <http://www.w3.org/2000/01/rdf-schema#label> "hat Einfluss auf"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "Diese Eigenschaft beschreibt die Beeinflussung einer Ressource durch eine andere Ressource im weiteren Sinne. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form der Referenz."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the influence on a resource by another resource in a broader sense. An influence may be more or less recognizable and should be verifiable. An influence is a specific form of reference."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom> <http://www.w3.org/2000/01/rdf-schema#label> "has influence from"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom> <http://www.w3.org/2000/01/rdf-schema#label> "hat Einfluss von"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to another resource that it is influenced by."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einer anderen Ressource, von der sie beeinflusst ist."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom> <http://www.w3.org/2004/02/skos/core#example> "Produktion (darstellende Künste) Y ist basiert auf Produktion (darstellende Künste) X, Text Y ist beeinflusst von Film X"@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom> <http://www.w3.org/2004/02/skos/core#example> "performing arts performing arts production Y is based on performing arts performing arts production X, Text Y is influenced by Film X"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasInfluenceFrom> <http://www.w3.org/2004/02/skos/core#example> "performing arts production Y is based on performing arts production X, Text Y is influenced by Film X"@en .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -387,7 +389,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier> <http://www.w3.org/2000/01/rdf-schema#range> <https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier> <http://www.w3.org/2000/01/rdf-schema#comment> "An Information Carrier is a resource, that carries an Information Object. An Information Object may be carried by multiple Information Carriers, for example the same recording of a performance on a video cassette and on a USB flash drive. Multiple Information Objects may be carried by the same Information Carrier, for example multiple recordings of different performances on the same video cassette."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier> <http://www.w3.org/2000/01/rdf-schema#comment> "Ein Informationsträger ist eine Ressource, die ein Informationsobjekt trägt. Ein Informationsobjekt kann von mehreren Informationsträgern getragen werden, zum Beispiel die gleiche Aufnahme einer Aufführung auf einer Videokassette und auf einem USB-Stick. Auf einem Informationsträger können mehrere Informationsobjekte getragen werden, zum Beispiel mehrere Aufnahmen von verschiedenen Aufführungen auf derselben Videokassette."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier> <http://www.w3.org/2000/01/rdf-schema#label> "has information carrier"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier> <http://www.w3.org/2000/01/rdf-schema#label> "has Information Carrier"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier> <http://www.w3.org/2000/01/rdf-schema#label> "hat Informationsträger"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier> <http://www.w3.org/2004/02/skos/core#definition> "Connects an information object to a physical or digital object it is represented on."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet ein Informationsobjekt mit einem physischen oder digitalen Objekt, auf dem es repräsentiert ist."@en .
@@ -398,11 +400,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLayouter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLayouter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLayouter> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Publikation oder einer anderen Ressource als Layouter*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung des Layouts einer Publikation. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasLayouter> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a publication or another resource as a layouter. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasLayouter> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a publication or another resource as a layouter. The contribution may occur towards an Information Object, for example by designing the layout of a publication. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLayouter> <http://www.w3.org/2000/01/rdf-schema#label> "has layouter"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLayouter> <http://www.w3.org/2000/01/rdf-schema#label> "hat Layouter*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLayouter> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a layouter."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasLayouter> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Layouter*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasLayouter> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Layouter*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLayouter> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLayouter> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -410,11 +412,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Lichtdesigner*in beschrieben."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as lighting designer."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a lighting designer."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "has lighting designer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "hat Lichtdesigner*in"@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a light designer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Lichtdesigner*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a lighting designer."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Lichtdesigner*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLightingDesigner> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -426,31 +428,31 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMakeUpArtist> <http://www.w3.org/2000/01/rdf-schema#label> "has make up artist"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMakeUpArtist> <http://www.w3.org/2000/01/rdf-schema#label> "hat Visagist*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMakeUpArtist> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a make up artist."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasMakeUpArtist> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Visagist*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasMakeUpArtist> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Visagist*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMakeUpArtist> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMakeUpArtist> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Maskenbauer*in einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask builder. XXXX Compared to the mask designer this term relates more closely to the aspect of manifacturing a mask rather than designing it."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Bauen einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask builder. The contribution may occur towards an Information Object, for example by building a mask. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the mask designer this term relates more closely to the aspect of manufacturing a mask rather than designing it."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder> <http://www.w3.org/2000/01/rdf-schema#label> "has mask builder"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder> <http://www.w3.org/2000/01/rdf-schema#label> "hat Maskenbauer*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a mask builder."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Maskenbauer*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Maskenbauer*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskBuilder> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Maskenbildner*in einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Maske als auf deren Fertigung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask designer. XXXX Compared to the costume designer this term relates more closely to the aspect of designing a mask rather than manifacturing it."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Maske als auf deren Fertigung."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask designer. The contribution may occur towards an Information Object, for example by designing a mask. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the costume designer this term relates more closely to the aspect of designing a mask rather than manufacturing it."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "has mask designer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "hat Maskenbildner*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a mask designer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Maskenbildner*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Maskenbildner*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMaskDesigner> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -461,7 +463,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMediator> <http://www.w3.org/2000/01/rdf-schema#label> "has mediator"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMediator> <http://www.w3.org/2000/01/rdf-schema#label> "hat Vermittler*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMediator> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a mediator."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasMediator> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Vermittler*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasMediator> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Vermittler*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMediator> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMediator> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -478,23 +480,23 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMime> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Mim*in beschrieben."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasMime> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as amime."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasMime> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a mime."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMime> <http://www.w3.org/2000/01/rdf-schema#label> "has mime"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMime> <http://www.w3.org/2000/01/rdf-schema#label> "hat Mim*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMime> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a mime."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasMime> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Mim*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasMime> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Mim*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMime> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMime> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Lieds, einer Aufführung oder einer anderen Ressource als Musiker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Musiker*in für ein musikalisches Werk. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a musician. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), eines Lieds, einer Aufführung oder einer anderen Ressource als Musiker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel als Musiker*in für ein musikalisches Werk. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a musician. The contribution may occur towards an Information Object, for example as musician for a musical work. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician> <http://www.w3.org/2000/01/rdf-schema#label> "has musician"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician> <http://www.w3.org/2000/01/rdf-schema#label> "hat Musiker*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a musician."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Musiker*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Musiker*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasMusician> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -506,7 +508,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPantomime> <http://www.w3.org/2000/01/rdf-schema#label> "has pantomime"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPantomime> <http://www.w3.org/2000/01/rdf-schema#label> "hat Pantomim*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPantomime> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a pantomime."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPantomime> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Pantomim*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPantomime> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Pantomim*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPantomime> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPantomime> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -530,7 +532,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasParticipant> <http://www.w3.org/2000/01/rdf-schema#label> "has participant"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasParticipant> <http://www.w3.org/2000/01/rdf-schema#label> "hat Teilnehmer*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasParticipant> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a participant."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasParticipant> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Teilnehmer*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasParticipant> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Teilnehmer*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasParticipant> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasParticipant> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -542,7 +544,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPerformer> <http://www.w3.org/2000/01/rdf-schema#label> "has performer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPerformer> <http://www.w3.org/2000/01/rdf-schema#label> "hat Darsteller*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPerformer> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a performer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPerformer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Darsteller*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPerformer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Darsteller*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPerformer> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPerformer> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -554,7 +556,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotoStudio> <http://www.w3.org/2000/01/rdf-schema#label> "has photo studio"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotoStudio> <http://www.w3.org/2000/01/rdf-schema#label> "hat Fotostudio"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotoStudio> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to a photo studio that contributed to its creation."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotoStudio> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem Fotostudio, dass bei ihrer Kreierung beigetragen hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotoStudio> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem Fotostudio, dass bei ihrer Schaffung beigetragen hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotoStudio> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotoStudio> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -562,11 +564,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotographer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotographer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotographer> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Fotografie, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Fotograf*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Aufnehmen einer Fotografie. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotographer> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a photograph, a performing arts production, a performance or another resource as a photographer. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotographer> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a photograph, a performing arts production, a performance or another resource as a photographer. The contribution may occur towards an Information Object, for example by taking a photograph. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotographer> <http://www.w3.org/2000/01/rdf-schema#label> "has photographer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotographer> <http://www.w3.org/2000/01/rdf-schema#label> "hat Fotograf*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotographer> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a photographer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotographer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Fotograf*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotographer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Fotograf*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotographer> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPhotographer> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -599,11 +601,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Text oder einer anderen Ressource als Dramatiker*in  beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Verfassung eines dramatischen Texts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a text or another resource as a playwright. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a text or another resource as a playwright. The contribution may occur towards an Information Object, for example by authoring a dramatic text. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright> <http://www.w3.org/2000/01/rdf-schema#label> "has playwright"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright> <http://www.w3.org/2000/01/rdf-schema#label> "hat Dramatiker*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a playwright."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Dramatiker*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Dramatiker*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPlaywright> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -623,23 +625,23 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProducer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProducer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProducer> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Film oder einer anderen Ressource als Produzent*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Produktion eines Films. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasProducer> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a film or another resource as a producer. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasProducer> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a film or another resource as a producer. The contribution may occur towards an Information Object, for example by producing a film. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProducer> <http://www.w3.org/2000/01/rdf-schema#label> "has producer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProducer> <http://www.w3.org/2000/01/rdf-schema#label> "hat Produzent*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProducer> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a producer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasProducer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Produzent*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasProducer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Produzent*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProducer> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProducer> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Programmdirektor*in beschrieben. Diese Eigenschaft kann zum Beispiel Kuratoren oder Leiter des Programmes bei einem Festival genutzt werden. "@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Programmdirektor*in beschrieben. Diese Eigenschaft kann zum Beispiel Kurator*innen oder Leiter*innen des Programmes bei einem Festival genutzt werden. "@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a programme director. This property may be used for curators or directors of the programme of a festival among others."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector> <http://www.w3.org/2000/01/rdf-schema#label> "has programme director"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector> <http://www.w3.org/2000/01/rdf-schema#label> "hat Programmdirektor*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as programme director."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Programmdirektor*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Programmdirektor*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasProgrammeDirector> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -651,7 +653,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPrompter> <http://www.w3.org/2000/01/rdf-schema#label> "has prompter"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPrompter> <http://www.w3.org/2000/01/rdf-schema#label> "hat Souffleur*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPrompter> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a prompter."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPrompter> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Souffleur*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPrompter> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Souffleur*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPrompter> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPrompter> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -670,11 +672,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Zeitung, einer Produktion (darstellende Künste) oder einer anderen Ressource als Herausgeber*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Herausgeben einer Zeitung. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a publisher. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a publisher. The contribution may occur towards an Information Object, for example by publishing a newspaper. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher> <http://www.w3.org/2000/01/rdf-schema#label> "has publisher"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher> <http://www.w3.org/2000/01/rdf-schema#label> "hat Herausgeber*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a publisher."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Verleger*in an der Ressource mitgewirkt hat."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Verleger*in an der Ressource mitgewirkt hat."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublisher> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -682,11 +684,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingCompany> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Buch, einer Produktion (darstellende Künste) oder einer anderen Ressource als Verlag beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Verlegen eines Buchs. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a book, a performing arts production or another resource as a publishing company. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a book, a performing arts production or another resource as a publishing company. The contribution may occur towards an Information Object, for example by publishing a book. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingCompany> <http://www.w3.org/2000/01/rdf-schema#label> "has publishing company"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingCompany> <http://www.w3.org/2000/01/rdf-schema#label> "hat Verlag"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingCompany> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that operated as publishing company for the resource."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingCompany> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Verlag für die Ressource mitgewirkt hat."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingCompany> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Verlag für die Ressource mitgewirkt hat."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingCompany> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPublishingCompany> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -704,12 +706,12 @@
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Fertigung einer Puppe. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Puppenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet builder. XXXX Compared to the puppet designer this term relates more closely to the aspect of manifacturing a puppet rather than designing it."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Fertigung einer Puppe. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Puppenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet builder. The contribution may occur towards an Information Object, for example by building a puppet. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the puppet designer this term relates more closely to the aspect of manufacturing a puppet rather than designing it."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder> <http://www.w3.org/2000/01/rdf-schema#label> "has puppet builder"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder> <http://www.w3.org/2000/01/rdf-schema#label> "hat Puppenbauer*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a puppet builder."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenbauer*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Puppenbauer*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetBuilder> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -717,11 +719,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Puppe, einer Produktion (darstellende Künste) oder einer anderen Ressource als Puppenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung einer Puppe. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Puppenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Puppe als auf deren Fertigung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet designer. XXXX Compared to the puppet builder this term relates more closely to the aspect of designing a puppet rather than manufacturing it."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a puppet, a performing arts production or another resource as a puppet designer. The contribution may occur towards an Information Object, for example by designing a puppet. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the puppet builder this term relates more closely to the aspect of designing a puppet rather than manufacturing it."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "has puppet designer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "hat Puppenbildner*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a puppet designer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenbildner*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Puppenbildner*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppetDesigner> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -733,7 +735,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppeteer> <http://www.w3.org/2000/01/rdf-schema#label> "has puppeteer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppeteer> <http://www.w3.org/2000/01/rdf-schema#label> "hat Puppenspieler*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppeteer> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a puppeteer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppeteer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Puppenspieler*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppeteer> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Puppenspieler*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppeteer> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasPuppeteer> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -742,7 +744,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordingOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasReferenceTo> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordingOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordingOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://lod.mediathek-tanz-theater.de/schema/paam/Event> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordingOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Diese Eigenschaft ist eine Form von Referenz, die die Aufzeichnung eines Ereignisses als Informationsobjekt beschreibt."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordingOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Diese Eigenschaft ist eine Form von Referenz, die die Aufzeichnung eines Ereignisses als ein Informationsobjekt beschreibt."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordingOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is a form of reference that describes the recording of an Event as an Information Object."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordingOf> <http://www.w3.org/2000/01/rdf-schema#label> "has recording of"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordingOf> <http://www.w3.org/2000/01/rdf-schema#label> "hat Aufnahme von"@de .
@@ -754,12 +756,12 @@
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufnahme, einer Aufführung oder einer anderen Ressource als Tontechniker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Tontechnik einer Audioaufnahme. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a recording, a performance or another resource as a recordist. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufnahme, einer Aufführung oder einer anderen Ressource als Tontechniker*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel als Tontechniker*in einer Audioaufnahme. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a recording, a performance or another resource as a recordist. The contribution may occur towards an Information Object, for example as recordist of an audio recording. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist> <http://www.w3.org/2000/01/rdf-schema#label> "has recordist"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist> <http://www.w3.org/2000/01/rdf-schema#label> "hat Tontechniker*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a recordist."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tontechniker*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Tontechniker*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordist> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -834,11 +836,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSeamster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSeamster> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSeamster> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Näher*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Nähen eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasSeamster> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a costume, a performing arts production or another resource as a seamster. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasSeamster> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a costume, a performing arts production or another resource as a seamster. The contribution may occur towards an Information Object, for example by sewing a costume. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSeamster> <http://www.w3.org/2000/01/rdf-schema#label> "has seamster"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSeamster> <http://www.w3.org/2000/01/rdf-schema#label> "hat Näher*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSeamster> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a seamster."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasSeamster> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Näher*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasSeamster> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Näher*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSeamster> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSeamster> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -849,8 +851,8 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "Spielzeit erklären oder klar?"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSeason> <http://www.w3.org/2000/01/rdf-schema#label> "has season"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSeason> <http://www.w3.org/2000/01/rdf-schema#label> "hat Spielzeit"@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasSeason> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Produktion (darstellende Künste) mit der Spielzeit, in der die Produktion (darstellende Künste) aufgeführt wird oder wurde."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasSeason> <http://www.w3.org/2004/02/skos/core#definition> "connects to the season in which a performing arts performing arts production was or is performed."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasSeason> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit der Spielzeit, in der eine Produktion (darstellende Künste) aufgeführt wird oder wurde."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasSeason> <http://www.w3.org/2004/02/skos/core#definition> "connects a resource to the season in which a performing arts production was or is performed. ???"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSeason> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSeason> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -858,11 +860,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetBuilder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetBuilder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetBuilder> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Bühnenbild, einer Produktion (darstellende Künste) oder einer anderen Ressource als Bühnenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Fertigung eines Bühnenbilds. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Bühnenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Bühne als auf deren Gestaltung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasSetBuilder> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a set, a performing arts production or another resource as a set builder. XXXX Compared to the set designer this term relates more closely to the aspect of manifacturing a set rather than designing it."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasSetBuilder> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a stage set, a performing arts production or another resource as a set builder. The contribution may occur towards an Information Object, for example by building a stage set. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the set designer this term relates more closely to the aspect of manufacturing a set rather than designing it."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetBuilder> <http://www.w3.org/2000/01/rdf-schema#label> "has set builder"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetBuilder> <http://www.w3.org/2000/01/rdf-schema#label> "hat Bühnenbauer*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetBuilder> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a set builder."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasSetBuilder> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Bühnenbauer*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasSetBuilder> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Bühnenbauer*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetBuilder> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetBuilder> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -870,22 +872,22 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetDesigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Bühnenbild, einer Produktion (darstellende Künste) oder einer anderen Ressource als Bühnenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Bühnenbilds. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Bühnenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Bühne als auf deren Fertigung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasSetDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a set, a performing arts production or another resource as a set designer. XXXX Compared to the set builder this term relates more closely to the aspect of designing a set rather than manifacturing it."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasSetDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a stage set, a performing arts production or another resource as a set designer. The contribution may occur towards an Information Object, for example by designing a stage set. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the set builder this term relates more closely to the aspect of designing a set rather than manufacturing it."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "has set designer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "hat Bühnenbildner*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a set designer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasSetDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Bühnenbildner*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasSetDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Bühnenbildner*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetDesigner> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSetDesigner> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Lied, einer Aufführung oder einer anderen Ressource als Sänger*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Singen für ein Lied. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a singer XXXX. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a singer. The contribution may occur towards an Information Object, for example by singing for a song. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger> <http://www.w3.org/2000/01/rdf-schema#label> "has singer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger> <http://www.w3.org/2000/01/rdf-schema#label> "hat Sänger*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a singer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Sänger*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Sänger*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSinger> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -897,7 +899,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSoundDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "has sound designer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSoundDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "hat Tonmeister*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSoundDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a sound designer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasSoundDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Tonmeister*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasSoundDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Tonmeister*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSoundDesigner> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSoundDesigner> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -916,11 +918,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSpeaker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSpeaker> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSpeaker> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Film oder einer anderen Ressource als Sprecher*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Sprechen für einen Film. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasSpeaker> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance a film or another resource as a speaker. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasSpeaker> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance a film or another resource as a speaker. The contribution may occur towards an Information Object, for example by speaking for a film. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSpeaker> <http://www.w3.org/2000/01/rdf-schema#label> "has speaker"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSpeaker> <http://www.w3.org/2000/01/rdf-schema#label> "hat Sprecher*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSpeaker> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a speaker."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasSpeaker> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Sprecher*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasSpeaker> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Sprecher*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSpeaker> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSpeaker> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -932,7 +934,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasStageManager> <http://www.w3.org/2000/01/rdf-schema#label> "has stage manager"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasStageManager> <http://www.w3.org/2000/01/rdf-schema#label> "hat Inspizient*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasStageManager> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a stage manager."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasStageManager> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Inspizient*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasStageManager> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Inspizient*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasStageManager> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasStageManager> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -954,11 +956,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSurtitleCreator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSurtitleCreator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSurtitleCreator> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Übertitel oder einer anderen Ressource als Übertitel Schöpfer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Schöpfen eines Übertitels. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasSurtitleCreator> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance, a surtitle or another resource as a surtitle creator."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasSurtitleCreator> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance, a surtitle or another resource as a surtitle creator. The contribution may occur towards an Information Object, for example by creating a surtitle. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSurtitleCreator> <http://www.w3.org/2000/01/rdf-schema#label> "has surtitle creator"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSurtitleCreator> <http://www.w3.org/2000/01/rdf-schema#label> "hat Übertitel Schöpfer*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSurtitleCreator> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as an author of surtitles."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasSurtitleCreator> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Übertitel Schöpfer*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasSurtitleCreator> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Übertiteler*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSurtitleCreator> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasSurtitleCreator> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -970,14 +972,14 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTechnician> <http://www.w3.org/2000/01/rdf-schema#label> "has technician"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTechnician> <http://www.w3.org/2000/01/rdf-schema#label> "hat Techniker*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTechnician> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a technician."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasTechnician> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Techniker*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasTechnician> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Techniker*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTechnician> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTechnician> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasTextualReferenceTo
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTextualReferenceTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTextualReferenceTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasReferenceTo> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasTextualReferenceTo> <http://www.w3.org/2000/01/rdf-schema#comment> "A textual reference usually describes the mention of a resource by an Information Object, a Creative Concept or another resource in written form. Resources may be textually referenced in programme booklets, books or the labeling of an information carrier among others. A textual reference is a specific form of reference."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasTextualReferenceTo> <http://www.w3.org/2000/01/rdf-schema#comment> "A textual reference usually describes the mention of a resource by an Information Object, a Creative Concept or another resource in written form. Resources may be textually referenced in programme booklets, books or the labeling of an Information Carrier among others. A textual reference is a specific form of reference."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTextualReferenceTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Eine textuelle Referenz beschreibt in der Regel die schriftliche Erwähnung einer Ressource durch ein Informationsobjekt, ein Kreatives Konzept oder einer andere Ressource. Ressourcen werden zum Beispiel in Programmheften, Büchern oder der Beschriftung eines Informationsträgers textuell referenziert. Eine textuelle Referenz ist eine spezielle Form der Referenz."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTextualReferenceTo> <http://www.w3.org/2000/01/rdf-schema#label> "has textual reference to"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTextualReferenceTo> <http://www.w3.org/2000/01/rdf-schema#label> "hat textuelle Referenz zu"@de .
@@ -1003,11 +1005,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Übersetzer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Übersetzung eines Texts. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as a translator XXXX."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as a translator. The contribution may occur towards an Information Object, for example by translating a text. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator> <http://www.w3.org/2000/01/rdf-schema#label> "has translator"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator> <http://www.w3.org/2000/01/rdf-schema#label> "hat Übersetzer*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a translator."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Übersetzer*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Übersetzer*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasTranslator> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -1039,11 +1041,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Video oder einer anderen Ressource als Videodesigner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Videos als Teil eines Bühnenbilds. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video designer. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video designer. The contribution may occur towards an Information Object, for example by designing a video as part of a stage set. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "has video designer"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "hat Videodesigner*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a video designer."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Videodesigner*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Videodesigner*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoDesigner> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -1051,11 +1053,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasContributor> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor> <http://www.w3.org/2000/01/rdf-schema#comment> "Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Video oder einer anderen Ressource als Videoeditor*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Editieren eines Videos. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video editor. XXXX"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the contribution of an Agent to a performing arts production, a performance, a video or another resource as a video editor. The contribution may occur towards an Information Object, for example by editing a video. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor> <http://www.w3.org/2000/01/rdf-schema#label> "has video editor"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor> <http://www.w3.org/2000/01/rdf-schema#label> "hat Videoeditor*in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor> <http://www.w3.org/2004/02/skos/core#definition> "Connects a resource to an Agent that contributed to the resource as a video editor."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in, der/die als Videoeditor*in mitgewirkt hat."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor> <http://www.w3.org/2004/02/skos/core#definition> "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Videoeditor*in mitgewirkt hat."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasVideoEditor> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -1319,8 +1321,8 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/isInformationCarrierOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/isInformationCarrierOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasInformationCarrier> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/isInformationCarrierOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Invers von 'hat Informationsträger'."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/isInformationCarrierOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of 'has information carrier'."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/isInformationCarrierOf> <http://www.w3.org/2000/01/rdf-schema#label> "is information carrier of"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/isInformationCarrierOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of 'has Information Carrier'."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/isInformationCarrierOf> <http://www.w3.org/2000/01/rdf-schema#label> "is Information Carrier of"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/isInformationCarrierOf> <http://www.w3.org/2000/01/rdf-schema#label> "ist Informationsträger von"@de .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/isLayouterOf
@@ -1576,7 +1578,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/isReferencedIn> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn> <http://www.w3.org/2002/07/owl#inverseOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasRecordingOf> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is recorded in"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn> <http://www.w3.org/2000/01/rdf-schema#label> "ist aufgenommen von"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn> <http://www.w3.org/2000/01/rdf-schema#label> "ist aufgenommen in"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn> <http://www.w3.org/2004/02/skos/core#definition> "Invers von 'hat Aufnahme von'."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/isRecordedIn> <http://www.w3.org/2004/02/skos/core#definition> "Inverse of 'has recording of'."@en .
 # 
@@ -1856,8 +1858,8 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCondition> <http://www.w3.org/2000/01/rdf-schema#label> "has condition"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCondition> <http://www.w3.org/2000/01/rdf-schema#label> "hat Zustand"@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasCondition> <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt oder verbindet mit dem Zustand einer Ressource."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasCondition> <http://www.w3.org/2004/02/skos/core#definition> "Describes or connects to the condition of a resource."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasCondition> <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt den Zustand einer Ressource."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasCondition> <http://www.w3.org/2004/02/skos/core#definition> "Describes the condition of a resource."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCondition> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasCondition> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -1881,7 +1883,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfBirth> <http://www.w3.org/2000/01/rdf-schema#label> "has date of birth"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfBirth> <http://www.w3.org/2000/01/rdf-schema#label> "hat Geburtsdatum"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfBirth> <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt das Geburtsdatum einer Person."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfBirth> <http://www.w3.org/2004/02/skos/core#definition> "Describes the date of birth of an agent."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfBirth> <http://www.w3.org/2004/02/skos/core#definition> "Describes the date of birth of a Person."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfBirth> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfBirth> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -1894,7 +1896,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfDeath> <http://www.w3.org/2000/01/rdf-schema#label> "has date of death"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfDeath> <http://www.w3.org/2000/01/rdf-schema#label> "hat Todesdatum"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfDeath> <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt das Todesdatum einer Person."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfDeath> <http://www.w3.org/2004/02/skos/core#definition> "Describes the date of death of an agent."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfDeath> <http://www.w3.org/2004/02/skos/core#definition> "Describes the date of death of a Person."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfDeath> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasDateOfDeath> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -1942,6 +1944,7 @@
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasFamilyName
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFamilyName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasFamilyName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasName> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFamilyName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://lod.mediathek-tanz-theater.de/schema/paam/Person> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFamilyName> <http://www.w3.org/2000/01/rdf-schema#label> "has family name"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFamilyName> <http://www.w3.org/2000/01/rdf-schema#label> "hat Familienname"@de .
@@ -1950,6 +1953,7 @@
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstName
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasName> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://lod.mediathek-tanz-theater.de/schema/paam/Person> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstName> <http://www.w3.org/2000/01/rdf-schema#label> "has first name"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstName> <http://www.w3.org/2000/01/rdf-schema#label> "hat Vorname"@de .
@@ -1962,12 +1966,12 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasDate> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#comment> "A workaround property for describing the first performance date of a performing arts performing arts production in case of insufficient description of related performances."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#comment> "A workaround property for describing the first performance date of a performing arts production in case of insufficient description of related performances."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Eine behelfsmäßige Eigenschaft zur Beschreibung des ersten Aufführungsdatums einer Produktion (darstellende Künste) bei nicht ausreichender Beschreibung der zugehörigen Aufführungen."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#label> "has first performance date"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#label> "hat erstes Aufführungsdatum"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate> <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt das erste Aufführungsdatum einer Produktion (darstellende Künste)."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate> <http://www.w3.org/2004/02/skos/core#definition> "Describes the first performance date of a performing arts performing arts production."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate> <http://www.w3.org/2004/02/skos/core#definition> "Describes the first performance date of a performing arts production."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasFirstPerformanceDate> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -2038,12 +2042,12 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasDate> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#comment> "A workaround property for describing the last performance date of a performing arts performing arts production in case of insufficient description of related performances."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#comment> "A workaround property for describing the last performance date of a performing arts production in case of insufficient description of related performances."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Eine behelfsmäßige Eigenschaft zur Beschreibung des letzten Aufführungsdatums einer Produktion (darstellende Künste) bei nicht ausreichender Beschreibung der zugehörigen Aufführungen."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#label> "has last performance date"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate> <http://www.w3.org/2000/01/rdf-schema#label> "hat Dernierendatum"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate> <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt das letzte Aufführungsdatum einer Produktion (darstellende Künste)."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate> <http://www.w3.org/2004/02/skos/core#definition> "Describes the last performance date of a performing arts performing arts production."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate> <http://www.w3.org/2004/02/skos/core#definition> "Describes the last performance date of a performing arts production."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate> <http://www.w3.org/2004/02/skos/core#example> ""@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/hasLastPerformanceDate> <http://www.w3.org/2004/02/skos/core#example> ""@en .
 # 
@@ -2118,7 +2122,7 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/isCreatedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/isCreatedAtTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasDate> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/isCreatedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "was created at time"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/isCreatedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "wurde zu Zeitpunkt kreiert"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/isCreatedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "wurde zu Zeitpunkt erstellt"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/isCreatedAtTime> <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource kreiert wurde."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/isCreatedAtTime> <http://www.w3.org/2004/02/skos/core#definition> "Describes a singular date/point in time at which a resource was created."@en .
 # 
@@ -2126,8 +2130,8 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://lod.mediathek-tanz-theater.de/schema/paam/hasDate> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "was issued at time"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "wurde zu Zeitpunkt ausgegeben"@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime> <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource ausgegeben wurde ."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "wurde zu Zeitpunkt herausgegeben"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime> <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt einen einzelnen Zeitpunkt, an dem eine Ressource herausgegeben wurde ."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/isIssuedAtTime> <http://www.w3.org/2004/02/skos/core#definition> "Describes a singular date/point in time at which a resource was issued."@en .
 # 
 # 
@@ -2171,32 +2175,32 @@
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept
 <https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "Creative Concepts comprise ideas, plans and conceptions that serve as a creative foundation for Events, Information Objects or other resources. Creative Concepts do not have to be realized. This class primarily serves as top class for more specifically defined Creative Concepts such as film performing arts productions or performing arts performing arts productions."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "Kreative Konzepte umfassen Ideen, Planungen und Konzeptionen, die als kreative Grundlage von Ereignissen, Informationsobjekten oder anderen Ressourcen dienen. Kreative Konzepte müssen nicht verwirklicht werden. Diese Klasse dient als Oberklasse für genauer definierte Kreative Konzepte, wie Filmproduktionen oder Produktion (darstellende Künste)en der darstellenden Künste."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "Creative Concepts comprise ideas, plans and conceptions that serve as a creative foundation for Events, Information Objects or other resources. Creative Concepts do not have to be realized."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "Kreative Konzepte umfassen Ideen, Planungen und Konzeptionen, die als kreative Grundlage von Ereignissen, Informationsobjekten oder anderen Ressourcen dienen. Kreative Konzepte müssen nicht verwirklicht werden."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2000/01/rdf-schema#label> "Creative Concept"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2000/01/rdf-schema#label> "Kreatives Konzept"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Kreativen Konzepte."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises all Creative Concepts."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "Das Festivalkonzept hinter der seit 1981 veranstalteten Theaterfestivalreihe 'Theater der Welt'"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "Die Filmproduktion 'Metropolis' von 'Fritz Lang' aus dem Jahr 1927"@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "Die Produktion (darstellende Künste) 'Die Horatier und die Kuratier' von dem 'Pantomimentheater vom Prenzlauer Berg' aus dem Jahr 1982"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "Die Produktion (darstellende Künste) 'Die Horatier und die Kuriatier' von dem 'Pantomimentheater vom Prenzlauer Berg' aus dem Jahr 1982"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "The festival concept behind the theatre festival series 'Theater der Welt', held since 1981"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "The film performing arts production 'Metropolis' by 'Fritz Lang' from 1927"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "The performing arts performing arts production 'Die Horatier und die Kuratier' by the 'Pantomimentheater vom Prenzlauer Berg' from 1982"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "The film production 'Metropolis' by 'Fritz Lang' from 1927"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/CreativeConcept> <http://www.w3.org/2004/02/skos/core#example> "The performing arts production 'Die Horatier und die Kuriatier' by the 'Pantomimentheater vom Prenzlauer Berg' from 1982"@en .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject
 <https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Diese Klasse umfasst sowohl digitale Repräsentationen von Inhalten von Physischen Objekten als auch nativ digitale Objekte. Digitale Objekte können wie physische Objekte Informationsträger eines oder mehrerer Informationsobjekte sein."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises digital representations of contents of Physical Objects as well as natively digital objects. Digital Objects, like Physical Objects, may be information carriers of one or more Information Objects."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises digital representations of contents of Physical Objects as well as native digital objects. Digital Objects, like Physical Objects, may be Information Carriers of one or more Information Objects."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Object"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Digitales Objekt"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle digitalen Objekte."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises all Digital Objects."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "Die Datei '20190911_152231.jpg', das mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "Die Datei '20190911_152231.jpg', die mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "Die Digitalisierung einer Videokassette mit Namen 'VID_001.avi', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' trägt"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "Die Digitalisierung einer analogen Fotografie von einer Probe zur Produktion (darstellende Künste) 'Wir Wohner' mit Namen 'nvt_img-i30-002.JP2'"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "The digitisation of a VHS tape named 'VID-001.avi', carrying recordings of two different performances of the play 'Hamlet'"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "The digitisation of an analogue photography of a rehearsal of the performing arts performing arts production 'Wir Wohner', named 'nvt_img-i30-002.JP2'"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "The digitisation of an analogue photography of a rehearsal of the performing arts production 'Wir Wohner', named 'nvt_img-i30-002.JP2'"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/DigitalObject> <http://www.w3.org/2004/02/skos/core#example> "The file '20190911_152231.jpg', taken with a digital camera and carrying the photograph of a landscape"@en .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/Event
@@ -2222,35 +2226,35 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2000/01/rdf-schema#label> "Informationsträger"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Informationsträger."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises all Information Carriers."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#example> "A programme booklet carrying information of the performing arts performing arts production 'Hanswurst'"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#example> "A video cassette labeled 'Hamlet, 1985' carrying two different recordings of the theatre play 'Hamlet'"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#example> "Die Datei '20190911_152231.jpg', das mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt"@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#example> "Die Digitalisierung einer Videokassette mit Namen 'VID_001.avi', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' trägt"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#example> "A programme booklet carrying information of the performing arts production 'Hanswurst'"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#example> "A video cassette carrying two different recordings of the theatre play 'Hamlet'"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#example> "Die Datei '20190911_152231.jpg', die mit einer Digitalkamera gemacht wurde und die Aufnahme einer Landschaft trägt"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#example> "Die digitalisierte Version einer Videokassette mit Namen 'VID_001.avi', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' trägt"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#example> "Ein Programmheft, das Informationen über die Produktion (darstellende Künste) 'Hanswurst' trägt"@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#example> "Eine Videokassette mit Beschriftung 'Hamlet, 1985', die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' enthält"@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#example> "The digitisation of a VHS tape named 'VID-001.avi', carrying recordings of two different performances of the play 'Hamlet'"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#example> "Eine Videokassette, die Aufnahmen von zwei verschiedenen Aufführungen des Theaterstücks 'Hamlet' enthält"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#example> "The digitised version of a VHS tape named 'VID-001.avi', carrying recordings of two different performances of the play 'Hamlet'"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/InformationCarrier> <http://www.w3.org/2004/02/skos/core#example> "The file '20190911_152231.jpg', taken with a digital camera and carrying the photograph of a landscape"@en .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject
 <https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Information Objects are immaterial, describable objects, usually represented by one or more information carriers. The same Information Object may be captured in multiple Physical or Digital Objects (e.g. a magazine edition). One Physical or Digital Object can carry multiple Information Objects (e.g. multiple video recordings on a single video tape). An Information Object may be part of another Information Object (e.g. a chapter of a novel)."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Informationsobjekte sind immaterielle, beschreibbare Objekte, die in der Regel von einem oder mehreren Informationsträgern repräsentiert werden. Das gleiche Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer Kopie der Fotografie in einem Magazin) erfasst werden. Ein physisches oder digitales Objekt kann mehrere Informationsobjekte tragen (z.B. mehrere Videoaufzeichnungen auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans)."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Information Objects are immaterial, describable objects, usually represented by one or more Information Carriers. The same Information Object may be carried by multiple Physical or Digital Objects (e.g. by a photograph and by a copy of that photograph printed in a magazine). One Physical or Digital Object can carry multiple Information Objects (e.g. multiple video recordings on a single video tape). An Information Object may be part of another Information Object (e.g. a chapter of a novel)."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Informationsobjekte sind immaterielle, beschreibbare Objekte, die in der Regel von einem oder mehreren Informationsträgern repräsentiert werden. Das gleiche Informationsobjekt kann von verschiedenen physischen oder digitalen Objekten (zum Beispiel von einer Fotografie und einer in einem Magazin abgedruckten Kopie der Fotografie) getragen werden. Ein physisches oder digitales Objekt kann mehrere Informationsobjekte tragen (z.B. mehrere Videoaufzeichnungen auf einer einzelnen Videokassette). Ein Informationsobjekt kann Teil eines anderen Informationsobjekts sein (zum Beispiel ein Kapitel eines Romans)."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2000/01/rdf-schema#label> "Information Object"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2000/01/rdf-schema#label> "Informationsobjekt"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Informationsobjekte."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises all Information Objects."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2004/02/skos/core#example> "A picture of 'Eberhard Kube' as part of an article from an unknown magazine"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2004/02/skos/core#example> "Der Film 'Metropolis' von Fritz Lang aus dem Jahr 1927"@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2004/02/skos/core#example> "Die Aufzeichnung einer Aufführung von 'Himmelhölle' am 03.12.1988, zu finden auf einer Videokassette und als Teil der Digitalisierung des Inhalts dieser Videokassette"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2004/02/skos/core#example> "Die Aufzeichnung einer Aufführung von 'Himmelhölle' am 03.12.1988, zu finden auf einer Videokassette und als Teil der digitalisierten Version des Inhalts dieser Videokassette"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2004/02/skos/core#example> "Ein Foto von 'Eberhard Kube' als Teil eines Artikels aus einem unbekannten Magazin"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2004/02/skos/core#example> "The movie 'Metropolis' by 'Fritz Lang' from 1927"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2004/02/skos/core#example> "The recording of a performance of 'Himmelhölle' on 03 December 1988, to be found on a video cassette and as part of the digitisation of the contents of that video cassette"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/InformationObject> <http://www.w3.org/2004/02/skos/core#example> "The recording of a performance of 'Himmelhölle' on 03 December 1988, to be found on a video cassette and as part of the digitalised version of the contents of that video cassette"@en .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/Organization
 <https://lod.mediathek-tanz-theater.de/schema/paam/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://lod.mediathek-tanz-theater.de/schema/paam/Agent> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/Organization> <http://www.w3.org/2000/01/rdf-schema#comment> ""@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/Organization> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organisationen sind Gruppierungen von Personen, die einen bestimmten Zweck verfolgen. Organisationen können zum Beispiel Unternehmen, politische Parteien oder Interessenverbände sein."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organizations are groupings of Persons that pursue a particular purpose. For example, Organizations may be Companies, political parties or associations."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/Organization> <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Organisationen."@de .
@@ -2265,8 +2269,8 @@
 # https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup
 <https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://lod.mediathek-tanz-theater.de/schema/paam/Agent> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Gruppen (darstellende Künste) sind in der Regel Ensembles, Kompanien und ähnliche Gruppen im Bereich der darstellenden Künste."@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Performing Arts Groups usally are ensembles, companies and similar groups in the realm of performing arts."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Gruppen (darstellende Künste) sind in der Regel Ensembles, Kompanien und ähnliche Gruppierungen mehrerer Akteur*innen im Bereich der darstellenden Künste."@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Performing Arts Groups usually are ensembles, companies and similar groupings of multiple in the realm of performing arts."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Gruppe (darstellende Künste)"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Performing Arts Group"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/PerformingArtsGroup> <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Gruppen (darstellende Künste)."@de .
@@ -2308,19 +2312,19 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/Person> <http://www.w3.org/2004/02/skos/core#example> "'Eberhard Kube'"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/Person> <http://www.w3.org/2004/02/skos/core#example> "'Johann Sebastian Bach'"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/Person> <http://www.w3.org/2004/02/skos/core#example> "'Johann Sebastian Bach'"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/Person> <http://www.w3.org/2004/02/skos/core#example> "'Nikolajewitsch Bogdanow'"@de .
-<https://lod.mediathek-tanz-theater.de/schema/paam/Person> <http://www.w3.org/2004/02/skos/core#example> "'Nikolajewitsch Bogdanow'"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/Person> <http://www.w3.org/2004/02/skos/core#example> "'Rita May'"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/Person> <http://www.w3.org/2004/02/skos/core#example> "'Rita May'"@en .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject
 <https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "All material objects with physical extent are Physical Objects. Physical Objects, like Digital Objects, may be information carriers of Information Objects. Typical physical information carriers are video cassettes, analogue photographs or program booklets."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "All material objects with physical extent are Physical Objects. Physical Objects, like Digital Objects, may be Information Carriers of Information Objects. Typical physical Information Carriers are video cassettes, analogue photographs or program booklets."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Alle materiellen Objekte mit physischen Ausmaßen sind Physische Objekte. Wie Digitale Objekte können auch Physische Objekte Informationsträger von Informationsobjekten sein. Typische physische Informationsträger sind Videokassetten, analoge Fotografien oder Programmhefte."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Object"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Physisches Objekt"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject> <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse umfasst alle Physischen Objekte."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises all Physical Objects."@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject> <http://www.w3.org/2004/02/skos/core#example> "A negative strip with three images, depicting rehearsals of the performing arts performing arts production 'Himmelhölle'"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject> <http://www.w3.org/2004/02/skos/core#example> "A programme booklet carrying information of the performing arts performing arts production 'Hanswurst'"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject> <http://www.w3.org/2004/02/skos/core#example> "A negative strip with three images, depicting rehearsals of the performing arts production 'Himmelhölle'"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject> <http://www.w3.org/2004/02/skos/core#example> "A programme booklet carrying information of the performing arts production 'Hanswurst'"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject> <http://www.w3.org/2004/02/skos/core#example> "A video cassette labeled 'Hamlet, 1985' carrying two different recordings of the theatre play 'Hamlet'"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject> <http://www.w3.org/2004/02/skos/core#example> "Ein Negativstreifen mit drei Einzelbildern, die Proben zur Produktion (darstellende Künste) 'Himmelhölle' zeigen"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/PhysicalObject> <http://www.w3.org/2004/02/skos/core#example> "Ein Programmheft, das Informationen über die Produktion (darstellende Künste) 'Hanswurst' trägt"@de .
@@ -2366,11 +2370,11 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/Site> <http://www.w3.org/2004/02/skos/core#example> "Die 'Volksbühne' in Berlin"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/Site> <http://www.w3.org/2004/02/skos/core#example> "The 'Museumsplatz' in Wien where performances occurred as part of the 'Wiener Festwochen' in 2019"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/Site> <http://www.w3.org/2004/02/skos/core#example> "The 'Volksbühne' in Berlin"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/Site> <http://www.w3.org/2004/02/skos/core#example> "The foyer of 'Deutsches Theater' in Berlin where the performing arts performing arts production 'Clownonade' was performed in 1988"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/Site> <http://www.w3.org/2004/02/skos/core#example> "The foyer of 'Deutsches Theater' in Berlin where the performing arts production 'Clownonade' was performed in 1988"@en .
 # 
 # https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan
 <https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "Time-Spans are temporal extents with starting point, end point and duration. A Time-Span may be defined for resources such as Information Objects and Events. A Time-Span is unlimited in its duration. Not all attributes of a Time-Span have to be known."@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "Timespans are temporal extents with starting point, end point and duration. A Timespan may be defined for resources such as Information Objects and Events. A Timespan is unlimited in its duration. Not all attributes of a Timespan have to be known."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "Zeitspannen sind zeitliche Ausmaße mit Startzeitpunkt, Endzeitpunkt und Dauer. Eine Zeitspanne kann sich auf Ressourcen wie Informationsobjekte und Ereignisse beziehen. Eine Zeitspanne ist in ihrer Dauer unbeschränkt. Nicht alle Eigenschaften einer Zeitspanne müssen bekannt sein."@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan> <http://www.w3.org/2000/01/rdf-schema#label> "Timespan"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan> <http://www.w3.org/2000/01/rdf-schema#label> "Zeitspanne"@de .
@@ -2378,9 +2382,9 @@
 <https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises all timespans."@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan> <http://www.w3.org/2004/02/skos/core#example> "00h:00m:00s - 00h:52m:23s auf einer Videokassette"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan> <http://www.w3.org/2004/02/skos/core#example> "00h:00m:00s - 00h:52m:23s on a video cassette"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan> <http://www.w3.org/2004/02/skos/core#example> "Die Dauer der 'Wiener Festwochen' von 2019"@de .
+<https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan> <http://www.w3.org/2004/02/skos/core#example> "Die Dauer der 'Wiener Festwochen' vom 10.05.2019 bis zum 16.06.2019"@de .
 <https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan> <http://www.w3.org/2004/02/skos/core#example> "From 1979 to 1989"@en .
-<https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan> <http://www.w3.org/2004/02/skos/core#example> "The duration of 'Wiener Festwochen' in 2019"@en .
+<https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan> <http://www.w3.org/2004/02/skos/core#example> "The duration of 'Wiener Festwochen' from 2019-05-10 to 2019-06-16"@en .
 <https://lod.mediathek-tanz-theater.de/schema/paam/TimeSpan> <http://www.w3.org/2004/02/skos/core#example> "Von 1979 bis 1989"@de .
 # 
 # 

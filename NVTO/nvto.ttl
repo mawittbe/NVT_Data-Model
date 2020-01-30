@@ -192,21 +192,21 @@ paam:PerformingArtsGroup rdf:type owl:Class ;
                                       "'Pantomime-Ensemble des Deutschen Theaters'"@en ,
                                       "'National Dance Company of Korea'"@en .
 
-paam:PerformingArtsSite rdf:type owl:Class ;
-                            rdfs:subClassOf paam:Site,
-                                            paam:Organization ;
-                            rdfs:label "Spielstätte (darstellende Künste)"@de ;
-                            rdfs:label "Performing Arts Site"@en ;
-                            skos:definition """Diese Klasse umfasst alle Spielstätten (darstellende Künste)."""@de ;
-                            skos:definition """This class comprises all Performing Arts Sites."""@en ;
-                            skos:scopeNote """Spielstätten (darstellende Künste) sind Organisationen im Bereich der darstellenden Künste, die gleichzeitig als Stätte für Aufführungen, Proben oder ähnliche Ereignisse im Bereich der darstellenden Künste dienen."""@de ;
-                            skos:scopeNote """Performing Arts Sites are Organizations within the realm of performing arts, that simultaneously serve as Sites for performances, rehearsals or similar Events within the realm of performing arts."""@en ;
-                            skos:example "'Deutsches Theater' in Berlin"@de ,
-                                         "Die 'Volksbühne' in Berlin"@de ,
-                                         "Das 'Off Theater' in Wien"@de ;
-                            skos:example "'Deutsches Theater' in Berlin"@en ,
-                                         "The 'Volksbühne' in Berlin"@en ,
-                                         "The 'Off Theater' in Vienna"@en .
+# paam:PerformingArtsSite rdf:type owl:Class ;
+#                             rdfs:subClassOf paam:Site,
+#                                             paam:Organization ;
+#                             rdfs:label "Spielstätte (darstellende Künste)"@de ;
+#                             rdfs:label "Performing Arts Site"@en ;
+#                             skos:definition """Diese Klasse umfasst alle Spielstätten (darstellende Künste)."""@de ;
+#                             skos:definition """This class comprises all Performing Arts Sites."""@en ;
+#                             skos:scopeNote """Spielstätten (darstellende Künste) sind Organisationen im Bereich der darstellenden Künste, die gleichzeitig als Stätte für Aufführungen, Proben oder ähnliche Ereignisse im Bereich der darstellenden Künste dienen."""@de ;
+#                             skos:scopeNote """Performing Arts Sites are Organizations within the realm of performing arts, that simultaneously serve as Sites for performances, rehearsals or similar Events within the realm of performing arts."""@en ;
+#                             skos:example "'Deutsches Theater' in Berlin"@de ,
+#                                          "Die 'Volksbühne' in Berlin"@de ,
+#                                          "Das 'Off Theater' in Wien"@de ;
+#                             skos:example "'Deutsches Theater' in Berlin"@en ,
+#                                          "The 'Volksbühne' in Berlin"@en ,
+#                                          "The 'Off Theater' in Vienna"@en .
 
 # paam:PerformingArtsProduction rdf:type owl:Class ;
 #                               rdfs:subClassOf paam:CreativeConcept ;
@@ -330,10 +330,10 @@ paam:hasAudioVisualReferenceTo rdf:type owl:ObjectProperty ;
                                skos:scopeNote """An audiovisual reference usually describes the audible and visual mention or capture of a resource by an Information Object, for example in a video recording. An audiovisual reference is a specific form of reference."""@en ;
                                skos:example "In einer Videoaufzeichnung ist die Aufführung 'Eberhard Kube: Stilpantomimen (Solo)' zu sehen und zu hören"@de ,
                                             "In einer Videoaufzeichnung der Aufführung 'Eberhard Kube: Stilpantomimen (Solo)' ist 'Eberhard Kube' zu sehen und zu hören"@de ,
-                                            "In einer Videoaufzeichung ist eine Aufführung der Produktion 'Café Fatal' zu sehen"@de ;
-                               skos:example ""@en ,
-                                            ""@en ,
-                                            ""@en ;
+                                            "In einer Videoaufzeichung ist eine Aufführung der Produktion (darstellende Künste) 'Café Fatal' zu sehen und zu hören"@de ;
+                               skos:example "In a video recording the performance 'Eberhard Kube: Stilpantomimen (Solo)' can be seen and heard"@en ,
+                                            "In a video recording of the performance 'Eberhard Kube: Stilpantomimen (Solo)' 'Eberhard Kube' can be seen and heard"@en ,
+                                            "In a video recording a performance of the performing arts production 'Café Fatal' can be seen and heard"@en ;
                                rdfs:label "hat audiovisuelle Referenz zu"@de ;
                                rdfs:label "has audiovisual reference to"@en .
 
@@ -343,8 +343,8 @@ paam:hasInfluenceFrom rdf:type owl:ObjectProperty ;
                             skos:definition "Connects a resource to another resource that it is influenced by."@en ;
                             skos:scopeNote """Diese Eigenschaft beschreibt die Beeinflussung einer Ressource durch eine andere Ressource im weiteren Sinne. Eine Beeinflussung kann mehr oder weniger stark erkennbar sein und sollte belegt werden können. Eine Beeinflussung ist eine spezielle Form der Referenz."""@de ;
                             skos:scopeNote """This property describes the influence on a resource by another resource in a broader sense. An influence may be more or less recognizable and should be verifiable. An influence is a specific form of reference."""@en ;
-                            skos:example "Produktion (darstellende Künste) Y ist basiert auf Produktion (darstellende Künste) X, Text Y ist beeinflusst von Film X"@de ;
-                            skos:example "performing arts production Y is based on performing arts production X, Text Y is influenced by Film X"@en ;
+                            skos:example "Die Fernsehproduktion 'wollte Gott ich wäre gewesen...' wurde beeinflusst von der Produktion (darstellende Künste) 'Mozart. Stimmen aus Papier'"@de ;
+                            skos:example "The television production 'wollte Gott ich wäre gewesen...' was influenced by the performing arts production 'Mozart. Stimmen aus Papier'"@en ;
                             rdfs:label "hat Einfluss von"@de ;
                             rdfs:label "has influence from"@en .
 
@@ -356,8 +356,12 @@ paam:hasRecordingOf rdf:type owl:ObjectProperty ;
                     skos:definition "Connects an information object to an event that it recorded."@en ;
                     skos:scopeNote """Diese Eigenschaft ist eine Form von Referenz, die die Aufzeichnung eines Ereignisses als ein Informationsobjekt beschreibt."""@de ;
                     skos:scopeNote """This property is a form of reference that describes the recording of an Event as an Information Object."""@en ;
-                    skos:example "Video X hat Aufnahme von Event Y"@de ;
-                    skos:example ""@en ;
+                    skos:example "Auf einer Fotografie ist eine Probe zu der Produktion (darstellende Künste) 'Hanswurst' zu sehen"@de ,
+                                 "In einem Zeitungsartikel sind auf Fotografien Szenen aus dem Festival 'Theater in Bewegung. Internationale Tage der Pantomime 1988' zu sehen"@de ,
+                                 "In einer Fernsehaufzeichnung ist eine Aufführung von der Produktion (darstellende Künste) 'Happy End Station oder die Unmöglichkeit zu lachen ohne zu weinen' zu sehen"@de ;
+                    skos:example "A photograph shows a rehearsal of the performing arts production 'Hanswurst'"@en ,
+                                 "In a newspaper article show scenes of the festival 'Theater in Bewegung. Internationale Tage der Pantomime 1988'"@en ,
+                                 "A television recording shows a performance of the performing arts production 'Happy End Station oder die Unmöglichkeit zu lachen ohne zu weinen'"@en ;
                     rdfs:label "hat Aufnahme von"@de ;
                     rdfs:label "has recording of"@en .
 
@@ -377,8 +381,12 @@ paam:hasTextualReferenceTo rdf:type owl:ObjectProperty ;
                                 skos:definition "Connects a resource to another resource it has a textual reference to."@en ;
                                 skos:scopeNote """Eine textuelle Referenz beschreibt in der Regel die schriftliche Erwähnung einer Ressource durch ein Informationsobjekt, ein Kreatives Konzept oder einer andere Ressource. Ressourcen werden zum Beispiel in Programmheften, Büchern oder der Beschriftung eines Informationsträgers textuell referenziert. Eine textuelle Referenz ist eine spezielle Form der Referenz."""@de ;
                                 skos:scopeNote """A textual reference usually describes the mention of a resource by an Information Object, a Creative Concept or another resource in written form. Resources may be textually referenced in programme booklets, books or the labeling of an Information Carrier among others. A textual reference is a specific form of reference."""@en ;
-                                skos:example ""@de ;
-                                skos:example ""@en ;
+                                skos:example "In einem Programmheft zu der Produktion (darstellende Künste) 'Blaubart. Fünf Burlesken in einem Spiel' wird 'Peter Baumgart' erwähnt"@de ,
+                                             "Auf einem Plakat für das 'Pantomime-Ensemble des deutschen Theaters' wird die Produktion (darstellende Künste) 'Clownerien' aufgelistet"@de ,
+                                             "In einem Zeitungsartikel wird über das Festival 'Woche des Gestischen Theaters 1987' berichtet"@de ;
+                                skos:example "In a programme booklet for the performing arts production 'Blaubart. Fünf Burlesken in einem Spiel' 'Peter Baumgart' is referenced"@en ,
+                                             "On a poster for the 'Pantomime-Ensemble des deutschen Theaters' the performing arts production 'Clownerien' is listed"@en ,
+                                             "In a news article the festival 'Woche des Gestischen Theaters 1987' is reported about"@en ;
                                 rdfs:label "hat textuelle Referenz zu"@de ;
                                 rdfs:label "has textual reference to"@en .
 
@@ -424,8 +432,8 @@ paam:hasAdaptor rdf:type owl:ObjectProperty ;
                 skos:definition "Connects a resource to an Agent that contributed to the resource as an adaptor."@en ;
                 skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als (Text-)Bearbeiter*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Adaptation eines literarischen Werkes in ein Drama. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."""@de ;
                 skos:scopeNote """This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an adaptor. The contribution may occur towards an Information Object, for example by adapting a literary work into a drama. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."""@en ;
-                skos:example "'Vladimir Filonow' hat an der Produktion (darstellende Künste) 'Number 9' als (Text-)Bearbeiter mitgewirkt."@de ;
-                skos:example "'Vladimir Filonow' contributed to the performing arts production 'Number 9' as adaptor."@en ;
+                skos:example "'Vladimir Filonow' hat an der Produktion (darstellende Künste) 'Number 9' als (Text-)Bearbeiter mitgewirkt"@de ;
+                skos:example "'Vladimir Filonow' contributed to the performing arts production 'Number 9' as adaptor"@en ;
                 rdfs:label "hat (Text-)Bearbeiter*in"@de ;
                 rdfs:label "has adaptor"@en .
 
@@ -457,12 +465,12 @@ paam:hasAuthor  rdf:type owl:ObjectProperty ;
                 skos:definition "Connects a resource to an Agent that contributed to the resource as an author."@en ;
                 skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Text, einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Regieassistent*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Verfassen eines literarischen Werkes. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."""@de ;
                 skos:scopeNote """This property describes the contribution of an Agent to a text, a performing arts production, a performance or another resource as an author. The contribution may occur towards an Information Object, for example by authoring a literary work. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."""@en ;
-                skos:example "Für die Produktion (darstellende Künste) 'Die Horatier und die Kuriatier' wurde der Text 'Die Horatier und die Kuriatier' von dem Autor 'Bertold Brecht' genutzt."@de ;
-                skos:example ""@de ;
-                skos:example ""@de ;
+                skos:example "Für die Produktion (darstellende Künste) 'Die Horatier und die Kuriatier' wurde der Text 'Die Horatier und die Kuriatier' von dem Autor 'Bertold Brecht' genutzt"@de ;
+                skos:example "Einer der Autoren der Broschüre 'DT-Pantomime-Ensemble 1975-1985' ist 'Helmut Ullrich'"@de ;
+                skos:example "'Gisela Hoyer' ist Autorin des Zeitungsartikels 'Von der Sprache des Körpers'"@de ;
                 skos:example "For the performing arts production 'Die Horatier und die Kuriatier' the text 'Die Horatier und die Kuriatier' by author 'Bertold Brecht' was used"@en ;
-                skos:example ""@en ;
-                skos:example ""@en ;
+                skos:example "One of the authors of the brochure 'DT-Pantomime-Ensemble 1975-1985' is 'Helmut Ullrich'"@en ;
+                skos:example "'Gisela Hoyer' is author of the newspaper article 'Von der Sprache des Körpers'"@en ;
                 rdfs:label "hat Autor*in"@de ;
                 rdfs:label "has author"@en .
 
@@ -472,8 +480,12 @@ paam:hasChoreographer rdf:type owl:ObjectProperty ;
                       skos:definition "Connects a resource to an Agent that contributed to the resource as a choreographer."@en ;
                       skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Choreograf*in beschrieben."""@de ;
                       skos:scopeNote """This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a choreographer."""@en ;
-                      skos:example ""@de ;
-                      skos:example ""@en ;
+                      skos:example "'Jutta Voss' hat an der Produktion (darstellende Künste) 'Pantalon und Colombine' als Choreografin mitgewirkt"@de ;
+                      skos:example " Eine/r der Choreograf*innen, die an dem Film 'Das triadische Ballett' mitgewirkt haben, ist 'Margarete Hasting'"@de ;
+                      skos:example "'Mitsuru Sasaki' hat an der Produktion (darstellende Künste) 'Human Powerflight' als Choreograf mitgewirkt"@de ;
+                      skos:example "'Jutta Voss' contributed to the performing arts production 'Pantalon und Columbine' as a choreographer"@en ;
+                      skos:example "One of the choreographers that contributed to the performing arts production 'Das triadische Ballett' is 'Margarete Hasting'"@en ;
+                      skos:example "'Mitsuru Sasaki' contributed to the performing arts production 'Human Powerflight' as a choreographer"@en ;
                       rdfs:label "hat Choreograf*in"@de ;
                       rdfs:label "has choreographer"@en .
 
@@ -483,8 +495,12 @@ paam:hasCinematographer rdf:type owl:ObjectProperty ;
                         skos:definition "Connects a resource to an Agent that contributed to the resource as a cinematographer."@en ;
                         skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Filmproduktion, einer Aufführung oder einer anderen Ressource als Cinematograph*in beschrieben."""@de ;
                         skos:scopeNote """This property describes the contribution of an Agent to a performing arts production, a film production, a performance or another resource as a cinematographer."""@en ;
-                        skos:example ""@de ;
-                        skos:example ""@en ;
+                        skos:example "Eine/r der Cinematograph*innen, die an dem Film 'Die Horatier und die Kuriatier. Ein Lehrstück' mitgewirkt haben, ist 'Margot Thyret'"@de ;
+                        skos:example "'Christian Mattis' hat an einer Videoaufzeichnung von der Produktiona (darstellende Künste) 'Klettomanie' als Cinematograph mitgewirkt"@de ;
+                        skos:example "Eine/r der Cinematograph*innen, die an der Fernsehproduktion '..wollte Gott ich wäre gewesen…' mitgewirkt haben, ist 'Gabriele Heimlich'"@de ;
+                        skos:example "One of the cinematographers that contributed to the film 'Die Horatier und die Kuriatier. Ein Lehrstück' is 'Margot Thyret'"@en ;
+                        skos:example "'Christian Mattis' contributed to a video recording of the performing arts production 'Klettomanie' as a cinematographer"@en ;
+                        skos:example "One of the cinematographers that contributed to the film '..wollte Gott ich wäre gewesen…' is 'Gabriele Heimlich'"@en ;
                         rdfs:label "hat Cinematograph*in"@de ;
                         rdfs:label "has cinematographer"@en .
 
@@ -505,8 +521,12 @@ paam:hasComposer rdf:type owl:ObjectProperty ;
                  skos:definition "Connects a resource to an Agent that contributed to the resource as a composer."@en ;
                  skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Lied, einer Aufführung oder einer anderen Ressource als Komponist*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Komposition eines musikalischen Werks. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."""@de ;
                  skos:scopeNote """This property describes the contribution of an Agent to a performing arts production, a song, a performance or another resource as a composer. The contribution may occur towards an Information Object, for example by composing a musical work. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."""@en ;
-                 skos:example ""@de ;
-                 skos:example ""@en ;
+                 skos:example "Eine/r der Komponist*innen, die an der Produktion (darstellende Künste) 'Himmelhölle' mitgewirkt haben, ist 'Fritz Schimmelpfennig'"@de ;
+                 skos:example "'Gerhard Rosenfeld' hat an dem Film 'Faxenmacher' als Komponist mitgewirkt"@de ;
+                 skos:example "Eine/r der Komponist*innen, die an der Produktion (darstellende Künste) 'Wir Wohner I' mitgewirkt haben, ist 'Helga de Wroblewsky'"@de ;
+                 skos:example "One of the composers that contributed to the performing arts production 'Himmelhölle' is 'Fritz Schimmelpfennig'"@en ;
+                 skos:example "'Gerhard Rosenfeld' contributed to the film 'Klettomanie' as a composer"@en ;
+                 skos:example "One of the composers that contributed to the performing arts production 'Wir Wohner I' is 'Helga de Wroblewsky'"@en ;
                  rdfs:label "hat Komponist*in"@de ;
                  rdfs:label "has composer"@en .
 
@@ -516,8 +536,12 @@ paam:hasConceptOriginator rdf:type owl:ObjectProperty ;
                           skos:definition "Connects a resource to an Agent that contributed to the resource as a concept originator."@en ;
                           skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Konzept-Urheber*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch Urheberschaft eines textuellen Konzepts für eine Produktion (darstellende Künste). Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."""@de ;
                           skos:scopeNote """This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a concept originator. The contribution may occur towards an Information Object, for example by originating a textual concept for a performing arts production. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."""@en ;
-                          skos:example ""@de ;
-                          skos:example ""@en ;
+                          skos:example "Das 'Pantomimen-Theater vom Prenzlauer Berg' hat an der Produktion (darstellende Künste) 'Der große Nepomuk' als Konzept-Urheber mitgewirkt"@de ;
+                          skos:example "'Rosel Schulz' hat an der Produktion (darstellende Künste) 'Schaum' als Konzept-Urheberin mitgewirkt"@de ;
+                          skos:example "'Burkart Seidemann' hat an der Produktion (darstellende Künste) 'Happy End Station oder die Unmöglichkeit zu lachen ohne zu weinen' als Konzept-Urheberin mitgewirkt"@de ;
+                          skos:example "The 'Pantomimen-Theater vom Prenzlauer Berg' contributed to the performing arts production 'Der große Nepomuk' as concept originator"@en ;
+                          skos:example "'Rosel Schulz' contributed to the performing arts production 'Schaum' as a concept originator"@en ;
+                          skos:example "'Burkhart Seidemann' contributed to the performing arts production 'Happy End Station oder die Unmöglichkeit zu lachen ohne zu weinen' as a concept originator"@en ;
                           rdfs:label "hat Konzept-Urheber*in"@de ;
                           rdfs:label "has concept originator"@en .
 
@@ -549,20 +573,24 @@ paam:hasCostumeDesigner rdf:type owl:ObjectProperty ;
                         skos:definition "Connects a resource to an Agent that contributed to the resource as a costume designer."@en ;
                         skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einem Kostüm, einer Produktion (darstellende Künste) oder einer anderen Ressource als Kostümbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung eines Kostüms. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Kostümbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung eines Kostüms als auf dessen Fertigung."""@de ;
                         skos:scopeNote """This property describes the contribution of an Agent to a costume, a performing arts production or another resource as a costume designer. The contribution may occur towards an Information Object, for example by designing a costume. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the costume designer this term relates more closely to the aspect of designing a costume rather than manufacturing it."""@en ;
-                        skos:example ""@de ;
-                        skos:example ""@en ;
+                        skos:example "Eine/r der Kostümbildner*innen, die an der Produktion (darstellende Künste) 'Aber, macht keine Dummheiten' mitgewirkt haben, ist 'Nelly Aeby'"@de ;
+                        skos:example "'Heinz Wenzel' hat an dem Film 'Blaubart. Fünf Burlesken in einem Spiel' als Kostümbildner mitgewirkt"@de ;
+                        skos:example "Eine der Kostümbildnerinnen, die an der Produktion (darstellende Künste) 'Sunny Side Up oder ein Stück von der Leiter' mitgewirkt haben, ist 'Gera Graf'"@de ;
+                        skos:example "One of the costume designers that contributed to the performing arts production 'Aber, macht keine Dummheiten' is 'Nelly Aeby'"@en ;
+                        skos:example "'Heinz Wenzel' contributed to the film 'Blaubart. Fünf Burlesken in einem Spiel' as a costume designer"@en ;
+                        skos:example "One of the costume designers that contributed to the performing arts production 'Sunny Side Up oder ein Stück von der Leiter' is 'Gera Graf'"@en ;
                         rdfs:label "hat Kostümbildner*in"@de ;
                         rdfs:label "has costume designer"@en .
 
 paam:hasCreator rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf paam:hasContributor ;
-                skos:definition "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Schöpfer*in mitgewirkt hat."@de ;
+                skos:definition "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Urheber*in mitgewirkt hat."@de ;
                 skos:definition "Connects a resource to an Agent that contributed to the resource as a creator."@en ;
-                skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Informationsobjekt oder einer anderen Ressource als Schöpfer*in beschrieben. Es können pro Ressource mehrere Akteur*innen als Schöpfer*innen beteiligt sein. Aussagen über die Form der schöpferischen Tätigkeit des/r Akteur*innen können mit entsprechenden Mitwirkenden-Eigenschaften parallel zu dieser getroffen werden."""@de ;
+                skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einem Informationsobjekt oder einer anderen Ressource als Urheber*in beschrieben. Es können pro Ressource mehrere Akteur*innen als Urheber*innen beteiligt sein. Aussagen über die Form der schöpferischen Tätigkeit des/r Akteur*innen können mit entsprechenden Mitwirkenden-Eigenschaften parallel zu dieser getroffen werden."""@de ;
                 skos:scopeNote """This property describes the contribution of an Agent to a performing arts production, an Information Object or another resource as a creator. Multiple Agents may contribute to the same resource as creators. Statements about the type of creative activity of the Agent may be made by using corresponding contributor properties in addition to this property."""@en ;
                 skos:example ""@de ;
                 skos:example ""@en ;
-                rdfs:label "hat Schöpfer*in"@de ;
+                rdfs:label "hat Urheber*in"@de ;
                 rdfs:label "has creator"@en .
 
 paam:hasDancer rdf:type owl:ObjectProperty ;
@@ -571,12 +599,8 @@ paam:hasDancer rdf:type owl:ObjectProperty ;
                skos:definition "Connects a resource to an Agent that contributed to the resource as a dancer."@en ;
                skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Tänzer*in beschrieben."""@de ;
                skos:scopeNote """This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a dancer."""@en ;
-               skos:example "In einer Aufzeichnung von 'Das triadische Ballett. Ein Film in drei Teilen nach den Tänzen von Oskar Schlemmer' ist 'Edith Demharter' als Tänzerin zu sehen"@de ;
-               skos:example "'vid_016_002' hat Tänzerin 'Edith Demharter'"@de ;
-               skos:example "Der Film 'Das triadische Ballett. Ein Film in drei Teilen nach den Tänzen von Oskar Schlemmer' hat Tänzerin 'Edith Demharter'"@de ;
-               skos:example ""@en ;
-               skos:example ""@en ;
-               skos:example ""@en ;
+               skos:example "In einer Aufzeichnung von dem Film 'Das triadische Ballett. Ein Film in drei Teilen nach den Tänzen von Oskar Schlemmer' ist 'Edith Demharter' als eine/r der Tänzer*innen zu sehen"@de ;
+               skos:example "'Edith Demharter' can be seen as one of the dancers in a recording of the film 'Das triadische Ballett. Ein Film in drei Teilen nach den Tänzen von Oskar Schlemmer'"@en ;
                rdfs:label "hat Tänzer*in"@de ;
                rdfs:label "has dancer"@en .
 
@@ -661,8 +685,8 @@ paam:hasMaskBuilder rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf paam:hasContributor ;
                     skos:definition "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Maskenbauer*in mitgewirkt hat."@de ;
                     skos:definition "Connects a resource to an Agent that contributed to the resource as a mask builder."@en ;
-                    skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Bauen einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbildner*in bezieht sich diese Bezeichnung eher auf den Aspekt der Fertigung einer Maske als auf deren Gestaltung."""@de ;
-                    skos:scopeNote """This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask builder. The contribution may occur towards an Information Object, for example by building a mask. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the mask designer this term relates more closely to the aspect of manufacturing a mask rather than designing it."""@en ;
+                    skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbauer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Bauen einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."""@de ;
+                    skos:scopeNote """This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask builder. The contribution may occur towards an Information Object, for example by building a mask. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."""@en ;
                     skos:example ""@de ;
                     skos:example ""@en ;
                     rdfs:label "hat Maskenbauer*in"@de ;
@@ -672,8 +696,8 @@ paam:hasMaskDesigner rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf paam:hasContributor ;
                      skos:definition "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Maskenbildner*in mitgewirkt hat."@de ;
                      skos:definition "Connects a resource to an Agent that contributed to the resource as a mask designer."@en ;
-                     skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung. Im Vergleich zu dem/r Maskenbauer*in bezieht sich diese Bezeichnung eher auf den Aspekt der Gestaltung einer Maske als auf deren Fertigung."""@de ;
-                     skos:scopeNote """This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask designer. The contribution may occur towards an Information Object, for example by designing a mask. The contribution may also occur in the context of a process, for example for a performing arts production or a performance. Compared to the costume designer this term relates more closely to the aspect of designing a mask rather than manufacturing it."""@en ;
+                     skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Maske, einer Produktion (darstellende Künste) oder einer anderen Ressource als Maskenbildner*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch die Gestaltung einer Maske. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."""@de ;
+                     skos:scopeNote """This property describes the contribution of an Agent to a mask, a performing arts production or another resource as a mask designer. The contribution may occur towards an Information Object, for example by designing a mask. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."""@en ;
                      skos:example ""@de ;
                      skos:example ""@en ;
                      rdfs:label "hat Maskenbildner*in"@de ;
@@ -929,13 +953,13 @@ paam:hasSinger rdf:type owl:ObjectProperty ;
 
 paam:hasSoundDesigner rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf paam:hasContributor ;
-                      skos:definition "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Tonmeister*in mitgewirkt hat."@de ;
+                      skos:definition "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Sound Designer*in mitgewirkt hat."@de ;
                       skos:definition "Connects a resource to an Agent that contributed to the resource as a sound designer."@en ;
-                      skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Tonmeister*in beschrieben."""@de ;
+                      skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung oder einer anderen Ressource als Sound Designer*in beschrieben."""@de ;
                       skos:scopeNote """This property describes the contribution of an Agent to a performing arts production, a performance or another resource as a sound designer."""@en ;
                       skos:example ""@de ;
                       skos:example ""@en ;
-                      rdfs:label "hat Tonmeister*in"@de ;
+                      rdfs:label "hat Sound Designer*in"@de ;
                       rdfs:label "has sound designer"@en .
 
 paam:hasSpeaker rdf:type owl:ObjectProperty ;
@@ -964,11 +988,11 @@ paam:hasSurtitleCreator rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf paam:hasContributor ;
                        skos:definition "Verbindet eine Ressource mit einem/r Akteur*in der/die an der Ressource als Übertiteler*in mitgewirkt hat."@de ;
                        skos:definition "Connects a resource to an Agent that contributed to the resource as an author of surtitles."@en ;
-                       skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Übertitel oder einer anderen Ressource als Übertitel Schöpfer*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Schöpfen eines Übertitels. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."""@de ;
+                       skos:scopeNote """Mit dieser Eigenschaft wird die Mitwirkung eines/r Akteur*in an einer Produktion (darstellende Künste), einer Aufführung, einem Übertitel oder einer anderen Ressource als Übertiteler*in beschrieben. Die Mitwirkung kann an einem Informationsobjekt erfolgen, zum Beispiel durch das Schöpfen eines Übertitels. Die Mitwirkung kann auch im Rahmen eines Prozesses erfolgen, zum Beispiel für eine Produktion (darstellende Künste) oder eine Aufführung."""@de ;
                        skos:scopeNote """This property describes the contribution of an Agent to a performing arts production, a performance, a surtitle or another resource as a surtitle creator. The contribution may occur towards an Information Object, for example by creating a surtitle. The contribution may also occur in the context of a process, for example for a performing arts production or a performance."""@en ;
                        skos:example ""@de ;
                        skos:example ""@en ;
-                       rdfs:label "hat Übertitel Schöpfer*in"@de ;
+                       rdfs:label "hat Übertiteler*in"@de ;
                        rdfs:label "has surtitle creator"@en .
 
 paam:hasTechnician rdf:type owl:ObjectProperty ;
@@ -1017,16 +1041,16 @@ paam:hasVideoEditor   rdf:type owl:ObjectProperty ;
 
 ## Other Object Properties
 
-paam:hasPlaceOfOccurrence rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf paam:hasRelatedPlace ;
-                     rdfs:domain paam:Event ;
-                     rdfs:range paam:Site ;
-                     skos:definition "Verbindet ein Ereignis mit einem Ort, an dem es sich ereignet."@de ;
-                     skos:definition "Connects an Event to the Place it happened at."@en ;
-                     skos:example ""@de ;
-                     skos:example ""@en ;
-                     rdfs:label "ereignet sich an Ort"@de ;
-                     rdfs:label "has place of occurrence"@en .
+paam:hasSiteOfOccurrence rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf paam:hasRelatedPlace ;
+                         rdfs:domain paam:Event ;
+                         rdfs:range paam:Site ;
+                         skos:definition "Verbindet ein Ereignis mit einer Stätte, an der es sich ereignet."@de ;
+                         skos:definition "Connects an Event to the Site it occurs at."@en ;
+                         skos:example ""@de ;
+                         skos:example ""@en ;
+                         rdfs:label "hat Stätte von Ereignis"@de ;
+                         rdfs:label "has Site of Occurrence"@en .
 
 paam:hasContentMatch rdf:type owl:ObjectProperty ;
                      rdf:type owl:SymmetricProperty ;
@@ -1055,13 +1079,12 @@ paam:hasFirstPerformanceVersion rdf:type owl:ObjectProperty ;
                                 rdfs:range paam:CreativeConcept ;
                                 skos:definition "Verbindet ein Kreatives Konzept mit seiner Erstaufführungsversion."@de ;
                                 skos:definition "Connects a Creative Concept to its first performance version."@en ;
-                                skos:scopeNote """Eine Erstaufführungsversion ist in der Regel eine originale, zum ersten Mal aufgeführte Produktion (darstellende Künste)"""@de ;
-                                skos:scopeNote """A first performance version usually is an original performing arts production, that is being performed for the first time"""@en ;
+                                skos:scopeNote """Eine Erstaufführungsversion ist in der Regel eine Version einer Produktion (darstellende Künste), die für die Aufführung in einer anderen Region neu konzipiert wurde. Dazu gehört oft das Übersetzen der Produktion (darstellende Künste) in eine andere Sprache."""@de ;
+                                skos:scopeNote """A first performance version usually is a version of a performing arts production that was reconceptualized to be performed in another region. This often includes the translation of the performing arts production into another language."""@en ;
                                 skos:example ""@de ;
                                 skos:example ""@en ;
                                 rdfs:label "hat Erstaufführungsversion"@de ;
                                 rdfs:label "has first performance version"@en .
-
 
 
 paam:hasHomepage rdf:type owl:ObjectProperty ;
@@ -1079,8 +1102,8 @@ paam:hasInformationCarrier rdf:type owl:ObjectProperty ;
                            rdfs:range paam:InformationCarrier ;
                            skos:definition "Verbindet ein Informationsobjekt mit einem physischen oder digitalen Objekt, auf dem es repräsentiert ist."@en ;
                            skos:definition "Connects an information object to a physical or digital object it is represented on."@en ;
-                           skos:scopeNote """Ein Informationsträger ist eine Ressource, die ein Informationsobjekt trägt. Ein Informationsobjekt kann von mehreren Informationsträgern getragen werden, zum Beispiel die gleiche Aufnahme einer Aufführung auf einer Videokassette und auf einem USB-Stick. Auf einem Informationsträger können mehrere Informationsobjekte getragen werden, zum Beispiel mehrere Aufnahmen von verschiedenen Aufführungen auf derselben Videokassette."""@de ;
-                           skos:scopeNote """An Information Carrier is a resource, that carries an Information Object. An Information Object may be carried by multiple Information Carriers, for example the same recording of a performance on a video cassette and on a USB flash drive. Multiple Information Objects may be carried by the same Information Carrier, for example multiple recordings of different performances on the same video cassette."""@en ;
+                           skos:scopeNote """Ein Informationsträger ist eine Ressource, die ein Informationsobjekt trägt. Ein Informationsträger ist in der Regel ein Physisches Objekt oder ein Digitales Objekt. Ein Informationsobjekt kann von mehreren Informationsträgern getragen werden, zum Beispiel die gleiche Aufnahme einer Aufführung auf einer Videokassette und auf einem USB-Stick. Auf einem Informationsträger können mehrere Informationsobjekte getragen werden, zum Beispiel mehrere Aufnahmen von verschiedenen Aufführungen auf derselben Videokassette."""@de ;
+                           skos:scopeNote """An Information Carrier is a resource, that carries an Information Object. An Information Carrier usually is a Physical Object or a Digital Object. An Information Object may be carried by multiple Information Carriers, for example the same recording of a performance on a video cassette and on a USB flash drive. Multiple Information Objects may be carried by the same Information Carrier, for example multiple recordings of different performances on the same video cassette."""@en ;
                            skos:example ""@de ;
                            skos:example ""@en ;
                            rdfs:label "hat Informationsträger"@de ;
@@ -1116,6 +1139,19 @@ paam:hasPredecessor rdf:type owl:ObjectProperty ;
                     rdfs:label "hat Vorgänger"@de ;
                     rdfs:label "has predecessor"@en .
 
+paam:hasPremiereVersion rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf paam:hasVersion ;
+                        rdfs:domain paam:CreativeConcept ;
+                        rdfs:range paam:CreativeConcept ;
+                        skos:definition "Verbindet ein Kreatives Konzept mit seiner Uraufführungsversion."@de ;
+                        skos:definition "Connects a Creative Concept to its premiere version."@en ;
+                        skos:scopeNote """Eine Uraufführungsversion ist in der Regel eine originale, zum ersten Mal aufgeführte Produktion (darstellende Künste)"""@de ;
+                        skos:scopeNote """A premiere version usually is an original performing arts production that is being performed for the first time"""@en ;
+                        skos:example ""@de ;
+                        skos:example ""@en ;
+                        rdfs:label "hat Uraufführungsversion"@de ;
+                        rdfs:label "has premiere version"@en .
+
 paam:hasProvenance rdf:type owl:ObjectProperty ;
                    skos:definition "Beschreibt die Herkunft oder verbindet mit der Herkunft einer Ressource."@de ;
                    skos:definition "Describes or connects to the provenance of a resource."@en ;
@@ -1133,7 +1169,7 @@ paam:hasPublishingPlace rdf:type owl:ObjectProperty ;
                         skos:definition "Connects a resource to the Place it was or is published at."@en ;
                         skos:example ""@de ;
                         skos:example ""@en ;
-                        rdfs:label "hat Verlagsort"@de ;
+                        rdfs:label "hat Erscheinungsort"@de ;
                         rdfs:label "has publishing place"@en .
 
 paam:hasRelatedPlace rdf:type owl:ObjectProperty ;
@@ -1173,28 +1209,17 @@ paam:hasRestagedVersion rdf:type owl:ObjectProperty ;
                         skos:definition "Verbindet ein Kreatives Konzept mit seiner Wiederaufnahmeversion."@de ;
                         skos:definition "Connects a Creative Concept to its restaged version."@en ;
                         skos:scopeNote """Eine Wiederaufnahmeversion ist in der Regel eine Produktion (darstellende Künste), die in ihrer ursprünglichen Version bereits aufgeführt wurde und mit wenigen bis keinen Änderungen an ihrem Konzept erneut aufgeführt wird."""@de ;
-                        skos:scopeNote """A restaged version usually is a performing arts production, which has already been performed in its original version and is performed again with little to no changes to its Concept."""@en ;
+                        skos:scopeNote """A restaged version usually is a performing arts production which has already been performed in its original version and is performed again with little to no changes to its Concept."""@en ;
                         skos:example ""@de ;
                         skos:example ""@en ;
                         rdfs:label "hat Wiederaufnahmeversion"@de ;
                         rdfs:label "has restaged version"@en .
 
-paam:hasSeason rdf:type owl:ObjectProperty ;
-               rdfs:range paam:TimeSpan ;
-               skos:definition "Verbindet eine Ressource mit der Spielzeit, in der eine Produktion (darstellende Künste) aufgeführt wird oder wurde."@en ;
-               skos:definition "connects a resource to the season in which a performing arts production was or is performed. ???"@en ;
-               skos:scopeNote """Spielzeit erklären oder klar?"""@de ;
-               skos:scopeNote """"""@en ;
-               skos:example ""@de ;
-               skos:example ""@en ;
-               rdfs:label "hat Spielzeit"@de ;
-               rdfs:label "has season"@en .
-
 paam:hasSource rdf:type owl:ObjectProperty ;
                skos:definition "Beschreibt oder verbindet mit der Quelle einer Ressource."@de ;
                skos:definition "Describes or connects to the source of a resource."@en ;
-               skos:scopeNote """Diese Eigenschaft beschreibt, aus welcher Quelle ein Datensatz oder Teile eines Datensatzes stammen. Sowohl Literale als auch Weblinks sind erlaubt."""@de ;
-               skos:scopeNote """This property describes the source of a data set or part of a data set. Literals as well as Weblinks are accepted."""@en ;
+               skos:scopeNote """Diese Eigenschaft beschreibt, aus welcher Quelle eine Information oder eine Menge an Informationen stammen. Sowohl Literale als auch Weblinks sind erlaubt."""@de ;
+               skos:scopeNote """This property describes the source of a an information or a set of informations. Literals as well as weblinks are accepted."""@en ;
                skos:example ""@de ;
                skos:example ""@en ;
                rdfs:label "hat Quelle"@de ;
@@ -1596,18 +1621,18 @@ paam:isTextuallyReferencedIn owl:inverseOf paam:hasTextualReferenceTo ;
                             rdfs:label "is textually referenced in"@en .
 
 paam:isVisuallyReferencedIn owl:inverseOf paam:hasVisualReferenceTo ;
-                             rdfs:subPropertyOf paam:isReferencedIn ;
-                             rdfs:comment "Invers von 'beinhaltet visuelle Referenz zu'."@de ;
-                             rdfs:comment "Inverse of 'has visual reference to'."@en ;
-                             rdfs:label "ist visuell referenziert in"@de ;
-                             rdfs:label "is visually referenced in"@en .
+                            rdfs:subPropertyOf paam:isReferencedIn ;
+                            rdfs:comment "Invers von 'beinhaltet visuelle Referenz zu'."@de ;
+                            rdfs:comment "Inverse of 'has visual reference to'."@en ;
+                            rdfs:label "ist visuell referenziert in"@de ;
+                            rdfs:label "is visually referenced in"@en .
 
-paam:isPlaceOfOccurrenceOf owl:inverseOf paam:hasPlaceOfOccurrence ;
-                     rdfs:subPropertyOf paam:isRelatedPlaceOf ;
-                     rdfs:comment "Invers von 'ereignet sich an Ort'."@de ;
-                     rdfs:comment "Inverse of 'has place of occurrence'."@en ;
-                     rdfs:label "ist Ort von Ereignis"@de ;
-                     rdfs:label "is place of occurrence of"@en .
+paam:isSiteOfOccurrence owl:inverseOf paam:hasPlaceOfOccurrence ;
+                        rdfs:subPropertyOf paam:isRelatedPlaceOf ;
+                        rdfs:comment "Invers von 'hat Stätte von Ereignis'."@de ;
+                        rdfs:comment "Inverse of 'has place of occurrence'."@en ;
+                        rdfs:label "ist Stätte von Ereignis"@de ;
+                        rdfs:label "is Site of Occurrence"@en .
 
 paam:isActorOf owl:inverseOf paam:hasActor ;
                rdfs:subPropertyOf paam:isContributorOf ;
@@ -1707,9 +1732,9 @@ paam:isCostumeDesigner owl:inverseOf paam:hasCostumeDesigner ;
 
 paam:isCreatorOf owl:inverseOf paam:hasCreator ;
                  rdfs:subPropertyOf paam:isContributorOf ;
-                 rdfs:comment "Invers von 'hat Schöpfer*in'."@de ;
+                 rdfs:comment "Invers von 'hat Urheber*in'."@de ;
                  rdfs:comment "Inverse of 'has creator'."@en ;
-                 rdfs:label "ist Schöpfer*in von"@de ;
+                 rdfs:label "ist Urheber*in von"@de ;
                  rdfs:label "is creator of"@en .
 
 paam:isDancerOf owl:inverseOf paam:hasDancer ;
@@ -1752,6 +1777,13 @@ paam:isFirstPerformanceVersionOf owl:inverseOf paam:hasFirstPerformanceVersion ;
                               skos:definition "Inverse of 'has first performance version'."@en ;
                               rdfs:label "ist Erstaufführungsversion von"@de ;
                               rdfs:label "is first performance version of"@en .
+
+paam:isPremiereVersionOf owl:inverseOf paam:hasPremiereVersion ;
+                         rdfs:subPropertyOf paam:isVersionOf ;
+                         skos:definition "Invers von 'hat Uraufführungsversion'."@de ;
+                         skos:definition "Inverse of 'has premiere version'."@en ;
+                         rdfs:label "ist Uraufführungsversion von"@de ;
+                         rdfs:label "is premiere version of"@en .
 
 paam:isHomepageOf owl:inverseOf paam:hasHomepage ;
                  rdfs:subPropertyOf paam:isRelatedWebsiteOf ;
@@ -1945,9 +1977,9 @@ paam:isPublishingCompanyOf owl:inverseOf paam:hasPublishingCompany ;
 
 paam:isPublishingPlaceOf owl:inverseOf paam:hasPublishingPlace ;
                          rdfs:subPropertyOf paam:isRelatedPlaceOf ;
-                         rdfs:comment "Invers von 'hat Verlagsort'."@de ;
+                         rdfs:comment "Invers von 'hat Erscheinungsort'."@de ;
                          rdfs:comment "Inverse of 'has publishing place'."@en ;
-                         rdfs:label "ist Verlagsort von"@de ;
+                         rdfs:label "ist Erscheinungsort von"@de ;
                          rdfs:label "is publishing place of"@en .
 
 paam:isPuppetBuilderOf owl:inverseOf paam:hasPuppetBuilder ;
@@ -2017,12 +2049,6 @@ paam:isSeamsterOf owl:inverseOf paam:hasSeamster ;
                   rdfs:label "ist Näher*in von"@de ;
                   rdfs:label "is seamster of"@en .
 
-paam:isSeasonOf owl:inverseOf paam:hasSeason ;
-                rdfs:comment "Invers von 'hat Spielzeit'."@de ;
-                rdfs:comment "Inverse of 'has season'."@en ;
-                rdfs:label "ist Spielzeit von"@de ;
-                rdfs:label "is season of"@en .
-
 paam:isSetBuilderOf owl:inverseOf paam:hasSetBuilder ;
                     rdfs:subPropertyOf paam:isContributorOf ;
                     rdfs:comment "Invers von 'hat Bühnenbauer*in'."@de ;
@@ -2045,9 +2071,9 @@ paam:isSingerOf owl:inverseOf paam:hasSinger ;
 
 paam:isSoundDesignerOf owl:inverseOf paam:hasSoundDesigner ;
                        rdfs:subPropertyOf paam:isContributorOf ;
-                       rdfs:comment "Invers von 'hat Tonmeister*in'."@de ;
+                       rdfs:comment "Invers von 'hat Sound Designer*in'."@de ;
                        rdfs:comment "Inverse of 'has sound designer'."@en ;
-                       rdfs:label "ist Tonmeister*in von"@de ;
+                       rdfs:label "ist Sound Designer*in von"@de ;
                        rdfs:label "is sound designer of"@en .
 
 paam:isSourceOf owl:inverseOf paam:hasSource ;
@@ -2072,9 +2098,9 @@ paam:isStageManagerOf owl:inverseOf paam:hasStageManager ;
 
 paam:isSurtitleCreatorOf owl:inverseOf paam:hasSurtitleCreator ;
                        rdfs:subPropertyOf paam:isContributorOf ;
-                       rdfs:comment "Invers von 'hat Übertitel Schöpfer*in'."@de ;
+                       rdfs:comment "Invers von 'hat Übertiteler*in'."@de ;
                        rdfs:comment "Inverse of 'has surtitle creator'."@en ;
-                       rdfs:label "ist Übertitel Schöpfer*in von"@de ;
+                       rdfs:label "ist Übertiteler*in von"@de ;
                        rdfs:label "is surtitle creator of"@en .
 
 paam:isTechnicianOf owl:inverseOf paam:hasTechnician ;
